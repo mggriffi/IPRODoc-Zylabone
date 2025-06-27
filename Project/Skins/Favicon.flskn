@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="4"
+  SkinType="Component"
+  Comment="HTML5 Favicon skin"
+  ComponentType="Favicon">
+  <Stylesheet>
+    <Resources>
+      <Resource
+        Name="favicon.ico">H4sIAAAAAAAEAO1ZDXBU1RU+7+Wxu2R/smSTzd8m2SSYrIFkEkDEgrDidmMFUgYRGmgxMPlDAyx1TaKsuCU18Sk/VdRqW1TQKlWpVbEqHXGFLemfpa11pnacUmnrWKfTwf6Z1q3bc+69L3ls3oYUE9tOc/Z9++4955577j33vnPP2wWQwARerxPvCrwjA7QBgNPJ6z4JoDEDUA5Yt8BBC0CXQnJe75gCUGLX5F44iPy+bE3uhQ5sW1sB4MM+sQn4AVi/jGRIQ1F2QTTKb/QhFn7FYjHkJNkFySS/0YdY9DXBFAg0BEJ0w4KJvru7FT+Yg+HmvgB0dwUCAMT2x6MQp+ZBAHO8Pd4cDkGAqdMXtIQigUAzFoNUD4eQ0x72a3JbsAF5lgahjx36IR6yLdXkEIiBph+hehdekW4maW9tH4gh0xwDcwRtBuLxQDuOJGoORVAhqFCv2GnMfGJgNcrNfEDY2Gw+EcNSJ7ZqiWrTbQFUMMf9Q9PHK6QEGnR1mz8SWjpU7+kJtwQg3GzpIeqPB+JLsbXiV+JEfPgTSck0BBGIyj3O2ELJkyAsqpcSi1yI3vzEon7EAJZPZiTg0w94IKslsudks2fPyds9AwPJxG/6k4n3epOJv7uSCahH31wSTWuH9jlufbbXtX0eTTva6Ljv8+AqUIIrTSv9EGiImdDx4G8Ot9J9Zyhmo7uCqwNKayduGnNIidAYu2MKFkldgRhtE5S3+LvNDe0n0vt5GA6MCaHNADc4ALbifVsJQMbbAPNR+6sfAvwUoUTP1jk7Hlh4p4rOgCSApOYA3J6nwB35U2BnkQV2FWfC7lIb7CnLgi9VTIM7L3DBXp8b7plZBPfWFsOX671w/5wK+MrcSvjaJ6ph34KZ8NDiWbD/8jmwP3ARHGiYBw9fcQk8smQBfH3ppfBoox8OXvVJ+MbKIDy+6gp44jNXwpNrlsE3r1kBTzVfBU+tXwnf2nA1PN2yGp5pa4JnOz4Lh69dB89tWg8vfL4NXgxvhCPdnfCdnk3wUmQrHN0ehpejXRDrvRGO9d8Mx9Vb0q7XJE3SJBnTx3GeTzTJROUOeaaoKTLngFsWVOjzVYPMQl+VbC2Uc6CuUMbMyOfzeWRJ5jmSSTSGYrkaq4rInIbk1bKc67Yy+XRmJ0XOOE65EuVEVkiVF8oe1qZYdlR6FGWEHIU5ODRuv4ZKKXKHLFO4ZvZz5OwRcixnMjmfh8ZzuzV5ASvVuJGmD+sUugvc7AIvb1nJbsU1TFGWFM2N5XbWKfq5wAeVSoHQx3H7eF9WJi9DX3mc5WUFxbVcPl1W9HJwVuWCA7wF7koux8lwbylyzcjVpSlnym6+AoqxHDVnkv9MstdYTo6ndZdH5MOyVFdXW1ebKTGXecmtVNc+5Ww/SbKEVxXwbUEOkcQHrxFD+h+j/658TuQpkm6ABnnKzkIzy1N2l1hhj9fB8pO7cFvtvTAP7p5RwHOUulKWp9w3q2w4V5k/A/ZdWgMPXlbPcpUDwYuH8pPHli8ezk+alsChtY0sPzm88XMsDznSdR0cvfl6iH2hG1754k1wrC/yMa7SJE3S/y+dT54iZRfRGalYsl1TISdbYmHEmlHiFBGFviz4QuR0Wkq1erkpl2IRHUeSnTrBrzybk3XntNpsBfzU9eLrl1RBrUxULarIpz6LivVxS6KoVphvGarn5TklKxSVQR5Rjj7CjdEH4/k+6GV9Rp3/7igmaZImlvCM34LYmoL5urInjd5aAz0NHYi5ol3eKO0IHyCSKTiIeFOUdxvY9ur0/mqgr+FRhIz47ihttH6eR9wnsBdxg+CfQSxGLNJhn5CdRrwgyicQ2xBRxBFd/wFEja5vwmED+8tS5piF+NMo4ybcpOvrTp0uzfkvgt9h4L/gueyLdnuF7EPEccQxxG8F731Ers7+I4haxGzEZqGToLl/BPtViH8KeYPgvSbqD4m63pd6nEKsSLN3x2RftP22kD+HuEynNyfF/us0JsQzwjeE5eNg/1NCTn74oSgP6ORG63+H4P1gHOxLiF+k+HatgX1t/Rcivi94r35U+6J9p679OwiTgX0jtI/B/stiX88fxb4dcVS025QiUwVfA/X3MKJxlP6M7I+G7YgnRbkxpS8n4oDKYxzF8iWIdQgr4mnaF7p+FhrYf38U/+nj6GlRbkuxf5ewaxJzodi4TYzpz4LXg7gIkWFgf7OufC9igQGqRrH/OGKxKN+v8uf0dcE/JOw/i9iFMKfaF/X9ov43xOw0a5bOPp2VFJMeVPkZsAnxS4RDZ/+48OGFaexbED8SvLcQuSk2ctTheL7LYGx0Vswg/yJsVBd8is90/pYKGM5f8EoQv1eH96Sik92Tsl/KjXw0VjKyL/h+xD9UXTwT89JixB/F/YmJsC9kW9ThM4+eoxdFnZ6vywWfsHA87CN2IPpS8Ach03xBsV87bw4J3qsqP+evNNA/Fx5LWc9zPf/7dGMv0+lsoL0gnptz9ZEO9PyPlh8S3Cn+Wyb4a0R9yRj6MMT5ruEkTdJ4kPFvwRJAD5d7IL+nBGsl02CwVEJk5CPw3ovolwYxols4vJb+AbD09u+wvNKbHHwrIzl4RkoOsh976xDzjH8TPvv3YC+z6R/5w/9/nNbZYZ7ADLoHM/lZJmSzdfK5TXaw471cx5snYiid05QvvtbvgtAqG5TeOI29z1E8exfxE8SPVZ5jNqo83/6ZFoOvywL6EwX6XNAqzgA6qwdVnj+8casLmrBfH5Y/2OqEC6htqwMqNH0cB9NfY4epIsYvV/m5TrnRGyp/56VxPKDN7WrbSH0irN+GeA/xPVEn/SZEC+J3BvqnNjuHz+3t2ey8P4XjXS306cz/tcpz/aEc9xr7kP6vhFwDnYs/35jF3+9UnvdsF3H1bpXnf41bnEP6vYjTt7mger0DSq53Qj7Wz6D+bKF/iwCtz62Il2g+nVlcf4WNnXUkO4RlKTwNqrGcwP42kn6jFTJwrlaECTEFYUdM1fxPbbZls1yZcjPKT58XNt69NovnS0a0YXj9YirPod8Ue+ntHS72XkA59k6Vv4sb5e7sna0tCy5GzNOhXPjXheVZiOwU+Vk4n2dmPEn7XVN78fJijPDaAOoFtL+NCNEEb6Po9P4FJJIW+pYnAAA=</Resource>
+    </Resources>
+  </Stylesheet>
+  <Master
+    Image="(none)" />
+  <Browser>
+    <SmallFavicon
+      Image="favicon.ico"
+      SizePx="32 px" />
+    <MediumFavicon
+      Image="favicon.ico"
+      SizePx="32 px" />
+    <LargeFavicon
+      Image="favicon.ico"
+      SizePx="32 px" />
+  </Browser>
+  <ShortcutIcon
+    Image="favicon.ico" />
+  <Touch>
+    <TouchIcon
+      Image="favicon.ico"
+      SizePx="32 px" />
+  </Touch>
+  <Windows>
+    <MicrosoftSmallTile
+      Image="(none)" />
+    <MicrosoftMediumTile
+      Image="(none)" />
+    <MicrosoftWideTile
+      Image="(none)" />
+    <MicrosoftLargeTile
+      Image="(none)" />
+  </Windows>
+  <Strings />
+</CatapultSkin>

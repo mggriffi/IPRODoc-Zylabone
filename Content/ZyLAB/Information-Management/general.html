@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2_951662406" data-has-heading-anchor="true">General</h2>
+        <p>Before security can be set, users have to be added to a user database. This database is located at ~\Program Files\ZyLAB\Information Management Platform\Users. User groups will be defined in the groups database, and in the group profiles database will be defined in which NT groups a certain user is located. After a fresh installation these databases are empty and can be filled with the Security tab in ZyINDEX. Underneath the Security tab folders can be found in which the users/groups can be imported, created and the identities of the users can be defined. </p>
+        <p>Default user roles are created, which can be used or adjusted to fit your needs. </p>
+        <p>During installation you can choose between five types of security:</p>
+        <p>No ZyLAB Security: standard network access only</p>
+        <p>Advanced Server: Import user (groups) from the NT domain<br />An anonymous user account enables you to access the databases and add your own user (groups).</p>
+        <p>Advanced Server: Enter your own user (groups)</p>
+        <p>Advanced Client: Use existing database (NT domain)</p>
+        <p>Advanced Client: Use existing database (own user groups)</p>
+        <p>The first option does not install security. If you are no Domain Administrator, you choose for Advanced Server: Import user (groups) from the NT domain. The 4th and 5th option both assume a working security database is in place.</p>
+        <p>&#160;</p>
+        <h3 id="h3_681682073" data-has-heading-anchor="true">Settings</h3>
+        <p>Before you start using ZyLAB Security, walk through some basic settings.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select ZyINDEX &gt; Security <img src="../../Storage/zylab-information-management-publication/general-img0001.png" width="28" height="32" alt="" /> (or in ZyLAB Web Client click the Admin &gt; Security menu).</li>
+            <li>Go to General &gt; Settings.</li>
+            <li>If you want to enable Functional Security, select On. A folder with two subfolders will appear in the tree structure. Here you can add security to (functions of) ZySCAN, ZyINDEX, ZyFIND, ZyLAB Web Client and ZyALERT. For more information, see Functional Security (page <a href="functional-application-security.html#O_1522">217</a>) and Functional (Application) Security (page <a href="functional-application-security.html#O_3995">216</a>).</li>
+            <li>If you want to automatically import NT users (and groups), select On.</li>
+        </ol>
+        <ul>
+            <li>If you only want to import NT users from existing NT groups, select the check box.</li>
+        </ul>
+        <ol start="5">
+            <li>Default Refresh Time (the default time after which newly created or imported users will be expired) may be set on </li>
+        </ol>
+        <ul>
+            <li>No caching<br />Each time a user performs an action in ZyINDEX, ZySCAN and ZyFIND, his account will be checked on the network. Information about the account, will not be saved. However, this will slow down performances. It is the opposite of ‘Never’, where the account will never be checked and exists with no time limit.</li>
+            <li>Minute</li>
+            <li>Hour</li>
+            <li>Day </li>
+            <li>Week</li>
+            <li>Month</li>
+            <li>Never</li>
+        </ul>
+        <ol start="6">
+            <li>If you want users to renew their session (enter username and password) on the Web Client after a certain time frame, select a time frame for Webserver Session Timeout from the dropdown listbox. </li>
+            <li>If you want to be able to send email (PIN codes) via an external server, define the SMTP server. For example, 01.companyname.wan. If no SMTP server is defined, the current machine will be used as SMTP server. If you want to send PIN codes, select that option. PIN codes can be sent either locally (for example, IIS), or via an external server specified in the field above. </li>
+            <li>When you are finished, choose one of the following options:</li>
+        </ol>
+        <ul>
+            <li>If you changed some settings, click Update.</li>
+            <li>If you want to restore the default settings, click Reset.</li>
+            <li>If you want to define settings for users and groups, click Advanced Actions.</li>
+        </ul>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You updated or restored the basic settings.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>Each time the Settings are adjusted, the settings.xml file will be modified, thereby encrypting the passwords.</p>
+        <p>&#160;</p>
+        <h3 id="h3_918910211" data-has-heading-anchor="true">Advanced Actions</h3>
+        <p>In this dialog, you can:</p>
+        <p>Update expire date to one day for "All imported NT users" or "All other users"</p>
+        <p>Create NT groups</p>
+        <p>Import all NT groups</p>
+        <p>Restore subgroups relations</p>
+        <p>Apply NTFS on install directory</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 id="h3_2071547954" data-has-heading-anchor="true">Groups</h3>
+        <h3 id="h3_58188945" data-has-heading-anchor="true">Import Groups</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Security is open (or in the ZyLAB Web Client page select the menu Admin &gt; Security). </p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to General &gt; Groups &gt; Import Groups.</li>
+            <li>Select one of the following options from the Source dropdown listbox:</li>
+        </ol>
+        <ul>
+            <li>WinNT<br />If you want to import Windows NT groups through a domain.<br />Working in a network domain, the network administrator already defined for each group a name with security policies. Members of the group log on to the network using this account and they will be able to navigate over the network. Drives or directories that are secured for this group cannot be visited or opened.</li>
+            <li>ZyLAB<br />If you want to import groups through (known) ZyLAB groups.</li>
+            <li>Active Directory<br />If you want to import groups through distributed networking environments.</li>
+        </ul>
+        <ol start="3">
+            <li>If you selected </li>
+        </ol>
+        <ul>
+            <li>WinNT, select a Domain from the dropdown listbox.<br />If you have multiple domains, only trusted domains from the domain your machine is in will be known to the application. If therefore your group domain is not listed, you could opt for another source, or you can manually create groups (see Create, Edit or Delete Groups (page <a href="general.html#O_3925">169</a>)).</li>
+            <li>ZyLAB, select a Table (database) from the dropdown listbox.</li>
+            <li>Active Directory, select an Organizational Unit from the dropdown listbox.</li>
+        </ul>
+        <ol start="4">
+            <li>Select groups from the list, and click Import, or, to import all groups, click Import All.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have imported groups.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>Whenever you import users/groups from AD (or even RMA) you should adjust the settings.xml (default settings.xml looks at ZyLAB Active Directory).</p>
+        <p>&#160;</p>
+        <h3 id="h3__1429264830" data-has-heading-anchor="true">Create, Edit or Delete Groups</h3>
+        <p>After you have created one or more users, you can add them to a group. Users can be added to the default ZyLAB User Groups, or you can create new groups.</p>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Security is open. </p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to General &gt; Groups &gt; Available Groups.<br />An overview of all available (default ZyLAB) groups is shown.</li>
+            <li>Click Create.</li>
+            <li>Define an account name.</li>
+            <li>Click Create.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a new group. Now, users can be added. </p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>To change the name of a group, select it, and click the "Change the name for this group" icon: <img src="../../Storage/zylab-information-management-publication/general-img0002.png" width="21" height="19" alt="" />. Change the name, and click OK.</p>
+        <p>To delete a group, select it, and click the "Delete this group" icon: <img src="../../Storage/zylab-information-management-publication/general-img0003.png" width="21" height="20" alt="" />. Click OK.</p>
+        <p>Optimize database is a technical solution, and is not recommended for frequent use. You can use it to minimize the size of the ZyLAB user database, after major changes.</p>
+        <p>&#160;</p>
+        <h3 id="h3__198279515" data-has-heading-anchor="true">Add users using a name list</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Security is open. You have created a group. You want add users to groups by selecting them one by one from a name list. </p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to Security &gt; Groups &gt; Available groups.</li>
+            <li>Select the correct group.</li>
+            <li>Click the "Select users to be member of this group" icon: <img src="../../Storage/zylab-information-management-publication/general-img0004.png" width="19" height="19" alt="" />.</li>
+            <li>Select one or more users (members).</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have added users by selecting them one by one.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1454089566" data-has-heading-anchor="true">Add users dynamically</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Security is open. You have created a group. You want to dynamically add users to groups by selecting them with a template or query based on field values.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to Security &gt; Groups &gt; Available groups.</li>
+            <li>Select the correct group.</li>
+            <li>Click the "Define templates or queries to dynamically add users to this group" icon: <img src="../../Storage/zylab-information-management-publication/general-img0005.png" width="21" height="19" alt="" />.</li>
+            <li>Click Create (or Create with user fields)</li>
+            <li>Select one or more fields and define the values you want to use to create a group. For example, for Field 'Department' enter the Value 'sales'. Now, every user with Value 'sales' (see Create users (page <a href="general.html#O_3930">180</a>)) will be added to the User group.</li>
+            <li>Click OK.</li>
+            <li>Click Close.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have dynamically added users by selecting them with a query (based on field values).</p>
+        <p>&#160;</p>
+        <h3 id="h3_1305195073" data-has-heading-anchor="true">Add subgroups</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Security is open. Groups are created. You want to add subgroups.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to Security &gt; Groups &gt; Available groups.</li>
+            <li>Select the correct group.</li>
+            <li>Click the "Add and remove subgroups" icon: <img src="../../Storage/zylab-information-management-publication/general-img0006.png" width="20" height="19" alt="" />.</li>
+            <li>Select one or more groups (subgroups).</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have added users by selecting groups (subgroups).</p>
+        <p>&#160;</p>
+        <h3 id="h3_1635597370" data-has-heading-anchor="true">Users</h3>
+        <h3 id="h3__1977197345" data-has-heading-anchor="true">Import Users</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>One of the first steps in Security is to import or create users. There are two default users, the anonymous and the administrator. One user is created for you, so that you can manage the accounts. If that is not done yet, you can follow the steps below to import yourself (and other users).</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX &gt; Security (or in ZyLAB Web Client click the menu Admin &gt; Security).</li>
+            <li>Go to General &gt; Users &gt; Import Users.</li>
+            <li>Select one of the following options from the Source dropdown listbox:</li>
+        </ol>
+        <ul>
+            <li>RMA<br />If you want to import users through the Records Management Application.</li>
+            <li>WinNT<br />If you want to import Windows NT users through a domain.<br />Working in a network domain, the network administrator already defined for each user an account name with security policies. Users log on to the network using this account and they will be able to navigate over the network. Drives or directories that are secured for this user cannot be visited or opened.</li>
+            <li>XML<br />If you want to import users through an XML list.</li>
+            <li>ZyLAB<br />If you want to import users through (known) ZyLAB users.</li>
+            <li>Active Directory<br />If you want to import users through distributed networking environments.</li>
+        </ul>
+        <ol start="4">
+            <li>If you selected </li>
+        </ol>
+        <ul>
+            <li>RMA, select a Location from the dropdown listbox.</li>
+            <li>WinNT, select a Domain from the dropdown listbox.<br />In case you have multiple domains, only trusted domains from the domain your machine is in, will be known to the application. If therefore your user domain is not listed, you could opt for other user types, like import from a XML file, or you can manually key in users (see Create users (page <a href="general.html#O_3930">180</a>)). </li>
+            <li>XML, select a File from the dropdown listbox.</li>
+            <li>ZyLAB, select a Table (database) from the dropdown listbox.</li>
+            <li>Active Directory, select an Organizational Unit from the dropdown listbox.</li>
+        </ul>
+        <ol start="5">
+            <li>Select individual users from the list.</li>
+            <li>Click Import user(s).</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You imported users through the RMA, a Windows NT domain, a XML file or a ZyLAB table.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>The authentication of the users will be done automatically with use of the NT domain security settings. The users and groups used for the NTFS security has to be NT based otherwise the authentication will not work. Also see, ZyNETLogin: Import Windows NT users (page <a href="general.html#O_3935">175</a>).</p>
+        <p>Whenever you import users/groups from AD (or even RMA) you should adjust the settings.xml (default settings.xml looks at ZyLAB Active Directory).</p>
+        <p>&#160;</p>
+        <h3 id="h3__456742817" data-has-heading-anchor="true">ZyNETLogin: Import Windows NT users</h3>
+        <p>ZyNETLogin enables you to authenticate users by using integrated or basic clear text authentication. This will allow you to import Windows NT users, without manually adding (new) passwords to the ZyLAB User tables, while still keeping a firm security policy in place. If a user is authenticated, then ZyNETLogin generates a cookie using the random password that was generated for the user when the account was imported. This cookie and a login page is submitted to the client which can then automatically logon to the Web Client. The webserver zynet.exe is running in anonymous mode as a user that has full permissions to access the indexes and data.</p>
+        <p>ZyNETLogin gets you authenticated on the domain, takes your username, searches the name in the User table, and gets the password you have in ZyINDEX. It encodes the password and username in the cookie and hands over the cookie. Then it goes to the default login page for automatic login. As you see it does not matter what password you use for the user.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to Start &gt; Settings &gt; Control Panel &gt; Administrative Tools &gt; Internet Information Services (IIS).</li>
+            <li>Right click the Websites folder and select Properties.</li>
+            <li>Select the Directory Security tab.</li>
+            <li>Click Edit.</li>
+            <li>Select as the Authentication method (Anonymous and) Integrated Windows Authentication, and click OK.<br />If selecting Anonymous:</li>
+        </ol>
+        <ol start="1">
+            <li>Select the Exe folder.</li>
+            <li>In the right pane right click ZyNETLogin.exe. </li>
+            <li>Select Properties. </li>
+            <li>Select the File Security tab. </li>
+            <li>Select Edit.</li>
+            <li>Select just Integrated Windows Authentication.</li>
+            <li>Click OK twice.</li>
+        </ol>
+        <ol start="6">
+            <li>Import users from WinNT/Domain to ZyINDEX. <br />For more information, see Import users (page <a href="general.html#O_3929">173</a>).</li>
+            <li>Apply rights as necessary: webclient, indexes, data, ZyFILES, OS files, etc.</li>
+            <li>Create a new Webclient:</li>
+        </ol>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Webclient</li>
+            <li>Go to File &gt; New.</li>
+            <li>Define the Long Client Name, HTTP alias, client email address (for example, support@...com)</li>
+            <li>Click OK.</li>
+        </ol>
+        <ol start="9">
+            <li>Select the Indexes folder, and click Select.</li>
+            <li>Select one or more indexes, and click OK.</li>
+            <li>Add users to the Webclient:</li>
+        </ol>
+        <ol start="1">
+            <li>Select User Roles &gt; Administrator.</li>
+            <li>Deselect "Inherit from ZyLAB roles".</li>
+            <li>Select ZyLAB_Administrators, and click Delete.</li>
+            <li>Click Add.</li>
+            <li>Select a user or user group, and click OK.</li>
+            <li>Repeat step d and e to add more users or groups.</li>
+            <li>Delete the standard (inherited) user groups for Editor, User and Guest.</li>
+        </ol>
+        <ol start="12">
+            <li>Select the Templates folder, and select Advanced Security from the dropdown listbox.</li>
+            <li>Click Yes, click Apply, click Yes.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>If ZyNET or ZyNETlogin (advanced security) is running in integrated authentication mode in IIS, users that are members from imported LDAP groups are not automatically imported in ZyLAB security based on their group membership when they perform an automatic login action to access a WebClient (This information applies to: ZyINDEX Security, Version V5.0 SP4c).</p>
+        <p>For more information on how to solve this, see Knowledge Base article PZ01713.</p>
+        <p>&#160;</p>
+        <h3 id="h3_320418512" data-has-heading-anchor="true">Automatic user import from LDAP groups</h3>
+        <h4 data-has-heading-anchor="true">
+			Problem</h4>
+        <p>Users in groups imported from an active directory using WinNT or LDAP are not authenticated at logon. </p>
+        <p>When an active directory group is imported in ZyLAB security users, that group is not authenticated and added to the ZyLAB security user database. <br /></p>
+        <p>When a LDAP group is imported a member of this group that is logged on as the current logged is not authenticated by ZyLAB security. <br />If the ‘Automatic logon’ setting is active in ZyLAB security (General/Settings) users in LDAP groups should be automatically imported in the ZyLAB security users database from the LDAP group directory when logging on to a WebClient (Automatic login) or starting a ZyLAB windows application. <br /></p>
+        <p>This is not happening, users are not imported and thereby authenticated as an anonymous user account that can result in denied access permissions.</p>
+        <h4 data-has-heading-anchor="true">
+			Solution</h4>
+        <p>If you want to setup import from active directory, you have to complete the "activedirectory" attribute (marked with green). If it appears you can automatically import or refresh a user when logging in using 'basic clear text' authentication but not when using 'integrated windows' authentication, then probably you have to configure a special user and password which has rights to access the active directory (marked blue).</p>
+        <p data-has-heading-anchor="true">
+			How to configure ZyLAB LDAP integration to import users and LDAP groups from an active directory to support users to be automatically imported from imported LDAP groups on logon.</p>
+        <p>When a LDAP group is imported, a member of this group who is logged on as the current logged can be authenticated by ZyLAB security. In case the ‘Automatic NT Import’ setting is active in ZyINDEX Security &gt; General &gt; Settings, users in LDAP groups can be automatically imported in the ZyLAB security users database from the LDAP group directory when logging on to a WebClient (Automatic login) or starting a ZyLAB windows application.<br /></p>
+        <p>To do so you must specify the active directory domain name you want to connect to in the settings.xml file, which can be found in the ZyLAB\Users folder.</p>
+        <ol start="1">
+            <li>Go to the ‘Domains’ section, which is the first configurable section in the settings.xml:<br /><br />Example:<br />&lt;settings id="Domains" activedirectory="LDAP://domainname/DC=domain name,DC=domain extention"&gt;</li>
+            <li>Add in the ‘domain name’ section the name of the domain you want to connect to.<br />This is the domain name without the domain extension. </li>
+            <li>In order to retrieve active directory information you need to query the domain, to do so you must specify the separate domain components (DC’s) in the LDAP connection path. <br />(There are freeware tool available to retrieve LDAP paths (DC’s etcetera) and many more LDAP compliant properties from the active directory.)<br />A domain can consist of multiple DC’s for example SAMPLEDOMAIN and WAN these are two domain components in the full domain name: ‘sampledomain.wan’.<br />Add the DC strings next to the domain name separated by commas in the “Domains” section.<br /><br />Example: <br />&lt;settings id="Domains"activedirectory="LDAP://sampledomain/DC= sampledomain,DC=wan "&gt;</li>
+            <li>Leave the WinNT string as it is, it is not required to configure a WinNT import source when you are using LDAP import.<br /><br />Example: <br />&lt;source id="WinNT://SAMPLEDOMAIN"&gt;SAMPLEDOMAIN&lt;/source&gt; </li>
+            <li>To connect to an organizational unit in the active directory in order to retrieve the actual users accounts/groups it contains you need to query the LDAP domain with the /OU argument (organizational unit).<br />In order to do so you need to specify the organizational unit to be queried (for example the organizational unit in England: SAMPLEDOMAINUK) followed by the domain components that have to be specified in separate domain component strings DC’s.<br />It is possible to retrieve more than one organizational unit from a LDAP source.</li>
+            <li>Add the OU connection strings in the ‘Active Directory|Organizational Units’ section:<br /><br />Example: <br />- &lt;settings id="Active Directory|Organizational Units"&gt;&lt;source id="LDAP://SAMPLEDOMAIN/OU=SAMPLEDOMAINUK,DC=SAMPLEDOMAIN,DC=WAN"&gt;England&lt;/source&gt;<br />&lt;/settings&gt;<br /><br />(Between the angle quotation marks you can find the name that is displayed in the organizational unit selection list in ZyLAB security for example ‘England’.)</li>
+            <li>In case required you can authenticate to the LDAP directory by specifying your users name and password.<br />Add this authentication line as the first line in the ‘Active Directory|Organizational Units’ section:<br /><br />Example: <br />&lt;source id="LDAP://SAMPLEDOMAIN" username="SAMPLEDOMAIN\JOHN" password="mypassword"/&gt;</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>If ZyNET or ZyNETlogin (advanced security) is running in integrated authentication mode in IIS, users that are members from imported LDAP groups are not automatically imported in ZyLAB security based on their group membership when they perform an automatic login action to access a WebClient (This information applies to: ZyINDEX Security, Version V5.0 SP4c).</p>
+        <p>For more information on how to solve this, see Knowledge Base article PZ01713</p>
+        <p>&#160;</p>
+        <h3 id="h3__947470170" data-has-heading-anchor="true">Create Users</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX is open.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Click the Security icon: <img src="../../Storage/zylab-information-management-publication/general-img0001.png" width="28" height="32" alt="" />.</li>
+            <li>Go to General &gt; Users &gt; Available Users.<br />An overview of all available (default ZyLAB) users is shown.</li>
+            <li>Click Create.</li>
+            <li>Define an Account name.</li>
+            <li>Define the Fullname.</li>
+            <p>When auditing, this full username will be registered in the Audit trail, and used for logging the user.</p>
+            <li>Click Create. </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a user.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>Two important options are to Reload or Refresh user(s) from the original source. This makes sure that all user properties are synchronized. Reload will check if the user is still present in the domain, and if so, update the expiration date. Refresh will check if there are any modifications. Changes that are made to users via WinNT will be updated. </p>
+        <p>Optimize database is a technical solution, and is not recommended for frequent use. You can use it to minimize the size of the ZyLAB user database, after major changes.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1889365734" data-has-heading-anchor="true">Define User Identities</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>The identities of users can be defined by adding values to relevant user fields, such as Company, Department, Address, etc.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>In ZyINDEX &gt; Security, select Users &gt; Available Users.</li>
+            <li>Select a user.</li>
+            <li>Select Edit user fields <img src="../../Storage/zylab-information-management-publication/general-img0007.png" width="18" height="18" alt="" />.</li>
+            <li>Fill out/edit the (relevant) fields.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have added/edited information about the identity of a user.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>In the ZyLAB user groups the added information can be used to base queries on and store the results of the query in a user group. For instance, create a couple of new users with in the department field the value sales. They will become a member of the sales group (if the sales group is defined of course).</p>
+        <p>Two important options are to Reload or Refresh user(s) from the original source. This makes sure that all user properties are synchronized. Reload will check if the user is still present in the domain, and if so, update the expiration date. Refresh will check if there are any modifications. Changes that are made to users via WinNT will be updated. </p>
+        <p>Optimize database is a technical solution, and is not recommended for frequent use. You can use it to minimize the size of the ZyLAB user database after major changes.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1523480865" data-has-heading-anchor="true">View User Properties</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to view the user properties of a user.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>In ZyINDEX &gt; Security, select Users &gt; Available Users.</li>
+            <li>Select a user.</li>
+            <li>Select User properties: date created/modified/expired <img src="../../Storage/zylab-information-management-publication/general-img0008.png" width="18" height="18" alt="" />.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have viewed the user properties of a user.</p>
+        <p>&#160;</p>
+        <h3 id="h3_378202035" data-has-heading-anchor="true">Add/change password</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>In ZyINDEX &gt; Security, select Users &gt; Available Users.</li>
+            <li>Select a user from the list.</li>
+            <li>Select Set user password <img src="../../Storage/zylab-information-management-publication/general-img0009.png" width="20" height="17" alt="" />.</li>
+            <li>Define a (new) password and repeat it.</li>
+            <li>Click Change password.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created/changed the password.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>This User/Password combination will be used in ZyINDEX, and is different from the domain password.</p>
+        <h5 id="h5_793088427" data-has-heading-anchor="true">
+			Difference between passwords and PIN codes</h5>
+        <p>Every user in ZyINDEX can have a PIN code, but imported users preferably do not have a ZyINDEX password.</p>
+        <p>PIN codes are saved in another way than passwords. PIN codes are essential for the use of digital signatures. If a user signs with a different PIN code, this will result in a different signature. Therefore, an overview of old PIN codes (and their users) is kept, so also signatures set with old PIN codes can be checked for authenticity.</p>
+        <p>Users receive a certificate that their PIN code is submitted by ZyLAB. </p>
+        <p>&#160;</p>
+        <h3 id="h3_223221195" data-has-heading-anchor="true">Create/change PIN code</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to create a PIN code for a user, so he can get access to documents with Digital Signature fields (for example in Modules &gt; Workflow (see the ZyLAB Workflow manual &gt; Security (page <a href="configuration-zylab-workflow.html#O_7017">269</a>) &gt; Digital Signature (page <a href="configuration-zylab-workflow.html#O_6712">271</a>))).</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Security.</li>
+            <li>Select General &gt; Users &gt; Available Users.</li>
+            <li>Select a user.</li>
+            <li>Click the "Generate a new PIN code for the user" button <img src="../../Storage/zylab-information-management-publication/general-img0010.png" width="18" height="18" alt="" />.</li>
+            <li>Determine if the user should have a 4 or 6 digit PIN code. <br />A 6 digit PIN code is safer, but a 4 digit PIN code is easier to remember.</li>
+            <li>Determine the expiration time (number of days valid) of the pincode.</li>
+            <li>Fill out the email address of the user. <br />An email will be sent to the user with the PIN code in the subject line.</li>
+            <li>Fill out the email address of the sender.<br />This can be a random address.</li>
+            <li>Click Generate.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have generated a PIN code for a specific user.</p>
+        <h5 id="h5__321077680" data-has-heading-anchor="true">
+			Difference between passwords and PIN codes</h5>
+        <p>Every user in ZyINDEX can have a PIN code, but imported users preferably do not have a ZyINDEX password.</p>
+        <p>PIN codes are saved in another way than passwords. PIN codes are essential for the use of digital signatures. If a user signs with a different PIN code, this will result in a different signature. Therefore, an overview of old PIN codes (and their users) is kept, so also signatures set with old PIN codes can be checked on authenticity.</p>
+        <p>Users receive a certificate that their PIN code is submitted by ZyINDEX. </p>
+        <p>&#160;</p>
+        <h3 id="h3_899759450" data-has-heading-anchor="true">Remove Users</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>In ZyINDEX &gt; Security, select Users &gt; Available Users.</li>
+            <li>Select a user from the list.</li>
+            <li>Select Delete this user <img src="../../Storage/zylab-information-management-publication/general-img0003.png" width="21" height="20" alt="" />.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You removed a user from the ZyINDEX Users list.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1869183341" data-has-heading-anchor="true">Search Users/Groups</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to search on a specific user or group name.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Security.</li>
+            <li>Select Security &gt; General &gt; Groups (or Users) &gt; Import Groups (or Users).</li>
+            <li>Select as Source, from the dropdown listbox, the Active Directory.</li>
+            <li>Select an Organizational Unit.</li>
+            <li>Click on the Search User/Group icon <img src="../../Storage/zylab-information-management-publication/general-img0005.png" width="21" height="19" alt="" />.<br />The Active Directory Search dialog appears.</li>
+            <li>Define a search value.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have searched on a specific user or group name.</p>
+        <p>&#160;</p>
+        <h3 id="h3__573916188" data-has-heading-anchor="true">Expand this level/recursively</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to search for users/groups on a specific part of an organizational unit.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Security.</li>
+            <li>Select Security &gt; General &gt; Groups (or Users) &gt; Import Groups (or Users).</li>
+            <li>Select as Source, from the dropdown listbox, the Active Directory.</li>
+            <li>Select an Organizational Unit. For example, Sales.</li>
+            <li>If you want to expand the level of the selected Organizational Unit, click the Expand this level icon. This will result in, for example, the sublevels Sales UK, Sales US, and Sales Europe. To view the sublevels, select the dropdown listbox Organizational Unit.</li>
+            <li>If you want to expand once more, click the Expand recursively icon. This will result in, for example, the sublevels Sales Netherlands, Sales Germany, Sales France (for the sublevel Sales Europe).</li>
+            <p>If you want to return to the previous level, select the Expand this level icon again. </p>
+            <li>Select the (sub)level you want to search, via the dropdown listbox Organizational Unit.</li>
+            <li>Click the Load button.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have searched for users/groups on a specific part of an organizational unit.</p>
+        <p>&#160;</p>
+        <h3 id="h3_440178591" data-has-heading-anchor="true">XML Backup</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to backup or restore users, groups and/or profiles.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Security.</li>
+            <li>In the General folder, select XML Backup.<br />The Security XML Backup screen appears.<br /><img src="../../Storage/zylab-information-management-publication/general-img0011.png" width="642" height="401" alt="" class="Thumbnail" /></li>
+            <li>Define the Object Types you want to backup/restore. Choose from:</li>
+        </ol>
+        <ul>
+            <li>Users</li>
+            <li>Groups</li>
+            <li>Profiles<br />Profiles describe the relations between users and groups (memberships as well as sub-group relations). For example, define for a user the groups of which he is a member via Available users &gt; Edit group memberships for this user <img src="../../Storage/zylab-information-management-publication/general-img0004.png" width="19" height="19" alt="" /></li>
+        </ul>
+        <ol start="4">
+            <li>To backup (export) to an XML file, define the file you want to export to, and click Backup.</li>
+        </ol>
+        <ul>
+            <li>Overwrite existing file<br />During backup an existing XML file will be replaced.</li>
+            <li>Keep original object id's<br />Each object has its own unique ID number, a GUID (for example, {A85924EA-A572-4F92-B454-A1F76F118C44}). By default, this number will be backup to allow occurrences of the same number in the database (possible if an object with saved GUIDs is imported twice). A user may, for example, appear in more than one group.</li>
+        </ul>
+        <ol start="5">
+            <li>To restore (import) objects from an XML file, select the file you want to import from the dropdown listbox, and click Restore.</li>
+            <p>You can also choose to delete a (backed up) XML file, if it has become obsolete.</p>
+        </ol>
+        <ul>
+            <li>Assign original object id's (if possible)<br />Only possible, if you kept the original object id's.</li>
+            <li>Restore all objects present in the file (selected object types will be ignored)<br />If this option is selected, you do not have to choose the objects to import. </li>
+            <li>Replace existing objects (warning: existing data will be permanently deleted!)<br />Every table in which objects are imported, are cleaned first.</li>
+        </ul>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have backed up and/or restored users, groups and/or profiles.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1903653120" data-has-heading-anchor="true">About Audit Trail</h3>
+        <p>The Audit Trail module stores in an XML file all user activities such as searching, viewing and editing documents and opening, deleting and building indexes. Every user action performed on the audited index creates XML files containing information on the action, the user, etc. You can select the activities you want to store in the XML file. With ZyLAB you are able to index and search all these XML files and view the activities the users have performed.</p>
+        <p>Once a user (administrator) enables Audit Trail in ZyINDEX, all user actions performed on the chosen index will be logged (when selected) by the Audit trail, including ZyFIND, ZyINDEX and ZySCAN actions. By default, the module audits 43 actions, but an administrator can enable or disable individual Audit trail actions. </p>
+        <p>Audit trail generates a new XML document for every selected Audit action performed by a user to store the log data. These XML files are stored (by default) in folders in the directory ~\\ZyLAB Data\Index Data\&lt;&lt;short name&gt;&gt;\XML by a Hash Table system to minimize the retrieval time. This means that ZyINDEX in the beginning will create a new folder for every new XML document and starts filling the folders afterwards. </p>
+        <p>As mentioned, every selected Audit action that a user performs will generate an XML document containing the logged information. The name of the XML file is a GUID (Global Unique ID). All extra information about the XML file is stored in a database. This database can be found in the index directory (\\ZyLAB Data\Indexes\&lt;&lt;short name&gt;&gt;\ZxpPlugins\audit) and is called AUDIT.dbf. Much information is logged in this database and are linked with the XML files due to the GUID. Some examples are: User, Computer name, date and time, index name, file name, Guid, Application. For more information about the data that can be logged, see Retrieve Audit Trail data (page <a href="general.html#O_3467">193</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3_1637024986" data-has-heading-anchor="true">Create an Audit Trail index</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX &gt; Build.</li>
+            <li>Go to File &gt; New.</li>
+            <li>Enter a Short name (for example, Audit).</li>
+            <li>Enter a Long name (for example, Audit Trail Index).</li>
+            <li>Select Audit trail database.</li>
+            <li>Click OK.</li>
+            <li>An Audit trail index contains 12 fields by default. To be able to search on these fields in ZyFIND, do the following:</li>
+        </ol>
+        <ol start="1">
+            <li>Select Define Fields <img src="../../Storage/zylab-information-management-publication/general-img0012.png" width="15" height="16" alt="" />.</li>
+            <li>Select a field.</li>
+            <li>Select Edit definition.</li>
+            <li>Select the Search tab.</li>
+            <li>Select Add to index.</li>
+            <li>Click OK.</li>
+            <li>Repeat steps a to f for every field you want users to be able to search on.</li>
+            <li>Click OK.</li>
+        </ol>
+        <ol start="8">
+            <li>Build the index once: Click Build &gt; Now (blue triangle) &gt; Go &gt; OK.<br />The Audit Trail index is built and ready to store all actions for specific indexes.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>The user has to enable Audit in ZyINDEX and select the Audit Trail index to be used to log audit actions, and to select the Indexes and Jobs that must be audited. See Enable Audit Trail (page <a href="general.html#O_3944">192</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3__1883543746" data-has-heading-anchor="true">Enable Audit Trail</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX &gt; Build.</li>
+            <li>Open the index you want to audit.</li>
+            <li>Click on Index Settings <img src="../../Storage/zylab-information-management-publication/general-img0013.png" width="18" height="15" alt="" /> and select the Settings tab. </li>
+            <li>Make sure the Audit option is selected. </li>
+            <li>Click OK.<br />Now all actions related to this index will be audited.</li>
+            <li>Go to ZyINDEX &gt; Security &gt; General &gt; Audit Trail.</li>
+            <li>Select Enable Audit Trail.</li>
+            <li>Select an Audit Trail index from the dropdown listbox.</li>
+            <li>Click Save.</li>
+            <li>Deselect the actions you do not want to Audit.</li>
+            <li>If you want to enable Audit trail in one or more indexes, click the Indexes button.</li>
+        </ol>
+        <ul>
+            <li>Select the indexes you want to Audit.</li>
+            <li>Click OK.</li>
+        </ul>
+        <ol start="12">
+            <li>If you want to enable Audit trail in one or more job templates, click the Job Templates button.</li>
+        </ol>
+        <ul>
+            <li>Make sure that the job templates you want to Audit are selected.</li>
+            <li>Click OK.</li>
+        </ul>
+        <ol start="13">
+            <li>Click Save.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>Your actions on the selected indexes and job templates will now be saved in the Audit Trail index.</p>
+        <p>You can use ZyTIMERService and Quickbuild to build the Audit Trail index every 10 minutes.</p>
+        <p>&#160;</p>
+        <h3 id="h3_468641933" data-has-heading-anchor="true">Retrieve Audit Trail data</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX and build your Audit Trail index.</li>
+            <li>Start ZyFIND.</li>
+            <li>Go to File &gt; Select Index(es) &gt; Audit Trail tab.</li>
+            <li>Select the Audit Trail index.</li>
+            <li>Click OK.</li>
+            <li>Search for EOD and select 'Search Audits'.<br />This will list all Audit Trails. </li>
+            <p>If a normal search is done on the Audit Trail index, you will receive a result list that is filled with XML files that contain the logged document actions done by the users.</p>
+            <li>Open one of the results. The contents will be similar to the following example:</li>
+        </ol>
+        <p>&lt;ID&gt;{BB1A09AF-98F9-4225-A5CB-68D125C087F7}&lt;/ID&gt;<br />&lt;TYPE&gt;11&lt;/TYPE&gt;<br />&lt;APP&gt;ZYFIND.EXE&lt;/APP&gt;<br />&lt;DATE&gt;Wish lists.xls&lt;/DATE&gt;<br />&lt;USER&gt;ZYLAB\Gerry as ZyLAB Anonymous User {9B2473D0-4FC5-1348-AA20-D1FEDF5E629C}&lt;/USER&gt;<br />&lt;COMPUTER&gt;ZYNLWS0230&lt;/COMPUTER&gt;<br />&lt;DOCNAME&gt;Wish lists.xls&lt;/DOCNAME&gt;<br />&lt;DOCPATH&gt;C:\TEMP\CULLING INPUT\&lt;/DOCPATH&gt;<br />&lt;INDXNAME&gt;&lt;/INDXNAME&gt;<br />&lt;INDXPATH&gt;C:\ZyLAB Data\Indexes\ZyEXAMPL&lt;/INDXPATH&gt;<br />&lt;DOCFLDS&gt;</p>
+        <p>The fields displayed contain the audit trail information (see table below). These are stored in the audit database.</p>
+        <p>The additional XML file can contain more information on the event, for example the result list from ZyRESULT.</p>
+        <p>The following table shows the available fields and a description of their contents.</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="138">Field name containing logged info</td>
+                <td valign="top" width="467">Description</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">ID</td>
+                <td valign="top" width="467">Global Unique ID</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Type</td>
+                <td valign="top" width="467">The reference number of the action that was performed by the user (see he following table for a list of these numbers and their descriptions).</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Application</td>
+                <td valign="top" width="467">ZySCAN, ZyINDEX or ZyFIND</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Date</td>
+                <td valign="top" width="467">Creation date of XML log file</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">User</td>
+                <td valign="top" width="467">User whose action has been logged</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Computer</td>
+                <td valign="top" width="467">Computer that processed the action</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Document name</td>
+                <td valign="top" width="467">Document on which the action was performed by user (if applicable)</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Document Path</td>
+                <td valign="top" width="467">Path of this document</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Index name</td>
+                <td valign="top" width="467">Index on which the action was performed by user (if applicable)</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Index path</td>
+                <td valign="top" width="467">Location of this index</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Info</td>
+                <td valign="top" width="467">Additional event details, depending on type of event</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Last modification date</td>
+                <td valign="top" width="467">Last modification date of the document (if applicable)</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Filename</td>
+                <td valign="top" width="467">Name of the XML log file</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Path</td>
+                <td valign="top" width="467">Path of the XML log file</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Creation Date</td>
+                <td valign="top" width="467">Creation date of the XML log file</td>
+            </tr>
+            <tr>
+                <td valign="top" width="138">Size</td>
+                <td valign="top" width="467">Size of the XML log file</td>
+            </tr>
+        </table>
+        <p>For all ZySCAN (job template) events, the following additional information is logged as a field value: </p>
+        <p>Job name,</p>
+        <p>Job root path</p>
+        <p>Template name.</p>
+        <p>For example: &lt;job name="00000000" path="C:\ZyLAB Data\ZySCAN Jobroot" template="template.job"/&gt;</p>
+        <p>The Type number in an Audit Trail shows the action that was logged. The value of this field is shown in the result list, but in ZyVIEW the values will only be shown when you double-click the field.</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="47">Type No.</td>
+                <td valign="top" width="227">Description</td>
+                <td valign="top" width="322">What will be logged?</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">0</td>
+                <td valign="top" width="227">Search Index</td>
+                <td valign="top" width="322">The search statement(s).</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">1</td>
+                <td valign="top" width="227">Get results</td>
+                <td valign="top" width="322">The result list.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">2</td>
+                <td valign="top" width="227">Create Index</td>
+                <td valign="top" width="322">The index that was created.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">3</td>
+                <td valign="top" width="227">Delete Index</td>
+                <td valign="top" width="322">The index that was deleted.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">4</td>
+                <td valign="top" width="227">Erase Index</td>
+                <td valign="top" width="322">The index that was erased.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">5</td>
+                <td valign="top" width="227">Import index</td>
+                <td valign="top" width="322">A modification in the modfiles database.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">6</td>
+                <td valign="top" width="227">Edit document fields</td>
+                <td valign="top" width="322">Document fields that have been edited.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">7</td>
+                <td valign="top" width="227">Delete document</td>
+                <td valign="top" width="322">The document that was deleted.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">8</td>
+                <td valign="top" width="227">Merge documents</td>
+                <td valign="top" width="322">Documents that have been merged.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">9</td>
+                <td valign="top" width="227">Split document</td>
+                <td valign="top" width="322">Documents that have been split.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">10</td>
+                <td valign="top" width="227">Delete page</td>
+                <td valign="top" width="322">The page that has been deleted.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">11</td>
+                <td valign="top" width="227">View document</td>
+                <td valign="top" width="322">The document that is viewed.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">12</td>
+                <td valign="top" width="227">Export document</td>
+                <td valign="top" width="322">The document that is exported.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">13</td>
+                <td valign="top" width="227">Print document</td>
+                <td valign="top" width="322">The document that is printed.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">14</td>
+                <td valign="top" width="227">Start application</td>
+                <td valign="top" width="322">The ZyLAB application that is started.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">15</td>
+                <td valign="top" width="227">End application</td>
+                <td valign="top" width="322">The ZyLAB application that is ended.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">16</td>
+                <td valign="top" width="227">Start function</td>
+                <td valign="top" width="322">The ZyLAB function that is started.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">17</td>
+                <td valign="top" width="227">Stop function</td>
+                <td valign="top" width="322">The ZyLAB function that is stopped.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">18</td>
+                <td valign="top" width="227">Open Job</td>
+                <td valign="top" width="322">The job that is opened.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">19</td>
+                <td valign="top" width="227">Close Job</td>
+                <td valign="top" width="322">The job that is closed.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">20</td>
+                <td valign="top" width="227">Delete Job</td>
+                <td valign="top" width="322">The job that is deleted.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">21</td>
+                <td valign="top" width="227">Create New Job</td>
+                <td valign="top" width="322">The new job that is created.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">22</td>
+                <td valign="top" width="227">Create New Job template</td>
+                <td valign="top" width="322">The new job template that is created.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">23</td>
+                <td valign="top" width="227">Create document</td>
+                <td valign="top" width="322">The document that is created.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">24</td>
+                <td valign="top" width="227">Create page</td>
+                <td valign="top" width="322">The page that is created.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">25</td>
+                <td valign="top" width="227">Export page</td>
+                <td valign="top" width="322">The page that is created.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">26</td>
+                <td valign="top" width="227">Enable audit trail</td>
+                <td valign="top" width="322">Audit trail is enabled.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">27</td>
+                <td valign="top" width="227">Disable audit trail</td>
+                <td valign="top" width="322">Audit trail is disabled.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">28</td>
+                <td valign="top" width="227">Change audit trail index</td>
+                <td valign="top" width="322">The audit trail index that is changed.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">29</td>
+                <td valign="top" width="227">Change audit trail event</td>
+                <td valign="top" width="322">The audit trail event that is changed.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">30</td>
+                <td valign="top" width="227">Generate PIN code</td>
+                <td valign="top" width="322">The PIN code that is generated.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">31</td>
+                <td valign="top" width="227">Enable add document fields</td>
+                <td valign="top" width="322">Add document fields is enabled.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">32</td>
+                <td valign="top" width="227">Disable add document fields</td>
+                <td valign="top" width="322">Add document fields is disabled.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">33</td>
+                <td valign="top" width="227">Create redaction</td>
+                <td valign="top" width="322">A redaction was created</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">34</td>
+                <td valign="top" width="227">Modify redaction</td>
+                <td valign="top" width="322">A redaction was modified</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">35</td>
+                <td valign="top" width="227">Delete redaction</td>
+                <td valign="top" width="322">A redaction was deleted</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">36</td>
+                <td valign="top" width="227">Create TIFF conversion</td>
+                <td valign="top" width="322">A TIFF conversion was done</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">37</td>
+                <td valign="top" width="227">Delete TIFF conversion</td>
+                <td valign="top" width="322">A TIFF conversion was deleted</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">38</td>
+                <td valign="top" width="227">Import user group</td>
+                <td valign="top" width="322">A user group was imported</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">39</td>
+                <td valign="top" width="227">Delete user group</td>
+                <td valign="top" width="322">A user group was deleted</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">40</td>
+                <td valign="top" width="227">Change user group</td>
+                <td valign="top" width="322">A user group was changed</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">41</td>
+                <td valign="top" width="227">Change general settings</td>
+                <td valign="top" width="322">The general settings were changed</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">42</td>
+                <td valign="top" width="227">Audited: Indexes / Job Templates</td>
+                <td valign="top" width="322">Which indexes and/or job templates were audited</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">43</td>
+                <td valign="top" width="227">Change file system security</td>
+                <td valign="top" width="322">The file system security was changed</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">44</td>
+                <td valign="top" width="227">Change document security</td>
+                <td valign="top" width="322">The document security was changed</td>
+            </tr>
+            <tr>
+                <td valign="top" width="47">45</td>
+                <td valign="top" width="227">Change functional security</td>
+                <td valign="top" width="322">The functional security was changed.</td>
+            </tr>
+        </table>
+        <p>The easiest way to retrieve this log information is to press <img src="../../Storage/zylab-information-management-publication/general-img0014.png" width="51" height="46" alt="" /> in the vertical icon bar of ZyFIND.</p>
+        <p>Obviously, you can also perform full-text search queries on the Audit Trail index. Any other feature that is available for regular indexes is also supported for Audit Trail indexes. For information about the Field viewer, see Indirect (Field) Search: Retrieve Documents (page <a href="general.html#O_3468">197</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3__310064985" data-has-heading-anchor="true">Indirect (Field) Search: Retrieve Documents</h3>
+        <p>When the audit trail index is selected in ZyFIND, it is possible to search on the fields of the audit index. If you want to see the actual documents users viewed, it is possible to do an indirect search. An indirect search means that you search for every document that has been, for example, viewed and see the actual results instead of the XML files containing the name of the viewed document. Now you can see the viewed documents yourself, read the information and export or copy them. </p>
+        <p>For indirect searching you need to select not only the Audit Trail index, but also the index that contains the documents you want to view. Also, the option ‘Search Documents’ and 'With Audits' has to be enabled to do such a search (these options are available when the Audit index is selected):</p>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/general-img0015.png" width="229" height="37" alt="" />
+        </p>
+        <p>&#160;</p>
+        <h3 id="h3__1349622242" data-has-heading-anchor="true">Suppress job in Audit Trail</h3>
+        <p>It is possible to log all actions of ZySCAN which are defined in an Audit Trail index, therefore it is possible to see exactly who, and on which day, and at what time, opened a job, closed a job, deleted a job, created a new job, created a new job template, created a new text (txt/XML) file, created a new image (TIFF) file, exported an image (TIFF) file and edited fields.</p>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/general-img0016.png" width="460" height="423" alt="" class="Thumbnail" />
+        </p>
+        <p>If you want to prevent that actions performed during a job in ZySCAN are logged, select 'Suppress job in Audit Trail' when creating a job template. Using this template when processing a job deactivates the Audit Trail in ZySCAN.</p>
+        <p>If you are running a large number of jobs, it may be convenient to turn the Audit Trail off. It will prevent the accumulation of large quantities of data, which could potentially slow down system performance. </p>
+    </body>
+</html>

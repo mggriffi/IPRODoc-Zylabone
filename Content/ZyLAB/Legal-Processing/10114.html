@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Concordance Collector</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Concordance Collector';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t10114" class="heading3">
+            <MadCap:keyword term="Concordance Collector" />Concordance Collector</p>
+        <p class="bodytext">The Concordance Collector imports documents using a delimited text file, the load file (usually in the .dat format). This file contains fields that are linked to documents. When importing these documents the fields and field values from the load file are added to the metadata of the corresponding documents. </p>
+        <p class="note">A Concordance load file consists of 4 folders: DATA, IMAGES, NATIVES, and TEXT. <br /><br />The DATA folder contains two related text-delimited files, the Concordance Load File (with a .dat extension) and the Opticon Cross Reference File (with an .opt extension). The Concordance Load File contains the fielded metadata information. The Opticon Cross Reference File has one Bates Number per line and contains the paths to the images.<br /><br />The IMAGES folder contains subfolders with TIFF images files, named by Bates Number and ending with the extension .tif.<br /><br />The NATIVES folder contains native versions of files, used to generate the .tif images and .txt files.<br /><br />The TEXT folder contains single page text files containing ASCI text of processed ESI, named by Bates Number and ending with the extension .txt.</p>
+        <p class="bodytext">
+            <br />
+            <br />
+            <img id="f11934" src="../../Storage/legal-processing-publication/11934.png" alt="" height="795" width="608" vspace="0" hspace="0" align="bottom" border="0" />
+            <br />
+        </p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Concordance Format</b>
+                <br />There are three default export methods in Concordance. Select one of them (Concordance default (using the .dat format (with as Comma (020), as Quote Þ (254), and as Newline ® (174)), Comma delimited (CSV), or Tab delimited) and the <b class="specialbold">Comma</b>, <b class="specialbold">Quote</b> and <b class="specialbold">New Line</b> fields will be automatically set to the correct values. If you have set a Custom Format while exporting, set the Format option to custom and define the Comma, Quote and New Line values yourself. Please make sure to provide the same settings as the export settings.<br /><br /><b class="specialbold">First line contains header</b><br />When importing a .DAT file, there is an option to skip the first line of that file because the .dat file can contain a header row, listing the field names used in the database. If the first line is skipped, this option should also be used during collection.<br /><br />First line with the field names used in the database:<br /><code class="monospace">þbates numberþbates rangeþstart batesþend batesþ</code> etc.<br /><br />The following lines include the values for those fields:<br /><code class="monospace">þ0000000013þ0000000013:0000000013þ0000000013þ</code> etc.<br /><code class="monospace">þ0000000014þ0000000014:0000000014þ0000000014þ</code> etc.<br /><br /><b class="specialbold">Delimited file</b><br />The user should point to the exported Concordance Load File (*.dat) which contains the fielded metadata.<br /><br /><b class="specialbold">Image load file</b><br />The user should point to the Opticon Image Cross-reference file (*.opt) which contains the paths to the images. <br /><br /><b class="specialbold">Fields</b><br />Map fields (from load file fields to ZyLAB fields).<br /><p class="listnote"><b class="specialbold">Attention</b>: To see the relationship between attachments and parent documents (the families) in Legal Review, add application/zyxmltiff to the KnownFamilyTypes section of the Review.Standalone.Winservice.config file (this file can be found at \\Program Files (x86)\ZyLAB\EDiscovery\LegalReview\).<br />To prevent that the parent is missing (when you prefer natives to be collected), make sure you add application/msg to the KnownFamilyTypes section of the Review.Standalone.Winservice.config file.</p><p class="list"><br /><em class="emphasis">Field definitions</em></p><ul class="listbullet2"><li class="listbullet2"><b class="specialbold">Field name</b><br />The field names as used in the delimited and image load file. Choose which fields you want to add as meta data.</li><li class="listbullet2"><b class="specialbold">Format</b><br />Define the format of the field. Choose from None, Text, Date, DateTime</li><li class="listbullet2"><b class="specialbold">Field link</b><br />Define how the field will be linked. Choose from None, DocumentId (used to link a field from the dat file with the opt file), Link to native (natives are linked to natives), Link to parent (images (ZyXMLTiff files) are linked to images).</li><li class="listbullet2"><b class="specialbold">Metadata field name</b><br />Fieldname mapping for field in the .dat and .opt file to fields in meta data. Should also be defined in the the LegalReview template.<p class="list"><b class="specialbold">      Date Format</b><br />Date format should be set to the same format as the file is exported in from Concordance, e.g. MMDDYYYY, DDMMYY. <br /><br /><b class="specialbold">Collect images and natives</b><br />Choose between collecting 'Only images', 'Only natives' or 'Both images and natives'. </p><p class="list" /><p class="listnote">Please note that if, for a document (with file key BAT000001), both a native file and an image file (one or more TIFF pages) are present, you can either collect both the native and the image, only the image or only the native. <br />However, if for that same document (with key BAT000001) only a native file or only an image file is present, that single native or image file will be collected, no matter what selection was made for this setting. For example, if only a native file is present and you selected to collect only images, the native file will be collected.</p><p class="list"><br /><b class="specialbold">Directory file path for images</b><br />Define the path to the folder where the Concordance images were originally exported. This path (for example, C:\Program Files (x86)\LexisNexis\Concordance 10\Images\) can be found in the Opticon Cross-Reference File (*.opt). <br /><br /><b class="specialbold">Substitution path for images</b><br />The UNC path to the current images folder on your file system. You should be able to browse to this file locatioin.  <br /><br /><b class="specialbold">Directory file path for natives</b><br />Define the path to the folder that contains the native (documents). For example, C:\Program Files (x86)\LexisNexis\Concordance 10\Natives\). This path is defined in the .dat file. The field name that is used to define the path, should be present in the config file of the Concordance Collector. For example (the ZyIndexFieldName can be left empty):<br /><br /><code class="monospace">&lt;Field name="LINKTONATIVES" type="LinkToNatives" zyIndexFieldName=""/&gt;</code><br /><br /><b class="specialbold">Substitution path for natives</b><br />The UNC path to the current natives folder on your file system. You should be able to browse to it.<br /><br /><b class="specialbold">Directory file path for text files</b><br />Define the path to the folder that contains the native (documents). For example, C:\Program Files (x86)\LexisNexis\Concordance 10\Text Files\). This path is defined in the .dat file. <br /><br /><b class="specialbold">Substitution path for text files</b><br />This is the UNC path to the current text files folder on your file system. You should be able to browse to it.<br /><br /><b class="specialbold">Retrieve text files via browsing</b><br />Select this option if you want to import TXT versions of the image or native files via browsing. If you select this option, you do not have to define the Directory file and Substitution path for text files. Please make sure the TEXT folder is in the same location as the IMAGES and NATIVES folder.<br /><br /><b class="specialbold">Field name for text content</b><br />This field contains the text representation of the native file. Define the field name used in the .dat file for the text content. This field should be defined in both the config file of the Concordance Collector and the default3<em class="emphasis">n</em>.xml file.<br /><br /><b class="specialbold">Create Zyxmltiff files</b><br />Select this option if you want to create multi-page TIFF graphic files <em class="emphasis">and</em> recognize them as text using Optical Character Recognition (OCR). <br /><br /><b class="specialbold">Validate source data before adding</b><br />When selected, this option ensures that the Concordance format is checked before validation and that the user is warned if there are any mismatches.<br /></p></li></ul></li>
+            <li class="listbullet">
+                <em class="emphasis">File Types to Collect</em>
+                <br />The configured file groups are ignored, so the user should not configure any file groups.</li>
+        </ul>
+        <p class="bodytext" />
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10115.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10223.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

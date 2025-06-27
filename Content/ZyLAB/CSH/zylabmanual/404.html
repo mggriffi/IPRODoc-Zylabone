@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Styles/ADDReview_CSH.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <p class="heading1">Redaction Settings</p>
+        </div>
+        <h3>Include Redactions</h3>
+        <p><a href="https://docs.zylab.com/01/ZyLAB/ONE/443.html" target="_blank">Redactions</a> are defined during the review process. 
+			During production, the redactions to the sensitive information can be included.
+  
+  </p>
+        <h3>Redaction Appearance</h3>
+        <p>   
+    Change the appearance of the redaction. Choose from&#160;:
+</p>
+        <ul>
+            <li>
+                <p>As on document.</p>
+            </li>
+            <li>
+                <p>White with black borders.</p>
+            </li>
+            <li>
+                <p>Transparent with black borders.</p>
+            </li>
+            <li>
+                <p>Custom</p>
+                <ul>
+                    <li>
+                        <p>Specify the Fill Color, Font Color and Border Color; Select the field and adjust it.</p>
+                    </li>
+                    <li>
+                        <p>You can also make the colors transparent.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Hide Underlying Redactions when Page Redaction is Applied</h3>
+        <p>When more than one redaction has been applied to the same area, you can choose whether the underlying redaction codes are visible when running a production.</p>
+        <ul>
+            <li>
+                <p>To show only the top redaction, select the option to Enable.</p>
+                <p>
+                    <img src="../../../Resources/Images/CSH_Images/Enable button.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <h3>Include Redaction Exemptions</h3>
+        <p>     
+Reviewers may have added reasons to explain why the information has been redacted/obscured, the redaction exemption reasons. 
+These reasons can be added to the production and burned into the image.
+      
+      </p>
+        <h3>Select Position of Redaction Exemption</h3>
+        <p>     
+      
+      Choose from In left margin or On top of a redacted area.
+      </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note:</b> If redactions are added to documents produced as images, the related text files will not be produced, since it is not possible to redact text files. 
+Even if only a single word is redacted, the related text file will not be produced. 
+ Please note that fields cannot be redacted. Fields that contain text that should have been redacted should not be included in the production. Exclude those fields from the load file.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Withhold Fully Redacted Pages</h3>
+        <p>When enabled, fully redacted pages are not produced.	This prevents visual clutter and increase focus on pages containing information. When disabled, all fully redacted pages will be included in production.</p>
+        <h3>Keep Original Bates Numbers for Withheld Pages</h3>
+        <p>When enabled, withheld pages will keep the original bates numbers. Though this means that your production will contain gaps in the bates number range on the pages, the advantage is that you can rerun the production without withholding pages and still get the original bates numbers on your pages.</p>
+        <h3>Select when to use Placeholders</h3>
+        <ul>
+            <li>
+                <p>Use Placeholder for fully redacted Documents only<br />This single placeholder replaces a complete document that is being withheld.</p>
+            </li>
+            <li>
+                <p>Use Placeholder for all Withheld Pages<br />Enabling this will generate a placeholder for every range of withheld pages. One document with multiple fully redacted pages or page ranges can contain multiple placeholders.</p>
+            </li>
+        </ul>
+        <h3>Custom Placeholder Text</h3>
+        <p>			Define the message that will be displayed inside the placeholder. Press Ctrl+Space to see a list of fields to choose from.	</p>
+    </body>
+</html>

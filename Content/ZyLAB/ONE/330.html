@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Estimated Current Recalls</h1>
+        <p>The Estimated Current Recall of an <a href="319.html">issue</a> is displayed in the <a href="1030.html">Assisted Review Progress</a> tab. </p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/330-2018-03-06-1.png" alt="" class="Thumbnail" />
+        </p>
+        <p>This will help you determine&#160;if the <a href="445.html">Recall Goal</a> has been nearly reached and if you need to continue training the system, either by starting another <a href="325.html">training round</a> or by <a href="555.html">extending the Validation Set</a>.&#160;The Estimated Current Recall of an issue can only be calculated if you have added a <a href="446.html">Validation Set</a> to your project.</p>
+        <p>&#160;</p>
+        <p><b style="text-indent: 0cm;word-spacing: normal;">Estimated Current Recall</b> = <i style="text-indent: 0cm;word-spacing: normal;">#responsive found / #estimated responsive</i>&#160;</p>
+        <p><i>#responsive found</i> =&#160;total number of reviewed responsive documents in the project (including the reviewed responsive documents of the Validation Set)</p>
+        <p><i>#estimated responsive</i>&#160;=&#160;the estimated number of all responsive documents in the project&#160;</p>
+        <p>The estimated number of all responsive documents in the project =&#160;total number of documents in the project * (#responsive found in Validation Set / (#responsive found in Validation Set + #not responsive found in Validation Set))</p>
+        <p>&#160;</p>
+        <p>We perform the calculation with the numbers displayed in the graph below. The total amount of documents in the project is 175.000</p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/330-2018-03-26.png" alt="" class="Thumbnail" />
+        </p>
+        <p>Estimated Current Recall = (30.000 + 1.000) / (175.000 * (1.000 / (1.000 + 750))&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; </p>
+        <p style="text-indent: 3in;">= 31.000 / 99.750 &#160; &#160; &#160; &#160; &#160; &#160; </p>
+        <p style="text-indent: 3in;">= 0,31</p>
+        <p style="text-indent: 3in;"> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; = 31%</p>
+        <p>An Estimated Current Recall of 31% is too low if the Recall Goal has been set to 80%. Create a <a href="325.html">New Training Batch</a> or <a href="555.html">Extend Validation Set</a>. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: If you extend the Validation Set, you will extend it for all issues in the project.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

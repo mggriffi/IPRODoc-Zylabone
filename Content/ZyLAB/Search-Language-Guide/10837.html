@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Appendix A: Search Rules & Conventions';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Appendix A: Search Rules &amp; Conventions</h1>
+        <table class="CHTable" style="width: 600px;border-collapse: collapse;" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td style="width: 100%;">
+                        <table width="100%" class="layout" style="width: 100%;height: 100%;" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td id="main" valign="top" colspan="2">
+                                        <ul class="listbullet">
+                                            <li class="listbullet">
+                                                <MadCap:keyword term="Appendix A\: Search Rules &amp; Conventions" />
+            Investigate/know your data set, look at the vocabulary in ZyFIND and keep that data set in mind when designing queries.
+          </li>
+                                            <li class="listbullet">
+            Formulate your expectations and test your queries.
+          </li>
+                                            <li class="listbullet">
+            Operators are placed only between search terms, except NOT.
+          </li>
+                                            <li class="listbullet">
+            NOT can be placed at the beginning of a search statement, but never at the end.
+          </li>
+                                            <li class="listbullet">
+            Two operators cannot appear in sequence, except NOT (AND NOT, OR NOT).
+          </li>
+                                            <li class="listbullet">
+            Operators are reserved words, therefore, you cannot use them as content words. For example, the search statement 
+            <b class="specialbold">
+              and OR or
+            </b>
+            will not be accepted.
+          </li>
+                                            <li class="listbullet">
+            Avoid using long AND/NOT chains. Instead, use "1 of {worda, wordb, wordc}".
+          </li>
+                                            <li class="listbullet">
+            Capital and lowercase letters are considered identical. We show operators in capitals for emphasis and clarity.
+          </li>
+                                            <li class="listbullet">
+            An operator can appear more than once in a search statement. 
+          </li>
+                                            <li class="listbullet">
+            Use ? over *.
+          </li>
+                                            <li class="listbullet">
+            Use [a-z] over ?.
+          </li>
+                                            <li class="listbullet">
+            Avoid using a search query like "*c*". This will search through the whole library.
+          </li>
+                                            <li class="listbullet">
+            Use positional queries over proximity queries. Positional queries are more precise.
+          </li>
+                                            <li class="listbullet">
+            The 
+            <b class="specialbold">
+              W/n 
+            </b>
+            operator must include an integer in the range 1 to 16382, followed by a space and a content word.  
+          </li>
+                                            <li class="listbullet">
+            You can use one term to retrieve both the hyphenated and non-hyphenated spellings of a term; for example, the search term: 
+            <p class="listcontinue2"><b class="specialbold">
+                - database
+              </b>
+              retrieves database and data-base, but not data base
+            </p><p class="listcontinue2"><b class="specialbold">
+                - data-base
+              </b>
+              retrieves data-base, but not database and data base
+            </p><p class="listcontinue2"><b class="specialbold">
+                - data base 
+              </b>
+              retrieves data-base and data base, but not database.
+            </p></li>
+                                            <li class="listbullet">
+            Searches with duplicate words in series also find single occurrences of that word; for example, the search statement, 
+            <b class="specialbold">
+              sing sing
+            </b>
+            , would find single occurrences of 
+            <em class="emphasis">
+              sing
+            </em>
+            as well as the phrase, 
+            <em class="emphasis">
+              sing sing.
+            </em></li>
+                                            <li class="listbullet">
+            Words that are normally hyphenated are recognized, for example, Winston-Salem. 
+          </li>
+                                            <li class="listbullet">
+            All printable characters in the ASCII character set are recognized. 
+          </li>
+                                            <li class="listbullet">
+            A sentence-ending period and other trailing punctuation marks are ignored, when a space or a carriage return follows. Periods are recognized when followed by a character, as in I.B.M. or in 292.004. Apostrophes are treated as null characters, and are therefore ignored.
+          </li>
+                                            <li class="listbullet">
+            It is not possible to search for capitalized letters, since all terms in the dictionary are stored in lower case.
+          </li>
+                                            <li class="listbullet">When searching CJK languages (Chinese, Japanese or Korean), put a space between each character.&#160;</li>
+                                        </ul>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+    </body>
+</html>

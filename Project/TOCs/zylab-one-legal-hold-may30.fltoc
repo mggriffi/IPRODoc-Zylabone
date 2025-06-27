@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Integrations"
+    Link="/Content/ZyLAB/LegalHold/integrations.html">
+    <TocEntry
+      Title="Notes for Administrators on the M365 Compliance Center Integration"
+      Link="/Content/ZyLAB/LegalHold/989898.html" />
+  </TocEntry>
+  <TocEntry
+    Title="LEGAL HOLD What's New"
+    Link="/Content/HTML/1000.html" />
+  <TocEntry
+    Title="Message Templates"
+    Link="/Content/ZyLAB/LegalHold/131.html" />
+  <TocEntry
+    Title="Create and Issue a Hold">
+    <TocEntry
+      Title="Custodians" />
+    <TocEntry
+      Title="Preservation" />
+  </TocEntry>
+  <TocEntry
+    Title="Integrate with Azure Active Directory" />
+</CatapultToc>

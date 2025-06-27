@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my LIVE Information Management destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\CLD-ITSPTL002.pcaasnet.local\FlareProjects-ZyLAB\05"
+  Port=""
+  ViewUrl="/help/ZyLAB/05"
+  Type="file"
+  RemoveStale="true"></CatapultDestination>

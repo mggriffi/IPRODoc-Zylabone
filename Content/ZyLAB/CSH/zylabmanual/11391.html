@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Styles/ADDReview_CSH.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <p class="heading1">Auto Classification</p>
+        </div>
+        <p>Classify documents with field values and/or tags. This classification is automatically executed when a document matches an <a href="https://docs.zylab.com/01/ZyLAB/ONE/2061.html" target="_blank">Auto Classification</a> Rule.</p>
+        <p><b style="font-style: italic;">Important:&#160;</b>When using Auto Classification Rules, existing data 'wins'. This means that a new Auto Classification Rule will not overwrite (does not have precedence over) any conflicting tags.
+  </p>
+        <h3>Add New Auto Classification Rule</h3>
+        <p>
+            <ol class="listnumber">
+                <li class="listnumber">
+      Select&#160;<img src="../../../Storage/zylab-one-manual-publication/2050-2018-05-08.png" alt="" class="ReduceButtonSize" />&#160;&#160;
+    </li>
+                <li class="listnumber">
+      Define a <b>Name</b>.
+  <br /></li>
+                <li class="listnumber">
+      Select a <b>Rule Type</b>.
+      <ul><li class="listnumber"><p><b>Intake Only</b></p><p>       The field values/tags specified in this rule are set only once when a document comes into the system and matches the specified query.
+<br />This type of rule is useful when you want to pre-set certain field values/tags based on the document content, but the reviewers will be able to change it later. For example, you might want to mark some documents as irrelevant/spam based on a certain filter.
+        </p></li><li class="listnumber"><p><b>Continuous</b><br /></p><p>        The field values specified in this rule are set when a document matches the specified query. The query is evaluated both when the document initially comes into the system and when the document changes.
+<br />This type of rule is useful when you want to set certain fields to certain values based on criteria that change as the document goes through the review process. As an example, mark a document as reviewed when a certain combination of tags is applied.
+        </p></li></ul></li>
+                <li class="listnumber">
+                    <p>
+      Define the query.
+  </p>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: You cannot define a full-text query when you selected Continuous as the Rule Type. You can always search for Fields and/or Tags.
+  </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p>
+                                        <img src="../../../Resources/Images/CSH_Images/myipro_tip.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p style="font-size: 10pt;font-style: italic;"><b>Tip:</b> We have a few&#160;<a href="https://docs.zylab.com/01/ZyLAB/ONE/3031.html" target="_blank">Example Queries</a>. For more information, please refer to the&#160;<a href="https://docs.zylab.com/01/ZyLAB/Search-Language-Guide/10824.html" target="_blank">ZyLAB One Search Language Guide</a>.
+  </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="listnumber">
+                    <p>
+      Define <b>When Matches</b>.
+      <br /></p>
+                    <p>     Found documents will be labeled with the field value(s) and Tag(s) defined here.&#160;
+      </p>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p style="font-size: 10pt;font-style: italic;"><b>Note: </b>You cannot define Tag(s) if you have selected Continuous as the Rule Type.
+  </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="listnumber">
+                    <p>
+      Click <b>Apply</b>.
+  <br /></p>
+                    <p> The new rule is added to the pane on the left.
+    </p>
+                </li>
+                <li class="listnumber">
+      Once you have created one or more rules, you can filter them. You can also edit or remove them.
+  <br /></li>
+            </ol>
+        </p>
+        <h3>Reuse Auto Classification Rules<br /></h3>
+        <p>Reusing one or more Auto Classification Rules reduces the time needed to create new ones. This is especially true for Auto Classification Rules with complex queries.
+  
+  <br /><ul class="listbullet"><li class="listbullet">To copy all rules in your matter, select the <b>Copy All</b> icon in the top right corner. Next, go to Auto Classification in the matter where you want to reuse these rules and select <b>Paste Rule(s)</b>.<ul class="listbullet"><li class="listbullet"><b style="font-style: italic;">Tip:</b> Filter your rules to make a selection when copying.<br /></li></ul></li><li class="listbullet">To copy one rule, select a rule and select the <b>Copy Rule</b> icon in the top right corner. Next, go to Auto Classification in the matter where you want to reuse this rule and select&#160;<b>Paste Rule(s)</b>.</li></ul></p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note I: </b>If Paste Rule(s) does not work, try Ctrl+V.  </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note II: </b>Duplicate rules will be skipped. This will prevent pasting the same rule in your matter twice. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Integrate with <MadCap:annotation MadCap:createDate="2022-12-09T14:01:00.9018060+01:00" MadCap:creator="mobrien" MadCap:initials="MO" MadCap:comment="As per Daniel, update &quot;ZyLAB ONE Legal Hold&quot; to &quot;LEGAL HOLD&quot; when envo is updated. To be notified. " MadCap:editor="mobrien" MadCap:editDate="2022-12-19T09:13:20.8093201+01:00">Okta</MadCap:annotation></h1>
+        <p>
+  In this topic, you'll learn how to add Okta as an identity provider.
+</p>
+        <h3>Configure Integration in Okta </h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note"><b>Note:</b> Must be performed by&#160;an Okta Administrator.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>
+                <p>Go to the <b>Applications</b> page in Okta and click <b>Create App Integration</b>.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-21.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>OIDC - OpenID Connect</b> and then <b>Web Application</b>.</p>
+            </li>
+            <li>
+                <p>
+      Fill out the following:</p>
+                <ul>
+                    <li>
+                        <p><b>App integration name</b>: ZyLAB.ONE Legal <MadCap:annotation MadCap:createDate="2022-12-09T14:03:05.8124083+01:00" MadCap:creator="mobrien" MadCap:initials="MO" MadCap:comment="Update in due course. To be notified by Daniel. " MadCap:editor="mobrien" MadCap:editDate="2022-12-19T09:08:46.5195028+01:00">Hold</MadCap:annotation></p>
+                    </li>
+                    <li>
+                        <p><b>Sign-in redirect URIs</b>: https://legalhold.domain/signin-mt-oidc</p>
+                        <p>Note: The domain can be .one or .eu</p>
+                    </li>
+                    <li>
+                        <p><b>Sign-out redirect URIs</b>: https://legalhold.domain/signedOut
+</p>
+                        <p>Note: The domain can be .one or .eu</p>
+                    </li>
+                    <li>
+                        <p>
+          (Optional) Configure <b>Controlled access</b> or leave it (Okta tenant users will only be able to login to the Custodian Portal)</p>
+                    </li>
+                    <li>
+                        <p>Customize the application logo. Use the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> logo (below) for easy identification of the  <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> app: </p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Logo_LH.png" class="Thumbnail" />
+                            <br />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Provide Okta Integration Credentials</h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Must be done by&#160;an Okta Administrator.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+    Send to <MadCap:annotation MadCap:createDate="2022-12-19T09:53:29.8136035+01:00" MadCap:creator="mobrien" MadCap:initials="MO" MadCap:comment="Replace with &quot;IPRO Contact&quot;? Check. " MadCap:editor="mobrien" MadCap:editDate="2022-12-19T09:53:37.0445034+01:00">ZyLAB contact</MadCap:annotation> (preferably support):</p>
+        <ul class="listnumber">
+            <li class="listnumber">
+                <p>
+      Subscription prefix
+      
+      </p>
+                <ul>
+                    <li class="listnumber">
+                        <p><b>Description</b>: Used as URL prefix to Legal Hold subscription, users must know it in order to access subscription, usually company name placed here.
+        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p><b>Hint</b>: Can be obfuscated if necessary - like you can use 'c123'&#160;instead of company name.
+        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p><b>Restrictions</b>: 2-24 of small Latin chars, numbers, dashes (can be placed only in the middle).
+        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p><b>Example</b>: contoso-us-1
+        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p>
+      Public identity tenant name
+      
+      </p>
+                <ul>
+                    <li class="listnumber">
+                        <p><b>Description</b>: This name will be visible to everybody knowing subscription url in login screen (tenant selection screen) if subscription has more than 1 identity tenants attached. Also visible in application as Custodian/Contact field so you can determine from which identity tenant the custodian originated.        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p><b>Hint</b>: Can be obfuscated if necessary - like you can use '1'&#160;instead of your company domain name 'Contoso main Okta'&#160;but users must be able to determine their login option.
+        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p><b>Restrictions</b>: Up to 100 of any symbols in any language.
+        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p><b>Example</b>: contoso
+        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p>
+      'Client ID'&#160;from application configuration in Okta (created in previous step), used to determine that it is the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> integration when Legal Hold does requests to Okta.
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      'Okta domain'&#160;from application configuration in Okta, users will be basically redirected here if sign in via Okta selected.
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      'Client secret'&#160;from application configuration in Okta, used to prove that it's the trusted Legal Hold integration.
+</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-21-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <h3>Configure Okta&#160;User&#160;Roles (Optional) </h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p>Note: When configured, some users from Okta will have roles other than custodian (<a href="800.html">Global Hold Manager, Global Hold Viewer, System Administrator, Matter Manager, Matter Viewer</a>). <MadCap:annotation MadCap:createDate="2022-08-22T10:51:08.3003459-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Added mm and mv to the list. Not conditionalized." MadCap:editor="mcohen" MadCap:editDate="2022-08-22T10:51:24.5599694-07:00">See</MadCap:annotation> how Okta groups are mapped with Legal Hold roles:
+    <table class="CHTable" cellspacing="0" cellpadding="5" style="border-collapse: collapse;border-width: 1px;border-color: #808080;width: 679px;height: 253px;"><tbody><tr><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;"><b>Okta</b></td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;"><b>Legal Hold</b></td></tr><tr><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;"><p>IPRO Legal Hold - Global Hold Manager
+          </p></td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;">
+            Global Hold Manager
+          </td></tr><tr><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;">
+            IPRO Legal Hold - Global Hold Viewer
+          </td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;">
+            Global Hold Viewer
+          </td></tr><tr><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;">
+            IPRO Legal Hold - System Administrator
+          </td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;">
+            System Administrator
+          </td></tr><tr MadCap:conditions=""><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;">
+            IPRO Legal Hold - Matter Manager
+          </td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;">
+            Matter Manager
+          </td></tr><tr MadCap:conditions=""><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;">
+            IPRO Legal Hold - Matter Viewer
+          </td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;">
+            Matter Viewer          </td></tr><tr MadCap:conditions=""><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;">IPRO Legal Hold - Custodian          </td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;">
+            Custodian          </td></tr><tr MadCap:conditions=""><td style="width: 350px;border-width: 1px;border-style: solid;border-color: #808080;">IPRO Legal Hold - Developer</td><td style="width: 413px;border-width: 1px;border-style: solid;border-color: #808080;">Developer</td></tr></tbody></table></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p>
+      Sign in to Okta tenant admin panel.
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Create groups with names from the table above (Okta column) and assign correspondent users there:
+</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-21-2.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Assign group to Legal Hold (from groups tab via <b>Manage Apps</b>, or from app via <b>Assign</b> button in Assignments tab).</p>
+                <p><![CDATA[      ]]><img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-15-5.png" alt="" class="Thumbnail" /></p>
+            </li>
+            <li class="listnumber">
+                <p>Allow Okta to send assigned groups with claims in application. Set <b>Groups claim filter</b> <MadCap:annotation MadCap:createDate="2022-09-08T07:46:39.8378148-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Max, I made the change Daniel wanted." MadCap:editor="ddavidson" MadCap:editDate="2022-09-08T07:46:51.1353340-04:00">to</MadCap:annotation> <b>groups</b> - <b>Starts with</b> - "ZyLAB Legal Hold -" (without quotes)
+           </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-21-3.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Ask user from one of the groups to sign-in in order to check that groups propagation works.
+      </p>
+                <ul>
+                    <li class="listnumber">
+                        <p><b>Remark 1</b>: Users will get roles on next sign-in and in case of changes app will update roles on each sign-in.
+        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p><b>Remark 2</b>: If roles synchronization does not work, please check groups names. They must be exactly the same as provided above.
+</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Configure Users Synchronization (Optional)       </h3>
+        <p>
+  
+  
+  Legal Hold synchronizes users via Okta API by retrieving the users list on behalf of the user who clicked 'Synchronize Contacts'&#160;in the <a href="102.html">Address Book</a>. To enable it:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p>
+      Configure permissions and grants in application registration in Okta.
+      
+      </p>
+                <ul>
+                    <li class="listnumber">
+                        <p>
+          Enable <b>Refresh Token</b> grant in <b>General Settings</b>.
+          </p>
+                        <p>
+                            <img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-28.png" alt="" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p>
+          Grant 'okta.users.read' scope in <b>Okta API Scopes</b>&#160;tab.
+          </p>
+                        <p>
+                            <img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-28-1.png" alt="" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p>
+      Configure users synchronization in Legal Hold.
+</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p>Note: Must be done by&#160;an Okta Administrator who has access
+ to the desired subset of users (Okta Admin panel/Security/Administrators). Check for 
+ more details in the <b>Okta User management</b> section here: 
+        <a href="https://help.okta.com/en/prod/Content/Topics/Security/administrators-admin-comparison.htm" target="_blank">Administrator Roles and Permissions | Okta</a>. Alternatively, create a specific service account in Okta for the synchronization as described here: <a href="999_Create_Service_Acct_Okta.html">Create Service Account in Okta to Synchronize Users</a>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul>
+                    <li>
+                        <p>
+          In Legal Hold, go to Address Book &gt; Gear icon top right corner &gt; Synchronize Contacts.
+</p>
+                        <p>
+                            <img src="../../Storage/zylab-one-legal-hold-publication/100-2021-06-28-2.png" alt="" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+          You will get a popup window that will re-login you to the application.
+        </p>
+                    </li>
+                    <li>
+                        <p>
+          Synchronization will be started automatically and scheduled to be executed daily at this time.
+                </p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 448px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p><b>Troubleshooting Okta Users Synchronization</b>
+                                        </p>
+                                        <ul>
+                                            <li class="listbullet">After clicking 'Synchronize Contacts' you get a popup with the following message: 'Something went wrong during permissions acquisition please contact your tenant's system administrator'.&#160;<br />Check if 'okta.users.read' scope is granted.</li>
+                                            <li class="listbullet">After clicking 'Sychronize Contacts' you get a red toast&#160;notification with error.<br />Check if Refresh token is granted.</li>
+                                            <li class="listbullet">After clicking 'Synchronize Contacts' you see only yourself.<br />Check that current Okta user has admin permissions in Okta.</li>
+                                            <li class="listbullet">After clicking 'Synchronize Contacts' you do not see all desired users.<br />Check that current Okta user has proper admin permissions in Okta on desired global/group level.&#160;<br />Details: <a href="https://help.okta.com/en/prod/Content/Topics/Security/administrators-admin-comparison.htm" target="_blank">Administrator roles and permissions | Okta</a> (User management section).</li>
+                                            <li class="listbullet">Synchronization progress bar shows that synchronization failed.Contact <a href="https://help.zylab.com/hc/en-us/requests" target="_blank">ZyLAB Support</a>.</li>
+                                            <li>
+                                                <p>After clicking 'Synchronize Contacts' you do not see all expected users. Try to assign regular Okta group instead of provisioned group (like originated from Microsoft Entra ID).<br /></p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <div class="note" MadCap:conditions="Primary.Block">
+            <p><b>Troubleshooting Okta Users Synchronization</b>
+            </p>
+            <ul>
+                <li class="listbullet">After clicking 'Synchronize Contacts' you get a popup with the following message: 'Something went wrong during permissions acquisition please contact your tenant's system administrator'.&#160;<br />Check if 'okta.users.read' scope is granted.</li>
+                <li class="listbullet">After clicking 'Sychronize Contacts' you get a red toast&#160;notification with error.<br />Check if Refresh token is granted.</li>
+                <li class="listbullet">After clicking 'Synchronize Contacts' you see only yourself.<br />Check that current Okta user has admin permissions in Okta.</li>
+                <li class="listbullet">After clicking 'Synchronize Contacts' you do not see all desired users.<br />Check that current Okta user has proper admin permissions in Okta on desired global/group level.&#160;<br />Details: <a href="https://help.okta.com/en/prod/Content/Topics/Security/administrators-admin-comparison.htm" target="_blank">Administrator roles and permissions | Okta</a> (User management section).</li>
+                <li class="listbullet">Synchronization progress bar shows that synchronization failed.<br />Contact <a href="https://help.zylab.com/hc/en-us/requests" target="_blank">ZyLAB Support</a>.</li>
+            </ul>
+        </div>
+        <p>
+            <script src="../../Scripts/lightense.min.js">
+            </script>
+            <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+        </p>
+    </body>
+</html>

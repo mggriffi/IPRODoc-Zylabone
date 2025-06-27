@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 id="h1__1509905588" data-has-heading-anchor="true">Security</h1>
+        <p>Securities can be set on different levels on the folders (NTFS Security), documents (Document Security) or functionalities (Functional Security). Also, using Audit Trail, all user actions can be logged.</p>
+        <p>Basic (NTFS) Security can be divided in </p>
+        <ul>
+            <ul>
+                <li>Standard NTFS Security and </li>
+                <li>ZyLAB NTFS Security. <br /><br />Standard NTFS (Windows New Technology File System) Security provides performance, security, reliability, and other advanced features, such as file and folder permissions, encryption, disk quotas, and compression. You can enhance this security with File System (Network) Security (page <a href="file-system-network-security.html#O_3993">199</a>).</li>
+            </ul>
+        </ul>
+        <p>Document (Repository) Security (page <a href="document-repository-security.html#O_3994">207</a>)</p>
+        <p>Functional (Application) Security (page <a href="functional-application-security.html#O_3995">216</a>)</p>
+        <p>Audit Trail (page <a href="general.html#O_1349">190</a>)</p>
+        <h4 data-has-heading-anchor="true">
+			Standard Security</h4>
+        <p>ZyLAB supports standard</p>
+        <p>VPN (Virtual Private Network)</p>
+        <p>Http (no firewall issues)</p>
+        <p>Secure Https (HTTPS)</p>
+        <p>SAN (Storage Area Network, use mounted drives) <br /><img src="../../Storage/zylab-information-management-publication/security-img0001.png" width="272" height="280" alt="" class="Thumbnail" /><br />Direct disk access is not required:</p>
+        <ol start="1">
+            <li>A storage area network (SAN) device can be used for (secure) storage of files;</li>
+            <li>a virtual private network (VPN) connects outside users to the internal LAN; and</li>
+            <li>a HTTPS connection can provide a secure connection to a Webserver in the demilitarized zone (DMZ).</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			User Authentication</h4>
+        <p>Windows authentication</p>
+        <ul>
+            <ul>
+                <li>ZyLAB Webserver: IIS Integrated or Basic Clear Text Authentication</li>
+                <li>ZyINDEX, ZyFIND, etc.: Windows logon</li>
+            </ul>
+        </ul>
+        <p>ZyLAB authentication</p>
+        <ul>
+            <ul>
+                <li>ZyLAB Webserver only</li>
+                <li>Standard use of SHA1 (Secure Hash Algorithm 1 (see Glossary &gt; Hash code)) to communicate and store password hash:<br />- Create a fingerprint from every document/file in the ZyLAB System (ZySCAN Export, Upload Webserver).<br />- Use secure http (https) to achieve a higher level of security<br /><br /></li>
+            </ul>
+        </ul>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td colspan="2" valign="top" width="614">
+                    <p>Basic Web Login</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="331">
+                    <ul>
+                        <li>Webclient login page prepares a login request</li>
+                        <li>Server processes request:<br />- Authenticate user<br />- Set security context<br />- Check if requested action is permitted</li>
+                        <li>Server determines the user role</li>
+                    </ul>
+                </td>
+                <td valign="top" width="284">
+                    <p>
+                        <img src="../../Storage/zylab-information-management-publication/security-img0002.png" width="203" height="408" alt="" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" width="614">
+                    <p>Advanced Web Login</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="331">
+                    <p>Features:<br />- Single point of logon<br />- Domain user authentication<br />- No NTFS permissions required</p>
+                    <p>Advantages:<br />- Integrated windows authentication<br />- Better support for NAS and SAN*<br />- Restricted access to XML based Information store<br /><br />* ZyLAB Webserver runs anonymously under a standard user and is able to retrieve files from other files servers while the user was authenticated using challenge response</p>
+                    <p>&#160;</p>
+                    <p>For more information, see ZyNETLogin (page <a href="general.html#O_3935">175</a>).</p>
+                </td>
+                <td valign="top" width="284">
+                    <img src="../../Storage/zylab-information-management-publication/security-img0003.png" width="195" height="489" alt="" />
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

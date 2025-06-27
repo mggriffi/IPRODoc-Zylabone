@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2__46400536" data-has-heading-anchor="true">XML Wrapper in the index</h2>
+        <p>In order to generate a universal key field structure over all your scanned paper and electronic file formats, ZyLAB designed the XML Wrapper. This XML Wrapper will connect all your electronic files such as text, XML, MS Word, MS Excel, PDF, WAV, MPG, etc. to an XML file that contains the key field information of this file. In this way, you can give all your electronic files the same key field structure as your scanned paper documents.<br /></p>
+        <p>The XML Wrapper module will generate for every document that is stored in the ZyLAB Archive an XML file when manual indexes are created for this document. In addition, the XML Wrapper contains three types of data extraction options: File name extraction, Document property extraction and Concept extraction (see Data Extractors (page <a href="xml-wrapper-in-the-index.html#O_3167">93</a>)).</p>
+        <h4 id="h4_1755090631" data-has-heading-anchor="true">
+			Internet/Intranet</h4>
+        <p>A new upload function is added to the ZyLAB Webserver to enable you to add electronic files to your archive over the Internet. The upload function starts a dialogue in which you can add your manual indexes and save these in an XML file together with the electronic file in your archive. </p>
+        <h4 id="h4__1611941709" data-has-heading-anchor="true">
+			Batch processing</h4>
+        <p>To increase the flexibility of this solution, the ZyLAB software comes with a special program, ZyINDEXimport.exe. This program adds electronic files immediately to the archive and can include manual indexing data as well. This manual indexing data must be stored as an XML file and the ZyINDEXimport.exe file will convert this information into the archive where it is used as a manual index. The ZyINDEXimport.exe can be used with command line options, so you can use this program from within your own program to store information in the ZyLAB Archive. This makes it possible to easily integrate the ZyLAB software with numerous applications. Indexes that contain the XML wrapper module work in close harmony with the ZyINDEXimport functionality.</p>
+        <p>&#160;</p>
+        <h3 id="h3_622413628" data-has-heading-anchor="true">Create an XML index</h3>
+        <h4 id="h4_1338375795" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX.</li>
+            <li>Select the Build icon.</li>
+            <li>Go to File &gt; New.</li>
+            <li>Fill out a Short Index Name (max. 8 characters). </li>
+            <li>Fill out a Long Index Name (max. 80 characters). Describe the contents of the index in more detail. </li>
+            <li>Select Index Wizard.</li>
+            <li>Click OK.</li>
+            <li>Click Next.</li>
+            <li>Select the XML Wrapper and use the arrow to the right to select the module.</li>
+            <li>Click Next until Finish.</li>
+            <li>Click the Define Fields button <img src="../../Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0001.png" width="15" height="16" alt="" />.</li>
+            <li>Click Add Definition.</li>
+            <li>Enter a field Name, for example Title.</li>
+            <li>Select the Index tab. Select Module field and choose the XML Wrapper</li>
+            <li>Click OK.</li>
+            <li>You can repeat steps 13 to 15 for all the fields you want to create.</li>
+            <li>Click OK.</li>
+            <li>Click Now (blue triangle) to build your index.</li>
+            <li>Click Go.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 id="h4_1624192333" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You created a XML index, and added some fields.</p>
+        <h4 id="h4_334518296" data-has-heading-anchor="true">
+			Structure of an index that contains a XML Wrapper</h4>
+        <p>The structure of an index that contains the XML wrapper module differs slightly from a ‘normal’ index. An extra folder called ZxpPlugin is created in the index folder. In this folder two extra folders are created, named PluginGuid and XMLFields, the latter contains the index that makes the XML tags with the field values full-text searchable. The XML files itself are stored in the Index data &gt; "Short Index Name" &gt; XMLFields folder. The first contains a database that keeps record of which XML files belong to which documents.</p>
+        <p>When you build the index that contains the XML wrapper, not only the data stored in the index will be made searchable, but the XMLindex will be built as well. So you will be able to search on the field information as well.</p>
+        <p><b>Note:</b> It is possible that you may import documents that already have information stored in a XML file that contains information about the document. For the field definitions in the index use the definitions from the XML files that are connected to the documents that have to be imported.<br />An example of the fields used in an XML file is:</p>
+        <p>&lt;field id="identification"&gt;testvalue&lt;/field&gt;</p>
+        <p>In this XML line, “identification” is a field that has to be in the index (if you want to be able to search on it later). This means that the start and end delimiter have to have the same value (&lt;identification&gt; and &lt;/identification&gt;).</p>
+        <p>It will also be possible to work with ‘friendly fields’ instead of the sometimes rather technical or incomprehensible field definitions form the XML fields. That is why it is possible to create field definitions that have other values then the start and end delimiters of the fields. These delimiters still have the same field values in the XML files. (In this example this HTML tag is called ‘identification’.)</p>
+        <p>&#160;</p>
+        <h3 id="h3__153102122" data-has-heading-anchor="true">Create a New Job Template</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZySCAN.</li>
+            <li>Click New Job.</li>
+            <li>Click Template Wizard.</li>
+            <li>Select Define new job template.</li>
+            <li>Click Next.</li>
+            <li>Select External Link.</li>
+            <li>Click Select.</li>
+            <li>Select your XML index.</li>
+            <li>Click OK.</li>
+            <li>Click Next.</li>
+            <li>Select ZyIMPORT.</li>
+            <li>Click Next.</li>
+            <li>Browse for a location to import from. For example, C:\Program Files\ZyLAB\Information Management Platform\Examples\Import\Multipage TIFF</li>
+            <li>Select a filter. For example, the Multipage Import Filter.</li>
+            <li>Click Next.</li>
+            <li>Click Next.</li>
+            <li>Click Next.</li>
+            <li>Select "Export to default data directory and modules of the index".</li>
+            <li>Select the Export method: XML/TIFF Export.</li>
+            <li>Click Next.</li>
+            <li>Select Save as job template.</li>
+            <li>Enter a Template Name.</li>
+            <li>Click Finish.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You created a new job template.</p>
+        <p>&#160;</p>
+        <h3 id="h3_401790486" data-has-heading-anchor="true">Importing Electronic Files with Corresponding XML File</h3>
+        <p>With the help of ZySCAN, electronic documents together with a corresponding XML file can be imported and stored directly in the index (the names of the document and the XML file have to be the same). In order to achieve this you have to create a job template that has the correct settings for importing these documents.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZySCAN.</li>
+            <li>Click New Job.</li>
+            <li>Click Template Wizard.</li>
+            <li>Select Define new job template.</li>
+            <li>Click Next.</li>
+            <li>Select External Link.</li>
+            <li>Click Select.</li>
+            <li>Select your XML index.</li>
+            <li>Click OK.</li>
+            <li>Click Next.</li>
+            <li>Select ZyIMPORT and ZyFIELD.</li>
+            <li>Select "Exclude ZyFIELD from workflow", since all necessary field values are already defined in the XML file.</li>
+            <li>Click Next.</li>
+            <li>Browse for a location to import from.</li>
+            <li>Select the Electronic Import Filter.</li>
+            <li>Click Next.</li>
+            <li>Click Next.</li>
+            <li>Click Next.</li>
+            <li>Select "Export to default data directory and modules of the index".</li>
+            <li>Select the Export method: XML/TIFF Export.</li>
+            <li>Click Next.</li>
+            <li>Select Save as job template.</li>
+            <li>Enter a Template Name.</li>
+            <li>Click Finish.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You created a job template that has the correct settings for importing electronic files with corresponding XML file. Run this job to process your electronic files.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1492641322" data-has-heading-anchor="true">Process your Paper Documents</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>ZySCAN is open.</li>
+            <li>Select New Job.</li>
+            <li>Select the correct template.</li>
+            <li>Click Import.</li>
+            <li>Close the job.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>Your documents have been processed. Check the XML files that are generated by the importfilter. If the import filter finished this job, then you can find a few XML files in the XMLFields folder in the index data directory of the index.</p>
+        <p>When there were three fields present in the imported XML file, the XML file ZyFIND uses for searching the index will look like this:</p>
+        <p>&lt;?xml version="1.0" encoding="UTF-16" standalone="no"?&gt;</p>
+        <p>&lt;zylab&gt;</p>
+        <p>&#160; &#160;&#160;&lt;document version="1.1"&gt;</p>
+        <p>		&lt;fields&gt;</p>
+        <p>			&lt;field id="identification"&gt;myname&lt;/field&gt;</p>
+        <p>			&lt;field id="date"&gt;20021029&lt;/field&gt;</p>
+        <p>			&lt;field id="test"&gt;sometestdata&lt;/field&gt;</p>
+        <p>		&lt;/fields&gt; &#160;&#160;&#160;&#160;</p>
+        <p>&#160; &#160;&#160;&lt;/document&gt;</p>
+        <p>&lt;/zylab&gt;</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>To import and process a complete directory in one go, one can use the ‘ZySCAN NT service’ or the ‘run unattended’ options. For more information, see the ZySCAN manual &gt; (Semi-)automatic job processing.</p>
+        <p>&#160;</p>
+        <h3 id="h3_740420264" data-has-heading-anchor="true">Move/Copy or Upload Electronic Files</h3>
+        <p>With the ZyINDEXImport command line utility one can move or copy files to a data directory of a designated index or upload them to an index via a website. Users do not have to know where the data locations are. They just point to a file they want to upload to a specific index, give in some field values and the files will be uploaded to the index.</p>
+        <p>You can also design shortcuts with which one can point in explorer to one or more files and send them to the default index data directory. Other possibilities are to design shortcuts on which one can drag and drop files to move them to the default index data directory. One can even place those shortcuts in the "Send to" directory.</p>
+        <p>For more information on these possibilities, see Archiving with ZyINDEX Import (page <a href="xml-wrapper-in-the-index.html#O_1083">83</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3__2037650447" data-has-heading-anchor="true">Archiving with ZyINDEX Import</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>Before you can move or copy files to a local/network index, you have to create an index in ZyINDEX. Before you can upload files to an inter/intranet index, you have to create a Web Client in ZyINDEX which links to one or more index(es). If you want to add field (values) to files you are importing, the index needs to be created with xml wrapper. Refer to the ZyLAB Information Management Platform manual for detailed information about these features. Also, in this index, fieldnames need to be defined. Then, when files are moved/copied or uploaded to the index, fieldvalues can be added. </p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <p>You can run ZyINDEX Import (and add arguments) via Start &gt; Run, or you can work with ZyINDEX Import as follows:</p>
+        <ol start="1">
+            <li>Create a shortcut of ZyINDEX Import.</li>
+            <li>Place the shortcut anywhere you want (in Windows Explorer, on your desktop, in the "SendTo" directory (C:\Documents and Settings\user\SendTo)).</li>
+            <li>Add arguments to the Target box (to archive the files in the preferred way).</li>
+            <li>Click OK.</li>
+            <li>Archive files:</li>
+        </ol>
+        <ul>
+            <li>Double click on the shortcut</li>
+            <li>Drag and drop folders ((with) files) to the shortcut</li>
+            <li>Select a file, click the right mouse button, select Send to &gt; Shortcut to ZyINDEXImport.exe</li>
+        </ul>
+        <p>&#160;</p>
+        <h3 id="h3__373047057" data-has-heading-anchor="true">List of arguments</h3>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td colspan="2" valign="top" width="336">
+                    <p>Move or copy files to local/network index</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-i</td>
+                <td valign="top" width="300">Index directory or xml file with index list (formatted like the standard index.xml)</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-f</td>
+                <td valign="top" width="300">Files or directories</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-m</td>
+                <td valign="top" width="300">Move files instead of copy. Files will be removed when copied successfully, but the directories (in which they were saved) will not be.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-r</td>
+                <td valign="top" width="300">Recurse directories</td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" width="336">
+                    <p>Advanced options</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-q</td>
+                <td valign="top" width="300">Add files to the QuickBuild table only (which enables Quick Build in ZyINDEX). Files are not moved or copied, so only local/network indexes can be selected. </td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-z</td>
+                <td valign="top" width="300">Unzip zipfiles directly into indexdata directory structure. (Zip files are NOT extracted anymore as stated in previous versions. The future of this feature is not yet determined.)</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td colspan="2" valign="top" width="336">
+                    <p>Upload files to an inter/intranet index</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-h</td>
+                <td valign="top" width="300">Hostname</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-n</td>
+                <td valign="top" width="300">Long name of index</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-c</td>
+                <td valign="top" width="300">Long name of webclient</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-f</td>
+                <td valign="top" width="300">Files or directories</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-m</td>
+                <td valign="top" width="300">Move file instead of copy</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-r</td>
+                <td valign="top" width="300">Recurse directories</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-u</td>
+                <td valign="top" width="300">Username</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-p</td>
+                <td valign="top" width="300">Password</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-a</td>
+                <td valign="top" width="300">Advanced security with the ZyLAB Security model instead of ISS</td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" width="336">
+                    <p>Advanced options</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-l</td>
+                <td valign="top" width="300">Complete http location of ZyNET, but without specified webclient and index, which allows you to add functionality.</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td colspan="2" valign="top" width="336">
+                    <p>Adding fields to one or more files</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-v</td>
+                <td valign="top" width="300">Field name and value to set with the file(s)</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-x</td>
+                <td valign="top" width="300">Specifies a xml file which contains fields for the file(s)</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-o</td>
+                <td valign="top" width="300">Shows the field editor to add fields manually</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td colspan="2" valign="top" width="336">
+                    <p>More options</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-s</td>
+                <td valign="top" width="300">Message boxes will not be displayed.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-d</td>
+                <td valign="top" width="300">Enables logging of ZyINDEXImport.exe. For more information on logging, see Logging.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="36">-z</td>
+                <td valign="top" width="300">Extracts zipfiles directly to index data directory structure. Used in combination with -f to locate the zip file.</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__1406500097" data-has-heading-anchor="true">Examples</h3>
+        <p>To explain the different arguments and the combinations in which they can be used, a number of examples are given below. &#160;</p>
+        <h4 id="h4_339800541" data-has-heading-anchor="true">
+			Tip</h4>
+        <p>To keep an overview of what you're doing, type your arguments in Wordpad (or a similar program) first, then copy &amp; paste the whole command line. </p>
+        <h4 id="h4__1406500097" data-has-heading-anchor="true">
+			Examples</h4>
+        <p>Copy files from your local folder to your local index, and leave the local copy:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -i "C:\ZyLAB Data\Indexes\MYINDEX" </p>
+        <p>Move files from your local folder to your local index:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -i "C:\ZyLAB Data\Indexes\MYINDEX" -m</p>
+        <p>Move files (including the ones in subdirectories) from your local folder to your local index:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -i "C:\ZyLAB Data\Indexes\MYINDEX" -m -r</p>
+        <p>Move files from your local folder to your local index, and automatically add a fieldvalue (field(names) are already defined):<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -i "C:\ZyLAB Data\Indexes\MYXML" -m -v "Fieldname=Fieldvalue"<br /><br /><b>Note:</b> When multiple files are moved, the fieldvalues will automatically be set for every file.</p>
+        <p>Move files from your local folder to your local index, and manually add a fieldvalue (field(names) are already defined):<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -i "C:\ZyLAB Data\Indexes\MYXML" -m -o</p>
+        <p>Add (not move or copy) files from your local folder to your local index. The files are only added to the Quick Build tabel (which allows Quick Build in ZyINDEX), and not to the index data directory:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -i "C:\ZyLAB Data\Indexes\MYINDEX" -q</p>
+        <p>Copy (extract) (zip)files from your local folder to your local index:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -i "C:\ZyLAB Data\Indexes\MYINDEX" -z</p>
+        <p>Upload (copy) files from your local folder to an inter/intranet index, and leave the local copy:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -h "localhost" -c "WebClientName" -n "LongIndexName"</p>
+        <p>Upload (copy) files from your local folder to a inter/intranet index, leave the local copy and add functionality:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -l "http://ServerName/SharedIndex" -c "WebClientName" -n "LongIndexName"<br /><br />Note: The complete http location enables you to add functionality. For example, https://localhost/etc.</p>
+        <p>Upload (copy) files from your local folder to an inter/intranet index, leave the local copy, and automatically add a fieldvalue:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder" -h "localhost" -c "WebClientName" -n "LongIndexName" -v "Fieldname=Fieldvalue"</p>
+        <p>Upload (copy) files from your local folder to an inter/intranet index, leave the local copy, and automatically add field values (which are derived from an XML file):<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -f "C:\Documents and Settings\User\Desktop\MyFolder\" -h "localhost" -c "WebClientName" -n "LongIndexName" -v "Fieldname=Fieldvalue" -x "C:\Documents and Settings\User\Desktop\xml fields"</p>
+        <p>Upload (move) files from your local folder to an inter/intranet index and add security:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -m -f "C:\Documents and Settings\User\Desktop\MyFolder" -h "localhost" -c "WebClientName" -n "LongIndexName" -u "username" -p "PassWord01"</p>
+        <p>Upload (move) files from your local folder to an inter/intranet index and add advanced security:<br /><br />"C:\Program Files\ZyLAB\Information Management Platform\Bin\ZyIndexImport.exe" -m -f "C:\Documents and Settings\User\Desktop\MyFolder" -h "localhost" -c "WebClientName" -n "LongIndexName" -u "username" -p "PassWord01" -a</p>
+        <p>&#160;</p>
+        <h3 id="h3__1717001393" data-has-heading-anchor="true">Logging</h3>
+        <p>If you encounter problems while archiving with ZyIndexImport, you can add -d to your command line. This enables logging of ZyIndexImport.exe. The logfile 'ZyIndexImport.log' is written to the temporary folder as specified in the 'TEMP' environment variable. When multiple instances of ZyIndexImport are running, the log is written simultaniously and is not locked. Loss of logging information is possible. Also, each new time you're logging, old logging information will be lost. You can use -d for both local/network indexes, and inter/intranet indexes. </p>
+        <p>&#160;</p>
+        <h3 id="h3__1930052912" data-has-heading-anchor="true">Define field(names)</h3>
+        <h4 id="h4__780949523" data-has-heading-anchor="true">
+			Create an index (and define field(names))</h4>
+        <p>When creating an index with xml wrapper (using the Index Wizard), define a plain text field as follows:</p>
+        <ol start="1">
+            <li>In Step 5: Define Fields, click Define.</li>
+            <li>Click Add Definition.</li>
+            <li>Fill out a Name.</li>
+            <li>Select the Index tab.</li>
+            <li>Select Module field &gt; XML Wrapper.</li>
+            <li>Click OK twice.</li>
+            <li>Continue with the Index Wizard.</li>
+        </ol>
+        <h4 id="h4_1378914565" data-has-heading-anchor="true">
+			Edit an index (to define field(names))</h4>
+        <p>To edit an index, open it in ZyINDEX (File &gt; Open), then click the Index Settings button: <img src="../../Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0002.png" width="18" height="15" alt="" />. Select the Define fields tab and click Define. Follow step 2 - 6 above.</p>
+        <p>&#160;</p>
+        <h3 id="h3_919123737" data-has-heading-anchor="true">XML file with Fieldnames and -values</h3>
+        <p>&lt;?xml version="1.0" standalone="no" ?&gt;<br />&lt;zylab&gt;<br />	&lt;document version="1.1"&gt;<br />		&lt;fields&gt;<br />			&lt;field id="FieldName1"&gt;Value1&lt;/field&gt;<br />			&lt;field id="FieldName2"&gt;Value2&lt;/field&gt;<br />			&lt;field id="FieldName3"&gt;Value3&lt;/field&gt;<br />		&lt;/fields&gt;<br />	&lt;/document&gt;<br />&lt;/zylab&gt;</p>
+        <p>&#160;</p>
+        <h3 id="h3_183622250" data-has-heading-anchor="true">Archiving Documents from Applications</h3>
+        <p>Archiving documents from applications will be possible as well. For instance mail messages can be stored in the index via Outlook. After installation an extra button called archive messages in Outlook appears with which you can archive important mail. Select the messages you want to store in the index and press this button. A copy of the file is made and will be stored in the index.</p>
+        <p>&#160;</p>
+        <h3 id="h3__2049839439" data-has-heading-anchor="true">Index Folder Structure</h3>
+        <h4 id="h4__657853197" data-has-heading-anchor="true">
+			Index data folders</h4>
+        <p>The index data folders are automatically made when an index is created. The locations of the index data are physically separated from the locations where the indexes are stored. The folder with the index data contains 4 folders: electronic, tif, txt and XML.</p>
+        <p>The folders are there to store the documents processed with ZySCAN (txt, tif, xml) or the documents that are stored directly in the index with the ZyINDEXImport.</p>
+        <p>When you create a XMLFields plugin index an extra folder (XMLFields) is created. In this folder the XML wrappers that contain the field information are stored.</p>
+        <h4 id="h4_810624966" data-has-heading-anchor="true">
+			Indexes folder</h4>
+        <p>In the indexes folder an extra ZxpPlugins folder is created when an index with a module/plug-in is created. </p>
+        <p>The content of the ZxpPlugin folder depends of the selected module/plug-in. </p>
+        <p>In this folder the index for the module/plug-in is stored. An extra index for a module/plug-in is made if they work with XML tags. These XML tags have to be made searchable as well. In order to accomplish this an index in the index will be created. &#160;</p>
+        <p>The templates folder within the indexes folder stores the indexes that can be used as a template. A template is created when you open index, go to build in the menu and select the save as template option.</p>
+        <p>&#160;</p>
+        <h3 id="h3__563914625" data-has-heading-anchor="true">Data Extractors</h3>
+        <p>It is possible to extract document properties, file system, concept, language and/or field information from documents while indexing. This information is added as Xmlfields (C:\Program Files\ZyLAB\Index Data\'Short Index Name'\XmlFields).</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Create an index with XML Wrapper. </li>
+            <li>Go to the Index Settings and select the Data Extractors tab.</li>
+            <li>Select Concept, Document properties, File System and/or Field Extractor.</li>
+            <p>Concepts are (complex) search statements with a name. For example, the concept 'Legal' may be defined as 'lawyer OR justice OR rechtsanwald OR advocaat OR court'. So, you will extract information (and place it in fields) based on queries.</p>
+            <p>Document properties is information attached to a document with meta information. For example, 'Last Saved By', 'Word Count', 'Status'.</p>
+            <p>File system is information defining a document on the system. For example, 'File name' or 'Date created'.</p>
+            <p>Field Extractor extracts information from documents based on a start and end delimiter. The delimiters can be anything.</p>
+            <li>If you want to control storage space and maintenance, select the option Exclude TIFF files. Properties of TIFF files will be filtered, preventing the creation of fields for non-existing or non-relevant properties.</li>
+            <li>Define the Extract mode (only new/modified or all documents).</li>
+            <li>Click Apply.</li>
+            <li>If you selected Concept, select the Concept tab.</li>
+        </ol>
+        <ul>
+            <li>Browse for a Concepts file (to create a new one, see Create Concepts File (page <a href="prepare-the-index.html#O_3257">50</a>). Or, to use the example concepts file, browse to \\Program Files\ZyLAB\Information Management Platform\Extractors\Concepts). Make sure that the fields defined in the Concepts file are defined in the index.</li>
+            <li>Click Apply.</li>
+        </ul>
+        <ol start="8">
+            <li>If you selected Document properties, select the Document Properties tab.</li>
+        </ol>
+        <ul>
+            <li>Define the maximum number of fields (document properties) allowed to be extracted. This is recommended if you are working with large document sets with many different formats.</li>
+            <li>Click Apply.</li>
+            <p>Only document properties that are defined in the documents and listed (Document Comment, Keyword, Last Saved By, Author, Subject, Title, Abstract, Account, Address, Attachments, Authorization, Backup Date, Bill To, Blind Copy, Carbon Copy, Category, Checked By, Client, Completed Date, Character Count, Page Count, Word Count, Creation Date, Department, Destination, Disposition, Division, Document Type, Minutes Edited, Editor, Forward To, Group, Language, Last Print Date, Mail Stop, Matter, Office, Operator, Owner, Project, Publisher, Purpose, Received From, Recorded By, Recorded Date, Reference, Revision Date, Revision Notes, Revision Number, Secondary Author, Section, Security, Source, Status, Typist, Version Date, Version Notes, Base File Location and Version Number) are extracted. </p>
+        </ul>
+        <ol start="9">
+            <li>If you selected File System, select the File System tab.</li>
+        </ol>
+        <ul>
+            <li>Select the system file properties you want to extract. For example, File name and Date created.</li>
+            <li>Click Apply.</li>
+        </ul>
+        <ol start="10">
+            <li>If you selected Field Extractor, </li>
+        </ol>
+        <ul>
+            <li>Create key fields, with Module field XML Wrapper, first.</li>
+            <li>Select the Field Extractor tab.</li>
+            <li>Browse for the correct Field Extractor file. This is an XML file. To create one, see Create Field Extractor File (page <a href="prepare-the-index.html#O_5565">52</a>).</li>
+            <li>Click Open.</li>
+            <li>Click Apply.</li>
+            <p>XML and HTML files must be indexed using the indexing format ANSI-Nowrap instead of AutoSenseINSO. Otherwise, the delimiters in the files will not be indexed and therefore cannot be used to extract field information. <br />Select the custom data folders icon <img src="../../Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0003.png" width="25" height="25" alt="" />. In the ZySCAN Text Files tab, select the *.xml folder, and double click in the right hand pane on Format. Select from the dropdown listbox the ANSI NoWrap value, and click OK.</p>
+        </ul>
+        <ol start="11">
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You defined an index with XML Wrapper and defined the data you want to extract while indexing.</p>
+        <p>Now, you can add documents to your index, and build it. Remember to select the option 'Extract data' before clicking GO.</p>
+        <p>&#160;</p>
+        <h3 id="h3__220354719" data-has-heading-anchor="true">Create Concepts File</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You have created a HAPI index with XML Wrapper, and selected Concept as the Data Extractor. </p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select the Concepts icon <img src="../../Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0004.png" width="48" height="51" alt="" />.</li>
+            <li>Go to File &gt; New.</li>
+            <li>Select New File and click the right mouse button.</li>
+            <li>Select New.<br />The New concept dialog appears.<br /><img src="../../Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0005.png" width="364" height="249" alt="" class="Thumbnail" /></li>
+            <li>Define the name of the concept (for example, Possible Suspects). </li>
+            <li>Click the Index button. Select an index with XML Wrapper and Concepts selected as the Data Extractor.</li>
+            <li>Click OK.</li>
+            <li>Select a field from the dropdown list box. A successful search executed with the concept Possible Suspects, will be placed in the Suspect field.</li>
+            <p>If the selected field is a list field (with a number of defined list field values), it is possible to generate a concept entry for each list field value. This means that several searches can be executed which will be placed in the selected field.</p>
+            <li>Click OK.</li>
+            <p>You can create as many concepts to a XML concepts file as you like.</p>
+            <li>Click Add.</li>
+            <li>Define the ID, the value and the query.</li>
+            <p>For example, value "John Doe" is added to the field Suspect if the query "John Doe OR John Dune OR Joe Doe OR Joe Dune" was successful.</p>
+            <li>Click OK.</li>
+            <p>You can add as many concept entries to a concept as you like.</p>
+            <li>Select New file.</li>
+            <li>Click the right mouse button.</li>
+            <li>Click Save.</li>
+            <li>Define a name for the XML Concepts file, for example Investigation.</li>
+            <li>Click Save.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a new Concept file.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1834644322" data-has-heading-anchor="true">Intelligent Redaction</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to replace search hits in ZyFIND with redactions. The Intelligent Redaction option is an extension on the current redaction option. Redaction is part of the XML Wrapper Module and allows users to redact scanned documents. The redactions are stored in the XML Wrapper and during an export action in ZyFIND, the redactions can be made permanent.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Start ZyINDEX.</li>
+            <li>Go to File &gt; New. </li>
+            <li>Enter a Short and a Long name.</li>
+            <li>Select the Redaction template.</li>
+            <li>Click OK.</li>
+            <li>Build the index: Use the Now button <img src="../../Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0006.png" width="17" height="19" alt="" />.</li>
+            <li>Click Go.</li>
+            <li>Click OK to finish building.</li>
+            <li>Add some scanned documents using ZySCAN. </li>
+            <p>Please check the Review Guide Index Scan Find, on how to add scanned documents to an index.</p>
+            <li>After adding some documents, rebuild the index.</li>
+            <li>Start ZyFIND and select the Redaction index.</li>
+            <li>Enter a query and click Search.</li>
+            <li>Select a document to redact and double click to view.</li>
+            <li>To redact all hits on the image, go to Redaction &gt; Hits &gt; Redact All.</li>
+            <li>To redact the currently selected (green highlighted) hit, go to Redaction &gt; Hits &gt; Redact Current. After redaction, the next hit will be selected.</li>
+            <li>To customize the appearance of the redactions, go to Redaction &gt; Hits &gt; Customize Appearance.</li>
+            <li>To restore the appearance of the redactions to their original state, go to Redaction &gt; Hits &gt; Reset Appearance.</li>
+            <li>Go to File &gt; Export to export the image with the redaction to a new TIFF file or email. The redaction will thus be made permanent.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have replaced search hits in ZyFIND with redactions, and exported them.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>Intelligent Redaction only works with ZySCAN documents.</p>
+        <p>&#160;</p>
+        <h3 id="h3_626103972" data-has-heading-anchor="true">ZyVIEW - Stamp Tool</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to add a stamp to a document. You have created an index with XML Wrapper in ZyINDEX/Build, and added scanned documents using ZySCAN.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Start ZyFIND and select the correct index.</li>
+            <li>Enter a query and click Search.</li>
+            <li>Select a document and double click to view.</li>
+            <li>Go to Stamps &gt; Stamp Tool &gt; Stamp or select the Stamp tool icon <img src="../../Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0007.png" width="22" height="24" alt="" />.<br />The Stamp Properties dialog appears. You can select a stamp from the library, or create a new one.</li>
+            <p>Create Image is in development.</p>
+            <li>If you want to create a text stamp, click Create Text.<br />The Define Text Stamp dialog appears.</li>
+        </ol>
+        <ul>
+            <li>Define a Title for the stamp.</li>
+            <li>Define the Text.<br />If you want to include the date, use %ZD to list the date in the format of the regional settings of the OS.<br />If you want to include the time, use %ZT to list the time in the format of the regional settings of the OS.</li>
+            <li>If you want to select another font, click Select font.<br />Define the font (type, style, size, effects, color, script, etc.) and click OK.</li>
+            <li>For a solid background, select the checkbox Solid. Select a background color via the dropdown box.</li>
+            <li>Click OK.<br />The stamp will be added to the library.</li>
+        </ul>
+        <ol start="6">
+            <li>To edit or delete a stamp, select Edit or Delete.</li>
+            <li>To use a stamp, select it and click OK.</li>
+            <li>Choose a location to place the stamp, and click your left mouse button.</li>
+            <li>The chosen stamp will be available (visible through the arrow with stamp image) and can be used repeatedly until you turn the stamp tool off via Stamp &gt; Stamp Tool &gt; Off.</li>
+            <li>Once the stamp tool has been turned off, you can rotate stamps. Select a stamp and go to Stamp &gt; Rotate Left or Rotate Right. Or select one of the icons (Rotate stamp left or Rotate stamp right).</li>
+            <li>Once you are finished and want to make all stamps permanent, go to Stamps &gt; Make Permanent. Click Yes.</li>
+            <li>To hide/show all stamps, go to Stamps &gt; Show Stamps.</li>
+            <li>Adjustments to stamps can be made via Stamps &gt; Stamps Tool &gt; Preferences.</li>
+            <li>If you want to print your document, go to File &gt; Print. Select the option Print annotations, if you want to include them.</li>
+            <li>If you want to export your document, go to File &gt; Export.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created text stamps, and added them to a document.</p>
+    </body>
+</html>

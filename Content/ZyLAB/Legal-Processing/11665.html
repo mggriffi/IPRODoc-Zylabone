@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Collect Data from Multiple Legal Processing Matters</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Collect Data from Multiple Legal Processing Matters';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t11665" class="heading2">
+            <MadCap:keyword term="Collect Data from Multiple Legal Processing Matters" />Collect Data from Multiple Legal Processing Matters</p>
+        <p class="bodytext">It is now possible to collect data from multiple Legal Processing matters one by one to one existing Legal Review matter. Only one Legal Processing Matter should be active at a time and to create a new Legal Processing Matter (to collect from to a Legal Review Matter), the previous Legal Processing Matter should be deleted, <b class="specialbold">not</b> the Legal Review matter part.</p>
+        <p class="heading4">Instructions</p>
+        <ol class="listnumber">
+            <li class="listnumber">Delete (not just close) old Legal Processing Matter that was collecting to a Legal Review Matter.</li>
+            <li class="listnumber">Add &lt;ExistingLegalReviewMatterId&gt;existingLrMatterId&lt;/ExistingLegalReviewMatterId&gt; to LegalReviewTemplate in EdiscoveryService.</li>
+            <li class="listnumber">Define a new Legal Processing Matter and start collecting to the same Legal Review Matter. </li>
+            <li class="listnumber">If no next Legal Processing Matter has to be added, delete &lt;ExistingLegalReviewMatterId&gt;existingLrMatterId&lt;/ExistingLegalReviewMatterId&gt; from the LegalReviewTemplate, to enable normal Legal Processing again.</li>
+        </ol>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="11597.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="9512.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

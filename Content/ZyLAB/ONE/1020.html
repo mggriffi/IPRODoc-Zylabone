@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Assisted Review: Topic Modeling</h1>
+        <p>Discover clusters of words (topics) that frequently occur together to identify patterns. Topics are the most important words spread among the documents in a project.</p>
+        <p>The video below provides an example of how you can use topic modeling:</p><iframe src="https://www.youtube.com/embed/PxrvZfH-WSA?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <p>To include Topic Modeling, select the <b>Use Topic Modeling</b> option when adding a project to Assisted Review. </p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/333-2018-12-04.png" alt="" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note:</b> You cannot add Topic Modeling to an existing project.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>After the project has been added, you can create an issue (training set) for each topic in the Topic Modeling tab. This allows you to review diverse sets of potential responsive documents and make predictions for the complete data set.</p>
+        <h2>Open Topic Modeling </h2>
+        <ol>
+            <li>
+                <p>From the navigation tree of ZyLAB One, select <b>Assisted Review</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/ONE/NavigationTree_AssistedReview.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="Primary.Block" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="Primary.Block" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: You can also access the Assisted Review page by clicking the <b>Assisted Review</b> button on the Matter Home page.</p>
+                                <p style="font-size: 10pt; font-style: italic;">
+                                    <img src="../../Resources/Images/ONE/Matter_Home_Assisted_Review_btn.png" class="Thumbnail" />
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Select an existing project. If you have not yet created an Assisted Review project, see <MadCap:xref href="Assisted_Review/Create_New_Assisted_Review_Project.html">Create A New Assisted Review Project</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>Select the <b>Topic Modeling</b> tab.</p>
+                <p>
+                    <img src="../../Resources/Images/ONE/Assisted_Review_Topic_Modeling_Tab.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2>Topic Modeling Options</h2>
+        <ul>
+            <li>
+                <p style="font-weight: bold;">Circles or Tree List</p>
+                <ul>
+                    <li>
+                        <p>Select Circles to visualize the topics (clusters of words). The first discovered topics are at depth 1 (closest to the center), child topics are at depth 2 and further.</p>
+                        <p>Double click on a topic to visually expand it.</p>
+                        <ul>
+                            <li>
+                                <p>Before:</p>
+                                <p>
+                                    <img src="../../Storage/zylab-one-manual-publication/1020-2018-07-10-1.png" alt="" />
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>After:</p>
+                                <p>
+                                    <img src="../../Storage/zylab-one-manual-publication/1020-2018-07-10-2.png" alt="" />
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Select Tree List for the complete list of all discovered topics.</p>
+                        <p>
+                            <img src="../../Storage/zylab-one-manual-publication/1020-2019-10-08-1.png" alt="" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Weight</b>
+                </p>
+                <p>Select a topic to see the weight of it. The Weight indicates the relative proportion of the number of documents within this topic compared to its siblings in the Circles or Tree List.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/1020-2019-10-08-2.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Create Issue</p>
+                <p>Select a topic and click <b>Create Issue</b> to define the information <MadCap:annotation MadCap:createDate="2023-02-10T18:26:48.5100708-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Need a better definition of issue." MadCap:editor="mcohen" MadCap:editDate="2023-02-10T18:27:00.1088358-07:00">need</MadCap:annotation>.</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Ignore Topic</p>
+                <p>To prevent not responsive topics from dominating the visualization, ignore them:</p>
+                <p>Select a topic and click <b>Ignore Topic</b>.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/1020-2019-10-08-3.png" alt="" class="Thumbnail" />
+                </p>
+                <p>Click <b>X</b> to add one ignored topic to the visualization again.</p>
+                <p>Click <b>Clear</b> to add all ignored topics to the visualization again.</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Reset</p>
+                <p>Return to the original visual state by clicking <b>Reset</b>. Topics that had been selected or ignored return back to the default view.</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Document List</p>
+                <p>To view all documents in your project:</p>
+                <ul>
+                    <li>
+                        <p>Do <b>not</b> select a topic from Circles or Tree List.</p>
+                    </li>
+                    <li>
+                        <p>Select <b>Document List</b>.</p>
+                    </li>
+                    <li>
+                        <p>View the documents.</p>
+                    </li>
+                </ul>
+                <p>To view the documents characterized by a selected topic:</p>
+                <ul>
+                    <li>
+                        <p>Select a topic from Circles or Tree List.</p>
+                    </li>
+                    <li>
+                        <p>Select <b>Document List</b>.</p>
+                    </li>
+                    <li>
+                        <p>View not only the  documents, but also the query belonging to the selected topic. Top terms are highlighted within the documents.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

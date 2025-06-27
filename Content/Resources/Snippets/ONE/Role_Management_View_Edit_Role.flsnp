@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h2>View and/or Edit Role</h2>
+        <ol>
+            <li>
+                <p>Select a role type (filter if needed).
+ &#160;
+            </p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/341-2018-03-05-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select a role (filter if needed).
+</p>
+            </li>
+            <li>
+                <p>
+            In the Overview&#160;tab, see the selected <a href="../../../ZyLAB/ONE/570.html">permissions</a> for this role. </p>
+            </li>
+            <li>
+                <p>In the Role Permissions tab, change the permissions.</p>
+            </li>
+            <li>
+                <p>Click <b>Apply</b>.
+</p>
+            </li>
+        </ol>
+    </body>
+</html>

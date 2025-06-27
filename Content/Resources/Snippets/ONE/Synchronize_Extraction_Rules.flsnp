@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Synchronize Extraction Rules</h2>
+        <p>Extraction rules can be synchronized across matters. When performing synchronization, the matter library is updated to match with the rules included in the default library. </p>
+        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Synchronization of extraction rules is only available on dedicated nodes, not on shared nodes.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>
+                <p>First, the custom rule(s) must be added to the default library. When you have created a custom rule, add it to the default library. Select the rule and click on the <b>Add to Default Library</b> icon.</p>
+                <p>
+                    <img src="../../Images/ONE/Library_ExtractionRules_Add_to_Default_Library.png" class="Thumbnail" />
+                </p>
+                <p>Rules added to the default library, can be recognized by the default library icon:</p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/080820-2021-11-22-1.png" alt="" />
+                </p>
+            </li>
+            <li>
+                <p>If, at any point, you wish to remove a custom rule from the default library, select the <b>Remove from Default Library</b> icon. When removed, the rule will not be included in synchronization.</p>
+                <p>
+                    <img src="../../Images/ONE/Library_ExtractionRules_Remove_from_Default_Library.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Open the target matter. This is the matter in which you would like to perform synchronization. Select the button <b>Synchronize with Default Library</b> to add the rules previously included in the default library. </p>
+                <p>
+                    <img src="../../Images/ONE/Button_SynchronizeLibrary.png" />
+                </p>
+            </li>
+            <li>
+                <p>To view the rules added to or removed from the default library (including when, and by whom)—consult the <a href="../../../ZyLAB/ONE/30304.html">Audit log</a>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

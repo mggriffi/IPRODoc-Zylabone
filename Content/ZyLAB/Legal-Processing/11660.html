@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>ZyLAB LegalReview Collector</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='ZyLAB LegalReview Collector';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t11660" class="heading3">
+            <MadCap:keyword term="ZyLAB LegalReview Collector" />ZyLAB LegalReview Collector</p>
+        <p class="bodytext">The ZyLAB LegalReview Collector collects files from one Legal Review matter to another. Using the settings specified in the Collector, documents, their views and fields will be collected and placed in the Destination Matter that corresponds with the Source Matter.<br />The Collector can be run multiple times (scheduled runs). Documents that are already collected, will not be collected a second time. </p>
+        <p class="bodytext" />
+        <p class="note">If you want to collect source documents without additional processing, turn off all processing rules and only keep indexing. You can do this on the Processing tab.<br /><br />The following information will always be added to documents collected with the ZyLAB LegalReview Collector:<br />- URL of the system it was collected from<br />- Matter name and matter ID it was collected from<br />- Exact query that was used to collect the document</p>
+        <p class="bodytext" />
+        <p class="heading4">Important Notice</p>
+        <p class="bodytext">By default, the Legal Review Collector, does not import Redaction Fields from the Source Matter to the Destination Matter. Document views are a user setting that can differ from Matter to Matter and so redactions can end up covering different areas of an image. To avoid the risks of exposing confidential image contents ZyLAB recommends either (1) importing the Matter without redactions and re-applying those redactions if needed or (2) importing the redactions but ensuring that the image settings are the same in both Matters and then performing a full Quality Control of the redactions in the Destination Matter.</p>
+        <p class="bodytext" />
+        <p class="bodytext">
+            <img id="f11780" src="../../Storage/legal-processing-publication/11780.png" alt="" height="450" width="594" vspace="0" hspace="0" align="bottom" border="0" />
+            <br />
+        </p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Source Matter(s)</b>
+                <br />Select one or more Legal Review matters you want to collect from.<br /><br /><b class="specialbold">Queries</b><br />Select one or more (pre-defined) queries that will be used to collect documents from the matters you selected as the source. Depending on your permissions, you may or may not be allowed to change/remove queries.<br /><br /><b class="specialbold">Family Expansion</b><br />Select the mode in which documents matching the specified query must be collected. Specify (for all queries, not per query) whether you want to collect only the documents that match specified query (and all of their views) or to collect complete families of the documents that match the query (together with all the views of all documents in the families) or to collect subfamilies that are rooted at the documents that match the query (together with all the views of all documents in the subfamilies).<br /><br /><b class="specialbold">Impersonate Service User</b><br />When default Impersonate Service User is deselected, the screen is refreshed to enter the identity of a user to establish the connection between matter to download from and matter to upload to.<br /></li>
+            <li class="listbullet">
+                <em class="emphasis">File Types to Collect</em>
+                <br />Select the appropriate File Groups. To create new File Groups, click Add New.<br />For more information on how to define File Groups, see <a id="h9546" class="" title="Define File Groups" href="9522.html" target="_self">Define File Groups</a>.</li>
+        </ul>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10122.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10119.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

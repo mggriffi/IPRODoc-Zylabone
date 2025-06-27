@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my LIVE Home destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-itsptl002\c$\Core\Help\FlareProjects\ZyLAB\Documentation"
+  Port=""
+  ViewUrl="/help/ZyLAB/Documentation"
+  Type="file"
+  RemoveStale="true"></CatapultDestination>

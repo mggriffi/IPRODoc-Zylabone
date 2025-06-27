@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Block" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create Matter</h1><iframe src="https://www.youtube.com/embed/zcdGsdBpzL4?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <p>A matter includes electronic data that is converted to TIFF and a link to the data in its 
+  native format is provided. For review, only the TIFF 
+  image is used to avoid spoliation. The integrity of the native file 
+ (and its metadata) is retained. </p>
+        <p>Text and metadata is extracted 
+ and entered into a database (matter) so that the documents are searchable. Due to the uniform state of the 
+ data, reviewers can move from item to item quickly and efficiently.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: Depending on the <a href="5711.html" target="_top">permissions</a> you have received, 
+ you may not be able to create a matter. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To create a new matter, follow the steps below.</p>
+        <ol>
+            <li>
+                <p>Go to the Select Matter page and click <b>Add Matter</b>.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication-second/create-new-matter-2017-09-25.png" class="ReduceButtonSize" />
+                </p>
+            </li>
+            <li>
+                <p>Define a Matter Name.</p>
+            </li>
+            <li>
+                <p>Select a Matter template. </p>
+                <p>For more information on Matter templates, click <MadCap:toggler targets="Matter template">here</MadCap:toggler>.</p>
+                <div MadCap:targetName="Matter template">
+                    <p>The Matter template describes a set of features and behaviors. For example, the fields (columns) that are displayed in the Document List, the tags that are shown in Document View, the language of the user interface and a set of auto-classification rules. Most of these predefined settings can be adjusted after matter creation.</p>
+                    <ul>
+                        <li>
+                            <p><b>eDiscovery_EU</b>: Default template for eDiscovery in EU. Only difference with the eDiscovery US template are some auto-classification rules for PII and a few DisplayNames for the Tags (Responsive - Relevant, Issue - Motivation).</p>
+                        </li>
+                        <li>
+                            <p><b>eDiscovery_US</b>: Default template for eDiscovery in US.</p>
+                        </li>
+                        <li>
+                            <p><b>FOIA_US</b>: Default template for the US for the Freedom of Information Act use case.</p>
+                        </li>
+                        <li>
+                            <p><b>Wob</b>: Default template for the Netherlands for the Wet openbaarheid van bestuur.</p>
+                        </li>
+                        <li>
+                            <p><b>Woo_actief</b>: Default template for the Netherlands for the Wet open overheid:</p>
+                            <p>Proactively making information public in phases.</p>
+                        </li>
+                        <li>
+                            <p><b>Woo_passief</b>: Default template for the Netherlands for the Wet open overheid:</p>
+                            <p>Providing information on request.</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p>
+    Select the Processing Rules. By default, the recommended Matter Processing Rules are selected. </p>
+                <p>For more information on Processing Rules, click <MadCap:toggler targets="Processing Rules">here</MadCap:toggler>.</p>
+                <div MadCap:targetName="Processing Rules">
+                    <p>The Matter Processing Rules define how your data will be processed. For example, you can choose to OCR (Optical Character Recognition) your data or not. Please note that you cannot switch to another set of processing rules after matter creation. If you want to process your data differently, you need to create a new matter.</p>
+                    <ul>
+                        <li>
+                            <p><b>Processing_Deduplication_NoOCR</b>: Data will be processed without OCR.</p>
+                            <p><b>Note</b>: Duplicate files are filtered out and not available for review.</p>
+                        </li>
+                        <li>
+                            <p><b>Processing_Deduplication_NoOCR_AudioSearch</b>: Data will be processed without OCR and with Audio Search.</p>
+                            <p><b>Note</b>: Duplicate files are filtered out and not available for review.</p>
+                        </li>
+                        <li>
+                            <p><b>Processing_Deduplication_OCR</b>: Data will be processed with OCR.</p>
+                            <p><b>Note</b>: Duplicate files are filtered out and not available for review.</p>
+                        </li>
+                        <li>
+                            <p><b>Processing_Deduplication_OCR_AudioSearch</b>: Data will be processed with OCR and Audio Search.</p>
+                            <p><b>Note</b>: Duplicate files are filtered out and not available for review.</p>
+                        </li>
+                        <li>
+                            <p><b>Review_Deduplication_NoOCR</b>: Data will be processed without OCR .</p>
+                            <p><b>Note</b>: Duplicate files are available for review.</p>
+                        </li>
+                        <li>
+                            <p><b>Review_Deduplication_NoOCR_AudioSearch</b>: Data will be processed without OCR but with Audio Search.</p>
+                            <p><b>Note</b>: Duplicate files are available for review.</p>
+                        </li>
+                        <li>
+                            <p><b>Review_Deduplication_OCR</b>: Data will be processed with OCR.</p>
+                            <p><b>Note</b>: Duplicate files are available for review.</p>
+                        </li>
+                        <li>
+                            <p><b>Review_Deduplication_OCR_AudioSearch</b>: Data will be processed with OCR and Audio Search.</p>
+                            <p><b>Note</b>: Duplicate files are available for review.</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p>Click Save.</p>
+            </li>
+            <li>
+                <p>
+    Open your newly created matter from the Select Matter screen.&#160;
+    </p>
+                <p><b>Note</b>: New matters are always displayed in the top-left corner as matters are sorted on last created date.</p>
+            </li>
+            <li>
+                <p><a href="0830.html" target="_top">Upload data</a> to your matter.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication-second/10000-2020-12-29.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <p>Once a matter has been created, learn about next steps you can take by watching the videos below. </p><iframe src="https://www.youtube.com/embed/pksC_UH8U1c?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <p>&#160;</p><iframe src="https://www.youtube.com/embed/gI9yL5vkeTc?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <p>&#160;</p>
+    </body>
+</html>

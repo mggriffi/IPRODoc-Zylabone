@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <div>
+            <h1>ZyLAB ONE SaaS What's New</h1>
+            <table class="CHTable" cellspacing="0" cellpadding="0" style="width: 100%;border-collapse: collapse;">
+                <col />
+                <col style="width: 598px;" />
+                <tbody>
+                    <tr>
+                        <td style="width: 67px;">
+                            <img src="../../Storage/zylab-one-manual-publication-second/Templates/Themes/icon-new.png" alt="" style="text-align: left;width: 50px;height: 50px;" />
+                        </td>
+                        <td style="text-align: left;">
+          New features are rolled out gradually. This allows for a smoother transition and a better experience for our users.
+  <br />  Missing a feature in your environment?&#160;<a href="https://help.zylab.com/hc/en-us/requests/new" target="_blank">Please let us know</a><br /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 67px;text-align: left;">
+                            <img src="../../Storage/zylab-one-manual-publication-second/Templates/Themes/icon-support.png" alt="" style="width: 50px;height: 50px;" />
+                            <br />
+                        </td>
+                        <td style="text-align: left;">
+          Need more information?
+  <br />  Known issues and exceptions can be found in the&#160;<a href="https://help.zylab.com/hc/en-us/categories/360002443280" target="_blank">Knowledge Base</a>.
+  <br /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 67px;text-align: left;">
+                            <div>
+                                <img src="../../Storage/zylab-one-manual-publication-second/10000-2018-10-22-2.png" style="text-align: right;" />
+                                <br />
+                            </div>
+                        </td>
+                        <td style="text-align: left;">
+                            <span>Find the version number in the bottom left corner of the expanded menu.</span>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 67px;text-align: left;">
+                            <b>
+                                <img src="../../Storage/zylab-one-manual-publication-second/baseline_settings_overscan_black_36dp.png" alt="" style="text-align: right;" />
+                            </b>
+                        </td>
+                        <td style="text-align: left;">
+                            <span>
+                                <b>Tip</b>: Click on screenshot thumbnail&#160;images to expand them.&#160;</span>
+                            <br />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

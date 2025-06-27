@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Search Tips';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Search Tips</h1>
+        <ul class="listbullet">
+            <li class="listbullet">Search terms may be found in the body of the document, in indexed document metadata or in hidden content (where available). When a search term is found outside of the body of the document the user will be alerted by a “!” in the search hit count for that document.
+
+</li>
+            <li class="listbullet">Single keywords must be separated by a Boolean operator AND, OR, NOT, i.e. happy AND birthday or happy OR birthday. 
+
+</li>
+            <li class="listbullet">Terms without Boolean operators will be treated as a phrase, i.e. happy birthday will return all documents containing that exact phrase. Note, phrased searches do not need to be placed within quotation marks. 
+
+</li>
+            <li class="listbullet"><b>When to use quotes</b> – if searching for a reserved character you must use quotes, i.e. “:” OR when searching for search operators such as “not” “of” “in” “and” “or”, for example, Bank “of” America.
+
+</li>
+            <li class="listbullet">While viewing a document, press Ctrl+F to search within the document.
+
+</li>
+            <li class="listbullet"><b>Searching emails</b> – using the field search, various email metadata fields can be searched, however, the email participant field is the most inclusive as it will search the to/from/cc/bcc fields as one. For example, to find all emails sent or received by Brenda Dodd the recommended search would be emailparticipant=brenda.dodd@zylab.com or emailparticipant=*dodd* 
+
+</li>
+            <li class="listbullet">Note that while the field search will provide a drop-down list of suggested names, this list is not all-inclusive and should be used with caution. Instead, the use of the wildcard * is strongly suggested as it will expand the search to include various forms of the email address or name of the individual you may be searching for, i.e. *dodd@zylab.com or brenda dodd* or *dodd*
+
+</li>
+            <li class="listbullet">To find <b>emails that are only between two people</b> use the query: emailparticipant=*dodd* AND emailparticipant=*schneider* AND emailclassification= One-to-One
+
+</li>
+            <li class="listbullet">To search an<b> email date range </b>use the query: emailsenttime&gt;=10/1/2014 AND emailsenttime&lt;=2/9/2015</li>
+            <li class="listbullet"><b>Hyphenated words</b>: when you search for "email" or "e mail", it will also find "e-mail". However, "e mail" will not find "email" or the other way around “email" will not find "e mail".
+
+</li>
+            <li class="listbullet">Use caution with <b>searching symbols and punctuation</b>. ! ? * cannot be searched; $ can be searched; &amp; can only be searched if not surrounded by spaces, i.e. E&amp;Y (NOT Ernst &amp; Young or E &amp; Y). To search for Ernst &amp; Young use: Ernst w/2 young
+
+</li>
+            <li class="listbullet">Number range operators (&lt;; &lt;=; &gt;; &gt;=; =; &lt;&gt;) can be used but must be used with parentheses for example (&lt;= 30). In addition, use caution searching numbers without additional search parameters as many&#160;document property fields contain numerical values.</li>
+        </ul>
+    </body>
+</html>

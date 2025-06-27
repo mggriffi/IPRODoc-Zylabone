@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Styles/ADDReview_CSH.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <p class="heading1">Keyword Queries</p>
+        </div>
+        <ul>
+            <li class="listnumber">
+                <div><b>Date/Time fields</b>
+                </div>
+                <div>
+      All searches use UTC
+    </div>
+                <div>
+      Example: emailsenttime&gt;=03/07/2013, will find documents sent on 7th of March 2013 and later
+    </div>
+            </li>
+            <li class="listnumber"><b>Fuzzy</b>
+                <br />
+                <div>
+      finds variations of a term.
+    </div>
+                <div>
+      Example: dutch~1, will find dutch, ditch, duich, durch, etc.
+    </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Question Mark ?</b>
+                    <br />
+                    <div>
+        matches a single character.
+      </div>
+                    <div>
+        Example: wom?n, will find woman and women.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Asterisk *</b>
+                    <br />
+                    <div>
+        matches zero or more characters.
+      </div>
+                    <div>
+        Example: *most, will find most and almost.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber"><b>AND</b>
+                <br />
+                <div>
+      finds related terms and narrows your search.
+    </div>
+                <div>
+      Example: president AND america, will only find files with both terms.
+    </div>
+            </li>
+            <li class="listnumber"><b>OR</b>
+                <br />
+                <div>
+      finds one or all terms and broadens your search.    </div>
+                <div>
+      Example: car OR transportation, will find files with only the term car or transportation, and files with both terms.
+    </div>
+            </li>
+            <li class="listnumber"><b>NOT</b>
+                <br />
+                <div>
+      allows you to exclude terms.
+    </div>
+                <div>
+      Example: NOT apple, will find all files that do not contain the term apple.
+    </div>
+            </li>
+            <li class="listnumber">
+                <div><b>TO</b>
+                    <br />
+                    <div>
+        finds occurrences of a term/query falling between two other terms/queries.
+      </div>
+                    <div>
+        Example: dear TO sincerely {John}, will find the term John falling between dear and sincerely.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>IN fieldname {query}</b>
+                    </div>
+                    <div>
+        finds terms in fields added to the file (meta data).
+      </div>
+                    <div>
+        Example: IN occupation {dentist}, will find the term dentist in the field occupation.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Within</b>
+                    </div>
+                    <div>
+        finds related terms within a defined range.
+      </div>
+                    <div>
+        Example: Tom w/2 John, will find the term Tom within two positions (terms) from John (Tom knows John because Tom is his brother).
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Precedes</b>
+                    </div>
+                    <div>
+        finds preceding terms within a defined range.
+      </div>
+                    <div>
+        Example: live p/2 work, will find ‘live to work’ but not ‘work to live’.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b><span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;">Number Range</span></b>
+                </div>
+                <div>
+      finds numbers or number ranges.
+    </div>
+                <div>
+      Example: (&gt;1 : &lt;10), will find all values between 1 and 10.
+    </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Quorum</b>
+                    </div>
+                    <div>
+        finds a specified number of terms from a list.
+      </div>
+                    <div>
+        Example: 1 of {blue, green, red}, will find at least one or more colors from the list in a file.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Character Patterns []</b>
+                    </div>
+                    <div>
+        matches a single character and/or range that is contained within the brackets.
+      </div>
+                    <div>
+        Example: m[a-z]n, will find all terms with three letters that start with an m and end with an n.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Negation [^]</b>
+                </div>
+                <div>
+                    <div>
+        negates a single character and/or range that is contained within the brackets.
+      </div>
+                    <div>
+        Example: [^b]pple, will find apple, but also –pple, cpple, dpple, cpple, etc. But not bpple.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Preceding Element + </b>
+                    <br />
+                </div>
+                <div>     matches the preceding element one or more times.
+    </div>
+                <div>
+      Example: ab+c, will find abc, abbc, abbbc, abbbbc, etc. But not ac.
+    </div>
+            </li>
+            <li class="listnumber">
+                <div><span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;"><b>Preceding Element {m,n}&#160;&#160;</b><br /></span>
+                </div>
+                <div><span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;">     matches the preceding element at least m and not more than n times.
+        </span>
+                </div>
+                <div><span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;"><span style="text-decoration-style: initial;text-decoration-color: initial;">Example: ba{2,3}b, will find baab, baaab, but not bab, baaaab.</span><br /></span>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div style="text-decoration-style: initial;text-decoration-color: initial;"><b>Preceding Element {m}</b>
+                    <br />
+                </div>
+                <div style="text-decoration-style: initial; text-decoration-color: initial;">      matches the preceding element exactly m times.
+    </div>
+                <div style="text-decoration-style: initial;text-decoration-color: initial;">
+      Example: [0-9]{3}-[0-9]{4}, will find local phone number 123-4567.
+    </div>
+            </li>
+            <li class="listnumber">
+                <div style="text-decoration-style: initial;text-decoration-color: initial;">
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;"><b>Preceding Element {m,}</b>
+                        <br />
+                    </div>
+                    <div style="text-decoration-style: initial; text-decoration-color: initial;">       matches preceding element at least m times.
+      </div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+        Example: ba{0,}b, will find bb, bab, baab, baaab, etc.
+      </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div style="text-decoration-style: initial;text-decoration-color: initial;">
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;"><b>Date-based macros </b>
+                        <br />
+                    </div>
+                    <div style="text-decoration-style: initial; text-decoration-color: initial;">       find files that have been created, modified or sent a number of days, weeks, months or years ago:
+      </div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+        #DaysAgo(<number>)#</number></div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+        #WeeksAgo(<number>)#</number></div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+        #MonthsAgo(<number>)#</number></div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+        #YearsAgo(<number>)#</number></div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+                        <br />
+                    </div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+        The mm/dd/yy format will be used for the evaluation, relative to the current date. Leap years and the number of days in a month are taken into account. If the resulting day is not a valid day in the resulting month, the last valid day of the resulting month is used.
+      </div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+        #DaysAgo(0)# is resolved in 00:00 of the current day.
+</div>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../../Resources/Images/CSH_Images/myipro_note.png" style="width: 44px;height: 44px;" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <div style="text-decoration-style: initial;text-decoration-color: initial;font-style: italic;"><b>Note:</b> Date DB type is not supported in Legal Review, only DateTime. Using "=" is not recommended with these types of macros.
+      </div>
+                                    <div style="text-decoration-style: initial;text-decoration-color: initial;font-style: italic;"><![CDATA[
+        ]]><br />Example: created &lt; #DaysAgo(0)#, will find files created yesterday and before</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

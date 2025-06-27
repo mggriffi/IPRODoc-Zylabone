@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <script src="../../Scripts/lightense.min.js">
+        </script>
+        <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2022-12-18T14:20:11.1661849+01:00" MadCap:creator="mobrien" MadCap:initials="MO" MadCap:comment="'Import' option is not available in Beta envo. Consult w/ Daniel. " MadCap:editor="mobrien" MadCap:editDate="2022-12-18T14:20:33.6507061+01:00">Import</MadCap:annotation>
+        </h1>
+        <p>Perform bulk imports of hold information from other systems.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note"><b>Note:</b> The <b>Import</b>, <b>Export </b>and <b>Go Live</b> functionality is only available for users with the System Administrator Role and Global Hold Manager Role. <b>Import </b>and <b>Erase </b>are only available in <b><a href="http://docs.zylab.com/articles/zylab-one-legal-hold/560/a/h2_333780696">Draft</a></b> state.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="h2_1338375795" class="heading2" data-has-heading-anchor="true">Instructions</h2>
+        <ol>
+            <li>
+                <p>Import allows you to upload a ZIP file with the data that you want to import. </p>
+                <p>Drop the ZIP file on the box displayed on the Import tab, or click the box and search for &amp; select the ZIP file via the File Explorer.</p>
+                <p>
+                    <img src="../../Resources/Images/LEGAL HOLD/(Temp)_Subscription_Import.bmp" class="Thumbnail" />
+                </p>
+                <p>The data should be stored in a JSON format. 
+ You'll have a JSON file for each record that you want to import.
+
+</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2022-02-15-8.png" alt="" class="Thumbnail" />
+                </p>
+                <ul>
+                    <li class="listbullet">Matters; definition of matters</li>
+                    <li class="listbullet">Holds; definition of holds</li>
+                    <li class="listbullet">Messages; definition of the content of messages</li>
+                    <li class="listbullet">Hold Messages; definition of messages used in holds</li>
+                    <li class="listbullet">Custodians; custodians that are part of a hold</li>
+                    <li class="listbullet">Message templates; definition of message templates and content</li>
+                    <li class="listbullet">Questionnaires; definition of the content of questionnaires</li>
+                    <li class="listbullet">Hold Questionnaire; definition of questionnaires used in holds</li>
+                    <li class="listbullet">Questionnaire templates; definition of questionnaire templates and content</li>
+                    <li class="listbullet">Attachments; Binary encoding of files that are used as attachments (BASE64 encoding)</li>
+                    <li class="listbullet">Audit; definition of audit events</li>
+                </ul>
+            </li>
+            <li>
+                <p>Select <b>Import</b>.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2022-02-15-3.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>After import, <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> will validate the import and add the records to your subscription. 
+ A summary of the result of the import will be displayed on screen.</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If the import succeeded without error, then you can verify the records in your subscription and perform a quality control. When you’re satisfied with the current records in your subscription you can press the Go Live button. This can only be done by a user with System Administrator and Global Hold Manager privileges.</p>
+                    </li>
+                    <li>
+                        <p>After you Go Live, the subscription will be active and your subscription will resume all scheduled communications according to the information in your Holds. Note that at any time you can send messages to custodians by using the standard communication functionality. After you Go Live, it is not possible to return to a Draft state.</p>
+                    </li>
+                    <li>
+                        <p>Click the blue <b>Close </b>button at the bottom of the screen.</p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/(Temp)_Subscription_Import_Success.bmp" class="Thumbnail" />
+                        </p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note"><b>Note:</b> You cannot import additional data after an import action. First erase the subscription, then import again.<img src="../../Storage/zylab-one-legal-hold-publication/100-2022-02-15-6.png" alt="" class="Thumbnail" /></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>If the Import contains errors, you can review the errors and modify your import files, then import again (you can’t import if your subscription already contains data).<br /></p>
+                <p>Click the blue&#160;<b style="font-size: 11pt;">Close&#160;</b>button at the bottom of the screen. Nothing will be imported and you can try again with modified import files.</p>
+                <p>
+                    <img src="../../Resources/Images/LEGAL HOLD/(Temp)_Subscription_Import_Failure.bmp" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Extraction Rules';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Extraction Rules</h1>
+        <p><span class="note">The extraction of data is based on extraction rules. These rules are configured under the Library option; in the Library, <a href="../ONE/080802.html">extraction&#160;rules</a> are created and stored.
+</span>
+        </p>
+        <p><span class="note"><span class="bodytext">By default, a set of rules is available in the Library. Matters contain predefined rules that cannot be deleted, but custom rules can be created</span><span class="bodytext"><span class="note">. </span></span>The ZyLAB ONE software comes with a set of different kinds of default extraction rules that can be used for GDPR Compliance, 
+like PTM person, SSN etc. </span>
+        </p>
+        <p><span class="note">It is also possible for the user to create their own extraction rule(s). 
+This can be done by clicking on the <b>+</b> option from  the Library, followed by adding a name and selecting the 
+desired configuration type of the extraction. The configuration type of the extraction can be, for instance, a query, regular expression, or a PTM. 
+
+</span><span class="note">After choosing the configuration type, the user will have to set the correct entity type, 
+which can be anything from emotions to money values, and establish the extraction. </span>
+        </p>
+        <p><span class="bodytext"><span class="note">The custom rules can be added to the default library; rules included in the default library, can then be </span></span><span class="bodytext"><span class="note"><a href="../ONE/080820.html#h2__1674320278">synchronized across matters</a>.</span></span>
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Synchronization of extraction rules is only available on dedicated nodes, not on shared nodes.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><span style="font-size: 11pt;">Rules added to the default library, do not automatically appear in another matter.&#160;To add the rules included in the default library to the matter, click the </span><b style="font-size: 11pt;">Synchronize with Default Library</b><span style="font-size: 11pt;"> button.</span>
+            <br />
+            <img src="../../Resources/Images/ONE/Button_SynchronizeLibrary.png" />
+        </p>
+        <p>&#160;</p>
+        <h2>Create New Extraction Rules</h2>
+        <ol>
+            <li>
+                <p> On the <b>Home </b>page, select&#160;<b style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;">Insight</b><b style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;">s</b>:</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/10000-2021-11-22-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Library</b>:</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/080820-2020-06-04-3.png" alt="" class="Thumbnail" />
+                </p>
+                <p>From the Library, you can:</p>
+                <p>
+                    <ul>
+                        <li class="listnumber">Search existing <b>Extraction&#160;Rules</b>. Use the Filter grid and search by name.</li>
+                        <li class="listnumber">Create new <b>Extraction&#160;Rules</b>. Click on the <img src="../../Resources/Images/ONE/Button_CreateNew_ExtractionRule.png" class="ReduceButtonSize" /> option. </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Create a new</b><b>&#160;Extraction&#160;Rule</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/ONE/Button_CreateNew_ExtractionRule.png" class="ReduceButtonSize" />
+                </p>
+            </li>
+            <li class="listnumber">Define the&#160;<b>Name</b> of the new Extraction&#160;Rule.</li>
+            <li class="listnumber"> Select an&#160;<b>Extraction Type</b>. <ul class="listbullet" style="font-size: 13px;"><li class="listbullet" style="width: auto;height: auto;"><b style="color: #808080;">Query&#160;</b>or<b style="color: #808080;">&#160;Regex</b><br /> Entities are extracted with a full text query or a regular expression. <ul class="listbullet"><li class="listbullet" style="width: auto;height: auto;"> Define the <b>Entity Type</b>. For example, Date or Person or URL.</li><li class="listbullet" style="width: auto;height: auto;">Define the <b>Extraction Query</b>.</li><li class="listbullet" style="width: auto;height: auto;"> Click <b>Apply</b>. </li></ul></li><li class="listbullet" style="width: auto; height: auto;"><b style="color: #808080;">Batch Search</b> <br />Entities are extracted with queries consisting of up to 10,000 characters.<ul style="font-size: 13px;"><li class="listbullet" style="width: auto;height: auto;"> Define the <b>Entity Type</b>. </li><li class="listbullet" style="width: auto;height: auto;">Define the <b>Extraction Query</b>. Enter a query of max. 10,000 characters. For example, build a query of employee names by converting an employee list into a query. </li><li class="listbullet" style="width: auto;height: auto;"> Click <b>Apply</b>. </li></ul></li><li class="listbullet" style="width: auto; height: auto;"><b style="color: #808080;">Dictionary</b> <br />Entities are extracted with exact matches. <ul style="font-size: 13px;"><li class="listbullet" style="width: auto;height: auto;"> Define the <b>Entity Type</b>. </li><li class="listbullet" style="width: auto;height: auto;">Define the <b>Extraction Query</b>. Enter an exact match. Create a list of values that you would like to extract. For example, countries, illnesses, profanities, tax havens,  and so on. Browse the default Extraction Rules in the Library for relevant samples.</li><li class="listbullet" style="width: auto;height: auto;"> Click <b>Apply</b>. </li></ul></li><li class="listbullet" style="width: auto;height: auto;color: #808080;"><span style="color: #808080;"><b>Named Entity Recognition</b>&#160;</span><br /><span style="color: #565656;">Named Entities are terms that represent real-world objects; for instance, people, places, organizations, and so on. NER is used to identify and segment the named entities - and to classify or categorize them under various, predefined classes.</span><br /></li><li class="listbullet" style="width: auto;height: auto;color: #565656;"><b><span style="color: #808080;">PTM</span></b>&#160;(ZyLAB Professional Text Mining) <br /> Entities are extracted with PTM. <ul class="listbullet"><li class="listbullet" style="width: auto;height: auto;"> Select the correct <b>PTM template</b>. </li><li class="listbullet" style="width: auto;height: auto;"> Click <b>Apply</b>. </li></ul></li></ul></li>
+        </ol>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Synchronize_Extraction_Rules.flsnp" /><span class="bodytext"><br /></span>
+    </body>
+</html>

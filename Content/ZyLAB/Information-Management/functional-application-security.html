@@ -1,0 +1,2484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2__264963360" data-has-heading-anchor="true">Functional (Application) Security</h2>
+        <p>Functional Security allows you to add security to (functions of) ZySCAN, ZyINDEX, ZyFIND, ZyALERT, ZyLAB Web Client or ZyLAB Federator. Functional Security is role based. This means that security is defined based on the role a user (group) has been assigned. The functions a role is allowed to perform (see Roles and their (default) Functions (page <a href="functional-application-security.html#O_1796">221</a>)), can be changed. The order of steps to be taken to set Functional Security is as follows:</p>
+        <ol start="1">
+            <li>Install the Security license key.</li>
+            <li>Enable Functional Security in ZyINDEX &gt; Security, via General &gt; Settings. Select Functional Security &gt; On. Click Update.</li>
+            <li>Create Users and User groups in ZyINDEX &gt; Security, via General &gt; Users (page <a href="general.html#O_3922">173</a>), and General &gt; Groups (page <a href="general.html#O_3921">168</a>).</li>
+            <li>Assign Users to Roles, and Assign Roles to Functions (see Functional Security (General) (page <a href="functional-application-security.html#O_1522">217</a>)).</li>
+        </ol>
+        <p>Functions of specific Web Clients, or specific indexes can be secured too. So, there are 3 security contexts: </p>
+        <p>ZySCAN, ZyINDEX, ZyFIND, ZyALERT and ZyLAB Web Client), </p>
+        <p>Index and </p>
+        <p>Web Client. </p>
+        <p>In the ZyLAB context, the Webclient context will be ignored. If a user has been assigned to more than one role within a single context, the stronger one (from weak to strong: Guest, User, Editor and Admin) will prevail.</p>
+        <p>If you want to add users to roles, or if you want to define which user roles are allowed to perform a specific function, you need to go to ZyINDEX &gt; Security &gt; Functional (Application) Security. </p>
+        <p>&#160;</p>
+        <h3 id="h3__1976779267" data-has-heading-anchor="true">Functional Security</h3>
+        <p>You want to define which users/groups are (not) allowed to perform specific functions (actions) in ZyLAB.</p>
+        <h4 id="h4__1663672689" data-has-heading-anchor="true">
+			Assign Users to Roles</h4>
+        <ol start="1">
+            <li>Select ZyINDEX &gt; Security &gt; Functional (Application) Security &gt; Assign Users to Roles.</li>
+            <li>Select a role from the dropdown listbox Role.</li>
+        </ol>
+        <ul>
+            <li>If you select an Index role, select an index from the dropdown listbox Index.</li>
+            <li>If you select a Webclient role, select a Webclient from the dropdown listbox Webclient.</li>
+        </ul>
+        <ol start="3">
+            <li>To view Users, Groups, or Users/Groups that have already been assigned to the role, select via the dropdown listbox View Users, Groups or Assigned only.</li>
+            <li>Select User(s) or Group(s) from the list, and click Save.</li>
+            <li>Check to see if the User(s)/Group(s) have been assigned to role, by selecting the View Assigned only.</li>
+            <li>Repeat step 2 to 5 to add more user(s)/group(s) to roles.</li>
+        </ol>
+        <h4 id="h4_21358834" data-has-heading-anchor="true">
+			Assign Roles to Functions</h4>
+        <ol start="1">
+            <li>Select ZyINDEX &gt; Security &gt; Functional (Application) Security &gt; Assign Roles to Functions.</li>
+            <li>Select a product from the dropdown listbox Product.</li>
+            <li>Select a part from the dropdown listbox Part.</li>
+            <li>Select a function from the dropdown listbox Function.</li>
+            <li>Deselect the User Roles which are not allowed to perform this function.<br />Make sure you added users/user groups to the roles who are allowed to perform this function.</li>
+            <p>Click on a role for an overview of all the functions to which a role has access.</p>
+            <li>Click Save.</li>
+            <li>Repeat step 2 to 6 to define the permissions of roles for more functions.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have added users/user groups to roles, and secured/defined the permissions of these roles for functions (within ZySCAN, ZyINDEX, ZyFIND, ZyALERT, ZyLAB Webserver or ZyLAB Federator). All users/user groups that are a member of a User Role, have the same permissions.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>So, there are 3 security contexts: ZyLAB, Index and Webclient. In the ZyLAB context, the Webclient context will be ignored. If a user has been assigned to more than one role within a context, the stronger one (from weak to strong: Guest, User, Editor and Admin) will prevail.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1223546724" data-has-heading-anchor="true">Functional Security (Index)</h3>
+        <p>You want to define which users/groups are (not) allowed to perform specific functions (actions) in a specific index.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Build.</li>
+            <li>Go to File &gt; Open.</li>
+            <li>Select an index.</li>
+            <li>Click OK.</li>
+            <li>Click the Index Settings button: <img src="../../Storage/zylab-information-management-publication/functional-application-security-img0001.png" width="18" height="15" alt="" />. </li>
+            <li>Select the Security tab.<br /><img src="../../Storage/zylab-information-management-publication/functional-application-security-img0002.png" width="576" height="542" alt="" class="Thumbnail" /></li>
+            <li>Select a role from the dropdown listbox.</li>
+            <li>Add/remove users and groups assigned to a role with the arrow buttons.</li>
+            <li>Repeat steps 7 - 8 for all roles.</li>
+            <li>Click 'Enable default NTFS security'.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have defined which users/groups are (not) allowed to perform specific functions (actions) in this index. </p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>If you do not want to inherit the default user group for a role, deselect the option 'Inherit from roles'. To enhance security, it is recommended to create separate users/groups which are allowed to work with this index. </p>
+        <p>&#160;</p>
+        <h3 id="h3__538071115" data-has-heading-anchor="true">Functional Security (Webclient)</h3>
+        <p>You want to define which users/groups are (not) allowed to perform specific functions (actions) in a specific index.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Webclient.</li>
+            <li>Select a Webclient.</li>
+            <li>Go to User Roles.</li>
+            <li>Select one of the roles.</li>
+            <li>Click Add.</li>
+            <li>Select a user or group you want to assign to this role.</li>
+            <li>Click OK.</li>
+            <li>Repeat steps 5 - 7 to add more users/groups to this role.</li>
+            <li>To remove a user/group from this role, select it, and click Delete.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have defined which users/groups are (not) allowed to perform specific functions (actions) in this webclient. </p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>If you do not want to inherit the default user group for a role, deselect the option 'Inherit from ZyImage roles'. To enhance security, it is recommended to create separate users/groups which are allowed to work with this webclient. </p>
+        <p>&#160;</p>
+        <h3 id="h3__803246687" data-has-heading-anchor="true">Roles and their (default) Functions</h3>
+        <p>In order to keep the configuration of Security easier different roles are created. These roles are created during the installation and are stored in the initgroups.xml file, a description of the different roles be found in the security.xml file. (both files are stored in the users folder: \\ZyLAB Data\Users)<br /></p>
+        <p>Administrators can set rights via ZyLAB to specific files or folders of the index and the corresponding data directories. For every separate index different user roles are available: </p>
+        <p>Guest</p>
+        <p>User</p>
+        <p>Editor</p>
+        <p>Administrator</p>
+        <p>Every role can be attached to a group for which rights on index related NTFS objects can be set.<br /></p>
+        <p>Groups can be every ZyLAB group but NT security can only be changed with imported NT groups. Functional security can be set with every group type. The authentication of the users will be done automatically with use of the NT domain security.<br /></p>
+        <p>The different roles that are available by default are given below. The options for the different user roles are default and can be changed if required.</p>
+        <p>general zyimage roles:</p>
+        <p>zyimage_admin</p>
+        <p>zyimage_editor</p>
+        <p>zyimage_user</p>
+        <p>zyimage_guest</p>
+        <p>zyscan_user</p>
+        <p>zyalert_qc_user</p>
+        <p>index roles:</p>
+        <p>index_admin</p>
+        <p>index_editor</p>
+        <p>index_user</p>
+        <p>index_guest</p>
+        <p>webclient roles:</p>
+        <p>webclient_admin</p>
+        <p>webclient_editor</p>
+        <p>webclient_user</p>
+        <p>webclient_guest</p>
+        <p>Default User Groups (see ZyINDEX &gt; Security &gt; General &gt; Groups &gt; Available Groups) are member of these roles. See the table below:</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="186">
+                    <p>default User Group</p>
+                </td>
+                <td valign="top" width="282">is member of default User Role</td>
+            </tr>
+            <tr>
+                <td valign="top" width="186">ZyALERT_QC_Users</td>
+                <td valign="top" width="282">ZyAlert Quality Control User</td>
+            </tr>
+            <tr>
+                <td valign="top" width="186">ZyIMAGE_Administrators</td>
+                <td valign="top" width="282">
+                    <ul>
+                        <li>ZyImage Administrator (global functions), </li>
+                        <li>Webclient Administrator (webclient functions),</li>
+                        <li>Index Administrator (index specific functions, for example 'Build index')</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="186">ZyIMAGE_Editors</td>
+                <td valign="top" width="282">
+                    <ul>
+                        <li>ZyImage Editor (global functions), </li>
+                        <li>Webclient Editor (webclient functions),</li>
+                        <li>Index Editor (index specific functions, for example 'Build index')</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="186">ZyIMAGE_Guests</td>
+                <td valign="top" width="282">
+                    <ul>
+                        <li>ZyImage Guest (global functions), </li>
+                        <li>Webclient Guest (webclient functions),</li>
+                        <li>Index Guest (index specific functions, for example 'Build index')</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="186">ZyIMAGE_Users</td>
+                <td valign="top" width="282">
+                    <ul>
+                        <li>ZyImage User (global functions), </li>
+                        <li>Webclient User (webclient functions),</li>
+                        <li>Index User (index specific functions, for example 'Build index')</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="186">ZySCAN_Users</td>
+                <td valign="top" width="282">ZySCAN User</td>
+            </tr>
+        </table>
+        <p>The functions that can be secured (and followed in an Audit Trail) are listed in the following sections, together with the default functions for each default ZyLAB User Role: Index Administrator (IA), Index Editor (IE), Index User (IU), Index Guest (IG), Webclient Administrator (WA), Webclient Editor (WE), Webclient User (WU), Webclient Guest (WG), ZyIMAGE Administrator (ZA), ZyIMAGE Editor (ZE), ZyIMAGE User (ZU), ZyIMAGE Guest (ZG), ZyAlert Quality Control User (Q), ZySCAN User (Z). </p>
+        <p>Click on a role, for an overview of all the functions this role has access to.</p>
+        <p>&#160;</p>
+        <h3 id="h3_951662406" data-has-heading-anchor="true">General</h3>
+        <p>All User Roles are allowed to perform General functions.</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="bottom" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="bottom" width="210">Function</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">Audit Trail</td>
+                <td valign="bottom" width="210">Update Audit Settings</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">View Audit Settings</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">NTFS Security</td>
+                <td valign="bottom" width="210">Update NTFS Security</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">View NTFS Security</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__1617302494" data-has-heading-anchor="true">
+			ZySCAN</h3>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="303">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>Z</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Global</td>
+                <td valign="top" width="303">Edit Global Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Edit Image Enhancement Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Edit Import Source</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Edit Import Source Properties</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Edit Scan Source</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Edit Scan Source Properties</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Run Unattended</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Service Configuration</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="303">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>Z</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Job</td>
+                <td valign="top" width="303">Create Template</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Delete Job</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Delete Page</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Merge/Split Documents</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Modify Job Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">New Job</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Next Stage</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Open Job</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="303">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>Z</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyScan</td>
+                <td valign="top" width="303">Do Scan</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Enter Stage</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Modify Scan Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="265">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>Z</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyImport</td>
+                <td valign="top" width="265">Do Import</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Enter Stage</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Modify Import Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="265">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>Z</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyField</td>
+                <td valign="top" width="265">Edit Field Definitions</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit Fields</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Enter Stage</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="265">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>Z</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyOCR</td>
+                <td valign="top" width="265">Delete Text Files</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Do OCR</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Enter Stage</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Modify OCR Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">OCR All Deferred Jobs</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="265">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>Z</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyExport</td>
+                <td valign="top" width="265">Do Export</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Enter Stage</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Modify Export Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 id="h3__1865437411" data-has-heading-anchor="true">ZyINDEX</h3>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="284">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="38">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Menu</td>
+                <td valign="top" width="284">Create Index</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Delete Index</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">License Manager</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Select Index</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Set Interface languages</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">View Log File</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">ZyIndex Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="284">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="38">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="48">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyIndex Options</td>
+                <td valign="top" width="284">Directory Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Global Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Index Preferences</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Index Wizard</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Recovery</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Table of Contents Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="293">Function</td>
+                <td valign="top" width="48">
+                    <p>IA</p>
+                </td>
+                <td valign="top" width="48">IE</td>
+                <td valign="top" width="48">
+                    <p>IU</p>
+                </td>
+                <td valign="top" width="57">IG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Build</td>
+                <td valign="top" width="293">Build Index</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Custom Data Folders</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Define Fields</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Edit Index Folders</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Edit Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Email Properties</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Erase Index</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Modify Character Set</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Save Index as Template</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">View Logfile</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">View Noise Words</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="293">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="57">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Timer</td>
+                <td valign="top" width="293">Add Index Schedule</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Delete Index Schedule</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Edit Index Schedule</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Install Timer as Service</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Remove Service</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Settings</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">View Logfile</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="293">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="57">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Cold</td>
+                <td valign="top" width="293">Delete</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Edit</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Edit Properties</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Move Up/Down</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">New</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Start/Stop</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">View Logfile</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="265">Function</td>
+                <td valign="top" width="57">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="57">ZE</td>
+                <td valign="top" width="57">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="57">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Webclient</td>
+                <td valign="top" width="265">Create Client</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Delete Client</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit Image Markers</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit Indices</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit Properties</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit Templates</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit User Rules</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Enable Automatic Login</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Reactivate Client</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="265">Function</td>
+                <td valign="top" width="57">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="57">ZE</td>
+                <td valign="top" width="57">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="57">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Federator Settings</td>
+                <td valign="top" width="265">View WebClientIndexes</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit WebClientIndexes</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">View Configurations</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit Configurations</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">View Federator Clients</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="265">Edit Federator Clients</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>&#160;</p>
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="237">
+                    <p>&#160;</p>
+                    <p>Function</p>
+                </td>
+                <td valign="top" width="57">ZA, IE, WA</td>
+                <td valign="top" width="57">
+                    <p>ZE, IE, WE</p>
+                </td>
+                <td valign="top" width="57">ZU, IU, WU</td>
+                <td valign="top" width="57">
+                    <p>ZG, IG, WG</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Security</td>
+                <td valign="top" width="237">Add/Delete Users/Groups</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit Document Groups</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit Document Security</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit Functional Security</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit Index NTFS Security</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit Index Roles</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit Security Settings</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit User/Groups</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Edit Webclient Roles</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">Generate Pincode</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Document Groups</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Document Security</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Functional Security</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Index NTFS Security</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Index Roles</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Security Settings</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Users/Groups</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="237">View Webclient Roles</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="246">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="57">ZE</td>
+                <td valign="top" width="57">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="57">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Tasks</td>
+                <td valign="top" width="246">Archive</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Briefcase</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Build</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Cold</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Publish</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Security</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Timer</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Web Client</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__1657708020" data-has-heading-anchor="true">ZyFIND</h3>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="293">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="67">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Menu</td>
+                <td valign="top" width="293">License Manager</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Open Result File</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Select Search Tools</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Set Interface Languages</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Transliteration Assistant</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Update Fields Edit to Index</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">ZyFind Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">v</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="293">Function</td>
+                <td valign="top" width="48">
+                    <p>ZA</p>
+                </td>
+                <td valign="top" width="48">ZE</td>
+                <td valign="top" width="48">
+                    <p>ZU</p>
+                </td>
+                <td valign="top" width="67">ZG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyFind Options</td>
+                <td valign="top" width="293">Audit Trail Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Directory Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Global Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Search Preferences</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Table of Contents Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="67">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="293">Function</td>
+                <td valign="top" width="48">
+                    <p>IA</p>
+                </td>
+                <td valign="top" width="48">IE</td>
+                <td valign="top" width="57">
+                    <p>IU</p>
+                </td>
+                <td valign="top" width="57">IG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Table of Contents</td>
+                <td valign="top" width="293">Automatic Generations</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Contents Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Create Personal Table of Contents</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Database Maintenance</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Delete Documents</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Edit Entries</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Edit Folders</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Print Documents</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Select View</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="293">Update Comment Fields</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="322">Function</td>
+                <td valign="top" width="48">
+                    <p>IA</p>
+                </td>
+                <td valign="top" width="38">IE</td>
+                <td valign="top" width="38">
+                    <p>IU</p>
+                </td>
+                <td valign="top" width="48">IG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Bookmarks</td>
+                <td valign="top" width="322">Database Maintenance</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="322">Edit Bookmarks</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="322">Edit Folders</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="322">Import</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="322">Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="322">Report</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="322">Function</td>
+                <td valign="top" width="48">
+                    <p>IA</p>
+                </td>
+                <td valign="top" width="38">IE</td>
+                <td valign="top" width="38">
+                    <p>IU</p>
+                </td>
+                <td valign="top" width="48">IG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Thesaurus</td>
+                <td valign="top" width="322">Edit</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="322">Insert</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Concepts</td>
+                <td valign="top" width="322">Create New Concept Collection</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="322">Edit</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Fields</td>
+                <td valign="top" width="322">Edit Definitions</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="38">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="246">Function</td>
+                <td valign="top" width="48">
+                    <p>IA</p>
+                </td>
+                <td valign="top" width="57">IE</td>
+                <td valign="top" width="57">
+                    <p>IU</p>
+                </td>
+                <td valign="top" width="57">IG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyResult</td>
+                <td valign="top" width="246">Copy as Hyperlink</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Copy Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Delete Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Delete Reference</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Edit Fields</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Edit Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Export</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Insert Annotation</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Launch Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Merge</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Open Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Print Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Print Result List</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Save Result List</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="246">Send Result List</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="312">Function</td>
+                <td valign="top" width="48">
+                    <p>IA</p>
+                </td>
+                <td valign="top" width="48">IE</td>
+                <td valign="top" width="48">
+                    <p>IU</p>
+                </td>
+                <td valign="top" width="48">IG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">ZyView</td>
+                <td valign="top" width="312">Annotations</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Copy</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Delete Contents</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Delete Page</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Delete Reference</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Edit Fields</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Edit Hyperlinks</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Edit Options</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Edit Redaction</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Export</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Insert Bookmark</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Launch Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Print Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Send Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Split</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" width="643" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="312">Function</td>
+                <td valign="top" width="48">
+                    <p>IA</p>
+                </td>
+                <td valign="top" width="48">IE</td>
+                <td valign="top" width="48">
+                    <p>IU</p>
+                </td>
+                <td valign="top" width="57">IG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Workflow</td>
+                <td valign="top" width="312">Create Workflow</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Lock Workflow</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Delete Workflow</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">View Other Workflow</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="312">Unlock Workflow</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="57">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3_1051671353" data-has-heading-anchor="true">ZyALERT</h3>
+        <p>All User Roles are allowed to perform ZyALERT functions.</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="bottom" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="bottom" width="210">Function</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">Windows</td>
+                <td valign="bottom" width="210">Add Index</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Add Special Alerts</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Add User</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Delete Alert</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Delete Index</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Delete User</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Edit Alert</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Edit User</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Generate Report</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Install Service</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">New Alert</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Quality Control</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Set Options</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Start</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Table Maintenance</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">View Logfile</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="bottom" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="bottom" width="210">Function</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">Webpages</td>
+                <td valign="bottom" width="210">...</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__1358538255" data-has-heading-anchor="true">ZyLAB Webserver</h3>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="284">Function</td>
+                <td valign="top" width="38">
+                    <p>WA</p>
+                </td>
+                <td valign="top" width="48">WE</td>
+                <td valign="top" width="48">
+                    <p>WU</p>
+                </td>
+                <td valign="top" width="48">WG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">File Display</td>
+                <td valign="top" width="284">Delete Document</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Download Document</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Edit Fields</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Print Document</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Split Document</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Print Setup</td>
+                <td valign="top" width="284">Add/Remove Printers</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Search</td>
+                <td valign="top" width="284">Use Concepts</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="284">Function</td>
+                <td valign="top" width="48">
+                    <p>WA</p>
+                </td>
+                <td valign="top" width="38">WE</td>
+                <td valign="top" width="48">
+                    <p>WU</p>
+                </td>
+                <td valign="top" width="48">WG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Search Results</td>
+                <td valign="top" width="284">Add Document to Table of Contents</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Download Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Edit Fields</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Merge Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Print Documents</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">v</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="284">Function</td>
+                <td valign="top" width="48">
+                    <p>WA</p>
+                </td>
+                <td valign="top" width="38">WE</td>
+                <td valign="top" width="48">
+                    <p>WU</p>
+                </td>
+                <td valign="top" width="48">WG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Document Basket</td>
+                <td valign="top" width="284">Download Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="284">Print Document</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="38">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" width="643" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="303">Function</td>
+                <td valign="top" width="57">
+                    <p>WA</p>
+                </td>
+                <td valign="top" width="57">WE</td>
+                <td valign="top" width="48">
+                    <p>WU</p>
+                </td>
+                <td valign="top" width="48">WG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Server Actions</td>
+                <td valign="top" width="303">Add Documents to Table of Contents</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Delete Documents</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Download Documents</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Edit Fields</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Edit Table of Contents</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Merge Documents</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Print Documents</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Split Document</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Upload Documents</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Use Concepts</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">v</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table border="0" cellspacing="0" cellpadding="0" width="643" class="CHTable">
+            <tr>
+                <td valign="top" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="top" width="303">Function</td>
+                <td valign="top" width="57">
+                    <p>WA</p>
+                </td>
+                <td valign="top" width="57">WE</td>
+                <td valign="top" width="48">
+                    <p>WU</p>
+                </td>
+                <td valign="top" width="48">WG</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">Table of Contents List</td>
+                <td valign="top" width="303">Select Edit Mode</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+            <tr>
+                <td valign="top" width="132">&#160;</td>
+                <td valign="top" width="303">Upload Document</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="57">v</td>
+                <td valign="top" width="48">&#160;</td>
+                <td valign="top" width="48">&#160;</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__864417722" data-has-heading-anchor="true">ZyLAB Federator</h3>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="bottom" width="132">
+                    <p>Part</p>
+                </td>
+                <td valign="bottom" width="210">Function</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">Search</td>
+                <td valign="bottom" width="210">Search Client</td>
+            </tr>
+            <tr>
+                <td valign="bottom" width="132">&#160;</td>
+                <td valign="bottom" width="210">Download Document</td>
+            </tr>
+        </table>
+    </body>
+</html>

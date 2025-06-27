@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Address Book Synchronization</h1>
+        <p>The Address Book Synchronization page allows you to configure and manage the synchronization of contact data from the employee directory systems integrated with <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />. By synchronizing contacts with the company's employee directory, you will always work with an up-to-date list of potential custodians.</p>
+        <p>Contacts become <a href="5784.html">custodians</a> when added to a hold.</p>
+        <p MadCap:conditions="Primary.Block">The Address Book Synchronization page contains an overview of all the integrated systems (Microsoft Entra ID, Okta, and Workday) from which contact details may be collected for an accurate record of employee data. By synchronizing contacts with the company's employee directory, you will always work with an up-to-date list of potential custodians.</p>
+        <p>
+            <img src="../../Resources/Images/LEGAL HOLD/Address_Book_Synchronization_1.png" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: Before you can synchronize contact details on this page, you must first configure an integration between <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> and the appropriate employee directory <MadCap:annotation MadCap:createDate="2023-02-22T14:56:07.4821696-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Just those 3?" MadCap:editor="mcohen" MadCap:editDate="2023-02-22T14:56:13.9189229-07:00">systems</MadCap:annotation> (Microsoft Entra ID, Okta, and/or Workday). See <MadCap:xref href="integrations.html">Integrations</MadCap:xref> for more information. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Open"></a>Open Address Book Synchronization</h2>
+        <p>To navigate to the Address Book Synchronization page:</p>
+        <ol>
+            <li>
+                <p>In the left navigation menu, select <b>Subscription</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/LEGAL HOLD/Menu_Subscriptions.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The Subscription page opens. Select <b>Address Book Synchronization</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/LEGAL HOLD/Subscriptions_Address_Book_Synchronization.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2>Manage Address Book Synchronization</h2>
+        <p>On the Address Book Synchronization page, you can configure synchronization settings and review synchronization status for your integrated systems.</p>
+        <p>Actions on this page include:</p>
+        <div MadCap:conditions="Primary.Block">
+            <ul>
+                <li>
+                    <p>Map contact properties</p>
+                </li>
+                <li>
+                    <p>Run synchronization now</p>
+                </li>
+                <li>
+                    <p>Activate synchronization schedule</p>
+                </li>
+                <li>
+                    <p>Review the status of your synchronization</p>
+                </li>
+            </ul>
+            <p>Expand the sections below for more information on each.</p>
+        </div>
+        <p>
+            <MadCap:toggler targets="Map Fields">Map Properties</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="Map Fields">
+            <p>To ensure contact details are accurately synchronized within the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> application, you must map the properties for which you would like to collect data. </p>
+            <ol>
+                <li>
+                    <p>Navigate to the Address Book Synchronization page. See <MadCap:xref href="#Open">Open Address Book Synchronization</MadCap:xref>.</p>
+                </li>
+                <li>
+                    <p>Select the gear icon next to your tenant ID.</p>
+                    <p>
+                        <img src="../../Resources/Images/LEGAL HOLD/button_gear_icon_AddressBook.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>The Contact Properties Mapping window opens. Configure mapping as needed.</p>
+                    <p>
+                        <img src="../../Resources/Images/LEGAL HOLD/Address_Book_Synchronization_Contact_Properties_Mapping.png" class="Thumbnail" />
+                    </p>
+                    <ul>
+                        <li>
+                            <p>For each property you need to map, select the dropdown option in the <b>Source</b> column and select the needed source. When synchronizing contact details, data for the associated property will be retrieved from the source specified.</p>
+                            <p>
+                                <img src="../../Resources/Images/LEGAL HOLD/Address_Book_Synchronization_Map_Field.png" class="Thumbnail" />
+                            </p>
+                        </li>
+                        <li>
+                            <p>If you prefer not to pull contact data for certain properties, you can select <b>Not mapped</b> from the dropdown to prevent that data from entering the system.</p>
+                            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                <tbody>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                            <p class="TableText">
+                                                <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                            <p style="font-size: 10pt;font-style: italic;">Note: Certain properties require mapping. These properties are marked with a red asterisk.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li>
+                            <p>If using Workday for contact synchronization, you must select a <b>Matching Property</b> to ensure it properly syncs with your <MadCap:annotation MadCap:createDate="2023-02-22T15:49:57.7315342-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Should we specify AAD here or is Workday also capable of pairing with Okta?" MadCap:editor="mcohen" MadCap:editDate="2023-02-22T15:50:34.0838935-07:00">IDP</MadCap:annotation>. There are two options available when configuring a Matching Property: <b>Email Address</b> or <b>Employee Number</b>. Choose one option as your Matching Property and ensure the other is set to use your standard IDP.</p>
+                            <p>
+                                <img src="../../Resources/Images/LEGAL HOLD/Address_Book_Synchronization_Matching_Property_1.png" class="Thumbnail" />
+                            </p>
+                        </li>
+                        <li>
+                            <p>Filter the list for a specific property by typing its name in the <b>Filter</b> search bar.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <p>
+            <MadCap:toggler targets="Run Sync">Run Synchronization</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="Run Sync">
+            <p>There are two options for how to run synchronization:</p>
+            <ul>
+                <li>
+                    <p>Select the <b>Run Synchronization</b> button to initiate synchronization now.</p>
+                </li>
+                <li>
+                    <p>Activate the Synchronization Schedule to automatically synchronize every 24 hours.</p>
+                </li>
+            </ul>
+            <p>If you would like to run the synchronization now, you can manually select the <b>Run Synchronization</b> button.</p>
+            <p>
+                <img src="../../Resources/Images/LEGAL HOLD/Address_Book_Synchronization_Run_Sync.png" class="Thumbnail" />
+            </p>
+            <p> Select <b>Yes</b> on the confirmation message. The synchronization process begins immediately. Once synchronization finishes, contacts in the Address Book are updated with information from the integrated employee directory system.</p>
+        </div>
+        <p>
+            <MadCap:toggler targets="Activate Schedule">Activate Synchronization Schedule</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="Activate Schedule">
+            <p>You can enable <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> to automatically initiate contact synchronization every 24 hours. This ensures that changes to the company's employee directory are updated in <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> without needing to manually run the synchronization every time.</p>
+            <p>To activate the Synchronization Schedule, select the <b>Inactive</b> switch so that it turns blue and shows as <b>Active</b>.</p>
+            <p>
+                <img src="../../Resources/Images/LEGAL HOLD/Address_Book_Synchronization_Activate_Sync_Schedule.png" class="Thumbnail" />
+            </p>
+        </div>
+        <p>
+            <MadCap:toggler targets="Review Status">Review Synchronization Status</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="Review Status">
+            <p>The Address Book Synchronization page shows when a contact synchronization was last run, as well as when it is scheduled to run next.</p>
+            <p>
+                <img src="../../Resources/Images/LEGAL HOLD/Address_Book_Synchronization_Previous_Next_Run.png" class="Thumbnail" />
+            </p>
+            <p>The <b>Previous Run</b> property is hyperlinked. When selected, it opens the Tenants Audit log where you can further investigate details about the synchronization event, such as the number of contacts that changed.</p>
+            <p>The <b>Next Run</b> property is tied to the Synchronization Schedule. If auto update is set to <b>Inactive</b>, no date will display here.</p>
+        </div>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="560.html">Subscription</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="integrations.html">Integrations</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="102.html">Address Book</MadCap:xref>
+        </p>
+        <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+    </body>
+</html>

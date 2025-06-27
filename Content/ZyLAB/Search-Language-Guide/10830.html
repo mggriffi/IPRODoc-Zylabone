@@ -1,0 +1,1057 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Complex Search Queries';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Complex Search Queries</h1>
+        <p>
+            <MadCap:keyword term="Complex Search Queries" />
+  Complex search queries contain multiple operators and/or wild cards or other search methods (fuzzy search, field search, excluded lists).
+
+
+<br /></p>
+        <p>
+            <p class="heading4" style="font-weight: bold;">Examples
+</p>
+            <table width="660" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="300" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Example of query
+          </b>
+                            </p>
+                        </th>
+                        <th width="360" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="300" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          car AND (IN &lt;fieldname&gt; {rental})
+        </p>
+                        </td>
+                        <td width="360" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Files containing 'car' and a specified field with the value 'rental' are selected.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="300" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          1 of {o* - {other, often, out}, p* - {process, procedure}, const* - {constitution, constitute, constant}}
+        </p>
+                        </td>
+                        <td width="360" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Files containing at least one word starting with 'o', 'p' or 'const'. The files may contain the words 'other', 'often', 'out', 'process', 'procedure', 'constitution', 'constitute', or 'constant', but these words will not be highlighted.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="300" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          2 of {(common law), (tort and (chief engineer) and due diligence), 1 of {breach, litig*, process, damag*, liability}}
+        </p>
+                        </td>
+                        <td width="360" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Files containing at least two results from three search queries (query 1: common law, query 2: tort and chief engineer and due diligence, query 3: 1 of breach, litig*, process, damag*, liability). For example, the result might be:
+        </p>
+                            <p class="tablebodytextleft">
+          'common law', 'breach'
+        </p>
+                            <p class="tablebodytextleft">
+          or
+        </p>
+                            <p class="tablebodytextleft">
+          'tort', 'chief engineer', 'due diligence', 'damage'
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="300" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          contract and 2 of {(bidding or rate or placement or offer or pro rata or exclu* clause), (breach or litigation or arbitration or damag*), (honor* or due diligence), (limited liabil* or warrant* or liquid*)}
+        </p>
+                        </td>
+                        <td width="360" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Files containing the word 'contract' and at least two results from three search queries. For example, the result might be:
+        </p>
+                            <p class="tablebodytextleft">
+          'contract', 'bidding', 'offer', 'breach'
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="300" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          *valu* w/10 (*book* or mark* or public*) w/20 (wrong or *correct)
+        </p>
+                        </td>
+                        <td width="360" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          The result might be:
+        </p>
+                            <p class="tablebodytextleft">
+          'The right (and wrong) way to market a book. The value of a book...' 
+        </p>
+                            <p class="tablebodytextleft">
+          Where 'wrong', 'market', 'book' and 'value' will be highlighted. 
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="300" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          (sell* TO book* {(Donoghue or Ferris or Mister&#160;or Moyes)}) AND (2017 or 2018)
+        </p>
+                        </td>
+                        <td width="360" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          The result might be:
+        </p>
+                            <p class="tablebodytextleft">
+          'In 2018, we are selling the new thriller from Mister in our bookstore.'
+        </p>
+                            <p class="tablebodytextleft">
+          Where 'Mister' and '2018' will be highlighted.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="300" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          u.s.
+        </p>
+                        </td>
+                        <td width="360" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          No search results. A dot followed by a space is by default recognized as a separator by the tokenizer; The last '.' will not be part of the token. So, the abbreviation u.s. will not be found, nor will u.s be found. To find the abbreviation u.s., search for 'u.s' 
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <p class="heading4" style="font-weight: bold;">
+  Hyphenated Text
+</p>
+            <p class="heading5" style="font-weight: bold;">
+  Example 1
+</p>
+            <p class="bodytext">
+  Text: 'some text left-right apple orange pear left-apple-right'
+  <br /></p>
+            <table width="605" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="174" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Example of query
+          </b>
+                            </p>
+                        </th>
+                        <th width="431" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="174" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          left TO right {apple}
+        </p>
+                        </td>
+                        <td width="431" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          We expect just 'left-apple-right' to be found, however, 'apple' following 'left-right' is also found. This is because both 'left' and 'right' tokens in 'left-right' text are the same token and so are the 'left' and 'right' tokens in 'left-apple-right' text. This is because hyphenated tokens get the same token id during tokenization process. Since left and right query tokens are the same, we proceed to move the right query to the next occurrence and match sub query. Thus, the extra 'apple' word is matched.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="174" style="border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          EOP to EOP {apple}
+        </p>
+                        </td>
+                        <td width="431" style="border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Here, token ids for left and right query will be same since it is the same query, and we indeed want to match everything between the current token of EOP and the next token of EOP.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <p class="heading5" style="font-weight: bold;">
+  Example 2
+</p>
+            <p class="bodytext">
+  Text: 'fresh apple-banana pie'
+</p>
+            <p class="note">
+  Where 'fresh' has position 1, 'apple' has position 2 and 'banana' has position 2 (since they are combined with a hyphen), 'pie' has position 3. 
+</p>
+            <table width="534" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="150" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Example of query
+          </b>
+                            </p>
+                        </th>
+                        <th width="132" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                        <th width="252" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results Explained
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="150" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(apple) banana pie
+        </p>
+                        </td>
+                        <td width="132" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          fresh apple-banana pie
+        </p>
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                        <td width="252" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          First the term 'pie' is matched at position 3, then at position 2 'banana' is matched, next, NOT(apple) is matched with 'fresh' at position 1. In this example, 'apple' will be skipped.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="150" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          apple NOT(banana) pie
+        </p>
+                        </td>
+                        <td width="132" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          no results
+        </p>
+                        </td>
+                        <td width="252" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          First the term 'pie' is matched at position 3, then at position 2 we will first find 'banana', but that does not match the query NOT(banana). Therefore, no results are returned.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <p class="note"><b class="specialbold">
+    Note 1</b>: Since you may not know upfront if a combination of words is hyphenated, it is advised to try different combinations of search queries when you suspect a hyphenated word might be part of the results.
+</p>
+            <p class="note"><b class="specialbold">
+    Note 2</b>: If a word or combination of words you are searching for contains a hyphen, that word will often be found, even if you did not include a hyphen in your search query. For example, when you search for 'email' or 'e mail', it will also find 'e-mail'. However, 'e mail' will not find 'email' or the other way around ('email' will not find 'e mail'). 
+</p>
+            <br />
+            <p class="heading4" style="font-weight: bold;">
+  Complex Search Queries using the NOT Operator
+</p>
+            <p class="note">
+  The processing rules for the NOT operator differ depending on the context in which it is used. Nevertheless, the NOT operator can be used several times in both a Boolean and positional context in a single query. For example, 'NOT(green AND NOT black) tea', in which the first NOT is used in a positional context and the second NOT is used in a Boolean context. 
+</p>
+            <p class="heading5" style="font-weight: bold;">
+  Syntax Examples
+</p>
+            <table width="504" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="156" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Syntax
+          </b>
+                            </p>
+                        </th>
+                        <th width="180" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Semantics
+          </b>
+                            </p>
+                        </th>
+                        <th width="168" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Recommended Use
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          left_query AND NOT right_query
+        </p>
+                            <p class="tablebodytextleft">
+          (left_query) AND NOT (right_query)
+        </p>
+                        </td>
+                        <td width="180" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where NOT is used in combination with AND (<span class="specialbold"><span style="font-weight: normal;"><b>Boolean context</b></span><span style="font-weight: normal;">) and</span></span>&#160;connects any query, such as word(s), wild card or regular expression (regex) query, sequence query, etc.
+        </p>
+                            <p class="tablebodytextleft">
+          For clarity, the queries can be placed between brackets. Please be aware that sometimes using brackets can influence the search results.
+        </p>
+                        </td>
+                        <td width="168" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          The combination of AND with NOT is often used to refine search results after a previous query. 
+        </p>
+                            <p class="tablebodytextleft">
+          Finds documents where the left_query is present and the right_query is not.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          left_query OR NOT right_query
+        </p>
+                            <p class="tablebodytextleft">
+          (left_query) OR NOT (right_query)
+        </p>
+                        </td>
+                        <td width="180" style="border: 1px solid #c0c0c0;border-image: none;">
+                            <p class="tablebodytextleft">
+          Where NOT is used in combination with OR (<b class="specialbold">Boolean context</b>) and connects any query, such as word(s), wild card or regular expression (regex) query, sequence query, etc.
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Finds documents where the left_query is present and/or where the right_query is not present.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT (left_query) AND NOT (right_query)
+        </p>
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where both the first stand-alone NOT and the second NOT used in combination with AND are used in a 
+          <b class="specialbold">
+            Boolean context
+          </b>
+          .
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Finds all documents where neither the left_query nor the right_query occur.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT (left_query) OR NOT (right_query)
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where both the first stand-alone NOT and the second NOT used in combination with OR are used in a 
+          <b class="specialbold">
+            Boolean context
+          </b>
+          .
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Finds documents where at least one of the queries is not present.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT (first_query second_query n_query)
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where NOT is used stand-alone (<b class="specialbold">Boolean context</b>) and is connected to a sequence (several terms) at one position (through parenthesis).
+        </p>
+                            <p class="tablebodytextleft"><b class="specialbold">
+            Note:
+          </b>
+          'NOT(a b c)' is not similar to 'NOT(a) NOT(b) NOT(c)', which is an ambiguous search query and will generate an error.
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          This query will narrow down your result set. Used when you want to find all documents where a specific word, phrase or results from specific queries are not present.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(first_query) second_query n_query
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where NOT, used in a 
+          <b class="specialbold">
+            positional context
+          </b>
+          , excludes any query placed in a sequence. NOT can be placed anywhere in a sequence.
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Used when you want to specifically omit (at a specific position in the sequence) a word or sequence of words usually connected with the other queries. 
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          first_query NOT(second_query) n_query
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where NOT, used in a 
+          <b class="specialbold">
+            positional context
+          </b>
+          , excludes any query placed in a sequence. NOT can be placed anywhere in a sequence.
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          left_query TO right_query {sub_query}
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT is used in a 
+          <b class="specialbold">
+            positional context</b>, in the sub query of a positional TO query. See 
+          <a title="TO Operator" id="h10860" href="10856.html" target="_self">
+            TO Operator</a>.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />          Where 
+          <em class="emphasis">
+            left_query
+          </em>
+          and 
+          <em class="emphasis">
+            right_query
+          </em>
+          can be a word query or a sequence query without negated sub-queries and 
+          <em class="emphasis">
+            sub_query
+          </em>
+          can be any valid query. For example, {word NOT word}, {NOT word} or {word AND/OR NOT word}. 
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Used when you want to specifically omit a word or sequence of words often related to the words found between the left_ and right_query.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(left_query AND NOT right_query) query
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where the first NOT is used in a 
+          <b class="specialbold">
+            positional context
+          </b>
+          and the second NOT is used in a 
+          <b class="specialbold">
+            Boolean context
+          </b>
+          .
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(NOT left_query AND NOT right_query)
+        </p>
+                            <p class="tablebodytextleft">
+          is equal to:
+        </p>
+                            <p class="tablebodytextleft">
+          left_query OR right_query
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where all NOT operators are used in a 
+          <b class="specialbold">
+            Boolean context
+          </b>
+          .
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(NOT NOT term AND NOT term)
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            incorrect syntax
+          </b>
+                            </p>
+                            <p class="tablebodytextleft">
+          Will result in an error because of nested NOT operator in a Boolean context in sub query 'NOT NOT term'.
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(first_query) NOT(second_query) NOT(third_query)
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            incorrect syntax
+          </b>
+                            </p>
+                            <p class="tablebodytextleft">
+          Search query will generate an error.
+        </p>
+                        </td>
+                        <td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Too many combinations are possible, making the search query pointless.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="bodytext">
+                <br />
+            </p>
+            <p class="heading5" style="font-weight: bold;">
+  Query Examples
+</p>
+            <table width="498" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="186" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Example of query
+          </b>
+                            </p>
+                        </th>
+                        <th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                        <th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results Explained
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT apple AND NOT orange
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          All documents that contain neither 'apple' nor 'orange'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple AND NOT pear
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Only files that contain the term 'apple'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple OR NOT pear
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Files that contain the term 'apple' (the term 'pear' can be present in the file, but not highlighted) and files that do not contain the term 'pear' (no hits, since 'apple' is not present either).
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft" />
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(green AND NOT black) tea
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Will find 'black tea', 'white tea' and just 'tea'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Because it was double negated, it will find black tea.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT(green AND black) tea
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Will find 'white tea', 'warm tea', just 'tea'. Will 
+          <b class="specialbold">
+            not find
+          </b>
+          'green tea' and 'black tea'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          leaf AND NOT tree
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Only documents where 'leaf' is present.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Narrow your search and exclude terms often connected to your search.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          used cars AND NOT cars
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            no results
+          </b>
+                            </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          No error generated, it is syntactically correct, but semantically meaningless.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          cars AND NOT used cars
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Will find 'cars', but not 'used cars'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple AND NOT(orange or pear)
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Will find documents with only 'apple' in it, but not documents with 'apple' and 'orange' or 'pear'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple OR NOT(orange pear)
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Will find 'apple'.
+        </p>
+                            <p class="tablebodytextleft">
+          And all documents that do 
+          <b class="specialbold">
+            not
+          </b>
+          contain the phrase 'orange pear'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          used cars OR NOT cars
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Will find documents with 'used cars'. Documents with only 'cars' will not be found.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          cars OR NOT used cars
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Will find documents with 'cars'. Also, every word in front of 'cars' will be found/ highlighted (except when that word is 'used').
+          <br /><br />          These documents can also contain the phrase 'used cars', but 'used' will not be highlighted.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT (NOT(apple))
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            no results, error
+          </b>
+                            </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Nested NOT query is not allowed.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT NOT apple
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            no results, error
+          </b>
+                            </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Nested NOT query is not allowed.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT (NOT apple)
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            no results, error
+          </b>
+                            </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Nested NOT query is not allowed.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple NOT(orange) pear
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          matches sequence 'apple &lt;anything but orange&gt; pear'.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple NOT(orange OR pear)
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          matches sequence 'apple &lt;anything but orange and pear&gt;'
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT combined with a Boolean OR query.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple NOT(orange AND pear)
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          matches sequence 'apple &lt;anything but orange and pear&gt;'
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT combined with a Boolean AND query.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          warm NOT(green) tea
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          warm black tea, warm white tea, warm warm tea, warm [any other word than green] tea, etc.
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple TO orange {pear NOT yellow}
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          matches text where word 'orange' follows 'apple' and sequence 'pear &lt;anything but yellow&gt;' in between (order is important).
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          apple TO orange {pear AND NOT yellow}
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          matches documents with 'orange' following 'apple' and 'pear' and something not 'yellow' in between the two terms (order not important).
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          NOT apple TO orange {pear}
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            no results, error
+          </b>
+                            </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          'NOT apple' is a NOT query, which is not allowed in a positional filter TO query.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          apple TO (orange NOT pear) {yellow}
+        </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft"><b class="specialbold">
+            no results, error
+          </b>
+                            </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          'orange NOT pear' is a sequence query with a negated sub-query, which is not allowed in a positional filter TO query.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="bodytext">
+                <br />
+            </p>
+            <p class="heading4" style="font-weight: bold;">
+  Boolean Context: Negated Sequence
+</p>
+            <p class="heading5" style="font-weight: bold;">
+  Query matching at the beginning of a document
+</p>
+            <p class="bodytext">
+  If a sequence query contains a number of negated terms followed by a positive term that matches the first token in a given text, the first single token will be matched. Consider the text 'apple pie smells good' and a sequence query 'not(banana) not(orange) apple'. The query matches the first word, 'apple', in the text above.
+</p>
+            <p class="heading5" style="font-weight: bold;">
+  Query matching at the end of a document
+</p>
+            <p class="bodytext">
+  If a sequence query contains a number of trailing negated terms preceded by a positive term that matches the last token in a given text, the last token will be matched. Consider the text 'apple pie smells good' and a sequence query 'good not(red) not(blue)'. The query matches the last word, 'good', in the text above.
+  </p>
+            <br />
+        </p>
+    </body>
+</html>

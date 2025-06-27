@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Notes for Administrators on Email Notifications</h1>
+        <p>LEGAL HOLD will send Administrative Email Notifications to alert owners of integrations and custodians.</p>
+        <p>Types of messages received:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Microsoft 365 Office Email integration is expired: Emails are no longer sent to Custodians for the Hold where the owner of the integration is listed as Hold Owner.</p>
+            </li>
+            <li>
+                <p>Microsoft 365 Compliance Center integration is expired: In-place preservation in Microsoft 365 can no longer be executed.</p>
+            </li>
+            <li>
+                <p>Address Book synchronization expired: Contacts in the Address Book are no longer synchronized with the identity provider.</p>
+            </li>
+            <li>
+                <p>Google Workspace Gmail integration is expired: Emails are no longer sent to Custodians for the Hold where the owner of the integration is listed as Hold Owner.</p>
+            </li>
+            <li>
+                <p>New Access Token: When custodians are not part of your identity provider they will receive temporary access tokens to access the custodian portal. When these tokens are expired and the custodians will receive by email a new token.</p>
+            </li>
+        </ul>
+        <p>All administrative messages are sent from <a href="mailto:mycompanyname-noreply@legalhold.one"><b>yoursubscriptionname</b>-noreply@legalhold.one</a> or <a href="mailto:mycompanyname-noreply@legalhold.eu"><b>yoursubscriptionname</b>-noreply@legalhold.eu</a>. Please add these domains to the Allow list of your email server to make sure these are not blocked by your spam or junk mail filter.</p>
+        <p MadCap:conditions="Primary.Block">
+            <img src="../../Resources/Images/AdmEmailNot.png" class="Thumbnail" />
+        </p>
+        <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+    </body>
+</html>

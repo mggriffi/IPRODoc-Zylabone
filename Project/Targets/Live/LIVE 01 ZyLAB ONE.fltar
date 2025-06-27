@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5 - ZyLAB Side Navigation.flskn"
+  MasterStylesheet="/Content/Styles/stylesheet.css"
+  PreCompileScaledImages="true"
+  EquationsOutputType="PNG"
+  ContentInclusionType="Referenced"
+  MasterPage="/Content/Resources/MasterPages/MasterPageZyLAB.flmsp"
+  ConditionTagExpression="include[Primary.FutureDelete or &quot;Primary.ZyLAB Home&quot;]"
+  DefaultUrl="/Content/ZyLAB/ONE/010101.html"
+  MasterToc="/Project/TOCs/ZyLAB ONE.fltoc"
+  TopNavTocPath="false"
+  MoveOutputContentToRoot="true"
+  UseCustomTopicFileExtension="false"
+  FaviconSkin="/Project/Skins/Favicon.flskn"
+  TopicToolbarSkin="/Project/Skins/TopicToolbar.flskn"
+  GetLatestBeforeCompile="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="docx" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/LIVE 01 ZyLAB ONE.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
+</CatapultTarget>

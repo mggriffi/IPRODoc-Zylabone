@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Keyword Highlighting</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Keyword Highlighting';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/44.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/base.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/fancy.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/main.css" />
+        <script src="../../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../../Scripts/zylab-one-manual-publication/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Scripts/zylab-one-manual-publication/theViewer.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Scripts/jquery.magnify.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="top"><span class="heading1">
+      
+      Keyword Highlighting</span>
+            </div>
+        </div>
+        <ul>
+            <li class="listnumber">Select <b>Create New Item</b>&#160;<img src="../../../Storage/zylab-one-manual-publication/10354-2018-04-26.png" alt="" /> &#160; &#160; &#160;&#160;<br /></li>
+            <li class="listnumber">
+      Define the <b>Name</b>.&#160;
+    </li>
+            <li class="listnumber">Define one or more <b>Keyword Queries</b>.</li>
+            <!-- 
+    &lt;li class=&quot;listnumber&quot;&gt;
+      Define the &lt;b&gt;Color &lt;/b&gt;of the highlighted keywords.
+    &lt;/li&gt;
+   
+    
+    &lt;li class=&quot;listnumber&quot;&gt;
+      If the &lt;b&gt;Status&lt;/b&gt; is enabled, the search results&#160;are visible in Document View.&lt;/li&gt;
+    
+    
+    
+    &lt;li class=&quot;listnumber&quot;&gt;Copy or Paste your queries.
+    &lt;/li&gt;
+-->
+            <li class="listnumber">
+      Click&#160;&#160;<img src="../../../Storage/zylab-one-manual-publication/10354-2018-04-26-1.png" alt="" /></li>
+            <li class="listnumber">For more information, please refer to <a href="https://docs.zylab.com/01/ZyLAB/ONE/672.html" target="_blank">Keyword Highlighting</a>.</li>
+        </ul><span class="bodytext"><span style="color: #2196f3;"><b>Query Syntax Help</b></span><br />    For more information, please refer to <a href="https://docs.zylab.com/01/ZyLAB/Search-Language-Guide/10824.html" target="_blank" >Search Syntax</a>.
+
+<br />Use predefined <a href="https://docs.zylab.com/01/ZyLAB/Search-Language-Guide/11633.html" target="_blank" >macros</a>, like #amount# or #date#.&#160;A&#160;"Placeholder #xxx# is not found" message is shown when the macro is not recognized.&#160;</span>
+        <ul>
+            <!--&lt;li class=&quot;listnumber&quot;&gt;
+      &lt;div&gt;
+        &lt;b&gt;Date/Time fields&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        All searches use UTC
+      &lt;/div&gt;
+      &lt;div&gt;
+        Example: emailsenttime&gt;=03/07/2013, will find documents sent on 7th of March 2013 and later
+      &lt;/div&gt;
+    &lt;/li&gt;
+-->
+            <li class="listnumber"><b>Fuzzy</b>
+                <br />
+                <div>
+        finds variations of a term.
+      </div>
+                <div>
+        Example: dutch~1, will find dutch, ditch, duich, durch, etc.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Question Mark ?</b>
+                    <br />
+                    <div>
+          matches a single character.
+        </div>
+                    <div>
+          Example: wom?n, will find woman and women.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Asterisk *</b>
+                    <br />
+                    <div>
+          matches zero or more characters.
+        </div>
+                    <div>
+          Example: *most, will find most and almost.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber"><b>AND</b>
+                <br />
+                <div>
+        finds related terms and narrows your search.
+      </div>
+                <div>
+        Example: president AND america, will only find files with both terms.
+      </div>
+            </li>
+            <li class="listnumber"><b>OR</b>
+                <br />
+                <div>
+        finds one or all terms and broadens your search.
+      </div>
+                <div>
+        Example, car OR transportation, will find files with only the term car or transportation, and files with both terms.
+      </div>
+            </li>
+            <li class="listnumber"><b>NOT</b>
+                <br />
+                <div>
+        allows you to exclude terms.
+      </div>
+                <div>
+        Example: NOT apple, will find all files that do not contain the term apple.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div><b>TO</b>
+                    <br />
+                    <div>
+          finds occurrences of a term/query falling between two other terms/queries.
+        </div>
+                    <div>
+          Example: dear TO sincerely {John}, will find the term John falling between dear and sincerely.
+        </div>
+                </div>
+            </li>
+            <!-- &lt;li class=&quot;listnumber&quot;&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;b&gt;IN fieldname {query}&lt;/b&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          finds terms in fields added to the file (meta data).
+        &lt;/div&gt;
+        &lt;div&gt;
+          Example: IN occupation {dentist}, will find the term dentist in the field occupation.
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+-->
+            <li class="listnumber">
+                <div>
+                    <div><b>Within</b>
+                    </div>
+                    <div>
+          finds related terms within a defined range.
+        </div>
+                    <div>
+          Example: Tom w/2 John, will find the term Tom within two positions (terms) from John (Tom knows John because Tom is his brother).
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Precedes</b>
+                    </div>
+                    <div>
+          finds preceding terms within a defined range.
+        </div>
+                    <div>
+          Example: live p/2 work, will find ‘live to work’ but not ‘work to live’.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Number Range</b>
+                </div>
+                <div>
+        finds numbers or number ranges.
+      </div>
+                <div>
+        Example: (&gt;1 : &lt;10), will find all values between 1 and 10.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Quorum</b>
+                    </div>
+                    <div>
+          finds a specified number of terms from a list.
+        </div>
+                    <div>
+          Example: 1 of {blue, green, red}, will find at least one or more colors from the list in a file.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Character Patterns []</b>
+                    </div>
+                    <div>
+          matches a single character and/or range that is contained within the brackets.
+        </div>
+                    <div>
+          Example: m[a-z]n, will find all terms with three letters that start with an m and end with an n.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Negation [^]</b>
+                </div>
+                <div>
+                    <div>
+          negates a single character and/or range that is contained within the brackets.
+        </div>
+                    <div>
+          Example: [^b]pple, will find apple, but also –pple, cpple, dpple, cpple, etc. But not bpple.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Preceding Element + </b>
+                    <br />        matches the preceding element one or more times.
+      </div>
+                <div>
+        Example: ab+c, will find abc, abbc, abbbc, abbbbc, etc. But not ac.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Preceding Element {m,n}</b>
+                    <br />          matches the preceding element at least m and not more than n times.
+          <br />          Example: ba{2,3}b, will find baab, baaab, but not bab, baaaab.
+          <br /></div>
+            </li>
+            <li class="listnumber">
+                <div><b>Preceding Element {m}</b>
+                    <br />        matches the preceding element exactly m times.
+      </div>
+                <div>
+        Example: [0-9]{3}-[0-9]{4}, will find local phone number 123-4567.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div style="text-decoration-style: initial;text-decoration-color: initial;">
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;"><b>Preceding Element {m,}</b>
+                        <br />          matches preceding element at least m times.
+        </div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+          Example: ba{0,}b, will find bb, bab, baab, baaab, etc.
+        </div>
+                </div>
+            </li>
+            <!--  &lt;li class=&quot;listnumber&quot;&gt;
+      &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          &lt;b&gt;Date-based macros &lt;/b&gt;
+          &lt;br/&gt;
+          find files that have been created, modified or sent a number of days, weeks, months or years ago:
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #DaysAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #WeeksAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #MonthsAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #YearsAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          &lt;br/&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          The mm/dd/yy format will be used for the evaluation, relative to the current date. Leap years and the number of days in a month are taken into account. If the resulting day is not a valid day in the resulting month, the last valid day of the resulting month is used.
+          &lt;br/&gt;
+          &lt;br/&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #DaysAgo(0)# is resolved in 00:00 of the current day.
+          &lt;br/&gt;
+          &lt;br/&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          &lt;b&gt;Note&lt;/b&gt;: Date DB type is not supported in Legal Review, only DateTime. Using &quot;=&quot; is not recommended with these types of macros.
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          Example: created &lt; #DaysAgo(0)#, will find files created yesterday and before
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+-->
+        </ul>
+        <script>/*<![CDATA[*/
+setupMagnify();
+
+/*]]>*/</script>
+    </body>
+</html>

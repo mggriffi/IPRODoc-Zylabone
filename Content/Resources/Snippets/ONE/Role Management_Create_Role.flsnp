@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Create Role</h2>
+        <ol>
+            <li>
+                <p>First, select the scope (role type).
+</p>
+                <p>
+                    <img src="../../Images/ONE/RoleManagement_SelectScope.png" class="Thumbnail" />
+                </p>
+                <p>Global roles (eDiscovery or Legal Review) apply to all matters. Matter roles apply to one specific matter. </p>
+                <p>           Filter on the role types if needed.
+</p>
+                <p>
+                    <img src="../../Images/ONE/RoleManagement_SelectScope_Filter.png" class="Thumbnail" /><![CDATA[           ]]></p>
+            </li>
+            <li>
+                <p>Select <b>Create a New Role</b>:
+            </p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/341-2020-01-20.png" alt="" class="ReduceButtonSize" />
+                </p>
+            </li>
+            <li>
+                <p>
+            Define a name for the role.
+</p>
+                <ul>
+                    <li>
+                        <p>If this role is assigned to user (groups)&#160;in combination with <a href="../../../ZyLAB/ONE/671.html">Document Security</a> Rules, select 'This Role can be assigned in combination with Document Security Rules'.</p>
+                        <p>
+                            <img src="../../Images/ONE/RoleManagement_NewRole_AssignToDocSecurityRules.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+            In the Role Permissions tab, select the <a href="../../../ZyLAB/ONE/570.html">permissions</a> for this role.
+</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>
+                If you selected the checkbox 'This Role can be assigned in combination with Document Security Rules', then you can create the role 'Search Documents'. This role allows users to search documents, but not to view them and perform actions on them. <span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;"><span style="font-size: 11pt;">This role can then be assigned to user (groups)—see&#160;</span></span><a href="../../../ZyLAB/ONE/340.html" style="text-indent: 0cm;word-spacing: normal;font-size: 11pt;">User Management</a><span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;"><span style="font-size: 11pt;">. When no Document Security rules have been created (and/or have not been combined with a role), users assigned with this&#160;role will have access to all documents.</span></span></p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Metadata (Properties) are not part of Document Security.&#160;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Add the 'Manage security' permission  to a role, to grant the user control over the administration of security permissions within a matter. When the 'Manage security' permission is included in the role assigned,  the user can administer security permissions for all other users within the matter—see <a href="../../../ZyLAB/ONE/570.html">permissions</a>. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <b>Apply</b>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

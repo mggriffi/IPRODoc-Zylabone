@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Auto Redactions</h1>
+        <p>
+  Create Auto Redaction Rules to automatically locate and redact keywords, phrases, and personal information (names, social security numbers, credit card numbers, email addresses, and more).
+  </p>
+        <p>  The videos below are helpful examples:
+</p><iframe src="https://www.youtube.com/embed/F3oOWm7EGrI?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <p>&#160;</p><iframe src="https://www.youtube.com/embed/GCgN3TfCtZk?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <h2>Add New Auto Redaction Rule
+</h2>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Add_New_Auto_Redaction_Rule.flsnp" />
+        <h2>Copy and Paste Auto Redaction Rules</h2>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Copy_Paste_Auto_Redaction_Rules.flsnp" />
+        <h2>Search for Failed Auto Redactions</h2>
+        <p>You can quickly find auto redaction errors by adding the status field to your column view.</p>
+        <ol>
+            <li>
+                <p>From the document list view, click on the settings button<img src="../../Resources/Images/ONE/SettingsButton.png" /> .</p>
+            </li>
+            <li>
+                <p>Select <b>Columns</b> and check the box for <b>Auto Redaction Status</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/ONE/AutoRedactionCheckBox.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>You can now add keywords to quickly find the errors based upon the status.</p>
+                <p>
+                    <img src="../../Resources/Images/ONE/Auto redaction status.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2>Retry Failed Auto Redactions</h2>
+        <p>You may receive an error indicating the auto redaction failed. There will be three options to resolve the problem.</p>
+        <p>
+            <img src="../../Resources/Images/ONE/AutoRedactionErrorMsg.png" class="Thumbnail" />
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><b>Close </b>button closes the message, leaving the failed state unchanged:</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>The message appears again next time this document is opened.</p>
+                    </li>
+                    <li>
+                        <p>Production of the document produces the placeholder, not the document body.</p>
+                    </li>
+                    <li>
+                        <p>If the document has some redactions applied already, ‘Contains redaction’ field is ‘Yes’.</p>
+                    </li>
+                    <li>
+                        <p>If the document has no redactions apart from failed ones, ‘Contains redaction’ field is ‘No’.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p> <b>Redact manually</b> button accepts the current state of the document:</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Error message doesn’t appear next time this document is opened.</p>
+                    </li>
+                    <li>
+                        <p>Production of the document produces the document with the proper actually existing redactions.</p>
+                    </li>
+                    <li>
+                        <p>If the document has some redactions applied already, ‘Contains redaction’ field is ‘Yes’, otherwise it’s ‘No’.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p><b>Retry </b>button triggers the auto-redactions generation for that document:</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Error message doesn’t appear next time this document is opened.</p>
+                    </li>
+                    <li>
+                        <p>Auto-redactions are successfully generated and ‘Contains redaction’ field is ‘Yes’.</p>
+                    </li>
+                    <li>
+                        <p>Production of the document produces the document with the proper actually existing redactions.</p>
+                    </li>
+                    <li>
+                        <p>Retry action doesn’t affect the neighboring documents' (previous and next) redaction states.</p>
+                    </li>
+                    <li>
+                        <p>The auto-redactions generation fails again - error message would appear again each time the document is opened.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

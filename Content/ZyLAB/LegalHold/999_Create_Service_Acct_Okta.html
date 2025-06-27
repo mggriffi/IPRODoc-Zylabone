@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create Service Account in Okta to Synchronize Users</h1>
+        <p>This page describes how to create a service account user with minimal permissions for users synchronization.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>It is always better to use regular admin user for users sync.</p>
+            </li>
+            <li>
+                <p>This procedure should not be used to avoid sync by super admin because application gets only rights that are granted in Okta (Applications → LH → Scopes) so there is no way to get any sensitive rights.</p>
+            </li>
+            <li>
+                <p>This approach makes sense if you want to limit set of users available in LH app or want to use service account instead of real admin user.</p>
+            </li>
+            <li>
+                <p>If a Service Account is used for the Okta integration, we advice to use an email address for the Service Account that is monitored to receive system notifications like broken Service Account integrations.</p>
+            </li>
+            <li>
+                <p>Okta Service Account permissions can be limited via roles (allow Service Account only to read users and not modify users, in this way the integration will be more safe and secure).</p>
+            </li>
+        </ul>
+        <h3>Step 1: Create Service Account</h3>
+        <ol>
+            <li>
+                <p>In Okta admin panel go to<b> Directory</b> → <b>People</b></p>
+            </li>
+            <li>
+                <p>Click <b>Add person</b>:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Fill fields required in your tenant.</p>
+                    </li>
+                    <li>
+                        <p>Password: Set by admin.</p>
+                    </li>
+                    <li>
+                        <p>Create secure password.</p>
+                    </li>
+                    <li>
+                        <p>Ucheck <b>User must change password on first login</b>.</p>
+                    </li>
+                    <li>
+                        <p><b>Save</b>.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h3>Step 2: Assign Minimal Legal Hold Role</h3>
+        <p>As described in documentation - grant desired user <b>IPRO Legal Hold - System Administrator</b> role - it will give minimal required access to manage subscription and address book.</p>
+        <h3>Step 3: Create Minimal Okta Role</h3>
+        <ol>
+            <li>
+                <p>In Okta admin panel go to<b> Security </b>→ <b>Administrators</b> → <b>Roles</b>.</p>
+            </li>
+            <li>
+                <p>Click <b>Create new role</b>.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Name it (for example “Legal Hold Users sync manager”).</p>
+                    </li>
+                    <li>
+                        <p>Select <b>View users and their details</b> permission.</p>
+                    </li>
+                    <li>
+                        <p><b>Save</b>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In Okta admin panel go to <b>Security</b> → <b>Administrators</b> → <b>Resources</b>.</p>
+            </li>
+            <li>
+                <p>Click <b>Create new resource set</b>.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Add <b>Assignment</b>:</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p>Resource type: <b>Users</b>.</p>
+                            </li>
+                            <li>
+                                <p>Group names: Select Constrain to all users if you want all users to be accessible from LH app OR select groups of users to be visible. For groups make sure that these are Okta groups, users from Provisioned groups (like originated from Microsoft Entra ID) may not be visible.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Name it accordingly (for example “All users”).</p>
+                    </li>
+                    <li>
+                        <p><b>Save</b>.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Alternative:  </p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="Note">Super Admin user can be used for accessing all users, however, it will not grant any extra rights unless specified in Okta application scopes.</p>
+                            </li>
+                        </ul>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="Note">Group admin user can be used to access scope of users.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Step 4: Assign Minimal Okta Role</h3>
+        <ol>
+            <li>
+                <p>In Okta admin panel go to <b>Security</b> → <b>Administrators</b> →<b> Roles</b>.</p>
+            </li>
+            <li>
+                <p>In desired role row click <b>Edit</b> → <b>View </b>or <b>Edit Assignments</b>.</p>
+            </li>
+            <li>
+                <p>Add <b>Assignment</b>:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Admin: <b>Select created user</b>.</p>
+                    </li>
+                    <li>
+                        <p>Resource set: <b>Select created set</b>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p><b>Save</b>.</p>
+            </li>
+        </ol>
+        <h3>Step 5: Users Sync</h3>
+        <ol>
+            <li>
+                <p>Login to your subscription with newly created user and click <b>Synchronize</b> <b>users in address book</b>.</p>
+            </li>
+            <li>
+                <p>Don’t forget to login with this user into the system at least once every 3 months so LH will get a new OpenId Connect refresh token and proceed with background synchronization.</p>
+            </li>
+        </ol>
+    </body>
+</html>

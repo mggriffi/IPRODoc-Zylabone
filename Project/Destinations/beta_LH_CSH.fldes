@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my beta CSH destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-betptl001\c$\Core\Help\FlareProjects\ZyLAB\CSH-legalhold"
+  Port=""
+  ViewUrl="/help/ZyLAB/CSH-legalhold"
+  Type="file"
+  RemoveStale="true"></CatapultDestination>

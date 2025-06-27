@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2__1532281504" data-has-heading-anchor="true">Server Side Printing and Print Service</h2>
+        <p>To make printing of documents quicker and to allow you to continue working the printing is done directly from the server where the index is stored, and not from the PC where the document is viewed. To see available network printers in the print dialog on your PC the ZyLAB print service must be configured and started, and the printers selected.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1898844523" data-has-heading-anchor="true">ZyLAB Print Service Setup</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to set-up the ZyLAB Print Service to be able to print directly from your server.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyLAB Web Client (in your web browser). Click on Admin &gt; Services Manager to display the Monitor page.</li>
+            <li>Check that the ZyLAB Print Service appears in the list of services. If the ZyLAB Print Service is not in the list:</li>
+        </ol>
+        <ol start="1">
+            <li>Click the Options button to display the Options page.</li>
+            <li>Select the correct Domain.</li>
+            <li>In Computers &gt; Available select the server where the index is stored and use the arrow button (&gt;) to transfer it to the Selected panel.</li>
+            <li>In Services &gt; Available select ZyLAB Print Service and use the arrow button (&gt;) to transfer it to the Selected panel.</li>
+            <li>Click OK.</li>
+        </ol>
+        <ol start="3">
+            <li>On the Monitor page, click Select on the ZyLAB Print Service.</li>
+        </ol>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0001.png" width="551" height="345" alt="" class="Thumbnail" />
+        </p>
+        <ol start="4">
+            <li>Click Start to start the ZyLAB Print Service. The Status changes to Running.</li>
+        </ol>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0002.png" width="571" height="337" alt="" class="Thumbnail" />
+        </p>
+        <ol start="5">
+            <li>To automatically start the service click Control Panel &gt; Administrative Tools &gt; Services. Double&#8209;click on ZyLAB Print Service to open its properties window. Change the Startup type to Automatic. Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>The ZyLAB Printer Service is correctly configured and started.</p>
+    </body>
+</html>

@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Keyword Highlighting';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Keyword Highlighting</h1>
+        <p>The GDPR distinguishes between regular personal data and special categories of personal data (also known as sensitive personal data). Regular personal data consists of, for instance, name, address, telephone number, social security number, and any other data that could directly or indirectly identify a person.
+  </p>
+        <p>Sensitive personal data, on the other hand, is divided into nine categories, listed below:
+  </p>
+        <p>
+            <img src="../../Storage/data-privacy-protection-to-flare/Special Category of Personal Data.png" alt="" style="width: 855px; height: 641px;" />
+            <br />
+        </p>
+        <p>The GDPR prohibits the processing of such personal data unless one of the exceptions listed under the GDPR is met:
+  </p>
+        <p><span class="note"><img src="../../Storage/data-privacy-protection-to-flare/Exceptions to Processing Special PII.png" alt="" style="width: 855px; height: 641px;" /><br /></span>
+        </p>
+        <p>Keyword Highlighting can be used to highlight certain terms, phrases or patterns in the documents which might be important.
+</p>
+        <p>ZyLAB’s Keyword Highlighting feature allows for easy identification of keywords or terms which may be significant to your matter. <MadCap:annotation MadCap:createDate="2023-06-09T16:04:15.7328777+02:00" MadCap:creator="mobrien" MadCap:initials="MO" MadCap:comment="Re-phrased original. Can still simplify?" MadCap:editor="mobrien" MadCap:editDate="2023-06-09T16:04:25.4066053+02:00">When a keyword highlighting rule key term is defined and, in turn, highlighted in the document, the reviewer is alerted of the  term. Unlike search term hits, which are only highlighted when searched, once a keyword highlighting rule is created, it is applied automatically to the entire dataset in terms associated with the rule that is highlighted in the document viewed.
+</MadCap:annotation></p>
+        <p>Keyword Highlighting can therefore be used to, for instance, highlight any sensitive or regular personal data that are present in the documents. If you would search for certain documents belonging to the requester, then these terms would be automatically highlighted in the document, which allows for a better overview. It is also possible - and advised - to use&#160;<a href="http://docs.zylab.com/smart/dsar/1004.html" target="_top">Insights</a>&#160;to extract such sensitive or regular personal data.</p>
+        <p>
+            <!--&lt;video width=&quot;700px&quot; controls=&quot;&quot; style=&quot;width:700px;&quot;&gt;
+  &lt;source src=&quot;https://cdn2.hubspot.net/hubfs/4674107/Keyword Highlighting_high.mp4?t=1585558299951&quot;&gt;
+  Your browser does not support the video tag.
+  &lt;/video&gt;--><iframe src="https://www.youtube.com/embed/QHe9MXnD0Zw?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        </p>
+        <p>&#160;</p>
+        <p>  
+  
+  Define a keyword rule that will find and highlight terms in a specific  color (not the default yellow).</p>
+        <ul>
+            <li class="listnumber">On the Home page, select <b>Configuration</b>:<br /><img src="../../Storage/data-privacy-protection-to-flare/zylabmanual/2060-2018-05-14.png" alt="" class="Thumbnail" /><br /></li>
+            <li class="listnumber">Select <b>Keyword Highlighting</b>:<br />&#160;<img src="../../Storage/data-privacy-protection-to-flare/zylabmanual/672-2018-05-28.png" alt="" class="Thumbnail" />&#160;</li>
+            <li class="listnumber">You will see a list of all keyword rules that have already been created. These can be deleted or edited.<br />To create a new one, select <b>Create New Item</b>&#160;<img src="../../Storage/data-privacy-protection-to-flare/zylabmanual/10354-2018-04-26.png" alt="" style="width: 41px; height: 42px;" class="ReduceButtonSize" /> &#160; &#160; &#160;&#160;<br /></li>
+            <li class="listnumber">
+      Define the <b>Name</b>.&#160;
+    </li>
+            <li class="listnumber">Define one or more <b>Keyword Queries</b>.</li>
+            <!-- 
+    &lt;li class=&quot;listnumber&quot;&gt;
+      Define the &lt;b&gt;Color &lt;/b&gt;of the highlighted keywords.
+    &lt;/li&gt;
+   
+    
+    &lt;li class=&quot;listnumber&quot;&gt;
+      If the &lt;b&gt;Status&lt;/b&gt; is enabled, the search results&#160;are visible in Document View.&lt;/li&gt;
+    
+    
+    
+    &lt;li class=&quot;listnumber&quot;&gt;Copy or Paste your queries.
+    &lt;/li&gt;
+-->
+            <li class="listnumber">
+      Click&#160;&#160;<img src="../../Storage/data-privacy-protection-to-flare/zylabmanual/10354-2018-04-26-1.png" alt="" class="ReduceButtonSize" /></li>
+        </ul>
+        <p>&#160;</p>
+        <h4><b>Query Syntax Help</b>
+        </h4>
+        <p>  For more information—refer to <a href="../search-language-guide/10824.html">ZyLAB One Search Language Guide</a>.
+
+<br /></p>
+        <p>Use predefined <a href="../search-language-guide-publication/11633.html" target="_top">macros</a>, like #amount# or #date#.&#160;A&#160;"Placeholder #xxx# is not found" message is shown when the macro is not recognized.</p>
+        <ul>
+            <!--&lt;li class=&quot;listnumber&quot;&gt;
+      &lt;div&gt;
+        &lt;b&gt;Date/Time fields&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        All searches use UTC
+      &lt;/div&gt;
+      &lt;div&gt;
+        Example: emailsenttime&gt;=03/07/2013, will find documents sent on 7th of March 2013 and later
+      &lt;/div&gt;
+    &lt;/li&gt;
+-->
+            <li class="listnumber"><b>Fuzzy</b>
+                <br />
+                <div>
+        finds variations of a term.
+      </div>
+                <div>
+        Example: dutch~1, will find dutch, ditch, duich, durch, etc.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Question Mark ?</b>
+                    <br />
+                    <div>
+          matches a single character.
+        </div>
+                    <div>
+          Example: wom?n, will find woman and women.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Asterisk *</b>
+                    <br />
+                    <div>
+          matches zero or more characters.
+        </div>
+                    <div>
+          Example: *most, will find most and almost.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber"><b>AND</b>
+                <br />
+                <div>
+        finds related terms and narrows your search.
+      </div>
+                <div>
+        Example: president AND america, will only find files with both terms.
+      </div>
+            </li>
+            <li class="listnumber"><b>OR</b>
+                <br />
+                <div>
+        finds one or all terms and broadens your search.
+      </div>
+                <div>
+        Example, car OR transportation, will find files with only the term car or transportation, and files with both terms.
+      </div>
+            </li>
+            <li class="listnumber"><b>NOT</b>
+                <br />
+                <div>
+        allows you to exclude terms.
+      </div>
+                <div>
+        Example: NOT apple, will find all files that do not contain the term apple.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div><b>TO</b>
+                    <br />
+                    <div>
+          finds occurrences of a term/query falling between two other terms/queries.
+        </div>
+                    <div>
+          Example: dear TO sincerely {John}, will find the term John falling between dear and sincerely.
+        </div>
+                </div>
+            </li>
+            <!-- &lt;li class=&quot;listnumber&quot;&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;b&gt;IN fieldname {query}&lt;/b&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          finds terms in fields added to the file (meta data).
+        &lt;/div&gt;
+        &lt;div&gt;
+          Example: IN occupation {dentist}, will find the term dentist in the field occupation.
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+-->
+            <li class="listnumber">
+                <div>
+                    <div><b>Within</b>
+                    </div>
+                    <div>
+          finds related terms within a defined range.
+        </div>
+                    <div>
+          Example: Tom w/2 John, will find the term Tom within two positions (terms) from John (Tom knows John because Tom is his brother).
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Precedes</b>
+                    </div>
+                    <div>
+          finds preceding terms within a defined range.
+        </div>
+                    <div>
+          Example: live p/2 work, will find ‘live to work’ but not ‘work to live’.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Number Range</b>
+                </div>
+                <div>
+        finds numbers or number ranges.
+      </div>
+                <div>
+        Example: (&gt;1 : &lt;10), will find all values between 1 and 10.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Quorum</b>
+                    </div>
+                    <div>
+          finds a specified number of terms from a list.
+        </div>
+                    <div>
+          Example: 1 of {blue, green, red}, will find at least one or more colors from the list in a file.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div>
+                    <div><b>Character Patterns []</b>
+                    </div>
+                    <div>
+          matches a single character and/or range that is contained within the brackets.
+        </div>
+                    <div>
+          Example: m[a-z]n, will find all terms with three letters that start with an m and end with an n.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Negation [^]</b>
+                </div>
+                <div>
+                    <div>
+          negates a single character and/or range that is contained within the brackets.
+        </div>
+                    <div>
+          Example: [^b]pple, will find apple, but also –pple, cpple, dpple, cpple, etc. But not bpple.
+        </div>
+                </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Preceding Element + </b>
+                    <br />        matches the preceding element one or more times.
+      </div>
+                <div>
+        Example: ab+c, will find abc, abbc, abbbc, abbbbc, etc. But not ac.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div><b>Preceding Element {m,n}</b>
+                    <br />          matches the preceding element at least m and not more than n times.
+          <br />          Example: ba{2,3}b, will find baab, baaab, but not bab, baaaab.
+          <br /></div>
+            </li>
+            <li class="listnumber">
+                <div><b>Preceding Element {m}</b>
+                    <br />        matches the preceding element exactly m times.
+      </div>
+                <div>
+        Example: [0-9]{3}-[0-9]{4}, will find local phone number 123-4567.
+      </div>
+            </li>
+            <li class="listnumber">
+                <div style="text-decoration-style: initial;text-decoration-color: initial;">
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;"><b>Preceding Element {m,}</b>
+                        <br />          matches preceding element at least m times.
+        </div>
+                    <div style="text-decoration-style: initial;text-decoration-color: initial;">
+          Example: ba{0,}b, will find bb, bab, baab, baaab, etc.
+        </div>
+                </div>
+            </li>
+            <!--  &lt;li class=&quot;listnumber&quot;&gt;
+      &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          &lt;b&gt;Date-based macros &lt;/b&gt;
+          &lt;br/&gt;
+          find files that have been created, modified or sent a number of days, weeks, months or years ago:
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #DaysAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #WeeksAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #MonthsAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #YearsAgo(&lt;number&gt;)#&lt;/number&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          &lt;br/&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          The mm/dd/yy format will be used for the evaluation, relative to the current date. Leap years and the number of days in a month are taken into account. If the resulting day is not a valid day in the resulting month, the last valid day of the resulting month is used.
+          &lt;br/&gt;
+          &lt;br/&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          #DaysAgo(0)# is resolved in 00:00 of the current day.
+          &lt;br/&gt;
+          &lt;br/&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          &lt;b&gt;Note&lt;/b&gt;: Date DB type is not supported in Legal Review, only DateTime. Using &quot;=&quot; is not recommended with these types of macros.
+        &lt;/div&gt;
+        &lt;div style=&quot;text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;
+          Example: created &lt; #DaysAgo(0)#, will find files created yesterday and before
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+-->
+        </ul>
+        <p>
+            <br />
+        </p>
+        <h2 id="h2__1536946453" data-has-heading-anchor="true">Use Case Example</h2>
+        <p>Enron adds a new Keyword Highlighting rule to highlight terms relating to special category data, such as religious or political beliefs. This can be useful for finding sensitive personal data, which are listed under the GDPR.
+</p>
+        <p>It is essential to distinguish between these different sorts of personal data and to ensure that processing is justified (if such personal data are being collected and stored by your company).</p>
+        <p>The following queries can be used to find sensitive personal data, either by searching or by using keyword highlighting:
+  
+  </p>
+        <div style="overflow-x: auto;">
+            <br />
+            <table class="CHTable" cellspacing="0" cellpadding="10" style="width: 100%;border-width: 1px;border-color: #c0c0c0;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Race / Ethnic Origin</b>
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {Black, white, Caucasian, Latino, Hispanic, Negroid, Capoid, Mongoloid, Australoid, Haitian, Asian, African American, American Indian, Alaska Native, Native Hawaiian, Pacific Islander}
+        
+  
+  </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Political Opinions</b>
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {Politics, left wing, right wing, monarchy, democracy, dictatorship, federation, confederation, supreme court, communism, corruption, social democracy, libertarianism, authority, Christian democracy, political freedom, anarchy, republic, conservative, political parties, political election, president, king, queen, vice president, dictator, socialism, anti-communism, revolution, legislation, regime, vote, voting, rights, representative democracy, parliament, parliamentary system, presidential system, constitutional democracy, prime minster, tyrant, tyranny}
+        
+  
+  </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Trade Union Membership</b>
+                            <br />
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p><span style="font-size: 11pt;">3 of {collective bargaining agreement, collective agreement, collective labo?r agreement, International Trade Union Confederation, ITUC, Confédération Syndicale Internationale, Confederación Sindical International, CSI Building “and” Wood Workers International, BWI, Education International, EI, International Affiliation “of” Writers Guilds, IAWG, International Arts “and” Entertainment Alliance, IAEA, International Federation “of” Chemical, Energy, Mine “and” General Workers Unions, ICEM, International Federation “of” Journalists, IFJ, International Metalworkers Federation, IMF, International Transport Workers Federation, ITF, International Textile, Garment “and” Leather Workers Federation, ITGLWF, International Union “of” Food, Agricultural, Hotel, Restaurant, Catering, Tobacco “and” Allied Workers Association, IUF, Public Services International, PSI, Union Network International, UNI}</span>
+                                <br />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Genetic Data</b>
+                            <br />
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {genetic, genetics, genetic data, genetic tests, genetic test, family medical history, medical history, genetic service* request, genetic service* receipt, fetus, embryo}<br /></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Biometric Data</b>
+                            <br />
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {retina, nerve layer, thin layer, tissue, eye, sensory membrane, fingerprint, Finger*, Index, Forefinger, Thumb, Pointer, Plain Arch, Tented Arch, Ulnar loop, Radial loop, Double loop, Plain whorl, Central pocket loop whorl, Accidental whorl, faceprint, face, facial recognition, facial features, hand, hand palm, palm, simian crease, simian, crease, life line, head line, heart line, girdle "of" venus, sun line, mercury line, fate line, vein*, vein* pattern*, voice, voice recording, record, documentation, record-keeping, memo, voice memo}<br /></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Health Data</b>
+                            <br />
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {Doctor, physician, physiotherapist, physiotherapy, health insurance, health, general practitioner, cancer, sick, ill, diseased, dead, death, diseased, morgue cardiologist, surgeon, nurse, nursery, hospital, first aid, emergency room, patient, general practitioner, family physician, GP, pediatrician, ophthalmologist, company doctor, company physician, patient data, release form hospital, medial specialist, nursing home, absenteeism, sick leave, blood pressure, resuscitate, ambulance, trauma helicopter, forensic doctor, dermatologist, dietician, gynecologist, pregnancy, miscarriage, abortion, low blood pressure, high blood pressure, blood sugar, oncologist, diagnose, x-ray, medicine, prescription, pharmacy, clinic intensive care, IC, healthy, obese, COVID-19, hernia, occupational physician, incapacitated, HIV, blood type, depression}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Sexual Orientation</b>
+                            <br />
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {Hetero, homosexual, straight, gay, homo, bisexual, queer, transgender, intersex, pansexual, demisexual, asexual, androphilia, gynephilia, bi-curious, non-heterosexual, lesbian, gay sexual, trans, gender nonconforming, nonbinary, genderqueer, gender fluid, gender neutral, male assigned at birth, female assigned at birth, unassigned at birth, allosexual, skoliosexual, bi omnisexual}<br /></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Criminal Past</b>
+                            <br />
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {Judge, criminal, jail prison, police, attorney, lawyer, defense attorney, court, courtroom, prosecutor, public defense, sentence, ruling, court clerk, law office, law, file number, file, legal decision, jurisprudence, suspect, victim, probation, parole, parole officer, prison sentence, community service, fine appeal, higher appeal, supreme court, court “of” justice, court “of” law, court “of” appeal arrest, custody, perjury, crime, felony, felon, violation, offence, public prosecutor, unconditional sentence, correctional institution, plea, probationary period, criminal record, charge, indictment, acquittal, punishment, misdemeanor, fine, penalty, breach}<br /></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;"><b>Religion</b>
+                            <br />
+                        </td>
+                        <td style="width: 50%;border-width: 1px;border-style: solid;border-color: #c0c0c0;">
+                            <p>3 of {God, Jehovah, Yahweh, Jew, Judaism, heaven, hell, Satan, lucifer, devil, angel, Beelzebub, Allah, prophet, apostle, sin, Christianity, Catholic, Jehovah witnesses, kingdom hall, church, Holy ghost, Bible, (Word w/2 God), demon, gospel, Watchtower, Christ, Jesus Christ, Quran, Qoran, archangel, Sunnah, Mecca, Torah, mosque, synagogue, Islam, Jannah, Jahannam, Ramadan, Easter, prayer, fasting, Jihad, Old testament, New testament, crucifixion, resurrection, baptism, Calvinist, Evangelical, Lutheran, Hail Mary, (Day w/3 Judgement), Armageddon, rabbi, Hinduism, Buddhism, buddha, Nirvana, rebirth, reincarnation, meditation, karma, Temple, Sikh, Buddhist, Hindu, Muslim, Christian, Jainism}<br /></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

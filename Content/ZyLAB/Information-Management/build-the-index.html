@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2__1051594295" data-has-heading-anchor="true">Build the index</h2>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>An index is created. The (electronic, scanned and/or imported) documents are stored in the data folders.</p>
+        <p>Refer to the ZySCAN manual for information on scanning documents and adding them to an index, and to the relevant Review Guides for information about adding data folders to an index.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX.</li>
+            <li>Click the Build icon: <img src="../../Storage/zylab-information-management-publication/build-the-index-img0001.png" width="32" height="45" alt="" />.</li>
+            <li>Go to File &gt; Open.</li>
+            <li>Select the index you want to build.</li>
+            <li>Click OK.</li>
+            <li>Click the Now button <img src="../../Storage/zylab-information-management-publication/build-the-index-img0002.png" width="17" height="19" alt="" /> to display Build dialog:<br /><img src="../../Storage/zylab-information-management-publication/build-the-index-img0003.png" width="502" height="224" alt="" class="Thumbnail" /></li>
+            <li>Select one or more of the following options:</li>
+        </ol>
+        <ul>
+            <li>Add new documents from file system to index<br />Adds all new documents to the index, whether directly from the file system or from a ZyLAB program.</li>
+            <li>Quick build (to select, deselect all the other options first).<br />Quick build only indexes documents that have been added or changed by a ZyLAB program. All other documents are skipped.</li>
+            <li>Update: Check presence of files in index on file system<br />Checks the contents of you index with the source files in a file system and updates where necessary.</li>
+            <li>Optimize index<br />Removes empty entries from the index to compact it.</li>
+            <li>Extract Data<br />Extracts document properties metadata from files to store in fields.</li>
+            <li>Generate report database</li>
+        </ul>
+        <ol start="8">
+            <li>Click Go.</li>
+            <li>Wait for the index to build. You can monitor the indexing status at the bottom of the ZyINDEX window. Click OK.</li>
+            <p>To stop indexing, click the stop button: <img src="../../Storage/zylab-information-management-publication/build-the-index-img0004.png" width="20" height="21" alt="" />.</p>
+            <p>Stop: Abort indexing and discard the temporary index file.<br />Merge: Combine the temporary index file with the current index, without processing any more files. The current file is still indexed.<br />Continue: Complete indexing.</p>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>The index is built. You can now search for information using ZyFIND, ZySEARCH or the ZyLAB Web Client.</p>
+        <h4 id="h4_159316189" data-has-heading-anchor="true">
+			Add, Quick build, Update, Optimize and/or Extract Data</h4>
+        <h4 data-has-heading-anchor="true">
+			Add</h4>
+        <p>To build a new index</p>
+        <p>To add all new documents</p>
+        <p>To update existing documents</p>
+        <p>The Add option uses the date to check if documents are new or updated. All documents are checked.</p>
+        <h5 id="h5_1855766411" data-has-heading-anchor="true">
+			Quick build</h5>
+        <p>Use Quick Build to quickly index documents that are marked new, changed or deleted. All other documents are skipped.</p>
+        <p>Marked documents are known to ZyINDEX, even before indexing starts, because they have an entry in the database. These references to the documents are created when they are exported to the index data directories with ZySCAN or when they are imported to the index data folder with the ZyINDEX import directory. Since only marked documents are indexed and all other documents are skipped, the indexing process is accelerated. </p>
+        <p>You can only use Quick Build if a link to the index is present. Also, check if 'Quick build enabled'' is selected (ZyINDEX &gt; Index Settings &gt; Settings).</p>
+        <h5 id="h5_859380341" data-has-heading-anchor="true">
+			Update</h5>
+        <p>To index moved source documents</p>
+        <p>To delete selected documents from the index</p>
+        <h5 id="h5_1416951385" data-has-heading-anchor="true">
+			Optimize</h5>
+        <p>To optimize index storage space and search speed. Use this option to maintain the index after large changes.</p>
+        <h5 id="h5__336760883" data-has-heading-anchor="true">
+			Extract Data</h5>
+        <p>To extract document properties, file system, concept, language and/or field information from documents while indexing. </p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="426">
+                    <h4 id="h4__323272092" data-has-heading-anchor="true">
+					Save time</h4>
+                    <p>If building indexes is taking too much time reduce the number of Update and Optimize actions. If existing index documents are not changed or deleted and only new documents are added to your index then doing a frequent Add action will be sufficient to update the index.</p>
+                    <h4 id="h4__1070733102" data-has-heading-anchor="true">
+					Indexing large unknown data sets<a href="build-the-index.html#h4__1070733102" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h4>
+                    <p>If you are indexing large unknown data sets (for example a hard drive of a confiscated PC), raise the number of recognizable file extensions via ZyINDEX &gt; Options &gt; Global Settings &gt; Index wizard. For more information, see Power User Manual &gt; Advanced Indexing &gt; Indexing recovery/problem files.</p>
+                    <h4 id="h4__1426690761" data-has-heading-anchor="true">
+					View Log File</h4>
+                    <ol start="1">
+                        <li>Go to View &gt; Log File.</li>
+                        <li>Select an index.</li>
+                        <li>Click Open index.</li>
+                        <li>View the Log File.</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__824713801" data-has-heading-anchor="true">Technical implications</h3>
+        <p>ZyINDEX reads designated sets of text files and records the following information about every content word within each file:</p>
+        <p>name of each file in which a given word appears</p>
+        <p>location of each word, relative to other words in the file</p>
+        <p>The index stores names and dates of graphics-only files in these formats: TIFF, PCX and BMP, so that you can make file name and date searches. During processing ZyINDEX ignores bitmapped graphic objects embedded in a text file.</p>
+        <p>When ZyINDEX encounters a new content word, it adds the word to a set of files called the dictionary. The location files store information about content word position. The term index refers to a directory holding dictionary, location and other files which were made while creating an index.</p>
+        <h4 id="h4__1641228358" data-has-heading-anchor="true">
+			Limitation</h4>
+        <p>Buffer overruns can be caused by long (&gt;256) folder/file paths. </p>
+    </body>
+</html>

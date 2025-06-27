@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p><span class="bodytext">ZyLAB ONE&#160;is a web-based document management and review application that operates on most modern browsers. </span>
+            <p>Log-in credentials are sent to users upon user set-up by your Administrator or by ZyLAB Customer Support. </p>
+            <p>
+                <img src="../Images/ONE/LogIn_ZyLABONE.png" class="Thumbnail" />
+                <br />
+            </p>
+            <p>For more information on logging in—see&#160;<a href="../../ZyLAB/ONE/557.html" target="_top">Log In and Select, Create or Delete Matter</a>.<br /></p>
+            <table style="mc-table-style: url('../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../Images/CSH_Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p style="font-size: 10pt;font-style: italic;"><b>Note:</b> If you are expecting an invitation to access ZyLAB ONE&#160;and have not yet received it, check your Spam and Trash folders for an email from ZyLAB.com.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../../Styles/ADDReview_CSH.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <p class="heading1">Document Security</p>
+        </div>
+        <p> 
+      Authorize content access on document level.
+</p>
+        <p>Create Document Security Rules (using queries) to define a set of documents. </p>
+        <p>Once the Document Security Rules have been defined, define the Roles. A role is a selection of permissions. For example, a role might consist of two permissions: Access Matter and Access Documents. A user that has been assigned with this role, is allowed to search for documents and view them in the Document List, but not open them. To open them, he needs a role with the added permission Access Document Contents.</p>
+        <p><b style="font-style: italic;">Note I</b><i>:</i> When no queries (rules) are defined, all users can view all documents.
+    
+  </p>
+        <p><b style="font-style: italic;">Note II</b><i>:</i> Security is set per <a href="https://docs.zylab.com/01/ZyLAB/ONE/341.html" target="_blank">role</a>, not per user. A <a href="https://docs.zylab.com/01/ZyLAB/ONE/671.html" target="_blank">Document Security</a> rule can be applied in combination with a role. Roles are assigned to users.</p>
+        <h3>Add New Document Security Rule</h3>
+        <ol class="listnumber">
+            <li class="listnumber">Select&#160;<img src="../../../Storage/zylab-one-manual-publication/2050-2018-05-08.png" alt="" class="ReduceButtonSize" />&#160;&#160;</li>
+            <li class="listnumber">Define a <b>Name</b>.</li>
+            <li class="listnumber">Specify one or more queries.<br />Do not use full text queries.<br />For more information, please refer to the&#160;<a href="https://docs.zylab.com/01/ZyLAB/Search-Language-Guide/10824.html" target="_blank">Search Syntax</a>.<br /></li>
+            <li class="listnumber">Click <b>Apply</b>.<br />The new rule is added to the pane on the left.</li>
+            <li class="listnumber">Once you have created one or more rules, you can filter them. You can also edit or remove them.<br /></li>
+            <li class="listnumber">Add this rule to a role:<ul><li class="listnumber">Go to Configuration &gt; Role Management.</li><li class="listnumber">Select a Matter Role and go to Role Permissions tab.</li><li class="listnumber">Select Access Documents &gt; Granted for specific documents.</li><li class="listnumber">Select the correct rule.</li><li class="listnumber">Click OK and click Apply.<br /></li></ul></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>SharePoint Collector</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='SharePoint Collector';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t10119" class="heading3">
+            <MadCap:keyword term="SharePoint Collector" />SharePoint Collector</p>
+        <p class="bodytext">The SharePoint Collector collects objects from SharePoint Online and SharePoint On Premise (Intranet-based solutions through Client Object Models and SharePoint web services). ZyLAB offers support for SharePoint 2010, 2013, and SharePoint Online.</p>
+        <p class="bodytext">In the ZyLAB.EDiscovery.Collectors.SharePoint.dll.xml config file all property names that can be collected are specified. Here you can define the metadata (field properties) that should be collected. For each property you can set the Extract value to True (it will be collected) or False (it will not be collected). As the collector is designed to collect from different versions of Sharepoint (for which Sharepoint sometimes uses different property names), some properties are added more than once with a different name (for example, Author and _Author).</p>
+        <p class="bodytext" />
+        <table class="tableintopic" width="612" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #C0C0C0;">
+            <tr align="left" valign="top">
+                <td bgcolor="#F2F2F2" style="border: 1px solid #C0C0C0;" width="612">
+                    <p class="heading4">XML Configuration</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #C0C0C0;" width="612">
+                    <p class="bodytext">
+                        <img id="f10653" src="../../Storage/legal-processing-publication/10653.png" alt="" height="407" width="746" vspace="0" hspace="0" align="bottom" border="0" />
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext" />
+        <p class="bodytext">We collect the following types of data (column types):</p>
+        <ul class="listbullet">
+            <li class="listbullet">Single line of text</li>
+            <li class="listbullet">Multiple lines of text</li>
+            <li class="listbullet">Choice</li>
+            <li class="listbullet">Number</li>
+            <li class="listbullet">Data and Time</li>
+            <li class="listbullet">Lookup</li>
+            <li class="listbullet">Person or Group</li>
+            <li class="listbullet">Hyperlink or Picture</li>
+            <li class="listbullet">Managed Metadata</li>
+        </ul>
+        <p class="bodytext" />
+        <p class="heading4">Client Configuration</p>
+        <p class="bodytext">
+            <img id="f12024" src="../../Storage/legal-processing-publication/12024.png" alt="" height="596" width="620" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <b class="specialbold">Credential Type</b>
+                <br />Choose from ClaimsBased (used to connect to SharePoint Online), Ntlm (windows authentication), Basic or Digest (used to connect to SharePoint on premise). Depending on how IIS is configured, you choose Ntlm, Basic or Digest (Go to your Sharepoint site folder in IIS and check the Authentication that is being enabled).<br /><br /><img id="f10958" src="../../Storage/legal-processing-publication/10958.png" class="embeddedjpegfiletemplate70" alt="Embedded JPEG File Template 70" height="460" width="845" vspace="0" hspace="0" align="bottom" border="0" /></li>
+            <li class="listbullet">
+                <b class="specialbold">Username</b>
+                <br />Define the username used to access SharePoint.<br />For example, for SharePoint Online: somebody@company.onmicrosoft.com<br />For example, for SharePoint on premise: Somebody<br /><p class="listnote">This user should have Read Rights in SharePoint (Visitor Group).</p><p class="list" /></li>
+            <li class="listbullet">
+                <b class="specialbold">Password</b>
+                <br />Define the password related to the user defined for SharePoint Online or SharePoint on premise.</li>
+            <li class="listbullet">
+                <b class="specialbold">Domain</b>
+                <br />Only to be defined when using Ntlm, Basic or Digest.<br />For example: zylab<br /><br /><img id="f12025" src="../../Storage/legal-processing-publication/12025.png" alt="" height="418" width="588" vspace="0" hspace="0" align="bottom" border="0" /></li>
+            <li class="listbullet">
+                <b class="specialbold">Proxy Realm</b>
+                <br />Optional. Only used for Social Tags &amp; Notes collection via SharePoint Web Services.</li>
+            <li class="listbullet">
+                <b class="specialbold">Location</b>
+                <br />Define the URL of the SharePoint site.<br />For example, for SharePoint Online: https://company.sharepoint.com/sites/somesite/<br />For example, for SharePoint on premise: http://intranet.company.com</li>
+            <li class="listbullet">
+                <b class="specialbold">Libraries</b> (optional)<br />By default, files from all libraries will be collected. If you do not want that, you can add specific libraries.<br />For example 'Shared Documents', 'Temporary Folder'.</li>
+            <li class="listbullet">
+                <b class="specialbold">Include Older Versions</b>
+                <br />Select if you want to collect all versions of a document. Do not select if you want to collect only the latest version of a document.</li>
+            <li class="listbullet">
+                <b class="specialbold">Date Range</b> (optional)<br />Optionally define the date range of the objects you want to collect.<br /><p class="listnote">The date range is not dynamically adjusted. For example, when you choose to collect everything until today (inclusive) and want to rerun the same collection action the next day, it will collect everything until yesterday (inclusive).</p></li>
+        </ul>
+        <p class="bodytext" />
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">File Types to Collect</em>
+                <br />Select the appropriate File Groups. The selected File Groups are used as a filter to determine which documents need to be collected. <br />To create new File Groups, click Add New.<br />For more information on how to define File Groups, see <a id="h9546" class="" title="Define File Groups" href="9522.html" target="_self">Define File Groups</a>.</li>
+        </ul>
+        <p class="bodytext" />
+        <p class="note">
+            <b class="specialbold">Social Tags &amp; Notes</b>
+            <br />
+            <br />
+            <img id="f10960" src="../../Storage/legal-processing-publication/10960.png" alt="" height="339" width="322" vspace="0" hspace="0" align="bottom" border="0" />
+            <br />
+            <br />The SharePoint Collector also collects <b class="specialbold">Social Tags</b> and <b class="specialbold">Social Notes</b> from documents in SharePoint. They are collected via calls to SharePoint Web Services. By default this information is not displayed in Legal Review. If you want this information to appear in Legal Review, set the Extract value for the property names 'SocialTags' and 'SocialNotes' to True in the xml config file, and add the fields to the Legal Review template.</p>
+        <p class="bodytext" />
+        <p class="heading4">Configuration SharePoint Data Retrieval through Client Object Models</p>
+        <p class="bodytext" />
+        <p class="note">SharePoint Online is currently restricted to communication through SharePoint Foundation 2010 Client Object Models provided by Microsoft (current version used 15.0)<br /><br />In the SharePoint Client Object Models, the ClientContext object serves as a gateway for accessing the SharePoint site. The object is used for everything from accessing data to performing tasks.</p>
+        <p class="bodytext" />
+        <ul class="listbullet">
+            <li class="listbullet">In order for client context to be able to communicate with server, the authenticated cookies need to be attached.</li>
+            <li class="listbullet">Client context is used to query for SharePoint libraries.</li>
+            <li class="listbullet">Client context is used to query for items in a specific library.</li>
+        </ul>
+        <p class="bodytext" />
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="11660.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10113.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

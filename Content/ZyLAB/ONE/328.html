@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Precision by Recall</h1>
+        <p>The (11-point) Precision by Recall graph shows the performance of the <a href="329.html">classifier</a>, especially in the case of high <a href="339.html">class imbalance</a>. The curve shows the tradeoff between <a href="323.html">precision and recall</a> for different threshold values. A threshold or cuttoff value is selected by the classifier. This results in different precision and recall values, as displayed in the Precision by Recall graph.</p>
+        <p><span class="bodytext"><img src="../../Storage/zylab-one-manual-publication/328-2018-03-05.png" alt="" class="Thumbnail" /></span>
+        </p>
+        <p>  Use the Precision by Recall graph to determine if the classifier is returning good results. Stop with adding new training batches when:
+  </p>
+        <ul class="listbullet">
+            <!--&lt;li class=&quot;listbullet&quot;&gt;
+      there are no more significant changes to the curve (after a few iterations/training batches)
+      &lt;br/&gt;
+      This means the quality of the classifier is stable and will not improve anymore.
+    &lt;/li&gt; -->
+            <li class="listbullet">
+                <p>
+      The curve reaches a high precision and recall (0,8 or higher).</p>
+                <p>This means the quality of the classifier is sufficient.
+</p>
+            </li>
+        </ul>
+        <h4><b>Calculation of the (11-point) Precision by Recall Curve Values</b>
+        </h4>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p>
+      A set of documents is classified.
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      The classified documents are sorted according to the output score (responsive/not responsive) of the classifier.&#160;
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      For each threshold value on the output score, a precision and recall value is calculated on the top set of documents (output score larger than the threshold).
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      All documents in the top set are said to be classified as responsive.&#160;
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      This results in a set of precision-recall value pairs for each possible threshold value, which can then be set out in a Precision by Recall curve. 
+      </p>
+                <p>The standard way of displaying the Precision by Recall curve is by only showing the precision values for 11 points of recall, starting from 0 to 1 with a step size of 0,1.&#160;
+      </p>
+            </li>
+        </ol>
+    </body>
+</html>

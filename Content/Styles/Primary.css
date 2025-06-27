@@ -1,0 +1,90 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta conditions="" />*/
+
+MadCap|glossaryTerm
+{
+	mc-closed-image: none;
+	mc-image: none;
+	mc-open-image: none;
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	background-image: none;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	background-image: none;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	background-image: none;
+}
+
+MadCap|glossaryTerm:hover
+{
+	background-image: none;
+}
+
+a
+{
+	display: inline;
+	color: #02a0db;
+	text-decoration: none;
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+	font-family: Arial;
+	line-height: 150%;
+}
+
+.hex-cards
+{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizonal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-top: 5em;
+}
+
+.hex-card
+{
+	padding: 20px;
+	text-align: center;
+}
+
+.hex-card a
+{
+	display: block;
+}
+
+.hex-card img
+{
+	display: block;
+	padding-bottom: 14px;
+	width: 100%;
+	max-width: 140px;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.hex-card img:hover
+{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+p
+{
+	
+}
+

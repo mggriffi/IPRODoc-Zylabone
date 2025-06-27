@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2_311955655" data-has-heading-anchor="true">Scheduled indexing (service)</h2>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX is open.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select the TIMER icon: <img src="../../Storage/zylab-information-management-publication/scheduled-indexing-service-img0001.png" width="34" height="49" alt="" />.</li>
+            <li>Add schedules to the list. See Scheduled indexing (manual) (page <a href="scheduled-indexing-manual.html#O_792">101</a>) and Scheduled indexing (automatic) (page <a href="scheduled-indexing-automatic.html#O_1777">103</a>).</li>
+            <li>Go to Timer &gt; Service.<br /><img src="../../Storage/zylab-information-management-publication/scheduled-indexing-service-img0002.png" width="303" height="255" alt="" class="Thumbnail" /></li>
+            <li>Fill out the Domain Name.</li>
+            <li>Fill out the User Name.</li>
+            <li>Fill out a Password.</li>
+            <li>Browse for the Temporary directory.</li>
+            <li>Set the Process priority.</li>
+            <li>Define the Number of seconds before assuming indexing thread in 'hung' state.</li>
+            <p>This option will stop and start the TIMER service if TIMER started to index a document opened by INSO and INSO does not give a reaction anymore. After the restart the document is stored in the exclude list.</p>
+            <li>Define the Number of seconds to allow the service to finish. </li>
+            <p>This is the amount of seconds the service is allowed to use for finishing indexing after stopping of the services.</p>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>The Service will be added to the list of available NT services and is started immediately. It will also run when the system is logged off. </p>
+        <h4 id="h4__735168617" data-has-heading-anchor="true">
+			Verify</h4>
+        <ol start="1">
+            <li>Go to Start &gt; Settings &gt; Control Panel &gt; Services (Windows NT)<br /><br />or<br /><br />Go to Start &gt; Settings &gt; Control Panels &gt; Administrative tools &gt; Services (Windows 2000)</li>
+            <li>Verify that TIMERservice has started.</li>
+            <li>If not, make sure that the user (used to run this service), has been granted access to run NT services.</li>
+        </ol>
+    </body>
+</html>

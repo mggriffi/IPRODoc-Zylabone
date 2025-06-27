@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Summation</h1>
+        <p>
+ To load images and data into a Summation database, a .DII (Document Image Information) file is used. </p>
+        <p> Summation recognizes a large number of data fields, mostly containing metadata.
+</p>
+        <p><b>.DII example file
+</b>
+        </p>
+        <p>@FULLTEXT DOC </p>
+        <p>&#160;</p>
+        <p>;Record 1 </p>
+        <p>@T AA000001 </p>
+        <p>@C FIELDNAME FIELDVALUE
+</p>
+        <p>@C DOCTYPE Fax </p>
+        <p>@C DOCDATE DDMMYYYY </p>
+        <p>@C PGCOUNT 3 </p>
+        <p>@D @I </p>
+        <p>AA000001.TIF </p>
+        <p><span class="bodytext"><br /></span>
+        </p>
+        <p>;Record 2 <br /></p>
+        <p>@T AA000002 </p>
+        <p>@C DOCTYPE Fax </p>
+        <p>@C DOCDATE DDMMYYY </p>
+        <p>@C PGCOUNT 10 </p>
+        <p>@D @I 
+AA000002.TIF </p>
+        <p>&#160;</p>
+        <p>A short explanation follows of the fields (tokens) used above:
+</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p>@Fulltext </p>
+                <p>Tells Summation that there are OCR documents attached to the record.</p>
+            </li>
+            <li class="listbullet">
+                <p>;</p>
+                <p>Comment line. Comments can be typed in for reference. They will not be loaded into the database.</p>
+            </li>
+            <li class="listbullet">
+                <p>@T<br /></p>
+                <p>Image Tag. Creates a new database record or overwrites an existing one.</p>
+            </li>
+            <li class="listbullet">
+                <p>@C</p>
+                <p>Column to Link. @C is used to load data into specified fields in the database.</p>
+            </li>
+            <li class="listbullet">
+                <p>@D</p>
+                <p>@D designates the location where the image file(s) for a database record is stored.</p>
+            </li>
+            <li class="listbullet">
+                <p>@I</p>
+                <p>@I refers to the default IMAGES subfolder under the case directory.</p>
+            </li>
+            <li class="listbullet">
+                <p>Image Files
+</p>
+                <p>The last line(s) of each DII record is always the image filename(s).</p>
+            </li>
+        </ul>
+        <p>For more information and a complete, up-to-date list of DII tokens, consult your vendor.
+</p>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Deduplication</h1>
+        <p>Start your own deduplication and detect duplicate files at the matter level or per custodian. Reviewers will be able to review and produce only one version.</p>
+        <p>Duplicates remain present in ZyLAB ONE. This allows the reviewer to see if multiple custodians possess a file and/or if there are multiple sources where a file is present.</p>
+        <p>Deduplication needs to be started manually.</p><iframe src="https://www.youtube.com/embed/j8PtoNDmfmA?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: If you do not have access to the Deduplication functionality yet, please <a href="https://help.zylab.com/hc/en-us/requests.html" target="_blank">contact ZyLAB</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>How Deduplication Works</h2>
+        <p>Normally, the Binary Hash code is used to detect duplicates. However, this code is not sufficient for detecting duplicate emails as it is calculated based on all available data (including metadata like time sent, email program or browser used, email server, etc). As a result all emails calculated with the Binary Hash code are unique. In order to detect duplicate emails you need another Hash code: the Deduplication Hash code. This code only looks at main content information (like sender, recipient(s), subject and body) and is used during the Deduplication process.</p>
+        <h2>Run Deduplication </h2>
+        <ol>
+            <li>
+                <p>Deduplication can be found via the Home page. Select <b>Configuration</b>.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/080801-2020-06-04-1.png" alt="" />
+                </p>
+            </li>
+            <li>
+                <p> Select <b>Deduplication</b>.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/010101-2021-03-23.png" alt="" />
+                </p>
+            </li>
+            <li>
+                <p>Determine your Deduplication Settings.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/404040-2021-04-19.png" alt="" class="Thumbnail" />
+                </p>
+                <ul>
+                    <li>
+                        <p>To detect duplicate files on matter level (the whole data set in a matter is processed), select <b>Matter Level Deduplication</b>. </p>
+                    </li>
+                    <li>
+                        <p>To detect duplicate files per custodian (only the data of a specific custodian is processed), select <b>Custodian Level Deduplication</b>.</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;">Note: When choosing <b>Custodian Level Deduplication</b>, another custodian might possess a duplicate file (shown in the All Custodians field, see below) or a duplicate file might be present in another source (shown in the All Sources field). Though a detected duplicate file might be unique for specific custodians, the Duplicates Count shows the number of duplicates on the matter level.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <b>Start</b> and wait until all files are processed.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/404040-2021-03-30-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Once the deduplication job has finished running, visit the Document List to view information about duplicate files.</p>
+                <p>In the Document List, you can select one to five columns containing all information extracted with the deduplication process. See <MadCap:xref href="document-list.html">Document List</MadCap:xref> for more information.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/404040-2021-04-12.png" alt="" class="Thumbnail" />
+                </p>
+                <ul>
+                    <li>
+                        <p style="font-weight: bold;">All Custodians</p>
+                        <p>Shows all custodians who are in possession of a file.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">All Sources</p>
+                        <p>Shows all sources where a file is present.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Duplicates Count</p>
+                        <p>Shows the number of duplicates, where zero (0) means there is only one version of the file. When the duplicate count is 1, there are two versions (the original and the duplicate). When the duplicate count is 2, there are three versions (the original and two duplicates). Etc.</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;">Note: Though a document might be unique for specific custodians (detected when executing <b>Custodian Level Deduplication</b>), the Duplicates Count will indicate the number of duplicates on a matter level.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Duplicate Type by Documents</p>
+                        <p>Shows whether a file is unique (a single occurrence of the original file), main (the first detected file of multiple occurrences), a duplicate or unknown (this is a file without a hash code and should not normally happen; it could indicate an error during processing).</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Duplicate Type by Families</p>
+                        <p>File hashes within a family are compared with file hashes of other families to check if those families are duplicates.</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;">Note: For an example to explain the difference between Duplicate Type by Documents or By Families, click <MadCap:toggler targets="Div_Dedup">here</MadCap:toggler>:</p>
+                                        <div MadCap:targetName="Div_Dedup">
+                                            <p style="font-size: 10pt; font-style: italic;">A unique email contains two attachments (see screenshot below). Within the family (email + attachments), these attachments are also unique (no other family has the same email + the same two attachments). However, both attachments do occur in another unique email, which makes each attachment a duplicate on document level.</p>
+                                            <p>
+                                                <img src="../../Storage/zylab-one-manual-publication/404040-2021-04-12-1.png" alt="" class="Thumbnail" />
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Filter the result list. Once duplicates are hidden, reviewers can concentrate on the main/unique files. <a href="1050.html">Review batches</a> can be created based on this result list.</p>
+                <p>You can filter the result list via the Settings icon &gt; Duplicates.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/10000-2021-07-15-10.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;">Note: Deduplication results might become outdated (for example, when new documents are added to the matter) and a message will explain how to solve that.</p>
+                                <p style="font-size: 10pt; font-style: italic;">
+                                    <img src="../../Storage/zylab-one-manual-publication/010101-2021-12-09.png" alt="" class="Thumbnail" />
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Search on duplicates via the following fields:</p>
+                <ul>
+                    <li>
+                        <p> Duplicates Count</p>
+                    </li>
+                    <li>
+                        <p> Duplicate Type by Documents</p>
+                    </li>
+                    <li>
+                        <p>Duplicate Type by Families</p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/404040-2021-03-30-4.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>After review, you can <a href="1501.html">produce</a> the documents that are present in your result list. In the settings, the option <b>Produce all duplicates</b> is selected by default. All duplicates present in your matter will be produced. When this option is deselected only the files that are currently present in the result list will be produced.</p>
+                <p>When defining the load file(s), you can add all fields related to Deduplication (All Custodians, All Sources, Duplicates Count, Duplicate Type by documents and Duplicate Type by families).</p>
+                <p>Please note that with the <b>Produce all duplicates</b> checkbox not selected, it might be necessary to define three additional fields to prevent data leakage.</p>
+                <p>For example, when adding the All Custodians field, it will show all custodians who possess a duplicate of that a file. Or when adding the All Sources field, it will show all sources where a duplicate file is present. And when adding the Duplicates Count field, it will show the number of times a copy is present (even when duplicates are not produced). You might not want to share that information.</p>
+                <p>Therefore, to prevent data leakage, the following fields have been added:</p>
+                <ul>
+                    <li>
+                        <p style="font-weight: bold;">All Custodians in this production</p>
+                        <p>Will only show the custodians that are present in this production and had a copy that is present in this production.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">All Sources in this production</p>
+                        <p>Will only show the sources that are present in this production and contain a copy that is present in this production.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Duplicates Count in this production</p>
+                        <p>Will only show the number of times a copy is present in this production.</p>
+                        <p>Please note this field is not available when the option <b>Produce all duplicates</b> is selected. In that case, you can use the Duplicates Count field.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <p><b>Internal Investigation</b>: Default template for Internal Investigation matters in EU. </p>
+            </li>
+            <li>
+                <p><b>Corporate Investigation</b>: Default template for Corporate Investigation matters in EU.</p>
+            </li>
+            <li>
+                <p><b>Litigation_EU</b>: Default template for Litigation matters in EU. Differences with the Litigation US template are: Display Names for Potentially Relevant/ Potentially Responsive,  Relevant/ Responsive and Not Relevant /Not Responsive.</p>
+            </li>
+            <li>
+                <p><b>Litigation_US</b>: Default template for Litigation matters in US.</p>
+            </li>
+            <li>
+                <p><b>FOIA_US</b>: Default template for the US, for the Freedom of Information Act use case.</p>
+            </li>
+            <li>
+                <p><b>Wob</b>: Default template for the Netherlands, for the Wet openbaarheid van bestuur.</p>
+            </li>
+            <li>
+                <p><b>Woo_actief</b>: Default template for the Netherlands, for the Wet open overheid:</p>
+                <p>Proactively making information public in phases.</p>
+            </li>
+            <li>
+                <p><b>Woo_passief</b>: Default template for the Netherlands, for the Wet open overheid:</p>
+                <p>Providing information on request.</p>
+            </li>
+            <li>
+                <p><b>eDiscovery_EU</b>: Generic template for eDiscovery in EU. Differences with the eDiscovery US template are: certain auto-classification rules for PII and a few Display Names for the Tags (Responsive - Relevant, Issue - Motivation).</p>
+            </li>
+            <li>
+                <p><b>eDiscovery_US</b>: Generic template for eDiscovery in US.</p>
+            </li>
+        </ul>
+    </body>
+</html>

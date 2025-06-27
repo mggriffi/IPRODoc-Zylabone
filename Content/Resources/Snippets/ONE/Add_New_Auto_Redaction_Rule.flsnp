@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <ol>
+            <li class="listnumber">
+                <p>On the Home page, select <b>Configuration</b>:</p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/2060-2018-05-14.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>Select <b>Auto Redactions</b>:</p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/2060-2018-05-14-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>Click <img src="../../../Storage/zylab-one-manual-publication/2050-2018-05-08.png" alt="" class="ReduceButtonSize" style="width: 41px;height: 42px;" /> to create a new <b>Auto Redaction Rule</b>: </p>
+                <p>
+                    <img src="../../Images/ONE/Configuration_AutoRedactions_CreateNew_NewLogo.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>Define the <b>Name</b> of the Auto Redaction rule. </p>
+            </li>
+            <li class="listnumber">
+                <p>Specify the rule type: select <b>Full-Text Search</b> or <b>Insights Entity Types</b>. </p>
+                <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Insights Entity Types are only shown when Insights is enabled. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For more information,&#160;consult our <a href="../../../ZyLAB/ONE/3031.html">Example Queries</a> or  refer to the&#160;<a href="../../../ZyLAB/Search-Language-Guide/10824.html">ZyLAB One Search Language Guide</a>.
+</p>
+            </li>
+            <li class="listnumber">
+                <p>In Redaction Settings, define the <b>Redaction Text</b>. </p>
+            </li>
+            <li class="listnumber">
+                <p>(Optional) Specify the <b>Code Entry</b>. </p>
+            </li>
+            <li class="listnumber">
+                <p>(Optional) Add a <b>Motivation</b>. </p>
+            </li>
+            <li class="listnumber">
+                <p>Select a <b>Fill Color</b> and a <b>Font Color</b>. These can be solid or transparent.</p>
+                <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: The appearance of redactions can be adjusted for productions. For more information, see <a href="../../../ZyLAB/ONE/1502.html">Image Settings</a>.
+</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/10000-2021-07-15-11.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>Define the <b>Redaction Filter</b>:</p>
+                <ul>
+                    <li class="listnumber">
+                        <p>None<br /></p>
+                        <p>No filter will be applied. The complete search hit will be redacted.</p>
+                    </li>
+                    <li class="listnumber">
+                        <p>First part email only<br /></p>
+                        <p>The entire email address will be found, but only the first part (before the @ sign) will be redacted. </p>
+                    </li>
+                    <li class="listnumber">
+                        <p>All except last n characters<br /></p>
+                        <p>Redact the entire search hit except the last n (defined number of) characters.<br /></p>
+                        <p>Make sure to define the number of characters not to redact: set the Redaction Filter Parameter (n).</p>
+                    </li>
+                    <li class="listnumber">
+                        <p>First n characters only<br /></p>
+                        <p>Redact the first n (defined number of)&#160;characters of the search hit.<br /></p>
+                        <p>Make sure to define the number of characters to redact: set the Redaction Filter Parameter (n).<br /></p>
+                    </li>
+                    <li class="listnumber">
+                        <p>Last n characters only<br /></p>
+                        <p>Redact the last n (defined number of)&#160;characters of the search hit.<br /></p>
+                        <p>Make sure to define the number of characters to redact: set the Redaction Filter Parameter (n).</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p>Click    <b>Apply</b>. The new rule is added to the left-hand pane.     The redactions will be applied immediately on all affected documents. Adjacent hits that belong together will be merged.</p>
+            </li>
+        </ol>
+    </body>
+</html>

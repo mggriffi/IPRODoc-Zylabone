@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Cloud Upload: Microsoft Exchange</h1>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><span class="note"><b>Note</b>: You'll require full read access to all mailboxes residing in Microsoft Exchange. To accomplish this, it is necessary to create an account in Microsoft Exchange with read rights across all mailboxes.The steps for configuring Exchange Impersonation are dependent on the particular version of Exchange used.</span>
+                        </p>
+                        <p style="font-size: 10pt; font-style: italic;"><span class="note"><b>Attention</b>: With the deprecation of Microsoft's Basic authentication, users must instead configure Exchange to use OAuth authentication. See <MadCap:xref href="OAuth.html">Configure Exchange Online Upload/Collection Using OAuth Authentication</MadCap:xref> for more information.</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Connection</h2>
+        <p style="font-weight: bold;">Connect with Exchange</p>
+        <ul>
+            <li>
+                <p> Login Account </p>
+                <p> Fill out the (ExCon Admin)&#160;account.</p>
+            </li>
+            <li>
+                <p> Login Password </p>
+                <p> Fill out the password.</p>
+            </li>
+            <li>
+                <p>Login Domain</p>
+                <p>Fill out the domain for authentication.</p>
+            </li>
+        </ul>
+        <p style="font-weight: bold;">Exchange Version</p>
+        <ul>
+            <li>
+                <p>Exchange Version: Make sure the correct Exchange Version is selected.</p>
+            </li>
+            <li>
+                <p>Exchange Web Services URL: Exchange Web Services URL is optional if the Autodiscover service has been configured correctly. Using Autodiscover service is necessary in environments with multiple Client Access Servers.</p>
+                <p>By default: https://outlook.office365.com/EWS/Exchange.asmx</p>
+            </li>
+            <li>
+                <p>When ready, click Next.</p>
+            </li>
+        </ul>
+        <h2>Data Selection</h2>
+        <p><b>Define Date Range</b>
+        </p>
+        <ul>
+            <li>
+                <p>Date Range Type: Select a Date Range Type from the dropdown list.</p>
+                <p>Date Range: Define the Date Range that must be searched. Use the calendar.</p>
+            </li>
+        </ul>
+        <p style="font-weight: bold;">Define Exchange Data</p>
+        <ul>
+            <li>
+                <p>Subject: Define the subject to filter the messages you collect.</p>
+            </li>
+            <li>
+                <p>Body: Define the body to filter the messages you collect.</p>
+            </li>
+            <li>
+                <p>Mailboxes: Define the mailboxes accounts that must be collected. Make sure accounts are split with either a comma or a semicolon.</p>
+                <p>For example: user01@zylab.com, user02@zylab.com</p>
+            </li>
+            <li>
+                <p>Checkbox: Skip Journal Body: Choose Skip Journal Body to skip journal items and only archive the attachments from journal items.</p>
+            </li>
+            <li>
+                <p>When ready, click Next.</p>
+            </li>
+        </ul>
+        <h2>Settings</h2>
+        <p style="font-weight: bold;">Assign Custodian and Source</p>
+        <ul>
+            <li>
+                <p>Set the custodian(s) and source(s) at the bottom of the screen.</p>
+                <p><b>Tip</b>: First select the custodian/source that needs to be assigned to all or most mailboxes. Then, select one or more mailboxes in the table for which a different custodian/source needs to be assigned.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_warn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Attention</b>: Please note that whenever no mailboxes are selected and you assign another custodian/source, all previously assigned custodians/sources will be overwritten.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>View the list of assigned custodian(s) and source(s) in the table.</p>
+            </li>
+            <li>
+                <p>When ready, click Save.</p>
+            </li>
+        </ul>
+        <p style="font-weight: bold;">Set Custodian and Source</p>
+        <ul>
+            <li>
+                <p>Custodian: Select a Custodian from the dropdown list or create a new one.</p>
+            </li>
+            <li>
+                <p>Source: Select a Source from the dropdown list or create a new one.</p>
+            </li>
+        </ul>
+    </body>
+</html>

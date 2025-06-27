@@ -1,0 +1,1570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 class="heading2" id="h2_1657704135" data-has-heading-anchor="true">
+  Prepare documents for full-text retrieval</h2>
+        <p>
+  Make your documents accessible, by&#160;archiving&#160;them. Archive your documents, using ZyINDEX and ZySCAN. 
+ During archiving, your documents are formatted (prepared for full-text retrieval). This allows you to search and find your documents.
+  <br />  
+  When preparing documents for full-text retrieval, follow the steps below:
+</p>
+        <p>
+            <ol start="1" class="bodytext">
+                <li>    Create an index
+    <br />    See Create a standard index or Create an advanced index.
+  </li>
+                <li>
+    Create a job template
+  </li>
+                <li>
+    Scan and/or Import
+  </li>
+                <li>
+    Add fields (optional)
+  </li>
+                <li>
+    OCR (optional)
+  </li>
+                <li>
+    Export
+  </li>
+                <li>
+    Build the index
+  </li>
+            </ol>
+
+  One or more steps (of steps 3 to 6) may be fully automated once you have defined the settings in a job template in ZySCAN. 
+</p>
+        <p>&#160;</p>
+        <h2 id="h2__1898602002" data-has-heading-anchor="true"><span class="heading2">Create a standard index</span>
+        </h2>
+        <p><b>Conditions</b>
+            <br />
+        </p>
+        <p>ZyINDEX is open.<br /><br /></p>
+        <p><b>Instructions</b>
+        </p>
+        <p>
+            <ol start="1" class="bodytext">
+                <li>
+    Click the BUILD icon: <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0001.png" alt="" style="width: 37.7556px;height: 53.0938px;" /></li>
+                <li>
+    Go to File &gt; New.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0002.png" width="400" height="294" alt="" class="Thumbnail" /></li>
+                <li>
+    Enter a Short name (max. 8 characters).
+  </li>
+                <li>
+    Enter a descriptive Long name (max. 80 characters). Use the name to describe the contents of the index.
+  </li>
+                <li>
+    Click OK.
+  </li>
+            </ol>
+        </p>
+        <p><b>Result<br /></b>
+        </p>
+        <p>You have created a standard index.<br /><br /></p>
+        <p><b>Important</b>
+            <br />
+        </p>
+        <p>Once saved, the short Short index name cannot be changed!<br /></p>
+        <p>To change the Long Index Name, see Change the Long Index Name
+</p>
+        <p>  
+</p>
+        <h3 id="h3_1348687655" data-has-heading-anchor="true">Create an advanced index
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  ZyINDEX is open.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Click the BUILD icon: <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0001.png" width="32" height="45" alt="" />.
+  </li>
+            <li>
+    Go to File &gt; New.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0002.png" width="400" height="294" alt="" class="Thumbnail" /></li>
+            <li>
+    Enter a Short name (max. 8 characters).
+  </li>
+            <li>
+    Enter a descriptive Long name (max. 80 characters). Use the name to describe the contents of the index.
+  </li>
+            <li>
+    Select Index Wizard.
+  </li>
+            <li>
+    Click OK.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p><span class="bodytext">  Step 1: Locations and language</span><span class="bodytext"> (page </span><a href="prepare-the-index.html#O_782" class="bodytext">17</a><span class="bodytext">) of the Index Wizard appears.</span>
+        </p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_481913124" data-has-heading-anchor="true">Step 1: Locations and language
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You are creating an advanced index. Step 1 (Locations and language) of the Index Wizard is open.
+</p>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0003.png" width="577" height="525" alt="" class="Thumbnail" />
+        </p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Choose between the (old) HAPI or the (new) TBIE search engine. When you choose the TBIE search engine, you have to define the connection to the indexing service and the content access service. Normally they are hosted on local host, but they can be hosted on another machine too.
+  </li>
+            <li>
+    In 'Index directory' you can change the location (Index directory) where you want to store the index. Click the Browse button to select a new location. Put the index on a shared network drive if you want to share the index with others.
+  </li>
+            <li>
+    Specify whether new data folders have to be created for each year, month, week, day or guid (Globally Unique IDentifier). This option allows you to physically separate data per time frame or identifier.
+  </li>
+            <li>
+    Choose the language for your 'Noise Word List'. Noise words are frequently occurring words with little relevance when searching an index (for example 'and', 'the', 'to', 'in', etc.). Select the language of the majority of the documents that will be in your index. If necessary, you can combine word list languages to cope with multi-language indexes (Edit noise words and character map (page <a href="maintain-the-index.html#O_1462">72</a>)).
+  </li>
+            <li>
+    If necessary you can change the Index's 'Long name'. This is the name you gave to the Index in the 'Create new index dialog' (Create an advanced index (page <a href="prepare-the-index.html#O_760">16</a>)). 
+  </li>
+            <li>
+    If you want your Index to be backward compatible select 'Use Windows code page' then select the language you want to use. Note the following:
+  </li>
+        </ol>
+        <p class="bodytext">
+  - The Index can only be in one language.
+</p>
+        <p class="bodytext">
+  - The Index size is limited to 10GB.
+</p>
+        <p class="bodytext">
+  It is recommended not to use this option.
+</p>
+        <ol start="7" class="bodytext">
+            <li>
+    Click Next.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have completed step 1. Step 2 (Modules) of the Index Wizard appears. 
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3__1340182469" data-has-heading-anchor="true">Step 2: Modules
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You are creating an advanced index. Step 2 (Modules) of the Index Wizard is open.
+</p>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0004.png" width="577" height="525" alt="" class="Thumbnail" />
+        </p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    If necessary, select a module and transfer it to the right panel using the arrow <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0005.png" width="38" height="23" alt="" />. 
+  </li>
+            <li>
+    If you want to de-select a module select it and transfer it to the left panel using the arrow <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0006.png" width="38" height="23" alt="" />.
+  </li>
+            <li>
+    Click Next.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have completed step 2. Step 3 (Data folders) appears.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Note
+</h4>
+        <p class="bodytext">
+  The XML Wrapper allows you to add fields to electronic documents of any format. For more information, see the ZySCAN manual &gt; Add fields to electronic documents.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_923162054" data-has-heading-anchor="true">Step 3: Data folders
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You are creating an advanced index. Step 3 (Data folders) of the Index Wizard is open.
+</p>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0007.png" width="577" height="525" alt="" class="Thumbnail" />
+        </p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Specify the location of the Data folders.
+  </li>
+            <p>
+    Data folders are the (TXT, TIFF, Electronic and XML) folders where the scanned, imported or electronic data is stored. These folders are automatically created each time an index is built. Place the data on a shared network drive if you want the data to be accessible for different users.
+  </p>
+        </ol>
+        <p class="bodytext">
+  If you want to be able to easily move your data collection (without indexing it again), select the checkbox 'Index files relative to the standard data folder'. Via Index Settings &gt; Data folders you can define a new standard data folder location. Related files do not need to be updated, which saves you time.
+  <br />  Note: If the standard data folder is changed, the XML index must inherit the same settings. Do this by opening the main index in ZyINDEX and closing it without building it.
+</p>
+        <p class="bodytext">
+  or
+</p>
+        <ol start="2" class="bodytext">
+            <li>
+    Drag and drop your data to the custom data folders.
+  </li>
+        </ol>
+        <ol start="1" class="bodytext">
+            <li>
+    Click Edit. The Custom data folders window appears.
+  </li>
+            <li>
+    Drag and drop files to the ZySCAN Text Files tab, the ZySCAN Tiff Files tab or the Other Electronic Files tab as follows:
+  </li>
+        </ol>
+        <p class="bodytext">
+  - Drag and drop individual files from Windows Explorer to one of the tabs (it is not important which tab). The files are automatically placed in the correct folder (Text, Tiff and Other).
+</p>
+        <p class="bodytext">
+  - Open a specific tab, and drag and drop a folder from Windows Explorer to that tab. Only the files permitted in that tab are added; other files types in the folder are NOT added to the other tabs; you must add the folder to those tabs if you want to index the folder's files.
+</p>
+        <ol start="3" class="bodytext">
+            <li>
+    Click the Excluded Filetypes tab. Use the right mouse button to add file types to the exclude list. Files types that are on the list will be skipped during indexing and therefore will not be searchable.
+  </li>
+            <li>
+    If you want to delete an item or folder you added to a tab select it, right click on your mouse and then select Delete.
+  </li>
+            <li>
+    Click OK to return to the Wizard.
+  </li>
+            <li>
+    If you want to separate files that give an error during indexing select "Copy files that have index errors". Specify a "Destination directory" to store these files. After indexing you can check these files to determine the reason that an error occurred.
+  </li>
+            <li>
+    Click Next.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have completed step 3. Step 4 (Settings) appears.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_939788573" data-has-heading-anchor="true">Step 4: Settings
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You are creating an advanced index. Step 4 (Settings) of the Index Wizard is open.
+</p>
+        <h5 id="h5_1004128312" class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0008.png" width="577" height="525" alt="" class="Thumbnail" />
+        </h5>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <p class="bodytext">
+  Choose between settings. You can choose from:
+</p>
+        <p class="bodytext">
+  Fuzzy search (recommended)
+  <br /> Allows you to execute fuzzy searches after indexing.
+</p>
+        <p class="bodytext">
+  Reverse search (recommended)
+  <br /> Allows you to execute searches with wild cards at the beginning of your search query after indexing.
+</p>
+        <p class="bodytext">
+  Hyperlinks (recommended) 
+  <br /> Allows you to create hyperlinks between (parts of) documents after indexing (in ZyFIND).
+</p>
+        <p class="bodytext">
+  Add new documents to the Table of Contents 
+  <br /> All new documents will be placed in a "New" folder in the Table of Contents. You can define a name for the Table of Contents folder for new documents.
+</p>
+        <ul class="bodytext">
+            <ul>
+                <ul>
+                    <li>
+        If you select the option 'Add new documents to the Table Of Contents', you can also select the option to 'Disable creation of subfolders'. Use this option if you have an index with fields with the option 'Add new documents to TOC folders specified in field value' selected (Step 5: Define fields (page <a href="prepare-the-index.html#O_786">26</a>)), and you do not want to use slashes, semicolons or commas to create subfolders.
+      </li>
+                    <li>
+        You can choose the option 'Use path of document in the file system' if you want to add documents to the Table of Contents using the file path. Define the number of folders that should be removed from the root. Do this if you do not want to include the whole path, but only the path from a certain root folder.
+      </li>
+                    <li>
+        You can choose to 'Exclude tiff files', from being added to the Table of Contents.
+      </li>
+                </ul>
+            </ul>
+        </ul>
+        <p class="bodytext">
+  Audit
+  <br /> Allows you to keep track of user actions.
+</p>
+        <p class="bodytext">
+  Quick build enabled (recommended)
+  <br /> Allows you to use Quick build when building the index. Only files that are marked new, changed or deleted are indexed.
+</p>
+        <p class="bodytext">
+  Export electronic document properties to xml wrapper
+  <br /> During indexing, document properties of any new or modified electronic document that can be extracted will be copied into an XML wrapper if an XML wrapper field definition is found with a matching field ID (start delimiter without brackets). 
+  <br />  Note: Whenever the index is erased and indexed this process will be repeated, therefore it is advised to define these fields as read only fields.
+</p>
+        <p class="bodytext">
+  Secure delete enabled
+  <br /> The 'Secure delete enabled' option allows you to safely sweep files from your hard disk when they are deleted. With this option selected, files will be shredded (or 'scrubbed' according to the DoD 5220.22-M standard) so they cannot be undeleted.
+</p>
+        <p class="bodytext">
+  Append electronic document properties at end of indexed text (recommended)
+  <br /> Extracts the document properties and adds them to the end of the indexed text so a search will also include these properties.
+</p>
+        <p class="bodytext">
+  If you want to index (large) indexes which may cause problems (for example with corrupt files or unrecognizable file formats), select the Advanced button.
+</p>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0009.png" width="496" height="250" alt="" class="Thumbnail" />
+        </p>
+        <ul>
+            <li class="bodytext">'Index PDF files with Adobe Acrobat/Reader' allows you to index PDF files with Adobe Acrobat/Reader during indexing. All standard PDF properties will be extracted, and will be indexed along with the content. PDF-file names (including points, etc.) will not be indexed.
+  </li>
+            <li class="bodytext">    'Index MSG attachments (requires MAPI)' allows you to index mail messages and attachments during indexing. Both will be searchable after indexing. MAPI (Message Application Programming Interface) is part of Microsoft Outlook.
+  </li>
+            <li class="bodytext">
+    'Index compressed files' allows you to index documents stored in compressed (ZIP) files. Password-protected ZIP files cannot be indexed but will be logged.
+  </li>
+            <li class="bodytext">
+    'Try to index non recognized file format as ASCII' allows you to index files that cannot be opened, select the option 'Index non recognized file format as ASCII' (via ZyINDEX &gt; Options &gt; Global Settings &gt; Index preferences).
+  </li>
+            <li class="bodytext">
+    Define the maximum number of files to be processed in each index session.
+  </li>
+            <li class="bodytext">
+    Define the maximum size of the token spill file.
+  </li>
+        </ul>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3__2038637835" data-has-heading-anchor="true">Step 5: Define fields
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You are creating an advanced index. Step 5 (Define fields) of the Index Wizard is open.
+</p>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0010.png" width="577" height="525" alt="" class="Thumbnail" />
+        </p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Click Define.
+    <br />    The Field definitions window appears.
+  </li>
+            <li>
+    Click Add definition.
+    <br />    The New Field Definition window appears.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0011.png" width="533" height="466" alt="" class="Thumbnail" /></li>
+            <li>
+    Enter the Name of the field.
+  </li>
+            <p>
+    A field name may not contain spaces. Spaces are automatically replaced with an underscore.
+  </p>
+            <li>
+    It is advised to keep the Id (delimiter) identical to the Name. However, you can change it.
+  </li>
+            <p>
+    Use the Id (delimiter) to define a search query. Query syntax: 
+    <br />    &lt;delimiter&gt; to "/&lt;delimiter&gt;" {}
+    <br /><br />    For example:
+    <br />    name to "/name" {john} will return all documents with the value john in the name field
+    <br />    name to "/name" {*} will return all documents with values in the name field
+    <br />    name to "/name" {} will return all documents with empty values in the name field
+  </p>
+            <li>
+    Select a Type from the dropdown list. For information about the different field types see the Glossary &gt; Field types.
+  </li>
+            <li>
+    Select the Storage &amp; Index tab.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0012.png" width="533" height="466" alt="" class="Thumbnail" /></li>
+            <li>
+    If you selected the XML Wrapper in Step 2: Modules, Store field in XML Wrapper is selected by default. You can also store in database fields, document, document catalog, workflow or audit. Whether a storage option is available depends on the index configuration.
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Define if the field should be full text searchable. If so, you can search the contents (field value) of the field.
+  </li>
+            <li>
+    Define if the field value should be synchronized with internal field storage of index at build.
+  </li>
+            <p>
+    For information on Additional options, see the Note below.
+  </p>
+        </ul>
+        <ol start="8" class="bodytext">
+            <li>
+    Click OK. 
+  </li>
+            <li>
+    Click OK.
+    <br />    You are in the Create new index wizard (Step 5:Define fields) dialog again.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0010.png" width="577" height="525" alt="" class="Thumbnail" /></li>
+            <li>
+    If you want to define Sort options for the Web Client, click Define.
+    <br />    The Define sort options dialog appears.
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Click Add to define a new sort option.
+  </li>
+            <li>
+    Enter a name. For example (if you want to sort the results ascending on the send date) SendDate (Asc).
+  </li>
+            <li>
+    Click Enter.
+  </li>
+            <li>
+    Click the Edit button.
+  </li>
+            <li>
+    Select one or more of the available fields and move with the arrow to the Selected fields.
+    <br />    You can move the selected fields up or down.
+  </li>
+            <li>
+    Select a selected field and click Edit.
+  </li>
+            <li>
+    Choose the Sort direction (Ascending or Descending).
+  </li>
+            <li>
+    If you want to sort words with numbers naturally, select the checkbox 'Use natural sort'. 
+    <br />    This will result in the following order: 
+    <br /><br />    Picture1.jpg
+    <br />    Picture2.jpg
+    <br />    Picture3.jpg
+    <br />    Picture4.jpg
+    <br />    Picture5.jpg
+    <br />    Picture6.jpg
+    <br />    Picture7.jpg
+    <br />    Picture8.jpg
+    <br />    Picture9.jpg
+    <br />    Picture10.jpg
+    <br />    Picture11.jpg
+    <br />    Picture12.jpg
+    <br /><br />    Instead of:
+    <br /><br />    Picture1.jpg
+    <br />    Picture10.jpg
+    <br />    Picture11.jpg
+    <br />    Picture12.jpg
+    <br />    Picture2.jpg
+    <br />    Etc.
+  </li>
+            <li>
+    Click OK.
+  </li>
+            <li>
+    Click OK.
+    <br />    The Sort option will be added to the Web Client.
+  </li>
+        </ul>
+        <ol start="11" class="bodytext">
+            <li>
+    If you want to select a data source that contains a table with records that can be synchronized with fields in text documents that are indexed, select Synchronize fields. Click Browse to select a datasource. 
+    <br />    Enabling this option will activate the database synchronization frame in the field definition dialog.
+    <br />    For more information, see Synchronize fields and database records with ODBC (page <a href="prepare-the-index.html#O_1461">32</a>).
+  </li>
+            <li>
+    If required, click Modify to select which email properties (of emails in a .pst email archive) should be included (extracted and indexed) as fields.
+  </li>
+            <li>
+    If you want to connect your index to a database click Wizard. For full details about using the database wizard see Database Settings Wizard (page <a href="prepare-the-index.html#O_7281">36</a>).
+  </li>
+            <li>
+    Click Next.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have completed step 5. Step 6 (Security) appears.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Note
+</h4>
+        <p class="bodytext">
+  For more information about adding fields/values, see the ZySCAN manual &gt; Add fields.
+</p>
+        <p class="bodytext">
+  The Primary field (Storage &amp; Index tab) is related to ODBC synchronization. The Primary field checkbox is disabled when an existing field definition is being edited. The option is only enabled for new field definitions, which is to protect the user from promoting an existing field to a primary key while duplicate values might exist in the repository. This issue would introduce a corrupt primary key and cause unpredictable behavior. 
+</p>
+        <p class="bodytext">
+  Obtain as document property from electronic file (Storage &amp; Index tab) means that in case you give in the same field definition as the document properties in this electronic file the content of this file will be put in the files of ZyFIELD.
+</p>
+        <p><span class="bodytext">
+  Add new documents to TOC folder specified in field value (Storage &amp; Index tab) means that all new documents with this field definition will be put in an upfront created folder with this field definition in the table of contents. If you want to use this option, make sure that the index setting "add new documents to the Table of Contents" is selected (see Step 4: Settings</span><span class="bodytext"> (page </span><a href="prepare-the-index.html#O_785" class="bodytext">23</a><span class="bodytext">)).</span>
+        </p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3__1246085257" data-has-heading-anchor="true">Synchronize fields and database records with ODBC
+</h3>
+        <p class="bodytext">
+  Database synchronization can be used in advanced installations to synchronize key fields of documents in a ZyINDEX archive and field information in a database. Database synchronization has been implemented to enable the import and export of document field values from and to a table in a database that supports ODBC (see ZyLAB Information Management Platform &gt; Glossary).
+</p>
+        <p class="bodytext">
+  The record in a table of the database can be linked to the ZyINDEX document by selecting a primary keyfield in the field definitions of the index. Depending on the value of the primary keyfield in the document the correct record is selected in the database table from which other field values may be read and put in a document field, or alternatively to which an existing field value may be saved. This exchange of field values is called synchronization. 
+</p>
+        <p class="bodytext">
+  Note that synchronization only occurs when ZyINDEX is indexing the index for either new files or files that have changed. No synchronization will occur for database records that have changed while the document has remained unchanged.
+</p>
+        <p class="bodytext">
+  To make sure that the values of the linked fields match, we advise using barcodes that correspond with the documents during scanning. Recognizing the barcodes during scanning is very reliable and it is easy to print barcodes from a database.
+</p>
+        <p class="bodytext">
+  The procedure to process the documents has to be the following:
+</p>
+        <p class="bodytext">
+  Enter the information for the document in the database. Print a Barcode containing the value of the primary key field on a label and stick the label on the first page of the document. Alternatively you may print the barcode on a white page that can be used as a front page and as a patch page when scanning the paper documents.
+</p>
+        <p class="bodytext">
+  Scan the document.
+</p>
+        <p class="bodytext">
+  Build the index. Now the key field info is copied from the database to the corresponding document.
+</p>
+        <p class="bodytext">
+  When the document information within the database changes the key field information within the document will be automatically updated during the next index update.
+</p>
+        <p class="bodytext">
+  The following steps implement this operation:
+</p>
+        <p class="bodytext">
+  Create a (system) data source (DSN) in the control panel of your system for the database (e.g. Access database) that you want to synchronize fields with. It is recommended to make a system data source because a user data source can only be used on the machine where it is created and is only visible to the one who created it.
+</p>
+        <p class="bodytext">
+  In WIN2000 you have to add the type of database via Control panel &gt; Administrative tools &gt; Data sources (ODBC) &gt; tab System DSN, and add to choose the right type of database. In Windows NT the Data sources (ODBC) can be found right under the control panel.
+</p>
+        <p class="bodytext">
+  Below is an example for an ODBC set-up for Microsoft Access. A name and description for the coupling have to be made. With Database &gt; select, one can connect with a database.
+  <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0013.png" width="301" height="204" alt="" class="Thumbnail" /></p>
+        <p class="bodytext">
+  Now we have made a connection to the database via a data source. If we hook this data source up to an index the database and ZyINDEX are connected to each other.
+</p>
+        <p class="bodytext">
+  First an index has to be made. In order to get the fields synchronized check the synchronize fields box and select the appropriate DSN (the data source you just created) and the table of the database you want to synchronize with. This function can be found in step 5 of the Index Wizard (Create an advanced index (page <a href="prepare-the-index.html#O_760">16</a>)).
+  <br /></p>
+        <p class="bodytext"> Note: You can only select one table in the data source per index.
+</p>
+        <p class="bodytext">
+  Select Define Fields and views to define a field and specify (in the ODBC tab of the New Field Definition dialog) whether it should be synchronized with the data source of the index. Note that this section of a field definition is not enabled if no data source is selected.
+  <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0014.png" width="341" height="298" alt="" class="Thumbnail" /></p>
+        <p class="bodytext">
+  At least one field should be selected as primary keyfield that links the ZyINDEX document to a unique record in the database so that other fields may either be written to or read from the database at indexing time. The other fields have to be synchronized by selecting regular fields.
+</p>
+        <p class="bodytext">
+  In order to synchronize the fields from the database and ZyINDEX the name of the field in the database must be entered in the 'Database field name' field in the ODBC tab of the New Field Definition dialog. In case there are fields in the database or in ZyINDEX that you don’t want to synchronize choose do not synchronize.
+</p>
+        <p class="bodytext">
+  The indexing process triggers the synchronization. Only if a document is changed, its fields will be synchronized with a record in the database that matches the primary keyfield. Synchronization will store all fields that are write-type to the database and will read all fields that are read-type.
+</p>
+        <p class="bodytext">
+  Working in this manner will save you a lot of time typing all this data from the database into the fields of ZyINDEX.
+</p>
+        <p class="bodytext">&#160;</p>
+        <h3 id="h3_1831345438" data-has-heading-anchor="true">Field Definition Option: Use for visualization
+</h3>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0015.png" width="533" height="466" alt="" class="Thumbnail" />
+        </p>
+        <p class="bodytext">
+  ZyINDEX &gt; Build &gt; Define Fields &gt; Define &gt; Add definition &gt; Client tab
+</p>
+        <p class="bodytext">
+  The option 'Use for visualization' enables you to refine your search results by filtering on the content of the field (see Refine Your Results). For the Single-select list field, the Multi-select list field and the Logical field, 'Use for visualization' is a default option. 
+</p>
+        <p class="bodytext">
+  Once the 'Use for visualization' checkbox is selected, you can define the Value separator (the default value is a comma). The defined delimiter will be used for dynamic filtering (Refine your Results), including the Star Tree and Tree Map. It is recommended to use punctuation characters. If the value separator is empty, the field value will not be split. A value separator can include, start or end with one or more space characters.
+</p>
+        <h4 id="h4_1601836855" class="bodytext" data-has-heading-anchor="true">
+  Notes
+</h4>
+        <p class="bodytext">
+  When editing fields, still a comma will be used to split or combine field values.
+</p>
+        <p class="bodytext">
+  In eDiscovery the Value separator is particularly useful. For example, in Microsoft Outlook fields with email addresses are split with a semicolon (;). These fields should be linked to a ZyINDEX field with a semicolon as the Value separator.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_850382859" data-has-heading-anchor="true">Database Settings Wizard
+</h3>
+        <h4 id="h4__921250684" class="bodytext" data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You want to connect a ZyLAB index to a database to access/manage data stored in that database. With the Database Settings Wizard you will be able to define all the settings needed to establish a connection between ZyINDEX and the database.
+</p>
+        <h4 id="h4_1338375795" class="bodytext" data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Create an advanced index to Step 5: Define fields (page <a href="prepare-the-index.html#O_786">26</a>) (see Create an advanced index (page <a href="prepare-the-index.html#O_760">16</a>)).
+  </li>
+            <li>
+    To define the database connection, in Step 5 click the Wizard button.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0016.png" width="470" height="35" alt="" class="Thumbnail" /></li>
+            <li>
+    The ZyLAB Database Settings Wizard appears.
+    <br />    The wizard allows you to connect ZyINDEX to ADO in order to access/manage data through an OLE DB Provider, ODBC or native provider. The ZyLAB Ado.xml file enables the link between the ZyLAB index(es) and the type of database that is being used.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0017.png" width="543" height="391" alt="" class="Thumbnail" />&#160;
+  </li>
+            <li>
+    Click Next.
+  </li>
+            <li>
+    Choose a type of database engine, the software component that is used to create, retrieve, update and delete data from a database.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0018.png" width="543" height="391" alt="" class="Thumbnail" /><br />   Choose from:
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    MS Access 97
+  </li>
+            <li>
+    MS Access 2000
+  </li>
+            <li>
+    MS SQL Server
+  </li>
+            <li>
+    PostgreSQL
+  </li>
+            <li>
+    Oracle
+  </li>
+            <li>
+    MySQL
+  </li>
+        </ul>
+        <ol start="6" class="bodytext">
+            <li>
+    Click Next.
+  </li>
+            <li>
+    If you selected the Database Fields module in Step 2: Modules (page <a href="prepare-the-index.html#O_783">19</a>), select a Database Fields scenario from the dropdown listbox.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0019.png" width="543" height="391" alt="" class="Thumbnail" /></li>
+            <p>
+    Fields are listed in the Fields.txt file of the index, which can be found at \\ZyLAB Data\Indexes\[index name]\FIELDS
+  </p>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Double click on the chosen Database Fields scenario.
+  </li>
+            <li>
+    Double click on a table.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0020.png" width="369" height="246" alt="" class="Thumbnail" /></li>
+            <li>
+    The Fields for the table appear.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0021.png" width="642" height="377" alt="" class="Thumbnail" /></li>
+            <li>
+    Double click on a cell to change it. 
+    <br />    It is possible to change the names of the fields, only the name and path fields (or guid) can not change because of the database connection. 
+    <br /><br />    The values of the Id fields are used for the database values and for the fields.txt.
+  </li>
+            <li>
+    To save and close, click OK.
+  </li>
+            <li>
+    Click Close.
+  </li>
+        </ul>
+        <ol start="8" class="bodytext">
+            <li>
+    If you do not want to use the existing tables, select the checkbox Drop Existing Tables.
+  </li>
+            <li>
+    Click Next.
+  </li>
+            <li>
+    Before you can create a connection to a database, a database needs to be created. &#160;
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0022.png" width="543" height="391" alt="" class="Thumbnail" /></li>
+            <li>
+    First, the connection method of ZyINDEX with the database needs to be defined. For this, the Connection String needs to be constructed.
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Click the Construct button.
+    <br />    The Construct Connection string dialog appears.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0023.png" width="602" height="210" alt="" class="Thumbnail" /><br />    Define the connection method and choose one of the three following methods: 
+  </li>
+            <li>
+    Provider
+    <br />    If you want to connect to the database using OLE DB as the connetion method, select an OLE DB Provider from the dropdown listbox. 
+  </li>
+            <li>
+    Dsn
+    <br />    If you want to connect to the database using ODBC as the connection method, select a Data Source Name (DSN) from the dropdown listbox. 
+    <br /><br />    A DSN is a data structure that contains the information about a specific database that an Open Database Connectivity (ODBC) driver needs in order to connect to it. It is created beforehand via the ODBC Data Source Administrator program. Included in the DSN is information such as the name, directory and driver of the database, and, depending on the type of DSN, the ID and password of the user.
+  </li>
+            <li>
+    SQLServer
+    <br />    If you want to connect to the database using SQL Server as the connection method, select an SQLServer from the dropdown listbox. Click on the Retrieve Remote SQLServers button to collect all available servers.
+  </li>
+            <li>
+    Click OK.
+  </li>
+        </ul>
+        <ol start="12" class="bodytext">
+            <li>
+    Select a script to create a database. Choose from:
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Toc_DP_MySQL.sql
+    <br />    This script will generate a Table of Contents DP? database (including folders and items).
+  </li>
+            <li>
+    Toc_DP_Oracle.sql
+    <br />    This script will generate a Table of Contents DP? database for Oracle (including folders and items).
+  </li>
+            <li>
+    Toc_DP_SQLServer.sql
+  </li>
+            <li>
+    Toc_MySQL.sql
+    <br />    This script will generate a Table of Contents database (including folders and items).
+  </li>
+            <li>
+    Toc_Oracle.sql
+  </li>
+            <li>
+    Toc_SQLServer.sql
+  </li>
+            <li>
+    Workflow Management_SQLServer.sql
+  </li>
+            <li>
+    DatabaseFields.sql (if the module Database Fields was selected in Step 2: Modules<a id="H_962"></a> (page <a href="prepare-the-index.html#O_783">19</a>))
+  </li>
+        </ul>
+        <ul class="bodytext">
+            <ul>
+                <li>
+      DatabaseFields_GUID.xml
+    </li>
+                <li>
+      DatabaseFields.xml
+    </li>
+                <li>
+      DatabaseFields_PrimaryField.xml
+    </li>
+                <li>
+      DatabaseFields_HapiDocId.xml
+    </li>
+                <li>
+      DatabaseFields_AnalyticsServer.xml
+    </li>
+            </ul>
+        </ul>
+        <ol start="13" class="bodytext">
+            <li>
+    Define a Username and Password. This user is allowed to change the database and the tables within the database.
+    <br /><br />    or
+    <br /><br />    Select (if you selected MS SQL Server as the databaser provider) the checkbox Windows Authentication.
+  </li>
+            <li>
+    Databasename
+    <br />    Define the name of the database.
+  </li>
+            <li>
+    Select the database that should be used. Choose from:
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Use existing
+  </li>
+            <li>
+    Create new
+  </li>
+            <li>
+    Create new and drop old
+  </li>
+        </ul>
+        <ol start="16" class="bodytext">
+            <li>
+    The option "Use double quotes" is selected by default. This will minimize the risk of failure when generating the database.
+  </li>
+            <li>
+    Click Generate.
+    <br />    The database is generated. 
+  </li>
+            <li>
+    Click Next.
+  </li>
+            <li>
+    The Connection String you defined is copied. You only have to define a separate Username and Password. This user is allowed to view and change data in the tables.
+  </li>
+            <li>
+    Click Test Connection.
+    <br />    If the connection is not correct, try using other settings.
+  </li>
+            <li>
+    Click Next.
+  </li>
+            <li>
+    To retrieve data from the database, select the correct SQL Dialect. As a rule of thumb, select a dialect that corresponds with the chosen database engine.
+  </li>
+            <li>
+    Click Next.
+  </li>
+            <li>
+    Click Save.
+  </li>
+            <li>
+    Click Finish.
+  </li>
+            <li>
+    Click Next.
+  </li>
+            <li>
+    Define Step 6: Security (page <a href="prepare-the-index.html#O_787">44</a>).
+  </li>
+            <li>
+    Click Finish.
+  </li>
+        </ol>
+        <h4 id="h4_1624192333" class="bodytext" data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have created an index. Also, you defined the database settings and created an ado.xml file that will create a link between the ZyLAB index and the database.
+</p>
+        <h4 id="h4_1414246154" class="bodytext" data-has-heading-anchor="true">
+  Note
+</h4>
+        <p class="bodytext">
+  Run this wizard during the creation of an index. The connection can only be made if the Database Fields module has just been added. If you want to create a new connection (to another database or other fields), the module must be removed and added again. Then, you need to run the wizard again to create the connection.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_1301242074" data-has-heading-anchor="true">Linking to ZyLAB Analytics Server
+</h3>
+        <p class="bodytext">
+  When ZyLAB Analytics Server is installed (part of ZyLAB Analytics Bundle) you can analyze single documents opened in ZyVIEW using ZyLAB Analytics Server (see ZyFIND &gt; Working With Documents &gt; Analyze with ZyLAB Analytics Server.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  When you want to use the Analysis Dialog button in ZyView (see ZyFIND &gt; Working With Documents &gt; Analyze with ZyLAB Analytics Server) you must use the Database Settings Wizard (page <a href="prepare-the-index.html#O_7281">36</a>) to link your index to a database with a specific fields scenario.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Create an Advanced Index with Database Fields and XML Wrapper modules (Create an advanced index (page <a href="prepare-the-index.html#O_760">16</a>)), then follow the steps for the database wizard (Database Settings Wizard (page <a href="prepare-the-index.html#O_7281">36</a>)) until the Module Fields screen.
+  </li>
+            <li>
+    In the database wizard's Module Fields screen select the DatabaseFields_AnalyticsServer.xml and the TocFieldBindings.xml scenarios from the drop-down lists.
+  </li>
+            <li>
+    Continue with the Database Settings Wizard (page <a href="prepare-the-index.html#O_7281">36</a>).
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have created an index from which documents can be analyzed directly in ZyView using ZyLAB Analytics Server.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_396006898" data-has-heading-anchor="true">Step 6: Security
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You are creating an advanced index. Step 6 (Security) of the Index Wizard is open.
+</p>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0024.png" width="577" height="525" alt="" class="Thumbnail" />
+        </p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Select a role in the right hand corner of the dialog.
+  </li>
+            <p>
+    To change the settings of the roles, go to ZyINDEX &gt; Security.
+  </p>
+            <li>
+    Select a user or user group from the available users and groups on the left. 
+  </li>
+            <li>
+    Click on the arrow to the right: <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0005.png" width="38" height="23" alt="" />. The user or user group inherits the settings (permissions) of the selected role.
+  </li>
+            <li>
+    By default, 'Inherit from roles' is selected. The inherited user group is grayed out. If the 'Inherit from ZyLAB roles' option is deselected, the inherited user group turns black. Now you are able to delete it. Inherited user groups are used to automatically add default users to your index, which makes the creation of new indexes much faster, and adds security. 
+  </li>
+            <li>
+    Click Finish.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p><span class="bodytext">
+  You have completed step 6. The index is created. Use this index to store your data (Build the index</span><span class="bodytext"> (page </span><a href="build-the-index.html#O_728" class="bodytext">60</a><span class="bodytext">)).</span>
+        </p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_180795211" data-has-heading-anchor="true">Forensic Investigation Index
+</h3>
+        <p class="bodytext">
+  The Forensic Investigation index template allows users to index information more quickly as some of the search functions for the indexed data are disabled. Search options such as fuzzy search and reverse search are disabled, which will increase the indexing speed. PDF files are indexed using the standard filters and not with Adobe Reader (Acrobat). The Unicode version of this index template allows larger sets of indexed files and uses Unicode, allowing you to index different character sets in one index.
+</p>
+        <p class="bodytext">
+  The settings shown below are for an index created with the Forensic Investigation template. As you can see, only two options are selected.
+  <br />  The option 'Index compressed files' in Advanced Index Settings allows you to index documents of compressed (ZIP) files. Password protected ZIP files cannot be indexed, but will be logged.
+</p>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0025.png" width="576" height="542" alt="" class="Thumbnail" />
+        </p>
+        <p class="bodytext">
+  &#160;
+
+  &#160;
+</p>
+        <h3 id="h3_416212815" data-has-heading-anchor="true">Taxonomy Field Index
+</h3>
+        <p class="bodytext">
+  A taxonomy enables you to classify and manage your documents, based on hierarchical structures. An existing taxonomy may be linked to a ZyINDEX index, ensuring faster and more precise access to relevant information. The classification values will be part of the document, stored as field values belonging to the field Taxonomy. This enables dynamic structuring of information, which saves storage space and enhances search capabilities.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    First, create a Taxonomy index. Open ZyINDEX &gt; Build.
+  </li>
+            <li>
+    Go to File &gt; New.
+  </li>
+            <li>
+    Fill out a Short name (max. 8 characters).
+  </li>
+            <li>
+    Fill out a Long name (max. 80 characters). Describe the contents of the index in more detail.
+  </li>
+            <li>
+    Select Taxonomy Field Index.
+  </li>
+            <li>
+    Click OK. 
+    <br />    You have created an index with a Taxonomy facet field, which is linked to a taxonomy. 
+  </li>
+            <li>
+    Click Define Fields <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0026.png" width="15" height="16" alt="" />.
+  </li>
+            <li>
+    Select the Taxonomy field.
+  </li>
+            <li>
+    Click Edit definition. 
+  </li>
+            <li>
+    To replace the Value file name (the taxonomy), click Browse.
+  </li>
+            <li>
+    Fill out the new File name.
+  </li>
+            <li>
+    Click Select.
+  </li>
+            <li>
+    Click OK twice. 
+  </li>
+            <li>
+    Add documents to your index and build it.
+  </li>
+            <li>
+    Open ZyFIND, and the index you just created.
+  </li>
+            <li>
+    Search your documents.
+  </li>
+            <li>
+    Add (taxonomy) field values via ZyRESULT or ZyVIEW. Select the Taxonomy field and use the Taxonomy Browser (displayed below the Taxonomy field) to make a selection. To make multiple selections, press Alt and select as many selections as you like. Click Save Multiple Selections. 
+  </li>
+            <li>
+    Go to ZyINDEX and build the index.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You created a Taxonomy index, added documents and (taxonomy) field values. Now, you can search the index. Either in ZyFIND &gt; Fields, or via a Web Client. 
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_1994969163" data-has-heading-anchor="true">Concepts &amp; Field Extractor
+</h3>
+        <p class="bodytext">
+  It is possible to extract document properties, file system, concept, language and/or field information from documents while indexing. This information is added as Xmlfields (C:\Program Files\ZyLAB\Index Data\'Short Index Name'\XmlFields).
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Create a HAPI index with XML Wrapper. 
+  </li>
+            <li>
+    Go to the Index Settings and select the Data Extractors tab.
+  </li>
+            <li>
+    Select Concept, Document properties, File System and/or Field Extractor.
+  </li>
+            <p>
+    Concepts are (complex) search statements with a name. For example, the concept 'Legal' may be defined as 'lawyer OR justice OR rechtsanwald OR advocaat OR court'. So, you will extract information (and place it in fields) based on queries.
+    <br /><br />    Document properties is information attached to a document with meta information. For example, 'Last Saved By', 'Word Count', 'Status'.
+    <br /><br />    File system is information defining a document on the system. For example, 'File name' or 'Date created'.
+    <br /><br />    Field Extractor extracts information from documents based on a start and end delimiter. The delimiters can be anything.
+  </p>
+            <li>
+    If you want to control storage space and maintenance, select the option Exclude TIFF files. Properties of TIFF files will be filtered, preventing the creation of fields for non-existing or non-relevant properties.
+  </li>
+            <li>
+    Define the Extract mode (only new/modified or all documents).
+  </li>
+            <li>
+    Click Apply.
+  </li>
+            <li>
+    If you selected Concept, select the Concept tab.
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Browse for a Concepts file (to create a new one, see Create Concepts File (page <a href="prepare-the-index.html#O_3257">50</a>). Or, to use the example concepts file, browse to \\Program Files\ZyLAB\Information Management Platform\Extractors\Concepts). Make sure that the fields defined in the Concepts file are defined in the index.
+  </li>
+            <li>
+    Click Apply.
+  </li>
+        </ul>
+        <ol start="8" class="bodytext">
+            <li>
+    If you selected Document properties, select the Document Properties tab.
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Define the maximum number of fields (document properties) allowed to be extracted. This is recommended if you are working with large document sets with many different formats.
+  </li>
+            <li>
+    Click Apply.
+  </li>
+            <p>
+    Only document properties that are defined in the documents and listed (Document Comment, Keyword, Last Saved By, Author, Subject, Title, Abstract, Account, Address, Attachments, Authorization, Backup Date, Bill To, Blind Copy, Carbon Copy, Category, Checked By, Client, Completed Date, Character Count, Page Count, Word Count, Creation Date, Department, Destination, Disposition, Division, Document Type, Minutes Edited, Editor, Forward To, Group, Language, Last Print Date, Mail Stop, Matter, Office, Operator, Owner, Project, Publisher, Purpose, Received From, Recorded By, Recorded Date, Reference, Revision Date, Revision Notes, Revision Number, Secondary Author, Section, Security, Source, Status, Typist, Version Date, Version Notes, Base File Location and Version Number) are extracted. 
+  </p>
+        </ul>
+        <ol start="9" class="bodytext">
+            <li>
+    If you selected File System, select the File System tab.
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Select the system file properties you want to extract. For example, File name and Date created.
+  </li>
+            <li>
+    Click Apply.
+  </li>
+        </ul>
+        <ol start="10" class="bodytext">
+            <li>
+    If you selected Field Extractor, 
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Create key fields, with Module field XML Wrapper, first.
+  </li>
+            <li>
+    Select the Field Extractor tab.
+  </li>
+            <li>
+    Browse for the correct Field Extractor file. This is an XML file. To create one, see Create Field Extractor File (page <a href="prepare-the-index.html#O_5565">52</a>).
+  </li>
+            <li>
+    Click Open.
+  </li>
+            <li>
+    Click Apply.
+  </li>
+            <p>
+    XML and HTML files must be indexed using the indexing format ANSI-Nowrap instead of AutoSenseINSO. Otherwise, the delimiters in the files will not be indexed and therefore cannot be used to extract field information.
+    <br />    Select the custom data folders icon <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0027.png" width="25" height="25" alt="" />. In the ZySCAN Text Files tab, select the *.xml folder, and double click in the right hand pane on Format. Select from the dropdown listbox the ANSI NoWrap value, and click OK.
+  </p>
+        </ul>
+        <ol start="11" class="bodytext">
+            <li>
+    Click OK.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You defined a HAPI index with XML Wrapper and defined the data you want to extract while indexing.
+</p>
+        <p class="bodytext">
+  Now, you can add documents to your index, and build it. Remember to select the option 'Extract data' before clicking GO.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3__220354719" data-has-heading-anchor="true">Create Concepts File
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You have created a HAPI index with XML Wrapper, and selected Concept as the Data Extractor. 
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Select the Concepts icon <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0028.png" width="48" height="51" alt="" />.
+  </li>
+            <li>
+    Go to File &gt; New.
+  </li>
+            <li>
+    Select New File and click the right mouse button.
+  </li>
+            <li>
+    Select New.
+    <br />    The New concept dialog appears.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0029.png" width="364" height="249" alt="" class="Thumbnail" /></li>
+            <li>
+    Define the name of the concept (for example, Possible Suspects). 
+  </li>
+            <li>
+    Click the Index button. Select an index with XML Wrapper and Concepts selected as the Data Extractor.
+  </li>
+            <li>
+    Click OK.
+  </li>
+            <li>
+    Select a field from the dropdown list box. A successful search executed with the concept Possible Suspects, will be placed in the Suspect field.
+  </li>
+            <p>
+    If the selected field is a list field (with a number of defined list field values), it is possible to generate a concept entry for each list field value. This means that several searches can be executed which will be placed in the selected field.
+  </p>
+            <li>
+    Click OK.
+  </li>
+            <p>
+    You can create as many concepts to a XML concepts file as you like.
+  </p>
+            <li>
+    Click Add.
+  </li>
+            <li>
+    Define the ID, the value and the query.
+  </li>
+            <p>
+    For example, value "John Doe" is added to the field Suspect if the query "John Doe OR John Dune OR Joe Doe OR Joe Dune" was successful.
+  </p>
+            <li>
+    Click OK.
+  </li>
+            <p>
+    You can add as many concept entries to a concept as you like.
+  </p>
+            <li>
+    Select New file.
+  </li>
+            <li>
+    Click the right mouse button.
+  </li>
+            <li>
+    Click Save.
+  </li>
+            <li>
+    Define a name for the XML Concepts file, for example Investigation.
+  </li>
+            <li>
+    Click Save.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have created a new Concept file.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_1173215328" data-has-heading-anchor="true">Create Field Extractor File
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  You have created a HAPI index with XML Wrapper and key fields, and selected Field Extractor as the Data Extractor. 
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Select the Field Extractor icon.
+  </li>
+            <li>
+    Go to File &gt; New.
+  </li>
+            <li>
+    Select New File.
+  </li>
+            <li>
+    Click the Add button.
+    <br />    The New Field dialog appears.
+  </li>
+            <li>
+    Define the Field name.
+  </li>
+            <li>
+    Select the Index button.
+  </li>
+            <li>
+    Select the index with XML Wrapper and key fields you just created.
+  </li>
+            <li>
+    Click OK.
+  </li>
+            <li>
+    Select a key field from the dropdown listbox.
+  </li>
+            <li>
+    Define the start and the end delimiter of the selected key field. These delimiters may but do not need to be bounded by brackets.
+  </li>
+            <li>
+    Click OK.
+  </li>
+            <p>
+    If you want to add more fields, repeat step 4 to 11.
+  </p>
+            <p>
+    If you want to edit/delete a field, select the correct field and click the appropriate button.
+  </p>
+            <li>
+    Select New file.
+  </li>
+            <li>
+    Click the right mouse button.
+  </li>
+            <li>
+    Click Save.
+  </li>
+            <li>
+    Define a name and location for the Field Extractor Xml file.
+  </li>
+            <li>
+    Click Save.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have created a new Field Extractor file.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3__1894931398" data-has-heading-anchor="true">Reuse an index (template)
+</h3>
+        <p><span class="bodytext">Using index templates saves time as all the fields and . You can create your own templates (based on existing indexes - see Create an index template</span><span class="bodytext"> (page </span><a href="prepare-the-index.html#O_822" class="bodytext">56</a><span class="bodytext">)), or you can choose one of the following basic templates (see Create an index based on a template</span><span class="bodytext"> (page </span><a href="prepare-the-index.html#O_761" class="bodytext">58</a><span class="bodytext">)).
+</span>
+        </p>
+        <p class="bodytext">
+  &#160;
+</p>
+        <h3 id="h3__1979102412" data-has-heading-anchor="true">Index Series templates
+</h3>
+        <p class="bodytext">
+  Index Series templates are used to automatically create new indexes in the same series when the current index reaches a cutoff limit set by a time interval or the index size. The index series can later be searched as a single index. For the Index Series Template to function you must add the index to the Timer.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Go to ZyINDEX.
+  </li>
+            <li>
+    Open an index.
+  </li>
+            <li>
+    Go to Build &gt; Save as template. The Save index as template window opens.
+  </li>
+        </ol>
+        <p class="bodytext">
+            <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0030.png" width="435" height="466" alt="" class="Thumbnail" />
+        </p>
+        <ol start="4" class="bodytext">
+            <li>
+    Enter a Name for the Index Series template.
+  </li>
+            <li>
+    Check the Save as index series checkbox. 
+  </li>
+            <li>
+    Select to cutoff the active index using either Time or Size:
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Time creates a new index in the series in periods of Weeks, Months or Years. You set the interval between index creation using Count. A new index in a series is then created at that interval from the date the template was created. Choose the period that best suits your needs.
+  </li>
+            <li>
+    Size creates a new index when the current index in the series reaches the set limit. Set the limit in Mb to the size that best suits the capability of your system and the performance of the index.
+  </li>
+        </ul>
+        <ol start="7" class="bodytext">
+            <li>
+    Enter the path for the index data store:
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Data root is the UNC path name when the index is accessed by other users over a network. Accessing a UNC path name is slower than using a mapped drive, so if there are no users over a network leave this blank.
+  </li>
+            <li>
+    Local data root is the mapped path name for the index on the PC where it is stored.
+  </li>
+        </ul>
+        <ol start="8" class="bodytext">
+            <li>
+    Click OK to save the template.
+  </li>
+        </ol>
+        <p class="bodytext">
+  A new sub-folder is created in the index's data folder. 
+</p>
+        <ol start="9" class="bodytext">
+            <li>
+    Add the Index to the Timer (Set up Timer Service (see "<a href="document-repository-security.html#O_3556">Set-up Timer Service</a>" page <a href="document-repository-security.html#O_3556">209</a>)).
+  </li>
+        </ol>
+        <p class="bodytext">
+  When the cutoff limit is reached a new sub-folder is created for the subsequent new index in the series.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  The index is converted to a series template, and the Timer Service is activated to create new indexes in the series according to the cutoff rules.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_407190005" data-has-heading-anchor="true">Create an index template
+</h3>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  ZyINDEX is open.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Go to File &gt; Open.
+  </li>
+            <li>
+    Select the index you want to reuse.
+  </li>
+            <li>
+    Click OK.
+  </li>
+            <li>
+    Go to Build &gt; Save as template. The Save as template dialog appears:
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0030.png" width="435" height="466" alt="" class="Thumbnail" /></li>
+            <li>
+    Give the template a name.
+  </li>
+            <li>
+    Select, if necessary, one or more of the following options:
+  </li>
+        </ol>
+        <ul class="bodytext">
+            <li>
+    Save table of contents
+    <br />    Saves the table of contents made for the existing index in ZyFIND.
+  </li>
+            <li>
+    Save command script
+    <br />    Saves the locations where the existing index was built over.
+  </li>
+            <li>
+    Save module settings
+    <br /><br /></li>
+            <li>
+    Save as index series
+    <br />    Index Series templates are used to automatically create new indexes in the same series when the current index reaches a cutoff limit set by a time interval or the index size. The index series can later be searched as a single index. For the Index Series Template to function you must add the index to the Timer. See Index Series templates (page <a href="prepare-the-index.html#O_3266">54</a>) for instructions.
+  </li>
+        </ul>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have created an index template.
+</p>
+        <p>
+  &#160;
+</p>
+        <h3 id="h3_1167268774" data-has-heading-anchor="true">Create an index based on a template
+</h3>
+        <p class="bodytext">
+  ZyINDEX in installed with some standard templates. These are:
+</p>
+        <p class="bodytext">
+  Audit Trail database
+  <br />Contains Audit Trail module, link to Audit Trail database, and all relevant fields (see About Audit Trail (page <a href="general.html#O_1349">190</a>) for more details).
+</p>
+        <p class="bodytext">
+  eDiscovery
+  <br /> Contains all fields necessary for storing document information necessary for the eDiscovery process.
+</p>
+        <p class="bodytext">
+  Email Archive
+  <br /> Contains all fields necessary for storing information about emails and their attachments.
+</p>
+        <p class="bodytext">
+  Exchange Connector
+  <br /> An index series based on Email Archive, and specific Exchange Connector fields.
+</p>
+        <p class="bodytext">
+  Forensic Investigation
+</p>
+        <p class="bodytext">
+  Legal Review
+  <br /> Contains all fields necessary for the legal review process.
+</p>
+        <p class="bodytext">
+  Redaction
+  <br />  Contains a Redaction field (linked to Redaction.xml value file with Exemption codes) and XML Wrapper.
+</p>
+        <p class="bodytext">
+  Taxonomy Field index
+  <br /> Contains an XML Wrapper and two XML Wrapper fields of the Taxonomy facet field type. Both fields are linked to a value file (see Taxonomy Field Index<a id="H_3462"></a> (page <a href="prepare-the-index.html#O_3318">47</a>) for more details).
+</p>
+        <p class="bodytext">
+  Workflow Archive
+  <br /> Workflow module, customized short description, and TOC view (see the ZyLAB Workflow manual for more details)
+</p>
+        <h4 data-has-heading-anchor="true">
+  Conditions
+</h4>
+        <p class="bodytext">
+  ZyINDEX is open.
+</p>
+        <h4 data-has-heading-anchor="true">
+  Instructions
+</h4>
+        <ol start="1" class="bodytext">
+            <li>
+    Click the BUILD icon: <img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0001.png" width="32" height="45" alt="" />.
+  </li>
+            <li>
+    Go to File &gt; New.
+    <br /><img src="../../Storage/zylab-information-management-publication/prepare-the-index-img0002.png" width="400" height="294" alt="" class="Thumbnail" /></li>
+            <li>
+    Enter a Short name (max. 8 characters).
+  </li>
+            <li>
+    Enter a descriptive Long name (max. 80 characters). Use the name to describe the contents of the index.
+  </li>
+            <li>
+    Select a template from the "Create index using" list.
+  </li>
+            <li>
+    Click OK.
+  </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+  Result
+</h4>
+        <p class="bodytext">
+  You have created an index based on a template.
+</p>
+    </body>
+</html>

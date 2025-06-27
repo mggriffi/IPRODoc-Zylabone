@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Within Operator';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Within Operator</h1>
+        <p><span class="bodytext"><MadCap:keyword term="Within Operator" />
+  The Within operator is used to ensure that your search terms are related to each other. This is called a proximity search, an advanced search where terms can be matched (are related to each other) while avoiding search results where the terms are scattered across a file and are unrelated to each other. You can combine several Within operators in the same search query. 
+  </span>
+        </p>
+        <p><span class="bodytext"><table width="605" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2"><tbody><tr align="left" valign="top"><th width="198" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            syntax
+          </b></p></th><th width="186" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            semantics 
+          </b></p></th><th width="221" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Recommended Use
+          </b></p></th></tr><tr align="left" valign="top"><td width="198" style="border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: solid;"><p class="tablebodytextleft">
+          left_query W/n right_query
+        </p></td><td width="186" style="border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          where n is the maximum number of terms to look for for the left_query to the left and right of the right_query.
+        </p><p class="tablebodytextleft">
+          The left_ and right_query may not contain a NOT query (any context), TO query, Field query (IN) or Field filter query (for example, 'date=10/12/1980').
+        </p></td><td width="221" style="border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: solid;"><p class="tablebodytextleft">
+          Limit your search to words that appear within a defined range in either direction.
+        </p></td></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          left_query W/n/term right_query
+        </p></td><td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          where term can be a word (for example, 
+          <code class="monospace">
+            sandwich
+          </code>
+          ), a number or a separator (for example, EOL (End of Line)).
+        </p></td><td width="221" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          &#160;
+        </p></td></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          left_query /n,m/ right_query
+        </p></td><td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          where n is the maximum number of terms the left_query may precede the right_query, and m is the maximum number of terms the left_query may follow the right_query.
+        </p></td><td width="221" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          &#160;
+        </p></td></tr></tbody></table><p class="heading4"><br /></p><p class="heading4">
+  Examples
+  <br /></p><table width="606" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2"><tbody><tr align="left" valign="top"><th width="198" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Examples Search Queries
+          </b></p></th><th width="216" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Search Results
+          </b></p></th><th width="192" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Search Results Explained
+          </b></p></th></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          Tom w/2 John
+        </p></td><td width="216" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          'T<b class="specialbold">om
+          </b>
+          knows 
+          <b class="specialbold">
+            John
+          </b>
+          because 
+          <b class="specialbold">
+            Tom
+          </b>
+          went to school with John's brother.'
+        </p></td><td width="192" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          The term 'Tom' has token ids 1 and 5, and the term 'John' has token id 3. So, the token at position 1 is within 2 positions of the token at position 3, and so is the token at position 5.
+        </p></td></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          Tom Smith w/2 John Doe
+        </p></td><td width="216" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          '<b class="specialbold">Tom Smith
+          </b>
+          knows 
+          <b class="specialbold">
+            John Doe
+          </b>
+          because Tom Smith went to school with John's brother.'
+        </p></td><td width="192" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          The term 'Smith' has token ids 2 and 8, and the term 'John' has token id 4. So, the token at position 2 is within 2 positions of the token at position 4, but the token at position 8 is not.
+        </p></td></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          John Doe w/2 Tom Smith
+        </p></td><td width="216" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          'Tom Smith knows 
+          <b class="specialbold">
+            John Doe
+          </b>
+          because 
+          <b class="specialbold">
+            Tom Smith
+          </b>
+          went to school with John's brother.'
+        </p></td><td width="192" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          The term 'Doe' has token id 5, and the term 'Tom' has token ids 2 and 7. So, the token at position 5 is within 2 positions of the token at position 7, but not within 2 positions of the token at position 2.
+        </p></td></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          Tom Smith w/3 John Doe
+        </p></td><td width="216" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          '<b class="specialbold">Tom Smith
+          </b>
+          knows 
+          <b class="specialbold">
+            John Doe</b>, 
+          <b class="specialbold">
+            Tom Smith
+          </b>
+          went to school with John's brother.'
+        </p></td><td width="192" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          The term 'Smith' is at positions 2 and 7, and the term 'John' is still at position 4. So, both tokens at positions 2 and 7 are within 3 positions of the token at position 4.
+        </p></td></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;"><p class="tablebodytextleft">
+          Minnesota W/3/EOS Maine
+        </p></td><td width="216" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          Minnesota appears within 3 sentences of Maine, and vice versa.
+        </p></td><td width="192" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          The EOS (End Of Sentence) separator is used.
+        </p></td></tr><tr align="left" valign="top"><td width="198" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          John /4,10/ Tom
+        </p></td><td width="216" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          John appears within a maximum of 4 positions before Tom and 10 positions after Tom. 
+        </p></td><td width="192" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          &#160;
+        </p></td></tr></tbody></table><p class="note">&#160;</p><p class="note"><b class="specialbold">    Performance Tip: </b><br /></p><p class="note"><i>Choose W/3 - W/5 to search in approximately the same phrase.
+  </i><br style="font-style: normal;" /><i><p>&#160;</p></i></p><p class="note"><i>Choose W/15 to search in approximately the same sentence.
+  </i><br style="font-style: normal;" /></p><p class="note"><i>Choose W/50 to search in approximately the same paragraph.
+  </i><br style="font-style: normal;" /><i> </i></p><p class="note"><i>Though there is an upper boundary set to 1000, it is advised to choose a number below 100 to prevent too many search results with unrelated search terms.</i><![CDATA[
+]]></p></span>
+            <br />
+        </p>
+    </body>
+</html>

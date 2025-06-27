@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <!--
+		<div style="float:right; width:100%">
+			<MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" />
+		</div>
+		-->
+        <div>
+            <MadCap:bodyProxy />
+        </div>
+    </body>
+</html>

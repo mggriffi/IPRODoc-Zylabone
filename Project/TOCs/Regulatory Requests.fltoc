@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Welcome"
+    Link="/Content/ZyLAB/Regulatory-Requests/03030301.html" />
+  <TocEntry
+    Title="Zorgfraude (Dutch)"
+    Link="/Content/ZyLAB/Regulatory-Requests/030303.html">
+    <TocEntry
+      Title="Workflows"
+      Link="/Content/ZyLAB/Regulatory-Requests/303001-1.html" />
+    <TocEntry
+      Title="Inloggen"
+      Link="/Content/ZyLAB/Regulatory-Requests/303002-1.html" />
+    <TocEntry
+      Title="Het Dossier Dashboard"
+      Link="/Content/ZyLAB/Regulatory-Requests/303003-1.html" />
+    <TocEntry
+      Title="Data Verzamelen"
+      Link="/Content/ZyLAB/Regulatory-Requests/303005-1.html" />
+    <TocEntry
+      Title="Configuratie"
+      Link="/Content/ZyLAB/Regulatory-Requests/303006-1.html" />
+    <TocEntry
+      Title="Data Doorzoeken"
+      Link="/Content/ZyLAB/Regulatory-Requests/303007-1.html" />
+    <TocEntry
+      Title="Filteren &amp; Categoriseren"
+      Link="/Content/ZyLAB/Regulatory-Requests/303008-1.html" />
+    <TocEntry
+      Title="Extraheren &amp; Organiseren"
+      Link="/Content/ZyLAB/Regulatory-Requests/303009-1.html" />
+    <TocEntry
+      Title="Produceren"
+      Link="/Content/ZyLAB/Regulatory-Requests/303010-1.html" />
+    <TocEntry
+      Title="Rapporteren"
+      Link="/Content/ZyLAB/Regulatory-Requests/303011-1.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Mededingingsrecht (Dutch)"
+    Link="/Content/ZyLAB/Regulatory-Requests/707070.html">
+    <TocEntry
+      Title="Waarom is technologie relevant voor het mededingingsrecht?"
+      Link="/Content/ZyLAB/Regulatory-Requests/707071.html" />
+    <TocEntry
+      Title="Mededingingsprocessen"
+      Link="/Content/ZyLAB/Regulatory-Requests/707073.html" />
+    <TocEntry
+      Title="Interviewen van betrokken partijen"
+      Link="/Content/ZyLAB/Regulatory-Requests/707077.html" />
+    <TocEntry
+      Title="Onderzoeksstrategie"
+      Link="/Content/ZyLAB/Regulatory-Requests/707078.html" />
+  </TocEntry>
+</CatapultToc>

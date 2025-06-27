@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my LIVE ZyLAB ONE destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="C:\PublishFolder\ZYLABONE"
+  Port=""
+  ViewUrl="/help/ZyLAB/01"
+  Type="file"
+  RemoveStale="true"></CatapultDestination>

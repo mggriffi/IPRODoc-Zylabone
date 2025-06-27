@@ -1,0 +1,1409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProjectImport
+  AutoSync="false"
+  IncludePattern="*.htm;*.html;*.png;*.bmp;*.jpg;*.jpeg;*.tif;*.tiff;*.gif;*.swd;*.emf;*.wmf;*.xaml;*.xps;*.exps;*.hdp;*.wdp;*.dib;*.svg;*.ps;*.eps;*.pdf;*.fltoc"
+  LastImport="2022-01-11T15:22:18.4094166+01:00">
+  <Files>
+    <Url
+      Source="file:///C:/Information-Management-Obsolete/Information-Management-Obsolete.flprj"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Information-Management-Obsolete.flprj" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/admin-options.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/admin-options.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/advanced-options-in-the-web-client.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/advanced-options-in-the-web-client.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/build-the-index.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/build-the-index.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/build.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/build.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/client-side-printing.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/client-side-printing.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/cluster-installation-and-configuration.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/cluster-installation-and-configuration.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/configuration-zylab-workflow.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/configuration-zylab-workflow.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/create-and-edit-a-web-client.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/create-and-edit-a-web-client.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/delete-a-web-client.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/delete-a-web-client.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/document-repository-security.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/document-repository-security.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/file-options.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/file-options.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/file-system-network-security.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/file-system-network-security.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/functional-application-security.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/functional-application-security.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/general-search-language-guide.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/general-search-language-guide.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/general.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/general.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/global-options.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/global-options.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/installation-and-upgrade.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/installation-and-upgrade.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/installation-zylab-workflow.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/installation-zylab-workflow.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/maintain-the-index.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/maintain-the-index.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/memory-limit-of-os.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/memory-limit-of-os.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/monitor-scheduled-indexing.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/monitor-scheduled-indexing.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/options.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/options.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/prepare-the-index.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/prepare-the-index.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/publish1.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/publish1.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/reactivate-a-web-client.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/reactivate-a-web-client.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/results-options.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/results-options.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/scheduled-indexing-automatic.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/scheduled-indexing-automatic.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/scheduled-indexing-manual.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/scheduled-indexing-manual.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/scheduled-indexing-service.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/scheduled-indexing-service.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/search-options.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/search-options.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/security.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/security.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/server-side-printing-and-print-service.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/server-side-printing-and-print-service.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/server-side-printing.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/server-side-printing.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/service-utility-tool.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/service-utility-tool.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/services-monitor-manager.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/services-monitor-manager.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/set-the-web-client-general-options.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/set-the-web-client-general-options.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/timer.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/timer.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/user-management.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/user-management.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/using-zylab-workflow.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/using-zylab-workflow.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/view-hit-highlighting-in-adobe-pdf-files.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/view-hit-highlighting-in-adobe-pdf-files.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/web-client-for-users.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/web-client-for-users.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/web-client-overview.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/web-client-overview.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/web-client1.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/web-client1.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/workflow.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/workflow.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/xml-wrapper-in-the-index.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/xml-wrapper-in-the-index.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/zyalert.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/zyalert.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/zyfind.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/zyfind.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/zyindex.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/zyindex.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Information-Management/zyscan.html"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Information-Management/zyscan.html" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/advanced-options-in-the-web-client-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/advanced-options-in-the-web-client-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/build-the-index-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/client-side-printing-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/client-side-printing-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/client-side-printing-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/client-side-printing-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0008.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0008.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0009.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0009.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0010.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0010.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0011.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0011.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0012.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0012.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0013.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0013.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0014.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0014.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0015.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0015.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0016.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0016.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0017.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0017.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0018.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0018.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0019.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0019.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0020.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0020.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0021.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0021.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0022.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0022.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0023.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0023.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/delete-a-web-client-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/delete-a-web-client-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0008.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0008.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0009.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/document-repository-security-img0009.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-options-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-options-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-options-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-options-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-system-network-security-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-system-network-security-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-system-network-security-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/file-system-network-security-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/functional-application-security-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/functional-application-security-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/functional-application-security-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/functional-application-security-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0008.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0008.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0009.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0009.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0010.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0010.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0011.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0011.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0012.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0012.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0013.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0013.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0014.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0014.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0015.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0015.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0016.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/general-img0016.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-options-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-options-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-settings-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-settings-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-settings-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-settings-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-settings-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/global-settings-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/interface-language-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/interface-language-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0008.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0008.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0009.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0009.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0010.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0010.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0011.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0011.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0012.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0012.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0013.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0013.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0014.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/maintain-the-index-img0014.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/platform-cluster-installation-and-configuration-2020-04-21.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/platform-cluster-installation-and-configuration-2020-04-21.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0008.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0008.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0009.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0009.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0010.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0010.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0011.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0011.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0012.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0012.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0013.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0013.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0014.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0014.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0015.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0015.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0016.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0016.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0017.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0017.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0018.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0018.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0019.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0019.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0020.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0020.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0021.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0021.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0022.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0022.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0023.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0023.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0024.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0024.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0025.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0025.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0026.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0026.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0027.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0027.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0028.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0028.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0029.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0029.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0030.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/prepare-the-index-img0030.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish1-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish1-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish1-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish1-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish1-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/publish1-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/results-options-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/results-options-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-automatic-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-automatic-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-automatic-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-automatic-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-service-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-service-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-service-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/scheduled-indexing-service-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/search-options-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/search-options-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/security-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/security-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/security-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/security-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/security-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/security-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/server-side-printing-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/set-the-web-client-general-options-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/set-the-web-client-general-options-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/set-the-web-client-general-options-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/set-the-web-client-general-options-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/tiff-conversion-settings-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/tiff-conversion-settings-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-overview-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-overview-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-overview-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/web-client-overview-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0001.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0001.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0002.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0002.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0003.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0003.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0004.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0004.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0005.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0005.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0006.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0006.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0007.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0007.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyALERT Manual.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyALERT Manual.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyFIND Manual.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyFIND Manual.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyINDEX Manual.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyINDEX Manual.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/zyindex-manual-2020-04-21-1.png"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/zyindex-manual-2020-04-21-1.png" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB General Search Language Guide.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB General Search Language Guide.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Information Management Platform 6.7 Installation and Upgrade Guide.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Information Management Platform 6.7 Installation and Upgrade Guide.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Platform Cluster Installation and Configuration Manual.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Platform Cluster Installation and Configuration Manual.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Service Utility Tool Manual.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Service Utility Tool Manual.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Services Monitor Manager Manual.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Services Monitor Manager Manual.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Web Client for Users.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZyLAB Web Client for Users.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZySCAN Manual.pdf"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Content/Storage/zylab-information-management-publication/ZySCAN Manual.pdf" />
+    <Url
+      Source="../../../Information-Management-Obsolete/Project/TOCs/zylab-information-management-publication-exported.fltoc"
+      AbsoluteSource="file:///C:/Information-Management-Obsolete/Project/TOCs/zylab-information-management-publication-exported.fltoc" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Information-Management/admin-options.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/advanced-options-in-the-web-client.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/build-the-index.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/build.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/client-side-printing.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/cluster-installation-and-configuration.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/configuration-zylab-workflow.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/create-and-edit-a-web-client.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/delete-a-web-client.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/document-repository-security.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/file-options.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/file-system-network-security.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/functional-application-security.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/general-search-language-guide.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/general.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/global-options.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/installation-and-upgrade.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/installation-zylab-workflow.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/maintain-the-index.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/memory-limit-of-os.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/monitor-scheduled-indexing.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/options.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/prepare-the-index.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/publish1.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/reactivate-a-web-client.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/results-options.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/scheduled-indexing-automatic.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/scheduled-indexing-manual.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/scheduled-indexing-service.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/search-options.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/security.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/server-side-printing-and-print-service.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/server-side-printing.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/service-utility-tool.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/services-monitor-manager.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/set-the-web-client-general-options.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/timer.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/user-management.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/using-zylab-workflow.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/view-hit-highlighting-in-adobe-pdf-files.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/web-client-for-users.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/web-client-overview.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/web-client1.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/workflow.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/xml-wrapper-in-the-index.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/zyalert.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/zyfind.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/zyindex.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Information-Management/zyscan.html"
+      TimeStamp="11/01/2022 15:20:04" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/advanced-options-in-the-web-client-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/build-the-index-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/build-the-index-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/build-the-index-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/build-the-index-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/client-side-printing-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/client-side-printing-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0005.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0006.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0007.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0008.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0009.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0010.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0011.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0012.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0013.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0014.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0015.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0016.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0017.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0018.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0019.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0020.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0021.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0022.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/configuration-zylab-workflow-img0023.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0005.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0006.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/delete-a-web-client-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0005.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0006.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0007.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0008.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/document-repository-security-img0009.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/file-options-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/file-options-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/file-system-network-security-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/file-system-network-security-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/functional-application-security-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/functional-application-security-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0005.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0006.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0007.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0008.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0009.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0010.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0011.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0012.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0013.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0014.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0015.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/general-img0016.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/global-options-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/global-settings-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/global-settings-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/global-settings-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0005.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0006.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/installation-zylab-workflow-img0007.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/interface-language-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0005.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0006.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0007.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0008.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0009.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0010.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0011.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0012.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0013.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/maintain-the-index-img0014.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/monitor-scheduled-indexing-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/platform-cluster-installation-and-configuration-2020-04-21.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0001.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0002.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0003.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0004.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0005.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0006.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0007.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0008.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0009.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0010.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0011.png"
+      TimeStamp="11/01/2022 15:19:50" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0012.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0013.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0014.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0015.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0016.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0017.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0018.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0019.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0020.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0021.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0022.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0023.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0024.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0025.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0026.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0027.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0028.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0029.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/prepare-the-index-img0030.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/publish-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/publish-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/publish1-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/publish1-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/publish1-img0003.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/results-options-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/scheduled-indexing-automatic-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/scheduled-indexing-automatic-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/scheduled-indexing-manual-img0003.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/scheduled-indexing-service-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/scheduled-indexing-service-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/search-options-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/security-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/security-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/security-img0003.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/server-side-printing-and-print-service-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/server-side-printing-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/server-side-printing-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/server-side-printing-img0003.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/set-the-web-client-general-options-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/set-the-web-client-general-options-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/tiff-conversion-settings-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0003.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0004.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0005.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0006.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/using-zylab-workflow-img0007.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/web-client-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/web-client-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/web-client-overview-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/web-client-overview-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0001.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0002.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0003.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0004.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0005.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0006.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/xml-wrapper-in-the-index-img0007.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyALERT Manual.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyFIND Manual.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyINDEX Manual.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/zyindex-manual-2020-04-21-1.png"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyLAB General Search Language Guide.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyLAB Information Management Platform 6.7 Installation and Upgrade Guide.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyLAB Platform Cluster Installation and Configuration Manual.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyLAB Service Utility Tool Manual.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyLAB Services Monitor Manager Manual.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZyLAB Web Client for Users.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../../Content/Storage/zylab-information-management-publication/ZySCAN Manual.pdf"
+      TimeStamp="11/01/2022 15:19:51" />
+    <Url
+      Source="../TOCs/zylab-information-management-publication-exported.fltoc"
+      TimeStamp="11/01/2022 15:20:31" />
+  </GeneratedFiles>
+</CatapultProjectImport>

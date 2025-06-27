@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Disable Integration with Microsoft Entra ID</h1>
+        <p>In this topic you'll learn how&#160;to revoke consent and disable the AAD integration.
+</p>
+        <p>&#160;</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+      Go to&#160;<a href="https://myapplications.microsoft.com/" target="_blank">https://myapplications.microsoft.com/</a></li>
+            <li class="listnumber">
+      Find the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> icon, hover above it and click&#160;the three dots in the top right corner.
+    </li>
+            <li class="listnumber">
+      Select&#160;<b>Manage your application</b>.&#160;
+     <br /><img src="../../Storage/zylab-one-legal-hold-publication/100-2021-08-16.png" alt="" class="Thumbnail" /></li>
+            <li class="listnumber">
+      Click <b>Revoke Permissions</b>.
+      <br /><img src="../../Storage/zylab-one-legal-hold-publication/100-2021-08-16-1.png" alt="" class="Thumbnail" /></li>
+            <li class="listnumber">
+      
+        Wait for couple of minutes. Then, log back in to <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />.
+</li>
+            <li class="listnumber">      Check that integrations are disabled.&#160; &#160; &#160; &#160; &#160;<ul><li class="listnumber"><b>For email integration</b> - Enable email integration button should appear in user profile page or any action that would request email integration will ask for consent.</li><li class="listnumber"><b>For user sync integration</b> - User sync button will ask for consent.</li></ul></li>
+            <li class="listnumber">     
+        Please consider the following:
+<ul><li class="listnumber">      
+        This approach will disable all integrations, if you want to disable just one and keep another, please re-enable it after.</li><li class="listnumber">      
+        All processes dependent on revoked user integrations like email send, will fail.<ul><li class="listnumber">      
+        If user is the hold owner - please change it.</li><li class="listnumber">      
+        If user was the last who did user synchronization - please do users synchronization via another user or disable it (currently only via support).</li></ul></li></ul></li>
+        </ol>
+    </body>
+</html>

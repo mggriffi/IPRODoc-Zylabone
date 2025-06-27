@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="4"
+  SkinType="Component"
+  Comment="HTML5 Toolbar skin"
+  ComponentType="TopicToolbar"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Resources>
+      <Resource
+        Name="print.jpg">H4sIAAAAAAAEAH1TeTjUaRx/f7/f/GaMjJkxhii5xlGOEIkwJkKJTRs70pNc7cq1QipXIznLEaVi5cqRK1pDGSsSaSOiIrkSqUXkrJ7MzlD28c9+3uc9vvfxfF9uN3cQkPaa7TEDEAyAK28B7jggmwa4eJwGEMAAAPbzWJNAkeHq4+wGXO/zOBACqBgEK0gAAA4EAJkAAEUAwO7k9oIIAK8C4W8Mwj9QDB8oFl0GFovDCeBwWDxeUBCPF1oLCEEQFIPisVg8YR1+HYEozAORuCz7fgkRhf4H3AZAFgDyQBWByAAmQwgZ4jaCOl6iAIHAf0CxOABjBCBoLZtXH4xBSADC8DJBV5kYCOZRJDJFRkRUw1ibiuX5hhAIwQn9sOYpkEUwQFaTQmLYOLFE0SnfpHI5rV3OJ7ZpU8Mrfo4Q4WWwBhrGZAovPC8OjKI/vJABSVaTYePrxJLRME6qn8rqGJou574C/DgwGSHzVBamw4+VInn6WmPBURIG4oFupEpH4SgR271Z/U0NQw2RljdFw/uye+zbiy7ALfrS2Bkiz55fKITCHUpO6puHCegeN/19GaciY5ocNmxoL3CQT2QVpiuJhVY4y0qxFcwSQ8/+ohopnFCcxAUuqToYquqQTPfmx5bybKHfhvOrbss3BEZdGRC2VvswP9S57Bxedi7xR+1m/eHRSSvqSetKq9qtyyJkWeQYvZRBa2pmF43XrRjAWDosFMsFKzp8KmglTYj3fOt+3XzI7upYfMt4QnT3yb4PE13Jjkm/90guXGPXSCr39z61S0No+NxwddWe43PUk9tLBGP9OkPrH808eWEuzQm+56/QbOE7eKwMc/1xx7cglpH5DUaYg1a24FZ8KSBqeu2dbkm5W53LWZ++89aLNJ+C1x6FOeFH1M0pMWknKnSe1vQcJSgr15okN7TpvvacUhvVjrTr/UnHvyxpaK4a+5d0kI+VcsiZKk4LMmuBdH5hRzCuB/ZXdyC0khndG2X2MQbyEm3qevEq5zQd3g1YZcQzEnPmyTm+4vj8S/AF0RIX1+2TSqfam6c+j0y5Nz3i6GowS7oueV0s6sl3FB1kvzJJTCq3rsk4j8s3odRrYv0zQav4nfj80eQ3dKsz7/OetCaqxlMZN2NvVcpsmaCT+wP6gjr7ll4nLIYthGT0CS6V/tnrI9b/2DMvO99vwXzYbmD4iLfjSnMRiC77LDbFPZfpJcoxRbOiLDJtVQvE8rdhUilUHGtjGhooTptgFtUAwnMNwksXLNMjQE56vVG6pjyDDUvYUpKdIKGaO11+Tpd3h7hX2O2IbRWvzS3miCqdU3jPmp+WibsTNhF/nz0XmDDSZj1zdtZ60ygu79BW/6pi71rKzrF7OMMBukVy6OQbzojCpoOetnoUpu3pcJMYg6oHCy5eCtGLd/WcodCUka/ULWrvDHWsuUBk+mPZAIMOLRH3jQe+ynA0+z5A/FI6FO3b1BaR3on0ox5Oqc10U/rKOPFl7Tjlp+cP4wL21+1e839ICFMxU5gW7k2DAX21K6T2epvW26hIYQ0iHOwslRdzYReHgo2NnDysKDCvaykJsmjEjpwUUPCrusrhnBzPGlnLq43CVyQNi8HluzI91wwrMeukkjfCUt0XC3VKBVL0bSifTBtTg3WBoMbtwogYisLF/uaHSWrMtENiTYZa0WOy5SE+iomZLQtf6uVYBJqSkjHLHocRKEX/ZmkccMJdeWH4yAUY6VVLdhn7mdG03Yw+vS1RepBysJpZYhEX551IHE6Zfu75/vnLvBvlITPSH125oCJI4puc3yyhcrVBpGfbe+e6wz5+eGNJmt1hNNAbUWBlqtcWylkyWWx8J5y9FHDioJj3kaiyh9Y9moMH5jcYzH6lq6z2kNTB6AVRO44Px1EGPrd8+frPGTF/veBgVp0Kt+df+Ql/Rz0GAAA=</Resource>
+      <Resource
+        Name="printklein.png">H4sIAAAAAAAEAOsM8HPn5ZLiYmBg4PX0cAkC0hIgzMECJL3qvhYDqThPF8cQi9PJCRJPHtjzecTyHum46Mgs7Wx92HiOHcPBdAfRHA5e2QrRwwnsToeDFa5LLXeubbggteKR5kS55B8cLRlZH7IZbjY4M+/rWBzDvC6lIbQvhfeLr/eWs/zNTAwM3fLrFkuVOl0H2sTg6ernss4poQkAyHPzlpcAAAA=</Resource>
+      <Resource
+        Name="remove highlight.png">H4sIAAAAAAAEAAH3AAj/iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAvklEQVQ4y2NgoAkoZNAGktpAmkigw/CDYS8Q68AEZBgKCGjZw/AfiOFgP5DbRIoNKgyP8WrB4gdsWryAYh24rUXX4sXwjaGW4RnDROK0ODN8ZUgA0upALe3EaJFgCIGK1TE8wBd86A5LYvjC4Io/xNOAGmBawggrd2f4DtYAc5gDscr/E4hKLMoJakFV/h3oF7yxj67cHX+CwaYcbxp7hFU5Hi2dOJTj0TIZh3KEFows1gV0mDvOBLMfmCvpBABrT3pDE/oQdQAAAABJRU5ErkJggq3Kkxr3AAAA</Resource>
+      <Resource
+        Name="printgroot.png">H4sIAAAAAAAEAOsM8HPn5ZLiYmBg4PX0cAkC0gYgzMECJP9yG/IAqdWeLo4hEYffTjvI22wgwPLcVdjBUYT5bSCTzUpGqwYmvX4LLxGPFOlox1PvbPnPM2yqYXM9Kc6tw/mJM8hW/eB+Di4rtm0PdH+t6G3seyS8L6XLbf81l8o/3zI/lB89GL7l5Ie2i+9YF2d/DbmoXuD6XuPxvp27wmQZ8yIiMhpuBV5r+S05w7Dnp/XzS03P9U+pfHi0xzyJvY/lOevCw3eq57Ic/K7C+/c1R0nt/7kOgTXFzJNX7d7dX7vpDdDZDJ6ufi7rnBKaALJwkPLkAAAA</Resource>
+      <Resource
+        Name="remove highlight groot.png">H4sIAAAAAAAEAAHFATr+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABjElEQVRYw+2XMU7DMBRAn/AKHACGVIroFSr1CsAIhyGBihNQpvYAVKhL5koMHRi4A0v3SkiILk2lyAyE4rgJcRx7Qfwskb/1XuL/86XAfxSjT9+vICHxie+SkdGtSp+0FoyRSMblyVPWDFo9/YgNEsmG0e5bnLFGIi0VfRIypHJlJGq5D1huUwMfAujx3kpRe0RFxY2PIrtQ1LSpuSJgzop7RPMPzUTRYZHvmOwoDEZFneIHX64wiN8URbxzRaDgU3eK6+3qIS/52iOhInOueEBox3Vn09VVioi9/D7MJ5jkze7LLFd8h2C6zT7ZDuFqhYp/5dh+zl8oLakqbt3g9b7f7SineIkkLiic4WdKLVTFkRv8FFEod0zr0PF6R8Xu8SCYldbCGX5aWW4veEtFPX7BpVKLyD2+o5U7co/HThE0wFspnhvhLRQf+dY1oRG+sWKowerxDRWCiQIMjfC64spckRriWyhM8a0UZnhrhTm+qEjrficFQ1bMCRrOsS9FyjneosfSJx5gnz8XnxIE9AaLUwtCAAAAAElFTkSuQmCCWABJGMUBAAA=</Resource>
+      <Resource
+        Name="round_account_circle_black_24dp.png">H4sIAAAAAAAEAAEXAuj9iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB3klEQVR4Ae3ZgWZCUQCH8W0aNo1tAwx7gskGd4jtKYoeINkgUD1BASgKYC8QUAN6ihIDNkVQEKiCsw+BkXv/t3O60f34AcS993TPOeeeWCkuLu4UHipoo48JzMYEfbRRgYdTRN49ahjDiMao4R577xZNLGF2tEQTt9hLGcxgLJshA2cl0IJxrIUErHaBDsyedHBh8853xTFdxwuSGy+oi/+Zrq0n0RLfLClsK4WxNJx2LCve+RT8SolPIotQ3WEKE1ADQWsIvzvFHeSaMAIPQfNgBE19htUnqSsE7Uqd7NQZuwrj/gIkVQTqDCMY90NIMsKZ/OPR/4n1m1SB0YV/jQoq8K0Nows/kQna8G0Aowu/lBAM4NsU5kBN4dsS5kAtj+ICbA2hEb43xvscQoOQd6aLIp5wif9d4hlFfIV80gPbr9EfvOMaajf4wK/yGrU1ka1Rxjl27RxlrG1NZF6A4fIK271hpS8l9MVcCa4q6Ys5fTn9AFc96MtpfUNTgKsK+oZG31IukIbt0ljoW8pwm/q55YtIYy5t6i0cq6yQx67lfd4+WdcHWz08Qu0RPf1gy93RYhc5JLGtJHLC7yWiOtwdooPPjQ6G6uFufLwe7QeO+BNT9B/5juAza1xc3B/oQZbe8x+BNwAAAABJRU5ErkJggq60Bl4XAgAA</Resource>
+      <Resource
+        Name="round_account_circle_black_24dp_1.png">H4sIAAAAAAAEAAEjAdz+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAA6klEQVQ4y72TPQrCQBCFP5TUglWsrDyORYScI9joGcwlLJJreAPtxeQGdomFQmBt3D9nE1DQnW5m3vLezBv494tIKbjQ0nKhICUaak+oUG9RkYSbR+xEs44dIwnITfnBlpiYLQ+TyyUZ+9/GZDdONvGlutxnJj/ztDjyU49xGKBILaD0CmFKitICzl4hJFqhOFtA0ztQN5ohwJXbEMBSurNnxQSAKSv23EOUtOgjc7HQOScpWo91ETTNQo5VL24dBKzl4rQ1OjLRntFJa7jmO7BkDMCYJYc+8/n27qipXz/32vvjA/rqRH/xnjTd5SaTWG78AAAAAElFTkSuQmCCEqHY7CMBAAA=</Resource>
+      <Resource
+        Name="round_account_circle_zylabblue.png">H4sIAAAAAAAEAAFfAqD9iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5gQHDzk1N/XC4gAAAf5JREFUSIm9VbFOIlEUPVeEerMdZp9oY2Y32c61I1JMZqIdU0gDCf+AFWarVSr5BxK0YAqmJBAKDB1Ot0bNNuwMZtfGwhbj3m1kMsPMA0zEW03um3vOe+fdex4xM5YZK0tFB7A6a5GI4o2mMx7YQ1zf3GE0ugUACKHgy+dP2NneRM5IJZj5SYohk8i0XK7V+x6oLIRQUCykcZBdp4UIiGilVO49tzvdmcDToWsqqpVMjJn/+fOhO5CB65qKK/s4eWUfJ3VNDa23O12Uyr3n6XyAwLRcloGfnuwSM98z8/3pyS7JSEzLDUjiERBRvFbvh4oAoFrJrC2SA4BavQ8iiocIGk1nPO9CF4nR6BaNpjMOEQzsobSoVO79WSQXheXNwfXNnZTg5V64WskkX8D/zuoyP5bXpl+/fX9Tz/h5+YOA97QKIZTIqdU1dWIJH5j5EQCI6GOj6TwM7CGipBJC8b49iQ6PLgIzIISClpXfYGZn1g6JKLWXPfvt39xkbgCfRDvbm4HClpXfmgcOAMzstKz8lj/nx/IIckYq4T9aqdz7NQ886l8hFOSMVCJEwMxPxULaK2p3ujg8upjbWdPSFgtp+O070EUH2fWAx7Q7Xewb52xaLhNRbJInophpubxvnAfAdU0N2far7Hoioazbouz6/R+cwOIyn8y3iqVbxX/UIx2TxDJRywAAAABJRU5ErkJgghQoGANfAgAA</Resource>
+      <Resource
+        Name="round_account_circle_orange.png">H4sIAAAAAAAEAAEpAtb9iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5gQHDzUJtC/xaQAAAchJREFUSInFlb1OAlEQhc/AshBpjJUYEqWxtraQF1h7De8AlSb4AJpIhQ+AlZESw1Z0kGhtbaMkxNBoYiER3OXYwHr35wpR0Sln7v3OZmb2XCGJRUZsoXQAxldFEUm47ebIub2B07sP1VNWAfH8rknyXcvQtWjcsflmX8z1lSmrgNiOJXMJiEiMjZo7uG7NBZ+Gkc0hWTqJkxyr+dAMdHAjm0O6Us+kK/WMkc2F6k7vHsNq2Q3mfQLjjk0d3CweC8k+yb5ZPBadyLhj+1riCYhIQtfzZOlkbZ4cALzZFxCRREjAbTdHkfRvhMryBJzbG+2FYbX8GMyxUQvlolifAhF7rtZGZ0cUkVURWcXVeeSsoljemg4O93/VM5ZOLwX4b6uYxsQSlkm+AICIrLjt5pPOQiIFjGwudDhdqW+Q7AKA+seTfAYg5o6FpMj668Hegw+q/CNei4yt7SB8cwr/Kkh205X6pk9AYXkC8fyu6bvYqN3NguvOqixPgOR7yip4hwbXLeDqfPZmBVY2ZRWg2nfITUdnRwzOYjJkg6QLACISd9tNJ2gtU89Sc5F2PayW3VnbEQydXf/9g+MrTp5MndCPnszfioVbxQf3dgLMrxe/KwAAAABJRU5ErkJggvUjyOUpAgAA</Resource>
+      <Resource
+        Name="round_account_circle_black_24dp_2.png">H4sIAAAAAAAEAAEjAdz+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAA6klEQVQ4y72TPQrCQBCFP5TUglWsrDyORYScI9joGcwlLJJreAPtxeQGdomFQmBt3D9nE1DQnW5m3vLezBv494tIKbjQ0nKhICUaak+oUG9RkYSbR+xEs44dIwnITfnBlpiYLQ+TyyUZ+9/GZDdONvGlutxnJj/ztDjyU49xGKBILaD0CmFKitICzl4hJFqhOFtA0ztQN5ohwJXbEMBSurNnxQSAKSv23EOUtOgjc7HQOScpWo91ETTNQo5VL24dBKzl4rQ1OjLRntFJa7jmO7BkDMCYJYc+8/n27qipXz/32vvjA/rqRH/xnjTd5SaTWG78AAAAAElFTkSuQmCCEqHY7CMBAAA=</Resource>
+      <Resource
+        Name="outline_account_circle_black_24dp.png">H4sIAAAAAAAEAAF5AYb+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAABQElEQVQ4y73TsUpjURAG4M9IwJUIPkSq5DEsdsEqRXyKBAIKVtaL0RewNp0vYrcupAje7cVWq1T/FrnceG9CQGF3TnPOzPzn/DPzH/63tQ3de/bu3bN7Q+1d6QOFNFZhsD255VrE3ERPR0fPxFzEtdYmYCqWRvZr3n0jSzHdJBNLJ+DYnRcv7hyDE0upE2srxKi887Hi/1i+NxLFx/KHYl4GT0Whq6sQp+UlczFcA2ZiUu7PxS24FeeldyJma8BC9Mv9thfoi8Ua8CaOqr5s1sCReKsDDqtTs0twWAcsRG+nZHp1SjMxrk5dZy5dOtOtfON60au2tnRcNNRUuPBNq9nW1eCm/oh49eDGjQevIn752RzcShoRv/2ocf/uqYwMtokvruzVvHuuZJv4Psp7rO/Agb7xLnl/+gN96Yv+C/sLOYmm4L2Zrs8AAAAASUVORK5CYIKoxOVpeQEAAA==</Resource>
+      <Resource
+        Name="outline_account_circle_orange_24dp.png">H4sIAAAAAAAEAAHkARv+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5gQLDQQP0kM4OAAAAYNJREFUSIndlb1KA1EQhb8kBjQo+ApCQNl0vkIKhRSSYt8igoWttSQ+QSCdZaq8RYrgDwSRRLAUW61SyFrsuezkZrO7BFLogWHZM3Pm3p25dxb+O6pACNwDM+BbNhMXKmYjtIE5EOXYXLGFUQa6JsEUuAICYF8WiJuauK60uehJsAA6QCUjtqKYhTS9vORtk7xp+EOgD3zI+uIcmmaRteWqktS84+1yzGrtxyx/XYekJ6mND0lqboUtI6zL3EZa3kZcT0JH2qZc6DkAfgx/oucIeJONPB/SDLxcS3jV6g2PL/oFSBsp1wq+5Dzw+KI9QNpIudYuUEvx5Z0ih1rWAq5EQZqzIAK8Eu0Y5wQ4Jj7TL56wDpwCR3p/Bx6IG27h7s4kbXV7TMvEI+Ga7Hk0V8yeNCvH1MJetJ525xJ9AkPgTjYU5/yPwC05Fw2SUeHsGThfFwycAU+eJneyumEXATdAKSO2pBgXnzvsIH1cXxJfol1ZQ9xG49phaz8ci63+Mv8GfgHlJKYXfMIT2QAAAABJRU5ErkJggn/xfbLkAQAA</Resource>
+      <Resource
+        Name="outline_account_circle_black_24dp_1.png">H4sIAAAAAAAEAAHfAiD9iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5gQLDQgRhPlKVwAAAn5JREFUSIm1VkFrGlEQ/mafyhIvzSkkJFKoIUJziPGs/oH1HMFjb+lZ+huCB0/pLceAPa9/YA30lsRDUyJNoWhRejJQhK36dnrQt3lvo2la6sCyu2/efN/M7LyZJWbGKsVaKTqA2FNKIopLzx0Hgy7GlxeGLpHLw9pMQRRLCWaeLMVYlqKg1WS/ef4sL22nAqvg0LMIiMiaNE6l7rHtVCCKpdcAuvOllPTcG92BRC6PePmtYObgSYLph/eswOfAMWaWC70jEtJzp4ookcsjdnRsRGJ8g6DVNMCtgkPMDCJ6MWmcDpVu7u06M98DIHtjm/2zE4wvL2BtplhPV1hFRBRXnug5JSIh69WhnrLx5QVkvTokIgEA1t4B2U4FAOA3z0FE8UcE0nPH6lkUS2Fk8vZ66vd7sLd2kKw1dpO1xq69tQO/34O8vZ4usQmxQoJg0A29N3L+4/vsflgAM98x8x0OC6YOADNLFUXQ/hiuhwQqBaJY2ocuG9uz+1ULRJQmojSuWqbuIYp9HQtYfNC6+ovIZGOyXp36/R5G1fIXAFApE5lsLFKFhu0yAqMkmVkS0Xq0isSsiqLl+6icFxG8BPA5QnIPgGJHxw9r2nPE1pDwGyRy+ZkLnnsT3URE6aDT5qDVnF2dNhNROrpP2SosQDvJQafN/tkJACBZawgAa9Jzf/6pH81P+xqAX6NqWQKA/eYdrL0DMgiIKD6qlsfKKApsb+0g2JxlwBp8g9/vPSJSNslaI+ywRi/SowgNNW+isnB/pLMaA8faOyA9f7ZTgchklw4lkcla6nAB8xkRadt/0673AXydL72Snvvpn9q1kpUNnEg0qxuZ/0tW/lfxG/qjZ6nGXmlYAAAAAElFTkSuQmCCBVIemd8CAAA=</Resource>
+      <Resource
+        Name="print orange.png">H4sIAAAAAAAEAOsM8HPn5ZLiYmBg4PX0cAkC0hIgzMEGJB+U2/4AUpwFHpHFDAx8R0CYcao2nzRQkL3E09eV/RkLNy+P5VUF9ZUMDIy8ni6OIR6dyX/+/7dn1mUU9vVd3s6qs0Pln6/G7/+PbyYv4nk4YVJqgtaLpCNq7ZfZj0j5ebw9cJSxfYrOxbYHwac9Xqdw9ae4ublt26+9/O+fwmcCrmxFM24YGrSnb/wPBOLMzJP4/62d9W9+0OGJuolcp1NSEhz6mtO/axpNUV08r1F1sdxhnR2sS1S8nRhu6syR7A35kO6mHPaxUVsroWF1tuU1JQa2fVNdH/k+L5CfMGkjB2PK5gdifz56L+pSlQnaxFP/Z9KDmgqBjZqZBkYiJYYFjj9b9vTxTWiexOs5J0Hl/65y5uWuP54kMKSrFHucNPpT8W3Gw/M9bm32PDwVvIfEt1jUOuTMWdBuabWgMtPqi3Ytw4cVEWFKP2u8gGHF4Onq57LOKaEJACdDSV5uAQAA</Resource>
+      <Resource
+        Name="home orange.png">H4sIAAAAAAAEAAF1AYr+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5gQLDRgqfzCxIgAAARRJREFUSIntlE1OwlAUhe+naIjgFGKn7AC3wCLabTTUPSCNWyBhInMGDBg6xmVgOoYSotTryIT+8HhFmxDjmb2bd8+5P7kHVZUqcVEp+1kJAOymY91Nxwpgm1ezJL/S0eB98zITEREdDT6Ba1X9OJp7bMlAMwn91TZapuL1tiOX/adbVV2b8o0jAlpF5CIi22gpSeivgNZJAkAnCf2oiDwjEgGdgzxFIwK6ceAuTJVl0RhO7lX1NRvPdQD0ypKLiMSBuwB6RgHAiwN3XpZ8T2QOeCnO7xEBd3HgHh54CTSGE0dV31IC+9g8eCcZ1M3jc+4AK7cKq0sWyVdn2+X5mN2/QAr1tmN82/4RsbDrn+KP7uA38QWnmWwE5bUtdQAAAABJRU5ErkJgglF/MaN1AQAA</Resource>
+    </Resources>
+    <Styles>
+      <Style
+        Name="ToolbarItem">
+        <Classes>
+          <StyleClass
+            Name="Print">
+            <Properties>
+              <Property
+                Name="BorderLeft">none 1px #e1e1e1</Property>
+              <Property
+                Name="BorderRight">none 1px #e1e1e1</Property>
+              <Property
+                Name="BorderTop">none 1px #e1e1e1</Property>
+              <Property
+                Name="BorderBottom">none 1px #e1e1e1</Property>
+              <Property
+                Name="BorderTopLeftRadius">0px</Property>
+              <Property
+                Name="BorderTopRightRadius">0px</Property>
+              <Property
+                Name="BorderBottomRightRadius">0px</Property>
+              <Property
+                Name="BorderBottomLeftRadius">0px</Property>
+              <Property
+                Name="BoxShadowVShadow">0px</Property>
+              <Property
+                Name="BackgroundGradient">vertical #ffffff #ffffff</Property>
+              <Property
+                Name="Width">48px</Property>
+              <Property
+                Name="Height">48px</Property>
+              <Property
+                Name="ButtonIconWidth">24px</Property>
+              <Property
+                Name="ButtonIconHeight">24px</Property>
+              <Property
+                Name="PaddingBottom">5px</Property>
+              <Property
+                Name="BackgroundColor">#ffffff</Property>
+              <Property
+                Name="ButtonIcon">url('print%20orange.png')</Property>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="RemoveHighlight">
+            <Properties>
+              <Property
+                Name="BackgroundGradient">vertical #ffffff #ffffff</Property>
+              <Property
+                Name="FontFamily">Roboto</Property>
+              <Property
+                Name="Width">48px</Property>
+              <Property
+                Name="Height">48px</Property>
+              <Property
+                Name="ButtonIcon">url('remove%20highlight.png')</Property>
+              <Property
+                Name="ButtonIconWidth">24px</Property>
+              <Property
+                Name="ButtonIconHeight">24px</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="ContactSupport"
+            Custom="true">
+            <Properties>
+              <Property
+                Name="BackgroundRepeat">no-repeat</Property>
+              <Property
+                Name="BackgroundPosition">center center</Property>
+              <Property
+                Name="Width">48px</Property>
+              <Property
+                Name="Height">48px</Property>
+              <Property
+                Name="BackgroundGradient">vertical #ffffff #ffffff</Property>
+              <Property
+                Name="PaddingBottom">5px</Property>
+              <Property
+                Name="Click">window.open("https://help.zylab.com/hc/en-us/requests");</Property>
+              <Property
+                Name="BackgroundColor">#ffffff</Property>
+              <Property
+                Name="ButtonIcon">url('round_account_circle_orange.png')</Property>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="ContactSupportUSA"
+            Custom="true">
+            <Properties>
+              <Property
+                Name="BackgroundRepeat">no-repeat</Property>
+              <Property
+                Name="BackgroundPosition">center center</Property>
+              <Property
+                Name="Click">window.open("https://iprotech.atlassian.net/servicedesk/customer/user/login?destination=portals");</Property>
+              <Property
+                Name="Width">48px</Property>
+              <Property
+                Name="Height">48px</Property>
+              <Property
+                Name="PaddingBottom">5px</Property>
+              <Property
+                Name="BackgroundGradient">vertical #ffffff #ffffff</Property>
+              <Property
+                Name="BackgroundColor">#ffffff</Property>
+              <Property
+                Name="PaddingTop">0px</Property>
+              <Property
+                Name="ButtonIcon">url('outline_account_circle_black_24dp_1.png')</Property>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="Home"
+            Custom="true">
+            <Properties>
+              <Property
+                Name="BackgroundRepeat">no-repeat</Property>
+              <Property
+                Name="BackgroundPosition">center center</Property>
+              <Property
+                Name="Width">48px</Property>
+              <Property
+                Name="Height">48px</Property>
+              <Property
+                Name="BackgroundGradient">vertical #ffffff #ffffff</Property>
+              <Property
+                Name="ButtonIcon">url('home%20orange.png')</Property>
+              <Property
+                Name="Click">window.open("https://docs.zylab.com/Documentation/Home.html", "_parent");</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="CollapseAll">
+            <Properties>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+        <Properties>
+          <Property
+            Name="BorderLeft">none 1px #e1e1e1</Property>
+          <Property
+            Name="BorderRight">none 1px #e1e1e1</Property>
+          <Property
+            Name="BorderTop">none 1px #e1e1e1</Property>
+          <Property
+            Name="BorderBottom">none 1px #e1e1e1</Property>
+          <Property
+            Name="BorderTopLeftRadius">0px</Property>
+          <Property
+            Name="BorderTopRightRadius">0px</Property>
+          <Property
+            Name="BorderBottomRightRadius">0px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">0px</Property>
+          <Property
+            Name="BackgroundColor">transparent</Property>
+          <Property
+            Name="BoxShadowVShadow">0px</Property>
+          <Property
+            Name="ButtonIconWidth">24px</Property>
+          <Property
+            Name="ButtonIconHeight">24px</Property>
+          <Property
+            Name="Width">30px</Property>
+          <Property
+            Name="Height">30px</Property>
+          <Property
+            Name="PaddingRight">0px</Property>
+          <Property
+            Name="PaddingTop">0px</Property>
+          <Property
+            Name="FontFamily">Roboto</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Toolbar">
+        <Properties>
+          <Property
+            Name="Float">left</Property>
+        </Properties>
+      </Style>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="ToolbarItem">
+          <Classes>
+            <StyleClass
+              Name="ContactSupport">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+            <StyleClass
+              Name="ContactSupportUSA">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+            <StyleClass
+              Name="Home">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+      </Medium>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="ToolbarItem">
+          <Classes>
+            <StyleClass
+              Name="ContactSupport">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+            <StyleClass
+              Name="ContactSupportUSA">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+            <StyleClass
+              Name="Home">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+      </Medium>
+      <Style
+        Name="Toolbar Button Separator">
+        <Properties>
+          <Property
+            Name="Height">48px</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Toolbar Button Drop-down">
+        <Properties>
+          <Property
+            Name="FontFamily">Roboto</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="SelectLanguageDropDown">
+            <Properties>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="SelectLanguageDropDownItemHover">
+            <Properties>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="SelectSkinDropDown">
+            <Properties>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="SelectSkinDropDownItemHover">
+            <Properties>
+              <Property
+                Name="FontFamily">Roboto</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+    </Styles>
+    <Stylesheet></Stylesheet>
+  </Stylesheet>
+  <TopicToolbar
+    EnableCustomLayout="true"
+    Buttons="Home|ContactSupportUSA|ContactSupport|Print" />
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="ToolbarItem">
+            <Classes>
+              <StyleClass
+                Name="ContactSupport">
+                <Properties>
+                  <Property
+                    Name="AltText">Support Request Europe</Property>
+                  <Property
+                    Name="Tooltip">Support Request Europe</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="ContactSupportUSA">
+                <Properties>
+                  <Property
+                    Name="Tooltip">Support Request North America</Property>
+                  <Property
+                    Name="AltText">Support Request North America</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="Home">
+                <Properties>
+                  <Property
+                    Name="Tooltip">Home</Property>
+                  <Property
+                    Name="AltText">Home</Property>
+                </Properties>
+              </StyleClass>
+            </Classes>
+          </Style>
+        </Styles>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

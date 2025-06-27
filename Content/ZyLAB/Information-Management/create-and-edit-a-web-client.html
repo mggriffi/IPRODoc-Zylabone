@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2__1493542877" data-has-heading-anchor="true">Create and Edit a Web Client</h2>
+        <p>When you create a web client you link one or more indexes to it, specify users, customize its appearance by changing styles and templates, and apply various search functionalities.</p>
+        <p>Create and edit a Web Client using the following procedures:</p>
+        <p>Create a Web Client (page <a href="create-and-edit-a-web-client.html#O_9071">118</a>)</p>
+        <p>General options (page <a href="create-and-edit-a-web-client.html#O_3705">119</a>)</p>
+        <p>Add or Delete Users (page <a href="create-and-edit-a-web-client.html#O_3703">124</a>)</p>
+        <p>Add or Delete Index(es) (page <a href="create-and-edit-a-web-client.html#O_3702">126</a>)</p>
+        <p>Templates and Styles (page <a href="create-and-edit-a-web-client.html#O_9464">127</a>)</p>
+        <p>Edit Hit Markers (page <a href="create-and-edit-a-web-client.html#O_3713">131</a>)</p>
+        <p>Added login via cookie (page <a href="create-and-edit-a-web-client.html#O_1533">132</a>)</p>
+        <p>Disable Caching (page <a href="create-and-edit-a-web-client.html#O_4667">133</a>)</p>
+        <p>View Hit Highlighting in Adobe PDF Files (page <a href="view-hit-highlighting-in-adobe-pdf-files.html#O_8751">134</a>)</p>
+        <p>Global Search Folders for Web Client (page <a href="view-hit-highlighting-in-adobe-pdf-files.html#O_6514">135</a>)</p>
+        <p>Be careful when making changes as certain changes are saved immediately without a prompt! For every template a number of styles are available. If a style is not relevant for a template, it is not mentioned/changed.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1332163518" data-has-heading-anchor="true">Create a Web Client</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX is open.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Click the Web Client icon: <img src="../../Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0001.png" width="36" height="31" alt="" />.</li>
+            <li>Go to File &gt; New.</li>
+            <li>Define a Long Client Name. </li>
+            <li>Define the HTTP alias (URL). </li>
+            <li>Browse to the directory where you want to store the Web Client.</li>
+            <li>If required, define a Client email address.</li>
+            <li>Select a language for the Template language.</li>
+            <li>Click OK twice.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a Web Client. </p>
+        <p>&#160;</p>
+        <h3 id="h3_535221460" data-has-heading-anchor="true">General options</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Web Client is open. You created a Web Client and the web client tree is expanded in the ZyINDEX web client panel.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select General in the expanded web client tree.</li>
+            <li>Check the options you defined while creating a Web Client.</li>
+            <li>Set the following options where necessary:</li>
+        </ol>
+        <ul>
+            <li>Enable Automatic Login<br />Allows users to register without using a username/password.<br /><br />Note: For security reasons, it is advised to deselect this option.</li>
+            <li>Disable caching in browser<br />When caching is enabled, ZyNET will send a new version only if documents/images have been changed, otherwise stored (cached) content will be used. It is recommended to disable caching when using Annotations. For more information, see Disable Caching (page <a href="create-and-edit-a-web-client.html#O_4667">133</a>).</li>
+            <li>Always view PDF files with Adobe<br />Opens PDF files directly in an Adobe Acrobat program (for example, Reader or Exchange). If this is not selected PDF files are converted to TIFF and the image is displayed.<br /><br />Note: To enable hit-highlighting in PDF files you must change the Adobe Preferences (refer to View Hit Highlighting in Adobe PDF Files (page <a href="view-hit-highlighting-in-adobe-pdf-files.html#O_8751">134</a>)).</li>
+            <li>Disable total hit count for Fast Results<br />For large indexes, use this option to greatly increase the speed results that are shown. During a search from the Web Client when the 'Fast results, last indexed first' option is selected, only the first 15 found items are shown in the results list. The following 15 results are searched for when the "next" link (above the results list) is clicked. See Starting a Simple Search in the Web Client manual for more details (in the Web Client, go to Help &gt; Help Contents).</li>
+        </ul>
+        <ol start="4">
+            <li>For more information on the Generate sitemap button, see ZyINDEX Internet Search Engine Integration (page <a href="create-and-edit-a-web-client.html#O_5971">120</a>).</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You checked and defined the General options.</p>
+        <p>&#160;</p>
+        <h3 id="h3_2111973822" data-has-heading-anchor="true">ZyINDEX Internet Search Engine Integration</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to open ZyLAB Archives via Internet search engines such as Google, Yahoo, etc. In order to do so, a sitemap must be created. A sitemap is used by webmasters to inform search engines about pages on their sites that are available for crawling. Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p>
+        <p>Documents need to be transformed to plain HTML for indexing by search engines. A special template (Search engine optimization) is created for that reason. To edit this template and optimize your web presence, go to the Templates section of a Web Client, and double click on the Search engine optimization template. All options of the template are explained clearly in the template. The template works for both electronic and scanned documents.</p>
+        <p>Once ZyNET.exe detects a defined user agent (for example a web browser or search engine crawler), ZYNET.exe will display a special page that shows the HTML text version of a document.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX &gt; Web Client.</li>
+            <li>Select the Web Client that will be indexed by Internet search engines.</li>
+            <li>Make sure one or more indexes are added to your Web Client.</li>
+            <li>On the General page, click the Generate sitemap button to create a SiteMap XML file which informs search engines about pages that are available for crawling.<br />The SiteMap Generator dialog appears.</li>
+            <p>Periodically refresh the SiteMap to make sure URLs of new documents are added.</p>
+        </ol>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0002.png" width="616" height="389" alt="" class="Thumbnail" />
+        </p>
+        <ol start="5">
+            <li>In the Sitemap path field enter the location where the SiteMap XML file will be saved. If required use the Browse button select a location.</li>
+            <p>Due to security issues, the SiteMap XML file must be placed in the root folder of the Web Client.</p>
+            <li>Enter a name for the (to be created) SiteMap XML file in the Sitemap name field.</li>
+            <p>Make sure you use a different Sitemap name for each Web Client that you want to be indexed by user agents. If you do not, older files with the same name will be overwritten.</p>
+            <li>In the Internet Server URL field enter the external server on which the SiteMap XML file will run.</li>
+            <li>To create a new SiteMap, select the checkbox Generate a new SiteMap. If you do not select this option, only new documents (URLs) will be added. </li>
+        </ol>
+        <p>To limit the number of SiteMaps, select the checkbox "Try to create just one file".</p>
+        <ol start="9">
+            <li>To create a separate SiteMap file for every index, select the checkbox Create sub sitemaps for every index. Note that this option cannot be combined with the option Try to create just one file.</li>
+            <p>The maximum size of a SiteMap is 50000 URLs or 10MB. The maximum size of a SiteMap index is 1000 SiteMaps. </p>
+            <li>To provide user agents with information on the latest modification date of a file, select the checkbox Add last modified tag (uses file date).</li>
+            <li>To define how frequently pages are likely to change, select the checkbox Add change frequency. This value provides general information to search engines and may not correlate to exactly how often they actually crawl the page. Choose from:</li>
+        </ol>
+        <ul>
+            <li>always</li>
+            <li>hourly</li>
+            <li>daily</li>
+            <li>weekly</li>
+            <li>monthly</li>
+            <li>yearly</li>
+            <li>never</li>
+            <p>The value 'always' should be used to describe documents that change each time they are accessed. The value 'never' should be used to describe archived URLs.<br /></p>
+            <p>Please note that the value of this tag is considered a hint and not a command. Even though search engine crawlers may consider this information when making decisions, they may crawl pages marked 'hourly' less frequently than that, and they may crawl pages marked 'yearly' more frequently than that. Crawlers may periodically crawl pages marked 'never' so that they can handle unexpected changes to those pages.<br /></p>
+            <p>Due to technical limitations the generated values are default values. These values can only be changed manually.</p>
+        </ul>
+        <ol start="12">
+            <li>To define the priority of a URL relative to other URLs on your site, select the checkbox Add priority.</li>
+            <p>Valid values range from 0.0 to 1.0. This value does not affect how your pages are compared to pages on other sites - it only lets the search engines know which pages you deem most important for the crawlers.<br />The default priority of a page is 0.5.<br />Please note that the priority you assign to a page is not likely to influence the position of your URLs in a search engine's result pages. Search engines may use this information when selecting between URLs on the same site, so you can use this tag to increase the likelihood that your most important pages are present in a search index.<br />Also, please note that assigning a high priority to all of the URLs on your site will not guarantee that web pages are included in search engines. As the priority is relative, it is only used to select between URLs on your site.<br /></p>
+            <p>Due to technical limitations the generated values are default values. These values can only be changed manually.</p>
+            <li>To create the sitemap, click the Generate button.</li>
+            <li>Click OK.<br />The SiteMap XML file(s) can be found at the location defined in the Sitemap path field.</li>
+            <li>Open the SiteMap XML file(s), to check the contents.</li>
+            <li>To define the user agents that are allowed to crawl your pages, go to Options &gt; Web Client.<br />The Web Site dialog appears.</li>
+            <li>Select the checkbox 'Treat these user agents as search engines'.</li>
+            <li>Click the Change button.</li>
+            <li>Define a user agent (for example, googlebot-pm or yahooseeker), and click the + button.</li>
+            <li>Repeat to add more user agents.</li>
+            <li>To delete a user agent, select it, and click the - button.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a web client that will be indexed by Internet search engines, and created a sitemap to inform search engines about pages which are available for crawling, then you defined the user agents that are allowed to crawl your pages.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>Ensure that user agents will also view the latest documents by periodically generating a new sitemap.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1707492561" data-has-heading-anchor="true">Add or Delete Users</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Web Client is open. You have created a Web Client and the web client tree is expanded in the ZyINDEX Web Client panel. You have imported/created Users and User Groups in ZyINDEX &gt; Security. For more information, see the ZyINDEX manual &gt; Import Users (page <a href="general.html#O_3929">173</a>), Create Users (page <a href="general.html#O_3930">180</a>) and Create User Groups (page <a href="general.html#O_3925">169</a>).</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Expand 'User Roles' in the Web Client tree.</li>
+            <li>Select Administrator/Editor/User or Guest.</li>
+            <li>Select Add.</li>
+            <li>Select a user (group) you want to give access to the Web Client. </li>
+            <li>If you want to add more users and/or user groups, repeat steps 3 and 4.</li>
+            <li>By default, 'Inherit from roles' is selected. The inherited user group is grayed out. If the 'Inherit from roles' option is not selected, the inherited user group turns black; now you are able to delete it. Inherited user groups are used to automatically add default users to your Web Client, which makes the creation of new Web Clients much faster, and adds security. For more information on Roles refer to the ZyINDEX Manual &gt; Functional (Application) Security (page <a href="functional-application-security.html#O_3995">216</a>).</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have added users and/or user groups to the Web Client.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>To delete a User or User Group, select one and click Delete.</p>
+        <p>&#160;</p>
+        <h3 id="h3_424740706" data-has-heading-anchor="true">Deny Access</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to deny access to an index (on a Web Client) for specific user(s), group(s) or role(s).</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Security <img src="../../Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0003.png" width="28" height="32" alt="" />.</li>
+            <li>Select File System (Network) Security.</li>
+            <li>Select an index (to which you want to deny access for a specific user, group or role) from the dropdown listbox.</li>
+            <li>Select from the Section dropdown listbox, the option Index Directory.</li>
+            <li>Select all items.</li>
+            <li>Click Create.<br />The View/Edit Permissions dialog appears.</li>
+            <li>Select from the Users, Groups or ZyLAB Roles dropdown listbox a user, group or role.</li>
+            <li>Select from the dropdown listbox Apply onto, the option This folder, subfolders and files.</li>
+            <li>Deny all permissions.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have denied access (for a user, group or role) to an index. If this index is added to a web client, it will not be visible to this user, group or role. </p>
+        <p>&#160;</p>
+        <h3 id="h3__771073714" data-has-heading-anchor="true">Add or Delete Index(es)</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Web Client is open. You created a Web Client and the web client tree is expanded in the ZyINDEX web client panel.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select Indexes in the expanded web client tree.</li>
+            <li>Click the Select button.</li>
+            <li>Select one or more index(es).</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You added index(es) to the Web Client.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>The sequence of the indexes can be changed using the blue arrows on the right hand side. This sequence will be shown in the Web Client search panel.</p>
+        <p>To delete an index, select it and click the Delete button.</p>
+        <p>If the user does not have permission to access the folders where an index is stored, then that index will not appear in the list on the Web Client search panel.</p>
+        <p>Facets are only shown in the Web Client if the documents have field values and the visualization is set for the defined fields:<br /></p>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0004.png" width="388" height="339" alt="" class="Thumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h3 id="h3__171470190" data-has-heading-anchor="true">Templates and Styles</h3>
+        <p>The Web Client is made from Templates (page <a href="create-and-edit-a-web-client.html#O_3707">128</a>) with Styles (page <a href="create-and-edit-a-web-client.html#O_3706">129</a>) controlling the appearance of the templates. ZyLAB Web Client is supplied with standard Default, Classic and Enterprise styles with can be applied to your Web Client to change its appearance. The changes are visible in the browser when the screen is refreshed.</p>
+        <p>It is also possible to edit the individual templates, but a good working knowledge of HTML is required for this.</p>
+        <p>Check all changes you have made to Web Client styles in your internet browser before releasing the Web Client.</p>
+        <p>&#160;</p>
+        <h3 id="h3__2122598021" data-has-heading-anchor="true">Templates</h3>
+        <h4 id="h4_1414527788" data-has-heading-anchor="true">
+			List of Templates</h4>
+        <p>The templates are listed with their current style. Right click on a template to choose the View and Edit options (see below).</p>
+        <h4 id="h4_441869064" data-has-heading-anchor="true">
+			Change the style</h4>
+        <p>A new style can be applied to the templates to change the style of the Web Client (Change the style of the templates (page <a href="create-and-edit-a-web-client.html#O_3693">130</a>)).</p>
+        <h4 id="h4_1582260093" data-has-heading-anchor="true">
+			View</h4>
+        <p>To view a template from the dialog box, right click on it and select View. This option will only work if you have defined an HTML browser in Options &gt; Web Client (see General options (page <a href="create-and-edit-a-web-client.html#O_3705">119</a>)).<br />You can also browse to the particular template you want to see. The file should have an *.HTM extension and should be located in the WWW root directory that can be found in the Inetpub folder.</p>
+        <h4 id="h4_2119799890" data-has-heading-anchor="true">
+			Edit</h4>
+        <p>You can edit individual HTML pages using a text editor, for example Notepad. You can define the HTML Editor in Options &gt; Web Client (see General options (page <a href="create-and-edit-a-web-client.html#O_3705">119</a>)).</p>
+        <p>&#160;</p>
+        <h3 id="h3__1817340272" data-has-heading-anchor="true">Styles</h3>
+        <p>One of the listed styles can be applied to your Web Client to change its appearance (Change the style of the templates (page <a href="create-and-edit-a-web-client.html#O_3693">130</a>)):</p>
+        <p>Default - contains all basic functionalities and is a user-friendly and intuitive HTML style.</p>
+        <p>Section508</p>
+        <p>&#160;</p>
+        <h3 id="h3_1978134235" data-has-heading-anchor="true">Change the style of the templates</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX &gt; Web Client is open. You created a Web Client and the web client tree is expanded in the ZyINDEX Web Client panel. You want to change the style of the Web Client's user interface.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select Templates in the expanded web client tree.</li>
+            <li>In the Templates drop-down list select a template style (Styles (page <a href="create-and-edit-a-web-client.html#O_3706">129</a>)). The default template is "Default".<br /><img src="../../Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0005.png" width="334" height="143" alt="" class="Thumbnail" /></li>
+            <li>If you want to change all templates (Templates (page <a href="create-and-edit-a-web-client.html#O_3707">128</a>)) to the selected template style, click Yes. If not, click No to exit.</li>
+            <p>If you want to change the style of one template, first select the template from the list, and select another available style for that template only. Now, when asked if you want to change all templates, click No.</p>
+            <li>Click Apply. A message warning that all manual modifications to a style will be lost is shown. Click Yes to apply the changes or No to cancel the changes.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have changed the style (user interface) of a Web Client. If your ZyLAB Web Client is open in an internet browser refresh the screen to show the changes.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>If you want to view a template, select it, and click View. This will only work, if you defined a HTML browser via Options &gt; Web Client (see General options (page <a href="create-and-edit-a-web-client.html#O_3705">119</a>)).</p>
+        <p>&#160;</p>
+        <h3 id="h3_1284065784" data-has-heading-anchor="true">Edit Hit Markers</h3>
+        <p>The hit markers appear each side of a hit and are used to jump to the previous or next hit: <img src="../../Storage/zylab-information-management-publication/create-and-edit-a-web-client-img0006.png" width="212" height="20" alt="" />. You can change the markers to your own preferred marker image by creating new images and replacing the original images.</p>
+        <p>Note: Hit markers only appear in electronic documents and not in scanned documents.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>In the www root images folder for your web client ("\Inetpub\wwwroot\&lt;webclient&gt;\images") rename the PrevHit.gif and NextHit.gif files to "PrevHit.gif.orig" and "NextHit.gif.orig". </li>
+            <p>Renaming the files allows you to revert to the original hit markers.</p>
+            <li>Create new previous and next hit markers of a suitable size (the original hit markers are 14 x 9 pixels) in a graphics editor, for example Microsoft Paint.</li>
+            <li>Save the new previous and next hit markers as .gif files in the www root images folder with the names "PrevHit.gif" and "NextHit.gif".</li>
+            <li>Refresh your Web Client browser window. The new hit markers will now appear each side of a hit.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have changed the hit markers.</p>
+        <p>&#160;</p>
+        <h3 id="h3_973366405" data-has-heading-anchor="true">Added login via cookie</h3>
+        <p>A cookie device is enabled to allow removal of the NT_User details from the URL. Also, your username and password are saved so you do not have to login each time.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1386116633" data-has-heading-anchor="true">Disable Caching</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>When caching is enabled, you can save bandwidth and reduce processing time when viewing documents and images on the web. ZyNET will send a new version only if documents/images have been changed, otherwise stored (cached) content will be used. Caching is enabled by default.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Web Client.</li>
+            <li>Select the folder of an index.</li>
+            <li>Select the option 'Disable Caching in browser'.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>Caching will be disabled.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>It is recommended to disable caching when using Annotations. Changes to certain plugin fields are not shown when caching is enabled (this has to do with the fact that changes are not reflected in the modified date/time). </p>
+        <p>Caching works for the following ZyNET actions:</p>
+        <ul>
+            <ul>
+                <li>ZyActionD (file display)</li>
+                <li>ZyActionG (INSO inline image, and images with document-level security)</li>
+                <li>ZyActionW (download/launch)</li>
+                <li>ZyActionP (download as PDF)</li>
+                <li>ZyActionM (view as TIFF)</li>
+            </ul>
+        </ul>
+        <p>tiff2png (showing images as inline-PNG-images) also supports caching. Caching cannot be disabled, but tiff2png has no problems with plugin fields. </p>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Functional Document Security</h1>
+        <p>Functional Security allows Administrators to control access to sets of documents. Roles and Document Security Rules can be combined to create complex user access profiles.</p>
+        <h2>Create Document Security Rules</h2>
+        <p>Start by creating Document Security Rules that define document sets.</p>
+        <p>You could, for example, create 2 different Document Security Rules:</p>
+        <ul>
+            <li>
+                <p style="font-weight: bold;">Custodian A</p>
+                <p>This rule will allow access to all documents from Custodian A</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Custodian B</p>
+                <p>This rule will allow access to all documents from Custodian B.</p>
+            </li>
+        </ul>
+        <h2>Create Roles</h2>
+        <p>Once the Document Security Rules have been defined, define the Roles. A role is a selection of permissions.</p>
+        <p>Administrators can create two different types of Roles:</p>
+        <ul>
+            <li>
+                <p style="font-weight: bold;">Functional Roles</p>
+                <p>Roles with application rights, like Open Matter, Change Configuration, Create Productions, Batch Fields, Batch Field Updates, Create Sample Set, Create Review Set, etc.</p>
+                <p>Functional roles are often defined as Global Roles (which makes them available accross matters).</p>
+                <p>The following Functional Roles might be defined:</p>
+                <ul>
+                    <li>
+                        <p style="font-weight: bold;">User</p>
+                        <p>Access Matter, Access Fields, Search, etc.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Manager</p>
+                        <p>All functional rights.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Admin</p>
+                        <p>All configuration/audit rights.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Document Security Roles</p>
+                <p>Document Security Roles can be created in combination with Document Security Rules. This allows you to define access to a set of documents.</p>
+                <p>Document Security Roles can only be defined as a Matter Role (for a specific matter only).</p>
+                <p>The following document rights can be selected: Access Document, Access Document Contents, Access Production View, Add/Edit Remarks, Annotate Document, Redact Document, Download Document, and Delete Document.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/010101-2021-11-29.png" alt="" class="Thumbnail" />
+                </p>
+                <p>This can result in, for example, the following Document Security Roles:</p>
+                <ul>
+                    <li>
+                        <p style="font-weight: bold;">Limited Access</p>
+                        <p>This role might consist of the following permissions: Access Matter, Access Documents and Delete Document. A user that has been assigned with this role is allowed to search for documents and view them in the Document List, but not open them. The user can however delete documents.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Reviewer</p>
+                        <p>This role might consist of the following permissions: Access Matter, Access Documents, Access Document Contents, Annotate Document, Redact Document. A user that has been assigned with this role is allowed to search for documents, view and open them and perform actions. This user cannot delete documents.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Assign Roles to User(s) or User Group(s)</h2>
+        <p>Once the Document Security Rules and all the Roles have been defined, you can assign them to user(s) or user group(s). Rules and Roles can be combined endlessly. For more information, see <MadCap:xref href="340.html">User Management</MadCap:xref>.</p>
+        <p>For example:</p>
+        <table class="TableStyle-CD360_Basic_Table" cellspacing="0" cellpadding="0" style="width: 100%;border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');margin-left: 0;margin-right: auto;">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">User Group</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">D<b>ocument Security Rule</b></p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">F<b>unctional Role</b></p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead">D<b>ocument Security Role</b></p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 20px;" class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td style="width: 177px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">User Group K<br /></p>
+                    </td>
+                    <td style="width: 562px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">
+        Custodian A</p>
+                    </td>
+                    <td style="width: 242px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">User</p>
+                    </td>
+                    <td style="width: 569px;" class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">Reviewer</p>
+                    </td>
+                </tr>
+                <tr style="height: 20px;" class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td style="width: 177px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">User Group L</p>
+                    </td>
+                    <td style="width: 562px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Custodian B</p>
+                    </td>
+                    <td style="width: 242px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">User</p>
+                    </td>
+                    <td style="width: 569px;" class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">Reviewer</p>
+                    </td>
+                </tr>
+                <tr style="height: 20px;" class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td style="width: 177px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">User Group M<br /></p>
+                    </td>
+                    <td style="width: 562px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">None (access to all documents in the matter)<br /></p>
+                    </td>
+                    <td style="width: 242px;" class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Manager<br /></p>
+                    </td>
+                    <td style="width: 569px;" class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">Reviewer<br /></p>
+                    </td>
+                </tr>
+                <tr style="height: 20px;" class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td style="width: 177px;" class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">User Group N<br /></p>
+                    </td>
+                    <td style="width: 562px;" class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">None (access to all documents in the matter)<br /></p>
+                    </td>
+                    <td style="width: 242px;" class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">Admin<br /></p>
+                    </td>
+                    <td style="width: 569px;" class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText">Limited Access<br /></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

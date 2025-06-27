@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create  New Assisted Review Project</h1>
+        <p>To create a new Assisted Review project:</p>
+        <ol>
+            <li>
+                <p>In the navigation panel of ZyLAB One, select Assisted Review.</p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/309-2017-12-11.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>+ Add Project</b>. The Create Project Wizard opens.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note:</b>  				When other projects have been created already, select    <img src="../../../Storage/zylab-one-manual-publication/309-2017-12-18-1.png" id="img_upload_2a679e1e-7006-49b7-06eb-977ccef019f4" />  and then select <b>+ Add Project</b>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Define the Project Settings.</p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/333-2018-12-04.png" alt="" class="Thumbnail" />
+                </p>
+                <p>
+                    <MadCap:toggler targets="Project Settings">View Options</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="Project Settings">
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>
+                            <p>Define a <b>Project Name</b>.</p>
+                        </li>
+                        <li>
+                            <p><b>Select Project Search Query</b>. Options include:</p>
+                            <ul>
+                                <li>
+                                    <p><b>All Documents</b>: Expand the scope to include all documents from your matter.</p>
+                                </li>
+                                <li>
+                                    <p><b>Saved Searches</b>: Select a Saved Search to focus the assisted review to include only documents associated with this search.</p>
+                                </li>
+                            </ul>
+                            <p>
+                                <img src="../../../Storage/zylab-one-manual-publication/309-2017-12-18-3.png" alt="" class="Thumbnail" />
+                            </p>
+                        </li>
+                        <li>
+                            <p>If desired, select <b>Topic Modeling</b>. Topic modeling is useful to discover clusters of words (topics) that frequently occur together, which help to identify patterns. Topics are the most important words spread among the documents in a project. </p>
+                            <p>For more information, see <MadCap:xref href="../1020.html">Topic Modeling</MadCap:xref>.</p>
+                        </li>
+                        <li>
+                            <p>If desired, select <b>Use Validation Set</b>. You can create a Validation Set or Test Set to determine how well the classifier performs.</p>
+                            <p>For more information, see <MadCap:xref href="../446.html">Validation Set</MadCap:xref>.</p>
+                        </li>
+                        <li>
+                            <p>Configure advanced settings.</p>
+                            <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                <tbody>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                            <p class="TableText">
+                                                <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                            <p style="font-size: 10pt;font-style: italic;">Note:  				If you selected <b>Topic Modeling</b> and/or <b>Validation Set</b>, 
+				you can view/adjust those Advanced Settings tabs. Otherwise, you can only view/adjust the <b>Term Filtering</b> tab.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <MadCap:toggler targets="TermFiltering">Term Filtering</MadCap:toggler>
+                                    </p>
+                                    <div MadCap:targetName="TermFiltering">
+                                        <p>      Determine the number of terms (dimensions) for the tf-idf vectors that are used for classification.</p>
+                                        <ul>
+                                            <li>
+                                                <p style="font-weight: bold;">Maximum Number of Documents per Term</p>
+                                                <p>Default: 100% of the total number of documents in the project</p>
+                                                <p>Maximum document frequency for a term (number of documents the term occurs in). Terms with a document frequency higher than this value will be excluded for the creation of tf-idf vectors.</p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Minimum Number of Documents per Term</p>
+                                                <p>Default: 2</p>
+                                                <p>Minimum document frequency for a term. Terms with a document frequency lower than this value will be excluded for the creation of tf-idf vectors. Default setting is 2, because terms that occur in only 1 document do not add information that can be used to classify other documents.</p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Top Number of Terms</p>
+                                                <p>Default: 2.000.000</p>
+                                                <p>Number of terms that will be used in document vectors.</p>
+                                                <p>Ranking is based on inverse document frequency: terms with a lower document frequency will be ranked higher.</p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Regular Expression to Filter Terms</p>
+                                                <p>Default: ^.{0,3}$|^.{20,}$|^(image|de|het|the|and|or|een)$|^(\d|\W|_)*$|^[^a-z].*[^a-z]$|^(_|-|\.|\\|\/).*$|^.*(_|\.|\:|\;).*$</p>
+                                                <p>Terms that match the provided regular expression will be excluded for the creation of tf-idf vectors.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        <MadCap:toggler targets="TopicModeling">Topic Modeling</MadCap:toggler>
+                                    </p>
+                                    <div MadCap:targetName="TopicModeling">
+                                        <p>Discover clusters of words that frequently occur together to identify patterns.</p>
+                                        <ul>
+                                            <li>
+                                                <p style="font-weight: bold;">Maximum Depth</p>
+                                                <p>Default: 3</p>
+                                                <p>The first discovered topics are at depth 1, child topics are at depth 2 and further. When the maximum depth is reached, no further calculations are performed. Calculations can already stop before that (for example, when child topics of the current level are too similar). In the example below, the maximum depth was set to 3. Calculation for the purple subtree was stopped at depth 2 and will not be processed any deeper.</p>
+                                                <p>
+                                                    <img alt="" src="../../../Storage/zylab-one-manual-publication/SMALLTopicModelingExampleDepth.png" class="Thumbnail" />
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Number of Child Topics at Root Node</p>
+                                                <p>Default: 20</p>
+                                                <p>The number of topics at depth 1. In the example above, this value is set to 5 topics.</p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Number of Child Topics at Node</p>
+                                                <p>Default: 3</p>
+                                                <p>The number of topics at any depth &gt; 1. In the example above, this value is set to 3 topics.</p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Top Number of Documents</p>
+                                                <p>Default: 100% of the total number of documents in the project</p>
+                                                <p>The number of documents used in the calculation of the topic modeling. The documents are ranked based on their content value from high to low. Only the top documents with the highest content value are used for the topic modeling (content value of the document is the euclidean norm of the tf-idf vector before normalization: square root of sum of squares of tf-idf values).</p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Top Number of Terms</p>
+                                                <p>Default: 250.000</p>
+                                                <p>Number of terms that will be used for Topic Modeling.</p>
+                                                <p>Add additional filtering to the Top number of terms defined in the Term Filtering tab. This can be done if the value for this setting is lower than the number of dimensions in the tf-idf vector. The ranking of the terms is based on the sum of tf-idf values for a term in all documents.</p>
+                                                <p>Ranking is based on inverse document frequency: terms with a lower document frequency will be ranked higher.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        <MadCap:toggler targets="Validation">Validation Set</MadCap:toggler>
+                                    </p>
+                                    <div MadCap:targetName="Validation">
+                                        <ul>
+                                            <li>
+                                                <p style="font-weight: bold;">Maximum Size for Validation Set</p>
+                                                <p>Default: 1% of the total number of documents in the project</p>
+                                                <p>Size of the random sample in number of documents.</p>
+                                            </li>
+                                            <li>
+                                                <p style="font-weight: bold;">Recall Goal</p>
+                                                <p>Default: 80% recall</p>
+                                                <p>Define the stop condition for each issue in this project. When this goal is reached, the remaining documents can be classified by the system.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <p>When all options have been configured, click <b>Create</b>. </p>
+            </li>
+            <li>
+                <p>The <b>Define Issues</b> step opens. If needed, define one or more issues.<MadCap:conditionalText MadCap:conditions="Primary.Block">   
+ An issue defines the <MadCap:annotation MadCap:createDate="2023-02-09T16:51:56.8781258-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Need a description here, but this definition doesn't make sense." MadCap:editor="mcohen" MadCap:editDate="2023-02-09T16:52:10.3547778-07:00">information</MadCap:annotation> need. For example, you want to find information on contracts or human resources.</MadCap:conditionalText>&#160;For each issue, a <a href="../321.html">training set</a>&#160;is created. </p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/319-2017-12-19-2.png" alt="" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note:</b> Issues may also be created at a later time. See <MadCap:xref href="../319.html">Issue</MadCap:xref>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <MadCap:toggler targets="DefineIssues">View Options</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="DefineIssues">
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/ONE/Assisted_Review_Add_Issue.flsnp" />
+                </div>
+            </li>
+            <li>
+                <p>Click <b>Next</b>.</p>
+            </li>
+            <li>
+                <p>Review the project summary and click the <b>Start Project</b> button.</p>
+            </li>
+            <li>
+                <p>The classification process will be started. The progress can be viewed in the <b>Assisted Review Progress</b> tab.</p>
+                <p>
+                    <img src="../../../Resources/Images/ONE/Assisted_Review_ Progress_Dashboard.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

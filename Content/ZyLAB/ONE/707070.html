@@ -1,0 +1,1445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1>Entity <MadCap:annotation MadCap:createDate="2023-04-04T16:45:54.7425555+02:00" MadCap:creator="mobrien" MadCap:initials="MO" MadCap:comment="Topic (somehow) shows up fine in Beta/Live pubs. " MadCap:editor="mobrien" MadCap:editDate="2023-04-04T16:46:16.3157856+02:00">Explanation</MadCap:annotation></h1>
+        <table class="bodytext">
+            <thead>
+                <style>
+table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+th,
+td
+{
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+tr:hover
+{
+	background-color: #f5f5f5;
+}
+#heading th
+{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #2c347c;
+	color: white;
+}
+
+</style>
+            </thead>
+            <tbody>
+                <tr id="heading">
+                    <th valign="top" style="width: 256px;"><b>Common Entity Type
+          
+        </b>
+                    </th>
+                    <th valign="top" style="width: 268px;"><b>Entity Sub type</b>
+                    </th>
+                    <th valign="top"><b>Description</b>
+                    </th>
+                </tr>
+                <tr valign="top" bgcolor="#D3D3D3" style="width: 256px;">
+                    <td><b>PTM Named Entity Extractor</b>
+                    </td>
+                    <td valign="top" style="width: 268px;" />
+                    <td valign="top" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Street and Number
+      </td>
+                    <td style="width: 268px;">
+        ADDRESS1
+      </td>
+                    <td style="width: 980px;">
+        Corresponds to the first part of a postal address. At least two pieces of the following address information must be adjacent to be extracted as ADDRESS1: Building name, House number, Street name, Apartment number, PO Box and number, Neighborhood. The format is typical of the country (or countries) where the language is spoken
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Postal code and City
+      </td>
+                    <td style="width: 268px;">
+        ADDRESS2
+      </td>
+                    <td style="width: 980px;">
+        Corresponds to the second part of a postal address. At least two pieces of the following address information must be adjacent to be extracted as ADDRESS2: Postal code, City, State/province/department. Country names are always extracted as COUNTRY, even in an address context.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Continent
+      </td>
+                    <td style="width: 268px;">
+        CONTINENT
+      </td>
+                    <td style="width: 980px;">
+        The name of any continent.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Country
+      </td>
+                    <td style="width: 268px;">
+        COUNTRY
+      </td>
+                    <td style="width: 980px;">
+        The name, or the abbreviated name of a country.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Money
+      </td>
+                    <td style="width: 268px;">
+        CURRENCY
+      </td>
+                    <td style="width: 980px;">
+        A quantity of world currency, or a range of amounts of currency.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Date
+      </td>
+                    <td style="width: 268px;">
+        DATE
+      </td>
+                    <td style="width: 980px;">
+        A date is minimally composed of a number and month.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Day
+      </td>
+                    <td style="width: 268px;">
+        DAY
+      </td>
+                    <td style="width: 980px;">
+        A day of the week, including abbreviations.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Facility
+      </td>
+                    <td style="width: 268px;">
+        FACILITY
+      </td>
+                    <td style="width: 980px;">
+        A man-made structure.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        FACILITY@AIRPORT
+      </td>
+                    <td style="width: 980px;">
+        The name of a primarily man-made or man-maintained structure whose primary use is as an air transportation terminal.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        FACILITY@BUILDGROUNDS
+      </td>
+                    <td style="width: 980px;">
+        The name of an architectural or civil engineering structure, or an outdoor space that is mainly man-made or man-maintained. There is no distinction with respect to their function, they could be civil or military facilities, they could be used for work or entertainment, or they could be monuments.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        FACILITY@PATH
+      </td>
+                    <td style="width: 980px;">
+        The name of a primarily man-made or man-maintained structure that allows fluids, energy, persons, animals, or vehicles to pass from one location to another.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        FACILITY@PLANT
+      </td>
+                    <td style="width: 980px;">
+        The name of a facility composed of one or more buildings used for industrial purposes.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        FACILITY@SUBAREA
+      </td>
+                    <td style="width: 980px;">
+        The name of a portion of a facility, typically an architectural one, that is able to contain people, animals, or objects.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Geographic Area
+      </td>
+                    <td style="width: 268px;">
+        GEO_AREA
+      </td>
+                    <td style="width: 980px;">
+        A geographical area larger than a city and consisting of a significant land mass, such as a group of countries.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        GEO_AREA@DOMESTIC
+      </td>
+                    <td style="width: 980px;">
+        The name of a location that does not cross national boundaries.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        GEO_AREA@INTL
+      </td>
+                    <td style="width: 980px;">
+        The name of a location that crosses national boundaries.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        GEO_FEATURE
+      </td>
+                    <td style="width: 980px;">
+        A geographical location that does not constitute a political entity and is not a CONTINENT, GEO_AREA, COUNTRY, REGION, or LOCALITY.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        GEO_FEATURE@CELESTIAL
+      </td>
+                    <td style="width: 980px;">
+        The name of an astronomical location that is outside of the boundaries of the Earth
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        GEO_FEATURE@BOUNDARY
+      </td>
+                    <td style="width: 980px;">
+        The name of a location such as a border.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        GEO_FEATURE@LAND
+      </td>
+                    <td style="width: 980px;">
+        The name of a location that is a geologically or ecosystemically designed, nonartificial location.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        GEO_FEATURE@WATER
+      </td>
+                    <td style="width: 980px;">
+        The name of a location that is a body of water.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Geographic Coordinates
+      </td>
+                    <td style="width: 268px;">
+        GEOCOORD
+      </td>
+                    <td style="width: 980px;">
+        Geographic coordinates, of various formats.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Holidays
+      </td>
+                    <td style="width: 268px;">
+        HOLIDAY
+      </td>
+                    <td style="width: 980px;">
+        Holidays when banks and businesses are closed (bank holidays) in countries where that language is spoken. Spelled out dates that are also names of holidays are extracted as HOLIDAY (like &amp;quot;Fourth of July&amp;quot;) whereas numeric dates that coincide with a holiday are extracted as DATE (like,&amp;quot;4th of July&amp;quot;).
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Language
+      </td>
+                    <td style="width: 268px;">
+        LANGUAGE
+      </td>
+                    <td style="width: 980px;">
+        The name of a language.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Locality
+      </td>
+                    <td style="width: 268px;">
+        LOCALITY
+      </td>
+                    <td style="width: 980px;">
+        Name of a city.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Measure
+      </td>
+                    <td style="width: 268px;">
+        MEASURE
+      </td>
+                    <td style="width: 980px;">
+        A measure expression, or a range expression denoting measure.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Month
+      </td>
+                    <td style="width: 268px;">
+        MONTH
+      </td>
+                    <td style="width: 980px;">
+        The name of a month of the year, including abbreviations.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        NIN
+      </td>
+                    <td style="width: 268px;">
+        NIN@CA_SIN
+      </td>
+                    <td style="width: 980px;">
+        A Canadian Social Identification number.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        NIN@CH_AVS
+      </td>
+                    <td style="width: 980px;">
+        A Swiss national identification number: Assicurazione Vecchiaia e Superstiti.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        NIN@FR_INSEE
+      </td>
+                    <td style="width: 980px;">
+        A French national identification number: Institut National de la Statistique et des Études Économiques.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        NIN@IT_CF
+      </td>
+                    <td style="width: 980px;">
+        An Italian national identification number: Codice Fiscale.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        NIN@KR_RRN
+      </td>
+                    <td style="width: 980px;">
+        A Korean resident registration number (??????).
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        NIN@NL_BSN
+      </td>
+                    <td style="width: 980px;">
+        A Dutch national identification number: Burgerservicenummer.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        NIN@US_SSN
+      </td>
+                    <td style="width: 980px;">
+        National identifier used in the USA : Social Security Number. Any extracted NIN/US_SSN entities can be parsed and standardized using the Data Cleanse transform of Data Services by mapping them to one of the SSN input fields.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Organization
+      </td>
+                    <td style="width: 268px;">
+        ORGANIZATION@COMMERCIAL
+      </td>
+                    <td style="width: 980px;">
+        The name of commercial organizations, such as major companies or corporations. Any extracted ORGANIZATION/COMMERCIAL entities can be parsed and standardized using the Data Quality Data Cleanse transform by mapping them to one of the FIRM input fields.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@EDUCATIONAL
+      </td>
+                    <td style="width: 980px;">
+        The name of an institution focused primarily on education.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@ENTERTAINMENT
+      </td>
+                    <td style="width: 980px;">
+        The name of any organization, whether nonprofit or for profit, whose main interest is in the production of performing arts material or events: dance, music, opera, theatre, magic, spoken word, circus arts, and musical theatre.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@GOVERNMENT
+      </td>
+                    <td style="width: 980px;">
+        The name of an organization related to government, politics, or the state.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@MEDIA
+      </td>
+                    <td style="width: 980px;">
+        The name of any organization, whether nonprofit or for profit, at any level, whose main interest is in the production of publishing and/or radio-, TV-, cable-, satellite-, or web-broadcasting material.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@MEDICALSCIENCE
+      </td>
+                    <td style="width: 980px;">
+        The name of an organization focused on medical care or research.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@RELIGIOUS
+      </td>
+                    <td style="width: 980px;">
+        The name of an organization focused on religion.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@SPORTS
+      </td>
+                    <td style="width: 980px;">
+        The name of an organization focused on sports.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        ORGANIZATION@OTHER
+      </td>
+                    <td style="width: 980px;">
+        The name of any organization that does not fit into a more specific subtype, including groupings of geopolitical entities that can function as political entities.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        People
+      </td>
+                    <td style="width: 268px;">
+        PEOPLE
+      </td>
+                    <td style="width: 980px;">
+        A name referring to an identifiable group of people based on nationality. In certain languages, ethnicity, region, or religion are also recognized.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Percent
+      </td>
+                    <td style="width: 268px;">
+        PERCENT
+      </td>
+                    <td style="width: 980px;">
+        A percent expression, or a range expression denoting percentage.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Person
+      </td>
+                    <td style="width: 268px;">
+        PERSON
+      </td>
+                    <td style="width: 980px;">
+        An individual specified by name. A variety of forms are identified. Given and family names that occur by themselves are extracted as PERSON as long as they are not ambiguous with common names, with the exception of famous cases, such as Bush.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Phone
+      </td>
+                    <td style="width: 268px;">
+        PHONE
+      </td>
+                    <td style="width: 980px;">
+        A telephone number based on the patterns used in the USA and internationally.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Product
+      </td>
+                    <td style="width: 268px;">
+        PRODUCT
+      </td>
+                    <td style="width: 980px;">
+        A product name, optionally preceded by a company name.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Geographic Area
+      </td>
+                    <td style="width: 268px;">
+        REGION@MAJOR
+      </td>
+                    <td style="width: 980px;">
+        The major administrative division of a country, such as a state of the US, including abbreviations, a province or territory of Canada, the regions of England, and so on.This list also includes names of geo-political entities for which conventional labels do not apply, such as disputed territories or territories that have not been internationally recognized.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        REGION@MINOR
+      </td>
+                    <td style="width: 980px;">
+        The name of a county, prefecture, district, or analogous geographical division or governmental unit.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Twitter ID
+      </td>
+                    <td style="width: 268px;">
+        SOCIAL_MEDIA@ID_TWITTER
+      </td>
+                    <td style="width: 980px;">
+        A Twitter handle or ID starting with &amp;quot;@&amp;quot;.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Twitter Topic
+      </td>
+                    <td style="width: 268px;">
+        SOCIAL_MEDIA@TOPIC_TWITTER
+      </td>
+                    <td style="width: 980px;">
+        A Twitter topic name: a character sequence starting with &amp;quot;#&amp;quot;.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Ticker
+      </td>
+                    <td style="width: 268px;">
+        TICKER
+      </td>
+                    <td style="width: 980px;">
+        A company stock ticker symbol used on the stock exchange. If TICKER entities are found adjacent to index or market names, these are included in the span.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Time
+      </td>
+                    <td style="width: 268px;">
+        TIME
+      </td>
+                    <td style="width: 980px;">
+        A clock time or a time expression.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        TIME_PERIOD
+      </td>
+                    <td style="width: 980px;">
+        A measure of time duration or an expression denoting a range of measures of time.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Title
+      </td>
+                    <td style="width: 268px;">
+        TITLE
+      </td>
+                    <td style="width: 980px;">
+        The name of a position in government, business, or some other organization.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Email
+      </td>
+                    <td style="width: 268px;">
+        URI@EMAIL
+      </td>
+                    <td style="width: 980px;">
+        An e-mail address, including Lotus Notes addresses.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        IP
+      </td>
+                    <td style="width: 268px;">
+        URI@IP
+      </td>
+                    <td style="width: 980px;">
+        An Internet Protocol address.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        URL
+      </td>
+                    <td style="width: 268px;">
+        URI@URL
+      </td>
+                    <td style="width: 980px;">
+        A uniform resource locator, or web address.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Vehicle
+      </td>
+                    <td style="width: 268px;">
+        VEHICLE@AIR
+      </td>
+                    <td style="width: 980px;">
+        An air vehicle, such as an airplane or helicopter.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        VEHICLE@LAND
+      </td>
+                    <td style="width: 980px;">
+        A land vehicle, including the color, year, model and make of the vehicle.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        VEHICLE@WATER
+      </td>
+                    <td style="width: 980px;">
+        A water vehicle.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        VEHICLE@LICENSE
+      </td>
+                    <td style="width: 980px;">
+        An alphanumeric sequence that conforms to the US and Canadian license plate formats, when preceded by a state abbreviation.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        VEHICLE@VIN
+      </td>
+                    <td style="width: 980px;">
+        A Vehicle Identification Number (VIN), which always consists of 17 characters. Each position in the VIN has a particular meaning, designating among other things county code, manufacturer code, equipment code, serial number, and so on.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Weapon
+      </td>
+                    <td style="width: 268px;">
+        WEAPON@BIOLOGICAL
+      </td>
+                    <td style="width: 980px;">
+        The name of some bacteria, virus, fungus, natural toxin, or disease that has been officially identified as used to harm humans, plants (crops), and animals, or as a potential biological threat. This also extracts entities that describe the means for the dispersal of any of these weapons.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        WEAPON@CHEMICAL
+      </td>
+                    <td style="width: 980px;">
+        The name of a chemical substance that has been officially identified as used to harm humans, plants (crops), and animals, or as a potential chemical threat. This also extracts entities that describe the means of the dispersal of any of these weapons.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        WEAPON@EXPLODING
+      </td>
+                    <td style="width: 980px;">
+        The name of a substance or weapon that is designed or used to explode for the purpose of causing damage.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        WEAPON@NUCLEAR
+      </td>
+                    <td style="width: 980px;">
+        The name of a weapon that has been officially identified as used to harm humans, plants (crops), and animals through the dispersal of radiological or nuclear energies, or has been identified as a potential nuclear threat.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        WEAPON@PROJECTILE
+      </td>
+                    <td style="width: 980px;">
+        The name of a weapon that is designed or used to be projected at great speed for the purpose of causing damage.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        WEAPON@SHOOTING
+      </td>
+                    <td style="width: 980px;">
+        The name of a weapon that is designed or used to send projectile objects at great speed for the purpose of causing damage.
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Year
+      </td>
+                    <td style="width: 268px;">
+        YEAR
+      </td>
+                    <td style="width: 980px;">
+        A year identifier.
+      </td>
+                </tr>
+                <tr valign="top" bgcolor="#D3D3D3">
+                    <td style="width: 256px;"><b>Sentiments</b>
+                    </td>
+                    <td style="width: 268px;" />
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Strong Positive Sentiment
+      </td>
+                    <td style="width: 268px;">
+        StrongPositiveSentiment
+      </td>
+                    <td style="width: 980px;">
+        A strong positive opinion, such as "great" or "excellent"
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Strong Negative Sentiment
+      </td>
+                    <td style="width: 268px;">
+        StrongNegativeSentiment
+      </td>
+                    <td style="width: 980px;">
+        A strong negative opinion, such as "hate" or "terrible"
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Major Problem
+      </td>
+                    <td style="width: 268px;">
+        MajorProblem
+      </td>
+                    <td style="width: 980px;">
+        An opinion describing an impediment the customer cannot work around, such as "incomprehensible" or "defective"
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Strong positive emoticon
+      </td>
+                    <td style="width: 268px;">
+        StrongPositiveEmoticon
+      </td>
+                    <td style="width: 980px;">
+        Extracts emoticons conveying strong positive sentiment, e.g. :-D, :-))), (((:
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Strong negative emoticon
+      </td>
+                    <td style="width: 268px;">
+        StrongNegativeEmoticon
+      </td>
+                    <td style="width: 980px;">
+        Extracts emoticons conveying strong negative sentiment, e.g. :-(((, :((, :'-(
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Profanity Ambiguous
+      </td>
+                    <td style="width: 268px;">
+        Ambiguous_profanity
+      </td>
+                    <td style="width: 980px;">
+        Extracts words and phrases that are pejorative only in certain contexts
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Profanity Unambiguous
+      </td>
+                    <td style="width: 268px;">
+        Unambiguous_profanity
+      </td>
+                    <td style="width: 980px;">
+        Extracts words and phrases that are always pejorative, regardless of the context
+      </td>
+                </tr>
+                <tr valign="top" bgcolor="#D3D3D3">
+                    <td style="width: 256px;"><b>Actions</b>
+                    </td>
+                    <td style="width: 268px;" />
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Travel
+      </td>
+                    <td style="width: 268px;">
+        Travel_arrivedIn_When
+      </td>
+                    <td style="width: 980px;">
+        Travel Events
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_arrivedInFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_attemptedEntryIntoFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_attemptedEntryIntoFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_attemptedToEnter
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_attemptedToEnter_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_cameFromTo
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_cameFromTo_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_cameToFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_cameToFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_crossedIntoFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_crossedIntoFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_crossedOverFromTo
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_crossedOverFromTo_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_crossedOverToFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_crossedOverToFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_departedFor
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_departedFor_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_enteredFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_enteredFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_escapedFromTo
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_escapedFromTo_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_escapedToFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_escapedToFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_fledFor
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_fledFor_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_gainedEntryIntoFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_gainedEntryIntoFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_triedToCrossIntoFrom
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_triedToCrossIntoFrom_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_visited
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Travel_visited_When
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Buy
+      </td>
+                    <td style="width: 268px;">
+        Action_Buy_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Buy" event involving persons or organizations&#160;
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Buy_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Command
+      </td>
+                    <td style="width: 268px;">
+        Action_Command_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Command" event involving persons or organizations
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Command_Appositive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Command_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Communicate
+      </td>
+                    <td style="width: 268px;">
+        Action_Communicate_Meet_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Communication" event involving persons or organizations&#160;
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Communicate_Meet_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Communicate_Other_Active
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Communicate_Other_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Communicate_PhoneWrite_Active
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Drive
+      </td>
+                    <td style="width: 268px;">
+        Action_Drive_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Drive" event involving persons or organizations
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Drive_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Finance&#160;
+      </td>
+                    <td style="width: 268px;">
+        Action_Finance_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Finance" event involving persons or organizations
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Finance_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Hire
+      </td>
+                    <td style="width: 268px;">
+        Action_Hire_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Hire" event involving persons or organizations&#160;
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Hire_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Indict&#160;
+      </td>
+                    <td style="width: 268px;">
+        Action_Indict_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing an "Indict" event involving persons or organizations&#160;
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Indict_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Participate
+      </td>
+                    <td style="width: 268px;">
+        Action_Participate_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Participate" event involving persons or organizations
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Participate_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Receive Pay
+      </td>
+                    <td style="width: 268px;">
+        Action_Receive_Pay_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Receive payment" event involving persons or organizations
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Receive_Pay_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Train
+      </td>
+                    <td style="width: 268px;">
+        Action_Train_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Train" event involving persons or organizations
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Train_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Train_With
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Action Transport
+      </td>
+                    <td style="width: 268px;">
+        Action_Transport_Active
+      </td>
+                    <td style="width: 980px;">
+        A sentence or clause expressing a "Transport" event involving persons or organizations
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;" />
+                    <td style="width: 268px;">
+        Action_Transport_Passive
+      </td>
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top" bgcolor="#D3D3D3">
+                    <td style="width: 256px;"><b>Document Details</b>
+                    </td>
+                    <td style="width: 268px;" />
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Document Title
+      </td>
+                    <td style="width: 268px;">
+        DOCUMENT_TITLE&#160;
+      </td>
+                    <td style="width: 980px;">
+        Determines in the first paragraph the document title
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Document Version
+      </td>
+                    <td style="width: 268px;">
+        DOCUMENT_VERSION
+      </td>
+                    <td style="width: 980px;">
+        Extracts document version
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Contract Date
+      </td>
+                    <td style="width: 268px;">
+        CONTRACT_DATE
+      </td>
+                    <td style="width: 980px;">
+        Extracts Contract Date
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Contract Party
+      </td>
+                    <td style="width: 268px;">
+        CONTRACT_PARTY
+      </td>
+                    <td style="width: 980px;">
+        Extracts contract parties within a contract
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Liability Clause
+      </td>
+                    <td style="width: 268px;">
+        LIABILITY_CLAUSE
+      </td>
+                    <td style="width: 980px;">
+        Extract full liability clauses
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Change of Control Clause
+      </td>
+                    <td style="width: 268px;">
+        CHANGEOFCONTROL_CLAUSE
+      </td>
+                    <td style="width: 980px;">
+        Extract Change of Control clauses
+      </td>
+                </tr>
+                <tr valign="top" bgcolor="#D3D3D3">
+                    <td style="width: 256px;"><b>Personal Identifiable Information</b>
+                    </td>
+                    <td style="width: 268px;" />
+                    <td style="width: 980px;" />
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Civil Status
+      </td>
+                    <td style="width: 268px;">
+        CIVILSTATUS
+      </td>
+                    <td style="width: 980px;">
+        Extacts Civil Status
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Date of Birth
+      </td>
+                    <td style="width: 268px;">
+        DATEOFBIRTH
+      </td>
+                    <td style="width: 980px;">
+        Extracts date of Birth
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Nationality&#160;
+      </td>
+                    <td style="width: 268px;">
+        NATIONALITY
+      </td>
+                    <td style="width: 980px;">
+        Extract nationality
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Place of Birth
+      </td>
+                    <td style="width: 268px;">
+        PLACEOFBIRTH
+      </td>
+                    <td style="width: 980px;">
+        Extracts Place of Birth
+      </td>
+                </tr>
+                <tr valign="top">
+                    <td style="width: 256px;">
+        Gender
+      </td>
+                    <td style="width: 268px;">
+        GENDER
+      </td>
+                    <td style="width: 980px;">
+        Extracts Gender
+      </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

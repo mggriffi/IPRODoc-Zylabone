@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2__792038200" data-has-heading-anchor="true">Document (Repository) Security</h2>
+        <p>Document Security enables you to secure your indexes on document level, and allow access to certain groups of documents, based on a field query. Document Security is based on the meta information of the documents. First, document groups have to be created that contain users or user groups. To these created groups queries over the meta information of the index can then be added. Everone who is a member of a certain group is only allowed to view the documents that meet the defined search query. Document Security is effective only if field values are added during archiving.</p>
+        <p>There is of course an evident relation between document security and functional security. The actions that can be done on the documents are secured with functional security. So in case you allow a user group to search in certain document groups, the actions the user group can perform on the documents depend on the given functional security.</p>
+        <p>In order to use document security on indexes, the Document security module has to be selected when you create the index (step 2 of the Index wizard). Do not forget to define the fields; document security is based on them. For more information, see Create Document Security index (page <a href="document-repository-security.html#O_3555">208</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3__2114753589" data-has-heading-anchor="true">Create Document Security index</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX.</li>
+            <li>Select the Build icon.</li>
+            <li>Go to File &gt; New. </li>
+            <li>Fill out a Short Index Name (max. 8 characters).</li>
+            <li>Fill out a Long Index Name (max. 80 characters). Describe the contents of the index in more detail.</li>
+            <li>Select Index Wizard. </li>
+            <li>Click OK.</li>
+            <li>Click Next.</li>
+            <li>Select Document Security and use the arrow to the right to select the module.</li>
+            <li>Click Next three times.</li>
+            <li>Click Define.</li>
+            <li>Click Add definition to define a new field.</li>
+            <li>Fill out the Name field, and select a Type from the dropdown listbox.</li>
+            <li>Select the Search tab.</li>
+            <li>Make sure "Add to Index" and "Input required for searching", and "Add to index comment" and "Show in result list" are selected.</li>
+            <li>Click OK.</li>
+            <li>Repeat step 14 to 18 to add more fields.</li>
+            <li>Click Next.</li>
+            <li>Click Finish.<br />The Document Security index is created.</li>
+            <li>Go to ZyINDEX and click on the Now button (blue triangle) to build the index for the first time.</li>
+            <li>Click Go.</li>
+            <li>Click OK to finish the build process. </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You created a Document Security index and added fields. These fields enable Document Security. Add documents, fill out the field values, and build the index again. Now the index is ready for full-text searching.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>The Document Security index may be added to an (Enterprise) Web Client. This will allow users to use Document Security via the web.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1248617266" data-has-heading-anchor="true">Set-up Timer Service</h3>
+        <p>It is recommended that the TIMER Service is used to build the index automatically after changes to fields, thus ensuring that the index is always up-to-date. Installing the Timer as a service enables the Timer to run constantly in the background, building the index as changes are made (Automatic mode) or at a set time frequency (manual settings).</p>
+        <p>Note: You can only apply automatic mode when the selected index has quick-build enabled.<br /></p>
+        <p>Note: As the Timer is run as a Windows Service, it continues to run in the background, even when ZyINDEX is closed.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select the TIMER icon <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0001.png" width="34" height="49" alt="" />.</li>
+            <li>Click New to display the Add index window.<br /><img src="../../Storage/zylab-information-management-publication/document-repository-security-img0002.png" width="358" height="312" alt="" class="Thumbnail" /></li>
+            <li>Click Select. <br />The Select Index window appears. </li>
+            <li>Select the (Document Security) index. </li>
+            <li>Click OK.</li>
+            <li>Select the mode:</li>
+        </ol>
+        <ul>
+            <li>Automatic mode starts a quick-build each time an Index item is changed or added.</li>
+            <p>Note: Automatic mode is only active when the selected index has quick-build enabled.</p>
+            <li>Manual settings run the selected Action(s) at the specified frequency.</li>
+        </ul>
+        <ol start="7">
+            <li>Click Add Now.</li>
+            <li>Click the Service button (or select Timer &gt; Service from the menu bar) to display the Install Timer as Service window.</li>
+        </ol>
+        <p>You can run the timer as a service either locally or in a domain. For a domain you must obtain the domain name, the user name, and the password. Make sure the defined user has full control on all index, data and temporary folders.</p>
+        <ul>
+            <li>Select Use local system account, or enter the domain name, the user name, and the password. </li>
+            <li>The default Temporary directory is the standard ZyLAB folder. If required, you can change the folder.</li>
+            <li>Set the process priority to the level required (default is Normal).</li>
+        </ul>
+        <p>Click Install Service to install the service.<br /><img src="../../Storage/zylab-information-management-publication/document-repository-security-img0003.png" width="303" height="255" alt="" class="Thumbnail" /></p>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>The Timer is set up. The service runs in the background and continuously updates an index (automatic mode) and/or starts the manually-selected actions on an index.</p>
+        <p>Note: It is recommended that the index receives a full build periodically (for example 1 time per day) to ensure all changes appear in the index. You can add this manually to ZyTIMER using the Add Index window and choosing the Add action.</p>
+        <p>&#160;</p>
+        <h3 id="h3_943174855" data-has-heading-anchor="true">Create, Edit or Delete Document Groups</h3>
+        <p>Document groups can be selected in the indexes folder of the security tab. Indexes that are created with the Document Security module consists of three parts: Document groups, Document security and NTFS security. If you set permissions on, for example, the data folders, users will at least need to have read rights on the documents, otherwise they will not be able to see the documents, even if they are in the correct document group.</p>
+        <p>Before you can create Document Groups, ZyLAB users will have to be defined. </p>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You have created an Index with the security module. </p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>ZyINDEX is open.</li>
+            <li>Click the Security icon <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0004.png" width="28" height="32" alt="" />. On the right pane click &gt; Document (Repository) Security &gt; "Index Name".</li>
+            <li>Click Create to define a new document group for a specific User (Group).</li>
+            <li>Enter an Account name. Click Create.</li>
+            <li>Click <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0005.png" width="21" height="19" alt="" /> to define queries which are used to define a group of documents.</li>
+            <li>Click Create.</li>
+        </ol>
+        <ul>
+            <li>Define the field values on which you want to base the document group that users are allowed to view/search.</li>
+            <li>Click OK.</li>
+        </ul>
+        <ol start="7">
+            <li>Alternatively, if you want to link a user field to an index field, click Create with user field. The contents of the document group will in that case depend on the user that logs in. If, for example, each document in the index has a field 'Department', you could create a document group with 'department=$department'. If a user of Department Sales logs in, then the document group is at that moment defined as 'department=sales'. </li>
+        </ol>
+        <ul>
+            <li>Select a field value from the dropdown listbox.</li>
+            <li>Click OK.</li>
+        </ul>
+        <ol start="8">
+            <li>Repeat steps 6 to 8 to create as many queries as you want. Select the queries you want to use.</li>
+            <li>Repeat steps 3 to 9 to create more document groups.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You created document groups.</p>
+        <h4 data-has-heading-anchor="true">
+			Note</h4>
+        <p>To define subgroups, click <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0006.png" width="20" height="19" alt="" />, select the groups you want to add, and click OK.</p>
+        <p>To change the name of a document group, select it, and click the "Change the name for this group" icon: <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0007.png" width="21" height="19" alt="" />. Change the name, and click OK.</p>
+        <p>To delete a document group, select it, and click the "Delete this group" icon: <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0008.png" width="21" height="20" alt="" />. Click OK.</p>
+        <h4 id="h4__1167311742" data-has-heading-anchor="true">
+			Document Security Query Syntax</h4>
+        <p>The following syntax rules apply:</p>
+        <p>You can use the ? character in Document Security queries comparable to the ZyFIND usage as a wildcard operator to replace individual character positions in a value.<br />For instance a query on AA?AA will find documents that contain a AABAA</p>
+        <p>CONTAINS operator (default): a basic query value is matched against the document field value using the contains operator, for example:<br />cat matches cat, but also cats and dogs</p>
+        <p>EXACT MATCH operator “”: a query value within quotes is matched using the exact match operator, for example:<br />“cat” matches cat, but not cats or cats and dogs</p>
+        <p>NOT operator !: using the exclamation symbol boolean queries can be negated, for example:<br />!cat matches dogs, but not cat, cats or cats and dogs</p>
+        <p>Combination of EXACT MATCH and NOT operator, for example:<br />!”cat” matches dogs, cats and cats and dogs, but not cat</p>
+        <p>WILDCARD operator *: Wildcards used at beginning or the end of a word are interpreted as respectively "starts with" and "ends with". As a consequence *cat* has the same meaning as cat while *cat and cat* will in general generate less results than just cat (but more results than “cat”), for example:<br />Ams*dam</p>
+        <p>NOTE: Too many wildcards inside a value can give an unpredictable result. Do not use more than one wildcard operator inside a value (So Ams*dam and *ms*dam are valid conditions, but Am*st*dam is not). </p>
+        <p>AND and OR and precedence operators ( ): using AND and OR operators and brackets you can construct complex conditions, for example:<br />Amsterdam and !(Paris or Washington)</p>
+        <p>USER PROPERTY resolving: $ followed by the name of a user property will be replaced by the corresponding value of the current logged-on user. The user property may be enclosed by quotes to indicate an exact match condition, for example:<br />$COMPANY<br />$”DEPARTMENT” and !”Test Department”</p>
+        <p>USER GROUPS restriction #GROUPS: #GROUPS as a query value can be used for fields containing a comma separated list of ZyLAB groups and/or user account names. The user will be granted access to the document if the user is member of one of the listed groups/accounts in the document field, for example:<br />#GROUPS</p>
+        <p>NOTE: This value cannot be combined with other values.</p>
+        <p>&#160;</p>
+        <h3 id="h3__2135332367" data-has-heading-anchor="true">Set Access Masks for Document Groups</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to define which actions the members of a document group are allowed to perform on an index.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>ZyINDEX is open.</li>
+            <li>Click the Security icon <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0004.png" width="28" height="32" alt="" />. On the right pane click &gt; Document (Repository) Security &gt; "Index Name".</li>
+            <li>Select one of the document groups you created for this index.</li>
+            <li>Click <img src="../../Storage/zylab-information-management-publication/document-repository-security-img0009.png" width="19" height="19" alt="" />.</li>
+            <li>From the dropdown listbox, select either Users or Groups.</li>
+            <li>Select the user/group (or select more than one) for which you want to set the access mask.</li>
+            <li>Click Set Mask.</li>
+            <li>Select the actions this user/group is allowed to perform. Choose from:</li>
+        </ol>
+        <ul>
+            <li>view as result</li>
+            <li>view document</li>
+            <li>edit doc. fields</li>
+            <li>delete document</li>
+            <li>split doc. pages</li>
+            <li>merge doc. pages</li>
+            <li>delete doc. pages</li>
+            <li>export document</li>
+            <li>print document</li>
+            <li>change doc. status</li>
+            <li>make anonymous</li>
+            <li>sign document</li>
+            <li>edit document</li>
+            <li>archive document</li>
+            <p>To select all actions with one click, select the first checkbox (next to Permission).<br /><br />If, for certain users or groups, actions are blocked with functional security, it will not be possible to execute these actions.</p>
+        </ul>
+        <ol start="9">
+            <li>Click OK.</li>
+            <li>Click Close.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You set the access masks for a document group. </p>
+    </body>
+</html>

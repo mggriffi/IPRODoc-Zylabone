@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2_505163841" data-has-heading-anchor="true">Using ZyLAB Workflow</h2>
+        <h3 id="h3__1132913478" data-has-heading-anchor="true">Start a Workflow</h3>
+        <h4 id="h4__921250684" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You have installed and configured ZyLAB Workflow. Now it is time to start a workflow.</p>
+        <h4 id="h4_1338375795" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Launch Internet Explorer.</li>
+            <li>Go to http://&lt;workflow server&gt;/zyworkflow.</li>
+            <li>Login using a username and password defined in ZyINDEX Security. The user is added to a workflow workpool.</li>
+            <li>In the Own Workflow or Management Workflow tab, select New Workflow.</li>
+            <p>Only authorized users can view and use the Management Workflow tab. For more information, see Create Workpools (page <a href="configuration-zylab-workflow.html#O_6678">254</a>) and Create Workpool Templates (page <a href="configuration-zylab-workflow.html#O_6691">255</a>). By connecting workpools (user groups) with tasks, user rights are defined.</p>
+            <li>Select a workflow template.</li>
+            <li>Select a user.</li>
+            <li>Click OK.</li>
+            <li>The user to which the workflow is assigned, can select the first task via the Active Tasks folder.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0001.png" width="519" height="137" alt="" class="Thumbnail" /></li>
+            <li>Double click on the first task to get started with the workflow.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0002.png" width="512" height="126" alt="" class="Thumbnail" /></li>
+            <li>In the To Do tab, the first task will appear.<br />The actions that can be completed depend on the template chosen.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0003.png" width="358" height="161" alt="" class="Thumbnail" /></li>
+        </ol>
+        <h4 id="h4_1624192333" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have started a workflow. <br /><br />Alternatively, a workflow is started via ZySCAN (see Start a Workflow via ZySCAN (page <a href="using-zylab-workflow.html#O_6700">284</a>)), ZyLAB Archiving (see Start a Workflow via ZyLAB Archiving (page <a href="using-zylab-workflow.html#O_6695">285</a>)), or ZyVIEW (see Start a Workflow via ZyVIEW (page <a href="using-zylab-workflow.html#O_6702">286</a>)). Once the user has logged in to ZyLAB Workflow, the first task can be selected immediately via the active tasks folder.</p>
+        <h4 id="h4_1414246154" data-has-heading-anchor="true">
+			Note</h4>
+        <p>To group tasks by column, drag a column header to the row above the columns.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0004.png" width="442" height="119" alt="" class="Thumbnail" /></p>
+        <p>&#160;</p>
+        <h3 id="h3_508680962" data-has-heading-anchor="true">Start a Workflow via ZySCAN</h3>
+        <h4 id="h4__158217629" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to start a workflow via ZySCAN. You can start an attended workflow, or an unattended one.</p>
+        <h4 id="h4__1307748001" data-has-heading-anchor="true">
+			Instructions Attended Mode</h4>
+        <ol start="1">
+            <li>Open ZySCAN.</li>
+            <li>Click New Job.</li>
+            <li>Select the correct template. See Set up a Workflow via ZySCAN (page <a href="configuration-zylab-workflow.html#O_6690">267</a>).</li>
+            <li>Click OK.</li>
+            <li>When you are done scanning or importing, continue with the next stage.</li>
+            <li>In the Field Editor the ZyLAB Workflow field shows the selected Workflow template and user(s).<br />Click Modify, to choose another template and/or user(s). For each document, another template and/or user(s) can be selected.</li>
+            <li>Click OK.</li>
+            <p>If no template/user is selected, a warning appears.</p>
+            <li>Continue with the next stages.</li>
+            <li>If Export fails, check in ZyFIELD if for every document a template/user is selected.</li>
+        </ol>
+        <h4 id="h4_370375597" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have started a workflow via ZySCAN.</p>
+        <h4 id="h4__486250124" data-has-heading-anchor="true">
+			Unattended Mode (Job &gt; Run &gt; Unattended &gt; Entire job, or ZySCAN NT Service)</h4>
+        <p>If not all parameters (Workflow template, user(s)) are added correctly in the ZySCAN template, you cannot select a template. Correct the parameters via the Template Wizard (Template &gt; New template).</p>
+        <p>&#160;</p>
+        <h3 id="h3_923161855" data-has-heading-anchor="true">Start a Workflow via ZyLAB Archiving</h3>
+        <h4 id="h4_1066195764" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to start a workflow via ZyLAB Archiving.</p>
+        <h4 id="h4_999147987" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>In MS Outlook, go to ZyLAB &gt; Archive Options.</li>
+            <li>Select the Profiles tab.</li>
+            <li>Click Add Profile.</li>
+            <li>Define the Profile.</li>
+            <li>In the Additional Processing dialog, select the option 'Enable Workflow'.</li>
+        </ol>
+        <ul>
+            <li>Browse to the applicable Workflow Template.</li>
+            <li>Enter the Workflow User name.</li>
+        </ul>
+        <ol start="6">
+            <li>Finish the Profile.</li>
+        </ol>
+        <h4 id="h4_1261721008" data-has-heading-anchor="true">
+			Result</h4>
+        <p>When email is archived, the profile can be selected and a new workflow will start with the email as attachment. If you archived to a webclient, the workflow can be viewed in the webclient.</p>
+        <h4 id="h4__266184639" data-has-heading-anchor="true">
+			Note</h4>
+        <p>For more information on defining a Profile, see the ZyLAB Archiving Services for MS Office manual.</p>
+        <p>&#160;</p>
+        <h3 id="h3__996794134" data-has-heading-anchor="true">Start a Workflow via ZyVIEW</h3>
+        <h4 id="h4_2006599415" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You have searched an index, and opened a document in ZyVIEW.</p>
+        <h4 id="h4_1573356222" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>In ZyVIEW, go to Workflow (in the menu bar).</li>
+            <li>Select the Workflow (template) to which you want to link the document.</li>
+            <li>Select a user to whom you want to assign the first task.</li>
+            <li>Click OK twice.</li>
+        </ol>
+        <h4 id="h4__572505676" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have linked a document to a new Workflow. The first task has been created, and assigned to a user. Double clicking on the task will start the Workflow.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1025483653" data-has-heading-anchor="true">Continue and Complete a Workflow</h3>
+        <p>The first task of a Workflow is completed. The second task will most likely be processed by another user. After the second task is completed, it will be assigned to another user, or - when the Workflow is completed - it will be closed. <br />Users can only see the tasks assigned to them in the Own Workflow tab. Managers can view all tasks of all users and all completed workflows in the Management Workflow and Completed Workflows tabs.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1460682244" data-has-heading-anchor="true">To Do</h3>
+        <p>In the To Do tab you can define how the task should be completed, information can be defined and documents added.</p>
+        <p>Tasks can be completed or assigned to another user.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h3 id="h3__406393320" data-has-heading-anchor="true">Documents</h3>
+        <p>In the Documents tab you can view all documents attached to the workflow.</p>
+        <p>Tasks can be completed or assigned to another user.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1257874744" data-has-heading-anchor="true">Authorizations</h3>
+        <p>In the Authorizations tab you can view the tasks which have been authenticated. Tasks can be authenticated using the pincode generated for the logged in user. For more information, see Digital Signature (page <a href="configuration-zylab-workflow.html#O_6712">271</a>).</p>
+        <p>Tasks can be completed or assigned to another user.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h3 id="h3_1561622238" data-has-heading-anchor="true">Custom Actions</h3>
+        <p>In the Custom Actions tab you can view the information defined so far.</p>
+        <p>Tasks can be completed or assigned to another user.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h3 id="h3_271951546" data-has-heading-anchor="true">History</h3>
+        <p>In the History tab you can view the tasks that have been completed so far.</p>
+        <p>Tasks can be completed or assigned to another user.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h3 id="h3_951662406" data-has-heading-anchor="true">General</h3>
+        <p>In the General tab you can view information on the current task and the current workflow.</p>
+        <p>Tasks can be completed or assigned to another user.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h3 id="h3_607029289" data-has-heading-anchor="true">Own Workflow</h3>
+        <p>The Own Workflow tab is the opening screen of ZyLAB Workflow. All tasks of the logged in user and unassigned tasks can be viewed here.</p>
+        <h4 data-has-heading-anchor="true">
+			Refresh</h4>
+        <p>To view newly added tasks, select the Refresh button.</p>
+        <h4 data-has-heading-anchor="true">
+			New Workflow</h4>
+        <p>To start a new workflow, select the New Workflow button.</p>
+        <h4 data-has-heading-anchor="true">
+			Report</h4>
+        <p>To create a report, select the Report button. A report contains the following information:</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="204">Workflow Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creator</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creation Date</td>
+                <td valign="top" width="276">Date/Time</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creation Time</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Due Date</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Priority</td>
+                <td valign="top" width="276">Number</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Is Locked?</td>
+                <td valign="top" width="276">Yes/No</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Locked By Who?</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Locked On</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Current Task Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Template Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Current Assigned User</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+        </table>
+        <h5 id="h5__1058555637" data-has-heading-anchor="true">
+			Open fast workflow</h5>
+        <p>To efficiently process a list of workflow tasks, select the Open fast workflow button.</p>
+        <h4 id="h4_298044451" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Make sure the active tasks folder is selected. <br />The active tasks will appear in the right pane.</li>
+            <li>Select the Open fast workflow button.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0005.png" width="559" height="116" alt="" class="Thumbnail" /></li>
+            <li>Double click on a task to start a workflow.</li>
+            <li>You can complete a task while still viewing the other tasks. If a task is completed, you can continue immediately with the next task.</li>
+            <li>If you completed a task, click OK.</li>
+            <li>To skip a (previous or next) task, select one of the Skip buttons.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0006.png" width="430" height="126" alt="" class="Thumbnail" /></li>
+            <li>To return to the main page, click the Close fast workflow button.</li>
+        </ol>
+        <h4 id="h4__1719536152" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have processed a number of workflow tasks.</p>
+        <h4 id="h4_167960239" data-has-heading-anchor="true">
+			Note</h4>
+        <p>As soon as a workflow is opened that is already in use, this workflow will be locked.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1389132722" data-has-heading-anchor="true">Management Workflow</h3>
+        <p>Only authorized users can view and use the Management Workflow tab. For more information, see Create Workpools (page <a href="configuration-zylab-workflow.html#O_6678">254</a>) and Create Workpool Templates (page <a href="configuration-zylab-workflow.html#O_6691">255</a>). By connecting workpools (user groups) with tasks, user rights are defined.</p>
+        <h4 data-has-heading-anchor="true">
+			Refresh</h4>
+        <p>To view newly added tasks, select the Refresh button.</p>
+        <h4 data-has-heading-anchor="true">
+			New Workflow</h4>
+        <p>To start a new workflow, select the New Workflow button.</p>
+        <h4 data-has-heading-anchor="true">
+			Suspend</h4>
+        <p>To suspend a task, select it and click the Suspend button. The task will be stored in the Suspended workflows folder.<br />Suspension of a task will delay the due date of a workflow.</p>
+        <h4 data-has-heading-anchor="true">
+			Resume</h4>
+        <p>To resume a task, select it via the Suspended workflows folder and select the Resume button. The task will return to the Active tasks folder.</p>
+        <h4 data-has-heading-anchor="true">
+			Delete</h4>
+        <p>To delete a task assigned to a user, select it and click the Delete button.</p>
+        <h4 data-has-heading-anchor="true">
+			Assign</h4>
+        <p>To assign a task to a user, select the task, select a user from the dropdown listbox and click the Assign button. The task will appear in the Active tasks folder of the assigned user.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0007.png" width="509" height="169" alt="" class="Thumbnail" /></p>
+        <h5 id="h5__498333277" data-has-heading-anchor="true">
+			Open fast workflow</h5>
+        <p>To efficiently process a list of workflow tasks, select the Open fast workflow button.</p>
+        <h4 id="h4_364852602" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Make sure the active tasks folder is selected. <br />The active tasks will appear in the right pane.</li>
+            <li>Select the Open fast workflow button.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0005.png" width="559" height="116" alt="" class="Thumbnail" /></li>
+            <li>Double click on a task to start a workflow.</li>
+            <li>You can complete a task while still viewing the other tasks. If a task is completed, you can continue immediately with the next task.</li>
+            <li>If you completed a task, click OK.</li>
+            <li>To skip a (previous or next) task, select one of the Skip buttons.<br /><img src="../../Storage/zylab-information-management-publication/using-zylab-workflow-img0006.png" width="430" height="126" alt="" class="Thumbnail" /></li>
+            <li>To return to the main page, click the Close fast workflow button.</li>
+        </ol>
+        <h4 id="h4__703273347" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have processed a number of workflow tasks.</p>
+        <h4 id="h4__1459061711" data-has-heading-anchor="true">
+			Note</h4>
+        <p>As soon as a workflow is opened that is already in use, this workflow will be locked.</p>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <p>&#160;</p>
+        <h4 data-has-heading-anchor="true">
+			Report</h4>
+        <p>To create a report, select the Report button. A report contains the following information:</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="204">Workflow Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creator</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creation Date</td>
+                <td valign="top" width="276">Date/Time</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creation Time</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Due Date</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Priority</td>
+                <td valign="top" width="276">Number</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Is Locked?</td>
+                <td valign="top" width="276">Yes/No</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Locked By Who?</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Locked On</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Current Task Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Template Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Current Assigned User</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__895552620" data-has-heading-anchor="true">Completed Workflow</h3>
+        <p>Only authorized users can view and use the Completed Workflow tab. For more information, see Create Workpools (page <a href="configuration-zylab-workflow.html#O_6678">254</a>) and Create Workpool Templates (page <a href="configuration-zylab-workflow.html#O_6691">255</a>). By connecting workpools (user groups) with tasks, user rights are defined.</p>
+        <h4 data-has-heading-anchor="true">
+			Refresh</h4>
+        <p>To view newly completed workflows, select the Refresh button.</p>
+        <h4 data-has-heading-anchor="true">
+			New Workflow</h4>
+        <p>To start a new workflow, select the New Workflow button.</p>
+        <h4 data-has-heading-anchor="true">
+			Delete</h4>
+        <p>To delete a completed workflow, select it and click the Delete button.</p>
+        <h5 id="h5_1879430700" data-has-heading-anchor="true">
+			Open fast workflow</h5>
+        <p>To efficiently view a list of completed workflows, select the Open fast workflow button.</p>
+        <h4 id="h4__1398615405" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select a folder with completed workflows.</li>
+            <li>Select the Open fast workflow button.</li>
+            <li>Double click on a workflow to view the Custom Actions, History and/or General properties.</li>
+            <li>If you completed viewing a workflow, continue with the next one.</li>
+            <li>To return to the Completed Workflow tab, click the Close fast workflow button.</li>
+        </ol>
+        <h4 id="h4__1303201730" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have viewed a number of workflows.</p>
+        <h4 id="h4__2036099336" data-has-heading-anchor="true">
+			Note</h4>
+        <p>To define the first tab that must appear on startup and all other tabs which must appear (when available), select the Options button. Click OK.</p>
+        <h4 data-has-heading-anchor="true">
+			Report</h4>
+        <p>To create a report, select the Report button. A report contains the following information:</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="204">Workflow Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creator</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creation Date</td>
+                <td valign="top" width="276">Date/Time</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Creation Time</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Workflow Due Date</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Priority</td>
+                <td valign="top" width="276">Number</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Is Locked?</td>
+                <td valign="top" width="276">Yes/No</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Locked By Who?</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Locked On</td>
+                <td valign="top" width="276">Date/Time or Empty</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Current Task Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Template Name</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+            <tr>
+                <td valign="top" width="204">Current Assigned User</td>
+                <td valign="top" width="276">Text</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3_656259478" data-has-heading-anchor="true">Search</h3>
+        <h4 id="h4_1459368862" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to search documents in archives that are connected to the workflows. </p>
+        <h4 id="h4__1909236960" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select the Search tab.<br />The Search Portal appears.</li>
+            <li>Enter your Username and Password.</li>
+            <li>Click Register.<br />The Search page appears.</li>
+            <li>Enter your search query.<br />For more information on searching the archives via the ZyLAB Web Server, select the Help button.</li>
+            <li>Click Search.</li>
+        </ol>
+        <h4 id="h4__781679989" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have searched documents in archives that are connected to the workflows.</p>
+        <h4 id="h4_21119190" data-has-heading-anchor="true">
+			Note</h4>
+        <p>The Search tab can be hidden via the settings.xml file. Go to \\Program Files\ZyLAB\Workflow\webroot\App_Data\ and open the settings.xml file. Set 'searchtab visible' to false and save the file.</p>
+    </body>
+</html>

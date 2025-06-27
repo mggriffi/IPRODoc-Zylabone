@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Field Filter';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Field Filter</h1>
+        <p>
+  Find field values of field names using 'fieldname=query'. 
+  </p>
+        <p>
+            <table width="504" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="156" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre">
+                                <MadCap:keyword term="Field Filter" /><b class="specialbold">Syntax
+          </b>
+                            </p>
+                        </th>
+                        <th width="180" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Semantics
+          </b>
+                            </p>
+                        </th>
+                        <th width="168" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Recommended Use
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          fieldname=query
+        </p>
+                        </td>
+                        <td width="180" style="border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where a result of a 
+          <em class="emphasis">
+            query
+          </em>
+          (a term, phrase or other query) can be found in the value of a 
+          <em class="emphasis">
+            fieldname
+          </em>
+          .
+        </p>
+                        </td>
+                        <td width="168" style="border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Search the values in your field names and restrict the search.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="heading4">
+                <br />
+            </p>
+            <p class="heading4">Example
+  <br /></p>
+            <table width="594" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="186" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Query
+          </b>
+                            </p>
+                        </th>
+                        <th width="180" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                        <th width="228" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results Explained
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">name=file1*</p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">file1.txt, file10.txt, file11.txt, etc.</p>
+                        </td>
+                        <td width="228" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">'file1' is found as a value of fieldname 'name'. 
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            <img src="../../Storage/zylab-one-search-language-guide-publication-1/10918-2018-12-17.png" alt="" class="Thumbnail" />
+        </p>
+        <p>  Also see <a href="10908.html">In fieldname{query}</a><br /></p>
+    </body>
+</html>

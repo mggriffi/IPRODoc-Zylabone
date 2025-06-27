@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol style="list-style-type: lower-alpha;">
+            <li>
+                <p>Select <b>+ Add Issue</b>.</p>
+            </li>
+            <li>
+                <p>Provide an <b>Issue Name</b> and <b>Description</b>.</p>
+            </li>
+            <li>
+                <p>Select a scope for the <b>Initial Training Sets</b>. The initial training sets instruct the learning algorithm on what documents to label as responsive or not responsive.</p>
+                <ul>
+                    <li>
+                        <p style="font-weight: bold;">Random Set</p>
+                        <p>Select a batch size from between 2 and 1000 documents.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Query-Based Set</p>
+                        <p>Select a search query that was saved in ZyLAB One.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Based on Existing Tags</p>
+                        <p>Select saved search queries for Responsive and Not Responsive documents. The system will take the batch size of random documents of the results of this query.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

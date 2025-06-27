@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Writing for ZyLAB: Guidelines"
+    Link="/Content/ZyLAB/Guidelines-Writing-for-ZyLAB/100.html" />
+  <TocEntry
+    Title="Checklist"
+    Link="/Content/ZyLAB/Guidelines-Writing-for-ZyLAB/checklist.html" />
+  <TocEntry
+    Title="Videos"
+    Link="/Content/ZyLAB/Guidelines-Writing-for-ZyLAB/videos.html" />
+  <TocEntry
+    Title="Parts of Topics"
+    Link="/Content/ZyLAB/Guidelines-Writing-for-ZyLAB/200.html" />
+  <TocEntry
+    Title="Recommended Topics to Re-use"
+    Link="/Content/ZyLAB/Guidelines-Writing-for-ZyLAB/500.html" />
+</CatapultToc>

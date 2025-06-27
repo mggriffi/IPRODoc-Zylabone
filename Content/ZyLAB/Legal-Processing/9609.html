@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Field Appender</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Field Appender';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t9609" class="heading3">
+            <MadCap:keyword term="Field Appender" />Field Appender</p>
+        <p class="bodytext">The Field Appender is a processor that allows users to append properties to the metadata fields of each file. <br />In the Field Appender's XML configuration file (\\Program Files\ZyLAB\EDiscovery\Processors\ZyLAB.EDiscovery.Processors.FieldAppender.dll.xml) three types of properties can be assigned: </p>
+        <p class="bodytext">
+            <b class="specialbold">&lt;FixedProperty name="SomeProp" value="SomeVal" /&gt;</b>
+        </p>
+        <p class="bodytext">Here users can add a static property. For example, to add a field to all the files with the content Reviewed-No, a user can add a property like this: <br /><code class="monospace">&lt;FixedProperty name="Reviewed" value="No" /&gt;</code></p>
+        <p class="bodytext">
+            <b class="specialbold">&lt;BinaryHashProperty name="DedupSHA5BinHash" hashType="SHA512" /&gt;</b>
+        </p>
+        <p class="bodytext">Here, users can specify and add a hash type (SHA512, SHA3, SHA2, SHA1 or MD5) for files in the property. It will create new property in the metadata of each binary of each document processed. In this example, the name of property will be "DedupSHA5BinHash", SHA512 hash will be calculated from the content of the binary and this hash will be assigned as a value of this property.</p>
+        <p class="bodytext">This field (value) will be added by default.</p>
+        <p class="bodytext">
+            <b class="specialbold">&lt;MetadataHashProperty name="SomeMetaHash" propertiesHashed="Original Folder|Original File Name|Created Timestamp|Size" hashType="MD5" /&gt;</b>
+        </p>
+        <p class="bodytext">Here, users can calculate a hash value for a few (or all) of the properties extracted for a file. Supported hash algorithms are SHA5, SHA3, SHA2, SHA1 and MD5. It will create a new property in the metadata of each binary of each document processed. In this example, the name of the property will be "SomeMetaHash", the hash value will be calculated from the contents of values of 4 other properties of current binary (Original Folder, Original File Name, Created Timestamp, Size) and this hash will be assigned as a value of this property. The hash value does not depend on the order in which the properties are specified or appear in metadata of binary.</p>
+        <p class="note">
+            <b class="specialbold">Note 1</b>: The fields are only added to the XML Wrapper of the document. To allow users to search these fields, they should be added to the index in ZyINDEX, prior to building the index (otherwise the field values created by the Field Appender will not be added to the index and cannot be searched).</p>
+        <p class="note">
+            <b class="specialbold">Note 2</b>: You can add several properties of same type, e.g. 2 Fixed Properties, 3 Binary Hash Properties and 15 Metadata Hash Properties.</p>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="9543.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="9521.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

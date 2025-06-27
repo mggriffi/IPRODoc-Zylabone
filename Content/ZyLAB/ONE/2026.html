@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>IPRO</h1>
+        <p>An IPRO load file (LFP) instructs IPRO View how to display a project's images. </p>
+        <p>Different commands in the LFP files provide:</p>
+        <ul class="listbullet">
+            <li class="listbullet">The image's file location, file type, boundary, and Bates number</li>
+            <li class="listbullet">The position, size, and color of redactions or highlights</li>
+            <li class="listbullet">The content of any information only fields</li>
+            <li class="listbullet">Any embedded text or sticky notes</li>
+            <li class="listbullet">The search words and their position on the image (if your project supports highlighted searching in IPRO View)</li>
+        </ul>
+        <p>You can view and edit an LFP file using a text editor. Each record (or line) in the LFP file begins with a 2-letter code that determines the action that line will perform. Commas separate each part of the record. The sequence of the records in the file does not matter.
+</p>
+        <p>The commands in the LFP file take effect after you load or import the LFP file (Import &gt; Import LFP File from the IPRO Tech Utility menu).
+</p>
+        <p>&#160;</p>
+        <p><b>IPRO Example File</b>
+        </p>
+        <p>IM,MSC-00001,S,0,@MDEMO;IMAGES\00\00;001.PDF;6</p>
+        <p>IM,MSC-00002,C,0,@MDEMO;IMAGES\00\00;002.PDF;6</p>
+        <p>IM,MSC-00003,C,0,@MDEMO;IMAGES\00\00;003.PDF;6</p>
+        <p>IM,MSC-00004,,0,@MDEMO;IMAGES\00\00;003.PDF;6</p>
+        <p>IM,MSC-00005,D,0,@MDEMO;IMAGES\00\00;005.JPG;4</p>
+        <p>IM,MSC-00006,,0,@MDEMO;IMAGES\00\00;006.JPG;4,0</p>
+        <p>IM,MSC-00007,D,0,@MDEMO;IMAGES\00\00;007.TIF;2,0</p>
+        <p>IM,MSC-00008,,0,@MDEMO;IMAGES\00\00;008.TIF;2,0
+</p>
+        <p>IM,MSC-00009,,0,@MDEMO;IMAGES\00\00;009.TIF;2,0
+</p>
+        <p>IM,MSC-00010,D,0,@MDEMO;IMAGES\00\00;010.TIF;2,0</p>
+        <p>&#160;</p>
+        <p>A sample LFP file record such as:
+</p>
+        <p>IM,MSC-00014,D,0,@MDEMO;IMAGES\00\00;014.TIF;2,1</p>
+        <p>consists of:
+</p>
+        <p>IM - import code identifier (Importing New Page)
+<br />MSC-00014 - an image key
+<br />D - Document; a boundary flag
+<br />@MDEMO;IMAGES\00\00;014.TIF - volume name, directory path and filename for the image
+<br /></p>
+        <p>&#160;</p>
+        <p>The boundaries in the LFP file are used for navigating in IPRO View. </p>
+        <p>For more information, consult your vendor.
+</p>
+    </body>
+</html>

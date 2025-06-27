@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Legal Processing"
+    Link="/Content/ZyLAB/Legal-Processing/9526.html">
+    <TocEntry
+      Title="Configuration"
+      Link="/Content/ZyLAB/Legal-Processing/11646.html">
+      <TocEntry
+        Title="Configure Text Extraction"
+        Link="/Content/ZyLAB/Legal-Processing/11595.html" />
+      <TocEntry
+        Title="ZyLAB Batch Assignment and TIFF Pre-Generation Tool"
+        Link="/Content/ZyLAB/Legal-Processing/11597.html" />
+      <TocEntry
+        Title="Collect Data from Multiple Legal Processing Matters"
+        Link="/Content/ZyLAB/Legal-Processing/11665.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Define a Matter"
+      Link="/Content/ZyLAB/Legal-Processing/9512.html">
+      <TocEntry
+        Title="Define the Job Schedule"
+        Link="/Content/ZyLAB/Legal-Processing/9537.html" />
+      <TocEntry
+        Title="Define Custodians"
+        Link="/Content/ZyLAB/Legal-Processing/9510.html" />
+      <TocEntry
+        Title="Define Sources and Locations"
+        Link="/Content/ZyLAB/Legal-Processing/9513.html">
+        <TocEntry
+          Title="CMIS Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10115.html" />
+        <TocEntry
+          Title="Concordance Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10114.html" />
+        <TocEntry
+          Title="Database Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10223.html" />
+        <TocEntry
+          Title="Email Collector (Default &amp; Enterprise)"
+          Link="/Content/ZyLAB/Legal-Processing/10123.html" />
+        <TocEntry
+          Title="Exchange Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10118.html" />
+        <TocEntry
+          Title="File System Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10112.html" />
+        <TocEntry
+          Title="Google Drive Collector (Default &amp; Enterprise)"
+          Link="/Content/ZyLAB/Legal-Processing/10122.html" />
+        <TocEntry
+          Title="ZyLAB LegalReview Collector"
+          Link="/Content/ZyLAB/Legal-Processing/11660.html" />
+        <TocEntry
+          Title="SharePoint Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10119.html" />
+        <TocEntry
+          Title="Summation Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10113.html" />
+        <TocEntry
+          Title="ZyLAB Data Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10111.html" />
+        <TocEntry
+          Title="ZyLAB Index Collector"
+          Link="/Content/ZyLAB/Legal-Processing/10116.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Define File Groups"
+        Link="/Content/ZyLAB/Legal-Processing/9522.html" />
+      <TocEntry
+        Title="Processing Rules: Link File and MIME Types to Processors"
+        Link="/Content/ZyLAB/Legal-Processing/9540.html" />
+      <TocEntry
+        Title="Local Processing (XML file)"
+        Link="/Content/ZyLAB/Legal-Processing/10929.html" />
+      <TocEntry
+        Title="Local Processing"
+        Link="/Content/ZyLAB/Legal-Processing/11564.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Delete a Matter"
+      Link="/Content/ZyLAB/Legal-Processing/9731.html" />
+    <TocEntry
+      Title="Transfer a Matter"
+      Link="/Content/ZyLAB/Legal-Processing/10953.html" />
+    <TocEntry
+      Title="Edit Global Settings"
+      Link="/Content/ZyLAB/Legal-Processing/9607.html">
+      <TocEntry
+        Title="Define Security Settings"
+        Link="/Content/ZyLAB/Legal-Processing/9729.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Synchronization with Exchange"
+      Link="/Content/ZyLAB/Legal-Processing/10955.html" />
+    <TocEntry
+      Title="View or Stop Job"
+      Link="/Content/ZyLAB/Legal-Processing/9534.html" />
+    <TocEntry
+      Title="View or Filter Actions"
+      Link="/Content/ZyLAB/Legal-Processing/9535.html" />
+    <TocEntry
+      Title="View Cluster"
+      Link="/Content/ZyLAB/Legal-Processing/9611.html" />
+    <TocEntry
+      Title="Create Reports"
+      Link="/Content/ZyLAB/Legal-Processing/9536.html">
+      <TocEntry
+        Title="Failed Actions Report"
+        Link="/Content/ZyLAB/Legal-Processing/10815.html" />
+      <TocEntry
+        Title="Filtering Report"
+        Link="/Content/ZyLAB/Legal-Processing/11939.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Glossary"
+    Link="/Content/ZyLAB/Legal-Processing/9505.html">
+    <TocEntry
+      Title="Archive Extractor"
+      Link="/Content/ZyLAB/Legal-Processing/9612.html" />
+    <TocEntry
+      Title="Custodian"
+      Link="/Content/ZyLAB/Legal-Processing/9507.html" />
+    <TocEntry
+      Title="Chain of Custody"
+      Link="/Content/ZyLAB/Legal-Processing/9543.html" />
+    <TocEntry
+      Title="Field Appender"
+      Link="/Content/ZyLAB/Legal-Processing/9609.html" />
+    <TocEntry
+      Title="Matter"
+      Link="/Content/ZyLAB/Legal-Processing/9521.html" />
+    <TocEntry
+      Title="Hold"
+      Link="/Content/ZyLAB/Legal-Processing/9523.html" />
+    <TocEntry
+      Title="NSRL Reference Data Set"
+      Link="/Content/ZyLAB/Legal-Processing/9531.html" />
+    <TocEntry
+      Title="MIME Type"
+      Link="/Content/ZyLAB/Legal-Processing/9548.html" />
+  </TocEntry>
+</CatapultToc>

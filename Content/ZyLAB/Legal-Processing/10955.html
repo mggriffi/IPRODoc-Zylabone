@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Synchronization with Exchange</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Synchronization with Exchange';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">/*<![CDATA[*/
+
+function printWindow(){
+ bV = parseInt(navigator.appVersion)
+ if (bV >= 4) window.print()
+}
+
+/*]]>*/</script>
+        <script language="javascript" type="text/javascript" src="../../Legal-Processing/dhtml_popup.js">
+        </script>
+        <table class="layout" width="100%" style="height: 100%;width: 100%;" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="topleft" align="left" nowrap="">&#160;
+			
+		</td>
+                <td class="topright" align="right" nowrap="">
+                    <!-- img src=&quot;separator.gif&quot; alt=&quot;&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; align=&quot;bottom&quot; border=&quot;0&quot; -->
+                    <a class="toolbar" title="Print this page" href="javascript:printWindow()">
+                        <img class="toolbar" src="../../Storage/legal-processing-publication/print.jpg" alt="Print page" vspace="0" hspace="0" align="bottom" border="0" /> </a>
+                </td>
+            </tr>
+            <tr>
+                <td id="main" valign="top" colspan="2">
+                    <p id="t10955" class="heading1">
+                        <MadCap:keyword term="Synchronization with Exchange" />Synchronization with Exchange</p>
+                    <p class="heading4">Prerequisites</p>
+                    <ul class="listbullet">
+                        <li class="listbullet">We collect items only from the Journal mailbox, which means that:<ul class="listbullet2"><li class="listbullet2">All private user items will not be collected (e.g. private appointments, private tasks, drafts)</li><li class="listbullet2">We don't track user changes on existing items, so we treat them equal to the original item (including all existing copies)</li><li class="listbullet2">The Journal account is used to connect to a user mailbox (via impersonation), so the Journal account should have the right to impersonate every trackable mailbox</li></ul></li>
+                        <li class="listbullet">We track the status of user items by checking only the Recoverable Items folder, so it is a must that synchronization is run more often than the retention policy is applied&#160;(or we will not be up to date).</li>
+                        <li class="listbullet">Deletion flow:<ul class="listbullet2"><li class="listbullet2">Litigation Hold and Single Item Recovery features by MS Exchange prevent items from being deleted from Exchange Service. They should be disabled when emails collected from Exchange are deleted from Legal Review.&#160;</li><li class="listbullet2">When we delete a meeting item, meeting cancellations are sent to the appropriate users.</li><li class="listbullet2">When collecting from the Journal mailbox, we (by default) delete items. This can be set up to leave them in place.</li><li class="listbullet2">When deleting items from Legal Review, we don't delete them from the Journal mailbox.<p class="list2" /><p class="listnote"><b class="specialbold">Deleting meetings</b><br />Exchange has a special type of calendar item called "Appointment".<br /><br />- Appointment items reside only in the user mailbox and are never sent.<br /><br />When a Meeting Request/Response (accept/decline/tentative/new time proposal) is sent, a special Email item is created, which contains information about the Appointment.<br /><br />- When the appointment is updated (time change, text, attendees, etc.), a new version of the appointment is created, while the old one is moved to the Recoverable folders (RecoverableRoot in Exchange2010, RecoverableRoot\Calendar Logging in Exchange2013).<br /><br />What this means for Legal Review and Exchange synchronization:<br /><br />- As we collect from the Journal mailbox only, we have no idea about the Appointment item. So we treat the MeetingRequest and CancellationRequest items as "Request Email" + Appointment itself. This means that when a user requests deletion of MeetingRequest/CancellationRequest email in Legal Review (you can't see it as MeetingRequest, but as a simple email), we'll also delete the appropriate version of the appointment. This is the same for the reporting Deleting/DeletedByUser status, we'll report them only when all related items are deleted from the mailbox.<br /><br />When a meeting is updated:<br />- The old version of the appointment is deleted<br />- The new version of the appointment is created&#160;<br />- The new email is sent<br /><br />This means that in Legal Review several versions of the same Meeting Request (but with different data inside) will be present. When in Legal Review a Meeting Request is requested to be deleted, only the appropriate version of the appointment will be deleted.</p><p class="list2" /><p class="listnote"><b class="specialbold">Tasks are not deleted</b><br /><br />Exchange has a special item type called "Task", which can be delegated to another user. Appropriate emails (delegation request/response/update) will be captured in the Journal mailbox and collected in Legal Review.<br /><br />However, as the task itself is never sent, it won't be deleted when these emails are deleted from Legal Review.</p></li></ul></li>
+                        <li class="listbullet">Working with matter in Legal Processing/Legal Review:<ul class="listbullet2"><li class="listbullet2">Only one Exchange matter is allowed</li><li class="listbullet2">When a matter is deleted in Legal Review&#160;<ul class="listbullet3authorit"><li class="listbullet3authorit">Items that were previously collected in Legal Review, and that are still present at the ZyLAB Exchange Service will be reset to the state from which they can be collected again</li><li class="listbullet3authorit">Items that were deleted and reported to Legal Review are no longer present at the ZyLAB Exchange Service and won't be available for recollection<p class="listnote"><b class="specialbold">Synchronization schedule</b><br /><br />When determining a schedule for the synchronization, consider other processes that compete for Mailbox server resources, such as offline defragmentation of the mailbox database and antivirus scans.</p></li></ul></li></ul></li>
+                    </ul>
+                    <p class="heading4">Warnings</p>
+                    <ul class="listbullet">
+                        <li class="listbullet">A user may use Local Archive* (LA) as well as Personal Archive Mailbox** (PAM). LA is not available via Exchange, so we never know which data is stored on the user machine. Deletion from Legal Review allows to delete appropriate data on the Exchange Service, while some copies still might be stored in&#160;LA. Later, a user may re-import data from LA to PAM, which would result in a mismatch between the state in Legal Review and the data on the Exchange Server.</li>
+                        <li class="listbullet">A Personal Archive Mailbox might be disabled for some period. In this case items stored in the archive are no longer available via Exchange, while they are still present until Retention Policy deletes them. A disabled archive might be re-enabled, which would make items available via the Exchange Server again. This issue might lead to a mismatch between the results in Legal Review and in the Exchange Server.</li>
+                        <li class="listbullet">If a user leaves an organization and his mailbox is preserved for eDiscovery, we might not be able to access his mailbox, which might lead to an inconsistent state of ExchangeExistenceStatus and corresponding deletions from Legal Review.</li>
+                        <li class="listbullet">There are some cases, when MS Exchange Server doesn't return items when a search is performed****. These items can't be accessed by the ZyLAB Exchange Service, which might lead to an inconsistent state of the ExchangeExistenceStatus and corresponding deletions from Legal Review.</li>
+                        <li class="listbullet">When an email is sent "on behalf of", in the Journal mailbox this information might be missing, which would lead to missing track of the item in the original sender's mailbox.</li>
+                        <li class="listbullet">In case an action failed during processing in Legal Processing, after which the item was removed from Legal Review***, then if the action is restarted in Legal Processing and succeeds - it will be added to Legal Review again with the original ExchangeExistenceStatus.&#160;</li>
+                    </ul>
+                    <p class="bodytext">* Local Archive - archive stored on the local machine of the user. Data is stored as .pst file. Data is not accessible via Exchange Server.</p>
+                    <p class="bodytext">** Personal Archive Mailbox - archive stored on Exchange Server/in the cloud. Data is accessible via Exchange Server.</p>
+                    <p class="bodytext">*** This can happen when an items&#160;family was requested to be deleted in Legal Review, and then the original item in Exchange was deleted and synchronized to Legal Review.</p>
+                    <p class="bodytext">**** Four cases where an item cannot be found:</p>
+                    <ol class="listnumber">
+                        <li class="listnumber">Item is filtered by mailbox search filter</li>
+                        <li class="listnumber">Item is in a safe list</li>
+                        <li class="listnumber">Item is encrypted</li>
+                        <li class="listnumber">IRM-protected item</li>
+                    </ol>
+                    <p class="bodytext">For more information about the four cases listed above, please see  <a class="" title="" href="http://technet.microsoft.com/en-us/library/bb232132(v=exchg.141).aspx#ESA" target="_self">http://technet.microsoft.com/en-us/library/bb232132(v=exchg.141).aspx#ESA</a> </p>
+                    <p class="heading4">Configuration</p>
+                    <p class="bodytext">ZyLAB Exchange Service requires at least one Journal mailbox configuration to be set up in ZyLAB.EDiscovery.Exchange.Standalone.WinService.exe.config file.<br />&lt;ExchangeCollectionConfiguration&gt;&lt;Mailboxes&gt;&lt;JournalMailbox /&gt;&lt;/ Mailboxes&gt;&lt;/ ExchangeCollectionConfiguration&gt;</p>
+                    <p class="bodytext">Available settings:</p>
+                    <p class="bodytext">
+                        <b class="specialbold">Exchange connection setting</b>
+                    </p>
+                    <ul class="listbullet">
+                        <li class="listbullet">ExchangeWebServerUri - URI to exchange service EWS</li>
+                        <li class="listbullet">ExchangeVersion - version of Exchange server installed (Exchange2010, Exchange2010_SP1, Exchange2010_SP2, Exchange2013)</li>
+                    </ul>
+                    <p class="bodytext">&#160;</p>
+                    <p class="bodytext">
+                        <b class="specialbold">Journal mailbox connection settings</b>
+                    </p>
+                    <ul class="listbullet">
+                        <li class="listbullet">EmailAccount - Journal mailbox account</li>
+                        <li class="listbullet">Login - login used for the Journal mailbox account; specify if it is different to the EmailAccount</li>
+                        <li class="listbullet">Domain - domain; specify if accessing is different to the machines defaultPassword - Journal mailbox password</li>
+                    </ul>
+                    <p class="bodytext">&#160;</p>
+                    <p class="bodytext">
+                        <b class="specialbold">Journal mailbox collecting behavior</b>
+                    </p>
+                    <ul class="listbullet">
+                        <li class="listbullet">DeleteItemsInJournalMailbox - set to false if you do not want ZyLAB ExchangeService to remove collected items from journal mailbox; true by default</li>
+                    </ul>
+                    <p class="bodytext">
+                        <b class="specialbold">Resolution of trackable mailboxes (only one of next three values is allowed, case insensitive)</b>
+                    </p>
+                    <ul class="listbullet">
+                        <li class="listbullet">TrackableDomains - user mailboxes tracking will be done for domains specified here; you can specify several values separated with ";"</li>
+                        <li class="listbullet">TrackableMailboxes - only user mailboxes specified in this list will be tracked</li>
+                        <li class="listbullet">TrackableRegexp - trackable mailboxes will be determined based on regexp result</li>
+                    </ul>
+                    <p class="bodytext" />
+                    <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+                        <tr valign="top">
+                            <td width="18">
+                                <p class="bodytext">
+                                    <a href="9729.html" target="_self">
+                                        <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                                    </a>
+                                </p>
+                            </td>
+                            <td width="18">
+                                <p class="bodytext">
+                                    <a href="9534.html" target="_self">
+                                        <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                                    </a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="bottomleft" align="left" nowrap="">
+                    <span style="font-family: Arial;">
+                        <a class="toolbar" title="Go to top of this page" href="10955.html#top">Top of Page</a>
+                    </span>
+                </td>
+                <td class="bottomright" align="right" nowrap="">
+                    <!-- img src=&quot;separator.gif&quot; alt=&quot;&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; align=&quot;bottom&quot; border=&quot;0&quot; -->
+                    <a class="toolbar" title="Print this page" href="javascript:printWindow()">
+                        <img class="toolbar" src="../../Storage/legal-processing-publication/print.jpg" alt="Print page" vspace="0" hspace="0" align="bottom" border="0" /> </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table id="footer" class="layout" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left" />
+                            <td align="right">
+                                <!-- link to support site -->
+                                <a class="websitejumptonewwindowtemplate" title="Visit our support site" href="http://support.zylab.com" target="_blank">
+                                    <img src="../../Storage/legal-processing-publication/Zylab.gif" alt="Visit our support site" width="112" height="40" hspace="0" vspace="0" border="0" align="bottom" />
+                                </a>&#160; </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

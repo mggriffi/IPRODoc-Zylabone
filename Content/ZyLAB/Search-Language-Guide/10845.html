@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='AND Operator';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>AND Operator</h1>
+        <p>
+            <MadCap:keyword term="AND Operator" />
+          The AND operator is a Boolean search operator that allows you to find files that contain the same terms. Combining terms using the AND operator narrows a search query. It will retrieve all files containing all terms combined with AND, not just one of them. The terms combined with AND can be anywhere in the (audio) file, the position of the terms is not relevant. 
+          <br /></p>
+        <p>          See the Venn Diagrams (<a href="http://en.wikipedia.org/wiki/Venn_diagram" target="_blank">http://en.wikipedia.org/wiki/Venn_diagram</a>) below for a visual overview of the search results:
+          
+          </p>
+        <p>
+            <table width="510" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <td width="192">
+                            <p class="tablebodytextleft">blue AND red
+                </p>
+                        </td>
+                        <td width="318">
+                            <p class="tablebodytextleft">
+                                <img width="121" height="120" align="bottom" class="embeddedjpegfiletemplate50" id="f10867" alt="blue and red" src="../../Storage/zylab-one-search-language-guide-publication-1/10867.png" border="0" vspace="0" hspace="0" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="192">
+                            <p class="tablebodytextleft">
+                  red AND white
+                </p>
+                        </td>
+                        <td width="318">
+                            <p class="tablebodytextleft">
+                                <img width="121" height="120" align="bottom" class="embeddedjpegfiletemplate50" id="f10868" alt="red and white" src="../../Storage/zylab-one-search-language-guide-publication-1/10868.png" border="0" vspace="0" hspace="0" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="192">
+                            <p class="tablebodytextleft">
+                  blue AND white
+                </p>
+                        </td>
+                        <td width="318">
+                            <p class="tablebodytextleft">
+                                <img width="121" height="120" align="bottom" class="embeddedjpegfiletemplate50" id="f10869" alt="blue and white" src="../../Storage/zylab-one-search-language-guide-publication-1/10869.png" border="0" vspace="0" hspace="0" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="192">
+                            <p class="tablebodytextleft">
+                  blue AND red AND white
+                </p>
+                        </td>
+                        <td width="318">
+                            <p class="tablebodytextleft">
+                                <img width="121" height="120" align="bottom" class="embeddedjpegfiletemplate50" id="f10870" alt="blue and red and white" src="../../Storage/zylab-one-search-language-guide-publication-1/10870.png" border="0" vspace="0" hspace="0" />
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+        </p>
+        <p>       
+        
+        
+          Though all your search terms will be included in the results, you may be looking for specific combinations of words or a particular proximity of the search terms. In that case, it is recommended to use phrases or the Within operator, to find more contextually related search results. For the Within operator, the position of the terms is vital. Use the Within operator if you want to specify how close the search terms are connected with each other. For more information about the Within operator, see 
+          <a title="Within Operator" id="h10879" href="10857.html" target="_self">
+            Within Operator</a>.
+                     </p>
+        <p>When two or more terms are next to each other with no intervening operator, it is a phrase. For example, 'apple pie' will only find documents with the words 'apple' and 'pie' next to each other. When it is not relevant where 'apple' or 'pie' are located in the file, use 'apple AND pie' as the search query.</p>
+        <table width="498" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+            <tbody>
+                <tr align="left" valign="top">
+                    <th width="102" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+                    Syntax
+                  </b>
+                        </p>
+                    </th>
+                    <th width="200" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+                    Semantics
+                  </b>
+                        </p>
+                    </th>
+                    <th width="196" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+                    Recommended use 
+                  </b>
+                        </p>
+                    </th>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="102" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+                  left_query AND right_query
+                </p>
+                        <p class="tablebodytextleft">
+                  (left_query) AND (right_query)
+                </p>
+                    </td>
+                    <td width="200" style="border: 1px solid #c0c0c0;border-image: none;">
+                        <p class="tablebodytextleft">
+                  Where AND combines two search queries such as a term, phrase or another query. 
+                </p>
+                        <p class="tablebodytextleft">
+                  For clarity, the queries can be placed between brackets. Please be aware that sometimes using brackets can influence the search results.
+                </p>
+                    </td>
+                    <td width="196" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+                  Narrow your search and look for terms that have different meanings. The more queries you combine using AND, the fewer files you get. Only files with all terms you searched on will be retrieved.
+                </p>
+                        <p class="tablebodytextleft">
+                  Use phrases to make your results more specific.
+                </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="102" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+                  left_query AND NOT right_query
+                </p>
+                    </td>
+                    <td width="200" style="border: 1px solid #c0c0c0;border-image: none;">
+                        <p class="tablebodytextleft">
+                  Where AND is added to&#160;the NOT operator to connect two queries.
+                </p>
+                    </td>
+                    <td width="196" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+                  Narrow your search and exclude terms often connected to your search.
+                </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="102" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                        <p class="tablebodytextleft">
+                  "AND"
+                </p>
+                    </td>
+                    <td width="200" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+                  Wrap the AND operator in double quotes, so it loses its special meaning.
+                </p>
+                    </td>
+                    <td width="196" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+                  If you want to search for the term 'and'. 
+                </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <br />
+        </p>
+        <p>
+            <p class="heading4" style="font-weight: normal;">Examples
+          <br /></p>
+            <table width="498" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="186" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+                    Example of query
+                  </b>
+                            </p>
+                        </th>
+                        <th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+                    Results
+                  </b>
+                            </p>
+                        </th>
+                        <th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+                    Results Explained
+                  </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+                  president AND america
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  'president', 'america'
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  Will only find files that contain both 'president' and 'america'.
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  global warming AND climate change AND world
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  'global warming', 'climate change', 'world'
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  AND is generally used to join different kinds of concepts, different aspects of a question.
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  apple AND NOT pear
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  Only files that contain the term 'apple'.
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  Files that contain both 'apple' and 'pear' will not be found.
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  bow "and" arrow
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  'bow and arrow'
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  Wrap the AND operator in double quotes, so it loses its special meaning. 
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  war W/1 peace
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  'war peace' and 'peace war'
+                </p>
+                        </td>
+                        <td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  The W/n operator ensures that the terms 'war' and 'peace' appear close to each other.
+                </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+    </body>
+</html>

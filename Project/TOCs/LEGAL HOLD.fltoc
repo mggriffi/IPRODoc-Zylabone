@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="LEGAL HOLD"
+    Link="/Content/ZyLAB/LegalHold/100.html" />
+  <TocEntry
+    Title="LEGAL HOLD What's New"
+    Link="/Content/ZyLAB/LegalHold/1000.html" />
+  <TocEntry
+    Title="Quick Start Videos"
+    Link="/Content/ZyLAB/LegalHold/500.html" />
+  <TocEntry
+    Title="Custodian Portal"
+    Link="/Content/ZyLAB/LegalHold/Custodian_Portal.html" />
+  <TocEntry
+    Title="Profile Settings"
+    Link="/Content/ZyLAB/LegalHold/3434.html"></TocEntry>
+  <TocEntry
+    Title="Hold Management"
+    Link="/Content/ZyLAB/LegalHold/101.html" />
+  <TocEntry
+    Title="Create and Issue a Hold"
+    Link="/Content/ZyLAB/LegalHold/300.html">
+    <TocEntry
+      Title="Overview"
+      Link="/Content/ZyLAB/LegalHold/900.html" />
+    <TocEntry
+      Title="Custodians"
+      Link="/Content/ZyLAB/LegalHold/5784.html" />
+    <TocEntry
+      Title="Preservation"
+      Link="/Content/ZyLAB/LegalHold/preservation.html" />
+    <TocEntry
+      Title="Messages"
+      Link="/Content/ZyLAB/LegalHold/901.html" />
+    <TocEntry
+      Title="Questionnaires"
+      Link="/Content/ZyLAB/LegalHold/902.html" />
+    <TocEntry
+      Title="Scheduling"
+      Link="/Content/ZyLAB/LegalHold/903.html" />
+    <TocEntry
+      Title="Activity"
+      Link="/Content/ZyLAB/LegalHold/904.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Matter Management"
+    Link="/Content/ZyLAB/LegalHold/110.html" />
+  <TocEntry
+    Title="Reports"
+    Link="/Content/ZyLAB/LegalHold/120.html">
+    <TocEntry
+      Title="Available Reports"
+      Link="/Content/ZyLAB/LegalHold/1202.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Configuration"
+    Link="/Content/ZyLAB/LegalHold/130.html">
+    <TocEntry
+      Title="Address Book"
+      Link="/Content/ZyLAB/LegalHold/102.html"></TocEntry>
+    <TocEntry
+      Title="Message Templates"
+      Link="/Content/ZyLAB/LegalHold/131.html" />
+    <TocEntry
+      Title="Questionnaire Templates"
+      Link="/Content/ZyLAB/LegalHold/132.html">
+      <TocEntry
+        Title="Question Types"
+        Link="/Content/ZyLAB/LegalHold/700.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Admin Center"
+    Link="/Content/ZyLAB/LegalHold/4040.html">
+    <TocEntry
+      Title="Manage Users"
+      Link="/Content/ZyLAB/LegalHold/444.html"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Manage Groups"
+      Link="/Content/ZyLAB/LegalHold/Manage_Groups.html" />
+    <TocEntry
+      Title="(Tenants) Audit"
+      Link="/Content/ZyLAB/LegalHold/535.html">
+      <TocEntry
+        Title="Logged Event Types"
+        Link="/Content/ZyLAB/LegalHold/5351.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Subscription"
+      Link="/Content/ZyLAB/LegalHold/560.html">
+      <TocEntry
+        Title="Tenants"
+        Link="/Content/ZyLAB/LegalHold/tenants.html" />
+      <TocEntry
+        Title="Integrations"
+        Link="/Content/ZyLAB/LegalHold/integrations.html"></TocEntry>
+      <TocEntry
+        Title="Locations"
+        Link="/Content/ZyLAB/LegalHold/566.html" />
+      <TocEntry
+        Title="Address Book Synchronization"
+        Link="/Content/ZyLAB/LegalHold/Address_Book_Synchronization.html" />
+      <TocEntry
+        Title="Import"
+        Link="/Content/ZyLAB/LegalHold/561.html" />
+      <TocEntry
+        Title="Export"
+        Link="/Content/ZyLAB/LegalHold/6060.html" />
+      <TocEntry
+        Title="API Keys"
+        Link="/Content/ZyLAB/LegalHold/Create_API_Keys.html" />
+      <TocEntry
+        Title="Settings"
+        Link="/Content/ZyLAB/LegalHold/5757.html"></TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Role Permissions"
+    Link="/Content/ZyLAB/LegalHold/800.html" />
+  <TocEntry
+    Title="Notes for Administrators">
+    <TocEntry
+      Title="Integrate with Microsoft Entra ID"
+      Link="/Content/ZyLAB/LegalHold/888.html">
+      <TocEntry
+        Title="Disable Integration with Microsoft Entra ID"
+        Link="/Content/ZyLAB/LegalHold/101010.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Integrate with Okta"
+      Link="/Content/ZyLAB/LegalHold/999.html">
+      <TocEntry
+        Title="Create Service Account in Okta to Synchronize Users"
+        Link="/Content/ZyLAB/LegalHold/999_Create_Service_Acct_Okta.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Integrate with Workday"
+      Link="/Content/ZyLAB/LegalHold/Workday_Integration.html" />
+    <TocEntry
+      Title="Integrate with Microsoft Purview"
+      Link="/Content/ZyLAB/LegalHold/Integrate_with_Microsoft_Purview.html"
+      StartSection="false">
+      <TocEntry
+        Title="Notes for Administrators on the Microsoft Purview Integration"
+        Link="/Content/ZyLAB/LegalHold/989898.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Email Integrations &amp; Notifications">
+      <TocEntry
+        Title="Notes for Administrators on Email Integrations"
+        Link="/Content/ZyLAB/LegalHold/Notes_Admin_Email_Integrations.html" />
+      <TocEntry
+        Title="Notes for Administrators on Email Notifications"
+        Link="/Content/ZyLAB/LegalHold/Notes_Admin_Email_Notifications.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Additional Resources"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    Link="/Content/ZyLAB/LegalHold/additional_resources.htm">
+    <TocEntry
+      Title="Apple Safari Limitations"
+      Link="/Content/ZyLAB/LegalHold/limitations_apple_safari.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Supported Browsers"
+      Link="/Content/ZyLAB/LegalHold/supported_browsers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+</CatapultToc>

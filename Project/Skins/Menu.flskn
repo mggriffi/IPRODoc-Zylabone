@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Menu skin"
+  ComponentType="Menu"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Menu">
+        <Properties>
+          <Property
+            Name="PaddingLeft">10px</Property>
+          <Property
+            Name="MaxHeight">100%</Property>
+          <Property
+            Name="BorderLeft">none 0px transparent</Property>
+          <Property
+            Name="BackgroundColor">#f5f5f5</Property>
+          <Property
+            Name="LineHeight">1em</Property>
+          <Property
+            Name="Width">100%</Property>
+          <Property
+            Name="FontFamily">Montserrat</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu Item">
+        <Properties>
+          <Property
+            Name="PaddingLeft">0px</Property>
+          <Property
+            Name="PaddingTop">10px</Property>
+          <Property
+            Name="PaddingBottom">10px</Property>
+          <Property
+            Name="BackgroundColor">#f5f5f5</Property>
+          <Property
+            Name="FontFamily">Montserrat</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="Selected">
+            <Properties>
+              <Property
+                Name="Color">#000000</Property>
+              <Property
+                Name="FontWeight">normal</Property>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="1st Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="2nd Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="3rd Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="4th Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Style
+        Name="Menu Item (hover)">
+        <Properties>
+          <Property
+            Name="Color">#2c347c</Property>
+          <Property
+            Name="FontWeight">bold</Property>
+          <Property
+            Name="BackgroundColor">#f5f5f5</Property>
+          <Property
+            Name="FontFamily">Montserrat</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="Selected">
+            <Properties>
+              <Property
+                Name="FontWeight">bold</Property>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="1st Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="2nd Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="3rd Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="4th Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Montserrat</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+    </Styles>
+  </Stylesheet>
+  <WebHelpOptions
+    EnableSticky="Web" />
+  <Strings />
+</CatapultSkin>

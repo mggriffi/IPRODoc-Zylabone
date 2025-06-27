@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  GlossaryTermConversion="marked"
+  GetLatestBeforeCompile="false"
+  OutputFolder="C:\Users\ddavidson\Documents\MIGRATION DOCUMENTS\LEGACY DOCUMENTS\LEGALHOLD"
+  MasterStylesheetOverride="false"
+  MasterToc="/Project/TOCs/LEGAL HOLD.fltoc"
+  EmbedImages="true"
+  MasterStylesheet="/Content/Styles/stylesheet.css"
+  MasterPage="/Content/Resources/MasterPages/Admin_MP.flmsp">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    OutputFormat="docx"
+    PopupConversion="expand"
+    ExpandingTextConversion="expand"
+    MultiDocWordOutput="false" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/Word Export TesT 3.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
+</CatapultTarget>

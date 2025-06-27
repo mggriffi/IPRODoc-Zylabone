@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Macros';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Macros</h1>
+        <table class="CHTable" style="width: 600px;border-collapse: collapse;" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td style="width: 100%;">
+                        <p class="note">
+                            <MadCap:keyword term="Macros and Concepts" />Use macros for complex search queries (<a href="789.html">Regular Expressions</a>) that will be used regularly. Contact your Administrator for more information on the macros that can be used. By default, you can use macros for date manipulations, e.g. to be able to find documents that have been created, modified or sent 2 days, 5 weeks, 7 months or 3 years ago. With other macros&#160;<span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;">you can search for social security numbers, amounts, holidays, ip numbers, etc. For the complete list, see below. For the complete queries, see the QueryMacros.config file. In this file the&#160;predefined queries can be adjusted. Please contact your Administrator.<br /></span></p>
+                        <br />
+                        <p class="heading4">
+          Instructions
+        </p>
+                        <ol class="listnumber">
+                            <li class="listnumber">The following macros can be used to find files that have been created, modified or sent a number of days, weeks, months or years ago:
+            <ul class="listbullet2"><li class="listbullet2">
+                #DaysAgo(&lt;number&gt;)#
+              </li><li class="listbullet2">
+                #WeeksAgo(&lt;number&gt;)#
+              </li><li class="listbullet2">
+                #MonthsAgo(&lt;number&gt;)#
+              </li><li class="listbullet2">
+                #YearsAgo(&lt;number&gt;)#
+                <br /><p class="listnote">
+                  The mm/dd/yy format will be used for the evaluation, relative to the current date. Leap years and the number of days in a month are taken into account. If the resulting day is not a valid day in the resulting month, the last valid day of the resulting month is used.
+                  <br />                  #DaysAgo(0)# is resolved in 00:00 of the current day.
+                  <br /><b class="specialbold">
+                    Note</b>: Date db type is not supported in Legal Review, only DateTime. Hence "=" is not applicable with these types of macros.
+                </p></li></ul></li>
+                            <li class="listnumber">
+            The following macros can also be used:
+          </li>
+                            <ul class="listbullet2">
+                                <li class="listbullet2">
+              #ssn#
+            <br /><div>Query: (Social Security* or Soc Sec or SSN* or SSNS or SSID) w/2 [0-9]{3}-[0-9]{2}-[0-9]{4}</div></li>
+                                <li class="listbullet2">
+              #amount#
+            <br />Query:&#160;<div>(1 of {EUR, CAD, USD, GBP, US$, $, £, €} w/1 1 of {[0-9]+, [0-9]+?[0-9]+, [0-9]+?[0-9]+?[0-9]+, [0-9]+?[0-9]+?[0-9]+?[0-9]+, [0-9]+?[0-9]+?[0-9]+?[0-9]+?[0-9]+})</div><div>or</div><div>(1 of {[$€£][0-9]+, [$€£][0-9]+?[0-9]+, [$€£][0-9]+?[0-9]+?[0-9]+, [$€£][0-9]+?[0-9]+?[0-9]+?[0-9]+, [$€£][0-9]+?[0-9]+?[0-9]+?[0-9]+?[0-9]+})</div><div>or</div><div>(1 of {[0-9]+[$€£], [0-9]+?[0-9]+[$€£], [0-9]+?[0-9]+?[0-9]+[$€£], [0-9]+?[0-9]+?[0-9]+?[0-9]+[$€£], [0-9]+?[0-9]+?[0-9]+?[0-9]+?[0-9]+[$€£]})<br /></div></li>
+                                <li class="listbullet2">
+              #holiday#
+            <br />Query: 1 of { &lt;comma divided list of holidays&gt; }<br /><b>Note</b>:&#160;For the complete query, see the QueryMacros.config file.&#160;</li>
+                                <li class="listbullet2">
+              #month#
+            <br />Query: 1 of {january, february, march, april, may, june, july, august, september, october, november, december}<br /></li>
+                                <li class="listbullet2">
+              #day#
+            <br />Query: 1 of {monday, tuesday,wednesday,thursday,friday,saturday, sunday}</li>
+                                <li class="listbullet2">
+              #date#
+            <br />Query: ([0-3][0-9]?[0-3][0-9]?[12][09][0-9]{2}) or <div>(((1 of {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec} or #month#) w/1 [0-9]{1,2}) w/1 [12][09][0-9]{2})</div></li>
+                                <li class="listbullet2">
+              #ip#
+            <br />Query: *[1-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}*</li>
+                                <li class="listbullet2">
+              #nonlatin#
+            <br />Query: [^a-z0-9]+</li>
+                                <li class="listbullet2">
+              #DutchAddress#
+              
+            <br />Query that searches for Dutch streets, postal codes and cities<br /><b>Note</b>:&#160;For the complete query, see the QueryMacros.config file.<br />Please be aware that very long queries take some time to process.</li>
+                                <li class="listbullet2">
+              #DutchStreetPostalCode#
+              
+            <br /><span style="text-decoration-style: initial;text-decoration-color: initial;">Query that searches for Dutch streets and postal codes<br /><b>Note</b>:&#160;For the complete query, see the QueryMacros.config file.<br />Please be aware that very long queries take some time to process.<br /></span></li>
+                                <li class="listbullet2">
+              #DutchCity#
+              
+            <br /><span style="text-decoration-style: initial;text-decoration-color: initial;">Query: 1 of { &lt;comma divided list of Dutch cities&gt; }<br /></span><b>Note</b>:&#160;For the complete query, see the QueryMacros.config file.<br />Please be aware that very long queries take some time to process.<br /></li>
+                                <li class="listbullet2">
+              #DutchPostalCodeCity#
+              
+            <br />Query: (([1-9][0-9]{3} [A-Z]{2}) or ([1-9][0-9]{3}[A-Z]{2})) p/2 (1 OF { &lt;comma divided list of Dutch cities&gt; })<br /><b>Note</b>:&#160;For the complete query, see the QueryMacros.config file.<br />Please be aware that very long queries take some time to process.<br /></li>
+                                <li class="listbullet2">
+              #DutchIBAN#
+            <br />Query: 1 of {(NL[0-9]{2} [A-Z]{4} [0-9]{4} [0-9]{4} [0-9]{2}), (NL[0-9]{2} [A-Z]{4}[0-9]{10,11}), (NL[0-9]{2}[A-Z]{4}[0-9]{10,11}), (NL[0-9]{2} [A-Z]{4} [0-9]{10,11})}<br /></li>
+                            </ul>
+                            <li class="listnumber">
+            This functionality is available in:
+            <ul class="listbullet2"><li class="listbullet2">
+                Legal Review
+                <ul class="listbullet3authorit"><li class="listbullet3authorit">
+                    Search
+                  </li><li class="listbullet3authorit">
+                    Document-Level Security
+                  </li><li class="listbullet3authorit">
+                    Auto-Classification
+                  </li><li class="listbullet3authorit">
+                    Production
+                  </li><li class="listbullet3authorit">
+                    Batch Assignment
+                  </li><li class="listbullet3authorit">Keyword Highlighting</li></ul></li><li class="listbullet2">
+                Legal Review Collector
+              </li></ul></li>
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

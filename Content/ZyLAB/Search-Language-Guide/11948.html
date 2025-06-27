@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Appendix B: Definitions';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Appendix B: Definitions</h1>
+        <p>
+            <h2 class="heading2" id="t11961" data-has-heading-anchor="true">
+                <MadCap:keyword term="Appendix B\: Definitions;Character" />
+          Character
+        </h2>
+            <p class="bodytext">
+          A character can be a letter, a number or a symbol like %, @, &amp;, ^, *, etc. 
+        </p>
+            <p class="note">
+          Please be aware that by default many symbols are not indexed and will not be found unless the character set is adjusted. 
+        </p>
+            <p class="bodytext">
+          See also: 
+          <a title="Reserved Characters" id="h11984" href="11948.html#o11983" target="_self"><MadCap:keyword term="Reserved Characters" />
+            Reserved Characters
+          </a></p><a name="o11985"></a>
+            <h2 class="heading2" id="t11985" data-has-heading-anchor="true">
+                <MadCap:keyword term="Character Map (or Set)" />
+          Character Map (or Set)
+        </h2>
+            <p class="bodytext">
+                <MadCap:keyword term="Separator" />
+                <MadCap:keyword term="Term" />
+          The character map (or set) determines which characters are used to separate terms, which characters are indexed, which ones are used for punctuation, etc. All possible characters that can be recognized and searched on are listed in the character map. By default some characters are not indexed and will not be found unless the default character map is adjusted. How characters are defined in the character map, influences the outcome of a search. For example, when brackets are set to be separators, the following text will be identified as 3 terms: 'most definite(ly)'.
+          <br />          For more information on the character map and how to configure it, please contact support (
+          <a href="http://help.zylab.com" target="_blank">
+            http://help.zylab.com
+          </a>
+          ).
+ &#160;&#160;&#160;&#160;&#160;&#160;
+          <br /></p><a name="o11962"></a>
+            <h2 class="heading2" id="t11962" data-has-heading-anchor="true">
+                <MadCap:keyword term="Element" />
+          Element
+        </h2>
+            <p class="bodytext">
+          An element is a character or a range of characters.
+        </p><a name="o11963"></a>
+            <h2 class="heading2" id="t11963" data-has-heading-anchor="true">
+                <MadCap:keyword term="Fuzzy" />
+          Fuzzy
+        </h2>
+            <p class="bodytext">
+                <MadCap:keyword term="Word" />
+          Fuzzy searches are used to find all variations of a word, including the ones that were not recognized correctly during the conversion from paper files to digital files. For more information, see 
+          <a href="10825.html">
+            Fuzzy Searches
+          </a>
+          .
+        </p><a name="o11964"></a>
+            <h2 class="heading2" id="t11964" data-has-heading-anchor="true">
+                <MadCap:keyword term="Hyphenated terms" />
+          Hyphenated terms
+        </h2>
+            <p class="bodytext">
+                <MadCap:keyword term="Token" />
+                <MadCap:keyword term="Token id" />
+          Hyphenated terms are not uncommon (for example, sugar-free). Each part of a hyphenated term will get the same token id. However, this does not mean that the hyphenated term will be seen as one term. This is important to know, especially when you consider that when a sequence query is being processed (and a hyphenated term might be what you are looking for), the query is processed from back to front.
+          
+          </p>
+            <p class="bodytext">We will explain how this will effect your search with an example search query using the NOT operator:
+          <br /></p>
+            <p class="bodytext">          Consider the text "fresh apple-banana pie", where "fresh" has position 1, "apple" has position 2 and "banana" has position 2 (since they are combined with a hyphen), "pie" has position 3. As we start processing backwards, the search results can be very different depending on your query.
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br /></p>
+            <table width="647" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="158" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b>
+                    Example of query
+                  </b>
+                            </p>
+                        </th>
+                        <th width="163" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b>
+                    Results
+                  </b>
+                            </p>
+                        </th>
+                        <th width="326" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b>
+                    Results Explained
+                  </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="158" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+                  NOT(apple) banana pie
+                </p>
+                        </td>
+                        <td width="163" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  fresh apple-banana pie
+                </p>
+                            <p class="tablebodytextleft">
+                  &#160;
+                </p>
+                        </td>
+                        <td width="326" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  First the term "pie" is matched at position 3, then at position 2 "banana" is matched, next, NOT(apple) is matched with "fresh" at position 1. In this example, "apple" will be skipped.
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="158" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  apple NOT(banana) pie
+                </p>
+                        </td>
+                        <td width="163" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  no results
+                </p>
+                        </td>
+                        <td width="326" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  First the term "pie" is matched at position 3, then at position 2 we will first find "banana", but that does not match the query NOT(banana). Therefor, no results are returned.
+                </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="bodytext"><b class="specialbold">            Note 1
+          </b>
+  : Since you may not know upfront if a combination of terms is hyphenated, it is advised to try different combinations of search queries when you suspect a hyphenated term might be part of the results.
+          <b class="specialbold"><![CDATA[           ]]></b></p>
+            <p class="bodytext"><b class="specialbold">Note 2
+          </b>
+          : If a term or combination of terms you are searching for contains a hyphen, that term will often be found, even if you did not include a hyphen in your search query. For example, when you search for "email" or "e mail", it will also find "e-mail". However, "e mail" will not find "email" or the other way around ("email" will not find "e mail"). 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+        </p><a name="o11965"></a>
+            <h2 class="heading2" id="t11965" data-has-heading-anchor="true">
+                <MadCap:keyword term="Keyword" />
+          Keyword
+        </h2>
+            <p class="bodytext">
+          A keyword is a 
+ term 
+ used in a search query.
+        </p><a name="o11966"></a>
+            <h2 class="heading2" id="t11966" data-has-heading-anchor="true">
+                <MadCap:keyword term="Occurrence" />
+          Occurrence
+        </h2>
+            <p class="bodytext">
+          An occurrence is the number of times a given term occurs in the collection. An occurrence is defined by a combination of Document id, Field id and Token id. Occurrences will be highlighted in the files.
+        </p><a name="o11967"></a>
+            <h2 class="heading2" id="t11967" data-has-heading-anchor="true">
+                <MadCap:keyword term="Operators" />
+          Operators
+        </h2>
+            <p class="bodytext">
+          Operators connect terms in a search query, making the search query more effective. Operators can be used to broaden or narrow your search. They can also be used to define your search more precisely.
+          <br /></p>
+            <p class="bodytext">For your personal clarity, operators are expressed in capitalized letters in this Guide.
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;
+          <br /></p><a name="o11968"></a>
+            <h2 class="heading2" id="t11968" data-has-heading-anchor="true">
+                <MadCap:keyword term="Parentheses" />
+          Parentheses
+        </h2>
+            <p class="bodytext">
+                <MadCap:keyword term="Phrase" />
+          Group words or phrases with round brackets when combining operators in your search query to show the order in which connections should be interpreted. For example, "(cow or goat) and (farm or dairy)". The queries placed between brackets will be processed first.
+          <br /></p>
+            <p class="bodytext">          Brackets aren't always required, they are mostly used for your own clarity. However, please be aware that using brackets can influence the outcome of a search. For example, searching for "cars or not used cars" will return different results than searching for "cars or not (used cars)". The first query will return "cars" and all words in front of "cars", except "used". The second query will only find the word "cars".
+ &#160;&#160;&#160;&#160;&#160;&#160;
+          <br /></p>
+            <p class="bodytext">          When using brackets, you do not need to leave a space between the operator/query and the first bracket, you can do both:
+ &#160;&#160;&#160;&#160;&#160;
+          <br /></p>
+            <p class="bodytext">&#160;</p>
+            <p class="bodytext">         NOT(query)
+          <br /></p>
+            <p class="bodytext">          NOT (query)
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br /></p><a name="o11969"></a>
+            <h2 class="heading2" id="t11969" data-has-heading-anchor="true">
+                <MadCap:keyword term="Period" />
+          Period
+        </h2>
+            <p class="bodytext">
+                <MadCap:keyword term="Tokenizer" />
+          A period (".") is treated like a separator when defined as such in the tokenizer/character map, except when:
+        </p>
+            <ul class="listbullet">
+                <li class="listbullet">
+            the period is preceded and followed by a number ("0.1" is one term)
+          </li>
+                <li class="listbullet">
+            the period is preceded by a space and followed by a number (" .1" is one term)
+          </li>
+                <li class="listbullet">
+            the period is preceded and followed by one alphabetic character, which can be repeated. ("A.B.C" is one term)
+            <br />            If the last character is followed by a period, this last period will not be recognized as part of the term. This is because a period followed by a space is recognized as a separator.
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+            <br /><br /></li>
+            </ul><a name="o11970"></a>
+            <h2 class="heading2" id="t11970" data-has-heading-anchor="true">
+          Phrase
+        </h2>
+            <p class="bodytext">
+          A phrase is identified as two or more words.
+ &#160;&#160;&#160;&#160;
+          <br /></p><a name="o11992"></a>
+            <h2 class="heading2" id="t11992" data-has-heading-anchor="true">
+                <MadCap:keyword term="Precedence" />
+          Precedence
+        </h2>
+            <p class="bodytext">
+          When no brackets are used to define the order of precedence (see 
+          <a title="Parentheses" id="h11986" href="11948.html#o11968" target="_self">
+            Parentheses
+          </a>
+          ), the following search order is applied: 
+          <br /></p>
+            <p class="bodytext">1. NOT
+          <br />          2. OR
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br />          3. W/n, P/n (these operators are of equal precedence)
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br />          4. AND
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br />          5. TO
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br /></p><a name="o11971"></a>
+            <h2 class="heading2" id="t11971" data-has-heading-anchor="true">
+                <MadCap:keyword term="Quotes" />
+          Quotes
+        </h2>
+            <p class="bodytext">
+          Quotes are used to search for separators. Examples:
+          </p>
+            <p class="bodytext">"and"
+          <br />          "http://localhost/?id=10" &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br /></p><a name="o11972"></a>
+            <h2 class="heading2" id="t11972" data-has-heading-anchor="true">
+                <MadCap:keyword term="Regular Expression (or Search Expression)" />
+          Regular Expression (or Search Expression)
+        </h2>
+            <p class="bodytext">
+          A regular expression (abbreviated as regex) is a subset of a Search Expression. A regular expression is a sequence of characters that forms a (codified) search pattern. This pattern is used to find what we want.&#160;
+        </p><a name="o11983"></a>
+            <h2 class="heading2" id="t11983" data-has-heading-anchor="true">
+          Reserved Characters
+        </h2>
+            <p class="bodytext">
+          All printable ASCII characters are directly searchable, except for those designated as reserved for a special purpose within the Search Engine.&#160;The following characters are reserved:
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+        </p>
+            <table width="454" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+                  ?
+                </p>
+                        </td>
+                        <td width="406" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  single character wildcard
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+                  *
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  multiple character wildcard
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+                  +
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used to match the preceding element one or more times
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+                  ,
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used as a decimal separator in different operators
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+                  .
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  A period (".") is treated like a separator when defined as such in the tokenizer/character map, except when:
+                </p>
+                            <ul class="listbullet">
+                                <li class="listbullet">
+                    the period is preceded and followed by a number ("0.1" is one term)
+                  </li>
+                                <li class="listbullet">
+                    the period is preceded by a space and followed by a number (" .1" is one term)
+                  </li>
+                                <li class="listbullet">
+                    the period is preceded and followed by one alphabetic character, which can be repeated. ("A.B.C" is one term)
+                    <br />                    If the last character is followed by a period, this last period will not be recognized as part of the term. This is because a period followed by a space is recognized as a separator.
+                  </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  :
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  numeric range operator
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  ()
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used to nest sub-expressions in a search expression
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  []
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used for character class specification
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  {}
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used in search statements with field definitions and quorum searches, and used in regular expressions
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  &lt;&gt;
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used for numeric and file date comparisons
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  =
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used for numeric comparisons, and for searching by file name and file date
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  /
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used in proximity range operator searches
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="48" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                  -
+                </p>
+                        </td>
+                        <td width="406" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+                  used in defining a range in a character class, and in proximity range searches to indicate negative values
+                </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        &#160;&#160;&#160;&#160;&#160;
+        <br /><p class="note">
+          You can use ? to search on reserved characters, but only if the reserved character is not configured as a 
+          <a title="Separator" id="h11995" href="11948.html#o11974" target="_self">
+            separator
+          </a>
+          . For example, query "t??st" will retrieve "t++st".
+      </p>
+        &#160;&#160;&#160;&#160;
+   </p>
+        <p>
+            <h2 class="heading2" id="t11973" data-has-heading-anchor="true">Search Query
+        </h2>
+            <p class="bodytext">
+          A search query consists of one or more terms or keywords. Terms/keywords can be enhanced with Term Operators (Fuzzy/Wild Cards) and connected with Boolean or Proximity Operators. When using Boolean or Proximity Operators in your search query, group terms or phrases with round brackets to show the search order in which connections should be interpreted. For more information, see 
+          <a title="Parentheses" id="h11986_2" href="11948.html#o11968" target="_self">
+            Parentheses</a>.
+ &#160;&#160;&#160;
+          <br /></p>
+            <h2 class="heading2" id="t11974" data-has-heading-anchor="true">
+          Separator
+        </h2>
+            <p class="bodytext">
+          A separator is used by the tokenizer to mark the beginning of a document (BOD), the end of a sentence (EOS), end of a paragraph (EOP), end of a line (EOL), end of a page (EOG) or the end of a document (EOD).
+          <br /></p>
+            <p class="bodytext">          The ZyLAB 
+          <a title="Tokenizer" id="h11994" href="11948.html#o11979" target="_self">
+            tokenizer</a>
+          can be configured to have some characters behave as separators. For example, ".", "(", ")", etc. These separators act as boundaries between tokens. Once a character has been recognized by the tokenizer as a separator, the tokenizer will stop processing the current token, the separator will be removed and the tokenizer will continue with processing the next token. 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+        </p>
+            <ul class="listbullet">
+                <li class="listbullet">
+            You cannot search for a character if that has been configured as a separator.
+          </li>
+                <li class="listbullet">
+            You can search for operators like EOS and EOD.
+          </li>
+                <li class="listbullet">
+            Separators do not have token ids.
+          </li>
+            </ul>
+            <p class="bodytext">
+          The following separators are supported:
+        </p>
+            <table width="356" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <td width="92">
+                            <p class="tablebodytextleft">
+                  BOD
+                </p>
+                        </td>
+                        <td width="264">
+                            <p class="tablebodytextleft">
+                supported
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="92">
+                            <p class="tablebodytextleft">
+                  EOS
+                </p>
+                        </td>
+                        <td width="264">
+                            <p class="tablebodytextleft">
+                  Supported, but disabled by default
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="92">
+                            <p class="tablebodytextleft">
+                  EOP
+                </p>
+                        </td>
+                        <td width="264">
+                            <p class="tablebodytextleft">
+                  supported
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="92">
+                            <p class="tablebodytextleft">
+                  EOL
+                </p>
+                        </td>
+                        <td width="264">
+                            <p class="tablebodytextleft">
+                  supported
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="92">
+                            <p class="tablebodytextleft">
+                  EOG
+                </p>
+                        </td>
+                        <td width="264">
+                            <p class="tablebodytextleft">
+                  supported
+                </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="92">
+                            <p class="tablebodytextleft">
+                  EOD
+                </p>
+                        </td>
+                        <td width="264">
+                            <p class="tablebodytextleft">
+                  supported
+                  <br />The search engine looks for the context in which EOD is used. If it is part of a proximity, sequence or TO query, the content of documents will be searched. Otherwise, the EOD query will enumerate all documents.
+                </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        &#160;&#160;&#160;&#160;&#160;&#160;
+        <br /><p class="note"><b class="specialbold">
+            Tip
+          </b>
+          : When searching for "EOD", the query returns all documents with nothing highlighted. Since each document has an EOD token, it is an easy query to find all documents in a data set. 
+        </p><p class="bodytext"><b>Search Examples in a Paragraph</b> 
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          
+          </p><ul class="listbullet"><li class="listbullet">
+            In the first paragraph: BOD to EOP { query } 
+            </li><li class="listbullet">
+              In any paragraph: EOP to EOP { query } </li><li class="listbullet">
+              In the last paragraph: EOP to EOD { query }<br /><br /></li></ul><h2 class="heading2" id="t11976" data-has-heading-anchor="true">
+          Term
+        </h2><p class="bodytext"><MadCap:keyword term="Word Query" />
+          A term is a type of query, the word query. It is also a unique entry in the dictionary. A term can be a character, a word (for example, sandwich) or a number. A term has a separator on either side. When, for example, brackets are set to be separators, the following text will be identified as 3 terms: "most definite(ly)".
+ &#160;
+          <br /></p><a name="o11977"></a><h2 class="heading2" id="t11977" data-has-heading-anchor="true">
+          Token
+        </h2><p class="bodytext">
+          A token is often a term (word, number or separator), but a token can also be anything between two separators. Tokens are the identified small parts that form or define a file.
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br /></p><a name="o11978"></a><h2 class="heading2" id="t11978" data-has-heading-anchor="true">
+          Token id
+        </h2><p class="bodytext">
+          A token id is the natural number or position of a token, given by the tokenizer. Token ids are used to determine the distance between the words/numbers. Separators do not have token ids. 
+          <br /></p><table width="559" class="tableintopic" style="border: 1px solid #010101;border-image: none;border-collapse: collapse;" border="1" cellspacing="0" cellpadding="2"><tbody><tr align="left" valign="top"><td width="76" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  Token
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  There
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  are
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  5
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  files
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  EOS
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  EOD
+                </p></td></tr><tr align="left" valign="top"><td width="76" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  Position
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  1
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  2
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  3
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  4
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  x
+                </p></td><td width="80" style="border: 1px solid #010101;border-image: none;"><p class="tablebodytextleft">
+                  x
+                </p></td></tr></tbody></table>
+        
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+        <br /><h2 class="heading2" id="t11979" data-has-heading-anchor="true">
+          Tokenizer
+        </h2><p class="bodytext">
+          A tokenizer breaks a stream of text up into words, numbers or other meaningful elements called tokens. 
+ &#160;&#160;&#160;&#160;
+          <br /></p><a name="o11980"></a><h2 class="heading2" id="t11980" data-has-heading-anchor="true"><MadCap:keyword term="Wildcards" />
+          Wildcards
+        </h2><p class="bodytext">
+          Wildcards are used to replace or represent one or more characters in a term, making the search query more flexible and efficient. 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160; 
+          <br /></p><a name="o11981"></a><h2 class="heading2" id="t11981" data-has-heading-anchor="true">
+          Word
+        </h2><p class="bodytext">
+          A word is identified as one or more characters.
+ &#160;&#160;&#160;&#160;
+          <br /></p><a name="o11982"></a><h2 class="heading2" id="t11982" data-has-heading-anchor="true">
+          Word Query
+        </h2><p class="bodytext">
+          A word query consists of one term.
+        </p><br /></p>
+    </body>
+</html>

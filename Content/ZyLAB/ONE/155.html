@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Run a Documents List Report</h1>
+        <p>To run a report on all or select documents in the Document List table, proceed with the instructions below. For more information on other reports you can run, see <MadCap:xref href="680.html">Reports</MadCap:xref>.</p>
+        <p>Export the current <a href="document-list.html">Document List</a> to a CSV or Excel file that can be used to generate reports.&#160;
+  </p>
+        <p>First, add/remove <a href="151.html">columns</a>, <a href="1040.html">sort</a> them, and save it as a <a href="153.html">View</a>.&#160;If no documents are selected, all documents in the Document List will be exported and included in the report.&#160;
+</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p>
+                            <img src="../../Resources/Images/CSH_Images/myipro_tip.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Tip</b>:  The report is generated faster if you select Flat List as the&#160;<a href="152.html">List Option</a>.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>In Document List, select the Settings icon&#160;<img src="../../Storage/zylab-one-manual-publication/1000-2018-05-29-1.png" alt="" /></p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/155-2020-01-20.png" alt="" class="Thumbnail" />
+        </p>
+        <ul>
+            <li>
+                <p>Select the check box 'Include Redaction Information' if you want to include <a href="443.html">redaction</a> information 
+ (on which page, who redacted it and when it was redacted, redaction/exemption code and justification). <br />All information of manual redactions is always added. However, when creating the report, all 
+      <a href="2060.html">auto redactions</a> might have been processed already. As a result, for auto redactions, most fields can be 
+ empty indicating that auto redaction will be performed on that document.
+      </p>
+                <ul>
+                    <li>
+                        <p>
+        The export of redaction codes is available <b>summarized</b> (grouped per document) and <b>detailed</b> (full/exported per redaction) list:&#160;&#160;</p>
+                        <p>An example of summarized redaction information:<br /></p>
+                        <p>ID,Name,RedactionCode, RedactionText&#160;<br /></p>
+                        <p>12321, Mydoc.doc, 10.a.3;10.a.4,&#160;&#160;<br /></p>
+                        <p>12322, Mydoc1.doc, 10.a.3;10.a.4, personal&#160;   <br /></p>
+                        <p>12323, Mydoc2.doc, ,personal&#160;</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>After the report is created, an Audit entry will be created that includes the Query, Affected Documents, Affected Family, a Query Result Snapshot, Date, and User Account.</p>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 id="h1__1003081151" data-has-heading-anchor="true">Publish</h1>
+        <p>PUBLISH allows you to put your indexes on removable media such as CD-ROM, DVD, ZIP and Jazz drives. You can search your documents with ZySEARCH, which is published together with the indexes. However, if you want to work with your published documents (i.e. split, merge, etc.), &#160;you need ZyFIND.</p>
+        <p>Publishing your index(es) means that you can carry your data around. This is a great advantage when you are always on the road, but still want to search your documents. For example, service technicians can search their manuals, without carrying along all their (heavy) documents.</p>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX is open. The index you want to publish is working correctly. You have enough free space on your local hard drive to publish to.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select the Publish icon: <img src="../../Storage/zylab-information-management-publication/publish1-img0001.png" width="39" height="49" alt="" />.</li>
+            <li>Go to File &gt; Open.</li>
+            <li>Select the index you want to publish.</li>
+            <li>Select Properties: <img src="../../Storage/zylab-information-management-publication/publish1-img0002.png" width="25" height="21" alt="" />, and check the settings.</li>
+            <li>It is possible to create new media (volume types), where you want to publish your archive on. In that case, select New and fill out the Edit media properties dialog. Click OK.</li>
+            <li>Make sure the location of ZySEARCH is C:\Program Files\ZyLAB\Information Management Platform\AddOn\ZySEARCH Install.</li>
+            <li>Make sure the location of Autorun files is C:\Program Files\ZyLAB\Information Management Platform\AddOn\Publish files\English.</li>
+            <li>If you made some changes, click Apply.</li>
+            <li>Click OK.</li>
+            <li>Make sure the General tab is selected.</li>
+            <li>Select the different parts that have to be published:</li>
+        </ol>
+        <ul>
+            <li>Browse for a path to publish to.<br />Select the path where the published files should be copied. If you plan on publishing a CD-ROM, you should copy these files to a CD-ROM media after publishing. If you plan on publishing to a Jazz drive or another re-writable medium, you can publish directly to the media.<br /><br />Keep in mind that you need to have enough free disk space!<br />Note that PUBLISH estimates the storage overhead on the CD based on a typical publication. However, in case you are publishing many small files, the size of the storage overhead, i.e. the CD directory, will be relatively large. In that case we advise you to decrease the predefined capacity of the volume you are publishing to.</li>
+            <li>Copy index files copies the index files to the publishing media and should always be enabled if the person who is going to use the CD doesn’t have an installation of ZyINDEX.</li>
+            <li>Copy search engine is an option to create a self-contained CD, so you have an installation of ZySEARCH on the CD as well. An installation of ZySEARCH is only necessary in case ZyFIND is not installed on the computer of destination. ZySEARCH has the same functionalities as ZyFIND.<br /><br />Note: If copy search engine is checked please make sure that the latest service pack is present in the ZySEARCH install files in the ZyLAB directory. If you do not want to distribute ZySEARCH with a servicepack, please check on ZyLAB’s support site if an updated ZySEARCH installation is available.</li>
+            <li>When the Store current ZyFIND settings for publishing media option is checked, a copy of the ZyFIND registry settings of the current machine will be made. You can make a selection of settings using the dialog on the ZyFIND Settings - tab. They will be published on the volume. &#160;The receiver of the volume is now able to view the published index with the same ZyFIND settings. Copy Autorun files &#160;allows you to make an auto-start CD-ROM. If this option is checked, PUBLISH will install an AutoStart file and some set-up HTML pages for the published CD-ROM. If these are copied into the root of the CD-ROM, the CD will open an HTML (customizable) screen that allows the user to install ZySEARCH, run ZySEARCH or obtain information on ZyLAB or the ZyLAB Software. The user can indicate where to copy the HTML files. The entire contents of this directory need to be copied into the root of the final published volume.</li>
+        </ul>
+        <ol start="12">
+            <li>Select the Media tab.</li>
+            <li>Select the appropriate volume type and enter a volume name.</li>
+        </ol>
+        <ul>
+            <li>Volume type: Select your publishing media here. This is especially important to determine the capacity of the media for multi-volume publishing. If the medium is not in the standard list, you can define it yourself in the PUBLISH setting dialog. </li>
+            <li>Size: Remember to decrease the predefined volume capacity to anticipate large storage overhead. </li>
+            <li>Final Volume Label Published Media: The final published volume name will be stored in the index files. This is important in order to make the published volume drive insensitive. That is, it should not matter whether the CD-ROM is stored in a drive with letter D: E: or F: It should always work. Therefore, the ZyINDEX index will look for a volume name instead of a drive letter. The final volume name should be specified here. If you copy the published files to a CD-ROM, do not forget to create a CD-ROM with exactly the same volume name as indicated here (ZyINDEX is case sensitive for volume names!). </li>
+            <li>Write Volume Label to Media: If you use re-writable media, you can write the volume name directly to the published media (e.g. in case of a ZIP or Jazz drive).</li>
+        </ul>
+        <ol start="14">
+            <li>Select the Print tab.</li>
+            <li>If you want to print labels that will be put on the CD ROM, select Print label.</li>
+        </ol>
+        <ul>
+            <li>Select a printer.</li>
+            <li>Select a text font.</li>
+            <li>Define the position of the text.</li>
+            <li>If you want to print a test page, click Test Page.</li>
+        </ul>
+        <ol start="16">
+            <li>Select the ZyFIND Settings tab.</li>
+            <li>Determine what kind of settings and which parts of ZyFIND are going to be copied. If all the settings have been entered correctly you can start publishing the index. </li>
+            <li>Click Start <img src="../../Storage/zylab-information-management-publication/publish1-img0003.png" width="17" height="19" alt="" />.<br />The index is going to be published and a status bar will be shown. Once publishing is finished, a summary will appear (this summary and additional help on publishing to CD ROM can be found below).</li>
+            <li>Click OK.</li>
+            <li>Close ZyINDEX.</li>
+        </ol>
+        <h4 id="h4_515596549" data-has-heading-anchor="true">
+			Summary text</h4>
+        <p>Publish was successful. xx Mb in xx files.</p>
+        <p>If you are creating a CD-ROM, you can now copy the published files under "C:\PublishDir" to a CD-ROM with a CD-write program. Be sure to copy the same path ("C:\PublishDir" and all of its contents) to the target drive.<br />In order to create a self-starting CD, you must copy the files in "C:\PublishDir\autorun" to the root folder of your CD-ROM (with the CD-write program). Publish was successful. 0.25 Mb in 64 files.<br />If you are creating a CD-ROM, you can now copy the published files under "C:\PublishDir" to a CD-ROM with a CD-write program. Be sure to copy the same path ("C:\PublishDir" and all of its contents) to the target drive.<br />In order to create a self-starting CD, you must copy the files in "C:\PublishDir\autorun" to the root folder of your CD ROM (with the CD-write program). </p>
+        <h4 id="h4_902236661" data-has-heading-anchor="true">
+			Publish to CD ROM</h4>
+        <p>After publishing with PUBLISH you will have to use a CD-writing program to create your CD. Because there are several CD-writing programs, it is not possible to go into to much detail here. However, there are several general things you have to keep in mind. Also, some tips are given on how to make sure your CD will work correctly on other computers.</p>
+        <p>Tips for burning the CD after publishing:</p>
+        <ol start="1">
+            <li>Copy the whole path <br />If you used the default path to publish to (C:\PublishDir\) make sure you use the same path for burning the data to CD. So drag and drop the folder 'PublishDir' to the CD writing program. Do not reparent.</li>
+            <li>Note: volume labels are case sensitive.<br />With all CD writing programs you will have to give a volume label (or volume name) to the CD you will burn. Make sure you use exactly the same volume label you entered in ZyPUBLISH. It is also very important you use the same case for each letter!</li>
+            <li>The autorun files have fixed locations. <br />The autorun files makes the installation of the CD very easy for the user. They consist of several files that should be on the CD on specific locations. After burning your CD, the Welcome.htm and Autorun.inf files should be in the root of the CD together with the folders \Bin, \html and \images. If you used the ZyPUBLISH default autorun files location 'C:\PublishDir\autorun\', you have to repair these files with your CD writing program so they will be burned to the root.</li>
+            <li>Make a disc readable on more than one operating system.<br />Not all CDs can be read by all operating systems; much depends on what file system and filenaming option is used when the disc is created. If you need to make a disc readable on more than one operating system keep these points in mind:</li>
+        </ol>
+        <ul>
+            <li>If your CD is going to be used on early Win95 (before OSR2) computers or on computers with old CD players, the number of folder levels between the root of your disk and the deepest data folder should not exceed 8 levels. If this is the case, do not change the location of your data files or index files. Instead you should rearrange your data structure: Start ZyINDEX and erase the old index contents and rebuild it. Then use ZyPUBLISH again. To save one more level, publish the index directly to c: instead of c:\PublishDir.</li>
+            <li>CD writing programs offer several filenaming options as ISO9600, Joliet, Romeo. ISO9600 will work on the most platforms but does not allow longer filenames and directory names than 8+3 characters. This setting therefor is not recommended. The Joliet specification is ISO9600 compliant, but allows filenames and directory names up to 64 characters. For most indexes this will be sufficient. The Romeo specification allows for filenames up to 128 characters, but is not offered by all CD writing program.</li>
+        </ul>
+        <p>Tips for testing the proper working of your CD after burning:</p>
+        <ol start="1">
+            <li>Test the CD on another computer then the one you made the index on or used for publishing the CD with ZyPUBLISH.</li>
+            <li>Make sure the test computer on which you test the CD does not have drives with the same volume label as the CD (hint: for this reason do not use company names as volume label in ZyPUBLISH.)</li>
+            <li>To test if your CD is drive letter independent, choose a test computer with a CD player that has another drive letter than on the computer on which you published the CD.</li>
+            <li>If ZyFIND is already installed on the test computer, it is not recommended to install ZySEARCH. Therefore cancel installing ZySEARCH after the first installation dialog. Use the existing ZyFIND for testing the index. Add the published index to the list of available indexes by browsing for the .ic1 file as described in the help files. At least try to find and open one of the documents on the CD to make sure the data paths are valid.</li>
+        </ol>
+        <p>And finally:</p>
+        <p>The CD can not be used in a multi-CD tower using drive letters.</p>
+    </body>
+</html>

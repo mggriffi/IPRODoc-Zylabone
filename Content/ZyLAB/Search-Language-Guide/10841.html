@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Exclude List of Terms from Fuzzy/Wildcard Query';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Exclude List of Terms from Fuzzy/Wildcard Query</h1>
+        <p>
+  When performing a search with wild cards or a fuzzy term, it is possible to exclude terms or a subset of terms defined by wild cards or a fuzzy query.
+  <br /></p>
+        <p> Exclusion lists are supported only by the TBIE engine. The HAPI engine will return an 'Unexpected Operator' error whenever the exclusion list syntax is used. Similarly, the Audio bundle will return this error for the exclusion list use.
+
+
+  
+
+<br /></p>
+        <p>
+            <table width="612" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="276" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre">
+                                <MadCap:keyword term="Exclude List of Terms from Fuzzy/Wildcard Query" /><b class="specialbold">syntax
+          </b>
+                            </p>
+                        </th>
+                        <th width="336" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            semantics 
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="276" style="border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: solid;" rowspan="2">
+                            <p class="tablebodytextleft"><code class="monospace">
+            query - {exclusion_list_query_1, ..., exclusion_list_query_n}
+          </code>
+                            </p>
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                        </td>
+                        <td width="336" style="border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: solid;" rowspan="2">
+                            <ul class="listbullet">
+                                <li class="listbullet">
+            in which 
+            <code class="monospace">
+              query
+            </code>
+            is a wild card search, e.g. 
+            <code class="monospace">
+              ab*
+            </code>
+            ; or a fuzzy search, e.g.  
+            <code class="monospace">
+              constitution~2
+            </code></li>
+                                <li class="listbullet">
+            if 
+            <code class="monospace">
+              query
+            </code>
+            does not have a wild card or fuzzy term, a syntax error will be returned
+          </li>
+                                <li class="listbullet">
+            in which 
+            <code class="monospace">
+              exclusion_list_query_n
+            </code>
+            is a 
+            <ul class="listbullet2"><li class="listbullet2">
+                term, e.g. 
+                <code class="monospace">
+                  apple
+                </code>
+                , 
+              </li><li class="listbullet2">
+                wild card search, e.g. 
+                <code class="monospace">
+                  ab*
+                </code>
+                , or 
+                <code class="monospace">
+                  app[a-m]e
+                </code>
+                , or 
+                <code class="monospace">
+                  app?e
+                </code>
+                , 
+              </li><li class="listbullet2">
+                fuzzy search, e.g. 
+                <code class="monospace">
+                  constitution~2
+                </code></li></ul></li>
+                                <li class="listbullet">
+            Empty term lists are allowed and will be ignored
+            <ul class="listbullet2"><li class="listbullet2">
+                A search query 
+                <code class="monospace">
+                  a* - { }
+                </code>
+                will return all terms in a dictionary starting with a letter 'a'
+              </li></ul></li>
+                                <li class="listbullet">
+            Terms in the exclusion list should be separated by commas, otherwise a syntax error will be returned
+          </li>
+                                <li class="listbullet">
+            Wild card query within the exclusion list cannot have an exclusion list
+            <ul class="listbullet2"><li class="listbullet2">
+                A search query 
+                <code class="monospace">
+                  a* - {abc*, avocado}
+                </code>
+                is valid, but a search query 
+                <code class="monospace">
+                  a* - {avocado, ap* - {apple}}
+                </code>
+                isn't allowed because 
+                <code class="monospace">
+                  ap*
+                </code>
+                has an exclusion list with term 'apple', thus, an error will be returned: 'Error 4150: Unexpected nested exclusion list'.
+              </li></ul></li>
+                                <li class="listbullet">
+            Terms and wild card queries within exclusion lists may be quoted
+            <ul class="listbullet2"><li class="listbullet2">
+                A search query 
+                <code class="monospace">
+                  a* - {abc*, avocado}
+                </code>
+                and "<code class="monospace">a*" - {"abc*", "avocado"}
+                </code>
+                will return identical results
+              </li></ul></li>
+                                <li class="listbullet">
+            A wild card query with wild card queries in the exclusion lists might take longer than just the original wild card query
+            <ul class="listbullet2"><li class="listbullet2">
+                A search query 
+                <code class="monospace">
+                  a* - {abc*, *do}
+                </code>
+                might take longer than a search query  
+                <code class="monospace">
+                  a*
+                </code></li></ul></li>
+                                <li class="listbullet">
+            An unquoted wild card query with an exclusion list must have a white space between the wild card query and the '-' symbol indicating introduction of the exclusion list. A quoted wild card query can omit the white space.
+            <ul class="listbullet2"><li class="listbullet2">
+                A search query  
+                <code class="monospace">
+                  a* - {avocado}
+                </code>
+                is correct because '-' is preceded by a white space
+              </li><li class="listbullet2">
+                A search query 
+                <code class="monospace">
+                  a*-{avocado}
+                </code>
+                will be parsed as a single search term: "a*-{avocado}". Usually no results will be found.
+              </li><li class="listbullet2">
+                A search query  
+                <code class="monospace">
+                  "a*"-{avocado}
+                </code>
+                is correct because the wild card query is bordered by double quotes
+              </li></ul></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr />
+                </tbody>
+            </table>
+            <p class="heading4">&#160;</p>
+            <p class="heading4">Examples
+</p>
+            <table width="600" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="600" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Examples of allowed queries
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="600" style="border-bottom-color: #c0c0c0;border-bottom-width: 1px;border-bottom-style: solid;">
+                            <ul class="listbullet2">
+                                <li class="listbullet2"><code class="monospace">
+              o* - {olive, or*,other}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              o* - {ol[a-m]ve, or*}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              o* - {ol?ve, or*}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              o* - {olive~2, *r)
+            </code>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="600" style="border-bottom-color: #c0c0c0;border-bottom-width: 1px;border-bottom-style: solid;">
+                            <ul class="listbullet2">
+                                <li class="listbullet2"><code class="monospace">
+              *e - {olive}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              *e - {or*, *ve}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              *e - {ol[a-m]ve}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              *e - {ol?ve}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              *e - {olive~1, above}
+            </code>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="600">
+                            <ul class="listbullet2">
+                                <li class="listbullet2"><code class="monospace">
+              constitution~4 - {constitution, cong*}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              constitution~4 - {*o, constitution~2}
+            </code>
+                                </li>
+                                <li class="listbullet2"><code class="monospace">
+              co* - {constitution~1, cohabitation, cong*, conb*}
+            </code>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+        </p>
+    </body>
+</html>

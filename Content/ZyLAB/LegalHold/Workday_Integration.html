@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Integrate with Workday</h1>
+        <p><MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> offers the ability to synchronize contact details in the Address Book with Workday. Before you can begin to synchronize data, you first need to create an integration between the two applications.​ This integration contains the credentials that allow you to connect to Workday and extract needed user information.​ The instructions below detail the process of configuring the integration both on the Workday side as well as within <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note 1: Using Workday can enrich your address book data. However, it is recommended to update your main identity provider with required data and use a single source of user data in <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> for reliability and simplicity.</p>
+                        <p style="font-size: 10pt;font-style: italic;">Note 2: Since Workday integration may be slow, please select only necessary fields (especially “Cost Center” and “Company”) during its provisioning configuration to minimize the amount of loaded data.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Configure Workday Integration</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: A Workday subscription and Workday administrator privileges are required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>
+                <p> Create the integration system user.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Log in to your Workday Application.</p>
+                    </li>
+                    <li>
+                        <p>Search and open the "Create Integration System User" task in the Workday Application.</p>
+                    </li>
+                    <li>
+                        <p>Set up your user with new user name and password.</p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Workday_Create_Integration_User1.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Create security group.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Search and open the "Create security group" task.</p>
+                    </li>
+                    <li>
+                        <p>Choose security group type - ask your Workday integration partner to select the appropriate one.</p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Workday_Create_Security_Group1.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the next step, add the previously created integration user to your group and specify scope for the constrained group.</p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Workday_Edit_Integration_Security_Group.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Configure security group permissions.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Search and open the "Security Group Membership and Access" task.</p>
+                    </li>
+                    <li>
+                        <p>Search and select the security group you created.</p>
+                    </li>
+                    <li>
+                        <p>	Click on the ellipsis next to group name, select <b>Security Group &gt; Maintain Domain Permissions for Security Group</b>.</p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Workday_Security_Group_Membership_Access.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Under "Integration Permissions" add the following permissions into the GET section:</p>
+                        <ul>
+                            <li>
+                                <p>Worker Data: Workers</p>
+                            </li>
+                            <li>
+                                <p>Worker Data: All Positions</p>
+                            </li>
+                            <li>
+                                <p>Worker Data: Current Staffing Information</p>
+                            </li>
+                            <li>
+                                <p>Worker Data: Business Title on Worker Profile</p>
+                                <p>
+                                    <img src="../../Resources/Images/LEGAL HOLD/Workday_Maintain_Domain_Permissions.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Click <b>OK</b> and <b>Done</b> on the next screen.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Activate security policy changes.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Search and open the "Activate Pending Security Policy Changes" task.</p>
+                    </li>
+                    <li>
+                        <p>Enter a comment for auditing purpose and click <b>OK</b>.</p>
+                    </li>
+                    <li>
+                        <p>Check <b>Confirm</b> and then click <b>OK</b>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Determine your Workday API URL.</p>
+                <ul>
+                    <li>
+                        <p>Type "public web services" in the search box.</p>
+                    </li>
+                    <li>
+                        <p>Under Reports, select <b>Public Web Services</b>.</p>
+                    </li>
+                    <li>
+                        <p>From the Public Web Services list, select one and click the ellipsis (…) to reveal a drop-down menu. Select <b>Web Service &gt; View WSDL</b>, which displays the full WSDL in a separate window.</p>
+                    </li>
+                    <li>
+                        <p>In the WSDL, search for soapbind:address to see the web services endpoint corresponding to the web service that you chose.</p>
+                    </li>
+                    <li>
+                        <p>For the configuration you only need the URL up to the tenant name. For example, if the value in the WSDL is <a href="https://implcc.workday.com/ccx/service/okta_pt1/Human_Resources/v19">https://implcc.workday.com/ccx/service/okta_pt1/Human_Resources/v19</a>, you enter: <a href="https://impl-cc.workday.com/ccx/service/okta_pt1">https://impl-cc.workday.com/ccx/service/okta_pt1</a>.</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;">Note: There are other ways to get the API URL. You can search for them if the purposed one doesn’t work for <MadCap:annotation MadCap:createDate="2023-02-20T19:56:12.1021940-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="This note doesn't make much sense." MadCap:editor="mcohen" MadCap:editDate="2023-02-20T19:56:22.9470375-07:00">you</MadCap:annotation>.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Optional - Restrict access only to Legal Hold service.</p>
+                <ul>
+                    <li>
+                        <p>Use US IP for the US environment and EU for EU.</p>
+                    </li>
+                    <li>
+                        <p>Follow the steps referenced here - <a href="https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/workday-integration-reference#limiting-access-to-worker-data-in-workday-using-constrained-security-groups">Microsoft Entra ID and Workday integration reference - Microsoft Entra | Microsoft Learn</a>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Optional - Restrict access to subset of users.</p>
+                <ul>
+                    <li>
+                        <p>Follow the steps referenced here - <a href="https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/workday-integration-reference#limiting-access-to-worker-data-in-workday-using-constrained-security-groups">Microsoft Entra ID and Workday integration reference - Microsoft Entra | Microsoft Learn</a>.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2> Configure Legal Hold integration</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: A  <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> subscription and <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> System Administration role are required</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>
+                <p>Create integration</p>
+                <ul>
+                    <li>
+                        <p>Log in to your Legal Hold subscription.</p>
+                    </li>
+                    <li>
+                        <p>In the left navigation bar go to <b>Admin Center &gt; Subscription &gt; Integrations</b>.</p>
+                    </li>
+                    <li>
+                        <p>Click <b>Create Integration</b>.</p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Workday_Create_Integration.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Select "Workday Contact Synchronization" and populate configuration:</p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Workday_Directory_Sync_1.png" class="Thumbnail" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/LEGAL HOLD/Workday_Directory_Sync_2.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Click <b>Create</b>. The integration will be created and validation initiated.</p>
+                    </li>
+                    <li>
+                        <p>If validation passes, the integration will become enabled and you can use it to synchronize user data. Visit the Address Book Synchronization page to configure and run contact synchronization. See <MadCap:xref href="Address_Book_Synchronization.html">Address Book Synchronization</MadCap:xref>.</p>
+                    </li>
+                    <li>
+                        <p>	If validation fails, check error message and credentials provided.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+    </body>
+</html>

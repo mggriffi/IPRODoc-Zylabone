@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <div>
+            <p>&#160;</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <!--Start card 1-->
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="350px" height="475px" style="text-align:center;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);vertical-align:top;border-radius: 8px;">
+                                            <br />
+                                            <p class="textnew">
+                                                <b>Click to view full screen image</b>
+                                            </p>
+                                            <br />
+                                            <br />
+                                            <img src="../Images/createholdnew.png" alt="" style="max-width: 100%;" />
+                                            <h4 style="font-size: 14pt;color:black; text-align:center">ZyLAB ONE Test Update</h4>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 53px;" valign="top">
+                                                            <p>
+                                                                <b>What</b>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 312px;" align="left">
+                                                            <p>Test Update to ZyLAB ONE product.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 53px;" valign="left">
+                                                            <p>
+                                                                <b>Why</b>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 312px;" align="left">
+                                                            <p>Why not?</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 53px;" valign="top">
+                                                            <p>
+                                                                <b>How</b>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 312px;" align="left">
+                                                            <p>Test test test.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="88px" />
+                                                        <td width="175px">
+                                                            <p>
+                                                                <a href="../../ZyLAB/ONE/create-new-matter.html" class="orangebutton" target="_top">
+                                                                    <b>Learn More</b>
+                                                                </a>
+                                                            </p>
+                                                        </td>
+                                                        <td width="88px" />
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </td>
+                        <!--start of card 2-->
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="350px" height="475px" style="text-align:center;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);vertical-align:top;border-radius: 8px;">
+                                            <br />
+                                            <p class="textnew">
+                                                <b>Click to view full screen image</b>
+                                            </p>
+                                            <br />
+                                            <br />
+                                            <img src="../Images/createholdnew.png" alt="" style="max-width: 100%;" />
+                                            <h4 style="font-size: 14pt;color:black; text-align:center">ZyLAB ONE Test Update</h4>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 53px;" valign="top">
+                                                            <p>
+                                                                <b>What</b>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 312px;" align="left">
+                                                            <p>Test Update to ZyLAB ONE product.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 53px;" valign="left">
+                                                            <p>
+                                                                <b>Why</b>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 312px;" align="left">
+                                                            <p>Why not?</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 53px;" valign="top">
+                                                            <p>
+                                                                <b>How</b>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 312px;" align="left">
+                                                            <p>Test test test.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="88px" />
+                                                        <td width="175px">
+                                                            <p>
+                                                                <a href="../../ZyLAB/ONE/create-new-matter.html" class="orangebutton" target="_top">
+                                                                    <b>Learn More</b>
+                                                                </a>
+                                                            </p>
+                                                        </td>
+                                                        <td width="88px" />
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

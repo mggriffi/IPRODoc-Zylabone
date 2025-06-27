@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my LIVE CSH destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-itsptl002\c$\Core\Help\FlareProjects\ZyLAB\CSH-zylabmanual"
+  Port=""
+  ViewUrl="/help/ZyLAB/CSH-zylabmanual"
+  Type="file"
+  RemoveStale="true"></CatapultDestination>

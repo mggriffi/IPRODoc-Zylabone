@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>Personal data often has a certain structure to it. For example, all emails contain an ‘@’ - or all Social Security Numbers consist of a combination of three numbers, followed by two numbers, followed by four numbers from zero to nine. Personal data that is structured in a certain way, can be redacted automatically using the ZyLAB ONE Auto Redactions feature. Auto Redacting is automatically performed on the documents in the selected matter.
+</p>
+        <p>The Redaction Text&#160;is&#160;of importance when it comes to <b>pseudonymization</b>. The Redaction Text option gives the user the ability to type the pseudonym on top of the black box. The user can further define the appearance of the auto redaction by using the Fill Color, Font Color, Font Family and Font Size options.</p>
+        <p>&#160;</p>
+        <p>In the following example of an Auto Redaction Rule, we use an IP-address format. An IP-address format exists of four numbers between zero and 255, with all numbers separated by periods. The query for an IP-address is as follows:
+
+</p>
+        <p>*[1-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}*
+</p>
+        <p>If the query has been entered incorrectly, an error message appears next to the query. If the query has been entered correctly, 
+ the query can be applied using the Apply button.
+
+</p>
+        <p>
+            <img src="../../Storage/data-privacy-protection-to-flare/100-2021-01-19-4.png" alt="" />
+        </p>
+        <table style="mc-table-style: url('../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p>
+                            <img src="../Images/CSH_Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Important</b>: When applying a new auto redaction rule, the users working in the matter may encounter disruptions. This should be considered when applying&#160;new auto redaction rules.
+</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Redacted documents can be shown by sorting the documents in the Document List page, clicking on Settings &gt; Columns, and typing and selecting "Contains Redaction". The Document List view then showcases on the right side of the screen whether the document contains&#160;redactions&#160;or not.
+</p>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Configure Exchange Online Upload/Collection Using OAuth Authentication</h1>
+        <div>
+            <p>To enable OAuth and configure Exchange Online for use of upload/collection functionality, you will need to register the application with your Microsoft Entra ID. You will also need to give permissions for the application during this process. Specifically, the application needs permission to use Office 365 Exchange Online API to access EWS (Exchange Web Services).</p>
+            <p>Review the information below to complete this process.</p>
+        </div>
+        <h2>Register your application with Microsoft Entra ID<![CDATA[
+]]></h2>
+        <p>To register your application with Microsoft Entra ID, follow the steps below:</p>
+        <ol>
+            <li>
+                <p>Go to <a href="https://portal.azure.com/" target="_blank">Microsoft Entra ID Admin Center</a>.</p>
+            </li>
+            <li>
+                <p>
+Go to App Registrations and select <b>New Registration</b>.
+</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_NewRegistration.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Complete the registration form.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/cC_NameRegistration.png" class="Thumbnail" />
+                </p>
+                <ol class="BulletListBody" style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Enter a name. This could be "ZyLabOneExchangeCollector" or another application name that seems appropriate.
+</p>
+                    </li>
+                    <li>
+                        <p>Decide the account type. Determine if the application should be single tenant (for this organization only) or multitenant. Typically single tenant is chosen here. </p>
+                    </li>
+                    <li>
+                        <p>The redirect URI is not needed. </p>
+                    </li>
+                    <li>
+                        <p>Click <b>Register</b>.
+</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>
+You’ve now created a registration. From here, go to <b>Certificates and secrets</b>.</p>
+            </li>
+            <li>
+                <p>Select <b>New Client Secret</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_New_Secret.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter a description and a duration. Click <b>Add</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Add_Secret.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p> 
+You will now be shown a screen with your client secret (value field). Please copy this value now as this is the ONLY time it will be displayed.
+</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_CopySecret.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on API Permissions. Then click <b>Add Permission</b>.
+</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Add_Permission.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p> 
+Go to APIs my organization uses.
+</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_API_Org.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Search for Office and select <b>Office 365 Exchange Online</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Office365Exchange.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select Application permissions.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Application_Perms.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>
+Search for full and select <b>full_access_as_app</b>. Click <b>Add permissions</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Full_Access.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Grant Consent for (your companyname)</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Grant_Consent.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Yes</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Select_Yes.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>
+You will now see that the consent was granted.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Grant_Consent_Confirmed.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>This finishes the creation of the App Registration that’s needed for the ZyLAB Exchange Collector.
+Please save the TentantID, AppID and ClientSecret for the next section.</p>
+            </li>
+        </ol>
+        <h2>Modify the collector configuration</h2>
+        <ol>
+            <li>
+                <p>
+Create a backup and then edit the exchange collector configuration.</p>
+                <p> Program Files (x86)\ZyLAB\EDiscovery\Ediscoveryservice\Assemblies\Performers\ZyLAB.EDiscovery.Collectors.Exchange\ZyLAB.EDiscovery.Collectors.Exchange.dll.xml</p>
+            </li>
+            <li>
+                <p>
+Modify the Default configuration (we can no longer use basic authentication now).</p>
+            </li>
+            <li>
+                <p>Replace the AppID, TenantID and ClientSecret with what you saved earlier.
+</p>
+                <div class="Code_2">
+                    <p class="Code_2">&lt;configuration id="<b>Default</b>"&gt;</p>
+                    <p class="Code_2">
+&lt;settings&gt;</p>
+                    <p class="Code_2">
+
+&lt;!-- Legacy Auth--&gt;</p>
+                    <p class="Code_2">
+&lt;Domain&gt; &lt;/Domain&gt;</p>
+                    <p class="Code_2">
+&lt;LoginAccount&gt; &lt;/LoginAccount&gt;</p>
+                    <p class="Code_2">
+&lt;LoginPassword&gt; &lt;/LoginPassword&gt;</p>
+                    <p class="Code_2">
+
+&lt;!-- OAuth --&gt;
+</p>
+                    <p class="Code_2">&lt;<b>OAuth</b>&gt;true&lt;/<b>OAuth</b>&gt;
+</p>
+                    <p class="Code_2">
+&lt;!-- AppId --&gt;
+</p>
+                    <p class="Code_2">&lt;<b>AppId</b>&gt;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/<b>AppId</b>&gt;</p>
+                    <p class="Code_2">
+&lt;!-- TenantId --&gt;</p>
+                    <p class="Code_2">
+&lt;<b>TenantId</b>&gt;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/<b>TenantId</b>&gt;</p>
+                    <p class="Code_2">
+
+&lt;!-- Client Secret --&gt;</p>
+                    <p class="Code_2">
+&lt;<b>ClientSecret</b>&gt;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/<b>ClientSecret</b>&gt; &lt;!-- Exchange2010, Exchange2010_SP1 --&gt;</p>
+                    <p class="Code_2">
+&lt;ExchangeVersion&gt;Exchange2013_SP1&lt;/ExchangeVersion&gt;
+&lt;Folders&gt;MsgFolderRoot,RecoverableItemsRoot,ArchiveMsgFolderRoot,ArchiveRecoverableItemsRoot&lt;/Folders&gt;&lt;ExchangeWebServicesURL&gt;https://outlook.office365.com/EWS/Exchange.asmx&lt;/ExchangeWebServicesURL&gt;</p>
+                </div>
+            </li>
+            <li>
+                <p>
+Save the file.
+</p>
+            </li>
+            <li>
+                <p>Now open up Legal Processing.
+</p>
+            </li>
+            <li>
+                <p>Go to settings &gt; processing rules.
+</p>
+            </li>
+            <li>
+                <p>Click <b>Refresh System Performers</b> (or regenerate defaults if you’re on 6.9).</p>
+            </li>
+            <li>
+                <p>Save and close.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/CloudCollection/CC_Refresh_System_Performers.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>
+ 
+
+Now, when you create a new matter, it will use the new configuration.
+
+</p>
+            </li>
+        </ol>
+    </body>
+</html>

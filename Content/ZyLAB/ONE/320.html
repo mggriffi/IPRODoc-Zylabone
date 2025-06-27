@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Stop Condition</h1>
+        <p>The stop condition defines when reviewers can stop reviewing new documents and the iterative Assisted Review process is terminated. No <a href="325.html">new training batches</a> will be added. You can select Classify Remaining (if not all documents have been reviewed already). The last trained <a href="329.html">classifier</a> is used to classify the remaining documents.</p>
+        <p>Several stop conditions can apply. It depends on your project when to stop.
+
+</p>
+        <h4><b>Stop Conditions</b>
+        </h4>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p>
+      The <a href="445.html">Recall Goal</a>&#160;is reached.
+  </p>
+                <p>The Recall Goal is set when defining a project with a <a href="446.html">Validation Set</a>. &#160;</p>
+                <p>In the <a href="1030.html">Assisted Review Progress</a> tab, monitor if the Recall Goal is reached or nearly reached (<a href="330.html">Estimated Current Recall</a>):</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/320-2018-03-06.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The marginal precision is below 10% (0,1) or higher than 80% (0,8).&#160;
+    </p>
+                <p>The marginal precision is the precision of the last reviewed <a href="321.html">training batch</a> added to the training set, also called the return set. The marginal precision usually rises to a high value (for example, 67%) in the beginning of the process.</p>
+                <p>View the marginal precision in the <a href="327.html">Precision of Return Set</a> graph.&#160;&#160;</p>
+            </li>
+            <li>
+                <p>The <a href="326.html">Gain Curve</a> has reached its plateau.</p>
+                <p>If the gain curve reaches a plateau, enough iterations/training batches have been done. The Assisted Review process can be stopped.&#160;</p>
+            </li>
+            <li class="listbullet">
+                <p>The curve of the <a href="328.html">Precision by Recall</a> graph&#160;reaches a high precision and recall (0,8 or higher), or is not improving anymore.</p>
+            </li>
+            <li class="listbullet">
+                <p><a href="323.html">Precision and recall</a> have both reached the values that were agreed earlier (for example, during meet-and-confer sessions).&#160; &#160;</p>
+            </li>
+        </ul>
+    </body>
+</html>

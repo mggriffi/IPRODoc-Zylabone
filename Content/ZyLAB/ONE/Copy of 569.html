@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Available Reports</h1>
+        <p>Select <b>Reports</b> in the Matter menu to create and view one of the available reports listed below. For more information on other reports you can run, see <MadCap:xref href="680.html">Reports</MadCap:xref>.</p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/680-2019-06-14-2.png" alt="" class="Border" style="width: 233px;height: 325px;" />
+        </p>
+        <h2>Processing</h2>
+        <p>Processing reports provide information on the performance of processing jobs and act as a control mechanism to ensure that all files have been handled correctly. To meet the needs of project management, it is important to track the work performed on all items submitted for processing. Every item has tracking information as to the various tasks that have been performed on it. Item level tracking information can result in reports representing overall status or status of any particular item or group of items whether they are ultimately moved forward into review or not.</p>
+        <ul>
+            <li>
+                <p style="font-weight: bold;">Collected Locations Summary Expanded</p>
+                <p>Shows you the locations of the files and volume processed for each custodian in the matter. The following information is provided in the report:</p>
+                <ul>
+                    <li>
+                        <p>Job Id</p>
+                    </li>
+                    <li>
+                        <p>Start Time</p>
+                    </li>
+                    <li>
+                        <p>End Time</p>
+                    </li>
+                    <li>
+                        <p>Custodian</p>
+                    </li>
+                    <li>
+                        <p>Source</p>
+                    </li>
+                    <li>
+                        <p>Location</p>
+                    </li>
+                    <li>
+                        <p>Extension</p>
+                    </li>
+                    <li>
+                        <p>Collected Count</p>
+                    </li>
+                    <li>
+                        <p>Collected Volume</p>
+                    </li>
+                    <li>
+                        <p>Zip Expanded Count</p>
+                    </li>
+                    <li>
+                        <p>Zip Expanded Count (Processed - Deletions)</p>
+                    </li>
+                    <li>
+                        <p>LP Expanded Count (Deduplicated)</p>
+                    </li>
+                    <li>
+                        <p>LR Expanded Count (Processed - Deletions)</p>
+                    </li>
+                    <li>
+                        <p>LR Current Volume (Current)</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Failed Actions Details</b>
+                </p>
+                <ul>
+                    <li>
+                        <p>Action Id</p>
+                        <p>ID of the failed action</p>
+                    </li>
+                    <li>
+                        <p>Retries (number of restarts)</p>
+                        <p>If there are several errors for one action, only the last one will be displayed with information about the number of retries for this action.</p>
+                    </li>
+                    <li>
+                        <p>Job Id</p>
+                    </li>
+                    <li>
+                        <p>Document Id</p>
+                    </li>
+                    <li>
+                        <p>Error Message</p>
+                        <p>Failures can be caused by - for example - password protected files, corrupt files or not supported file types.</p>
+                        <p>Failed actions of the Email Extractor are often related to an Invalid TNEF signature. This means that the file is either not a valid TNEF file (outlook attachment) or it is corrupted.</p>
+                        <p>Failed actions of both the Object Extractor and the Field Appender are often related to the Content Reader (which purpose is to read a file and return a representation of it). There can be various causes for a failed ContentReader action.</p>
+                        <p>Failed actions of the Archive Extractor are often related to an invalid password.</p>
+                    </li>
+                    <li>
+                        <p>Performer Name</p>
+                    </li>
+                    <li>
+                        <p>Configuration Name</p>
+                    </li>
+                    <li>
+                        <p>Machine Name</p>
+                    </li>
+                    <li>
+                        <p>Custodian</p>
+                    </li>
+                    <li>
+                        <p>Source</p>
+                    </li>
+                    <li>
+                        <p>Mimetype</p>
+                    </li>
+                    <li>
+                        <p>Execution Time (ms)</p>
+                    </li>
+                    <li>
+                        <p>File Size</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Filtered Items Details</p>
+                <p>A list of all documents that are filtered during processing and not processed. This reporting works for all Legal Processing collectors. Categories of filtered documents are:</p>
+                <ul>
+                    <li>
+                        <p>No Processing Rule Assigned</p>
+                        <p>If no processing rule is associated with a document, then that document is skipped during processing. In the Filtering Items Details report you can view which files existed in the original collection, but were excluded.</p>
+                    </li>
+                    <li>
+                        <p>NSRL Exclusions</p>
+                        <p>In the Filtering Report you can view which files existed in the original collection, but were excluded due to NSRL (or NIST) exclusions.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Matter Actions Summary</p>
+                <p>Details about the processing jobs (status) for a specific matter. Specifically, how many documents are scheduled/started/failed/completed and/or canceled, sorted by machine name/performer.</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Processing Summary Report</p>
+                <p>Details about the processing stages for a specific matter. Specifically, the document count per stage (Collected, Processed (Not in Review / In Review)) and the size per stage in MB and in bytes. An explanation of the different stages is added at the bottom of the report.</p>
+            </li>
+        </ul>
+        <h2>Review</h2>
+        <p>Review reports provide information on the progress of the review, if/how files are tagged and/or annotated or if there are duplicates. There are also reports on emails in a matter (who sent/received them and the count).</p>
+        <ul>
+            <li>
+                <p style="font-weight: bold;">Email From Details</p>
+                <p>Details about who sent an email (Email From) and how many times emails were sent from each email address/name (Count).</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Reviewer Daily Summary</p>
+                <p>An overview (categorized per review date) of how many documents a reviewer has reviewed and tagged as responsive, non responsive, privileged and/or confidential.</p>
+                <p>This report can be used for tracking the progress.</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Privileged Log</p>
+                <p>A list of all files that were tagged as privileged. The following information is provided in the report:</p>
+                <ul>
+                    <li>
+                        <p>ID</p>
+                    </li>
+                    <li>
+                        <p>Original File Name</p>
+                    </li>
+                    <li>
+                        <p>Hash Value</p>
+                    </li>
+                    <li>
+                        <p>Custodian</p>
+                    </li>
+                    <li>
+                        <p>Date</p>
+                    </li>
+                    <li>
+                        <p>In case of an electronic file the modified date.</p>
+                    </li>
+                    <li>
+                        <p>In case of an email the sent date.</p>
+                    </li>
+                    <li>
+                        <p>Privileged Reason</p>
+                    </li>
+                    <li>
+                        <p>Privileged Category</p>
+                    </li>
+                    <li>
+                        <p>Mime Type</p>
+                    </li>
+                    <li>
+                        <p>Extension</p>
+                    </li>
+                    <li>
+                        <p>Email Subject</p>
+                    </li>
+                    <li>
+                        <p>Email From</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Senders Domain Details</p>
+                <p>Details about the origin (Senders Domain) of the emails and how many times emails were sent from that domain (Count).</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Annotations Report</p>
+                <p>A list of all documents that are annotated. The following information is provided in the report:</p>
+                <ul>
+                    <li>
+                        <p>Document Id</p>
+                    </li>
+                    <li>
+                        <p>Name</p>
+                    </li>
+                    <li>
+                        <p>Page Number</p>
+                    </li>
+                    <li>
+                        <p>Content</p>
+                    </li>
+                    <li>
+                        <p>Author Name</p>
+                    </li>
+                    <li>
+                        <p>Editor Name</p>
+                    </li>
+                    <li>
+                        <p>Last Modification Date</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Email to Details</p>
+                <p>Details about who received an email (Email To) and how many times emails were received from each email address/name (Count).</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Reviewer Summary</p>
+                <p>An overview of how many documents each reviewer has reviewed and tagged as responsive, non responsive, privileged and/or confidential.</p>
+                <p>This report can be used for tracking the progress.</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Duplicates Report</p>
+                <p>A list of all duplicate documents in the matter. The following information is provided in the report:</p>
+                <ul>
+                    <li>
+                        <p>Hash Value</p>
+                    </li>
+                    <li>
+                        <p>Duplicate Count (Total number of copies)</p>
+                    </li>
+                    <li>
+                        <p>Custodian</p>
+                    </li>
+                    <li>
+                        <p>Mimetype</p>
+                    </li>
+                    <li>
+                        <p>Name</p>
+                    </li>
+                    <li>
+                        <p>Id</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Recipient Domain Details</p>
+                <p>Details about the receiver (Recipient Domain) of the emails and how many times emails were sent from that domain (Count).</p>
+            </li>
+        </ul>
+        <h2>Other</h2>
+        <ul>
+            <li>
+                <p style="font-weight: bold;">Matter Overview</p>
+                <p>Details about the matter. The following information is provided in the report:</p>
+                <ul>
+                    <li>
+                        <p>Matter Name</p>
+                    </li>
+                    <li>
+                        <p>Creation Date</p>
+                    </li>
+                    <li>
+                        <p>Days Active</p>
+                    </li>
+                    <li>
+                        <p>Review Template</p>
+                    </li>
+                    <li>
+                        <p>Number of Documents</p>
+                    </li>
+                    <li>
+                        <p>Number of Families</p>
+                    </li>
+                    <li>
+                        <p>Number of Custodians</p>
+                    </li>
+                    <li>
+                        <p>Number of Sources</p>
+                    </li>
+                    <li>
+                        <p>Percentage Reviewed</p>
+                    </li>
+                    <li>
+                        <p>Percentage Not Reviewed</p>
+                    </li>
+                    <li>
+                        <p>Tag: Responsive</p>
+                    </li>
+                    <li>
+                        <p>Tag: Not Responsive</p>
+                    </li>
+                    <li>
+                        <p>Tag: Privileged</p>
+                    </li>
+                    <li>
+                        <p>Tag: Confidential</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

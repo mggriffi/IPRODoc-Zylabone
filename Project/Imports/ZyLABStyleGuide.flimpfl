@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProjectImport
+  AutoSync="false"
+  IncludePattern="*.htm;*.html;*.png;*.bmp;*.jpg;*.jpeg;*.tif;*.tiff;*.gif;*.swd;*.emf;*.wmf;*.xaml;*.xps;*.exps;*.hdp;*.wdp;*.dib;*.svg;*.ps;*.eps;*.pdf;*.fltoc"
+  LastImport="2022-01-11T16:25:20.0708550+01:00">
+  <Files>
+    <Url
+      Source="file:///C:/ZyLAB-Style-Guide/ZyLAB-Style-Guide.flprj"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/ZyLAB-Style-Guide.flprj" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/a-img0001.png"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/a-img0001.png" />
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/a-img0002.png"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/a-img0002.png" />
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/c-img0001.png"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/c-img0001.png" />
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/d-img0001.png"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Content/Storage/zylab-style-guide-publication/Extracted/d-img0001.png" />
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Content/ZyLAB-Style-Guide/100.html"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Content/ZyLAB-Style-Guide/100.html" />
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Content/ZyLAB-Style-Guide/200.html"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Content/ZyLAB-Style-Guide/200.html" />
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Content/ZyLAB-Style-Guide/300.html"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Content/ZyLAB-Style-Guide/300.html" />
+    <Url
+      Source="../../../ZyLAB-Style-Guide/Project/TOCs/zylab-style-guide-publication-exported.fltoc"
+      AbsoluteSource="file:///C:/ZyLAB-Style-Guide/Project/TOCs/zylab-style-guide-publication-exported.fltoc" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Storage/zylab-style-guide-publication/Extracted/a-img0001.png"
+      TimeStamp="11/01/2022 16:22:09" />
+    <Url
+      Source="../../Content/Storage/zylab-style-guide-publication/Extracted/a-img0002.png"
+      TimeStamp="11/01/2022 16:22:09" />
+    <Url
+      Source="../../Content/Storage/zylab-style-guide-publication/Extracted/c-img0001.png"
+      TimeStamp="11/01/2022 16:22:09" />
+    <Url
+      Source="../../Content/Storage/zylab-style-guide-publication/Extracted/d-img0001.png"
+      TimeStamp="11/01/2022 16:22:09" />
+    <Url
+      Source="../../Content/ZyLAB-Style-Guide/100.html"
+      TimeStamp="11/01/2022 16:22:10" />
+    <Url
+      Source="../../Content/ZyLAB-Style-Guide/200.html"
+      TimeStamp="11/01/2022 16:22:10" />
+    <Url
+      Source="../../Content/ZyLAB-Style-Guide/300.html"
+      TimeStamp="11/01/2022 16:22:10" />
+    <Url
+      Source="../TOCs/zylab-style-guide-publication-exported.fltoc"
+      TimeStamp="11/01/2022 16:23:09" />
+  </GeneratedFiles>
+</CatapultProjectImport>

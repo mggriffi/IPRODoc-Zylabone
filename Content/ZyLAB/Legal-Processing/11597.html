@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>ZyLAB Batch Assignment and TIFF Pre-Generation Tool</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='ZyLAB Batch Assignment and TIFF Pre-Generation Tool';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t11597" class="heading2">
+            <MadCap:keyword term="ZyLAB Batch Assignment and TIFF Pre-Generation Tool" />ZyLAB Batch Assignment and TIFF Pre-Generation Tool</p>
+        <p class="bodytext">The ZyLAB Batch Assignment and TIFF Pre-Generation Tool enables you to improve the review performance, keyword highlighting and automatic redactions. The Batch.exe file can be scheduled under the ZyLAB folder of the Windows Task Manager (C:\Program Files (x86)\ZyLAB\EDiscovery\LegalReview\Tools). There are 4 functions that can be executed with parameters. These are:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Batch assignment (according Legal Review batch assignment rules)</li>
+            <li class="listbullet">Tiff pre-generation (according to specified query parameter of this command)</li>
+            <li class="listbullet">Pre-generation of the keyword highlighting hits (according Legal Review keyword group definitions)</li>
+            <li class="listbullet">Autoredaction (according Legal Review autoredaction rules)</li>
+        </ul>
+        <p class="bodytext">More than one function can be chosen in parallel, according to one matter-id parameter.</p>
+        <p class="heading4">Usage  </p>
+        <p class="bodytext">batch [assign] [pregen] [concepthits] -svc &lt;ClientServiceUri&gt; [-m &lt;MatterId&gt;] [-q &lt;QueryText&gt;] [-tc &lt;ThreadsCount&gt;] [-t &lt;TimeLimit&gt;] [-v]</p>
+        <p class="heading4">Modes  </p>
+        <table class="tableintopic" width="510" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">assign</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Perform batch assignment</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">pregen</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Perform tiff pre-generation</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">concepthits</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Perform pre-generation of the keyword highlighting hits</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">autoredactions</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Perform pre-generation of autoredactions</p>
+                </td>
+            </tr>
+        </table>
+        <p class="heading4">Settings </p>
+        <table class="tableintopic" width="510" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-svc &lt;ClientServiceUri&gt;</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Uri for the client service facade of Legal Review.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-m &lt;MatterId&gt;</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Id of matter to work on. If not specified all matters will be processed.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-q &lt;QueryText&gt;</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Query to match documents for tiff pregeneration. Default: AssignedTo &lt;&gt; null and Reviewed = false.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-tc &lt;ThreadsCount&gt;</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Number of concurrent documents to be pregenerated. Default: number of cores on your machine.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-t &lt;TimeLimit&gt;</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Time span to perform tiff pregeneration in the following format: HH:MM:SS. You can also specify it partially: HH:MM or HH. Required if pregen mode is enabled.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-v </p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">If specified the log messages will be written to console (default is false).</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-batch </p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">Batch size (default is 10000)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-rc</p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">LR access retry* count number (default is 30)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-right: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="180">
+                    <p class="bodytext">-rd </p>
+                </td>
+                <td style="border-left: 1px solid #C0C0C0;border-top: 1px solid #C0C0C0;" width="330">
+                    <p class="bodytext">LR access retry* delay seconds (default is 60)</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext" />
+        <p class="bodytext">  * Only used in case of access issues</p>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="11595.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="11665.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

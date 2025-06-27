@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Delete Selection/Documents</h1>
+        <p>Delete documents from your matter from the <a href="document-list.html">Document List</a>.
+Deletion can be performed manually through selection of specific document(s), or by query and selected list option. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Deletion can only be performed by users assigned a role that includes the permission to delete all the documents that will be deleted. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>When deleting document(s), the relevant entities (plus other parts) are removed in Insights. The corresponding entries will be removed from the <a href="080820.html">Library</a>, <a href="080821.html">Jobs</a>, <a href="080822.html">Entity Management</a>, and <a href="5342.html">Consumption Overview</a>. </p>
+        <p>&#160;</p>
+        <p>When (manually) deleting selected documents in the Document List, the entire subtree will be deleted, no matter the <a href="152.html">list option</a>  applied.
+All children of the selected document(s) will be deleted. </p>
+        <ul>
+            <li>
+                <p>In the Document List, select the document(s) you would like to delete by checking the corresponding box(es). You can select a single document or multiple documents for deletion, regardless of review status. </p>
+                <p>
+                    <img src="../../Resources/Images/ONE/Home_AllDocuments_DocumentList_Overview_SelectedDocs.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select the Settings icon&#160;<img src="../../Storage/zylab-one-manual-publication/1000-2018-05-29-1.png" alt="" style="font-size: 13px;text-indent: 0cm;word-spacing: normal;" /></p>
+                <p>
+                    <img src="../../Resources/Images/ONE/Home_AllDocuments_DocumentList_Overview_SelectedDocs_DeleteSelection.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Delete Selection</b> to start the deletion action. </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>When deleting documents found by a query, deletion is dependent  on the selected&#160;<a href="152.html">List Options</a>.
+</p>
+        <ul>
+            <li>
+                <p>
+                    <p>To delete all documents (and their children) in the Document List:</p>
+                    <ul>
+                        <li>
+                            <p>Select the Settings icon&#160;<img src="../../Storage/zylab-one-manual-publication/1000-2018-05-29-1.png" alt="" style="font-size: 13px;text-indent: 0cm;word-spacing: normal;" /></p>
+                        </li>
+                        <li>
+                            <p>Select <b>List Option</b> &gt; <b>Flat List</b>.</p>
+                        </li>
+                        <li>
+                            <p>Select <b>Delete Documents</b> to start the deletion action.
+      </p>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <p>To delete all items belonging to a Family  (the entire family tree), including items <i>not</i> present in the Document List:</p>
+                    <ul>
+                        <li>
+                            <p>Select the Settings icon&#160;<img src="../../Storage/zylab-one-manual-publication/1000-2018-05-29-1.png" alt="" style="font-size: 13px;text-indent: 0cm;word-spacing: normal;" /></p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>
+      List option <b>Partial/Full Family Tree</b>.      </p>
+                        </li>
+                        <li>
+                            <p>Select <b>Delete Families</b> to start the deletion action.
+</p>
+                        </li>
+                    </ul>
+                    <div class="note">
+                        <p> In addition, the following items will be deleted:</p>
+                        <ul class="listbullet">
+                            <li class="listbullet">Files in Shared Location (if there are no more references to them)</li>
+                            <li class="listbullet">File views</li>
+                            <li class="listbullet">Record(s) in Legal Review</li>
+                            <li class="listbullet">Files in Legal Processing (present in the database)</li>
+                        </ul>
+                        <p>Also, document(s) will be marked as deleted in the index. </p>
+                    </div>
+                </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>When deletion is complete, an overview of the deletion results will appear:</p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/10000-2021-09-16-2.png" alt="" class="Thumbnail" />
+        </p>
+        <p>Once deleted,  all entities and parts previously corresponding to the document(s), are removed in Insights. </p>
+        <p>To view the document deletion actions performed within a matter (including when, and by whom)—consult the <a href="30304.html">Audit log</a>. </p>
+    </body>
+</html>

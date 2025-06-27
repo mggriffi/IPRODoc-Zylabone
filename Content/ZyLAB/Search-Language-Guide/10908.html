@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='IN fieldname{query}';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>IN fieldname{query}</h1>
+        <p><span class="bodytext">
+  The IN operator allows you to find terms in fields added to the file (meta data). 
+
+
+
+   
+
+
+
+</span>
+        </p>
+        <p>
+            <table width="504" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="156" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Syntax
+          </b>
+                            </p>
+                        </th>
+                        <th width="180" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Semantics
+          </b>
+                            </p>
+                        </th>
+                        <th width="168" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Recommended Use
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="156" style="border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+                                <MadCap:keyword term="IN fieldname{query}" />
+          IN fieldname{query}
+        </p>
+                        </td>
+                        <td width="180" style="border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Where a result of a 
+          <em class="emphasis">
+            query
+          </em>
+          (a term, phrase or other query) can be found IN the field with the specified 
+          <em class="emphasis">
+            fieldname
+          </em>
+          .
+        </p>
+                            <p class="tablebodytextleft">
+          Braces {} mark the start and end of the search within the field.
+        </p>
+                        </td>
+                        <td width="168" style="border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Search your meta data and restrict the search to a specific area of a file.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            <p class="heading4">Example
+  <br /></p>
+            <table width="594" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="186" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Query
+          </b>
+                            </p>
+                        </th>
+                        <th width="180" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                        <th width="228" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results Explained
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          IN occupation{dentist}
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          dentist
+        </p>
+                        </td>
+                        <td width="228" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          The word 'dentist' is found in the field 'occupation'. 
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          IN age{&gt;17}
+        </p>
+                        </td>
+                        <td width="180" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          18, 19, or a higher number
+        </p>
+                        </td>
+                        <td width="228" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          A number higher than 17 is found in the field 'age'.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>Instead of using this syntax, you can also use Fields search in the user interface:<br /></p>
+        <p>
+            <img src="../../Storage/zylab-one-search-language-guide-publication-1/10908-2018-12-11.png" alt="" class="Thumbnail" />
+            <br />
+        </p>
+        <p>See also—<a href="10918.html">Field Filter</a><br /></p>
+    </body>
+</html>

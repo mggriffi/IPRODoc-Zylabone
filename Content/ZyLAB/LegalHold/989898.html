@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Notes for Administrators on the  Microsoft Purview Integration</h1>
+        <h2 id="h2__992243427" data-has-heading-anchor="true"><span class="heading2">Integrations</span>
+        </h2>
+        <h3 data-has-heading-anchor="true">Microsoft Purview</h3>
+        <p data-has-heading-anchor="true">The account that is used in the Microsoft Purview integration must have several properties:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p data-has-heading-anchor="true">Compliance Administrator' or 'eDiscovery Administrator' role (you can check it here: <a href="https://compliance.microsoft.com/compliancecenterpermissions" target="_blank">https://compliance.microsoft.com/compliancecenterpermission)</a></p>
+            </li>
+            <li>
+                <p>Part of the tenant that has all custodians.</p>
+                <ul>
+                    <li>
+                        <p>&#160;For Microsoft Entra ID  tenant - account must be from the same Microsoft Entra ID tenant.</p>
+                    </li>
+                    <li>
+                        <p>&#160;For Okta tenant - account must be from Microsoft Entra ID tenant that contains all custodians that are going to be preserved which are part of the Okta tenant (in case of Microsoft Entra ID as source of Okta users).</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="listbullet">
+            <li class="listbullet">If the account that used to access Microsoft Purview  is changed, it must have access to all cases created by Legal Hold otherwise preservation updates will fail. Lift actions (hold lift or hold location remove) will silently succeed.&#160;<ul class="listbullet" style="list-style-type: circle;"><li class="listbullet">New account must be Compliance Administrator or eDiscovery Administrator.</li></ul></li>
+            <li class="listbullet">Due to security reasons, the integration will expire in 3 months. The integration can be renewed anytime by clicking the edit button of the integration. </li>
+        </ul>
+        <h3 data-has-heading-anchor="true" class="h3_Black"><span class="heading2">Preservation in </span><span class="heading2">Microsoft Purview</span>
+        </h3>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <div>Do not change cases and policies created by the Legal Hold application in Microsoft Purview, you can do other actions in the system like searches and exports.</div>
+            </li>
+            <li class="listbullet">Lifting a Hold in the Legal Hold application will remove all Holds in the M365 eDiscovery case.</li>
+            <li class="listbullet">Preservation in Microsoft Purview can report an error message. <ul class="listbullet"><li class="listbullet">Error is "It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours. [PolicySyncTimeout]". Legal Hold Preservation will succeed. </li><li class="listbullet">In other cases Legal Hold preservation will fail with a specific error text. Please contact  Support for assistance.</li></ul></li>
+        </ul>
+        <div>
+            <h3>Microsoft 365 Preservation Explorer Integration</h3>
+            <p> This integration is required to preserve non-custodial locations like Teams, SharePoint and Shared Mailboxes.</p>
+            <p>The user must have access to all teams and sites they desire to preserve otherwise:</p>
+            <ul>
+                <li>
+                    <p>It will not be possible to resolve team site during preservation and you will see an error.</p>
+                </li>
+                <li>
+                    <p>SharePoint sites will not be visible in the explorer.</p>
+                </li>
+            </ul>
+            <h3 class="h3_Black">Preservation Details</h3>
+            <h4>Teams</h4>
+            <p>Teams data is stored in various locations. For Teams the following data is preserved based on the location that you defined in LEGAL HOLD.</p>
+            <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 249px;" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 188px;" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 257px;" />
+                <thead>
+                    <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                        <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1"><span style="color: #ffffff;">Data to Preserve</span>
+                        </th>
+                        <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1"><span style="color: #ffffff;">LEGAL HOLD M365 Sources in the Location definition</span>
+                        </th>
+                        <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1"><span style="color: #ffffff;">Microsoft Data Location</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Chat messages for a user (for example, 1:1 chats, 1:N group chats, and private channel conversations)</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Mailbox</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                            <p class="TableText">User mailbox</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Chat messages in standard and shared channels</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Teams</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                            <p class="TableText">Mailbox associated with the parent team</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Files in standard channels (for example, Wiki content and files)</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">SharePoint</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                            <p class="TableText">SharePoint site associated with the parent team</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Files in private and shared channels</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">SharePoint</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                            <p class="TableText">Dedicated SharePoint site associated with the channel</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">User's private content</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">OneDrive</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                            <p class="TableText">The user's OneDrive for Business account</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">Card content in chats</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">Teams</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="TableText">User mailbox for 1:1 chats, 1:N group chats, and private channel conversations; the parent team mailbox for card content in standard and shared channel messages.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>To retain message content in private channels, you need to put the user mailboxes (of the members of a private channel) on hold.      </p>
+        </div>
+        <h2 id="h2__992243425" data-has-heading-anchor="true"><span class="heading2">Custodians</span>
+        </h2>
+        <ul class="listbullet">
+            <li class="listbullet">
+      If hold will contain multiple users with same email addresses or email aliases - preservation will be executed for all variation and the related mailbox will be preserved, however on lift of individual custodians, the first lifted user will lift mailbox and other email addresses, or aliases may stay marked as preserved. This is resolved when the Hold itself is lifted fully. </li>
+            <li class="listbullet">If a mailbox email address is changed after preservation and then lifted: <ul class="listbullet"><li class="listbullet">if new email address points to another user’s mailbox - system will unpreserve by new email address, old email address will not be unpreserved by same action. </li><li class="listbullet">if new email is empty or doesn't point to another user’s mailbox - system will just mark custodian location as lifted since it hasn't found anything to unpreserve. </li></ul></li>
+            <li class="listbullet">Email aliases can be used and changed if these are pointing to the same Exchange mailbox.</li>
+            <li>
+                <p>Mail contacts are mail-enabled objects that contain information about people who exist outside your organization, mail contacts can be part of your EntraID address book synchronization, but these contacts will be ignored for preservation.</p>
+            </li>
+        </ul>
+        <script src="../../Scripts/lightense.min.js">
+        </script>
+        <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+    </body>
+</html>

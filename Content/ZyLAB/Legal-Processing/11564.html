@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Local Processing</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Local Processing';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t11564" class="heading2">
+            <MadCap:keyword term="Local Processing" />Local Processing</p>
+        <p class="heading4">About</p>
+        <p class="bodytext">Main goal of local processing is to improve next things:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Reduce network load. There is no file copying from shared location to processing node and back for local actions.</li>
+            <li class="listbullet">Database load. Local actions and documents generally do not leave the processing node and are not stored in the database.</li>
+        </ul>
+        <p class="bodytext">Local processing executes parts of processing workflow (defined by processing rules of the job) locally on the node - no intermediate actions/documents are passed to the central node.</p>
+        <p class="heading4">Configuration</p>
+        <p class="bodytext">Local processing can be enabled using DeletingList.</p>
+        <p class="bodytext">Corresponding option in Legal Processing UI is "Switch on to remove files after processing" in Processing Definition Editor:</p>
+        <p class="bodytext">
+            <img id="f11565" src="../../Storage/legal-processing-publication/11565.png" alt="" height="626" width="905" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">However it is not possible to create every valid DeletingList in LegalProcessing UI. Manual editing of the XML file is preferred at the moment:</p>
+        <ol class="listnumber">
+            <li class="listnumber"> Save processing definition XML to disk</li>
+            <li class="listnumber"> Modify DeletingList</li>
+            <li class="listnumber"> Load it back on Matter or Global level.</li>
+        </ol>
+        <p class="heading5">Example</p>
+        <p class="bodytext">
+            <code class="monospace">&lt;DeletingList&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;DocumentProcessingStepPattern producedBy="PST Extractor (Default)" outputPin="Messages"&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">    &lt;DocumentPattern PatternType="MimeType" PatternText="application/x-msg" /&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;DocumentProcessingStepPattern producedBy="Field Appender (Default)" outputPin="FA_Out"&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">    &lt;DocumentPattern PatternType="Any" /&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;DocumentProcessingStepPattern producedBy="MSG Converter (Default)" outputPin="Processed MSG"&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">    &lt;DocumentPattern PatternType="MimeType" PatternText="application/x-msg" /&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;DocumentProcessingStepPattern producedBy="MSG Converter (Default)" outputPin="Attachments"&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">    &lt;DocumentPattern PatternType="Any" /&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;DocumentProcessingStepPattern producedBy="Embedded Object Extractor (Default)" outputPin="Extracted files"&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">    &lt;DocumentPattern PatternType="Any" /&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;DocumentProcessingStepPattern producedBy="Archive Extractor (Default)" outputPin="Extracted files"&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">    &lt;DocumentPattern PatternType="Any" /&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code>
+        </p>
+        <p class="bodytext">
+            <code class="monospace">&lt;/DeletingList&gt;</code>
+        </p>
+        <p class="heading4">Priorities</p>
+        <p class="bodytext">Currently local actions have the highest priority. It means that as long as processing node has active local actions for particular processor it will execute them instead of global actions for this processor.</p>
+        <p class="bodytext">For example: if node executes local PST extractor at the moment, with very high probability it will not start any global MSG Converter actions until PST is done - extracted msg files produced by PST Extractor will be always processed with higher priority.</p>
+        <p class="heading4">Processors availability</p>
+        <ul class="listbullet">
+            <li class="listbullet">Action will become global if processor is not available on the processing node. It's availability can be changed on Cluster tab of Legal Processing UI.</li>
+        </ul>
+        <p class="bodytext">If processor is disabled for the node while job is running, all new actions for that processor on that node will be scheduled as global. However, local actions for disabled processor that are currently running will not be affected.</p>
+        <p class="heading4">Notes</p>
+        <ul class="listbullet">
+            <li class="listbullet">If local action fails, it is stored in the database with the source document.</li>
+            <li class="listbullet">In case of configuration with more than one processing node it's not recommended to use processing rules with DeletingList that will match any documents:<br /><br /><code class="monospace">&lt;DeletingList&gt;</code><br /><code class="monospace">  &lt;DocumentProcessingStepPattern&gt;</code><br /><code class="monospace">    &lt;DocumentPattern PatternType="Any" /&gt;</code><br /><code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code><br /><code class="monospace">&lt;/DeletingList&gt;</code><br /><br />in this case all documents from collection location will be processed on single node (which can be considerably slower comparing to regular workflow).</li>
+            <li class="listbullet">Another implication with this "Any" rule is that the Collection results are not stored (when they are not indexed). This means that all documents will be collected again in the next job. It is advised NOT to use this configuration when you plan to recollect and only wnat to collect new documents.</li>
+            <li class="listbullet">Local action IDs are local to the processing node and starts with 10000000000000000. Knowing this it is easy to distinguish local and global action while analyzing the log files. However, when local action fails, it will be stored in the database with normal ID.</li>
+            <li class="listbullet">Next options became obsolete in DataService config:<br /><br /><code class="monospace">&lt;appSettings&gt;</code><br /><code class="monospace">  &lt;!-- Intermediate Binaries Deletion --&gt;</code><br /><code class="monospace">  &lt;add key="BinaryDeletionIsEnabled" value="false" /&gt;</code><br /><code class="monospace">  &lt;add key="BinaryDeletionProcessBatchMinSize" value="100" /&gt;</code><br /><code class="monospace">  &lt;add key="BinaryDeletionOffsetTimeMs" value="120000" /&gt;</code><br /><code class="monospace">  &lt;!-- 2 min * 60 sec * 1000 ms --&gt;</code><br /><code class="monospace">  &lt;add key="BinaryDeletionProcessBatchMaxWaitingTimeMs" value="120000" /&gt;</code><br /><code class="monospace">&lt;/appSettings&gt;</code><br /><br />Configuration value of BinaryDeletionIsEnabled setting is not used in code anymore. Currently it is always false (related code was not yet removed to reduce possible impact). Because of this, rest of settings are also ignored.</li>
+            <li class="listbullet">In Legal Processing UI you will see only global actions. For example, if PST file is collected and PST Extractor is configured to be local<br /><br /><code class="monospace">&lt;DeletingList&gt;</code><br /><code class="monospace">  &lt;DocumentProcessingStepPattern producedBy="PST Extractor (Default)" outputPin="Messages"&gt;</code><br /><code class="monospace">    &lt;DocumentPattern PatternType="MimeType" PatternText="application/x-msg" /&gt;</code><br /><code class="monospace">  &lt;/DocumentProcessingStepPattern&gt;</code><br /><code class="monospace">&lt;/DeletingList&gt;</code><br /><br />there will be no MSG Converter actions in Action tab for this job.</li>
+        </ul>
+        <p class="bodytext" />
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10929.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="9731.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

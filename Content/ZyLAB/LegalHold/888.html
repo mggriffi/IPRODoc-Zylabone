@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Integrate with Microsoft Entra ID</h1>
+        <p>
+  In this topic, you'll learn how to integrate <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> with Microsoft Entra ID. When you integrate <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> with Microsoft Entra ID, you can:
+</p>
+        <ul>
+            <li class="listbullet">
+                <p>
+    Control in Microsoft Entra ID who has access to <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />.
+  </p>
+            </li>
+            <li class="listbullet">
+                <p>
+    Manage your accounts in one central location - the Microsoft Entra ID portal.</p>
+            </li>
+        </ul>
+        <h3 id="h3_1112797923" data-has-heading-anchor="true"><span class="heading3">Add&#160;<MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> from the Gallery</span>
+        </h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: To configure the integration of <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />&#160;into Azure AD, you need to add <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> from the gallery to your list of managed SaaS apps.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p>Sign in to the&#160;<a href="https://portal.azure.com" target="_blank">Microsoft Entra ID portal</a> with an Microsoft Entra ID subscription (Application Administrator account).</p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select the <b>View</b> button beneath the <b>Manage Microsoft Entra ID</b> tile.
+</p>
+                <p MadCap:conditions="Primary.Block">
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select the Enterprise applications section.
+</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-1.png" alt="" class="Thumbnail" /><![CDATA[     ]]></p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select <b>+ New application</b>.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-2.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Search for 'LEGAL HOLD' and select the <b><MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /></b> tile.
+      </p>
+                <p>
+                    <img src="../../Resources/Images/LEGAL HOLD/Azure_Portal_New_Application_Search_LH.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select <b>Sign up for LEGAL HOLD</b> (bottom right corner).
+      </p>
+                <p>
+                    <img src="../../Resources/Images/LEGAL HOLD/Azure_Portal_New_Application_Search_LH_SignUp.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select your Application Administrator account.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-5.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select <b>Consent on behalf of your organization</b>&#160;(recommended) and click <b>Accept</b>.
+      <br />With 'Consent on behalf of your organization' selected, custodians do not have to consent when logging in. It makes life easier for them.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-6.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      The <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> application is added and you will be signed in. However, since no roles have been set yet for <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />, you will be directed to the empty Custodian Portal.
+     </p>
+                <p>Close this tab and continue with Step 2 below to assign roles to <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-8.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h3 id="h3_1516082450" data-has-heading-anchor="true"><span class="heading3">Assign Users and Roles&#160;to <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /></span>
+        </h3>
+        <p>Microsoft Entra ID uses a concept called assignments to determine which users should receive access to selected apps. Decide which users and/or groups in Microsoft Entra ID need access to <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />. Once decided, you can assign these users and/or groups to <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> by following the instructions here. The following roles can be assigned to users: <a href="800.html">System Administrator, Global Hold Manager, Global Hold Viewer</a>&#160;, Matter Manager, Matter Viewer and Custodian.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note"><b>Note I</b>: At a minimum, assign one user (with an Microsoft Entra ID Application Administrator account) as System Administrator (to synchronize contacts) and one user as Global Hold Manager (to test sending preview emails).</p>
+                        <p class="Note"><b>Note II</b>: Custodians do not require a role in the Microsoft Entra ID portal when the "User assignment required" is set to No. This is preferred. Users without a role assigned will only have access to the Custodian portal of <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> when added to a hold. If you need to restrict access to the custodian portal for specific users, then you can use the custodian role assignment.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p>
+      Refresh the Enterprise applications section.
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Search for<MadCap:conditionalText MadCap:conditions="Primary.FutureDelete"> 'LEGAL HOLD'</MadCap:conditionalText> and select the <b>'IPRO LEGAL HOLD</b>' application.
+</p>
+                <p>
+                    <img src="../../Resources/Images/LEGAL HOLD/Azure_Portal_Enterprise_Applications_IPROLH.png" class="Thumbnail" /><![CDATA[      ]]></p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select the <b>1. Assign users and groups</b> tile.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-10.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select <b>+ Add user</b>.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-11.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select <b>Users and groups</b>.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-12.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      In the right pane, select a user with an <b>Microsoft Entra ID&#160;Application Administrator</b> account, and click <b>Select</b> at the bottom.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-9.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Select <b>Select a role</b>.
+      </p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-14.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      In the right pane, select the System Administrator role, and click <b>Select</b> at the bottom.
+      </p>
+                <p>
+                    <img src="../../Resources/Images/NewselectRole.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>      In the bottom left corner, select <b>Assign</b>.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-legal-hold-publication/100-2020-12-08-17.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p>Repeat step 4 to 9, but now assign a user with the Global Hold Manager Role.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note:  This user does not need to have an Microsoft Entra ID Application Administrator account.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h3 id="h3__997727675" data-has-heading-anchor="true"><span class="heading3">Synchronize Contacts</span>
+        </h3>
+        <p>In this section you'll learn how to add contacts from the Microsoft Entra ID to <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />.</p>
+        <p><b>Prerequisite</b>: You need a user (with an <b>Microsoft Entra ID Application Adminstrator</b> role)&#160;with the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> <b>System Administrator</b> role.</p>
+        <ol>
+            <li>
+                <p>
+      Go to <a href="https://legalhold.one" target="_blank">https://legalhold.one</a> (depending on previous settings, you might have another domain, like .eu)</p>
+            </li>
+            <li>
+                <p>
+      Log in with the user (with an <b>Microsoft Entra ID Application Administrator</b> role)&#160;that has the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />&#160;<b>System Administrator</b> role. 
+    </p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>As a System Administrator you can synchronize contacts from the Microsoft Entra ID Directory.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On the <a href="102.html">Address Book</a> page, select the Settings icon&#160;<img src="../../Storage/zylab-one-legal-hold-publication/zylabmanual/001-2020-01-21-1.png" alt="" />&#160;</p>
+            </li>
+            <li>
+                <p>Select <b>Synchronize Contacts</b>.
+        </p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>        By synchronizing contacts, you will always work with an up-to-date list of potential custodians.
+</p>
+                    </li>
+                </ul>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>All users from the Microsoft Entra ID will be added. You only need to do this once. The list with users will be automatically synchronized&#160;every day.</p>
+                        <p>
+                            <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/100-2020-09-14-8.png" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>        Select the user with the&#160;<MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> System Administrator role.</p>
+            </li>
+            <li>
+                <p>Select <b>Accept</b>.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note"><b>Note</b>:  To synchronize contacts, it is not required to select 'Consent on behalf of your organization' because only Legal Hold System Administrators are able to see this option. Once contacts are synchronized, the Legal Hold system administrator does not need to follow these steps again, because the list with users will be automatically synchronized every day. Other users of Legal Hold are not allowed to synchronize contacts.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Once the contacts have been synchronized, close the tab.</p>
+                <p>
+                    <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-1.png" />
+                </p>
+            </li>
+        </ol>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note"><b>Note:</b>  If a user is missing after synchronization, then the User Type might be empty or wrongly stated. It must be noted as 'Member'.</p>
+                        <p class="Note">For more information, please refer to&#160;<a href="https://docs.microsoft.com/en-us/answers/questions/32018/why-is-user-type-blank-in-azure-ad-group-members-l.html" target="_blank">User Type is Blank</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="h3__1143340847" data-has-heading-anchor="true"><span class="heading3">Enable Sending Emails</span>
+        </h3>
+        <p>In this section you'll learn how to enable <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> to send email messages on your behalf.</p>
+        <p><b>Prerequisite</b>: You need a user with the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> <b>Global Hold Manager</b> role.&#160;This user&#160;needs to have an <b>Office 365</b> license with <b>Exchange Online</b> element enabled. Please check this at Home &gt; Users &gt; "User with IPRO <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> <b>Global Hold Manager</b> role" &gt; Licenses.</p>
+        <p>
+            <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-7.png" />
+        </p>
+        <ol>
+            <li>
+                <p>Go to <a href="https://legalhold.one" target="_blank" style="text-indent: 0cm; word-spacing: normal; font-size: 11pt;">https://legalhold.one</a> (Depending on previous settings, you might have another domain, like .eu).</p>
+            </li>
+            <li>
+                <p>Log in with the user that has the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" />&#160;<b>Global Hold Manager</b> role. </p>
+            </li>
+            <li>
+                <p>In the top right user menu, you can navigate to Profile Settings.</p>
+                <p>
+                    <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/100-2021-10-05-1.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click in the Email Preferences section on Enable, to enable email sending.</p>
+                <p>
+                    <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/100-2021-10-05-2.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click Accept in the Permissions Requested pop-up to allow <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> to send emails on your behalf.</p>
+                <p>
+                    <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/100-2021-10-05-3.png" />
+                </p>
+            </li>
+            <li>
+                <p>Now you can send a test message to check if <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> is able to send email messages. Click on Send Test Message.</p>
+                <p>
+                    <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/100-2021-10-05-4.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click Yes to send the message. Check your Inbox to see if the message has been sent.</p>
+            </li>
+            <li>
+                <p>Alternatively, as a Global Hold Manager, test sending emails using the email message preview option.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li class="listnumber">
+                        <p>In the menu on the left, select Configuration &gt; <a href="131.html">Message Templates</a>.</p>
+                        <p>
+                            <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/100-2021-01-05-30.png" />
+                        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p>Select&#160;<img src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-3.png" alt="" class="ReduceButtonSize" />&#160;.</p>
+                    </li>
+                    <li class="listnumber">
+                        <p>Define a Name (for example, Test Message), Type, Subject and a write a bit of content. Click <b>Save </b>(bottom right corner).</p>
+                        <p>
+                            <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-4.png" />
+                        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p>On the Message Templates&#160;page, select Preview Message Template.</p>
+                        <p>
+                            <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-5.png" />
+                        </p>
+                    </li>
+                    <li class="listnumber">
+                        <p>Select&#160;<img src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-6.png" alt="" class="ReduceButtonSize" />&#160;.</p>
+                    </li>
+                    <li class="listnumber">
+                        <p>Select the user with the <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> <b>Global Hold Manager</b> role.</p>
+                    </li>
+                    <li class="listnumber">
+                        <p>Select <b>Accept</b>.<br />The preview message has been sent.</p>
+                        <p>
+                            <img alt="" class="Thumbnail" src="../../Storage/zylab-one-legal-hold-publication/888-2020-12-10-8.png" />
+                        </p>
+                    </li>
+                </ol>
+                <p>You have now learned how to integrate <b><MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /></b> with <b>Microsoft Entra ID</b>. You have synchronized your contacts and you have sent&#160;a preview message. All users with a <b>Global Hold Manager</b>&#160;role can now use <MadCap:variable name="VariablesZyLAB.LEGAL HOLD" /> and start creating legal holds. Continue with our <a href="500.html">Quick Start Videos</a>.</p>
+            </li>
+        </ol>
+        <script src="../../Scripts/lightense.min.js">
+        </script>
+        <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Exchange Collector</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Exchange Collector';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t10118" class="heading3">
+            <MadCap:keyword term="Exchange Collector" />Exchange Collector</p>
+        <p class="bodytext">The Exchange Collector collects objects from Exchange Online, Exchange 2010 and Exchange 2013 using Exchange Services. Objects are downloaded as MSG files. </p>
+        <p class="bodytext" />
+        <table class="tableintopic" width="618" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #C0C0C0;">
+            <tr align="left" valign="top">
+                <td bgcolor="#F2F2F2" valign="middle" style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="heading4">Exchange Online Configuration</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="bodytext">Exchange Collector impersonates the accounts listed for collection. Therefore, impersonation must be enabled in Exchange Online. <br />For Exchange Online, select Manage, go to Roles and Auditing and create a new Administrator Role Group (ImpersonationRole). Add the ApplicationImpersonation and Mail Recipients role. Also, add the ExConAdmin mailbox to the list of members of the ImpersonationRole group.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext" />
+        <table class="tableintopic" width="618" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #C0C0C0;">
+            <tr align="left" valign="top">
+                <td bgcolor="#F2F2F2" valign="middle" style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="heading4">Exchange 2010 Configuration</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="bodytext">For Exchange 2010, execute the following Exchange PowerShell commands to assign the impersonation permissions to Mailbox user ExConAdmin:<br /><br /><code class="monospace">New-ManagementRoleAssignment -Name 'ExConAdmin' -Role 'ApplicationImpersonation' -User ExConAdmin@domain.com</code><br /><br /><code class="monospace">Get-MailboxDatabase | Add-ADPermission -User ExConAdmin@domain.com -ExtendedRights Send-As,Receive-As</code></p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext" />
+        <table class="tableintopic" width="618" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #C0C0C0;">
+            <tr align="left" valign="top">
+                <td bgcolor="#F2F2F2" valign="middle" style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="heading4">Exchange 2013 Configuration</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="bodytext">Impersonation must be enabled in Exchange 2013. <br />For Exchange 2013, select Manage, go to Roles and Auditing and create a new Administrator Role Group (ImpersonationRole). Add the ApplicationImpersonation and Mail Recipients role. Also, add the ExConAdmin mailbox to the list of members of the ImpersonationRole group.<br />Execute the following Exchange PowerShell commands to assign the impersonation permissions to Mailbox user ExConAdmin:<br /><br /><code class="monospace">New-ManagementRoleAssignment -Name 'ExConAdmin' -Role 'ApplicationImpersonation' -User ExConAdmin@domain.com</code><br /><br /><code class="monospace">Get-MailboxDatabase | Add-ADPermission -User ExConAdmin@domain.com -ExtendedRights Send-As,Receive-As</code></p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext" />
+        <table class="tableintopic" width="618" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #C0C0C0;">
+            <tr align="left" valign="top">
+                <td bgcolor="#F2F2F2" valign="middle" style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="heading4">XML Configuration</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #C0C0C0;" width="618">
+                    <p class="bodytext">In the ExtractedProperties setting, MAPI properties can be marked for collection in ZyLAB.EDiscovery.Collectors.Exchange.dll.xml (\\Program Files (x86)\ZyLAB\EDiscovery\Ediscoveryservice\Assemblies\Performers):</p>
+                    <p class="bodytext">
+                        <img id="f10652" src="../../Storage/legal-processing-publication/10652.jpg" alt="" height="195" width="918" vspace="0" hspace="0" align="bottom" border="0" />
+                    </p>
+                    <p class="bodytext">For the complete list of MAPI Properties, see: http://msdn.microsoft.com/en-us/library/bb159765.aspx </p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext" />
+        <p class="bodytext">
+            <img id="f10302" src="../../Storage/legal-processing-publication/lpexchange.png" class="linkedjpegfiletemplate80" alt="Linked JPEG File Template 70" height="415.2" width="448" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Exchange Version</b>
+                <br />Select the correct Exchange Version.<br /><br /><b class="specialbold">Exchange Web Service URL</b><br />Exchange Web Services URL is optional if the Autodiscover service has been configured correctly. Using Autodiscover service is necessary in environments with multiple Client Access Servers.<br /><br /><b class="specialbold">Login Account</b><br />Define the (ExCon Admin) account. <br /><br /><b class="specialbold">Login Password</b><br />Enter the correct password.<br /><br /><b class="specialbold">Login Domain</b><br />You have the option to define the domain for authentication.<br /><br /><b class="specialbold">Mailbox accounts</b><br />Click Add to select Mailbox accounts that must be archived.<br /><br /><b class="specialbold">Folders</b><br />Select folders from which to download messages.<br /><br /><b class="specialbold">Skip Journal Body</b><br />Choose Skip Journal Body to skip journal items and only archive the attachments from journal items (as in Archiving Services, journal body text will be stored in emxjrnl field).<br />Note: Microsoft does not support journaling to Exchange Online accounts.<br /><br /><em class="emphasis">Search Filter (Optional)</em><br />Define <b class="specialbold">Subject</b>, <b class="specialbold">Body</b> and/or <b class="specialbold">Date Range</b> to filter the messages you collect.<br /><p class="listnote">Note: the date range is not dynamically adjusted. So, when you choose to collect everything until today (inclusive) and want to rerun the same collection action the next day, it will collect everything until yesterday (inclusive).</p></li>
+            <li class="listbullet">
+                <em class="emphasis">File Types to Collect</em>
+                <br />Select the appropriate File Groups. To create new File Groups, click Add New.<br />For more information on how to define File Groups, see <a id="h9546" class="" title="Define File Groups" href="9522.html" target="_self">Define File Groups</a>.</li>
+        </ul>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="http://docs.zylab.com/articles/legalprocessing/10117" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10112.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

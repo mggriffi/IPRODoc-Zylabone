@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2__326284093" data-has-heading-anchor="true">Configuration ZyLAB Workflow</h2>
+        <h4 id="h4__921250684" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>Once you have installed ZyLAB Workflow, some additional settings need to be configured. First, the ZyINDEX Workflow needs to be defined. You can choose to work with Custom Workflow Fields. Finally, if you want to import or scan documents, you need to create a template in ZySCAN.</p>
+        <h4 id="h4_1338375795" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Define the ZyINDEX Workflow</li>
+        </ol>
+        <ul>
+            <li>Create a Workflow Index</li>
+            <li>Adjust the web.config file</li>
+            <li>Create a Data Index</li>
+            <li>Create a New Web Client</li>
+            <li>Adjust ZyINDEX Workflow Settings</li>
+        </ul>
+        <ol start="2">
+            <li>Workflow and Custom Workflow Fields.</li>
+            <li>Set up a Workflow via ZySCAN.</li>
+        </ol>
+        <h4 id="h4_1624192333" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have configured ZyLAB Workflow. Now, workflows can be started. For more information, see Using ZyLAB Workflow (page <a href="using-zylab-workflow.html#O_6673">282</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3_1936991054" data-has-heading-anchor="true">ZyINDEX Workflow</h3>
+        <h3 id="h3_1087757542" data-has-heading-anchor="true">Create a Workflow index</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX is open.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Click the BUILD icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0001.png" width="32" height="45" alt="" />.</li>
+            <li>Go to File &gt; New.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0002.png" width="400" height="294" alt="" class="Thumbnail" /></li>
+            <li>Enter a Short name (max. 8 characters).</li>
+            <li>Enter a descriptive Long name (max. 80 characters). Use the name to describe the contents of the index.</li>
+            <li>Select Index Wizard. </li>
+            <li>Click OK.</li>
+            <li>Select the checkbox 'Use Windows code page'.</li>
+            <li>Click Next.</li>
+            <li>Double click on the Workflow Management module to select it.</li>
+            <p>A standard set of workflow templates is included with ZyLAB Workflow. See \\Program Files\ZyLAB\Information Management Platform\AddOn\Workflow Library.</p>
+            <li>Click Next.</li>
+            <li>If shown, read the message and click OK.</li>
+            <li>Click Next twice.</li>
+            <li>At Step 5: Define Fields, click the Wizard button.<br />The ZyLAB Database Settings Wizard appears.</li>
+            <li>Click Next.</li>
+            <li>Select the Database provider MS SQL Server.</li>
+            <li>Click Next.<br />The Module fields dialog appears, with Module Workflow Management added to the list.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0003.png" width="535" height="386" alt="" class="Thumbnail" /></li>
+            <li>Click Next.<br />The Generate database dialog appears.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0004.png" width="543" height="391" alt="" class="Thumbnail" /></li>
+            <li>Click the Construct button.</li>
+            <li>Select from the dropdown list the Provider SQLOLEDB.</li>
+            <li>Select the SQL Server that you want to use. Alternately, you can click Retrieve Servers and select the desired server from the returned list.</li>
+            <li>Click OK.</li>
+            <li>Define a Username and Password. These credentials are already known on the database server. This user is allowed to change the database and the tables within the database.</li>
+            <li>Click Create new.</li>
+            <li>Click the Generate button.<br />The database is generated.</li>
+            <li>Click Next.<br />The Connection String you defined is copied. You only have to define a separate Username and Password. This user is allowed to view and change data in the tables.</li>
+            <li>Click Test Connection.<br />If the connection is not correct, try using other settings.</li>
+            <li>Click Next until Finish.<br />You will return to the index wizard.</li>
+            <li>Click Next until Finish.</li>
+            <li>Build the index. </li>
+        </ol>
+        <h4 id="h4_369417525" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a Workflow index. This index is used for creating a Workflow. Create a data index (page <a href="configuration-zylab-workflow.html#O_6794">249</a>), for storing documents related to the Workflow (index).</p>
+        <p>&#160;</p>
+        <h3 id="h3__862235882" data-has-heading-anchor="true">Adjust the web.config file</h3>
+        <h4 id="h4__79720831" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You have installed ZyLAB Workflow.</p>
+        <p>You have created a Workflow index and defined the database settings. Now define the database settings need to be defined in the web.config file. </p>
+        <h4 id="h4_593268863" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to \\Program Files\ZyLAB\Workflow\webroot.</li>
+            <li>Open the web.config file.</li>
+            <li>Search for the connection string parameters:<br /><br />&lt;!-- fill in the connection string parameters before using workflow &#160;--&gt;<br />&#160; &#160;&#160;&lt;add name="WorkFlowConnectionString" connectionString="Data Source=;Initial Catalog=;Persist Security Info=True;User ID=;Password=" providerName="System.Data.SqlClient" /&gt;</li>
+            <li>Fill out the Data Source (the name of the database server you are using), the Initial Catalog (the database created during the creation of the Workflow index or the short index name of the Workflow index if you have left everything as default), the User ID and the Password (that you used in the Database Wizard).</li>
+            <li>Save and Close.</li>
+        </ol>
+        <h4 id="h4_644070505" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have defined the database settings in the web.config file.</p>
+        <p>&#160;</p>
+        <h3 id="h3__852235857" data-has-heading-anchor="true">Create a Data Index</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX is open.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Click the BUILD icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0001.png" width="32" height="45" alt="" />.</li>
+            <li>Go to File &gt; New.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0002.png" width="400" height="294" alt="" class="Thumbnail" /></li>
+            <li>Enter a Short name (max. 8 characters).</li>
+            <li>Enter a descriptive Long name (max. 80 characters). Use the name to describe the contents of the index.</li>
+            <li>Select Index Wizard.</li>
+            <li>Click OK.</li>
+            <li>Click Next.</li>
+            <li>Double click the XML Wrapper if you would like to create an XML Wrapper index, otherwise, click Next.</li>
+            <li>Click Next.</li>
+            <li>If shown, read the message and click OK.</li>
+            <li>Click Next until the wizard is finished.</li>
+            <li>Click Finish to complet the wizard.</li>
+        </ol>
+        <h4 id="h4_161253632" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a Workflow data index. This index will be used to archive all the (uploaded or scanned) documents needed for working with the workflow.</p>
+        <h4 id="h4_1414246154" data-has-heading-anchor="true">
+			Note</h4>
+        <p>It is advised to use a data index with XML Wrapper when adding fields.</p>
+        <p>If you want to add documents to your workflow, make sure to define the data index in the workflow template. For more information, see Create Workpool Templates (page <a href="configuration-zylab-workflow.html#O_6691">255</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3__1114879924" data-has-heading-anchor="true">Create a New Web Client</h3>
+        <h4 id="h4__983849445" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>ZyINDEX is open.</p>
+        <h4 id="h4_316270808" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Click the Web Client icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0005.png" width="36" height="31" alt="" />.</li>
+            <li>Go to File &gt; New.</li>
+            <li>Define a Long Client Name. </li>
+            <li>Define the HTTP alias (URL). </li>
+            <li>Browse to the directory where you want to store the Web Client.</li>
+            <li>If required, define a Client email address.</li>
+            <li>Select a language for the Template language.</li>
+            <li>Click OK twice.</li>
+            <li>Select the Indexes part.</li>
+            <li>Click Select.</li>
+            <li>Select the data index and the workflow index.</li>
+            <p>Make sure the workflow index is the last index in the indexlist of the web client.</p>
+            <li>Click OK.</li>
+        </ol>
+        <h4 id="h4_73326184" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a new web client.</p>
+        <p>&#160;</p>
+        <h3 id="h3__620977820" data-has-heading-anchor="true">Adjust ZyINDEX Workflow Settings</h3>
+        <h3 id="h3__1169127479" data-has-heading-anchor="true">Settings (Office Hours/Holidays)</h3>
+        <h4 id="h4_2078307855" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to define the office hours which can be used for task transfer duration. Also, holidays can be indicated.</p>
+        <h4 id="h4_1900704504" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>ZyINDEX is open. </li>
+            <li>Click the Workflow icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0006.png" width="50" height="49" alt="" />.</li>
+            <li>Click Settings.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0007.png" width="369" height="345" alt="" class="Thumbnail" /></li>
+            <li>Select the correct days.</li>
+            <li>Select the correct office hours for each day.</li>
+            <li>Define holidays:</li>
+        </ol>
+        <ul>
+            <li>To add holidays, select the correct month and day from the dropdown listboxes, and click <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0008.png" width="22" height="19" alt="" />.</li>
+            <li>To delete holidays, select the appropriate boxes and click <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0009.png" width="20" height="18" alt="" />.</li>
+        </ul>
+        <h4 id="h4__104402941" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have defined the office hours which can be used for task transfer duration. During holidays, no task transfer actions will occur.</p>
+        <p>&#160;</p>
+        <h3 id="h3_432963570" data-has-heading-anchor="true">Create Workpools</h3>
+        <h4 id="h4_559521671" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You have created a Workflow database (index). ZyINDEX is still open. Now you want to define the members of each workpool. If a user is not a member of a workpool, he has no access to the tasks available for that workpool.</p>
+        <h4 id="h4_1379503023" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select the Workflow icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0006.png" width="50" height="49" alt="" />.</li>
+            <li>Select the Workflow folder, and the database you just created.</li>
+            <p>If you do not see the database, click your right mouse button and select Refresh. The database will appear in the list.</p>
+            <li>Select Workpools.</li>
+            <li>Click Create.</li>
+            <li>Define a Name for the new workpool.</li>
+            <li>Describe the goal and/or tasks of the members of the workpool.</li>
+            <li>To add a user to the workpool, click the yellow folder icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0010.png" width="23" height="20" alt="" />.</li>
+        </ol>
+        <ul>
+            <li>Define whether the workflow database must be updated after completion of this dialog.</li>
+            <li>Select the users you want to add.<br />Users can be assigned to multiple workpools.</li>
+            <li>Click OK.</li>
+        </ul>
+        <ol start="8">
+            <li>Click Update.</li>
+            <li>Repeat steps 3 - 7 to create all the workpools you need.</li>
+        </ol>
+        <h4 id="h4_2048186236" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created one or more workpools, and added users.</p>
+        <h4 id="h4_886317500" data-has-heading-anchor="true">
+			Note</h4>
+        <p>To delete a workpool, select it and click Delete. Click OK.</p>
+        <p>To copy a workpool, select it and click Copy. Select it to make some changes.</p>
+        <p>To remove a user from a workpool, select it in the Edit screen, and click Update.</p>
+        <p>Users can (temporarily) be excluded from the workpool, for example when a user is on holiday. Click Disable in the Edit screen, and click Update. The member will be displayed in red.</p>
+        <p>Use the <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0011.png" width="23" height="20" alt="" /> arrows to navigate to the overview screen with all workpools.</p>
+        <p>Use the <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0012.png" width="15" height="18" alt="" /> and <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0013.png" width="19" height="19" alt="" /> arrows to hide or show the poolmembers.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1304201478" data-has-heading-anchor="true">Create Workpool Templates</h3>
+        <h4 id="h4_1735866668" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>Once you have created a new workflow index and workpools with members, it is possible to create workflow templates. A workflow template consists of a collection of tasks and actions. A task is assembled from a number of actions. First tasks, then actions for those tasks and finally the sequence of tasks is defined in a workflow template. Multiple workpool templates may be created for the same workpool database. By default, the Invoice Authorization template is added. Other standard templates that can be used are: Review, QuickReview, Helpdesk authorization, and ExpensesAuthorization. They can be imported via Export/Import (page <a href="configuration-zylab-workflow.html#O_6701">263</a>).</p>
+        <h4 id="h4_148338064" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>If you are not already in ZyINDEX &gt; Workflow, click the Workflow icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0006.png" width="50" height="49" alt="" />.</li>
+            <li>Select the Workflow folder, and the correct database folder.</li>
+            <li>Select Templates.</li>
+            <li>Click Create.</li>
+            <li>Define the Template Name.</li>
+            <li>Set the priority.</li>
+            <li>You can select Required, Optional or No for the option "When a workflow based on this template is created a user has to be assigned to the initial task". </li>
+            <li>If you selected Required or Optional, define whether or not the user must be notified (through email). This email will include the Workflow name, - task, - sender, and a link to the Web Client. If the user must be notified, make sure that the SMTP Server is defined correctly (see ZyINDEX Security &gt; General &gt; Settings (page <a href="general.html#O_3920">165</a>)). Also, make sure the Webserver and Web Client are indicated (see Preferences (page <a href="configuration-zylab-workflow.html#O_6688">262</a>)).</li>
+            <p>Only the first user will be notified through this option, the following user can be notified by selecting the option 'Notify transfer user' via the Transfer Matrix (step 12d) for each following step in the Workflow.</p>
+            <li>To define the Management Pool, select one of the Workpools. </li>
+            <p>Use the Table icon <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0014.png" width="24" height="20" alt="" /> to switch between selected item and overview of items.<br />Use the <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0015.png" width="23" height="20" alt="" /> and <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0016.png" width="24" height="20" alt="" /> icons to show/hide item descriptions.</p>
+            <li>To create a task, click the New folder icon <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0010.png" width="23" height="20" alt="" /> in the lower part of the screen. See Create New Task (page <a href="configuration-zylab-workflow.html#O_6703">257</a>).</li>
+            <li>To create a new action type, click the second New folder icon <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0010.png" width="23" height="20" alt="" />. See Create New Action Type (page <a href="configuration-zylab-workflow.html#O_6676">258</a>). Actions are predefined key fields that can be added to a Workflow task.</li>
+            <li>To define the sequence of tasks (the workflow task transfer), select the Table icon <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0014.png" width="24" height="20" alt="" /> (Transfer Matrix).</li>
+            <p>Use the Table icon <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0014.png" width="24" height="20" alt="" /> to switch between selected initial task and transfer matrix overview.<br />Use the <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0015.png" width="23" height="20" alt="" /> and <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0016.png" width="24" height="20" alt="" /> icons to show/hide item properties.</p>
+        </ol>
+        <ol start="1">
+            <li>Find the first task in one of the rows and the second in one of the columns (the numbers refer to the corresponding tasks). </li>
+            <li>Click on the matching cell.</li>
+            <li>Define the prompt (message) an end-user receives when this task is due. You can also use HTML code to include, for example, an image.</li>
+            <li>Select the actions that must be executed for this task, and define if the action is required (mandatory) or not.<br />If you select the option to 'Add documents', make sure you select a data index to store the documents in. This should not be a Workflow index! &#160;</li>
+            <li>Define the number of days when the workflow database must be updated <br />- from end of the task<br />- from start of the workflow<br />- before due date of the workflow</li>
+            <li>It is possible to trigger a custom VB script whenever a transfer is successfully executed. VB scripts can be used, for example, to send an email notification or to trigger a process in another system.</li>
+            <li>If you want to assign the next task to a specific user (group), select the checkbox and select a task from the dropdown listbox.</li>
+            <li>If you want to display the transfer options as radiobuttons, select that checkbox.</li>
+            <li>Click OK.</li>
+        </ol>
+        <ol start="13">
+            <li>To create a new Document Category, select the third New folder icon <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0010.png" width="23" height="20" alt="" />. See Create New Document Category (page <a href="configuration-zylab-workflow.html#O_6674">260</a>).</li>
+            <p>With Document Categories you can search your document Index by putting queries in the document fields in ZyINDEX. When you start a new workflow, all the documents are shown that are linked to the query.</p>
+            <li>Click Update.</li>
+            <li>Repeat steps 4 - 12 to create another workpool template.</li>
+        </ol>
+        <h4 id="h4__1221898390" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created one or more workpool templates. The first task will be highlighted green.</p>
+        <p>&#160;</p>
+        <h3 id="h3__854733607" data-has-heading-anchor="true">Create New Task</h3>
+        <h4 id="h4__1798324541" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Define a name for the Task.</li>
+            <li>Associate one or more workpools with the task.<br />Click the table icon <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0014.png" width="24" height="20" alt="" /> to view/hide all workpools. The blue workpool is selected.<br />Click the <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0016.png" width="24" height="20" alt="" /> and <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0015.png" width="23" height="20" alt="" /> icons to view/hide additional information on all workpools. &#160;</li>
+            <li>Define the Type of the task. Choose from</li>
+        </ol>
+        <ul>
+            <li>Regular (single user, multiple target states)<br />One user must complete a task, another user must complete the next task, etc.</li>
+            <li>Review (multiple users, single target state)<br />If you select Review, define the default number of reviewers.<br />For example, 2 users must review a task. When both reviewers are done, the workflow will continue with the user of the next task.</li>
+        </ul>
+        <ol start="4">
+            <li>Define the Duration of the task.<br />This duration time is used to calculate a due date for the workflow when this task is active.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h4 id="h4__462976731" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a new task.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1800417458" data-has-heading-anchor="true">Create New Action Type</h3>
+        <h4 id="h4_237944831" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Define a Name for the action type.</li>
+            <li>Select whether or not the action should be disabled for now. </li>
+            <li>Define the Data Type. Choose from Date, DateTime, Float, Logical, Number, Text, Memo.</li>
+            <li>Define the Action Type. Choose from Custom Action, Auto Increment, or Workflow Counter (see Note below).</li>
+            <li>Optionally, define the Control Type. If you do not select a Control Type, it will be automatically selected in the workflow.</li>
+        </ol>
+        <ul>
+            <li>If you selected Date, select StandardDate.</li>
+            <li>If you selected DateTime, select DateTimeControl.</li>
+            <li>If you selected Float or Text, choose from CurrencyControl, FileControl, PincodeControl, TextControl, TextAreaControl, MultiSelect, SingleSelect.</li>
+            <li>If you selected Logical, choose from LogicalCombo, MultiSelect, SingleSelect.</li>
+            <li>If you selected Number or Memo, choose from CurrencyControl, FileControl, PincodeControl, TextControl, TextAreaControl, MultiSelect, SingleSelect.<br />If you select CurrencyControl, and want to change the currency (by default EUR €), go to C:\Program Files\ZyLAB\Workflow\webroot\App_Data\Settings.xml. Open the Settings file, and change the currency in the localization/CurrencyCulture node using, for example, en-US, en-GB, es-MX, de-DE, or ja-JP. The Culture node defines numerical and date settings.<br />If you select MultiSelect or SingleSelect, click Edit to define the values users are allowed to choose from. Define a value, click enter, define the next value, etc. With MultiSelect, users can select one or more values from a dropdown listbox. With SingleSelect, users can only select one value from a dropdown listbox.</li>
+        </ul>
+        <ol start="6">
+            <li>Optionally, define a default value and/or format mask. If you open a Workflow template, you will see the default value for this action type. For example, always a 100 euro fine.</li>
+        </ol>
+        <ul>
+            <li>If you selected Date/Time, you can use the following formats:<br />YYYY year, eg 2006<br />YY year, eg 06 (2006)<br />MM month, eg 09 (September)<br />DD day of the month, eg 31<br />hh hour of the day, eg 23<br />mm minute of the hour, eg 08<br />ss second of the minute, eg 56<br />(for an overview of all other (more technical) formats, see the ZyLAB Information Platform Manual &gt; Glossary &gt; Strftime specifiers)</li>
+            <li>If you did not select Date/Time, you can still use the date formatting. However, in that case the current Date/Time will be used. There are a few possibilities for the used Data Type:<br />- String (or Memo): replace %s with the default text.<br />- Whole number (Integer): replace c with the default number. <br />If the default number is 3, and the format is ccc, it will result in 003 (leading zeros).<br />Other examples: Value is 76, format is YYYY-MM-ccc which results in 2006-01-076. Value is 20060103231156 (a date), format is %Y %b %d %I:%M:%S %p which results in 2006 Jan 03 11:11:56 PM.</li>
+        </ul>
+        <ol start="7">
+            <li>Click OK.</li>
+        </ol>
+        <h4 id="h4_2076020303" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a new action type.</p>
+        <h4 id="h4_806049475" data-has-heading-anchor="true">
+			Note</h4>
+        <p>If you want to be able to count each occasion a Workflow item is created, you can create a Workflow counter. </p>
+        <p>As the Data Type, choose Number.</p>
+        <p>As the Action Type, choose Workflow Counter.</p>
+        <p>Users will find the Workflow counter in the Workflow Editor in ZyFIND.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1528766073" data-has-heading-anchor="true">Create New Document Category</h3>
+        <p>With Document Categories you can search your document index, by putting queries in the document fields in ZyINDEX. When you start a new workflow, all documents that are linked to the query are shown.</p>
+        <h4 id="h4__844143442" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Define a name for the Document Category. For example, Education.</li>
+            <li>Enter a description. For example, Type of education required. </li>
+            <li>Select an index from the dropdown listbox. This document index will be searched. The index may, for example, consist of CVs.</li>
+            <li>Click Edit to define the query. </li>
+            <li>Select the fields, and define the field values. For example, Technical.</li>
+            <li>Click OK twice.</li>
+        </ol>
+        <h4 id="h4__448138154" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a new document category. Each time a workflow item is created, documents that correspond with this query, will be linked dynamically to the workflow. The Workflow editor in ZyFIND/Webclient will show the documents which correspond with the fieldvalue/query defined as the Document Category.</p>
+        <h4 id="h4__1241119173" data-has-heading-anchor="true">
+			Note</h4>
+        <p>To link the Document Category to an Action, use the # sign. For example, if you have a workflow action called "PropertyRegistrationNumber" and an index with a field called "PropertyId", then the document category for the workflow could be defined as "PropertyId = #PropertyRegistrationNumber".</p>
+        <p>&#160;</p>
+        <h3 id="h3_1316094822" data-has-heading-anchor="true">VB Scripts</h3>
+        <p>VB scripts can be used, for example, to send an email notification or to trigger a process in another system.</p>
+        <p>Workflow XML and VB Scripting</p>
+        <p>OnTaskBeforeTransfer<br />Sub OnTaskBeforeTransfer(WorkflowXmlDocument, PropertyXmlDocument)<br />&#160; &#160;WorkflowXmlDocument.save "C:\Temp\WorkflowXmlDocument.xml" <br />&#160; &#160;PropertyXmlDocument.save "C:\Temp\PropertyXmlDocument.xml" <br />End Sub</p>
+        <p>OnTaskAfterTransfer<br />Sub OnTaskAfterTransfer(WorkflowXmlDocument)<br />&#160; &#160;WorkflowXmlDocument.save "C:\Temp\WorkflowXmlDocumentAfter.xml" <br />End Sub </p>
+        <p>Archiving workflow actions as document data</p>
+        <p>Triggering events in other systems</p>
+        <p>&#160;</p>
+        <h3 id="h3_788104776" data-has-heading-anchor="true">Preferences</h3>
+        <h4 id="h4__72274588" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to define the Preferences.</p>
+        <p>You want to send an email to a user who has been assigned with a task. This email contains a link to the Web Client, where the user can continue the workflow. In order to enable this link, the Preferences need to be filled out.</p>
+        <h4 id="h4__158736768" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Define IncludeCounts. Obsolete.</li>
+            <li>Define IncludeCounts (Management). Obsolete.</li>
+            <li>Define MaxResults. These are the maximum number of rows shown per page in the Workflow tabs.</li>
+            <li>Define MaxResults (Management). These are the maximum number of rows shown per page in the Workflow Management tab.</li>
+            <li>Define the TocRefreshTime. Obsolete.</li>
+            <li>Define the TocRefreshTime (Management). Obsolete.</li>
+            <li>Insert the Long index name of the (ZyNET) Web Client with the correct indexes for the workflow.</li>
+            <li>Insert the (DNS) name of the Webserver (which can be accessed from an extern location).</li>
+            <li>The ZyNetUrl defines the location where mails are sent to (only used if a workflow is created by ZyNET (Web Client)) or ZySCAN(Service)).</li>
+        </ol>
+        <h4 id="h4_1046424403" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have defined the Preferences.</p>
+        <p>The link to the Web Client will be enabled in the email to the user who has been assigned with a task.</p>
+        <p>&#160;</p>
+        <h3 id="h3__939064260" data-has-heading-anchor="true">Export/Import</h3>
+        <h4 id="h4_73461189" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to export or import information regarding Workflow, for example templates, users, data. Standard templates include Invoice Authorization, Review, QuickReview, Helpdesk authorization, and ExpensesAuthorization.</p>
+        <h4 id="h4_181444356" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Define which types of information you want to export or import. Choose from:</li>
+        </ol>
+        <ul>
+            <li>Include related objects<br />Select this option if you do not want to forget to export all related objects. For example, Templates are related to Workpools (but Workpools do not necessarily need Templates); A task in a template cannot be completed without a member of a Workpool executing that task. If you do not select Include related objects, you can choose to export/import only Templates. Data is related to Indexes (but Indexes do not necessarily need Data). If you do not select Include related objects, you can choose to export/import only Data.</li>
+            <li>Templates<br />Workflow templates, including all Tasks and Action Types.</li>
+            <li>Workpools<br />WorkPools and PoolMembers.</li>
+            <li>Indexes<br />DocumentIndexes (a list of all indexes which include documents related to a Workflow)</li>
+            <li>Data<br />Workflows, ActionValues, WorkflowDocuments and TransitionUsers (per executed task a record is created in the TransitionUser table of the database)</li>
+        </ul>
+        <ol start="2">
+            <li>If you want to export to an XML file, define the file you want to export to, and click Export.</li>
+        </ol>
+        <ul>
+            <li>Overwrite existing file<br />During Export an existing XML file will be replaced.</li>
+            <li>Keep original object id's<br />Each object in the Workflow database had its own unique ID number, a GUID (for example, {A85924EA-A572-4F92-B454-A1F76F118C44}). By default, this number will not be imported/exported to prevent occurrences of the same number in the database (possible if a file with saved GUIDs is imported twice). Under certain circumstances the GUIDs should remain the same. For example, when migrating from an Ms-Access database to an Sql Server. </li>
+            <li>Export as friendly XML<br />Recommended. If you do not export as friendly XML, the XML is difficult to read and understand. There is no clear structure; all database records are placed one after the other.</li>
+            <li>Remove template locking<br />Recommended. Templates are locked when working on them in ZyINDEX. This lock information could cause problems. </li>
+        </ul>
+        <ol start="3">
+            <li>If you want to import an XML file (for example, a template), select the file you want to import from the dropdown listbox, and click Import.</li>
+        </ol>
+        <ul>
+            <li>Assign original object id's (if possible)<br />Only possible, if you exported with the original object id's (see step two, point two).</li>
+            <li>Import all objects present in the file (selected object types will be ignored)<br />If this option is selected, you do not have to choose the objects to import. </li>
+            <li>Replace existing objects (warning: existing data will be permanently deleted!)<br />Every table in which objects are imported, are cleaned first.</li>
+        </ul>
+        <h4 id="h4__1043674336" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have exported or imported information.</p>
+        <p>&#160;</p>
+        <h3 id="h3__523066205" data-has-heading-anchor="true">Archiving</h3>
+        <h4 id="h4_1625446482" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to archive completed workflows to improve performance.</p>
+        <h4 id="h4_1003371106" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select the Workflow icon: <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0006.png" width="50" height="49" alt="" />.</li>
+            <li>Select the Workflow folder, and the correct database folder.</li>
+            <li>Select Archiving.</li>
+            <li>Select a date. Workflows that are completed before that date will be archived.</li>
+            <li>Define the number of completed items.</li>
+            <li>Select a target index. This target or archive index is created with the Workflow Archive template in ZyINDEX Build. </li>
+            <li>Click Archive.</li>
+        </ol>
+        <h4 id="h4_2030127925" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have archived completed workflows. The completed workflows are stored as XML files in the XML folder of a Workflow Archive index. All archived workflows are searchable. The Workflow Archive index can be connected to a web client.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1374371170" data-has-heading-anchor="true">Action Codes</h3>
+        <p>In the task transfer schedule overview of the Workpool templates, cells contain an encoding of the programmed actions. View the table below for an explanation:</p>
+        <table border="0" cellspacing="0" cellpadding="0" class="CHTable">
+            <tr>
+                <td valign="top" width="84">
+                    <p>Code</p>
+                </td>
+                <td valign="top" width="120">Action</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">S</td>
+                <td valign="top" width="120">Sign</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">C</td>
+                <td valign="top" width="120">Comment</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">D</td>
+                <td valign="top" width="120">Add Comment</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">P</td>
+                <td valign="top" width="120">Specify Priority</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">T</td>
+                <td valign="top" width="120">Specify Due Date</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">Red</td>
+                <td valign="top" width="120">Required</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">!</td>
+                <td valign="top" width="120">Run Script</td>
+            </tr>
+            <tr>
+                <td valign="top" width="84">[0-9]</td>
+                <td valign="top" width="120">Custom Action</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h3 id="h3__1574270569" data-has-heading-anchor="true">Set up a Workflow via ZySCAN</h3>
+        <h4 id="h4__2047482170" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to start a workflow whenever a document is exported to an index/database. Either the workflow template and user can be specified (for run unattended processing) or the user can set this interactively (in attended processing).</p>
+        <h4 id="h4__1726552477" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZySCAN. </li>
+            <li>Go to Options &gt; Global Options.</li>
+            <li>Select a Workflow index from the dropdown listbox.</li>
+            <li>Click OK.</li>
+            <li>Go to Template &gt; New template.</li>
+            <li>Define a new template, or choose an existing template to base the new one on.</li>
+            <li>Click Next.</li>
+            <li>Select Use XML internally.</li>
+            <li>Select External Link.</li>
+            <li>Select another index, in which you want to store your data (documents related to the Workflow index selected in step 3). This should not be a Workflow index, but a standard index.</li>
+            <li>Select the checkbox Create ZyLAB Workflow.</li>
+            <li>Click Next.</li>
+            <li>Select ZySCAN or ZyIMPORT. Select ZyFIELD, ZyOCR, and ZyEXPORT.</li>
+            <li>Click Next.</li>
+            <li>Define your settings for ZySCAN or ZyIMPORT.</li>
+            <li>Click Next.</li>
+            <li>Click ZyLAB Workflow.</li>
+            <li>Select a template, and select a user.</li>
+            <p>If the Workflow template allows it, more users can be selected (see Create New Task (page <a href="configuration-zylab-workflow.html#O_6703">257</a>) &gt; Type)</p>
+            <li>Click OK.</li>
+            <li>Click Next twice.</li>
+            <li>Notice that no export directories can be chosen.</li>
+            <li>Click Next.</li>
+            <li>Click Finish.</li>
+        </ol>
+        <h4 id="h4_556896158" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have created a job template which can be run to start a Workflow. For unattended processing, see the ZySCAN manual &gt; (Semi-)automatic job processing.</p>
+        <h4 id="h4__755658452" data-has-heading-anchor="true">
+			Note</h4>
+        <p>For more information on creating a template, see the Standard User Manual &gt; Preparing documents for full-text retrieval &gt; Creating job templates.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1509905588" data-has-heading-anchor="true">Security</h3>
+        <h3 id="h3__1876820022" data-has-heading-anchor="true">Automatically Log in to Workflow: Enable Windows Authentication</h3>
+        <h4 id="h4__366538490" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to enable Windows Authentication, which makes it possible for users to automatically login to ZyLAB Workflow. Windows Authentication does not prompt users for a user name and password. If the authentication exchange initially fails to identify the user, the browser will prompt the user for a Windows user account user name and password.</p>
+        <h4 id="h4__1834172301" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to \\Program Files\ZyLAB\Workflow\webroot</li>
+            <li>Open the web.config file.</li>
+            <li>Scroll down to the authentication mode:<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0017.png" width="642" height="280" alt="" class="Thumbnail" /></li>
+            <li>Add comment code around the authentication mode Forms.</li>
+            <li>Delete the comment code around authentication mode Windows.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0018.png" width="487" height="174" alt="" class="Thumbnail" /></li>
+            <li>Save and close the web.config file.</li>
+        </ol>
+        <h4 id="h4__1393868679" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have enabled Windows Authentication and will be able to automatically login to ZyLAB Workflow.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1981793324" data-has-heading-anchor="true">Digital Signature</h3>
+        <h4 id="h4_437153501" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>Workflow is secured with a built-in digital signing action, for which users need to have a pincode. With this pincode workflows can be authenticated. A pincode is not the same as a user password. Pincodes are generated in ZyINDEX. </p>
+        <h4 id="h4__1992257869" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Security.</li>
+            <li>Select General &gt; Users &gt; Available Users.</li>
+            <li>Select a user.</li>
+            <li>Click the "Generate a new PIN code for the user" button <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0019.png" width="18" height="18" alt="" />.</li>
+            <li>Determine if the user should have a 4 or 6 digit PIN code. <br />A 6 digit PIN code is safer, but a 4 digit PIN code is easier to remember.</li>
+            <li>Determine the expiration time (number of days valid) of the pincode.</li>
+            <li>Fill out the email address of the user. <br />An email will be sent to the user with the PIN code in the subject line.</li>
+            <li>Fill out the email address of the sender.<br />This can be a random address.</li>
+            <li>Click Generate.</li>
+        </ol>
+        <h4 id="h4__861574781" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have generated a PIN code for a specific user.</p>
+        <h4 id="h4_68543738" data-has-heading-anchor="true">
+			Note</h4>
+        <p>Import users to the user list if they are not on it already. For more information, see the ZyLAB Information Management Platform Manual &gt; ZyINDEX &gt; Security &gt; General &gt; Users &gt; Import Users (page <a href="general.html#O_3929">173</a>).</p>
+        <p>&#160;</p>
+        <h3 id="h3__111376853" data-has-heading-anchor="true">Enable Quickbuild for ASP.NET User</h3>
+        <p>To enable quickbuild for ASP.NET users, enable writing on</p>
+        <p>"..../ZyLAB Data/Index Data/[Data Index]" to store documents</p>
+        <p>"..../ZyLAB Data/Indexes/[Data Index]" to store quickbuild options</p>
+        <p>&#160;</p>
+        <h4 id="h4__52396101" data-has-heading-anchor="true">
+			Quickbuild</h4>
+        <p>Use Quick Build to quickly index documents that are marked new, changed or deleted. All other documents are skipped.</p>
+        <p>Marked documents are known to ZyINDEX, even before indexing starts, because they have an entry in the database. These references to the documents are created when they are exported to the index data directories with ZySCAN or when they are imported to the index data folder with the ZyINDEX import directory. Since only marked documents are indexed and all other documents are skipped, the indexing process is accelerated. </p>
+        <p>You can only use Quick Build if a link to the index is present. Also, check if 'Quick build enabled'' is selected (ZyINDEX &gt; Index Settings &gt; Settings).</p>
+        <p>&#160;</p>
+        <h3 id="h3__1813954479" data-has-heading-anchor="true">Adjust Functionality via the Settings.xml file</h3>
+        <h4 id="h4_1702257528" data-has-heading-anchor="true">
+			Change the Currency</h4>
+        <p>If you want to change the currency (by default EUR €), go to C:\Program Files\ZyLAB\Workflow\webroot\App_Data\Settings.xml. Open the Settings file, and change the currency in the localization/CurrencyCulture node using, for example, en-US, en-GB, es-MX, de-DE, or ja-JP. </p>
+        <h4 id="h4__1953221314" data-has-heading-anchor="true">
+			Show or Hide the Search tab</h4>
+        <p>The Search tab can be hidden/shown via the settings.xml file. Go to \\Program Files\ZyLAB\Workflow\webroot\App_Data\ and open the settings.xml file. Set 'searchtab visible' to false or true and save the file.</p>
+        <p>&lt;options&gt;</p>
+        <p>&#160;&#160;&#160; &lt;!-- set visible = false to hide search tab --&gt;</p>
+        <p>&#160;&#160;&#160; &lt;searchtab visible="true"/&gt;</p>
+        <p>&#160;&#160;&#160; &lt;!-- set enableInitialDocument to true to be able to show the initial document--&gt;</p>
+        <p>&#160;&#160;&#160; &lt;newWorkflow enableInitialDocument="false" initialDocumentMandatory="false"/&gt;</p>
+        <p>&#160; &lt;/options&gt;</p>
+        <h4 id="h4__1878226164" data-has-heading-anchor="true">
+			Show or Hide Uploading a Document to a New Workflow</h4>
+        <p>When creating a new workflow the ability to upload a document can be hidden/shown via the settings.xml file. Go to \\Program Files\ZyLAB\Workflow\webroot\App_Data\ and open the settings.xml file. Set 'newWorkflow enableInitialDocument' to false (users will not be able to upload a document) or true (users will be able to upload a document) and save the file.</p>
+        <p>Uploading a document to a new workflow can be made mandatory; Set 'initialDocumentMandatory' to true.</p>
+        <h4 id="h4_1540334074" data-has-heading-anchor="true">
+			Add Custom Workflow Fields</h4>
+        <p>See Workflow and Custom Workflow Fields (page <a href="configuration-zylab-workflow.html#O_6735">275</a>).</p>
+        <h4 id="h4_703954500" data-has-heading-anchor="true">
+			Change the order of the mappings and/or define an alternative mapping<a href="configuration-zylab-workflow.html#h4_703954500" class="CHHeadingLink" title="Link to this heading" aria-hidden="true">]</a></h4>
+        <p>If you want to change the order of the mappings and/or define an alternative mapping, the codes &lt;mappings ordered="true|false"&gt;, &lt;own ordered="true|false"&gt;, &lt;management ordered="true|false"&gt; and/or &lt;completed ordered="true|false"&gt; can be added to the settings.xml file, located at \\Program Files\ZyLAB\Workflow\webroot\App_Data. All nodes can contain fields:</p>
+        <p>&lt;mappings ordered="true"&gt;<br /><br />This node will replace the node &lt;mappings&gt;; The columns in the grid will have the same order as the columns in the settings file. </p>
+        <p>New (optional) childs of this node are:</p>
+        <ul>
+            <ul>
+                <li>&lt;own ordered="true"&gt; <br />&lt;field ...<br />&lt;/own&gt;<br /><br />This node means a separate configuration for the own workflow grid. Order will not be obtained from the mappings node.</li>
+                <li>&lt;management ordered="true"&gt; <br />&lt;field ...<br />&lt;/management &gt;<br /><br />This node means a separate configuration for the management grid. Order will not be obtained from the mappings node.</li>
+                <li>&lt;completed ordered="true"&gt; <br />&lt;field ...<br />&lt;/completed&gt;<br /><br />This node means a separate configuration for the completed grid. Order will not be obtained from the mappings node.</li>
+                <li>&lt;field ... <br />&lt;/mappings&gt;<br /><br />This node means a separate configuration for all grids that are not configured. </li>
+            </ul>
+        </ul>
+        <p>&#160;</p>
+        <h3 id="h3__243463223" data-has-heading-anchor="true">Workflow and Custom Workflow Fields</h3>
+        <h4 id="h4__1548642498" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to add Custom Workflow Fields to your workflow to add functionality. &#160;</p>
+        <h4 id="h4__451987619" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Build.</li>
+            <li>Open the workflow data index.</li>
+            <li>Add fields (step 4 to 13). If fields are already added, continue with step 14.</li>
+            <li>Click Define Fields <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0020.png" width="15" height="16" alt="" />.</li>
+            <li>Click Add definition.<br />The New Field Definition window appears.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0021.png" width="486" height="327" alt="" class="Thumbnail" /></li>
+            <li>Fill out the Name of the field definition. </li>
+            <p>A field name may not contain spaces! &#160;&#160;</p>
+            <li>Select a Type from the dropdown list. </li>
+            <li>Select the Index tab.<br /><img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0022.png" width="486" height="327" alt="" class="Thumbnail" /></li>
+            <li>If the data index was created with an XML Wrapper, select Module field &gt; XML Wrapper. </li>
+            <p>It is advised to use a data index with XML Wrapper when adding fields.</p>
+            <li>Click OK. </li>
+            <li>To add more fields, repeat step 5 to 10.</li>
+            <li>Click OK.</li>
+            <li>Build the index.</li>
+            <li>Go to \\Program Files\ZyLAB\Workflow\webroot\App_Data</li>
+            <li>Open the settings.xml file.</li>
+            <li>Scroll to line &lt;field id="Documents" hide="true"&gt;Number of Documents&lt;/field&gt;</li>
+            <li>Below this line, add the following line for each custom workflow field:<br /><br />&lt;field id="Custom01" hide="false"&gt;Custom01&lt;/field&gt;</li>
+            <li>Scroll to section &lt;customfields&gt;</li>
+            <li>Replace &lt;!-- fill here your own document fields --&gt; with &lt;field id="Custom01" name="Custom01" property="Custom01" type="2"&gt;&lt;/field&gt; for each custom workflow field.</li>
+            <li>Scroll to section &lt;mappings&gt;</li>
+            <li>Replace &lt;!-- fill here your own document fields --&gt; with &lt;field id="Custom01" hide="false" width="200"&gt;Custom01&lt;/field&gt; for each custom workflow field.</li>
+            <li>Save the settings.xml file.</li>
+        </ol>
+        <h4 id="h4_501805055" data-has-heading-anchor="true">
+			Result<a href="configuration-zylab-workflow.html#h4_501805055" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h4>
+        <p>You have added Custom Workflow Fields to your workflow.</p>
+        <h4 id="h4__276765536" data-has-heading-anchor="true">
+			Note<a href="configuration-zylab-workflow.html#h4__276765536" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h4>
+        <p>If you want to change the order of the mappings and/or define an alternative mapping, the codes &lt;mappings ordered="true|false"&gt;, &lt;own ordered="true|false"&gt;, &lt;management ordered="true|false"&gt; and/or &lt;completed ordered="true|false"&gt; can be added to the settings.xml file, located at \\Program Files\ZyLAB\Workflow\webroot\App_Data. All nodes can contain fields:</p>
+        <p>&#160;</p>
+        <p>&lt;mappings ordered="true"&gt;<br /><br />The columns in the grid will have the same order as the columns in the settings file. </p>
+        <p>&#160;</p>
+        <p>New (optional) childs of this node are:</p>
+        <p>&lt;own ordered="true"&gt; <br />&lt;field ...<br />&lt;/own&gt;<br /><br />This node means a separate configuration for the own workflow grid. Order will not be obtained from the mappings node.</p>
+        <p>&lt;management ordered="true"&gt; <br />&lt;field ...<br />&lt;/management &gt;<br /><br />This node means a separate configuration for the management grid. Order will not be obtained from the mappings node.</p>
+        <p>&lt;completed ordered="true"&gt; <br />&lt;field ...<br />&lt;/completed&gt;<br /><br />This node means a separate configuration for the completed grid. Order will not be obtained from the mappings node.</p>
+        <p>&lt;field ... <br />&lt;/mappings&gt;<br /><br />This node means a separate configuration for all grids that are not configured. </p>
+        <p>&#160;</p>
+        <h3 id="h3__1577476773" data-has-heading-anchor="true">Update Document Fields</h3>
+        <h4 id="h4_995647228" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to regularly update document fields.</p>
+        <h4 id="h4__1188627841" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Create a scheduled task. Creating a scheduled task is different for each Operating System. </li>
+        </ol>
+        <ol start="1">
+            <li>For Windows XP, for example, go to Start &gt; Control Panel &gt; Scheduled Tasks. </li>
+            <li>Double click on Add Scheduled Task.<br />The Scheduled Task Wizard will appear.</li>
+            <li>Click Browse.</li>
+            <li>Go to \\Program Files\ZyLAB\Workflow\webroot\bin and select ZyLAB.Workflow.TaskConsole.exe</li>
+            <li>Define the name for this task: ZyLAB.Workflow.TaskConsole UpdateFields</li>
+            <li>Define how often this task should be performed.</li>
+            <li>Click Next.</li>
+            <li>Define the time schedule more precise.</li>
+            <li>Click Next.</li>
+            <li>Define the Windows user name and password.<br />&#160;<br />If Windows authentication is used in the configuration (see Automatically Log in to Workflow: Enable Windows Authentication (page <a href="configuration-zylab-workflow.html#O_6795">269</a>)), this should be a Windows user known by ZyLAB Workflow. <br />If a ZyLAB User will be used, a Windows user only has to be able to start an application.<br /><br />For using ZyLAB user authentication, the user has to be defined in the ZyLAB.Workflow.Taskconsole.exe.config file, located at \\Program Files\ZyLAB\Workflow\webroot\bin. See Note below.</li>
+            <li>Click Next.</li>
+            <li>Click Finish.</li>
+        </ol>
+        <h4 id="h4__922404454" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have defined how often document fields should be updated.</p>
+        <h4 id="h4__2142176249" data-has-heading-anchor="true">
+			Note</h4>
+        <p>Define the ZyLAB Platform username and password in the ZyLAB.Workflow.Taskconsole.exe.config file, located at \\Program Files\ZyLAB\Workflow\webroot\bin and set the UseFormsAuthentication value to true.</p>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0023.png" width="588" height="159" alt="" class="Thumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h3 id="h3__819382632" data-has-heading-anchor="true">Notify Users of Due Tasks</h3>
+        <h4 id="h4__191546788" data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You want to notify a user a few days in advance of due tasks.</p>
+        <h4 id="h4_92972857" data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Create a scheduled task. Creating a scheduled task is different for each Operating System. </li>
+        </ol>
+        <ol start="1">
+            <li>For Windows XP, for example, go to Start &gt; Control Panel &gt; Scheduled Tasks. </li>
+            <li>Double click on Add Scheduled Task.<br />The Scheduled Task Wizard will appear.</li>
+            <li>Click Browse.</li>
+            <li>Go to \\Program Files\ZyLAB\Workflow\webroot\bin and select ZyLAB.Workflow.TaskConsole.exe</li>
+            <li>Define the name for this task: ZyLAB.Workflow.TaskConsole notify [DueDays]<br />Where DueDays are the number of days before the scheduled date that the task should be performed by the user.</li>
+            <li>Define when this task should be performed. In this case: One time only.</li>
+            <li>Click Next.</li>
+            <li>Define the start time and start date.</li>
+            <li>Click Next.</li>
+            <li>Define the Windows user name and password.<br />&#160;<br />If Windows authentication is used in the configuration (see Automatically Log in to Workflow: Enable Windows Authentication (page <a href="configuration-zylab-workflow.html#O_6795">269</a>)), this should be a Windows user known by ZyLAB Workflow. <br />If a ZyLAB User will be used, a Windows user only has to be able to start an application.<br /><br />For using ZyLAB user authentication, the user has to be defined in the ZyLAB.Workflow.Taskconsole.exe.config file, located at \\Program Files\ZyLAB\Workflow\webroot\bin. See Note below.</li>
+            <li>Click Next.</li>
+            <li>Click Finish.</li>
+        </ol>
+        <h4 id="h4__450623019" data-has-heading-anchor="true">
+			Result</h4>
+        <p>You have defined when and how a user is notified of due tasks.</p>
+        <h4 id="h4__677997033" data-has-heading-anchor="true">
+			Note</h4>
+        <p>Define the ZyLAB Platform username and password in the ZyLAB.Workflow.Taskconsole.exe.config file, located at \\Program Files\ZyLAB\Workflow\webroot\bin and set the UseFormsAuthentication value to true.</p>
+        <p>
+            <img src="../../Storage/zylab-information-management-publication/configuration-zylab-workflow-img0023.png" width="588" height="159" alt="" class="Thumbnail" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Opticon/Concordance</h1>
+        <p><b>.OPT File
+</b>
+            <br />
+        </p>
+        <p>The load file for a Concordance database with an Opticon (or, more recently called, a Concordance Image) image viewer is called an .OPT file. The Opticon load file is a page level load file (see the .OPT example line below), with each line representing one image. </p>
+        <p><b>.OPT example line:
+</b>
+        </p>
+        <p>ZY00001,ZY01,D:\IMAGES\001\ZY00001.TIF,Y,,,3</p>
+        <p>&#160;</p>
+        <p>The fields are, from left to right:</p>
+        <p><span class="bodytext"><ul class="listbullet"><li class="listbullet">Image Key – (ZY00001) – The image (page) identifier</li><li class="listbullet">Volume Name – (ZY01) – The volume identifier. The volume name is not required, but must have comma (blank fields are two consecutive commas with no other text in between, e.g. ",,")</li><li class="listbullet">Full path to image – (D:\IMAGES\001\ZY00001.TIF) – a path to the image to be loaded</li><li class="listbullet">Image type – (Y) – Document marker – a "Y" indicates the start of a unique document</li><li class="listbullet">Doc Break – (blank) – unused</li><li class="listbullet">Box break – (blank) – unused</li><li class="listbullet">Number of pages in document – (3) – often used to store page count</li></ul><br /></span>
+        </p>
+        <p><b>.DAT File
+</b>
+        </p>
+        <p>For the searchable text that gets loaded in the Concordance database, a separate .DAT file is produced. The first line of the .DAT file contains a 'header row' (with delimiters) that lists the field names that correspond to the data type between each delimiter in each row. When loading a .DAT file, this is the simplest way to see if the data loaded correctly.</p>
+        <p>Each row in the file is equal to a record in the database. Concordance displays records in the same order in which they were loaded. Therefore, a disordered load file results in a disordered database.
+Each value between a delimiter is equal to a field within a record in the database. </p>
+        <p>For more information, consult your vendor.
+</p>
+    </body>
+</html>

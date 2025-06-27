@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Assisted Review: Project Actions</h1>
+        <p>There are multiple actions you can take to manage your Assisted Review project. The documentation below details these actions. </p>
+        <p>
+            <img src="../../Resources/Images/ONE/Assisted_Review_Project_Menu.png" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Most of the following actions can only be performed once a project has been created</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Add Project</h3>
+        <p>In a project, documents from a matter are reviewed and analyzed.</p>
+        <p>From the dropdown project menu, select <b>+ Add Project</b>. The Create Project Wizard opens. For more information on the options available in this wizard, see <MadCap:xref href="Assisted_Review/Create_New_Assisted_Review_Project.html">Create A New Assisted Review Project</MadCap:xref>.</p>
+        <h3>Add Issue</h3>
+        <p>From the dropdown project menu, you can add a new issue to your project.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Assisted_Review_Add_Issue.flsnp" />
+        <h3>Recalculate Vectors</h3>
+        <p>Text documents are converted to a document vector representation suitable for the system's learning algorithm, which classifies documents as being responsive or not responsive for an issue.</p>
+        <p>New documents might be added to the matter on which your project was based. To ensure these documents can be used by the Assisted Review process, document vector representation needs to be recalculated.</p>
+        <h3>Project Report</h3>
+        <p>Click <b>Project Report</b> to download a PDF report containing data about the project and general statistics about the classification process at the moment of the report request.</p>
+        <h3>Training Rounds Report</h3>
+        <p>Click <b>Training Rounds Report</b> to download a csv report containing data about the reviewed documents at the moment of the report request. The documents are listed by id number, document name, hash value, file type, issue name, responsiveness (Responsive/Not Responsive), training round number and reason (added, removed, changed).</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: The Training Rounds Report will only become available after reviewing a full training batch (using the specific Assisted Review tags associated with the needed issue) and then selecting the <b>New Training Batch</b> button at the bottom of the Assisted Review Progress page.</p>
+                        <p style="font-size: 10pt; font-style: italic;">
+                            <img src="../../Resources/Images/ONE/Assisted_Review_ New_Training_Batch.png" class="Thumbnail" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Delete Project</h3>
+        <p>Click <b>Delete Project</b> to remove it. All information from the project will be deleted, including issues/tags.</p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/1011-2018-07-10.png" alt="" class="Thumbnail" />
+        </p>
+    </body>
+</html>

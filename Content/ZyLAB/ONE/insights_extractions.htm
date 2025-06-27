@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Extractions</h1>
+        <p>Create and run extraction jobs  to automate the extraction of entities, as  defined by the extraction rules applied. </p>
+        <p>&#160;</p>
+        <ol>
+            <li>
+                <p>Open <b>Home</b> &gt; <b>Insights</b> &gt; <b>Extractions</b>. </p>
+            </li>
+            <li>
+                <p>Create a <b>New Extraction</b>. </p>
+            </li>
+            <li>
+                <p>Define the <b>Name</b>; enter a distinguishable, easily recognizable name the name field. </p>
+            </li>
+            <li>
+                <p>By default, <b>Schedule for incoming documents</b> is enabled. </p>
+                <ul>
+                    <li>
+                        <p>When enabled, the Extraction job will run on existing and future documents. </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>When disabled, the Extraction job will run only on existing documents. </p>
+                    </li>
+                </ul>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 448px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p>
+                                    <img src="../../Resources/Images/CSH_Images/myipro_tip.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Tip</b>: <span class="note">To run the job only on future documents, use the Query Builder to create a new Query; set the document date '<i>from</i>' to follow the current date, and add the desired filter(s). </span><![CDATA[  ]]></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>(Optional) You can enable/disable the <b>Schedule for incoming documents</b> option for existing or previously created Extraction jobs. </p>
+                <ul>
+                    <li>
+                        <p>If switching from enabled to disabled, the job will no longer run on future documents. </p>
+                    </li>
+                    <li>
+                        <p>If switching from disabled to enabled, the job will run only on future documents; only future documents will be processed. <u>In addition, all documents will be rescheduled for processing. </u></p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;"><b>Note I</b>: When <b>Schedule for incoming documents</b> is <b>disabled</b>, any documents that are added later, will not be processed. When <b>Schedule for incoming documents</b> is <b>enabled</b>, only documents that have yet to be added, will be processed. </p>
+                                        <p style="font-size: 10pt; font-style: italic;">Documents added whilst the <b>Schedule for incoming documents</b> option was <b>disabled</b>, will not be processed when <b>Schedule for incoming documents</b> is <b>enabled</b>. </p>
+                                        <p style="font-size: 10pt; font-style: italic;">To ensure that there are no discrepancies in the document processing, you can create and run a new Extraction on all existing and all incoming documents – create and run an Extraction with the  <b>Schedule for incoming documents</b> option enabled. </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;"><b>Note II</b>: If you have completed or are running an Extraction prior to updating to VX ZyLAB&#160;ONE, consider that there can be discrepancies in the document processing. </p>
+                                        <p style="font-size: 10pt; font-style: italic;">When migrating to VX ZyLAB&#160;ONE, the <b>Schedule for incoming documents</b> option will be <b>disabled</b> for all migrated Extractions. If you then decide to: I) upload a new set of documents and II) <b>enable </b>the <b>Schedule for incoming documents</b> option, there will be a discrepancy in document processing; the documents added whilst the <b>Schedule for incoming documents</b> option was <b>disabled</b>, have not been processed – and will not be processed when the <b>Schedule for incoming documents</b> option is <b>enabled</b>. </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>Select the <b>Extraction Rules</b> to be applied. </li>
+            <li>(Optional) Review the <b>Documents in scope</b>; The Scope defines the estimated character count and the exact number of documents that will be analyzed. </li>
+            <li>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note</b>:	Performing extractions on a whole matter is not always needed and&#160;can be very time consuming.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>If needed, adjust the <b>Scope </b>by defining a <b>Query</b>. </li>
+            <li>
+                <p>When finished, click <b>Apply</b>. The newly created Extraction job will start running. </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note</b>:	If an entity is being deleted and the status beside it shows 'Deleting', then you cannot schedule another job for the same entity until the deletion is completed.</p>
+                                <p style="font-size: 10pt; font-style: italic;">
+                                    <img src="../../Resources/Images/DeleteNote.png" class="Thumbnail" />
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p> Review the extractions list to view a list of all extraction jobs and their respective extraction&#160;rules. Review when each extraction job was last run. You can also Filter by:</p>
+                <p><b>Job Status:</b>
+                </p>
+                <p>Select one or more: </p>
+                <ul>
+                    <li>
+                        <p> In Progress </p>
+                    </li>
+                    <li>
+                        <p>Cancelling </p>
+                    </li>
+                    <li>
+                        <p> Cancelled </p>
+                    </li>
+                    <li>
+                        <p>Completed </p>
+                    </li>
+                </ul>
+                <p><b>Name: </b>
+                </p>
+                <p>Enter the name of the job you wish to view. </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Welcome"
+    Link="/Content/ZyLAB/Data-Privacy-and-Protection/001.html" />
+  <TocEntry
+    Title="Data Subject Access Request"
+    Link="/Content/ZyLAB/Data-Privacy-and-Protection/003-1.html">
+    <TocEntry
+      Title="John Doe DSAR Scenario"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/101010.html" />
+    <TocEntry
+      Title="Login"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/102-1.html" />
+    <TocEntry
+      Title="Matter Dashboard"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/103-1.html">
+      <TocEntry
+        Title="How to Navigate a Matter"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/104-1.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Upload Documents"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/105-1.html" />
+    <TocEntry
+      Title="Configuration"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/500.html">
+      <TocEntry
+        Title="Keyword Highlighting"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/101.html" />
+      <TocEntry
+        Title="Auto Classification"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/1002.html" />
+      <TocEntry
+        Title="Creating Tags"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/1003.html" />
+      <TocEntry
+        Title="Insights"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/1004.html" />
+      <TocEntry
+        Title="Security: User &amp; Role Management"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/1005.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Search"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/107-1.html">
+      <TocEntry
+        Title="Determine Timeframe"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/1006.html" />
+      <TocEntry
+        Title="Estimate Time and Resources"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/1007.html" />
+      <TocEntry
+        Title="Batch Search"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/1008.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Tag"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/109-1.html">
+      <TocEntry
+        Title="Bulk Tagging"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/110-1.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Redact"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/2000.html">
+      <TocEntry
+        Title="Anonymizing"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/2001.html" />
+      <TocEntry
+        Title="Pseudonymizing"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/2003.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Sample"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/124-1.html" />
+    <TocEntry
+      Title="Produce Documents"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/2005.html" />
+    <TocEntry
+      Title="Produce Report"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/125-1.html" />
+    <TocEntry
+      Title="Summary of the DSAR Process"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/3000.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Right to be Forgotten"
+    Link="/Content/ZyLAB/Data-Privacy-and-Protection/4040.html">
+    <TocEntry
+      Title="Workflow"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/4041.html" />
+    <TocEntry
+      Title="Process with ZyLAB ONE"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/4042.html">
+      <TocEntry
+        Title="Tag"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/4044.html" />
+      <TocEntry
+        Title="Redact"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/4045.html" />
+      <TocEntry
+        Title="Produce Documents"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/4046.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Summary of Right to be Forgotten"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/101011.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Personal Data Breach"
+    Link="/Content/ZyLAB/Data-Privacy-and-Protection/0500.html">
+    <TocEntry
+      Title="Workflow"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/0501.html" />
+    <TocEntry
+      Title="Process with ZyLAB ONE"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/0502.html">
+      <TocEntry
+        Title="Search"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/0505.html" />
+      <TocEntry
+        Title="Tag"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/0506.html" />
+      <TocEntry
+        Title="Redact"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/0507.html" />
+      <TocEntry
+        Title="Produce Documents"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/0508.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="GDPR File Analysis"
+    Link="/Content/ZyLAB/Data-Privacy-and-Protection/003.html">
+    <TocEntry
+      Title="Login"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/102.html" />
+    <TocEntry
+      Title="Select Matter Screen"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/103.html" />
+    <TocEntry
+      Title="How to Navigate a Matter"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/104.html" />
+    <TocEntry
+      Title="Upload Documents"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/105.html" />
+    <TocEntry
+      Title="Search"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/107.html">
+      <TocEntry
+        Title="Batch Search"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/108.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Filter"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/111.html">
+      <TocEntry
+        Title="Extraction Rules"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/112.html" />
+      <TocEntry
+        Title="Jobs"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/113.html" />
+      <TocEntry
+        Title="Entity Management"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/114.html" />
+      <TocEntry
+        Title="Consumption"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/115.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Tag"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/109.html">
+      <TocEntry
+        Title="Bulk Tagging"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/110.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Decide"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/116.html">
+      <TocEntry
+        Title="Adding purpose and storing"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/117.html" />
+      <TocEntry
+        Title="Anonymizing"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/118.html">
+        <TocEntry
+          Title="Redactions"
+          Link="/Content/ZyLAB/Data-Privacy-and-Protection/119.html" />
+        <TocEntry
+          Title="Auto Redactions"
+          Link="/Content/ZyLAB/Data-Privacy-and-Protection/120.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Pseudonymizing"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/121.html">
+        <TocEntry
+          Title="Redactions"
+          Link="/Content/ZyLAB/Data-Privacy-and-Protection/122.html" />
+        <TocEntry
+          Title="Auto Redactions"
+          Link="/Content/ZyLAB/Data-Privacy-and-Protection/123.html" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Sample"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/124.html" />
+    <TocEntry
+      Title="Produce Documents"
+      Link="/Content/ZyLAB/Data-Privacy-and-Protection/125.html">
+      <TocEntry
+        Title="Produce Report"
+        Link="/Content/ZyLAB/Data-Privacy-and-Protection/131.html" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

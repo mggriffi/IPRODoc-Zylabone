@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p><b class="heading3"> <img src="../../Images/ONE/SelectMatter_Overview_Steps.png" class="Thumbnail" /> </b>
+        </p>
+        <ol>
+            <li>
+                <p>Hier ziet u uw zaken. </p>
+            </li>
+            <li>
+                <p>U kunt hier uw zaken filteren in de lijst. </p>
+            </li>
+            <li>
+                <p>Hier kunt u een nieuwe zaak aanmaken met de knop <b>Add Matter</b>. </p>
+            </li>
+            <li>
+                <p>Hier kunt u schakelen tussen een regel- of lijstweergave voor uw zaken. </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="Primary.ZyLAB Home">
+  <TocEntry
+    Title="What's New">
+    <TocEntry
+      Title="ZyLAB ONE SaaS What's New"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/10000.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Product Launch Videos"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/202011.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"></TocEntry>
+    <TocEntry
+      Title="ZyLAB ONE Insights"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/080801.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="LEGAL HOLD"
+      Link="https://docs.zylab.com/02/ZyLAB/LegalHold/1000.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"
+      conditions="Primary.Block" />
+  </TocEntry>
+  <TocEntry
+    Title="Get Started">
+    <TocEntry
+      Title="PRR &amp; FOIA"
+      Link="https://docs.zylab.com/01/ZyLAB/PRR-and-FOIA/03030303.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Litigation &amp; Arbitration"
+      Link="https://docs.zylab.com/01/ZyLAB/Litigation-and-Arbitration/03030302.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Internal Investigations"
+      Link="https://docs.zylab.com/01/ZyLAB/Internal-Investigations/03030301.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Regulatory Requests"
+      Link="https://docs.zylab.com/01/ZyLAB/Regulatory-Requests/03030301.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Data Privacy &amp; Protection"
+      Link="https://docs.zylab.com/01/ZyLAB/Data-Privacy-and-Protection/001.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Woo (Dutch)"
+      Link="https://docs.zylab.com/01/ZyLAB/Woo-Dutch/introductie.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Milieufraude (Dutch)"
+      Link="https://docs.zylab.com/01/ZyLAB/Wob-Dutch/303030.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Zorgfraude (Dutch)"
+      Link="https://docs.zylab.com/01/ZyLAB/Regulatory-Requests/030303.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Training">
+    <TocEntry
+      Title="Onboarding"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/onboarding"
+      FrameName="_blank"
+      ReplaceMergeNode="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Videos">
+    <TocEntry
+      Title="Onboarding"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/onboarding.html" />
+    <TocEntry
+      Title="Insider Channel"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/202020.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Wob Kanaal (Dutch)"
+      Link="https://docs.zylab.com/01/ZyLAB/Wob-Dutch/333304.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Product Launch Videos"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/202011.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="'How To' Videos"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/201010.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+  </TocEntry>
+  <TocEntry
+    Title="User Manuals"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="ZyLAB ONE Manual"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/010101.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"></TocEntry>
+    <TocEntry
+      Title="Quick Reference Guide"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/101010.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Assisted Review"
+      Link="https://docs.zylab.com/01/ZyLAB/ONE/1010.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"></TocEntry>
+    <TocEntry
+      Title="Search Syntax"
+      Link="https://docs.zylab.com/01/ZyLAB/Search-Language-Guide/10824.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"></TocEntry>
+    <TocEntry
+      Title="LEGAL HOLD"
+      Link="https://docs.zylab.com/02/ZyLAB/LegalHold/100.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"
+      conditions="Primary.Block"></TocEntry>
+    <TocEntry
+      Title="Information Management Add-On "
+      Link="https://docs.zylab.com/03/ZyLAB/Information-Managment-Add-On/0301.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"></TocEntry>
+    <TocEntry
+      Title="Information Management Add-On (Dutch)"
+      Link="https://docs.zylab.com/04/ZyLAB/Information-Management-Add-On-Dutch/0301.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"></TocEntry>
+    <TocEntry
+      Title="Information Management 6.7"
+      Link="https://docs.zylab.com/05/ZyLAB/Information-Management/zyindex.html"
+      FrameName="_parent"
+      ReplaceMergeNode="false"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Contact Support"
+    Link="/Content/ZyLAB/ONE/ContactSupport.html" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+</CatapultToc>

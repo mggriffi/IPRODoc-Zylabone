@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Block" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Integrations</h1>
+        <p>The Integration page contains an overview of all the current integrations that are in the subscriptions. 
+ The following integration types can be shown:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><b>Microsoft 365 Office Email </b>or <b>SendGrid Email</b><br />					Shows the users that allowed sending emails on their behalf or perform synchronizations of the Address Book.
+          <br />SendGrid Email is the email system of ZyLAB ONE Legal Hold and will be used when Microsoft 365 Office Email is not available.<br />          
+			These integrations can only be viewed. It gives the Administrator insight in the integrations and if the integrations are valid.<br /><br />        
+			Select&#160;<b>Manage your own integrations</b>&#160;(top right corner) to enable or disable your own email preferences or to send a test message.</li>
+            <li class="listbullet"><b>Microsoft 365 Compliance Center (In-place Preservation)</b>
+                <br />          
+			Preserving data in-place means you retain the data where it is actually being used, 
+			rather than moving it to a separate archiving solution or to a separate location. <br />			ZyLAB ONE Legal Hold supports preservation in-place for Microsoft 365 Compliance Center. 
+			This means that for custodians that are part of a hold, you can preserve (put on hold) their mailboxes in Microsoft 365.<br /><b>Note</b>: Please view the important <a href="989898.html">Notes for Administrators on the M365 Compliance Center Integration</a>.
+</li>
+        </ul>
+        <h2>Create Integration</h2>
+        <ol class="listnumber">
+            <li class="listnumber">Select&#160;<img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08.png" alt="" />&#160;</li>
+            <li class="listnumber">Select the Integration Type and the Tenant. Select Next.&#160;<br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-1.png" alt="" /></li>
+            <li class="listnumber">Authenticate the integration. First, copy the code. Then, go to 
+			<a href="https://microsoft.com/devicelogin" target="_blank">https://microsoft.com/devicelogin</a><br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/888-2022-05-23.png" alt="" /></li>
+            <li class="listnumber">Paste the code and click Next.<br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-3.png" alt="" /></li>
+            <li class="listnumber">Sign in with the account that has sufficient privileges to preserve data in-place in your Microsoft 365 subscription. 
+			You should have either Compliance Administrator (formerly known as eDiscovery Manager) or eDiscovery Administrator Role permissions.&#160;<br /><br />For more information, please refer here (only available for Administrators):&#160;
+			<a href="https://compliance.microsoft.com/compliancecenterpermissions" target="_blank">https://compliance.microsoft.com/compliancecenterpermissions</a><br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-5.png" alt="" /></li>
+            <li class="listnumber">Click Continue.<br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-7.png" alt="" /><br /></li>
+            <li class="listnumber">Once you have authenticated, the window can be closed and you can return to Create Integration wizard.<br />Click Save to finalize the integration.<br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-8.png" alt="" /></li>
+            <li class="listnumber">Once the connection is established, a test is being executed (creation and removal of an in-place hold) to check if the integration has sufficient privileges. Select the Refresh icon (to move the status from Validating to Enabled).<br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-10.png" alt="" /></li>
+            <li class="listnumber">View the validation report with the test results by clicking the Show Validation Results button.<br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-9.png" alt="" /><br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-11.png" alt="" /></li>
+            <li class="listnumber">As the authentication is limited in time, the Microsoft 365 Compliance Center Integrations can expire. Therefore you have a renew option for the integration.<br /><br /><img src="../../Storage/zylab-one-legal-hold-may-30/100-2022-03-08-12.png" alt="" /><br /></li>
+            <li class="listnumber">With the integration completed, you can now create&#160;<a href="566.html" target="_top">Preservation Locations</a>&#160;to determine which locations need to be preserved in the hold.</li>
+        </ol>
+        <script src="../../Scripts/lightense.min.js">
+        </script>
+        <script>/*<![CDATA[*/
+ // Init Lightense
+ window.addEventListener('load', function () {
+ Lightense('img.lightense:not(.no-lightense)');
+ }, false);
+
+/*]]>*/</script>
+    </body>
+</html>

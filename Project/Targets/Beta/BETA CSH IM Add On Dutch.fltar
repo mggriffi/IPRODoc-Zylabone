@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  MasterStylesheet="/Content/Styles/stylesheetCSHRoboto.css"
+  PreCompileScaledImages="true"
+  EquationsOutputType="PNG"
+  ContentInclusionType="Referenced"
+  MasterPage="/Content/Resources/MasterPages/MasterPageZyLABHome.flmsp"
+  ConditionTagExpression="include[&quot;Primary.ZyLAB Home&quot;]"
+  MasterToc="/Project/TOCs/CSH information man add on Dutch.fltoc"
+  Skin="(none)"
+  MoveOutputContentToRoot="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="docx" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/CSH IM Add On Dutch.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
+</CatapultTarget>

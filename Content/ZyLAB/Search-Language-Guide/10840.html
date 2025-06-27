@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='NOT Operator';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>NOT Operator</h1>
+        <p><span class="bodytext"><MadCap:keyword term="NOT Operator" />
+  The NOT operator is a search operator that allows you to exclude files with certain search terms and narrow your search. It can be used in: </span>
+        </p>
+        <p><![CDATA[
+
+]]><ul class="listbullet"><li class="listbullet">
+    A Boolean context, where NOT is used stand-alone or in combination with AND/OR to exclude a query (which can be part of a larger query). For example, 'NOT(green apple)', which will find all files where the phrase 'green apple' is not present. It will find files with 'red apple', but only if 'green apple' is not present in the file. Also, 'red apple' will not be highlighted.
+  </li><li class="listbullet">
+    A positional context, where NOT is used in a sequence of queries. For example, 'NOT(green) apple', which will find all files with two consecutive terms where the first one is not 'green' and the second one is 'apple'. So, you will find files with 'shiny apple' and 'red apple', but not files with 'green apple'.
+  <br /><br /></li></ul><table width="510" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2"><tbody><tr align="left" valign="top"><td width="114"><p class="bodytext">
+          NOT white
+        </p></td><td width="396"><p class="bodytext"><img width="121" height="120" align="bottom" class="embeddedjpegfiletemplate50" id="f10872" alt="blue and red not white" src="../../Storage/zylab-one-search-language-guide-publication-1/10872.jpg" border="0" vspace="0" hspace="0" /></p></td></tr></tbody></table><br /><table width="504" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2"><tbody><tr align="left" valign="top"><th width="156" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Syntax
+          </b></p></th><th width="180" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Semantics
+          </b></p></th><th width="168" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Recommended Use
+          </b></p></th></tr><tr align="left" valign="top"><td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          NOT (query)
+        </p></td><td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          Where NOT is used stand-alone (<b class="specialbold">Boolean context</b>) and is combined with a term, phrase or other query.
+        </p><p class="tablebodytextleft"><b class="specialbold">
+            Note:
+          </b>
+          'NOT(a b c)' is not similar to 'NOT(a) NOT(b) NOT(c)', which is an ambiguous search query and will generate an error.
+        </p></td><td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          This query will narrow down your result set. Used when you want to find all files where a specific term, phrase or result from a specific query is not present.
+        </p></td></tr><tr align="left" valign="top"><td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          NOT(first_query) second_query n_query
+        </p><p class="tablebodytextleft">
+          first_query NOT(second_query) n_query
+        </p></td><td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          Where NOT, used in a 
+          <b class="specialbold">
+            positional context
+          </b>
+          , excludes a query placed in a sequence. NOT can be placed anywhere in a sequence.
+        </p></td><td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          Used when you want to specifically omit (at a specific position in the sequence) a word or sequence of words usually connected with the other queries. 
+        </p></td></tr><tr align="left" valign="top"><td width="156" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          left_query TO right_query {sub_query}
+        </p></td><td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          NOT is used in a 
+          <b class="specialbold">
+            positional context
+          </b>
+          , in the sub query of a TO query. See 
+          <a title="TO Operator" id="h10860" href="10856.html" target="_self">
+            TO Operator</a>. 
+          <br /></p></td><td width="168" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          Used when you want to specifically omit a term or phrase often related to the terms found between the left_ and right_query.
+        </p></td></tr></tbody></table><br /><br /><p class="heading4">
+  Boolean Context
+  <br /></p><table width="498" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2"><tbody><tr align="left" valign="top"><th width="186" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Example of query
+          </b></p></th><th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b></p></th><th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Results Explained
+          </b></p></th></tr><tr align="left" valign="top"><td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          NOT apple
+        </p></td><td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          All files that do not contain 'apple'.
+        </p></td><td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          Narrow your search and look for files that do 
+          <b class="specialbold">
+            not
+          </b>
+          contain the query after NOT.
+        </p></td></tr></tbody></table><br /><p class="heading4">
+  Positional Context
+  <br /></p><table width="498" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2"><tbody><tr align="left" valign="top"><th width="186" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Example of query
+          </b></p></th><th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b></p></th><th width="156" valign="middle" style="border-left-color: #ffffff;border-left-width: 1px;border-left-style: solid;" bgcolor="#c9c9c9"><p class="tablebodytextcentre"><b class="specialbold">
+            Results Explained
+          </b></p></th></tr><tr align="left" valign="top"><td width="186" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;"><p class="tablebodytextleft">
+          warm NOT(green) tea
+        </p></td><td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          warm black tea, warm white tea, warm warm tea, warm [anything but green] tea
+        </p></td><td width="156" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;"><p class="tablebodytextleft">
+          &#160;
+        </p></td></tr></tbody></table><p class="bodytext">
+  For complex search queries containing the operator NOT, see 
+  <a title="Complex Search Queries" id="h10951" href="10830.html" target="_self">
+    Complex Search Queries</a>.
+</p></p>
+    </body>
+</html>

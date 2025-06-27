@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Auto Classification</h1>
+        <p>Classify documents with field values and/or tags. This classification is automatically executed when a document matches an Auto Classification Rule.</p>
+        <p>The video below offers a good example of how Auto Classification Rules can be used:</p><iframe src="https://www.youtube.com/embed/mXwgjKcV1Yg?rel=0" allowfullscreen="" style="width: 700px;height: 394px;"></iframe>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: Existing 'data wins'. This means that a new Auto Classification Rule will not overwrite (does not have precedence over) any tags that conflict.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Add New Auto Classification Rule</h2>
+        <ol>
+            <li>
+                <p>On the Home page, select <b>Configuration</b>.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/2061-2018-05-14.png" alt="" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Auto Classification</b>.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/2061-2018-05-14-1.png" alt="" />
+                </p>
+            </li>
+            <li>
+                <p>Select the <b>plus</b> icon.</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/2050-2018-05-08.png" alt="" />
+                </p>
+            </li>
+            <li>
+                <p>Define a name.</p>
+            </li>
+            <li>
+                <p>Select a Rule Type.</p>
+                <ul>
+                    <li>
+                        <p style="font-weight: bold;">Intake Only</p>
+                        <p>The field values/tags specified in this rule are set only once when a document comes into the system and matches the specified query.</p>
+                        <p>This type of rule is useful when you want to pre-set certain field values/tags based on the document content, but the reviewers will be able to change it later. For example, you might want to mark some documents as irrelevant/spam based on a certain filter.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: bold;">Continuous</p>
+                        <p>The field values specified in this rule are set when a document matches the specified query. The query is evaluated both when the document initially comes into the system and when the document changes.</p>
+                        <p>This type of rule is useful when you want to set certain fields to certain values based on criteria that change as the document goes through the review process. As an example, mark a document as reviewed when a certain combination of tags is applied.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Define the query.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;">Note: You cannot define a full-text query if you selected Continuous as the Rule Type. You can always search for Fields and/or Tags.</p>
+                                <p style="font-size: 10pt; font-style: italic;">We have a few <a href="3031.html">Example Queries</a>. For more information, please refer to the <a href="../Search-Language-Guide/10824.html">ZyLAB One Search Language Guide</a>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Define When Matches. Found documents will be labeled with the field value(s) and Tag(s) defined here.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;">Note: You cannot define Tag(s) if you select Continuous as the Rule Type.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Click Apply. The new rule is added to the pane on the left.</p>
+            </li>
+            <li>
+                <p>Once you have created one or more rules, you can filter them. You can also edit or remove them.</p>
+            </li>
+        </ol>
+        <h2>Reuse Auto Classification Rules</h2>
+        <p>Reusing one or more Auto Classification Rules reduces the time needed to create new ones. This is especially true for Auto Classification Rules with complex queries.</p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/2061-2021-11-11-1.png" alt="" class="Thumbnail" />
+        </p>
+        <ul>
+            <li>
+                <p>To copy all rules in your matter, select the Copy All icon in the top right corner. Next, go to Auto Classification in the matter where you want to reuse these rules and select Paste Rule(s).</p>
+                <ul>
+                    <li>
+                        <p>Filter your rules to make a selection when copying.</p>
+                        <p>
+                            <img src="../../Storage/zylab-one-manual-publication/2061-2021-11-11-2.png" alt="" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To copy one rule, select a rule and select the Copy Rule icon in the top right corner. Next, go to Auto Classification in the matter where you want to reuse this rule and select Paste Rule(s).</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;">Note 1: When Paste Rule(s) does not work, please try Ctrl+V.</p>
+                                <p style="font-size: 10pt; font-style: italic;">Note 2: Duplicate rules will be skipped. This will prevent pasting the same rule in your matter twice.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </body>
+</html>

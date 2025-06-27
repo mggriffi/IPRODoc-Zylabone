@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Get Started"
+    Link="/Content/ZyLAB/ONE/OnPrem_GetStarted.html" />
+  <TocEntry
+    Title="Log In and Select, Create or Delete Matter"
+    Link="/Content/ZyLAB/ONE/557.html"></TocEntry>
+  <TocEntry
+    Title="Matter Overview"
+    Link="/Content/ZyLAB/ONE/360.html" />
+  <TocEntry
+    Title="Create Matter"
+    Link="/Content/ZyLAB/ONE/create-new-matter.html" />
+  <TocEntry
+    Title="Upload"
+    Link="/Content/ZyLAB/ONE/0830.html">
+    <TocEntry
+      Title="File Upload"
+      Link="/Content/ZyLAB/ONE/0831.html" />
+    <TocEntry
+      Title="Cloud Upload: Microsoft Exchange"
+      Link="/Content/ZyLAB/ONE/8888801.html" />
+    <TocEntry
+      Title="Cloud Upload: Google G Suite"
+      Link="/Content/ZyLAB/ONE/8888802.html" />
+    <TocEntry
+      Title="Configure Exchange Online Upload/Collection Using OAuth Authentication"
+      Link="/Content/ZyLAB/ONE/OAuth.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Continue Review"
+    Link="/Content/ZyLAB/ONE/688.html" />
+  <TocEntry
+    Title="Batch Search"
+    Link="/Content/ZyLAB/ONE/1070.html">
+    <TocEntry
+      Title="Assigned Values"
+      Link="/Content/ZyLAB/ONE/666.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Reports"
+    Link="/Content/ZyLAB/ONE/680.html">
+    <TocEntry
+      Title="Available Reports"
+      Link="/Content/ZyLAB/ONE/569.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Configuration"
+    Link="/Content/ZyLAB/ONE/1080.html">
+    <TocEntry
+      Title="Tags"
+      Link="/Content/ZyLAB/ONE/681.html" />
+    <TocEntry
+      Title="User Management"
+      Link="/Content/ZyLAB/ONE/340.html" />
+    <TocEntry
+      Title="Role Management"
+      Link="/Content/ZyLAB/ONE/341.html"></TocEntry>
+    <TocEntry
+      Title="Functional Document Security"
+      Link="/Content/ZyLAB/ONE/630.html">
+      <TocEntry
+        Title="Create Document Security Rules"></TocEntry>
+      <TocEntry
+        Title="Create Roles"></TocEntry>
+      <TocEntry
+        Title="Assign Roles to Users or User Groups" />
+    </TocEntry>
+    <TocEntry
+      Title="Document Security"
+      Link="/Content/ZyLAB/ONE/671.html" />
+    <TocEntry
+      Title="Keyword Highlighting"
+      Link="/Content/ZyLAB/ONE/672.html" />
+    <TocEntry
+      Title="Auto Redactions"
+      Link="/Content/ZyLAB/ONE/2060.html"></TocEntry>
+    <TocEntry
+      Title="Auto Classification"
+      Link="/Content/ZyLAB/ONE/2061.html" />
+    <TocEntry
+      Title="Deduplication"
+      Link="/Content/ZyLAB/ONE/404040.html" />
+    <TocEntry
+      Title="Review Status"
+      Link="/Content/ZyLAB/ONE/2062.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Search"
+    Link="/Content/ZyLAB/ONE/1003.html"
+    conditions="Primary.PrintOnly">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/ZyLAB/ONE/Search_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Timeline"
+      Link="/Content/ZyLAB/ONE/30300.html"
+      conditions="Primary.PrintOnly"></TocEntry>
+    <TocEntry
+      Title="Browse"
+      Link="/Content/ZyLAB/ONE/browse.html"
+      conditions="Primary.PrintOnly"></TocEntry>
+    <TocEntry
+      Title="Manage Facets"
+      Link="/Content/ZyLAB/ONE/674.html"></TocEntry>
+    <TocEntry
+      Title="Search Email"
+      Link="/Content/ZyLAB/ONE/242424.html"
+      conditions="Primary.PrintOnly" />
+    <TocEntry
+      Title="Search Hits Preview"
+      Link="/Content/ZyLAB/ONE/898989.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Document List"
+    Link="/Content/ZyLAB/ONE/document-list.html">
+    <TocEntry
+      Title="Columns"
+      Link="/Content/ZyLAB/ONE/151.html" />
+    <TocEntry
+      Title="List Options"
+      Link="/Content/ZyLAB/ONE/152.html" />
+    <TocEntry
+      Title="Views"
+      Link="/Content/ZyLAB/ONE/153.html" />
+    <TocEntry
+      Title="Bulk Tagging"
+      Link="/Content/ZyLAB/ONE/691.html"
+      conditions="Primary.PrintOnly" />
+    <TocEntry
+      Title="Review Batches"
+      Link="/Content/ZyLAB/ONE/1050.html"
+      conditions="Primary.PrintOnly" />
+    <TocEntry
+      Title="Batch Downloads"
+      Link="/Content/ZyLAB/ONE/673.html"
+      conditions="Primary.PrintOnly" />
+    <TocEntry
+      Title="Productions"
+      Link="/Content/ZyLAB/ONE/154.html">
+      <TocEntry
+        Title="Productions Overview"
+        Link="/Content/ZyLAB/ONE/222.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Sampling"
+      Link="/Content/ZyLAB/ONE/89203.html"
+      conditions="Primary.PrintOnly">
+      <TocEntry
+        Title="Sampling Overview"
+        Link="/Content/ZyLAB/ONE/7589.html"
+        conditions="Primary.PrintOnly" />
+    </TocEntry>
+    <TocEntry
+      Title="Reports"
+      Link="/Content/ZyLAB/ONE/155.html" />
+    <TocEntry
+      Title="Connected Tabs/Windows"
+      Link="/Content/ZyLAB/ONE/999.html"
+      conditions="Primary.PrintOnly" />
+    <TocEntry
+      Title="Delete Selection/Documents/Families"
+      Link="/Content/ZyLAB/ONE/156.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Document View"
+    Link="/Content/ZyLAB/ONE/1060.html">
+    <TocEntry
+      Title="Conversation, Document Family &amp; Properties"
+      Link="/Content/ZyLAB/ONE/777.html"
+      conditions="Primary.PrintOnly" />
+    <TocEntry
+      Title="Edit Fields"
+      Link="/Content/ZyLAB/ONE/edit_fields.html" />
+    <TocEntry
+      Title="Document Info"
+      Link="/Content/ZyLAB/ONE/2064.html"
+      conditions="Primary.PrintOnly">
+      <TocEntry
+        Title="Tagging"
+        Link="/Content/ZyLAB/ONE/444.html" />
+      <TocEntry
+        Title="Redactions &amp; Annotations"
+        Link="/Content/ZyLAB/ONE/443.html" />
+      <TocEntry
+        Title="Reviewer Remarks"
+        Link="/Content/ZyLAB/ONE/442.html"
+        conditions="Primary.PrintOnly" />
+      <TocEntry
+        Title="Near-Duplicates"
+        Link="/Content/ZyLAB/ONE/441.html"
+        conditions="Primary.PrintOnly" />
+      <TocEntry
+        Title="Audit"
+        Link="/Content/ZyLAB/ONE/450.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Assisted Review"
+    Link="/Content/ZyLAB/ONE/1010.html">
+    <TocEntry
+      Title="Create A New Assisted Review Project"
+      Link="/Content/ZyLAB/ONE/Assisted_Review/Create_New_Assisted_Review_Project.html" />
+    <TocEntry
+      Title="Project Actions"
+      Link="/Content/ZyLAB/ONE/1011.html" />
+    <TocEntry
+      Title="Validation Set"
+      Link="/Content/ZyLAB/ONE/446.html" />
+    <TocEntry
+      Title="Assisted Review Progress"
+      Link="/Content/ZyLAB/ONE/1030.html" />
+    <TocEntry
+      Title="Topic Modeling"
+      Link="/Content/ZyLAB/ONE/1020.html" />
+    <TocEntry
+      Title="Stop Condition"
+      Link="/Content/ZyLAB/ONE/320.html" />
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Database Collector</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Database Collector';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t10223" class="heading3">
+            <MadCap:keyword term="Database Collector" />Database Collector</p>
+        <p class="bodytext">The Database Collector collects records and linked documents from various database systems. It can collect information from MS SQL and other relational databases, such as Oracle or MySQL. The user can define an SQL statement and every record is then changed into a document. This document can consist of one or more files and meta data, which can be indexed with ZyINDEX.</p>
+        <p class="bodytext">There are two ways to create files:</p>
+        <ol class="listnumber">
+            <li class="listnumber">The user has defined that the value of a column should be converted into a file. This is especially useful for columns that contain text or text like information (e.g. CLOB, BLOB, Memo and NText columns). </li>
+            <li class="listnumber">The user has defined that the value of a column contains the path of a file on the file system. The database collector will look at the file system if this file does exist and it will collect that file. </li>
+        </ol>
+        <p class="bodytext" />
+        <p class="note">
+            <b class="specialbold">Example Settings</b>
+            <br />The example settings below define that the column metadataxml should be converted into a file, column mimetype should be added to the metadata and column id is the identification. Every file will have the extension 'txt'.<br /><br /><img id="f10224" src="../../Storage/legal-processing-publication/lpsettings01.png" class="linkedjpegfiletemplate" alt="lp settings 01" height="224.7" width="447.3" vspace="0" hspace="0" align="bottom" border="0" /><br /><br />The example settings below define that the value of column 'FilePath' is the path of the file that will be collected. Columns author and price are added to the metadata.<br /><br /><img id="f10225" src="../../Storage/legal-processing-publication/lpsettings02.png" class="linkedjpegfiletemplate" alt="lp settings 02" height="226.1" width="448" vspace="0" hspace="0" align="bottom" border="0" /></p>
+        <p class="bodytext" />
+        <p class="note">
+            <b class="specialbold">Notes</b>
+            <br />Ado.net data providers are available for a lot of different databases such as MS SQL, Oracle, and MySQL, especially when the ODBC ado.net provider is used. However, some new database systems such as MongoDB and Cassandra don’t have (yet) an ado.net provider and that means that this collector cannot be used for collecting data from these databases. <br /><br />The matching of the configured column names in file ZyLAB.EDiscovery.Collectors.Database.dll.xml with the column names of the retrieved database row is done case insensitive.<br /><br />There is no protection against SQL Injection. You can make the process secure by creating a separate database account that has only connect and select privileges (with databases such as SqlServer and Oracle). It is possible to make the database file read-only when collecting from an SQLite database. SQLite does not support the possibility of creating separate database accounts.</p>
+        <p class="bodytext" />
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Database Provider Name</b>
+                <br />The invariant name of the ado.net provider that will be used for connecting to the database.<br /><br />System.Data.SqlClient (connecting to MS SQL Server)<br />System.Data.SqlServerCe.3.5 (connecting to MS SQL Compact Edition)<br />System.Data.Sqlite (connecting to Sqlite)<br />System.Data.Oracle (Microsoft provider for connecting a .NET application to an Oracle database)<br />Oracle.DataAccess.Client (Oracle provider for connecting a .NET application to an Oracle database, this provider is called ODP.NET, see <a class="" title="" href="http://www.oracle.com/technetwork/topics/dotnet/index-085163.html" target="_self">http://www.oracle.com/technetwork/topics/dotnet/index-085163.html</a> )<br /><p class="listnote">An ado.net provider can only be used if it is installed on the same machine that runs the eDiscovery processing service. This ado.net provider needs also to be registered in the machine.config or the config file of the processing service. The ado.net provider will often be registered in the machine.config if it is installed properly and not just copied. This machine.config can be found in folder C:\Windows\Microsoft.NET\Framework\v4.x.xxxx\Config (the value of x.xxx is dependent on the exact version of the .NET framework that is used).<br /><br />Read here for more explanation about registering an ado.net provider on a machine: http://msdn.microsoft.com/en-us/library/dd0w4a2z.aspx</p><p class="list"><br /><b class="specialbold">Connection String</b><br />This is the string that will be used to connect to the database. The exact syntax is dependent on the kind of database and the ado.net provider that is used. Examples of connection strings can be found at http://www.connectionstrings.com/ <br /><br />Data Source={{MyDataSource}};Initial Catalog={{MyInitialCatalog}};Persist Security Info=True;User ID={{MyUserId}};Password={{MyPassWord}};<br /><br /><b class="specialbold">Query</b><br />This is the select statement that will be executed. Every row will be turned into one document that will be copied to the preservation store and can be indexed by ZyINDEX.<br /><br />Select * from MyTable<br /><br /><b class="specialbold">Identification Column</b><br />This is the column that is used for the identification of a row. It is best to use the primary key column of a table. This column is often named ‘Id’.<br />It is mandatory to configure exactly one identification column. Sometimes a database table has a compounded primary key, this means that those two or more columns need to be concatenated into one column by concatenating those column values into one column in the query. For example: Select MainId+’#’ +SubId as “Id” from Customers. Here MainId and Subid are concatenated (with an extra # as separator) and the result is returned in a new column with name ‘NewId’. Please note that different database systems use different concatenation operators, Oracle for example uses || and MS Sql uses a + .<br /><br />Id<br /><br /><b class="specialbold">File Systems Columns</b><br />Define a list of one or more columns that contain values that reference to a file on the file system. You can use ‘|’ characters to separate multiple column names (it is possible that a document consists of more than one file).<br />For example, the Database Collector will look for a file named "\\ZYNL0001\CustomerContracts\3655.pdf" if a column of a row has such value. It will collect this file if it exists and it is readable. It will throw an error when this is not the case.<br />Sometimes not the whole path to the file is stored, however it is possible to use a hard string as a prefix in the query, for example: <br />Select “\\ZYNL0410\CustomerContracts\” + FileName as ”FileName” from Customers<br /></p><p class="listnote">It is mandatory to configure one or more File System Columns or Blob Columns (see next item). If both are empty a validation error will be thrown because at least one column of a database row needs to be converted into a file. It is not possible to create documents that only have meta data.</p><p class="list"><br /><b class="specialbold">MyFileSystemColumns</b><br /><br /><b class="specialbold">Blob Columns</b><br />Blob columns are columns that are used for storing large objects inside the database. Those objects can be binary or contain text. Such columns are also called ntext or memo or clob. The database collector will create a file for each blob value if the value is non-empty.<br />Use | as the separator of the column names.<br />The column type doesn’t necessarily have to be a blob type; a varchar or nvarchar or nchar type will also work.<br /><br /><b class="specialbold">MyBlobColumn</b><br /><br /><b class="specialbold">Blob Columns File Extension</b><br />Define the extension of the file created for each blob value.<br /><br /><b class="specialbold">Meta Data Columns</b><br />These columns (use '|' as separator) will be added to the meta data of the main section. The column name will be used as key and the column value as value. It is possible to use an asterisk (*) to indicate that all column names in the database row that are not used as Identitification, File System Column, Blob Column or Xml Meta Data Column should be added to the meta data.<br /><br /><b class="specialbold">Xml Meta Data Columns</b><br />This option can be used when a data column doesn't contain a single value but a piece of XML. This XML will be parsed and transformed into a list of key-value-pairs. Those key-value-pairs will be added to the meta data of the main section.<br />Only one style of xml is supported. Example:<br /><br /><code class="monospace">&lt;MyRoot&gt;</code><br /><code class="monospace">   &lt;EyeColor&gt;blue&lt;/EyeColor&gt;</code><br /><code class="monospace">   &lt;Length&gt;1.83&lt;/Length&gt;</code><br /><code class="monospace">&lt;/MyRoot&gt;</code><br /><br />This will add 'EyeColor,blue' and 'Length,1.83' to the main section of the meta data. The exact name of the root will be ignored; it does not have to be 'MyRoot'.<br /><br />Some databases, such as Oracle, support advanced XML manipulation via XQuery, XPath and XSLT and make it possible to transform a random piece of XML into this style. <br />It is not possible to use an asterisk (*) in the configuration of the Xml Meta Data Columns.</p></li>
+            <li class="listbullet">
+                <em class="emphasis">File Types to Collect</em>
+                <br />Select the appropriate File Groups. To create new File Groups, click Add New.<br />For more information on how to define File Groups, see <a id="h9546" class="" title="Define File Groups" href="9522.html" target="_self">Define File Groups</a>.</li>
+        </ul>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10114.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10123.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

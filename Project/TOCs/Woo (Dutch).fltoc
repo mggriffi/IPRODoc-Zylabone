@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Welkom"
+    Link="/Content/ZyLAB/Woo-Dutch/introductie.html" />
+  <TocEntry
+    Title="Woo Kanaal"
+    Link="/Content/ZyLAB/Woo-Dutch/333304.html" />
+  <TocEntry
+    Title="Woo-verzoek"
+    Link="/Content/ZyLAB/Woo-Dutch/05051.html">
+    <TocEntry
+      Title="Workflow van de Woo"
+      Link="/Content/ZyLAB/Woo-Dutch/05052.html" />
+    <TocEntry
+      Title="Inloggen"
+      Link="/Content/ZyLAB/Woo-Dutch/05053.html" />
+    <TocEntry
+      Title="Account aanmaken"
+      Link="/Content/ZyLAB/Woo-Dutch/10100.html" />
+    <TocEntry
+      Title="Het Dossier dashboard"
+      Link="/Content/ZyLAB/Woo-Dutch/05054.html" />
+    <TocEntry
+      Title="Nieuwe zaak aanmaken"
+      Link="/Content/ZyLAB/Woo-Dutch/05057.html" />
+    <TocEntry
+      Title="Het Configuratie dashboard"
+      Link="/Content/ZyLAB/Woo-Dutch/05080.html">
+      <TocEntry
+        Title="Labels maken"
+        Link="/Content/ZyLAB/Woo-Dutch/40400.html" />
+      <TocEntry
+        Title="Rol en Gebruikersbeheer"
+        Link="/Content/ZyLAB/Woo-Dutch/05058.html" />
+      <TocEntry
+        Title="Onderwerpen highlighten"
+        Link="/Content/ZyLAB/Woo-Dutch/050510.html" />
+      <TocEntry
+        Title="Beoordelingsstatus"
+        Link="/Content/ZyLAB/Woo-Dutch/10200.html" />
+      <TocEntry
+        Title="Automatisch aflakken"
+        Link="/Content/ZyLAB/Woo-Dutch/050552.html" />
+      <TocEntry
+        Title="Automatisch labelen"
+        Link="/Content/ZyLAB/Woo-Dutch/050512.html" />
+      <TocEntry
+        Title="Vertalen"
+        Link="/Content/ZyLAB/Woo-Dutch/050511.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Verzamelen van data"
+      Link="/Content/ZyLAB/Woo-Dutch/050513.html">
+      <TocEntry
+        Title="Uploaden intern"
+        Link="/Content/ZyLAB/Woo-Dutch/050514.html" />
+      <TocEntry
+        Title="Uploaden extern"
+        Link="/Content/ZyLAB/Woo-Dutch/050515.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Het Woo dashboard"
+      Link="/Content/ZyLAB/Woo-Dutch/050516.html">
+      <TocEntry
+        Title="Personaliseren"
+        Link="/Content/ZyLAB/Woo-Dutch/050517.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Relevantie van de documenten bepalen"
+      Link="/Content/ZyLAB/Woo-Dutch/050520.html">
+      <TocEntry
+        Title="Zoekmogelijkheden"
+        Link="/Content/ZyLAB/Woo-Dutch/050521.html">
+        <TocEntry
+          Title="Browsen"
+          Link="/Content/ZyLAB/Woo-Dutch/050522.html" />
+        <TocEntry
+          Title="Zoekopdrachten"
+          Link="/Content/ZyLAB/Woo-Dutch/050523.html" />
+        <TocEntry
+          Title="Batch zoeken"
+          Link="/Content/ZyLAB/Woo-Dutch/050524.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Snel inventarislijst produceren"
+        Link="/Content/ZyLAB/Woo-Dutch/050532.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Documenten beoordelen"
+      Link="/Content/ZyLAB/Woo-Dutch/050533.html">
+      <TocEntry
+        Title="Het Bewerkingsdashboard"
+        Link="/Content/ZyLAB/Woo-Dutch/050534.html" />
+      <TocEntry
+        Title="Herkomst documenten &amp; e-mail gesprekken"
+        Link="/Content/ZyLAB/Woo-Dutch/050535.html" />
+      <TocEntry
+        Title="Ontdubbelen"
+        Link="/Content/ZyLAB/Woo-Dutch/050538.html" />
+      <TocEntry
+        Title="Voortgang bijhouden met labels"
+        Link="/Content/ZyLAB/Woo-Dutch/050539.html">
+        <TocEntry
+          Title="Valt niet onder verzoek"
+          Link="/Content/ZyLAB/Woo-Dutch/050541.html" />
+        <TocEntry
+          Title="Valt onder het verzoek"
+          Link="/Content/ZyLAB/Woo-Dutch/050540.html" />
+        <TocEntry
+          Title="Getoetst JZ"
+          Link="/Content/ZyLAB/Woo-Dutch/050548.html" />
+        <TocEntry
+          Title="Datum"
+          Link="/Content/ZyLAB/Woo-Dutch/050545.html" />
+        <TocEntry
+          Title="Document naam"
+          Link="/Content/ZyLAB/Woo-Dutch/050580.html" />
+        <TocEntry
+          Title="Technisch probleem"
+          Link="/Content/ZyLAB/Woo-Dutch/050542.html" />
+        <TocEntry
+          Title="Bulk labelen"
+          Link="/Content/ZyLAB/Woo-Dutch/050549.html" />
+        <TocEntry
+          Title="Toelichting"
+          Link="/Content/ZyLAB/Woo-Dutch/050546.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Aflakken"
+        Link="/Content/ZyLAB/Woo-Dutch/050551.html" />
+      <TocEntry
+        Title="Opmerkingen plaatsen"
+        Link="/Content/ZyLAB/Woo-Dutch/050553.html" />
+      <TocEntry
+        Title="Een steekproef uitvoeren"
+        Link="/Content/ZyLAB/Woo-Dutch/3030301.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Documenten opleveren"
+      Link="/Content/ZyLAB/Woo-Dutch/050554.html">
+      <TocEntry
+        Title="Documenten produceren met permanente aflakking en inventarislijst"
+        Link="/Content/ZyLAB/Woo-Dutch/707001.html" />
+      <TocEntry
+        Title="Documenten produceren met leesbare aflakkingen"
+        Link="/Content/ZyLAB/Woo-Dutch/909091.html" />
+      <TocEntry
+        Title="Documenten produceren zonder aflakkingen"
+        Link="/Content/ZyLAB/Woo-Dutch/909092.html" />
+      <TocEntry
+        Title="Producties downloaden"
+        Link="/Content/ZyLAB/Woo-Dutch/909090.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Tips &amp; Tricks"
+      Link="/Content/ZyLAB/Woo-Dutch/909010.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Milieufraude"
+    Link="/Content/ZyLAB/Woo-Dutch/303030.html">
+    <TocEntry
+      Title="Workflow"
+      Link="/Content/ZyLAB/Woo-Dutch/303001.html" />
+    <TocEntry
+      Title="Inloggen"
+      Link="/Content/ZyLAB/Woo-Dutch/303002.html" />
+    <TocEntry
+      Title="Het Dossier Dashboard"
+      Link="/Content/ZyLAB/Woo-Dutch/303003.html" />
+    <TocEntry
+      Title="Data Verzamelen"
+      Link="/Content/ZyLAB/Woo-Dutch/303005.html" />
+    <TocEntry
+      Title="Configuratie"
+      Link="/Content/ZyLAB/Woo-Dutch/303006.html" />
+    <TocEntry
+      Title="Data Doorzoeken"
+      Link="/Content/ZyLAB/Woo-Dutch/303007.html" />
+    <TocEntry
+      Title="Filteren &amp; Categoriseren"
+      Link="/Content/ZyLAB/Woo-Dutch/303008.html" />
+    <TocEntry
+      Title="Extraheren &amp; Organiseren"
+      Link="/Content/ZyLAB/Woo-Dutch/303009.html" />
+    <TocEntry
+      Title="Produceren"
+      Link="/Content/ZyLAB/Woo-Dutch/303010.html" />
+    <TocEntry
+      Title="Rapporteren"
+      Link="/Content/ZyLAB/Woo-Dutch/303011.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Aanbevolen werkwijzen"
+    Link="/Content/ZyLAB/Woo-Dutch/3030.html">
+    <TocEntry
+      Title="Beoordeling: Niet openbaar"
+      Link="/Content/ZyLAB/Woo-Dutch/beoorderling_niet_openbaar.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Data reduceren"
+      Link="/Content/ZyLAB/Woo-Dutch/3030100.html" />
+    <TocEntry
+      Title="Belangrijkste facetten Woo-verzoek"
+      Link="/Content/ZyLAB/Woo-Dutch/3030200.html" />
+    <TocEntry
+      Title="&quot;Te Controleren&quot; batch"
+      Link="/Content/ZyLAB/Woo-Dutch/3030300.html" />
+    <TocEntry
+      Title="Eigen weergave"
+      Link="/Content/ZyLAB/Woo-Dutch/3030400.html" />
+    <TocEntry
+      Title="E-mails behandelen"
+      Link="/Content/ZyLAB/Woo-Dutch/3030500.html" />
+    <TocEntry
+      Title="Inventarislijst"
+      Link="/Content/ZyLAB/Woo-Dutch/3030600.html" />
+  </TocEntry>
+</CatapultToc>

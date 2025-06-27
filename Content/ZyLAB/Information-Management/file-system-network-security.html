@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2_293919570" data-has-heading-anchor="true">File System (Network) Security</h2>
+        <p>File System or Standard NTFS (Windows New Technology File System) Security provides performance, security, reliability, and other advanced features, such as file and folder permissions, encryption, disk quotas, and compression. <br />ZyLAB NTFS Security can be given on general folders of ZyLAB (installation directory, indexes directory, index data directory, etc.) and the different folders of the index. NTFS rights are set on the actual files of the archive, or the data, or the program. This is normally done when setting up the program, and this is a task for an administrator. NTFS rights are irreversible, so make sure that you do not exclude yourself from the list. Always make sure that the Administrators group has full control.<br /></p>
+        <p>The NTFS security module enables you to create an index that leaves the results a user is not authorized to see out of the result list. The references of the documents that are shown in the result list are only the references to the documents that the user is allowed to see. When you set normal NTFS security (without using the module) on folders containing documents or document groups, you will see the results you are not allowed to open appear in the result list. If you double click such a reference the program will tell you that the document can not be opened.</p>
+        <p>In order to set NTFS Security, create a NTFS Security index. The locations (folders and subfolders) where the data is stored, can be secured with the help of the module.</p>
+        <p>If you build an index and set security on the data folders over which the index is built, you will still be able to search on the full-text of all the documents that are in the data folder. The reason for this is that the contents of all the documents are stored in the index and as long as you have access to that index you can search on every word that is in the index and hence know if the word(s) you are searching for are present. The only thing is that the documents cannot be opened when you select a reference, or do not even appear in the result list (if you use the NTFS Security Module).</p>
+        <p>Once you have created a NTFS Security index, you can assign NTFS rights to user groups. You can enable user rights on for instance the wwwroot (where web clients are called from). This enables you to set rights for groups to access the entire website. It is not intended for setting rights to individual web clients. It is best to let an administrator first design a security plan, and then enforce it. That limits the chance that you get locked out. As stated earlier; setting NTFS rights is usually irreversible.</p>
+        <p>NTFS rights with custom groups can only be set if you have chosen NTFS rights during installation, or when the appropriate groups have been created on the domain. NTFS group rights settings exist on the basis of user groups on the local domain, or machine. If you have not created user groups on the domain, you will only see default domain user groups, not the ZyLAB user groups. Individual (imported) users will be seen by the NTFS security setting engine, because these can be led back to their original NT user account.</p>
+        <p>You can set rights for specific indexes and data. This enables individual settings per index. Once again bear in mind that settings are basically irreversible, and limited to the installation type!</p>
+        <p>&#160;</p>
+        <h3 id="h3_1232894700" data-has-heading-anchor="true">Create an NTFS Security index</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Open ZyINDEX &gt; Build.</li>
+            <li>Go to File &gt; New. </li>
+            <li>Fill out a Short Index Name (max. 8 characters). </li>
+            <li>Fill out a Long Index Name (max. 80 characters). Describe the contents of the index in more detail. </li>
+            <li>Select Index Wizard. </li>
+            <li>Click OK. </li>
+            <li>Click Next.</li>
+            <li>Select NTFS Security and use the arrow to the right to select the module.</li>
+            <li>Click Next four times.</li>
+            <li>Select 'Enable default NTFS security'.</li>
+            <li>Click Finish.</li>
+            <li>Click on the Now button (blue triangle) to build the index for the first time.</li>
+            <li>Click Go.</li>
+            <li>Click OK to finish the build process. </li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You created a NTFS Security index.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1688910003" data-has-heading-anchor="true">Set General NTFS Security</h3>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Go to ZyINDEX &gt; Security <img src="../../Storage/zylab-information-management-publication/file-system-network-security-img0001.png" width="28" height="32" alt="" />.</li>
+            <li>Select File System (Network) Security.</li>
+            <li>Select General from the dropdown listbox.</li>
+            <li>Select from the Section dropdown listbox, one of the following options:</li>
+        </ol>
+        <ul>
+            <li>All Files and Folders</li>
+            <li>Bookmarks</li>
+            <li>ZyALERT default</li>
+            <li>ZyIMAGE directories</li>
+            <li>ZyIMAGE License</li>
+            <li>ZyIMAGE User</li>
+            <li>ZyIMAGE Webserver</li>
+            <li>ZyINDEX Default</li>
+            <li>ZySCAN Default</li>
+            <p>The folders, files, directories, etc. on which rights can be set, will be listed and numbered. Each folder, file, etc. is accompanied by user groups on which rights (permissions) can be set.<br />Grey user groups (g) can only be viewed, their rights are inherited.<br />Blue user groups (g) can be edited, their rights are 'access granted'.<br />Red user groups (d) can be edited, their rights are 'access denied'.</p>
+        </ul>
+        <ol start="5">
+            <li>Click on a user group, for which you want to set/edit or view NTFS Security rights.<br />The View/Edit Permissions dialog appears<br /><img src="../../Storage/zylab-information-management-publication/file-system-network-security-img0002.png" width="465" height="542" alt="" class="Thumbnail" /><br /></li>
+        </ol>
+        <ol start="6">
+            <li>For each group, you can select Users, Groups and Roles from the dropdown listboxes.</li>
+            <li>The rights (permissions) may be applied onto:</li>
+        </ol>
+        <ul>
+            <li>This folder only</li>
+            <li>This folder, subfolders and files</li>
+            <li>This folder and subfolders</li>
+            <li>This folder and files</li>
+            <li>Subfolders and files only<br />So, not on the folder on which the permission is set.</li>
+            <li>Subfolders only</li>
+        </ul>
+        <ol start="8">
+            <li>Select the permissions for this user group. You can choose from:</li>
+        </ol>
+        <ul>
+            <li>Full control (f)<br />Allows viewing, running, changing, deleting, and changing owner</li>
+            <li>Modify (m)<br />Allows viewing, running, changing, and deleting</li>
+            <li>Read and Execute (e)<br />Allows viewing and running</li>
+            <li>Read (r) / List folder contents (l)<br />Allows viewing</li>
+            <li>Write (w)<br />Allows viewing, running, changing, and deleting</li>
+            <p>Each selected right (permission) is displayed with a character. The inheritance type is also displayed with a character:<br />o: Object Inheritance (file inherits the right)<br />c: Container Inheritance (folders inherit the right)<br />p: No Propagate (subfolders and files inherit the right, but not subfolders of subfolders or files of subfolders)<br />i: Inherit Only (right is inherited, but not for the folder itself)<br />h: Inherited (right is inherited, set on a higher level (and thus displayed in grey))</p>
+        </ul>
+        <ol start="9">
+            <li>Alternatively, you can select 'Apply these permissions to objects and/or containers within this container only'.</li>
+            <li>Click OK.</li>
+            <li>Repeat these steps for the different sections and user groups for which you want to set NTFS Security rights.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You set the NTFS Security rights for a number of sections and user groups.</p>
+        <p>&#160;</p>
+        <h3 id="h3__1838927807" data-has-heading-anchor="true">Set Index NTFS Security</h3>
+        <h4 data-has-heading-anchor="true">
+			Conditions</h4>
+        <p>You created an NTFS Security index. ZyINDEX is open.</p>
+        <h4 data-has-heading-anchor="true">
+			Instructions</h4>
+        <ol start="1">
+            <li>Select Security <img src="../../Storage/zylab-information-management-publication/file-system-network-security-img0001.png" width="28" height="32" alt="" />.</li>
+            <li>Select File System (Network) Security.</li>
+            <li>Select an index from the dropdown listbox</li>
+            <p>If you select an index, created without the NTFS Security module, but with the option 'Enable functional security and default NTFS security' selected (Step 6: Security), you can also set the index NTFS rights. However, users will be able to see the documents (they are not allowed to open) in the result list.</p>
+            <li>Select from the Section dropdown listbox, one of the following options:</li>
+        </ol>
+        <ul>
+            <li>All Files and Folders</li>
+            <li>Data Directories</li>
+            <li>Index Character Set</li>
+            <li>Index Directory</li>
+            <li>Index Fields</li>
+            <li>Index Noise Words</li>
+            <li>Index Operators</li>
+            <li>Table Of Contents</li>
+            <p>The folders, files, directories, character sets, etc. on which rights can be set, will be listed and numbered. Each folder, file, etc. is accompanied by user groups on which rights (permissions) can be set.<br />Grey user groups (g) can only be viewed, their rights are inherited.<br />Blue user groups (g) can be edited, their rights are 'access granted'.<br />Red user groups (d) can be edited, their rights are 'access denied'.</p>
+        </ul>
+        <ol start="5">
+            <li>Click on a user group, for which you want to set/edit or view NTFS Security rights.<br />The View/Edit Permissions dialog appears.<br /><img src="../../Storage/zylab-information-management-publication/file-system-network-security-img0002.png" width="467" height="546" alt="" class="Thumbnail" /></li>
+        </ol>
+        <ol start="6">
+            <li>For each group, you can select Users, Groups and Roles from the dropdown listboxes.</li>
+            <li>The rights (permissions) may be applied onto:</li>
+        </ol>
+        <ul>
+            <li>This folder only</li>
+            <li>This folder, subfolders and files</li>
+            <li>This folder and subfolders</li>
+            <li>This folder and files</li>
+            <li>Subfolders and files only<br />So, not on the folder on which the permission is set!</li>
+            <li>Subfolders only</li>
+        </ul>
+        <ol start="8">
+            <li>Select the permissions for this user group. You can choose from:</li>
+        </ol>
+        <ul>
+            <li>Full control (f)<br />Allows viewing, running, changing, deleting, and changing owner</li>
+            <li>Modify (m)<br />Allows viewing, running, changing, and deleting</li>
+            <li>Read and Execute (e)<br />Allows viewing and running</li>
+            <li>Read (r) / List folder contents (l)<br />Allows viewing</li>
+            <li>Write (w)<br />Allows viewing, running, changing, and deleting</li>
+            <p>Each selected right (permission) is displayed with a character. The inheritance type is also displayed with a character:<br />o: Object Inheritance (file inherit the right)<br />c: Container Inheritance (folders inherit the right)<br />p: No Propagate (subfolders and files inherit the right, but not subfolders of subfolders or files of subfolders)<br />i: Inherit Only (right is inherited, but not for the folder itself)<br />h: Inherited (right in inherited, set on a higher level (and thus displayed in grey))</p>
+        </ul>
+        <ol start="9">
+            <li>Alternatively, you can select 'Apply these permissions to objects and/or containers within this container only'.</li>
+            <li>Click OK.</li>
+            <li>Repeat these steps for the different sections and user groups for which you want to set NTFS Security rights.</li>
+        </ol>
+        <h4 data-has-heading-anchor="true">
+			Result</h4>
+        <p>You set the NTFS Security rights for a number of sections and user groups for a specific index.</p>
+    </body>
+</html>

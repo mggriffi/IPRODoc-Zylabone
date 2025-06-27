@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="SUBSCRIPTION_ACTIVE_USERS_REPORT" Link="/Content/ZyLAB/CSH/zylabmanual/Subscription_Active_Users_Report.html" />
+    <Map Name="SUBSCRIPTION_AUDIT_REPORT" Link="/Content/ZyLAB/CSH/zylabmanual/Global_Audit_Log.html" />
+</CatapultAliasFile>

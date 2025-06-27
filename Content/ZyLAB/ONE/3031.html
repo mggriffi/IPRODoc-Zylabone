@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Example Queries</h1>
+        <p>These queries are based on the <a href="../search-language-guide/10824.html" target="_top">ZyLAB search syntax</a> and can be used in Auto Classification or Auto Redaction.</p>
+        <p><b>Dutch Mobile Numbers</b>
+        </p>
+        <ul class="listbullet">
+            <li class="listbullet">
+      (([06]{1,2}[0-9]{8} or [06]{1,2} [0-9]{8}) w/2 ?[0-9]{1,2}) or ([06]{1,2}[0-9]{8} or [06]{1,2} [0-9]{8})</li>
+        </ul>
+        <p style="font-weight: bold;">Credit Cards</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+      (?#American_Express)(\b3[47][0-9]{13}\b)|(\b3[47][0-9]{2}[ ]*[0-9]{6}[ ]*[0-9]{5}\b<br />converts to&#160;<br />([3][47][0-9]{13}) OR ([3][47][0-9]{2} [0-9]{6} [0-9]{5})
+    </li>
+            <li class="listbullet">(?#China_UnionPay)(\b(62|88)[0-9]{13}[0-9]{1,4}\b)|(\b(62|88)[0-9]{2}([ ]*[0-9]{4}){3}\b)<br />converts to<br />([6][2][0-9]{13}[0-9]{1,4}) OR ([6][2][0-9]{2} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}) OR ([8][8][0-9]{13}[0-9]{1,4}) OR ([8][8][0-9]{2} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4})</li>
+            <li class="listbullet">(?#Master_Card)\b5[1-5][0-9]{2}([ ]*[0-9]{4}){3}\b<br />converts to<br />([5][1-5][0-9]{2} [0-9]{4} [0-9]{4} [0-9]{4}) OR ([5][1-5][0-9]{14})<br /></li>
+        </ul>
+        <p><b>   IBAN</b>
+        </p>
+        <ul class="listbullet">
+            <li class="listbullet">
+      [a-z]{2}[0-9]{2}[a-z0-9]{4}[0-9]{7}[a-z0-9]{0,16}</li>
+        </ul>
+    </body>
+</html>

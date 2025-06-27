@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>
+            <span class="bodytext">Create, delete or edit roles and add/remove&#160;<a href="../../ZyLAB/ONE/570.html" target="_top">permissions</a> to/from roles. Roles are assigned to <a href="../../ZyLAB/ONE/340.html" target="_top">users</a>.
+  
+  
+  <span class="note">A role is a selection of permissions. For example, a role might consist of two permissions: Access Matter and Access Documents. Let's call this role 'Search Results Only'. A user that has been assigned with this role, is allowed to search for documents and view them in the Document List, but is not allowed to open/view them. To open them, the user needs a role with the added permission Access Document Content.</span></span>
+        </p>
+        <p>
+            <span class="bodytext">
+                <span class="note">A role can be assigned in combination with <a href="../../ZyLAB/ONE/671.html" target="_top">Document Security Rules</a>. This means that the selected permissions of a Role are linked to a selection of documents (as defined in the Document Security Rule).</span>
+            </span>
+        </p>
+        <p>
+            <span class="bodytext">
+                <span class="note">For example, a user that has been assigned with the role 'Search Results Only', can only search within documents that are retrieved with the Documen</span>
+            </span>
+            <span class="bodytext">
+                <span class="note">t Security Rule 'Public'.&#160;</span>
+            </span>
+        </p>
+    </body>
+</html>

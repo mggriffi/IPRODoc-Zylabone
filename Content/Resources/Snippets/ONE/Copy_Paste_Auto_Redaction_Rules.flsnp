@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>Once an Auto Redaction rule has been created, it can be copied and pasted into other matters reducing the time needed to create rules in each matter.</p>
+        <ol>
+            <li class="listnumber">
+                <p>To copy Auto Redaction rules from one matter into another matter, choose from the following: </p>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <p>To copy a <b>single</b> Auto Redaction rule from the matter, select the rule from the left-hand pane. Click <b>Copy Rule</b>. </p>
+                <p>
+                    <img src="../../Images/ONE/Configuration_AutoRedactions_CopyRule_NewLogo.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>
+                    <p>To copy <b>all</b> Auto Redaction rules from the matter, select <b>Copy Rules</b>. This option is displayed  in the top-right corner of an Auto Redaction rule page, and on the Auto Redactions overview page. </p>
+                    <p>
+                        <img src="../../Images/ONE/Configuration_AutoRedactions_CopyRules_NewLogo.png" class="Thumbnail" />
+                    </p>
+                    <p>
+                        <img src="../../Images/ONE/Configuration_AutoRedactions_Overview_CopyRules_NewLogo.png" class="Thumbnail" />
+                    </p>
+                </p>
+            </li>
+            <li>
+                <p>To copy a <b>selection</b> of Auto Redaction rules, use the Filter function. Then, click <b>Copy Rules</b> from the Auto Redactions overview page to copy the filtered selection of rules.</p>
+                <p>
+                    <img src="../../Images/ONE/Configuration_AutoRedactions_Overview_FilterSelection_CopyRules_NewLogo.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <ol start="2">
+            <li class="listnumber">
+                <p>To paste the copied rule(s) into another matter, open the target matter. Then, navigate to <b>Configurations &gt; Auto Redactions</b>. </p>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <p>Click <b>Paste Rule(s)</b>. This option is displayed  in the top-right corner of an Auto Redaction rule page, and on the Auto Redactions overview page. </p>
+                <p>
+                    <img src="../../Images/ONE/Configuration_AutoRedactions_PasteRules_NewLogo.png" class="Thumbnail" />
+                </p>
+                <p>
+                    <img src="../../Images/ONE/Configuration_AutoRedactions_Overview_PasteRules_NewLogo.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Shortcut keys (Ctrl C + Ctrl V) can be used, but may not work for all users. If unavailable, the Copy and Paste buttons should be used.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Duplicate rules are not allowed. If the rule already exists, an error message will appear. </p>
+                <p>If the rule is assigned specific properties that do not exist in the target matter, then the copied rule will be pasted without these permissions. </p>
+            </li>
+        </ul>
+    </body>
+</html>

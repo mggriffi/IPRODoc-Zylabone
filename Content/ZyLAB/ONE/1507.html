@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 id="h2_1188759795" data-has-heading-anchor="true">Bates Number</h2>
+        <p>
+			Bates numbering (also known as Bates stamping, Bates range, Bates coding or Bates labeling) in Production is used to place unique identifying numbers on images as they are produced. This process provides identification, protection, and auto-increment numbering of the images.
+		</p>
+        <p>In Productions it is important to have consistent, gap-free bates numbering sequences. Bates numbers for each page of each file provide prove that no pages are skipped during production. The Bates numbers can also be used for reference and retrieval.
+
+  
+		</p>
+        <p>&#160;</p>
+        <h2 id="h2_1188759722" data-has-heading-anchor="true">Images</h2>
+        <p>Though we often refer to documents being searched or reviewed, ZyLAB users/reviewers actually work with TIFF images that are created during  <a href="0830.html">upload</a>&#160;(and processing of the files). This means that the original (native) file (for example, a document, an image, a spreadsheet, an email or attachment) is not affected when, for example, adding&#160;<a href="443.html">redactions</a>.</p>
+        <p>You can also choose to produce files as images: TIFF (Singlepage or Multipage) and/or (Searchable) PDF. For more information, see <a href="1502.html">Image Settings</a>.&#160;</p>
+        <p>&#160;</p>
+        <p><b>Why review and produce images?</b>
+        </p>
+        <p>The main reason for reviewing and producing image files is that they are&#160;used to redact, for example, privileged information without contaminating the evidence.
+			The integrity of the native file (and its metadata) is retained.  
+			</p>
+        <p>&#160;</p>
+        <p><b>Advantages
+			</b>
+        </p>
+        <p>Converting files into a page based format like TIFF, assists you in maintaining a consistent, gap-free <a href="1509.html">bates numbering</a> sequence, since each page of a file will be converted to an image. A gap-free bates numbering sequence provides prove that no pages were skipped during production. 
+			Images are redacted during the review stage. Redactions can be burned into the image, exemption codes can be added on top of the redacted area or in the left margin. The risk of accidental alteration once produced is reduced, because once burned into the image, the redactions cannot be removed.
+
+			</p>
+        <p>&#160;</p>
+        <p><b>Disadvantages</b>
+        </p>
+        <p>There are many risks involved with converting files to images. Data may be lost or altered. For example, comments may not be included, cells may be hidden and animations may not be displayed properly.
+		Conversion can be costly and the turnaround time might be increased due to processing and quality control issues. Certain files (such as spreadsheets and small databases) cannot be converted without loss of data. ZyLAB Production produces spreadsheets with hidden columns and cells exposed, but not with formulas (only the output of the formula).</p>
+        <p>&#160;</p>
+        <h2 id="h2_1188759733" data-has-heading-anchor="true">Natives</h2>
+        <p>You can choose to download or produce files in the format in which they were originally created and maintained. For example, MS Word documents are saved as .doc or .docx files, MS Excel files as .xls or .xlsx files, etc.
+			</p>
+        <p>&#160;</p>
+        <p><b>Why produce natives?</b>
+        </p>
+        <p>The most important reason to produce native files is that it may be required by opposition, the courts or regulators. Requests for native file productions are not always granted. Spreadsheets and databases are an exception and are generally produced natively.
+  
+			</p>
+        <p>&#160;</p>
+        <p><b>Advantages</b>
+        </p>
+        <p>Conversion costs (from native to image and/or text file) and turnaround time might be lower or even eliminated, resulting in a less costly and more timely delivery of files. Certain files (such as spreadsheets) do not lend themselves for conversion, due to a loss of information. Native files are searchable (but so are text files). Many argue that viewing files in their original format is as close as you can get to understand the author's intentions and meanings.
+  
+			</p>
+        <p>&#160;</p>
+        <p><b>Disadvantages</b>
+        </p>
+        <p>File control is more difficult; Native files cannot be <a href="443.html">redacted/annotated</a> and/or labeled with bates numbers on a per page basis. The risk of (accidental) alteration is greater than with the image format. Metadata might be hidden and the use of the corresponding native applications might cause severe licensing and/or logistical problems. Not every native application supports complex keyword searches.
+  
+		</p>
+        <p>&#160;</p>
+        <p><b>ZySCAN Files</b>
+        </p>
+        <p>When you have used the ZyLAB software to OCR your files, the resulting files cannot be produced as natives, only as image (TIFF) and/or text files.</p>
+        <p>&#160;</p>
+        <h2 id="h2_1188759744" data-has-heading-anchor="true">Placeholders</h2>
+        <p>Placeholder documents replace and define the unprocessed files. A file might not be produced for various reasons, most commonly for privileged or technical reasons. </p>
+        <p>When files are only produced in the native and/or text format, an image placeholder will be produced for each file. In this placeholder, information about the file (that is not produced as an image) will be included.</p>
+        <p>Information that can be included&#160;in a placeholder:
+			<ul class="listbullet"><li class="listbullet">
+					File name
+      
+					<br />      This will be the file name used after production, with Bates number.
+				</li><li class="listbullet">
+					File path
+					<br />      This will be the file path used after production.
+				</li><li class="listbullet">
+					Original file name
+				</li><li class="listbullet">
+					Original file size
+				</li><li class="listbullet">
+					Original file path
+			</li><li class="listbullet">Other (manually selected) fields&#160;</li></ul><!--
+  
+			&lt;br/&gt;&lt;b&gt;Important Notes&lt;/b&gt; 
+  
+  
+			&lt;ul class=&quot;listbullet&quot;&gt;&lt;li class=&quot;listbullet&quot;&gt;Only alphanumeric symbols and underscores are allowed as the key of a placeholder (e.g. &#39;query 1&#39; is an invalid placeholder). There are no restrictions for the placeholder content, query resolver will just use string substitution: #&lt;placeholder key&gt;&lt;placeholder key=&quot;&quot;&gt;# will be replaced with &lt;placeholder value&gt;&#160;&lt;placeholder value=&quot;&quot;&gt; inside the &lt;add ...&gt;&lt;/add&gt;&#160;tags.&#160;&lt;/placeholder&gt;&lt;/placeholder&gt;&lt;/li&gt;&lt;li class=&quot;listbullet&quot;&gt;&lt;placeholder key=&quot;&quot;&gt;&lt;placeholder value=&quot;&quot;&gt;You can use #..# placeholders inside the placeholder value itself (e.g. &lt;add key=&quot;query3&quot;&gt;&lt;add key=&quot;query3&quot;&gt;#query1# or banana&lt;/add&gt;&lt;/add&gt;). Placeholders&#39; declaration order does not matter; you can reference the last placeholder in QueryMacros.config from the first one.&#160;&lt;/placeholder&gt;&lt;/placeholder&gt;&lt;/li&gt;&lt;li class=&quot;listbullet&quot;&gt;&lt;placeholder key=&quot;&quot;&gt;&lt;placeholder value=&quot;&quot;&gt;When you reference a placeholder, the lookup for that placeholder will be performed in a case-insensitive way. Thus, no matter whether you use &#39;Key&#39;, &#39;key&#39; or &#39;KEY&#39; as the placeholder key, you can also reference it by #Key#, #key# and #KEY#.&#160;&lt;/placeholder&gt;&lt;/placeholder&gt;&lt;/li&gt;&lt;li class=&quot;listbullet&quot;&gt;&lt;placeholder key=&quot;&quot;&gt;&lt;placeholder value=&quot;&quot;&gt;In case of a multiple declaration of a placeholder (or declaring it a different case, see former note), the value of the last one will be used during expansion.&#160;&lt;/placeholder&gt;&lt;/placeholder&gt;&lt;/li&gt;&lt;li class=&quot;listbullet&quot;&gt;&lt;placeholder key=&quot;&quot;&gt;&lt;placeholder value=&quot;&quot;&gt;Placeholders equal to built-in ones (like #daysago# or #username#) or equal to those declared in the other plugins (like #uservisiblemailboxes#) are not allowed and will be ignored.
+
+			&lt;/placeholder&gt;&lt;/placeholder&gt;&lt;/li&gt;&lt;li class=&quot;listbullet&quot;&gt;&lt;placeholder key=&quot;&quot;&gt;&lt;placeholder value=&quot;&quot;&gt;There is a hardcoded limit of 1000 for the number of rounds placeholders will be evaluated. E.g. if you have a placeholder referencing itself directly or indirectly, thus creating an infinite loop, after 1000 rounds of evaluation you retrieve the error &#39;Infinite placeholder expansion detected&#39;.&lt;br/&gt;&lt;/placeholder&gt;&lt;/placeholder&gt;&lt;ul class=&quot;listbullet&quot;&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+  
+  
+  
+		--></p>
+        <p data-has-heading-anchor="true">&#160;</p>
+        <h2 id="h2_1188759755" data-has-heading-anchor="true">Text</h2>
+        <p>You can choose to produce files in a searchable text format. Searchable text files are likely to be produced in combination with related image files, since images are not searchable.
+  
+  
+			</p>
+        <p>&#160;</p>
+        <p><b>Why produce text files?</b>
+        </p>
+        <p>The main reason for producing text files is that they are searchable and necessary when producing non-searchable image files.
+			</p>
+        <p>&#160;</p>
+        <p><b>Advantages
+			</b>
+        </p>
+        <p>Searchable text files (.txt) are commonly used for storage of information because of their simplicity. Text files are structured as a sequence of lines of electronic text and avoid most of the problems related with other file formats. They can easily be read or opened by any program that reads text and, for that reason, are considered universal or platform independent.
+			</p>
+        <p>&#160;</p>
+        <p><b>Disadvantages</b>
+        </p>
+        <p>Searchable text files often contain text that is redacted from an image during review, since the searchable text files are created before redactions are added to images. When redactions are added to an image,&#160;the related text file is not produced, as it is not possible to redact text files. Even if only a single word on an image is redacted, the related text file will not be produced.
+  
+  
+		</p>
+    </body>
+</html>

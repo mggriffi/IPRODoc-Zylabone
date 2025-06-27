@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>How to Set Up SSO with Microsoft Entra ID</h1>
+        <p>The following instructions provide steps on how to set up SSO in ZyLAB One with your own Microsoft Entra ID identity provider.</p>
+        <ol>
+            <li>
+                <p>Sign in to <a href="https://portal.azure.com/">portal.azure.com</a> and go to <b>Microsoft <MadCap:annotation MadCap:createDate="2023-10-18T10:17:55.6364519-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="What is the correct url" MadCap:editor="ddavidson" MadCap:editDate="2023-10-18T10:18:07.2674676-04:00">Entra</MadCap:annotation> ID</b>.</p>
+            </li>
+            <li>
+                <p>Cick on <b>App Registrations</b>.</p>
+            </li>
+            <li>
+                <p>Click on <b>New registration</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/Set Up SSO/Image_1.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Choose a<b> name</b> for your application (you’re free to choose whatever you want).</p>
+            </li>
+            <li>
+                <p>Choose if this should be <b>single tenant</b> or <b>multitenant </b>(this is your choice).</p>
+            </li>
+            <li>
+                <p>Enter the<b> redirect URL</b> that ZyLAB provided to you. Please know that this is CASE sensitive.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/Set Up SSO/Image_2.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Register</b>.</p>
+            </li>
+            <li>
+                <p>Open up the app registration and go to <b>Authentication</b>.</p>
+            </li>
+            <li>
+                <p>Enure that<b> ID Tokens </b>are enabled.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/Set Up SSO/Image_3.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Go back to <b>Microsoft Entra ID</b>.</p>
+            </li>
+            <li>
+                <p>Go to <b>Enterprise Applications</b>.</p>
+            </li>
+            <li>
+                <p>Select the newly created ZyLAB One application and click on permissions.</p>
+            </li>
+            <li>
+                <p>It's advised to grant admin consent for your entire company. This avoids confusion for users who otherwise will get prompted to give their consent to sign in.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/Set Up SSO/Image_4.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on <b>Accept</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/Set Up SSO/Image_5.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>You should see a notification that this worked.</p>
+                <p>
+                    <img src="../../Resources/Images/Z1/Set Up SSO/Image_6.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Provide ZyLAB with the following details:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p><b>Application</b> (Client) ID</p>
+                    </li>
+                    <li>
+                        <p><b>Object ID</b>
+                        </p>
+                    </li>
+                    <li>
+                        <p><b>Directory</b> (tentant) ID</p>
+                        <p>
+                            <img src="../../Resources/Images/Z1/Set Up SSO/Image_7.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </body>
+</html>

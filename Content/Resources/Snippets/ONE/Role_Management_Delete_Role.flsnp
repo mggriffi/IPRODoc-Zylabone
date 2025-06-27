@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h2>Delete Role</h2>
+        <ol>
+            <li>
+                <p>Select a role type (filter if needed).
+            </p>
+                <p>
+                    <img src="../../../Storage/zylab-one-manual-publication/341-2018-03-05-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select a role (filter if needed).
+</p>
+            </li>
+            <li>
+                <p>Select the <b>Delete</b> icon.</p>
+            </li>
+        </ol>
+    </body>
+</html>

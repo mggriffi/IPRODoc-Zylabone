@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>Email Collector (Default &amp; Enterprise)</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Email Collector (Default & Enterprise)';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t10123" class="heading3">
+            <MadCap:keyword term="Email Collector (Default &amp; Enterprise)" />Email Collector (Default &amp; Enterprise)</p>
+        <p class="bodytext">The Email Collector collects email from email providers that support IMAP, POP3 or ActiveSync. <br /><br /><img id="f10300" src="../../Storage/legal-processing-publication/lpemail.png" class="linkedjpegfiletemplate80" alt="Linked JPEG File Template 70" height="565.6" width="448" vspace="0" hspace="0" align="bottom" border="0" /></p>
+        <p class="bodytext">First, select the Authentication Type (Social or Enterprise). Social is used to collect items from a user with a known password. Enterprise is used to collect items from a user or group of users in the same domain, without knowing all the passwords. Instead, you will use the Customer Key and Customer Key supplied by the Administrator.</p>
+        <p class="bodytext">Second, select the provider (IMAP, POP or ActiveSync).</p>
+        <p class="heading4">IMAP</p>
+        <p class="note">IMAP is supported by Gmail, Aol and Yahoo. Only IMAP is available as provider for the authentication type Enterprise (the other being the Social type or default configuration).</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Email</b>
+                <br />Define the full email address (for example, for Gmail: username@gmail.com, for AOL: username@aol.com, for Yahoo: username@yahoo.com).<br /><br /><b class="specialbold">Password</b><br />Define the password related to the Gmail, AOL or Yahoo email address.<br /><br /><b class="specialbold">Host</b><br />imap.gmail.com or imap.aol.com or imap.mail.yahoo.com<br /><br /><b class="specialbold">Enable SSL</b><br />Yes<br /><br /><b class="specialbold">Port</b><br />993<br /><br /><b class="specialbold">Domain</b> (Enterprise)<br /><br /><b class="specialbold">Consumer Key</b> (Enterprise)<br /><br /><b class="specialbold">Consumer Secret</b> (Enterprise)<br /></li>
+        </ul>
+        <p class="heading4">POP</p>
+        <p class="note">POP3 is supported by Hotmail and Yahoo Plus!. Because of the limitations in the POP3 protocol, full text search is not possible on the body of the email and only messages from the Inbox can be collected.</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Email</b>
+                <br />Define the full email address (for example, for Hotmail: username@hotmail.com, for Yahoo Plus!: username@).<br /><br /><b class="specialbold">Password</b><br />Define the password related to the Hotmail or Yahoo Plus! email address.<br /><br /><b class="specialbold">Host</b><br />pop3.live.com or plus.pop.mail.yahoo.com<br /><br /><b class="specialbold">Enable SSL</b><br />Yes<br /><br /><b class="specialbold">Port</b><br />995<br /></li>
+        </ul>
+        <p class="heading4">ActiveSync</p>
+        <p class="note">ActiveSync is supported by Gmail, Hotmail and Exchange. The ZyLAB Exchange ActiveSync settings are not yet supported. Full text search is not yet implemented.</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Email</b>
+                <br />Define the full email address (for example, for Gmail: username@gmail.com, for Hotmail: username@hotmail.com).<br /><br /><b class="specialbold">Domain\Username</b><br />For example, for Gmail: google\username@gmail.com, for Hotmail: username@hotmail.com<br /><br /><b class="specialbold">Password</b><br />Define the password related to the Gmail or Hotmail email address.<br /><br /><b class="specialbold">Host</b><br />m.google.com or m.hotmail.com</li>
+        </ul>
+        <p class="bodytext" />
+        <p class="heading4">All Providers</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <p class="list" />
+                <p class="listnote">Internet email messages consist of two major sections:<br />- Header (structured into fields such as From, To, CC, Subject, Date, and other information about the email). Each field has a name and value. RFC 5322 specifies the precise syntax (http://tools.ietf.org/html/rfc5322 ).<br />- Body (the basic content, as unstructured text; sometimes containing a signature block at the end)</p>
+                <p class="list">
+                    <br />
+                    <b class="specialbold">Header</b>
+                    <br />The Header filter is currently only supported for IMAP. If you use this field for POP3 or ActiveSync, you will get a warning when checking the matter in.<br /><br />To define an Email Header Field filter, use the following format:<br /><br /><code class="monospace">'Header1:value1 value2|Header2:value3'</code><br /><br />For example:<br /><br /><code class="monospace">Date:7 Mar|MIME-Version:1.0|X-Priority:3</code><br /><br /><b class="specialbold">From</b><br />Collect messages sent from someone. Define a user/email address.<br /><br /><b class="specialbold">To</b><br />Collect messages sent to someone. Define a user/email address.<br /><br /><b class="specialbold">Cc</b><br />Collect messages sent to someone using the CC field. Define a user/email address.<br /><br /><b class="specialbold">Bcc</b><br />Collect messages sent to someone using the BCC field. Define a user/email address.<br /><br /><b class="specialbold">Subject</b><br />Collect messages by the words specified in the Subject.<br /><br /><b class="specialbold">Body</b><br />Collect messages by the words specified in the Body.<br /><br /><b class="specialbold">Date Range</b><br />Collect messsages by a defined date range.<br /></p>
+                <p class="listnote">The date range is not dynamically adjusted. For example, when you choose to collect everything until today (inclusive) and want to rerun the same collection action the next day, it will collect everything until yesterday (inclusive).</p>
+            </li>
+        </ul>
+        <p class="bodytext" />
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">File Types to Collect</em>
+                <br />Select the appropriate File Groups. To create new File Groups, click Add New.<br />For more information on how to define File Groups, see <a id="h9546" class="" title="Define File Groups" href="9522.html" target="_self">Define File Groups</a>.</li>
+        </ul>
+        <p class="bodytext">
+            <br />
+        </p>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10223.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="http://docs.zylab.com/articles/legalprocessing/10117" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

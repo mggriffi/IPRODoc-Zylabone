@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Quorum Operator';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Quorum Operator</h1>
+        <p>
+            <MadCap:keyword term="Quorum Operator" />
+  Use the Quorum operator to search for a specified number of terms in no particular order from a list. 
+  <br /></p>
+        <p>
+            <table width="486" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="180" valign="middle" style="border-right-color: #ffffff;border-right-width: 1px;border-right-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">Syntax
+          </b>
+                            </p>
+                        </th>
+                        <th width="306" valign="middle" style="border-right-color: #ffffff;border-left-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Semantics
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="180" style="border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          n of {subquery1, subquery2, ...}
+        </p>
+                        </td>
+                        <td width="306" style="border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Finds all files that match at least n different sub queries. All hits of all sub queries that are in the files will be highlighted.
+        </p>
+                            <p class="tablebodytextleft"><em class="emphasis">
+            n
+          </em>
+          is equal to or less than the total number of terms in the list.
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <p class="heading4">
+  Examples
+</p>
+            <table width="605" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="302" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Example of query
+          </b>
+                            </p>
+                        </th>
+                        <th width="302" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="302" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          2 of {history, english, social studies, french, dutch, german}
+        </p>
+                        </td>
+                        <td width="302" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                            <ul class="listbullet">
+                                <li class="listbullet">
+            history, social studies
+          </li>
+                                <li class="listbullet">
+            dutch, german
+          </li>
+                                <li class="listbullet">
+            history, english, german
+          </li>
+                                <li class="listbullet">
+            english, social studies, dutch, german
+          </li>
+                                <li class="listbullet">
+            Etc. Always at least 2 or more from the list.
+          </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="302" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          1 of {blue, green, red}
+          <br /><br />          equals
+          <br /><br />          blue OR green OR red
+        </p>
+                        </td>
+                        <td width="302" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <ul class="listbullet">
+                                <li class="listbullet">
+            blue
+          </li>
+                                <li class="listbullet">
+            blue, green
+          </li>
+                                <li class="listbullet">
+            blue, green, red
+          </li>
+                                <li class="listbullet">Etc. Always at least 1 or more from the list.
+          </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="302" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          3 of {blue, green, red}&#160;<br /><br />          equals
+          <br /><br />          blue AND green AND red
+        </p>
+                        </td>
+                        <td width="302" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          blue, green, red
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+    </body>
+</html>

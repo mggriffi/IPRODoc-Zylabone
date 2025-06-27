@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Assisted Review Progress</title>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Assisted Review Progress';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/44.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/base.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/fancy.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/zylab-one-manual-publication/main.css" />
+        <script src="../../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../../Scripts/zylab-one-manual-publication/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Scripts/zylab-one-manual-publication/theViewer.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Scripts/zylab-one-manual-publication/jquery.magnify.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="top"><span class="heading1">
+      Assisted Review Progress</span>
+            </div>
+        </div><span class="bodytext">
+        
+      
+      Per <a href="https://docs.zylab.com/01/ZyLAB/ONE/319.html" target="_blank" >issue</a>, view the progress of the <a href="https://docs.zylab.com/01/ZyLAB/ONE/329.html" target="_blank" >classifier</a>.&#160;
+      <br /><br /><b>Issue Configuration</b><br />View if the issue is&#160;based on a Random Set, a Query, Existing Tagging or created from Topic Modeling<i>.<br /></i>View the minimum batch size of the issue.&#160;
+      <br /><br /><b>Delete Issue</b><br />Click the&#160;<img src="../../../Storage/zylab-one-manual-publication/new-project-2018-08-20.png" alt="" /> button.
+        
+        
+        <span class="note">
+      Please note that if an issue is deleted, tags assigned to documents in the issue are deleted. Also, information about the documents related to the deleted issue will not be shown&#160;in the training rounds report anymore.</span><b>Add New Training Batch</b><br />After reviewing your progress, you can add a <a href="https://docs.zylab.com/01/ZyLAB/ONE/325.html" target="_blank" >new training batch</a>&#160;to your issue:<br /><br /><img src="../../../Storage/zylab-one-manual-publication/new-project-2018-02-13-3.png" id="img_upload_6f57232b-f77d-be00-ab9a-693fcbca5bed" style="width: 235px;height: 42px;" alt="" /><br /><br /><b>View Statistics and Graphs</b><br />To view the <a href="https://docs.zylab.com/01/ZyLAB/ONE/322.html" target="_blank" >Statistics and Graphs</a>, select (in the bottom left corner of an issue)&#160;<br /><img src="../../../Storage/zylab-one-manual-publication/new-project-2018-07-12.png" alt="" /><br /><span style="font-size: 13.3333px;"><br /><b>Classify Remaining</b><br />Select Classify Remaining if finding more responsive documents is&#160;</span>not worth the time/cost of (manually) reviewing more documents, and/or&#160;the classifier&#160;is returning good results (the quality of the classifier is determined based on the results of the statistics and graphs)<span style="font-size: 13.3333px;">.<br />Set the <a href="https://docs.zylab.com/01/ZyLAB/ONE/779.html" target="_blank" >Classifier Threshold Score</a> (with a value larger than 0.0 and smaller than 1.0, default threshold is set at 0.5). Only documents with a <a href="https://docs.zylab.com/01/ZyLAB/ONE/329.html" target="_blank" >ranking value</a> higher than (<b>not</b> equal to) the Classifier Threshold Score will be classified and put in the Classification Results (Assisted Review Results field).<br /><br /></span><img src="../../../Storage/zylab-one-manual-publication/new-project-2018-07-12-1.png" alt="" style="width: 318px;height: 46.3417px;" /><br /><br /><b>
+        Training Batch Status&#160;
+        <br /><span style="color: #999999;">
+          Completed
+        </span><i></i></b><br />      Total reviewed documents (Responsive or Not Responsive&#160;Assisted Review&#160;tag applied) of
+ 
+ the Training Batches for this issue.
+      
+      
+      <br /><br /><b><span style="color: #999999;">
+          ToDo
+        </span></b><br />      Total 
+      <i>
+        not yet 
+      </i>
+      reviewed documents of the Training Batch for this issue.
+      <br /><br />      If you request a new training batch, ToDo will only be reset and a new training batch will only be calculated when the following conditions for the issue are met:
+      
+    
+    <ul class="listbullet"><li class="listbullet">
+        All documents of the initial training set size are reviewed. If not, the request for a new training batch will be ignored. The reviewer has to finish review of the initial training set.
+      </li><li class="listbullet">
+        The reviewed documents contain at least a Responsive and a Not Responsive document. If not, the Training Batch will be extended, but you will remain in the same training round.
+      </li></ul><br /><b>
+      Training Results
+      <br /><span style="color: #999999;">
+        Responsive Documents Found
+      </span></b><br />    Documents with Responsive&#160;Assisted Review&#160;tag applied, excluding Validation Set.
+    <br /><br /><b><span style="color: #999999;">
+        Classified as Responsive
+      </span></b><br />    Documents that are classified as responsive by the last trained classifier. Documents that are classified as responsive, are not automatically tagged with Assisted Review tags.&#160; &#160;
+    <br /><br /><b><span style="color: #999999;">Classifier Threshold Score&#160;</span></b><br />The Classifier Threshold Score that was used when selecting Classify Remaining.<br /><br /><b>
+      Training Statistics
+      <br /></b>
+    Precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned. High scores for both precision and recall show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).
+    <b><br /><br /><span style="color: #999999;">
+        Precision for Recall Goal
+      </span><br /></b><b></b>
+    Precision value for the user-defined recall goal in precision recall curve on Training Batch.
+    <b><br /><br /><span style="color: #999999;">
+        Recall Goal
+      </span></b><br />    User-defined goal.
+    <br /><br /><b style="text-decoration-style: initial;text-decoration-color: initial;"><span style="color: #999999;">
+        Estimated Current Recall&#160;
+      </span></b><br />    
+      The estimated current recall is the total number of reviewed responsive documents in the project (including the reviewed responsive documents of the Validation Set) divided by the estimated number of all responsive documents in the project.
+      <br /><br /><b>
+      
+      Validation Set Status
+    <br /><span style="color: #999999;">
+      Completed
+    </span><br /></b>
+    Total reviewed documents (Responsive or Not Responsive Assisted Review tag applied) of the Validation Set for this issue.&#160;
+    <b><br /><br /><span style="color: #999999;">
+        ToDo&#160;
+  </span><br /></b>
+    Total 
+    <i>
+      not yet
+    </i>
+    reviewed documents of the 
+ 
+ 
+ Validation Set for this issue
+    <b><br /><br /><span style="color: #999999;">
+    Extend Set
+  </span></b><br />    You can extend the Validation Set. Please review the Validation Set completely before extending it. Extend Set will extend Validation Sets&#160;for all project issues.
+    <br /><br />    Click Extend Set and click OK. The size of the Validation Set will be extended with 10% of the current Validation Set (with a minimum of 50 documents). Click Extend Set again to add another 10%.
+    <br /><br /><b>
+      Validation Set Results
+    </b><br /><b><span style="color: #999999;">
+        Responsive&#160;
+      </span></b><br />    Documents of the Validation Set with Responsive&#160;Assisted Review&#160;tag applied.
+    <br /><br /><b><span style="color: #999999;">
+        Not Responsive&#160;
+      </span></b><br />    Documents of the Validation Set with Not Responsive Assisted Review tag applied.
+    <br /><br /><b><span style="color: #999999;">
+        Precision for Recall Goal
+      </span></b><br />    Precision value for the user-defined recall goal in precision recall curve on Validation Set.
+    
+    <b><br /><br /></b></span>
+        <script>/*<![CDATA[*/
+setupMagnify();
+
+/*]]>*/</script>
+    </body>
+</html>

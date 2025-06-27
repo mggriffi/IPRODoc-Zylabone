@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block">
+    <head>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Assisted Review Glossary</h1><span class="bodytext"> <h2 id="h2__865126913" data-has-heading-anchor="true"><span class="heading2">Classifier</span><a href="301.html#h2__865126913" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+  
+
+
+
+
+
+   The (binary) classifier is a learning algorithm that is used to label documents as being responsive or not responsive for an <a href="319.html">issue</a>.
+  
+  <br /><b><span style="color: #2196F3;"><br />    Ranking</span></b><br />  The classifier ranks documents with a value (between 0.0 and 1.0). The higher the value, the more responsive the document is.
+  <br />  You can view the ranking of documents in an issue with the ranking column in <a href="document-list.html">Document List</a>. The results of this ranking helps you to determine the <a href="779.html">Classifier Threshold Score</a>.&#160; &#160;
+  <br />  First, select the correct ranking column:
+  <br /><br /><img src="../../Storage/zylab-one-manual-publication/329-2018-07-12.png" alt="" /><br /><br />  Then, sort the column ascending or descending:
+  <br /><br /><img src="../../Storage/zylab-one-manual-publication/329-2018-07-12-1.png" alt="" /><br /><br /><br /><br /></span><span class="bodytext"><h2 id="h2_1572523834" data-has-heading-anchor="true"><span class="heading2">Classifier Threshold Score</span><a href="301.html#h2_1572523834" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+  
+
+
+
+    
+    The Classifier Threshold Score enables you to control which documents in an <a href="319.html">issue</a>&#160;will be&#160;<a href="329.html">classified</a> as responsive or not responsive (when hitting the Classify Remaining button).&#160;<span style="font-size: 13.3333px;"><br /><br />    Define the value of the Classifier Threshold Score based on the <a href="329.html">ranking</a> of the classifier.&#160;Only documents with a&#160;value&#160;higher than (<b>not</b>&#160;equal to) the Classifier Threshold Score will be classified and put in the Classification Results (Assisted Review Results field).
+    <br /><br />    The Classifier Threshold Score is set before selecting the Classify Remaining button in the <a href="1030.html">Assisted Review Progress</a> tab:
+    <br /><br /><img src="../../Storage/zylab-one-manual-publication/new-project-2018-07-12-1.png" alt="" style="font-size: 13px;width: 318px;height: 46.3417px;" /><br /><br /><br /></span></span><span class="bodytext"><span class="heading2">
+      Class Imbalance</span><br /><br />Class imbalance occurs when you have a data set in which there are only a few responsive documents (positives) and a large number of not responsive documents (negatives). Prevalence values as small as 0,1% are commonly encountered for responsive documents. This class imbalance negatively effects the performance of the <a href="329.html">classifier</a>.</span><span class="bodytext"><h2 id="h2_1872132447" data-has-heading-anchor="true"><span class="heading2">
+      Extend Validation Set</span><a href="301.html#h2_1872132447" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+You can extend the <a href="446.html">Validation Set</a> in the <a href="1030.html">Assisted Review Progress</a> tab.
+  <br /><br /><img src="../../Storage/zylab-one-manual-publication/555-2018-08-27-1.png" alt="" style="width: 572px;height: 148px;" /><span class="note">
+  You can always extend the Validation Set. <br />However, remember there is only one Validation Set per project. If you extend the Validation Set for an <a href="319.html">issue</a>, it will be extended for all issues.&#160;
+  <br />Also, it is recommended to review the Validation Set completely before extending it.&#160;</span><b>When to extend the Validation Set?</b><br />  Extend the Validation Set when the size of the Validation Set is not sufficient; There are not enough random documents to make a good estimation of the number of responsive documents in the project. If this is the case, you can see a warning icon next to the <a href="330.html">Estimated Current Recall</a>:
+  <br /><br /><img src="../../Storage/zylab-one-manual-publication/555-2018-08-27-2.png" alt="" />
+&#160;<br /><br /><b>With how many documents will the Validation Set be extended?</b><br />  The size of the Validation Set will be extended with 10% of the current Validation Set (with a minimum of 50 documents). So for a Validation Set of a 1000 documents, the extension is 100 documents. Click Extend Set again to add another 10%. 
+  <br /><p /></span><span class="bodytext"><h2 id="h2_69509417" data-has-heading-anchor="true"><span class="heading2">Issue</span><a href="301.html#h2_69509417" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>An issue defines the information need. For example, you want to find information on contracts or human resources.&#160;For each issue, a <a href="321.html">training set</a>&#160;is created.&#160;
+  <br />  All issues are listed in the <a href="1030.html">Assisted Review Progress</a> tab. Here you can view, per issue, the <a href="322.html">Statistics and Graphs</a>&#160;(the results of the Training Set and <a href="446.html">Validation Set</a> and the status of the Training Batch and Validation Set. You can also view the Gain Curve, the Precision of Return Set and the Precision by Recall graph).
+  <br /><br /><br />  In ZyLAB Assisted Review, you have three options to add an issue:
+  
+</span>
+        <ol class="listnumber">
+            <li class="listnumber">
+    During creation of&#160;a project, in step 2 (Define Issues) of the project wizard.
+    <br /><br /><img src="../../Storage/zylab-one-manual-publication/319-2017-12-19-2.png" id="img_upload_b41303ef-da7a-2be0-2089-fdf23f99139a" style="width: 350px;height: 162px;" alt="" /><br /></li>
+            <li class="listnumber">
+    After creation of a project, via <a href="1011.html">Project Actions</a>&#160;<img id="img_upload_f2aff0aa-5e25-57d5-9035-76e8b1bc0c8b" src="../../Storage/zylab-one-manual-publication/new-project-2017-10-12-1.png" style="font-size: 13px;" />&#160;on the Assisted Review start page:
+    <br /><br /><img src="../../Storage/zylab-one-manual-publication/319-2018-03-08.png" alt="" /><br /></li>
+            <li class="listnumber">
+    After creation of a project with <a href="1020.html">Topic Modeling</a>, via the Topic Modeling tab:
+    <br /><br /><img src="../../Storage/zylab-one-manual-publication/319-2017-12-19-1.png" id="img_upload_15151034-06f5-1dd6-68be-393241356bb7" style="width: 350px;height: 200px;" alt="" /><br /><br /><br /></li>
+        </ol>
+        <p><span class="bodytext"><h2 id="h2_1260989538" data-has-heading-anchor="true"><span class="heading2">New Training Batch
+</span><a href="301.html#h2_1260989538" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>When a new <a href="321.html">training batch</a> for an <a href="319.html">issue</a> is added, a new training round/iteration is started. &#160;<br />Each time a new training batch is added to an issue, the training batch in ZyLAB One will be refreshed. Reviewers will only see the new documents. The documents that have been reviewed in previous batches remain in the project (together they form the training set) and you will be able to find them, but they will not be part of the training batch reviewers are currently working on.
+  
+  <br />A training batch can be divided in several <a href="317.html">review (sub-)batches</a>.<br /><br /><b>Add New Training Batch When...</b></span>
+        </p>
+        <p><span class="bodytext"><ul class="listbullet"><li class="listbullet">
+      The <a href="445.html">Recall Goal</a>&#160;is not reached yet.
+  <br />The Recall Goal is set when defining a project with a <a href="446.html">Validation Set</a>.&#160;&#160;<br />In the&#160;<a href="1030.html">Assisted Review Progress</a>&#160;tab, monitor if the Recall Goal is reached or nearly reached (<a href="330.html">Estimated Current Recall</a>):<br /><br /><img src="../../Storage/zylab-one-manual-publication/320-2018-03-06.png" alt="" /><br /></li><li class="listbullet">
+    The marginal precision is between 10% and 80% (0,1 and 0,8).&#160;
+    <br /><div>
+      The marginal precision (the precision of the last reviewed training batch added to the training set, also called the return set) usually rises to a high value (for example, 67%) in the beginning of the process.<br />View the marginal precision in the <a href="327.html">Precision of Return Set</a> graph.&#160;&#160;</div></li><li class="listbullet">
+    The <a href="326.html">Gain Curve</a> has not reached its plateau yet.<br /></li><li class="listbullet">The curve of the&#160;<a href="328.html" style="font-size: 13px;">Precision by Recall</a>&#160;graph&#160;has not reached the desired&#160;precision and recall yet, or there is still improvement.<br /></li><li class="listbullet"><a href="323.html">Precision and recall</a> are both below the values that were agreed earlier (for example, during meet-and-confer sessions).&#160; &#160; &#160;&#160;</li></ul><br /><h2 id="h2__1331046628" data-has-heading-anchor="true"><span class="bodytext heading2">Ranking</span><a href="301.html#h2__1331046628" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+
+
+Ranking is the document score or <b>relevance score</b> per document. This score is calculated per <a href="319.html">issue</a> for all documents in the project. The higher the score (ranging from 0.1 to 1.0), the more responsive the document is for a specific issue. For each <a href="325.html">new training batch</a>, the relevance score is recalculated and documents with the highest ranking are added to the batch.
+  <br />  In the Document List, you can sort the documents according to this ranking or relevance score:
+  
+  <br /><br /><ul class="listbullet"><li class="listbullet">
+    First, add the ranking field of the issue:<br /><br /><img src="../../Storage/zylab-one-manual-publication/447-2018-03-08.png" alt="" /><br /></li><li class="listbullet">Then, sort on this field:<br /><br /><img src="../../Storage/zylab-one-manual-publication/447-2018-03-08-1.png" alt="" /><br /></li></ul><br /></span><span class="bodytext"><h2 id="h2__460559982" data-has-heading-anchor="true"><span class="heading2"> Recall Goal</span><a href="301.html#h2__460559982" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+
+
+
+  
+  The Recall Goal is the user-defined goal (<a href="320.html">stop condition</a>). It is the desired amount (percentage) of responsive documents you want to find in the whole project.<br /><br /><b>Define the Recall Goal</b><br /><ul class="listbullet"><li class="listbullet">
+      Create a <a href="1090.html">project</a> in Assisted Review with a <a href="446.html">Validation Set</a>.<br /><br /><img src="../../Storage/zylab-one-manual-publication/325-2018-03-06-1.png" alt="" /><br /></li><li class="listbullet">Click the Advanced button and select the Validation Set tab.</li><li class="listbullet">Define the desired percentage you want the <a href="329.html">classifier</a> to achieve.<br /><br /><img src="../../Storage/zylab-one-manual-publication/325-2018-03-06.png" alt="" /><br /></li></ul><br /><br /></span><span class="bodytext"><h2 id="h2_91634694" data-has-heading-anchor="true"><span class="heading2">Review Batch</span><a href="301.html#h2_91634694" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+A review batch is a subset of a <a href="321.html">training batch</a>&#160;or <a href="446.html">Validation Set</a>, when working with <a href="1010.html">Assisted Review</a>.
+  <br />  However, review batches can also be created when reviewing a large number of documents without Assisted Review. Instead of reviewing one large list&#160;of documents, the documents are divided into easier to handle workloads.
+  <br /><br />  When you have a large training batch, Validation Set or document list, it is recommended to create review batches for multiple reviewers.
+  <br /><br />  Learn more, see how to create <a href="1050.html">Review Batches</a>.</span><span class="bodytext"> <h2 data-has-heading-anchor="true">&#160;</h2><h2 id="h2_1577981913" data-has-heading-anchor="true"><span class="heading2">Statistics and Graphs</span><a href="301.html#h2_1577981913" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+ 
+
+
+
+
+View the statistics and graphs for each <a href="319.html">issue</a> in the 
+  <a href="1030.html">
+    Assisted Review Progress</a>&#160;tab. With the help of the statistics and graphs, you decide if you want to create a <a href="325.html">new training batch</a>&#160;or start with classifying the remaining documents (which means that you have reached a <a href="320.html">stop condition</a>).<br /><br /><b>Statistics Calculations</b><br /><ul class="listbullet"><li class="listbullet"><a href="323.html">Precision and Recall</a></li><li class="listbullet"><a href="330.html">Estimated Current Recall</a></li></ul><br /><b>Graphs Explained</b><br />To view the graphs, click (in the&#160;bottom left corner of an issue)&#160;<img src="../../Storage/zylab-one-manual-publication/322-2018-07-12-2.png" alt="" /><ul class="listbullet"><li class="listbullet"><a href="326.html">Gain Curve</a></li><li class="listbullet"><a href="327.html">Precision of Return Set</a></li><li class="listbullet"><a href="328.html">Precision by Recall</a></li></ul></span>
+            <br />
+            <br /><span class="bodytext"> <h2 id="h2_247726387" data-has-heading-anchor="true"><span class="heading2">Stop Condition</span><a href="301.html#h2_247726387" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+  
+
+
+
+
+The stop condition defines when reviewers can stop reviewing new documents and the iterative Assisted Review process is terminated. No <a href="325.html">new training batches</a> will be added. You can select Classify Remaining (if not all documents have been reviewed already). The last trained <a href="329.html">classifier</a> is used to classify the remaining documents.<br />  Several stop conditions can apply. It depends on your project when to stop.
+
+<br /><b><br />Stop Conditions</b></span>
+        </p>
+        <p><span class="bodytext"><ul class="listbullet"><li class="listbullet">
+      The <a href="445.html">Recall Goal</a>&#160;is reached.
+  <br />The Recall Goal is set when defining a project with a <a href="446.html">Validation Set</a>. &#160;<br />In the <a href="1030.html">Assisted Review Progress</a> tab, monitor if the Recall Goal is reached or nearly reached (<a href="330.html">Estimated Current Recall</a>):<br /><br /><img src="../../Storage/zylab-one-manual-publication/320-2018-03-06.png" alt="" /><br /></li><li class="listbullet">
+    The marginal precision is below 10% (0,1) or higher than 80% (0,8).&#160;
+    <br /><div>
+      The marginal precision (the precision of the last reviewed <a href="321.html">training batch</a> added to the training set, also called the return set) usually rises to a high value (for example, 67%) in the beginning of the process.<br />View the marginal precision in the <a href="327.html">Precision of Return Set</a> graph.&#160;&#160;</div></li><li class="listbullet">
+    The <a href="326.html">Gain Curve</a> has reached its plateau.<br />If the gain curve reaches a plateau, enough iterations/training batches are done. The Assisted Review process can be stopped.<span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;">&#160;</span></li><li class="listbullet"><span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;">The curve of the <a href="328.html">Precision by Recall</a> graph&#160;reaches a high precision and recall (0,8 or higher), or it is not improving anymore.</span></li><li class="listbullet"><a href="323.html">Precision and recall</a> have both reached the values that were agreed earlier (for example, during meet-and-confer sessions).&#160; &#160; &#160;&#160;</li></ul></span><span class="bodytext"><h2 id="h2_1391494117" data-has-heading-anchor="true"><span class="heading2">Training Set/Batch</span><a href="301.html#h2_1391494117" class="CHHeadingLink" title="Link to this heading" aria-hidden="true"></a></h2>
+ 
+
+
+
+
+
+  
+  A <b>training set</b> contains all reviewed documents in a project. The training set is used to train the <a href="329.html">classifier</a>.
+  <br />  A <b>training batch</b> is a selection of documents that might be responsive. All reviewed training batches are part of the training set. A training batch can also be called the return set.
+  <br /><span style="text-decoration-style: initial;text-decoration-color: initial;">The first or <b>initial training set</b> of an <a href="319.html">issue</a> is the first reviewed training batch.&#160;<span style="text-decoration-style: initial;text-decoration-color: initial;">With each iteration (<a href="325.html">new training batch</a>), the training set grows as more reviewed documents are added to your first training set. A training set is made up of one or more reviewed training batches.</span><br /><br />    All training batches are available for review in ZyLAB ONE.&#160;</span>Reviewers select a training batch (or a subset of the training batch; the <a href="317.html">review batch</a>) and tag the documents as responsive or not responsive. 
+ Based on their choices, the Assisted Review classifier is trained.&#160;The results of the training (the <a href="322.html">Statistics and Graphs</a>) can be viewed in the <a href="1030.html">Assisted Review Progress</a> tab in Assisted Review.&#160;
+  <br /><br />  With each new training round, a new training batch will be created for an issue. The previous training batch will not be available anymore via the Facet View, but you can still search all documents that were reviewed.
+  <br /><br /><b>Note</b>: A training batch in ZyLAB ONE is an issue in Assisted Review (see images below for the issue 'blocked'). The training batch of an issue in Facet View is preceded by the Project Name.
+  <br /><br />  An issue in Assisted Review - Assisted Review Progress tab:
+  <br /><img src="../../Storage/zylab-one-manual-publication/309-2017-12-18-5.png" id="img_upload_b3c53714-9d3f-c0c1-a29c-ad057f5ad305" alt="" style="font-size: 13.3333px;text-decoration-style: initial;text-decoration-color: initial;width: 225px;height: 125px;" /><span style="font-family: Roboto, sans-serif;">&#160;&#160;&#160;
+  <br /><br /><br />  A training batch of an issue in ZyLAB ONE - Facet View:&#160;
+  <br /><img src="../../Storage/zylab-one-manual-publication/309-2017-12-18-8.png" id="img_upload_ded1f23e-7e4b-7f62-fafa-7f45ca00b757" alt="" style="font-size: 13.3333px;text-decoration-style: initial;text-decoration-color: initial;width: 150px;height: 271px;" />&#160;</span><br /></span>
+        </p>
+    </body>
+</html>

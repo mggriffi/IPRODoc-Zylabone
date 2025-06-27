@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Cloud Upload: Google G Suite</h1>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Attention:&#160;</b>You need Service Account credentials to&#160;connect&#160;to GMail API. Also, you need&#160;access to specified domains to collect. To get it, you need a GSuite account with access to:
+<br /></p>
+                        <ul>
+                            <li>
+                                <p style="font-size: 10pt; font-style: italic;"><a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a> - Google API Console
+<br /></p>
+                            </li>
+                            <li>
+                                <p style="font-size: 10pt; font-style: italic;"><a href="https://admin.google.com/" target="_blank">https://admin.google.com/</a> - Google Admin Console</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To view steps for creating a Service Account, click <MadCap:toggler targets="Service_Account_Creation">here</MadCap:toggler>.</p>
+        <div MadCap:targetName="Service_Account_Creation">
+            <ol>
+                <li>
+                    <p>Service account creation:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>
+                            <p>Go to <a href="https://console.developers.google.com/">https://console.developers.google.com/</a></p>
+                        </li>
+                        <li>
+                            <p>Create project if needed.</p>
+                        </li>
+                        <li>
+                            <p>Go to hamburger-button &gt; IAM &amp; admin &gt; Service accounts.</p>
+                        </li>
+                        <li>
+                            <p>Click "Create service account".</p>
+                        </li>
+                        <li>
+                            <p>In "Service account details" window:</p>
+                            <ol style="list-style-type: lower-roman;">
+                                <li>
+                                    <p>enter name ("gmail-reader-1" for example)</p>
+                                </li>
+                                <li>
+                                    <p>continue.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p>In "Grant this service account access to project" window:</p>
+                            <ol style="list-style-type: lower-roman;">
+                                <li>
+                                    <p>skip roles granting</p>
+                                </li>
+                                <li>
+                                    <p>continue.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p>In "Grant users access to this service account" window:</p>
+                            <ol style="list-style-type: lower-roman;">
+                                <li>
+                                    <p>"Create key"</p>
+                                </li>
+                                <li>
+                                    <p>select JSON format</p>
+                                </li>
+                                <li>
+                                    <p>json file will be downloaded automatically, store it securely!</p>
+                                </li>
+                                <li>
+                                    <p>done.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p>In list of all service accounts:</p>
+                            <ol style="list-style-type: lower-roman;">
+                                <li>
+                                    <p>open your new account</p>
+                                </li>
+                                <li>
+                                    <p>Copy Unique ID somewhere</p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>GMail API enabling:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>
+                            <p>Go to <a href="https://console.developers.google.com/">https://console.developers.google.com/</a></p>
+                        </li>
+                        <li>
+                            <p>Go to Library</p>
+                        </li>
+                        <li>
+                            <p>Go to GMail API</p>
+                        </li>
+                        <li>
+                            <p>Click Enable</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>Giving access to gmail api of organisation:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>
+                            <p>Go to <a href="https://admin.google.com/">https://admin.google.com</a> &gt; Security &gt; Advanced settings &gt; Manage API client access</p>
+                        </li>
+                        <li>
+                            <p>Create new client access:</p>
+                            <ol style="list-style-type: lower-roman;">
+                                <li>
+                                    <p>Client Name - previously copied Unique ID</p>
+                                </li>
+                                <li>
+                                    <p>API Scopes - "<a href="https://www.googleapis.com/auth/gmail.readonly">https://www.googleapis.com/auth/gmail.readonly</a>"</p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <h2>Connection</h2>
+        <p style="font-weight: bold;">Connect with Gmail</p>
+        <ul>
+            <li>
+                <p>Service Account JSON Key: Enter the content of the JSON key file.</p>
+            </li>
+            <li>
+                <p>Click Next.</p>
+            </li>
+        </ul>
+        <h2>Data Selection</h2>
+        <p style="font-weight: bold;">Select GSuite Data</p>
+        <ul>
+            <li>
+                <p>Search Query: Enter the same query that is used in the search box of Gmail website. Avoid using queries that are specific to a particular mailbox - this query will be applied to all mailboxes.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note:</b> Please note that text queries used in Gmail will become exact in ZyLAB ONE, which may lead to different results. For example, where the text query 'invite' in Gmail will also find the word 'invitation', in ZyLAB ONE it will only find the word 'invite'.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Mailboxes: Define the mailboxes accounts that must be collected. Make sure accounts are split with either a comma or a semicolon.</p>
+                <p>For example: user01@zylab.com, user02@zylab.com</p>
+            </li>
+            <li>
+                <p>Checkbox: Include spam and trash</p>
+            </li>
+            <li>
+                <p>Checkbox: Skip mailboxes validation: Select this checkbox, if you want to skip the verification of settings and validation of all mailboxes. You might want to do this if you are collecting from many mailboxes.</p>
+            </li>
+            <li>
+                <p>Click Next.</p>
+            </li>
+        </ul>
+        <p>
+            <h2>Settings</h2>
+        </p>
+        <p style="font-weight: bold;">Assign Custodian and Source</p>
+        <ul>
+            <li>
+                <p>Set the custodian(s) and source(s) at the bottom of the screen.</p>
+                <p><b>Tip:</b> First select the custodian/source that needs to be assigned to all or most mailboxes. Then, select one or more mailboxes in the table for which a different custodian/source needs to be assigned.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_warn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Attention:</b> Please note that whenever no mailboxes are selected and you assign another custodian/source, all previously assigned custodians/sources will be overwritten.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>View the list of assigned custodian(s) and source(s) in the table.</p>
+            </li>
+            <li>
+                <p>When ready, click Save.</p>
+            </li>
+        </ul>
+        <p style="font-weight: bold;">Set Custodian and Source</p>
+        <ul>
+            <li>
+                <p>Custodian: Select a Custodian from the dropdown list or create a new one.</p>
+            </li>
+            <li>
+                <p>Source: Select a Source from the dropdown list or create a new one.</p>
+            </li>
+        </ul>
+    </body>
+</html>

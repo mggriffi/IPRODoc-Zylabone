@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Role Management</h1>
+        <p>  
+  Roles can be created, deleted or edited as needed, with <a href="570.html">permissions</a> added to or removed from roles.  Roles are assigned to <a href="340.html">users</a>.
+  
+  </p>
+        <h2>What is a Role?</h2>
+        <p>A role is a selection of permissions. For example, a role might consist of two permissions: <b>Access Matter</b> and <b>Access Documents</b>. Let's call this role 'Search Documents'. When a user is assigned this role, the user can  search for documents and view them in the Document List, but cannot open/view them. To open them, the user requires a role with the added permission <b>Access Document Content</b>.</p>
+        <p>A role can be assigned in combination with <a href="671.html">Document Security Rules</a>. This means that the selected permissions of a role are linked to a selection of documents (as defined in the Document Security Rule).</p>
+        <p>For example, a user that has been assigned with the role 'Search Results Only', can only search within documents that are retrieved with the Document Security Rule 'Public'.</p>
+        <p>Global roles (eDiscovery or Legal Review) assigned to users/groups apply to all matters. Matter roles apply only to one specific matter. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note:</b> A Matter Role can be configured to be assigned in combination with Document Security Rules. This allows you to control who has access to specific documents.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Open Role Management</h2>
+        <p>To open Role Management:</p>
+        <ol class="BulletListBody">
+            <li>
+                <p>On the home page, select <b>Configuration</b>:</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/2060-2018-05-14.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Role Management</b>: </p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/341-2018-05-29.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Role Management_Create_Role.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Role_Management_Delete_Role.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Role_Management_View_Edit_Role.flsnp" />
+        <h2>Copy/Paste Roles</h2>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ONE/Copy_Paste_Roles.flsnp" />
+    </body>
+</html>

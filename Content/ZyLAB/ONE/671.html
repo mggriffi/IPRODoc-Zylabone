@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Document Security</h1>
+        <p>Authorize content access on the document level. </p>
+        <p>
+ 
+ Create Document Security Rules (using queries) to define a set of documents. You could, for example, create 3 different Document Security Rules:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Public: This rule will retrieve all documents that have been tagged as Relevant</p>
+            </li>
+            <li>
+                <p>Confidential: This rule will retrieve all documents that have been tagged as Confidential.</p>
+            </li>
+            <li>
+                <p>Top Secret: This rule will retrieve all documents that have been tagged as Top Secret.&#160;</p>
+            </li>
+        </ul>
+        <p>Once the Document Security Rules have been defined, define the Roles. A role is a selection of permissions. For example, a role might consist of two permissions: Access Matter and Access Documents. A user that has been assigned this role, is allowed to search for documents and view them in the Document List, but not open them. To open them, they need a role including the permission Access Document Contents.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note"><b>Note:</b> When  no queries (rules) are defined, all users can view all documents.</p>
+                        <p class="Note">Note: Security is set per role, not per user. Roles are assigned to users.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>  For more information, please refer to&#160;<a href="341.html">Role Management</a>&#160;and then <a href="340.html">User Management</a>.</p>
+        <ol>
+            <li>
+                <p>
+      On the Home page, select <b>Configuration</b>:</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/2060-2018-05-14.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Document Security</b>:</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/671-2018-05-29.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2>Create Document Security Rules</h2>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p>
+      Select&#160;<img src="../../Storage/zylab-one-manual-publication/2050-2018-05-08.png" alt="" class="ReduceButtonSize" />&#160;&#160;
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Define a name.
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Specify one or more queries.
+      </p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>      Do not use full text queries.
+     </p>
+                    </li>
+                </ul>
+                <p>For more information—refer to the&#160;<a href="../Search-Language-Guide/10824.html">ZyLAB One Search Language Guide</a>.
+      </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Click<b> Apply</b>.
+          The new rule is added to the pane on the left.
+    </p>
+            </li>
+            <li class="listnumber">
+                <p>
+      Once you have created one or more rules, you can filter them. You can also edit or remove them.
+    </p>
+            </li>
+        </ol>
+        <h2>Copy/Paste Document Security Rules</h2>
+        <p>Once a rule has been created, it can be copied and pasted into other matters, reducing  the time needed to create roles in each matter. </p>
+        <ol>
+            <li class="listnumber">
+                <p>To copy roles from one matter into another matter, choose from the following: </p>
+                <ul>
+                    <li>
+                        <p>To copy a <b>single</b> rule, select the rule from the left-hand pane. Click <b>Copy Rule</b>. </p>
+                        <p>
+                            <img src="../../Resources/Images/ONE/Configuration_DocumentSecurity_CopyRule.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>To copy <b>all</b> rules, select <b>Copy All</b>. This option is displayed  in the top-right corner of a Rule  page, and on the Document Security overview page. </p>
+                        <p>
+                            <img src="../../Resources/Images/ONE/Configuration_DocumentSecurity_CopyAll.png" class="Thumbnail" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/ONE/Configuration_DocumentSecurity_Overview_CopyAll.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>To copy a <b>selection</b> of rules, use the Filter function.  Then, click <b>Copy All</b> from the Document Security overview page to copy the filtered selection of roles.</p>
+                        <p>
+                            <img src="../../Resources/Images/ONE/Configuration_DocumentSecurity_Overview_FilterSelection_CopyAll.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p>To paste the copied rule(s) into another matter, open the target matter. Then, navigate to <b>Configurations &gt; Document Security</b>.</p>
+                <ul>
+                    <li>
+                        <p>Click <b>Paste Rule(s)</b>. This option is displayed  in the top-right corner of a Document Security Rule page, and on the Document Security overview page. </p>
+                        <p>
+                            <img src="../../Resources/Images/ONE/Configuration_DocumentSecurity_PasteRules.png" class="Thumbnail" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/ONE/Configuration_DocumentSecurity_Overview_PasteRules.png" class="Thumbnail" />
+                        </p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;"><b>Note:</b> Shortcut keys (Ctrl C + Ctrl V) can be used, but may not work for all users. If unavailable, the Copy and Paste buttons should be used.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Duplicate rules are not allowed. If the Document Security Rule already exists, an error message will appear. </p>
+                    </li>
+                    <li>
+                        <p>If the rule is assigned specific properties that do not exist in the target matter, then the copied rule will be pasted without these permissions. </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

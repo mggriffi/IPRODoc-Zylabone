@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Welcome"
+    Link="/Content/ZyLAB/Internal-Investigations/03030301.html" />
+  <TocEntry
+    Title="Video"
+    Link="/Content/ZyLAB/Internal-Investigations/333304.html" />
+  <TocEntry
+    Title="Use Case"
+    Link="/Content/ZyLAB/Internal-Investigations/3333.html">
+    <TocEntry
+      Title="Log In"
+      Link="/Content/ZyLAB/Internal-Investigations/302.html" />
+    <TocEntry
+      Title="The Select Matter dashboard"
+      Link="/Content/ZyLAB/Internal-Investigations/303.html">
+      <TocEntry
+        Title="Help"
+        Link="/Content/ZyLAB/Internal-Investigations/305.html" />
+    </TocEntry>
+    <TocEntry
+      Title="New internal investigation"
+      Link="/Content/ZyLAB/Internal-Investigations/306.html" />
+    <TocEntry
+      Title="Upload Data"
+      Link="/Content/ZyLAB/Internal-Investigations/317.html" />
+    <TocEntry
+      Title="Configuration dashboard"
+      Link="/Content/ZyLAB/Internal-Investigations/307.html">
+      <TocEntry
+        Title="Creating Tags"
+        Link="/Content/ZyLAB/Internal-Investigations/308.html" />
+      <TocEntry
+        Title="User Access"
+        Link="/Content/ZyLAB/Internal-Investigations/309.html">
+        <TocEntry
+          Title="User Management"
+          Link="/Content/ZyLAB/Internal-Investigations/310.html" />
+        <TocEntry
+          Title="Role Management"
+          Link="/Content/ZyLAB/Internal-Investigations/311.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Document Security"
+        Link="/Content/ZyLAB/Internal-Investigations/312.html" />
+      <TocEntry
+        Title="Keyword Highlighting"
+        Link="/Content/ZyLAB/Internal-Investigations/313.html" />
+      <TocEntry
+        Title="Review Status"
+        Link="/Content/ZyLAB/Internal-Investigations/314.html" />
+      <TocEntry
+        Title="Auto Redactions"
+        Link="/Content/ZyLAB/Internal-Investigations/315.html" />
+      <TocEntry
+        Title="Auto Classification"
+        Link="/Content/ZyLAB/Internal-Investigations/316.html" />
+      <TocEntry
+        Title="Insights"
+        Link="/Content/ZyLAB/Internal-Investigations/403.html" />
+    </TocEntry>
+    <TocEntry
+      Title="How to Navigate a Matter"
+      Link="/Content/ZyLAB/Internal-Investigations/404.html" />
+    <TocEntry
+      Title="Searching for evidence"
+      Link="/Content/ZyLAB/Internal-Investigations/405.html">
+      <TocEntry
+        Title="Batch search"
+        Link="/Content/ZyLAB/Internal-Investigations/406.html">
+        <TocEntry
+          Title="Assign values"
+          Link="/Content/ZyLAB/Internal-Investigations/407.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Topic Modeling"
+        Link="/Content/ZyLAB/Internal-Investigations/408.html">
+        <TocEntry
+          Title="Assisted review with Topic Modeling"
+          Link="/Content/ZyLAB/Internal-Investigations/409.html" />
+        <TocEntry
+          Title="Assign and Evaluate Training Batches"
+          Link="/Content/ZyLAB/Internal-Investigations/410.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Browse using Facets"
+        Link="/Content/ZyLAB/Internal-Investigations/412.html" />
+      <TocEntry
+        Title="Search queries"
+        Link="/Content/ZyLAB/Internal-Investigations/413.html" />
+      <TocEntry
+        Title="Assisted Review"
+        Link="/Content/ZyLAB/Internal-Investigations/500.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Reviewing documents"
+      Link="/Content/ZyLAB/Internal-Investigations/600.html">
+      <TocEntry
+        Title="Tagging documents"
+        Link="/Content/ZyLAB/Internal-Investigations/601.html" />
+      <TocEntry
+        Title="Redaction, pseudonymization and annotations"
+        Link="/Content/ZyLAB/Internal-Investigations/602.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Produce report"
+      Link="/Content/ZyLAB/Internal-Investigations/700.html">
+      <TocEntry
+        Title="Image settings"
+        Link="/Content/ZyLAB/Internal-Investigations/701.html" />
+      <TocEntry
+        Title="Native settings"
+        Link="/Content/ZyLAB/Internal-Investigations/702.html" />
+      <TocEntry
+        Title="Text settings"
+        Link="/Content/ZyLAB/Internal-Investigations/703.html" />
+      <TocEntry
+        Title="Load File"
+        Link="/Content/ZyLAB/Internal-Investigations/704.html" />
+      <TocEntry
+        Title="Production Overview"
+        Link="/Content/ZyLAB/Internal-Investigations/705.html" />
+      <TocEntry
+        Title="Audit Log"
+        Link="/Content/ZyLAB/Internal-Investigations/706.html" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

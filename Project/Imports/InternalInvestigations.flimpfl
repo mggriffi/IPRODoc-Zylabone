@@ -1,0 +1,1355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProjectImport
+  AutoSync="false"
+  IncludePattern="*.htm;*.html;*.png;*.bmp;*.jpg;*.jpeg;*.tif;*.tiff;*.gif;*.swd;*.emf;*.wmf;*.xaml;*.xps;*.exps;*.hdp;*.wdp;*.dib;*.svg;*.ps;*.eps;*.pdf;*.fltoc"
+  LastImport="2022-01-11T14:36:03.4674910+01:00">
+  <Files>
+    <Url
+      Source="file:///C:/Internal-Investigations/Internal-Investigations.flprj"
+      AbsoluteSource="file:///C:/Internal-Investigations/Internal-Investigations.flprj" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/03030301.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/03030301.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/302.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/302.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/303.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/303.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/305.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/305.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/306.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/306.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/307.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/307.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/308.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/308.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/309.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/309.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/310.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/310.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/311.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/311.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/312.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/312.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/313.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/313.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/314.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/314.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/315.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/315.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/316.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/316.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/317.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/317.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/3333.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/3333.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/333304.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/333304.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/403.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/403.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/404.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/404.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/405.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/405.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/406.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/406.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/407.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/407.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/408.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/408.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/409.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/409.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/410.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/410.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/412.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/412.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/413.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/413.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/500.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/500.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/600.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/600.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/601.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/601.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/602.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/602.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/700.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/700.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/701.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/701.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/702.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/702.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/703.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/703.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/704.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/704.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/705.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/705.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Internal-Investigations/706.html"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Internal-Investigations/706.html" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-10.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-10.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-10.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-10.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-6.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-6.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-7.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-7.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-8.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-8.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-9.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14-9.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-14.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-15.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/03030301-2020-12-15.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/301-2020-12-03-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/301-2020-12-03-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/301-2020-12-03.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/301-2020-12-03.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/307-2020-12-15-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/307-2020-12-15-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/307-2020-12-15-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/307-2020-12-15-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/Extracted/help-img0001.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/Extracted/help-img0001.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030302-2020-06-09-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030302-2020-06-09-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-6.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-6.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-7.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-7.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-8.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-8.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/Templates/Themes/internalblue.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/Templates/Themes/internalblue.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/010101-2021-06-17-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/010101-2021-06-17-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-6.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-6.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-8.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-8.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-20-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-20-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-20-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-20-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0830-2019-04-25-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0830-2019-04-25-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0830-2019-04-25.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0830-2019-04-25.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-10.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-10.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-21.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-21.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-22.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-22.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-9.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-9.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1000-2018-05-29-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1000-2018-05-29-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-08.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-08.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-11.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-11.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1003-2018-07-17-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1003-2018-07-17-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10354-2018-04-26-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10354-2018-04-26-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10354-2018-04-26.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/10354-2018-04-26.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1070-2018-06-04.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1070-2018-06-04.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/14-05-14.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/14-05-14.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/14-10-08.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/14-10-08.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/14-13-17.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/14-13-17.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/15-50-37.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/15-50-37.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1501-2019-10-03.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1501-2019-10-03.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1502-2018-12-04-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1502-2018-12-04-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1503-2018-12-04.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1503-2018-12-04.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1504-2018-12-04.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1504-2018-12-04.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1505-2018-05-17-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1505-2018-05-17-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1505-2018-12-04.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/1505-2018-12-04.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/16-04-01.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/16-04-01.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2024-2018-08-21-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2024-2018-08-21-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2050-2018-05-08.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2050-2018-05-08.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2060-2018-05-14-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2060-2018-05-14-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2060-2018-05-14.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2060-2018-05-14.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2018-05-14-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2018-05-14-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2018-05-14.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2018-05-14.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2021-11-11-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2021-11-11-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2021-11-11-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2061-2021-11-11-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2062-2018-05-14-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2062-2018-05-14-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2062-2018-05-14.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2062-2018-05-14.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-06-11-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-06-11-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-06-11-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-06-11-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-07-10.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-07-10.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-10-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-10-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-10-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-10-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-15.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-15.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-29-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-29-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-29-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-29-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30300-2021-10-19-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30300-2021-10-19-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30300-2021-10-19-6.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30300-2021-10-19-6.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-10.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-10.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-11.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-11.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-12.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-12.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-13.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-13.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-14.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-14.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-6.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-6.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-7.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-7.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-8.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-8.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-9.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-9.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-10-03.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-10-03.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-11.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-11.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2018-03-20-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2018-03-20-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2018-05-29.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2018-05-29.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2020-01-20-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2020-01-20-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2020-01-20.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/340-2020-01-20.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2018-03-05-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2018-03-05-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2018-03-05.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2018-03-05.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2018-05-29.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2018-05-29.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2020-01-20.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/341-2020-01-20.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/360-2019-10-03.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/360-2019-10-03.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/434343-2021-10-04-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/434343-2021-10-04-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/434343-2021-10-04.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/434343-2021-10-04.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-11-08-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2018-11-08-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2019-06-04-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2019-06-04-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2019-06-04.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2019-06-04.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2020-06-08-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/443-2020-06-08-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/501-2018-03-06.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/501-2018-03-06.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-06-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-06-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-06.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-06.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/557-2018-06-25-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/557-2018-06-25-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/557-2021-10-04-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/557-2021-10-04-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/558-2018-06-25-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/558-2018-06-25-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/601-2018-03-26.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/601-2018-03-26.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-6.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-6.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-7.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-7.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-8.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-8.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-9.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-9.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/671-2018-05-29.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/671-2018-05-29.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/672-2018-05-28.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/672-2018-05-28.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2018-05-29.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2018-05-29.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-09-05.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-09-05.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-10-03-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-10-03-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-10-03.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-10-03.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-4.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-4.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-5.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-5.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-6.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-6.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-08-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-08-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-08.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-08.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/browse-2018-06-25.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/browse-2018-06-25.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/browse-2019-06-13-2.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/browse-2019-06-13-2.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/browse-2019-10-03-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/browse-2019-10-03-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/burn-in.gif"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/burn-in.gif" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2017-09-25-1.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2017-09-25-1.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2017-09-25.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2017-09-25.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2018-06-11-3.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2018-06-11-3.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/delete production.gif"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/delete production.gif" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/document-info-2018-10-15.png"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/document-info-2018-10-15.png" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/download production.gif"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/download production.gif" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/insights.gif"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/insights.gif" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/multiple redactions.gif"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/multiple redactions.gif" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/review status.gif"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/review status.gif" />
+    <Url
+      Source="../../../Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/select fields load file.gif"
+      AbsoluteSource="file:///C:/Internal-Investigations/Content/Storage/internal-investigations-publication/zylabmanual/select fields load file.gif" />
+    <Url
+      Source="../../../Internal-Investigations/Project/TOCs/internal-investigations-publication-exported.fltoc"
+      AbsoluteSource="file:///C:/Internal-Investigations/Project/TOCs/internal-investigations-publication-exported.fltoc" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Internal-Investigations/03030301.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/302.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/303.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/305.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/306.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/307.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/308.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/309.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/310.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/311.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/312.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/313.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/314.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/315.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/316.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/317.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/3333.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/333304.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/403.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/404.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/405.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/406.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/407.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/408.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/409.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/410.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/412.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/413.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/500.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/600.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/601.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/602.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/700.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/701.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/702.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/703.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/704.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/705.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Internal-Investigations/706.html"
+      TimeStamp="11/01/2022 14:34:28" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-10.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-10.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-3.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-4.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-5.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-6.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-7.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-8.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14-9.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-14.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/03030301-2020-12-15.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/301-2020-12-03-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/301-2020-12-03.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/307-2020-12-15-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/307-2020-12-15-4.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/Extracted/help-img0001.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/prrandfoia/030302-2020-06-09-2.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-6.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-7.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/prrandfoia/030307-2020-06-09-8.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/Templates/Themes/internalblue.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/010101-2021-06-17-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-5.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-6.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-13-8.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-20-3.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0400-2018-03-20-4.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0830-2019-04-25-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0830-2019-04-25.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-10.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-21.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-22.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-5.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09-9.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/0831-2019-07-09.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1000-2018-05-29-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-2.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-3.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-4.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-01-20-5.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-08.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-3.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-4.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15-5.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2020-12-15.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-11.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-2.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-3.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10000-2021-07-15-4.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1003-2018-07-17-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10354-2018-04-26-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/10354-2018-04-26.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1070-2018-06-04.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/14-05-14.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/14-10-08.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/14-13-17.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/15-50-37.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1501-2019-10-03.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1502-2018-12-04-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1503-2018-12-04.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1504-2018-12-04.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1505-2018-05-17-1.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/1505-2018-12-04.png"
+      TimeStamp="11/01/2022 14:34:22" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/16-04-01.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2024-2018-08-21-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2050-2018-05-08.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2060-2018-05-14-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2060-2018-05-14.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2061-2018-05-14-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2061-2018-05-14.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2061-2021-11-11-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2061-2021-11-11-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2062-2018-05-14-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2062-2018-05-14.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-06-11-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-06-11-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-07-10.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-10-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-10-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-09-24.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-15.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-29-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/2064-2018-10-29-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30300-2021-10-19-5.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30300-2021-10-19-6.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-10.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-11.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-12.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-13.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-14.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-6.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-7.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-8.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23-9.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-09-23.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/30304-2019-10-03.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-11.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/309-2017-12-18-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/340-2018-03-20-4.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/340-2018-05-29.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/340-2020-01-20-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/340-2020-01-20.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/341-2018-03-05-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/341-2018-03-05.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/341-2018-05-29.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/341-2020-01-20.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/360-2019-10-03.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/434343-2021-10-04-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/434343-2021-10-04.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/443-2018-10-29.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/443-2018-11-08-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/443-2019-06-04-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/443-2019-06-04.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/443-2020-06-08-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/501-2018-03-06.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/502-2018-03-06.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-06-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-06.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/503-2018-03-08.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/557-2018-06-25-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/557-2021-10-04-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/558-2018-06-25-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/601-2018-03-26.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-4.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-5.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-6.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-7.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-8.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11-9.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/666-2018-06-11.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/671-2018-05-29.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/672-2018-05-28.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/681-2018-05-29.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-4.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/681-2019-10-17-5.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/7010-2018-12-04-4.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-09-05.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-10-03-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/7010-2019-10-03.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-4.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-5.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07-6.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-07.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-08-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/batch-search-2018-05-08.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/browse-2018-06-25.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/browse-2019-06-13-2.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/browse-2019-10-03-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/burn-in.gif"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2017-09-25-1.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2017-09-25.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/create-new-matter-2018-06-11-3.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/delete production.gif"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/document-info-2018-10-15.png"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/download production.gif"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/insights.gif"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/multiple redactions.gif"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/review status.gif"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../../Content/Storage/internal-investigations-publication/zylabmanual/select fields load file.gif"
+      TimeStamp="11/01/2022 14:34:23" />
+    <Url
+      Source="../TOCs/internal-investigations-publication-exported.fltoc"
+      TimeStamp="11/01/2022 14:34:56" />
+  </GeneratedFiles>
+</CatapultProjectImport>

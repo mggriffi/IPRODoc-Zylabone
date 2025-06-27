@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" MadCap:onlyLocalStylesheets="True" MadCap:conditions="Primary.Block" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview: LIVE EDA Search</title>
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Understanding <MadCap:variable name="VariablesZyLAB.LIVE EDA" /> Search</h1>
+        <p>Searching in <MadCap:variable name="VariablesZyLAB.LIVE EDA" /> allows you to create searches  on live data and export data directly into ZYLAB ONE review.</p>
+        <p> For a basic overview on how to work in the <MadCap:variable name="VariablesZyLAB.LIVE EDA" /> interface, see <MadCap:xref href="Overview_LiveEDA.html">Overview: [%=VariablesZyLAB.LIVE EDA%] </MadCap:xref>.</p>
+        <p><MadCap:variable name="VariablesZyLAB.LIVE EDA" /> makes it easy to build and refine your searches using three steps. This topic will go into more detail on each of the steps.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: Prior to using <MadCap:variable name="VariablesZyLAB.LIVE EDA" />, permissions and custodians must be configured. For more information, see <MadCap:xref href="Configure_LiveEDA.html">Configure <MadCap:variable name="VariablesZyLAB.LIVE EDA" /></MadCap:xref>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Create a New Search</h2>
+        <ol>
+            <li>
+                <p>Open ZyLab One. Select your<b> Matter</b>.</p>
+            </li>
+            <li>
+                <p>From the Home page, select the <MadCap:variable name="VariablesZyLAB.LIVE EDA" /> tile.</p>
+                <p><b><img src="../../Resources/Images/LIVE_EDA/LiveEDATile2.png" style="width: 118px; height: 75px;" class="Border" /></b>
+                </p>
+                <p>The <MadCap:variable name="VariablesZyLAB.LIVE EDA" /> Search window opens. </p>
+            </li>
+            <li>
+                <p>Click <b>Start New</b> to create a new search.</p>
+                <p>
+                    <img src="../../Resources/Images/LIVE_EDA/SearchWindow_StartNew.png" class="Border" />
+                </p>
+            </li>
+            <li>
+                <p>Enter a<b> Name</b> for the search. This name will be included in the upload name, so being specific can help identification later in your workflow. Entering a description is optional. </p>
+                <p>
+                    <img src="../../Resources/Images/LIVE_EDA/NewSearch_EnterName.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Continue</b>.</p>
+            </li>
+            <li>
+                <p>Once the search is created, you will see <b>Volume (GB)</b> and <b>File Count</b> next to the search name.	This is your custodian scope volume and file count, which will update as you refine your search.</p>
+            </li>
+        </ol>
+        <h3>
+            <MadCap:toggler targets="Step One_ Discovery Questionnaire">Step One: Discovery Questionnaire</MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="Step One_ Discovery Questionnaire">
+            <p>
+                <img src="../../Resources/Images/LIVE_EDA/DiscoveryQuestionnaire.png" class="Thumbnail" />
+            </p>
+            <p>In this section you will you will answer four basic questions:</p>
+            <ol>
+                <li>
+                    <p><b>Who</b> is involved: All custodians have previously been loaded into your case. You can select all custodians or individual ones. This list can be updated later if needed. </p>
+                    <p><b>Example</b>:</p>
+                    <p>&#160;</p>
+                    <p>
+                        <img src="../../Resources/Images/LIVE_EDA/StepOne_SelectCustodians.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p><b>Where </b>is the data located: The available data sources will be shown. You can select a specific source if you know what data is relevant, or select all if unsure. You will be able to edit these sources if needed.</p>
+                    <p>
+                        <img src="../../Resources/Images/LIVE_EDA/DataLocations.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p><b>What</b> is the search about: This is where you can start culling down your data using keywords and search expressions. Both methods are discussed below.</p>
+                    <h3>Keywords</h3>
+                    <p>Keyword searching can assist you with document management, review, and other tasks. For example, keyword searching can be used to identify the documents needed for a specific review.</p>
+                    <p><b>Example: </b>
+                    </p>
+                    <p> Press enter or add a comma between keywords.</p>
+                    <p>
+                        <img src="../../Resources/Images/LIVE_EDA/StepOne_EnterKeywords.png" class="Thumbnail" />
+                    </p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p>Click the slider to include files with no text.</p>
+                            <p>
+                                <img src="../../Resources/Images/LIVE_EDA/StepOne_NoTextSlider.png" class="Border" style="width: 194px;height: 28px;" />
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Search Expressions</h3>
+                    <p>Standard query syntax, term searches, proximity searches, and wildcard searches are supported. The operators AND OR NOT, as well as parentheses, to impose an order of operations, are supported.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>To add expressions to your search criteria,  click <img src="../../Resources/Images/LIVE_EDA/StepOne_SearchExpressions.png" style="width: 134px; height: 24px;" class="Border" />.</p>
+                    <p>
+                        <img src="../../Resources/Images/LIVE_EDA/StepOne_SearchExpressionWindow.png" class="Thumbnail" />
+                    </p>
+                    <p><b>Example</b>:</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </li>
+                <li>
+                    <p><b>When</b> were the files last modified, received, or sent: You can select a date range for the search, or check the box to include all dates.</p>
+                    <p>
+                        <img src="../../Resources/Images/LIVE_EDA/StepOne_DateRange.png" class="Thumbnail" />
+                    </p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p>Click the slider to include unknown dates.</p>
+                            <p>
+                                <img src="../../Resources/Images/LIVE_EDA/StepOne_UnknownDates.png" style="width: 217px; height: 25px;" class="Border" />
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>After all selections, click <b>Save </b><img src="../../Resources/Images/LIVE_EDA/SaveButton.png" style="width: 68px;height: 34px;" />.</p>
+                </li>
+                <li>
+                    <p>To see a visual overview of the search results, go to Step Two. Click<b> Next Step </b><img src="../../Resources/Images/LIVE_EDA/NextStep.png" />.</p>
+                </li>
+            </ol>
+        </div>
+        <p>&#160;</p>
+        <h2>Visual Preview </h2>
+        <p>After searching with Keywords or Search Expressions, you can quickly view the visual results. Looking at the charts, it will be clear where the greatest search hits are. </p>
+        <p>Below is an example of how you might use Visual Preview to cull down your results.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject Version="1" xml:lang="en-us" MasterToc="/Project/TOCs/Home.fltoc" MasterStylesheet="/Content/Styles/stylesheet.css">
+    <Synchronize>
+        <Mapping ProjectPath="Content/Resources/Images/phone.png" ExternalPath="file:///C:/Users/Kristel/OneDrive - ZyLAB Technologies B.V/Pictures/phone.png" />
+        <Mapping ProjectPath="Content/Resources/Images/11-11-52.png" ExternalPath="file:///C:/Users/kwiegman/OneDrive - Ipro Tech, LLC/Pictures/11-11-52.png" />
+    </Synchronize>
+</CatapultProject>

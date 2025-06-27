@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my beta CSH IM Add On destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\CLD-BETPTL001.pcaasnet.local\FlareProjects-ZyLAB\CSH-Information-Management-Add-On"
+  Port=""
+  ViewUrl="/help/ZyLAB/CSH-Information-Management-Add-On"
+  Type="file"
+  RemoveStale="true"></CatapultDestination>

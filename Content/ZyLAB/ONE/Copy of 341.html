@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Block" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Role Management</h1>
+        <p>  
+  Create, delete or edit roles and add/remove&#160;<a href="570.html">permissions</a> to/from roles. Roles are assigned to <a href="340.html">users</a>.
+  
+  
+  </p>
+        <div class="note">Create, delete or edit roles and add/remove&#160;<a href="570.html">permissions</a> to/from roles. Roles are assigned to <a href="340.html">users</a>.
+  
+  
+  <span class="note">A role is a selection of permissions. For example, a role might consist of two permissions: Access Matter and Access Documents. Let's call this role 'Search Results Only'. A user that has been assigned with this role, is allowed to search for documents and view them in the Document List, but is not allowed to open/view them. To open them, the user needs a role with the added permission Access Document Content.<br /><br />A role can be assigned in combination with <a href="671.html">Document Security Rules</a>. This means that the selected permissions of a Role are linked to a selection of documents (as defined in the Document Security Rule).<br />For example, a user that has been assigned with the role 'Search Results Only', can only search within documents that are retrieved with the Document Security Rule 'Public'.&#160;</span></div>
+        <ul class="BulletListBody">
+            <li>
+                <p>On the home page, select <b>Configuration</b>:</p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/2060-2018-05-14.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Role Management</b>: </p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/341-2018-05-29.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <h2>Create Role</h2>
+        <ol>
+            <li>
+                <p>Select the scope (role type).
+           </p>
+                <p>Global roles (eDiscovery or Legal Review)&#160;assigned to users/groups apply to all matters.&#160;Matter roles apply to one specific matter. Also, Matter&#160;Roles can be configured to be assigned&#160;in combination with&#160;<a href="671.html">Document Security</a>&#160;Rules. This allows you to control who has access to specific documents. </p>
+                <p>           Filter on the role types if needed.
+            </p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/341-2018-03-05.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Create a New Role</b>:
+            </p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/341-2020-01-20.png" alt="" class="ReduceButtonSize" />
+                </p>
+            </li>
+            <li>
+                <p>
+            Define a name for the role.
+</p>
+                <ul>
+                    <li>
+                        <p>If this role is assigned to user (groups)&#160;in combination with <a href="671.html">Document Security</a> Rules, select the checkbox 'This Role can be assigned in combination with Document Security Rules'.</p>
+                        <p>
+                            <img src="../../Resources/Images/CreateNewRoleWindow.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+            In the Role Permissions tab, select the <a href="570.html">permissions</a> for this role.
+</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>
+                If you selected the checkbox 'This Role can be assigned in combination with Document Security Rules', then you can create the role 'Search Documents'. This role allows users to search documents, but not to view them and perform actions on them. <span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;"><span style="font-size: 11pt;">This role can then be assigned to user (groups)—see&#160;</span></span><a href="340.html" style="text-indent: 0cm;word-spacing: normal;font-size: 11pt;">User Management</a><span style="font-size: 10pt;text-indent: 0cm;word-spacing: normal;"><span style="font-size: 11pt;">). When no Document Security rules have been created (and/or have not been combined with a role), users assigned with this&#160;role will have access to all documents.</span></span></p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Metadata (Properties) are not part of Document Security.&#160;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <b>Apply</b>.</p>
+            </li>
+        </ol>
+        <h2>Delete Role</h2>
+        <ol>
+            <li>
+                <p>Select a role type (filter if needed).
+            </p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/341-2018-03-05-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select a role (filter if needed).
+</p>
+            </li>
+            <li>
+                <p>Select the <b>Delete</b> icon.</p>
+            </li>
+        </ol>
+        <h2>View and/or Edit Role</h2>
+        <ol>
+            <li>
+                <p>Select a role type (filter if needed).
+ &#160;
+            </p>
+                <p>
+                    <img src="../../Storage/zylab-one-manual-publication/341-2018-03-05-1.png" alt="" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select a role (filter if needed).
+</p>
+            </li>
+            <li>
+                <p>
+            In the Overview&#160;tab, see the selected <a href="570.html">permissions</a> for this role. </p>
+            </li>
+            <li>
+                <p>In the Role Permissions tab, change the permissions.</p>
+            </li>
+            <li>
+                <p>Click <b>Apply</b>.
+</p>
+            </li>
+        </ol>
+        <h2>Reuse Roles</h2>
+        <p>Once a role has been created, it can be copied and pasted into other matters reducing the time needed to create roles in each matter. </p>
+        <ol>
+            <li>
+                <p>To copy one role, select the Role and click <b>Copy Role</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/CopyRole.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>To select all Roles, click <b>Copy Roles</b> located in the upper right of your window.</p>
+                <p>
+                    <img src="../../Resources/Images/Copyallroles.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Open the new matter.</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Select Configuration</p>
+                    </li>
+                </ul>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Select Role Management</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Select <b>Paste Roles</b> located in the upper right of your window.</p>
+                <p>
+                    <img src="../../Resources/Images/Paste Roles.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: When Paste Rule(s) does not work, try Ctrl+V. Shortcut keys such as Ctrl C and Ctrl V may not work for all users. The Copy and Paste buttons should be used in that instance.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Duplicate roles are not allowed. If a role already exists, the following message will appear:</p>
+                <p>
+                    <img src="../../Resources/Images/DupMsg.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

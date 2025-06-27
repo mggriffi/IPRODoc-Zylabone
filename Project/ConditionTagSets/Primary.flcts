@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Comment=""
+    Name="ScreenOnly"
+    BackgroundColor="Blue" />
+  <ConditionTag
+    Comment=""
+    Name="PrintOnly"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Web"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="Tablet"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Mobile"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="ZyLAB Home"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="LegalHold"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ca1405"
+    Name="Block"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#c7bc32"
+    Name="Upcoming Release"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="FutureDelete"
+    Comment="" />
+</CatapultConditionTagSet>

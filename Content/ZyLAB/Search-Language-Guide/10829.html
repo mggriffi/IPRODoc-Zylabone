@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Search Order and Parentheses';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Search Order and Parentheses</h1>
+        <p>
+  When you use two or more different operators, the order in which these operators are executed is determined by operator precedence. You can override this order by using parentheses (grouped terms between round brackets). Content within parentheses is interpreted as one unit. Operators within brackets have priority over operators outside brackets. It is advised to use parentheses in complex search statements (more than two different operators).
+<br /></p>
+        <p> When using brackets, you can leave a space between the operator/term and the first bracket, or not:
+</p>
+        <p>&#160;</p>
+        <p>NOT(term)
+<br /></p>
+        <p> NOT (term)
+</p>
+        <p>
+            <p class="heading4">
+                <MadCap:keyword term="Search Order and Parentheses" />
+            </p>
+            <p class="heading4">Search Order and Parentheses Examples
+  </p>
+            <table width="480" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="210" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Examples
+          </b>
+                            </p>
+                        </th>
+                        <th width="270" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="210" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          (cars AND sales) OR car dealer
+        </p>
+                        </td>
+                        <td width="270" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          When OR precedes AND, use parentheses to first find the files that are connected with the operator AND.
+        </p>
+                            <p class="tablebodytextleft">
+          Files with cars and sales are retrieved.
+          <br /><br />          From that group, files with car dealer are selected.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="210" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          (disk drive AND printer AND modem) OR (sales AND revenue AND profit)
+        </p>
+                        </td>
+                        <td width="270" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Files with all terms from at least one set of parentheses are retrieved:
+        </p>
+                            <ul class="listbullet">
+                                <li class="listbullet">
+            disk drive, printer, modem
+          </li>
+                                <li class="listbullet">
+            disk drive, printer, modem, sales, revenue, profit
+          </li>
+                                <li class="listbullet">
+            sales, revenue, profit
+          </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="210" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          ((cars AND trucks) OR trains) AND (ships OR submarines)
+        </p>
+                        </td>
+                        <td width="270" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Only files with terms from both sides are retrieved:
+        </p>
+                            <ul class="listbullet">
+                                <li class="listbullet">
+            cars, trucks, ships, submarines
+          </li>
+                                <li class="listbullet">
+            cars, trucks, ships
+          </li>
+                                <li class="listbullet">
+            cars, trucks, submarines
+          </li>
+                                <li class="listbullet">
+            cars, trucks, trains, ships, submarines
+          </li>
+                                <li class="listbullet">
+            cars, trucks, trains, ships
+          </li>
+                                <li class="listbullet">
+            cars, trucks, trains, submarines
+          </li>
+                                <li class="listbullet">
+            trains, ships
+          </li>
+                                <li class="listbullet">
+            trains, ships, submarines
+          </li>
+                                <li class="listbullet">
+            trains, submarines
+          </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="210" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          chicago OR los angeles AND new york
+          <br /><br />          equals
+          <br /><br />          (chicago OR los angeles) AND new york
+        </p>
+                        </td>
+                        <td width="270" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Remember: OR precedes AND.
+        </p>
+                            <ul class="listbullet">
+                                <li class="listbullet">
+            chicago, new york
+          </li>
+                                <li class="listbullet">
+            los angeles, new york
+          </li>
+                                <li class="listbullet">
+            chicago, los angeles, new york
+          </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="210" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          chicago OR (los angeles AND new york)
+        </p>
+                        </td>
+                        <td width="270" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          Parentheses overrides precedence.
+        </p>
+                            <ul class="listbullet">
+                                <li class="listbullet">
+            chicago
+          </li>
+                                <li class="listbullet">
+            los angeles, new york
+          </li>
+                                <li class="listbullet">
+            chicago, los angeles, new york
+          </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my beta ZyLAB ONE destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-betptl001\c$\Core\Help\FlareProjects\ZyLAB\01"
+  Port=""
+  ViewUrl="/help/ZyLAB/01"
+  Type="file"
+  RemoveStale="true"></CatapultDestination>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Fuzzy Searches';
+//-->
+/*]]>*/</script>
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Fuzzy Searches</h1>
+        <p>
+            <MadCap:keyword term="Fuzzy Searches" />
+  Use Fuzzy searches to find variations of a term, including the ones that were not recognized correctly during the conversion by the OCR engine. You can choose from 4 fuzzy degrees (the degree of closeness to your query). Fuzzy degree 2 is recommended for normal text searches. This provides for mistakes such as broken and joined characters. Use Fuzzy degree 3 or 4 only if you are searching for long terms. If multiple terms are used in the query, fuzzy will work on each term separately.
+  <br />  You can use four integer values (1, 2, 3, 4) or floating numbers in the range from 0 to 1 (0,1, 0,2).
+<br /></p>
+        <p>  The fuzzy algorithm is based on the Levenshtein distance: <a href="http://en.wikipedia.org/wiki/Levenshtein_distance" target="_blank">http://en.wikipedia.org/wiki/Levenshtein_distance</a></p>
+        <p>
+            <table width="546" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                    <tr align="left" valign="top">
+                        <th width="151" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">Example query
+          </b>
+                            </p>
+                        </th>
+                        <th width="119" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Fuzzy degree
+          </b>
+                            </p>
+                        </th>
+                        <th width="276" valign="middle" style="border: 1px solid #ffffff;border-image: none;" bgcolor="#c9c9c9">
+                            <p class="tablebodytextcentre"><b class="specialbold">
+            Results
+          </b>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="151" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          computer
+        </p>
+                            <p class="tablebodytextleft">
+          email
+        </p>
+                        </td>
+                        <td width="119" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          0
+        </p>
+                        </td>
+                        <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          computer, c-omputer, computer-
+        </p>
+                            <p class="tablebodytextleft">
+          email, e-mail
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="151" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          computer~1
+        </p>
+                        </td>
+                        <td width="119" style="border: 1px solid #c0c0c0;border-image: none;">
+                            <p class="tablebodytextleft">
+          1
+        </p>
+                        </td>
+                        <td width="276" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          computer, c-omputer, computer-, commuter, compute, computter, compoter, etc
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="151" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          computer~2
+        </p>
+                        </td>
+                        <td width="119" style="border: 1px solid #c0c0c0;border-image: none;">
+                            <p class="tablebodytextleft">
+          2
+        </p>
+                        </td>
+                        <td width="276" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          computer, c-omputer, computer-, commuter, compute, computter, compoter, computw, cumpoter, etc
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="151" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          computer~3
+        </p>
+                        </td>
+                        <td width="119" style="border: 1px solid #c0c0c0;border-image: none;">
+                            <p class="tablebodytextleft">
+          3
+        </p>
+                        </td>
+                        <td width="276" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          computer, c-omputer, computer-, commuter, compute, computter, compoter, computw, cumpoter, ounputer, ccnpoter, chapter, etc
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="151" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          computer~4
+        </p>
+                        </td>
+                        <td width="119" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          4
+        </p>
+                        </td>
+                        <td width="276" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          computer, c-omputer, computer-, commuter, compute, computter, compoter, computw, cumpoter, ounputer, ccnpoter, chapter, colour, charter, ocnputter, etc
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="151" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;">
+                            <p class="tablebodytextleft">
+          computer~0,5
+        </p>
+                        </td>
+                        <td width="119" style="border: 1px solid #c0c0c0;border-image: none;">
+                            <p class="tablebodytextleft">
+          0,5
+        </p>
+                        </td>
+                        <td width="276" style="border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          computer, c-omputer, computer-, commuter, compute, computter, compoter, computw, cumpoter, ounputer, ccnpoter, chapter, colour, charter, ocnputter, combined, complete, complex, compared, center, footer, copied, collate, cope, matter, etc
+        </p>
+                            <p class="tablebodytextleft">
+          &#160;
+        </p>
+                            <p class="tablebodytextleft">
+          
+            Note: If a floating number is not accepted, try a higher number or a longer term.
+        </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td width="151" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                            <p class="tablebodytextleft">
+          "232"~1
+        </p>
+                        </td>
+                        <td width="119" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          1
+        </p>
+                        </td>
+                        <td width="276" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                            <p class="tablebodytextleft">
+          232 
+        </p>
+                            <p class="tablebodytextleft">
+          230, 231, 233, 234, 235, 236, 237, 238, 239
+        </p>
+                            <p class="tablebodytextleft">
+          202, 212, 222, 242, etc.
+        </p>
+                            <p class="tablebodytextleft">
+          032, 132, 332, 432, etc.
+        </p>
+                            <p class="tablebodytextleft">
+          22, 23, 32
+        </p>
+                            <p class="tablebodytextleft">
+          22-4-1999  
+        </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+        </p>
+    </body>
+</html>

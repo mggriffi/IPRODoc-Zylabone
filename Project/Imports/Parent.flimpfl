@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProjectImport
+  AutoSync="false"
+  IncludePattern="*.*"
+  LastImport="2022-03-01T09:07:11.9092613+01:00">
+  <Files>
+    <Url
+      Source="file:///C:/Parent/Parent Project.flprj"
+      AbsoluteSource="file:///C:/Parent/Parent Project.flprj" />
+  </Files>
+  <ExcludedFiles>
+    <Url
+      Source="../../Content/Styles/stylesheet.css"
+      AbsoluteSource="file:///C:/ZyLAB/Content/Styles/stylesheet.css" />
+    <Url
+      Source="../TOCs/Home.fltoc"
+      AbsoluteSource="file:///C:/ZyLAB/Project/TOCs/Home.fltoc" />
+    <Url
+      Source="../../Content/Resources/Home/Home.htm"
+      AbsoluteSource="file:///C:/ZyLAB/Content/Resources/Home/Home.htm" />
+    <Url
+      Source="../Targets/ZyLAB ONE Manual.fltar"
+      AbsoluteSource="file:///C:/ZyLAB/Project/Targets/ZyLAB ONE Manual.fltar" />
+    <Url
+      Source="../Skins/HTML5 - ZyLAB Side Navigation.flskn"
+      AbsoluteSource="file:///C:/ZyLAB/Project/Skins/HTML5 - ZyLAB Side Navigation.flskn" />
+    <Url
+      Source="../Skins/HTML5 - ZyLAB Side Navigation Landing Page.flskn"
+      AbsoluteSource="file:///C:/ZyLAB/Project/Skins/HTML5 - ZyLAB Side Navigation Landing Page.flskn" />
+    <Url
+      Source="../Targets/ZyLAB Home.fltar"
+      AbsoluteSource="file:///C:/ZyLAB/Project/Targets/ZyLAB Home.fltar" />
+    <Url
+      Source="../ConditionTagSets/Primary.flcts"
+      AbsoluteSource="file:///C:/ZyLAB/Project/ConditionTagSets/Primary.flcts" />
+    <Url
+      Source="../Skins/TopicToolbar.flskn"
+      AbsoluteSource="file:///C:/ZyLAB/Project/Skins/TopicToolbar.flskn" />
+    <Url
+      Source="../../Content/Resources/MasterPages/MasterPageZyLAB.flmsp"
+      AbsoluteSource="file:///C:/ZyLAB/Content/Resources/MasterPages/MasterPageZyLAB.flmsp" />
+    <Url
+      Source="../../Content/Resources/MasterPages/MasterPageZyLABHome.flmsp"
+      AbsoluteSource="file:///C:/ZyLAB/Content/Resources/MasterPages/MasterPageZyLABHome.flmsp" />
+    <Url
+      Source="../Skins/Menu.flskn"
+      AbsoluteSource="file:///C:/ZyLAB/Project/Skins/Menu.flskn" />
+  </ExcludedFiles>
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../Parent/Content/Resources/MasterPage/IPROMasterPage.flmsp"
+      AbsoluteSource="file:///C:/Parent/Content/Resources/MasterPage/IPROMasterPage.flmsp" />
+    <Url
+      Source="../../../Parent/Content/Scripts/article-published.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/article-published.js" />
+    <Url
+      Source="../../../Parent/Content/Scripts/lightense.min.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/lightense.min.js" />
+    <Url
+      Source="../../../Parent/Content/Scripts/zylab-one-legal-hold-ipro2/Script.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/zylab-one-legal-hold-ipro2/Script.js" />
+    <Url
+      Source="../../../Parent/Content/Styles/stylesheet.css"
+      AbsoluteSource="file:///C:/Parent/Content/Styles/stylesheet.css" />
+    <Url
+      Source="../../../Parent/Project/ConditionTagSets/Primary.flcts"
+      AbsoluteSource="file:///C:/Parent/Project/ConditionTagSets/Primary.flcts" />
+    <Url
+      Source="../../../Parent/Project/Destinations/IPRO Documentation.fldes"
+      AbsoluteSource="file:///C:/Parent/Project/Destinations/IPRO Documentation.fldes" />
+    <Url
+      Source="../../../Parent/Project/Skins/HTML5 - Side Navigation.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/HTML5 - Side Navigation.flskn" />
+    <Url
+      Source="../../../Parent/Project/Skins/Menu.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/Menu.flskn" />
+    <Url
+      Source="../../../Parent/Project/Skins/TopicToolbar.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/TopicToolbar.flskn" />
+    <Url
+      Source="../../../Parent/Project/Targets/HTML5.fltar"
+      AbsoluteSource="file:///C:/Parent/Project/Targets/HTML5.fltar" />
+    <Url
+      Source="../../../Parent/Project/VariableSets/Primary.flvar"
+      AbsoluteSource="file:///C:/Parent/Project/VariableSets/Primary.flvar" />
+    <Url
+      Source="../../../Parent/Content/Resources/MasterPage/Copy of IPROMasterPage.flmsp"
+      AbsoluteSource="file:///C:/Parent/Content/Resources/MasterPage/Copy of IPROMasterPage.flmsp" />
+    <Url
+      Source="../../../Parent/Content/Scripts/jquery.magnify.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/jquery.magnify.js" />
+    <Url
+      Source="../../../Parent/Content/Scripts/Obsolete/article-published.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/Obsolete/article-published.js" />
+    <Url
+      Source="../../../Parent/Content/Scripts/Obsolete/lightense.min.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/Obsolete/lightense.min.js" />
+    <Url
+      Source="../../../Parent/Content/Scripts/Obsolete/zylab-one-legal-hold-ipro2/Script.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/Obsolete/zylab-one-legal-hold-ipro2/Script.js" />
+    <Url
+      Source="../../../Parent/Content/Resources/Home/Home.htm"
+      AbsoluteSource="file:///C:/Parent/Content/Resources/Home/Home.htm" />
+    <Url
+      Source="../../../Parent/Content/Resources/MasterPages/MasterPageZyLAB.flmsp"
+      AbsoluteSource="file:///C:/Parent/Content/Resources/MasterPages/MasterPageZyLAB.flmsp" />
+    <Url
+      Source="../../../Parent/Content/Resources/MasterPages/MasterPageZyLABHome.flmsp"
+      AbsoluteSource="file:///C:/Parent/Content/Resources/MasterPages/MasterPageZyLABHome.flmsp" />
+    <Url
+      Source="../../../Parent/Project/Skins/HTML5 - ZyLAB Side Navigation Landing Page.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/HTML5 - ZyLAB Side Navigation Landing Page.flskn" />
+    <Url
+      Source="../../../Parent/Project/Skins/HTML5 - ZyLAB Side Navigation.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/HTML5 - ZyLAB Side Navigation.flskn" />
+    <Url
+      Source="../../../Parent/Project/Targets/HTML5 Landing Page.fltar"
+      AbsoluteSource="file:///C:/Parent/Project/Targets/HTML5 Landing Page.fltar" />
+    <Url
+      Source="../../../Parent/Project/TOCs/Home.fltoc"
+      AbsoluteSource="file:///C:/Parent/Project/TOCs/Home.fltoc" />
+    <Url
+      Source="../../../Parent/Project/Destinations/ZyLAB Home.fldes"
+      AbsoluteSource="file:///C:/Parent/Project/Destinations/ZyLAB Home.fldes" />
+    <Url
+      Source="../../../Parent/Project/Targets/ZyLAB Home.fltar"
+      AbsoluteSource="file:///C:/Parent/Project/Targets/ZyLAB Home.fltar" />
+    <Url
+      Source="../../../Parent/Project/Targets/ZyLAB ONE Manual.fltar"
+      AbsoluteSource="file:///C:/Parent/Project/Targets/ZyLAB ONE Manual.fltar" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles>
+    <Url
+      Source="../../../Parent/Content/Resources/MasterPage/IPROMasterPage.flmsp"
+      AbsoluteSource="file:///C:/Parent/Content/Resources/MasterPage/IPROMasterPage.flmsp" />
+    <Url
+      Source="../../../Parent/Content/Scripts/article-published.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/article-published.js" />
+    <Url
+      Source="../../../Parent/Content/Scripts/lightense.min.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/lightense.min.js" />
+    <Url
+      Source="../../../Parent/Content/Scripts/zylab-one-legal-hold-ipro2/Script.js"
+      AbsoluteSource="file:///C:/Parent/Content/Scripts/zylab-one-legal-hold-ipro2/Script.js" />
+    <Url
+      Source="../../../Parent/Content/Styles/stylesheet.css"
+      AbsoluteSource="file:///C:/Parent/Content/Styles/stylesheet.css" />
+    <Url
+      Source="../../../Parent/Project/ConditionTagSets/Primary.flcts"
+      AbsoluteSource="file:///C:/Parent/Project/ConditionTagSets/Primary.flcts" />
+    <Url
+      Source="../../../Parent/Project/Destinations/IPRO Documentation.fldes"
+      AbsoluteSource="file:///C:/Parent/Project/Destinations/IPRO Documentation.fldes" />
+    <Url
+      Source="../../../Parent/Project/Skins/HTML5 - Side Navigation.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/HTML5 - Side Navigation.flskn" />
+    <Url
+      Source="../../../Parent/Project/Skins/Menu.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/Menu.flskn" />
+    <Url
+      Source="../../../Parent/Project/Skins/TopicToolbar.flskn"
+      AbsoluteSource="file:///C:/Parent/Project/Skins/TopicToolbar.flskn" />
+    <Url
+      Source="../../../Parent/Project/Targets/HTML5.fltar"
+      AbsoluteSource="file:///C:/Parent/Project/Targets/HTML5.fltar" />
+    <Url
+      Source="../../../Parent/Project/VariableSets/Primary.flvar"
+      AbsoluteSource="file:///C:/Parent/Project/VariableSets/Primary.flvar" />
+  </SkippedSourceFiles>
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/MasterPage/IPROMasterPage.flmsp"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Scripts/article-published.js"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Scripts/lightense.min.js"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Scripts/zylab-one-legal-hold-ipro2/Script.js"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Styles/stylesheet.css"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../ConditionTagSets/Primary.flcts"
+      TimeStamp="01/11/2022 11:40:12" />
+    <Url
+      Source="../Destinations/IPRO Documentation.fldes"
+      TimeStamp="01/11/2022 11:40:13" />
+    <Url
+      Source="../Skins/HTML5 - Side Navigation.flskn"
+      TimeStamp="01/11/2022 11:40:13" />
+    <Url
+      Source="../Skins/Menu.flskn"
+      TimeStamp="01/11/2022 11:40:13" />
+    <Url
+      Source="../Skins/TopicToolbar.flskn"
+      TimeStamp="01/11/2022 11:40:13" />
+    <Url
+      Source="../Targets/HTML5.fltar"
+      TimeStamp="01/11/2022 11:40:13" />
+    <Url
+      Source="../VariableSets/Primary.flvar"
+      TimeStamp="01/11/2022 11:40:13" />
+    <Url
+      Source="../../Content/Resources/MasterPage/Copy of IPROMasterPage.flmsp"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Scripts/jquery.magnify.js"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../../Content/Scripts/Obsolete/article-published.js"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Scripts/Obsolete/lightense.min.js"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Scripts/Obsolete/zylab-one-legal-hold-ipro2/Script.js"
+      TimeStamp="01/11/2022 11:40:04" />
+    <Url
+      Source="../../Content/Resources/Home/Home.htm"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../../Content/Resources/MasterPages/MasterPageZyLAB.flmsp"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../../Content/Resources/MasterPages/MasterPageZyLABHome.flmsp"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../Skins/HTML5 - ZyLAB Side Navigation Landing Page.flskn"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../Skins/HTML5 - ZyLAB Side Navigation.flskn"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../Targets/HTML5 Landing Page.fltar"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../TOCs/Home.fltoc"
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../Destinations/ZyLAB Home.fldes"
+      TimeStamp="08/02/2022 16:45:22" />
+    <Url
+      Source="../Targets/ZyLAB Home.fltar"
+      TimeStamp="08/02/2022 16:49:56" />
+    <Url
+      Source="../Targets/ZyLAB ONE Manual.fltar"
+      TimeStamp="02/10/2022 09:28:05" />
+  </GeneratedFiles>
+</CatapultProjectImport>

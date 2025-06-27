@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <h1>CMIS Collector</h1>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='CMIS Collector';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/legal-processing-publication/44.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/legal-processing-publication/dhtml_search.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <p id="t10115" class="heading3">
+            <MadCap:keyword term="CMIS Collector" />CMIS Collector</p>
+        <p class="bodytext">The CMIS Collector collects files from Alfresco and SharePoint CMS systems.<br /><img id="f10298" src="../../Storage/legal-processing-publication/lpcmis.png" class="linkedjpegfiletemplate80" alt="Linked JPEG File Template 70" height="419.2" width="448" vspace="0" hspace="0" align="bottom" border="0" /><br /></p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <em class="emphasis">Settings</em>
+                <br />
+                <br />
+                <b class="specialbold">Folder Path</b>
+                <br />SharePoint and Alfresco: Define the path to the folder from where the files will be collected. If '\' is entered, everything under the Repository Name will be collected.<br /><br /><b class="specialbold">Base Location</b><br />Alfresco: The URL to the Alfresco server from where the data has to be collected. For Alfresco, the Base Location is: https://yourhost:8080/alfresco/service/api/cmis <br /><br />Note: Only https:// is supported for Alfresco.<p class="list" /><p class="listnote">SharePoint CMIS contains a file stream issue. This issue causes files to be streamed entirely instead of per chunk defined by offset and length.<br /><br />A current workaround for SharePoint consists of a customized ZyLAB ContentService to be installed on the SharePoint environment (see http://msdn.microsoft.com/en-us/library/ms464040.aspx )<br />If server-side installation is not an option, the user can configure a maximum response size in the Maximum Response Size parameter in the settings file. The maximum response size equals the maximum size of files that can be downloaded from the SharePoint repository. <br />Together with the SharePoint File Streaming parameter set to "MicrosoftMaxResponseSize" only files smaller than the maximum response size will be downloaded, thus preventing exceptions in the WCF handling of the download stream. <br />Once Microsoft has fixed the file stream issue, the SharePoint File Streaming parameter can be set back to Microsoft.</p><p class="list"><br /><b class="specialbold">Repository Name</b><br />SharePoint: Specify the CMIS repository of interest. It can be a document library/website on the SharePoint Server.<br />Alfresco:<em class="emphasis"></em>Alfresco Repositories are different than SharePoint ones. Only the Main Repository exists. Accessing the data is done via folders.<br /><br /><b class="specialbold">Server Type</b><br />The Server Type is Alfresco or SharePoint. <br /><br /><b class="specialbold">Transport Authentication Type</b><br />Define the Transport Authentication Type. This depends on how the SharePoint or Alfresco server is set up. It can be: NTLM, Basic or Digest.<br /><br /><b class="specialbold">User Name</b><br />Define the user name of the person that will connect to the SharePoint or Alfresco site.<br /><br /><b class="specialbold">Password</b><br />Define the password of the person that has credentials to connect to the SharePoint or Alfresco site.<br /><br /><b class="specialbold">Domain</b><br />Define the domain of the SharePoint or Alfresco server.<br /><br /><b class="specialbold">Proxy Realm</b><br />Define the realm of the SharePoint or Alfresco Server.<br /></p></li>
+            <li class="listbullet">
+                <em class="emphasis">File Types to Collect</em>
+                <br />Select the appropriate File Groups. To create new File Groups, click Add New.<br />For more information on how to define File Groups, see <a id="h9546" class="" title="Define File Groups" href="9522.html" target="_self">Define File Groups</a>.</li>
+        </ul>
+        <table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+            <tr valign="top">
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="9513.html" target="_self">
+                            <img id="f125" src="../../Storage/legal-processing-publication/125.gif" class="embeddediconfiletemplate" alt="Previous Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+                <td width="18">
+                    <p class="bodytext">
+                        <a href="10114.html" target="_self">
+                            <img id="f124" src="../../Storage/legal-processing-publication/124.gif" class="embeddediconfiletemplate" alt="Next Topic" height="21" width="24" vspace="0" hspace="0" align="bottom" border="0" />
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

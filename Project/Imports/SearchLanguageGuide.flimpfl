@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProjectImport
+  AutoSync="false"
+  IncludePattern="*.htm;*.html;*.png;*.bmp;*.jpg;*.jpeg;*.tif;*.tiff;*.gif;*.swd;*.emf;*.wmf;*.xaml;*.xps;*.exps;*.hdp;*.wdp;*.dib;*.svg;*.ps;*.eps;*.pdf;*.fltoc"
+  LastImport="2022-01-11T13:39:36.6705427+01:00">
+  <Files>
+    <Url
+      Source="file:///C:/Search-Language-Guide/Search-Language-Guide.flprj"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Search-Language-Guide.flprj" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10824.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10824.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10825.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10825.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10826.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10826.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10829.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10829.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10830.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10830.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10831.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10831.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10832.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10832.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10837.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10837.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10840.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10840.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10841.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10841.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10842.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10842.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10843.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10843.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10844.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10844.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10845.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10845.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10846.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10846.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10847.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10847.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10848.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10848.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10849.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10849.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10850.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10850.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10851.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10851.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10852.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10852.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10853.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10853.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10854.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10854.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10855.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10855.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10856.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10856.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10857.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10857.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10858.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10858.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10861.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10861.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10864.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10864.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10908.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10908.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10918.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10918.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10923.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10923.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/10928.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/10928.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/11176.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/11176.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/11633.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/11633.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/11948.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/11948.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/11998.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/11998.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/30985.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/30985.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Search-Language-Guide/789.html"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Search-Language-Guide/789.html" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04-1.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04-1.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04-2.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04-2.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10867.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10867.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10868.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10868.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10869.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10869.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10870.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10870.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10871.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10871.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10872.jpg"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10872.jpg" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10908-2018-12-11.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10908-2018-12-11.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10918-2018-12-17.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/10918-2018-12-17.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/zylabmanual/558-2018-06-25-1.png"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Content/Storage/zylab-one-search-language-guide-publication-1/zylabmanual/558-2018-06-25-1.png" />
+    <Url
+      Source="../../../Search-Language-Guide/Project/TOCs/zylab-one-search-language-guide-publication-1-exported.fltoc"
+      AbsoluteSource="file:///C:/Search-Language-Guide/Project/TOCs/zylab-one-search-language-guide-publication-1-exported.fltoc" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Search-Language-Guide/10824.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10825.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10826.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10829.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10830.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10831.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10832.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10837.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10840.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10841.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10842.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10843.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10844.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10845.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10846.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10847.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10848.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10849.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10850.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10851.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10852.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10853.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10854.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10855.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10856.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10857.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10858.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10861.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10864.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10908.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10918.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10923.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/10928.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/11176.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/11633.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/11948.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/11998.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/30985.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Search-Language-Guide/789.html"
+      TimeStamp="11/01/2022 13:11:46" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04-1.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04-2.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10824-2021-01-04.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10867.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10868.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10869.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10870.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10871.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10872.jpg"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10908-2018-12-11.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/10918-2018-12-17.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../../Content/Storage/zylab-one-search-language-guide-publication-1/zylabmanual/558-2018-06-25-1.png"
+      TimeStamp="11/01/2022 13:11:39" />
+    <Url
+      Source="../TOCs/zylab-one-search-language-guide-publication-1-exported.fltoc"
+      TimeStamp="11/01/2022 13:38:10" />
+  </GeneratedFiles>
+</CatapultProjectImport>

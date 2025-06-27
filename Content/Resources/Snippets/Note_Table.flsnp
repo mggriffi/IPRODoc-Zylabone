@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table style="mc-table-style: url('../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Images/CSH_Images/myipro_note.png" />
+                        </p>
+                        <p>
+                            <img src="../Images/CSH_Images/myipro_tip.png" />
+                        </p>
+                        <p class="TableText">
+                            <img src="../Images/CSH_Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: text, text , text</p>
+                        <p style="font-size: 10pt;font-style: italic;">Tip: text, text, text</p>
+                        <p style="font-size: 10pt;font-style: italic;">Warning: text, text, text</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

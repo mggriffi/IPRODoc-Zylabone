@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Welcome"
+    Link="/Content/ZyLAB/Search-Language-Guide/10824.html" />
+  <TocEntry
+    Title="Define Search Queries"
+    Link="/Content/ZyLAB/Search-Language-Guide/10843.html">
+    <TocEntry
+      Title="Search Audio and Video"
+      Link="/Content/ZyLAB/Search-Language-Guide/11176.html" />
+    <TocEntry
+      Title="Search Order and Parentheses"
+      Link="/Content/ZyLAB/Search-Language-Guide/10829.html" />
+    <TocEntry
+      Title="Persons"
+      Link="/Content/ZyLAB/Search-Language-Guide/10861.html" />
+    <TocEntry
+      Title="Date Search"
+      Link="/Content/ZyLAB/Search-Language-Guide/10864.html" />
+    <TocEntry
+      Title="Search Email"
+      Link="/Content/ZyLAB/Search-Language-Guide/11998.html" />
+    <TocEntry
+      Title="Regular Expressions"
+      Link="/Content/ZyLAB/Search-Language-Guide/789.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Define Terms in Search Query"
+    Link="/Content/ZyLAB/Search-Language-Guide/10844.html">
+    <TocEntry
+      Title="Fuzzy Searches"
+      Link="/Content/ZyLAB/Search-Language-Guide/10825.html" />
+    <TocEntry
+      Title="Wild Card Searches"
+      Link="/Content/ZyLAB/Search-Language-Guide/10826.html">
+      <TocEntry
+        Title="Question Mark ?"
+        Link="/Content/ZyLAB/Search-Language-Guide/10847.html" />
+      <TocEntry
+        Title="Asterisk *"
+        Link="/Content/ZyLAB/Search-Language-Guide/10848.html" />
+      <TocEntry
+        Title="Character Patterns []"
+        Link="/Content/ZyLAB/Search-Language-Guide/10849.html" />
+      <TocEntry
+        Title="Negation [^]"
+        Link="/Content/ZyLAB/Search-Language-Guide/10850.html" />
+      <TocEntry
+        Title="Preceding Element +"
+        Link="/Content/ZyLAB/Search-Language-Guide/10851.html" />
+      <TocEntry
+        Title="Preceding Element {m,n}"
+        Link="/Content/ZyLAB/Search-Language-Guide/10852.html" />
+      <TocEntry
+        Title="Preceding Element {m}"
+        Link="/Content/ZyLAB/Search-Language-Guide/10853.html" />
+      <TocEntry
+        Title="Preceding Element {m,}"
+        Link="/Content/ZyLAB/Search-Language-Guide/10854.html" />
+      <TocEntry
+        Title="Multiple Wild Cards in a Search Query"
+        Link="/Content/ZyLAB/Search-Language-Guide/10842.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Combine Terms/Queries in Search Query"
+    Link="/Content/ZyLAB/Search-Language-Guide/10846.html">
+    <TocEntry
+      Title="AND Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10845.html" />
+    <TocEntry
+      Title="OR Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10855.html" />
+    <TocEntry
+      Title="NOT Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10840.html" />
+    <TocEntry
+      Title="TO Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10856.html" />
+    <TocEntry
+      Title="IN fieldname{query}"
+      Link="/Content/ZyLAB/Search-Language-Guide/10908.html" />
+    <TocEntry
+      Title="BOD, EOS, EOP, EOG, EOD"
+      Link="/Content/ZyLAB/Search-Language-Guide/30985.html" />
+    <TocEntry
+      Title="Within Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10857.html" />
+    <TocEntry
+      Title="Precedes Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10858.html" />
+    <TocEntry
+      Title="Number Range Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10831.html" />
+    <TocEntry
+      Title="Quorum Operator"
+      Link="/Content/ZyLAB/Search-Language-Guide/10832.html" />
+  </TocEntry>
+  <TocEntry
+    Title="More Search Techniques"
+    Link="/Content/ZyLAB/Search-Language-Guide/10923.html">
+    <TocEntry
+      Title="Field Filter"
+      Link="/Content/ZyLAB/Search-Language-Guide/10918.html" />
+    <TocEntry
+      Title="Exclude List of Terms from Fuzzy/Wildcard Query"
+      Link="/Content/ZyLAB/Search-Language-Guide/10841.html" />
+    <TocEntry
+      Title="Quoted and Unquoted Searches"
+      Link="/Content/ZyLAB/Search-Language-Guide/10928.html" />
+    <TocEntry
+      Title="Complex Search Queries"
+      Link="/Content/ZyLAB/Search-Language-Guide/10830.html" />
+    <TocEntry
+      Title="Macros"
+      Link="/Content/ZyLAB/Search-Language-Guide/11633.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Appendix A: Search Rules &amp; Conventions"
+    Link="/Content/ZyLAB/Search-Language-Guide/10837.html" />
+  <TocEntry
+    Title="Appendix B: Definitions"
+    Link="/Content/ZyLAB/Search-Language-Guide/11948.html" />
+</CatapultToc>

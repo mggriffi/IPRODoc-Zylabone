@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Block" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Assisted Review: Validation Set</h1>
+        <h2>What is a Validation Set?</h2>
+        <p>For Assisted Review projects, you have the choice to add a <b>Validation Set</b> (Test Set). For each created issue in a project, this Validation Set can then be used to determine how well the learning algorithm (also known as the Classifier) performs in labeling documents as being responsive or not responsive for an issue. </p>
+        <p>To include a Validation Set, select the <b>Use Validation Set</b> option when adding a project to Assisted Review.<MadCap:conditionalText MadCap:conditions="Primary.Block"> See <MadCap:xref href="Assisted_Review/Create_New_Assisted_Review_Project.html">Create A New Assisted Review Project</MadCap:xref> for information about the options available when creating a new Assisted Review project.</MadCap:conditionalText></p>
+        <p>
+            <img src="../../Storage/zylab-one-manual-publication/333-2018-12-04.png" alt="" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: You cannot add a Validation Set to an existing project.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> All documents in this Validation Set will be reviewed by a human, preferably a Subject Matter Expert. The results of each new training batch will be compared with the results of the Validation Set. Only when you have added a Validation Set to your project, the Recall Goal can be set and the Estimated Current Recall can be calculated.</p>
+        <p>For more information on recall, see <MadCap:xref href="445.html">Recall Goal</MadCap:xref> and <MadCap:xref href="330.html">Estimated Current Recall</MadCap:xref>.</p>
+        <h2>Extend Validation Set</h2>
+        <p>You have the option to Extend the Validation Set when the size of the set is not sufficient. This is the case when you do not have enough random documents to make a good estimation of the number of responsive documents in the project. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note:  If this is the case, you can see a warning icon next to the Estimated Current Recall:</p>
+                        <p style="font-size: 10pt; font-style: italic;">
+                            <img src="../../Storage/zylab-one-manual-publication/555-2018-08-27-2.png" alt="" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To extend the Validation Set, select the <b>Extend Set</b> button.</p>
+        <p>
+            <img src="../../Resources/Images/ONE/Assisted_Review_Extend_Set.png" class="Thumbnail" />
+        </p>
+        <p>The size of the Validation Set will be extended an additional 10% of the current Validation Set (with a minimum of 50 documents). So for a Validation Set of a 1000 documents, the extension is 100 documents. Click <b>Extend Set</b> again to add another 10%.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;">Note: You can always extend the Validation Set. However, remember there is only one Validation Set per project. If you extend the Validation Set for an issue, it will be extended for all issues. </p>
+                        <p style="font-size: 10pt; font-style: italic;">Also, it is recommended to review the Validation Set completely before extending it.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

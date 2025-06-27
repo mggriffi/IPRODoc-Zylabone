@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Styles/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Role Permissions Explained</h1>
+        <p>All role permissions are listed below. Permissions are added to&#160;<a href="341.html">roles</a>&#160;(not&#160;<a href="340.html">users</a>). Roles are assigned to users/groups. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/CSH_Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: In SaaS with b2c authentication, groups are not used.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Not all permissions 
+are available for all role types.</p>
+        <p>First, you choose the role type; you can select an existing role or create a new one. Then, add/remove permissions (listed below) to/from that role.
+  </p>
+        <p>Some permissions are related/connected to other permissions. You will get a warning when you select a related permission. It is advised to select the suggested permissions in order for the selected permission to function properly. </p>
+        <h3>Review</h3>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p><b>Access all documents</b>
+                </p>
+                <p>This role permission can be defined for a Legal Review Role.&#160;Access is granted for all documents in all matters.    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Access all fields</b>
+                </p>
+                <p>This role permission can be defined for a Legal Review Role. The user is allowed to view all field properties.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Access document content</b> </p>
+                <p>When created in a Legal Review Role, the user is allowed to open all content available in Matters in ZyLAB Legal Review. For Current Matter Roles, only the content of one Matter (the current or specified matter) can be opened.
+    </p>
+            </li>
+            <li class="listbullet"><b>Access documents</b>
+                <ul class="listbullet">
+                    <li class="listbullet">
+          Not granted
+        </li>
+                    <li class="listbullet">
+          Granted for all documents
+        </li>
+                    <li class="listbullet">
+          Granted for specific documents
+        </li>
+                </ul>
+            </li>
+            <li class="listbullet"><b>Access fields</b>
+                <ul class="listbullet">
+                    <li class="listbullet">
+          Not granted
+        </li>
+                    <li class="listbullet">
+          Granted for all documents
+        </li>
+                    <li class="listbullet">
+          Granted for specific documents
+        </li>
+                </ul>
+            </li>
+            <li class="listbullet">
+                <p><b>Access matter
+  </b>
+                </p>
+                <p>When created in an eDiscovery or Legal Review Role, the user is allowed to open all Matters in ZyLAB Legal Review. For Current Matter Roles, only one Matter (the current or specified matter) can be opened.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Add/edit remarks
+  </b>
+                </p>
+                <p>The user is allowed to add and edit remarks to reviewed documents.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Annotation - annotate documents
+  </b>
+                </p>
+                <p> The user is allowed to annotate documents.
+    </p>
+            </li>
+            <li class="listbullet"><b>Annotation - edit annotations created by other people</b>
+                <ul class="listbullet">
+                    <li class="listbullet">
+      Not granted
+      <br />No users are allowed to edit annotations created by other people.
+    </li>
+                    <li class="listbullet">
+      Granted for annotations created by anybody
+      <br />All users are allowed to edit annotations created by other people.
+    </li>
+                    <li class="listbullet">
+      Granted for annotations created by specific people<br />Specified users are allowed to edit annotations created by other people.
+    </li>
+                </ul>
+            </li>
+            <li class="listbullet"><b>Annotation - see annotations created by other people</b>
+                <ul class="listbullet">
+                    <li class="listbullet">
+      Not granted
+      <br />No users are allowed to see annotations created by other people.
+    </li>
+                    <li class="listbullet">
+      Granted for annotations created by anybody
+      <br />     All users are allowed to see annotations created by other people.
+    </li>
+                    <li class="listbullet">
+      Granted for annotations created by specific people<br />Specified users are allowed to see annotations created by other people.
+    </li>
+                </ul>
+            </li>
+            <!--  
+    &lt;li class=&quot;listbullet&quot;&gt;
+      &lt;b&gt;Batch downloads&lt;/b&gt;
+  &lt;br/&gt;
+  The user is allowed to download a selection of documents. If a user has the permission &#39;Produce Documents&#39;, he also has the permission &#39;Batch Download&#39;.
+    &lt;/li&gt;
+  -->
+            <li class="listbullet">
+                <p><b>Bulk field update
+        </b>
+                </p>
+                <p>The user is allowed to use the Batch Update function in <a href="1070.html">Batch Search</a>. If the user does not have this permission, the update functionality and columns (Updated Documents, Value) are hidden.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Create Batch Downloads</b>
+                </p>
+                <p>Allows users to create, download, view and work on their own batch downloads (selection of documents).&#160;
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Manage Batch Downloads from other users&#160;</b>
+                </p>
+                <p>Allows users (administrators) to view/work on batch downloads created by other users. With this role permission, you can work on all batch downloads created in a matter.</p>
+            </li>
+            <li class="listbullet">
+                <p><b>Manage Cloud Upload</b>
+                </p>
+                <p>Allows users to manage cloud uploads (Microsoft Exchange, Google G Suite).</p>
+            </li>
+            <li class="listbullet">
+                <p><b>Create matter
+  </b>
+                </p>
+                <p>The user is allowed to create matters.</p>
+            </li>
+            <li class="listbullet">
+                <p><b>Create Sample Set</b>
+                </p>
+                <p>The user is allowed to create a sample set.</p>
+            </li>
+            <li class="listbullet">
+                <p><b>Manage All Sample Sets</b>
+                </p>
+                <p>The user is allowed to manage all sample sets.</p>
+            </li>
+            <li class="listbullet">
+                <p><b>Deduplication</b>
+                </p>
+                <p>The user is allowed to perform deduplication.</p>
+            </li>
+            <li class="listbullet">
+                <p><b>Delete documents
+  </b>
+                </p>
+                <p>The user is allowed to delete documents.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Download documents
+  </b>
+                </p>
+                <p>The user is allowed to download files in the native or PDF format.</p>
+            </li>
+            <li class="listbullet">
+                <p><b>Redact documents</b>
+                </p>
+                <p>The user is allowed to protect sensitive, privileged and/or confidential information by hiding selected content.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Review batches
+  </b>
+                </p>
+                <p>The user is allowed to create review batches (workloads).
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Search
+  </b> </p>
+                <p>The user is allowed to search the document set, including metadata.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Tagging - apply tags
+  </b>
+                </p>
+                <p>The user is allowed to apply any tags.
+  </p>
+                <ul class="listbullet">
+                    <li class="listbullet">
+                        <p>
+      Not granted
+    </p>
+                    </li>
+                    <li class="listbullet">
+                        <p>
+      Granted for all tags
+    </p>
+                    </li>
+                    <li class="listbullet">
+                        <p>
+      Granted for specific tags
+    </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listbullet">
+                <p><b>Tagging - bulk tag
+  </b>
+                </p>
+                <p>The user is allowed to apply bulk tags.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Tagging - see tags</b>
+                </p>
+                <p>The user is allowed to see all&#160;tags.
+  </p>
+                <ul class="listbullet">
+                    <li class="listbullet">
+                        <p>
+      Not granted
+    </p>
+                    </li>
+                    <li class="listbullet">
+                        <p>
+      Granted for all tags
+    </p>
+                    </li>
+                    <li class="listbullet">
+                        <p>
+      Granted for specific tags
+    </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listbullet">
+                <p><b>Upload
+  </b> </p>
+                <p>The user is allowed to upload files.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>View audit log
+  </b>
+                </p>
+                <p>The user is allowed to analyze the actions of users.
+</p>
+            </li>
+        </ul>
+        <h3>Assisted Review</h3>
+        <ul>
+            <li>
+                <p><b>Assisted Review
+      </b>
+                </p>
+                <p>The user is allowed to use Assisted Review.
+</p>
+            </li>
+        </ul>
+        <h3>Configuration</h3>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p><b>Auto-redact documents</b>
+                </p>
+                <p>The user is allowed to auto-redact the document he is currently reviewing.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Batch assignment</b>
+                </p>
+                <p>The user is allowed to assign batches to legal reviewers.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Configure document auto-classification</b>
+                </p>
+                <p>The user is allowed to predefine a list of document classification rules. If an Auto-Classification rule (query) finds a match, field values or tags of the document will be adjusted.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Configure keyword highlighting</b> </p>
+                <p>The user is allowed to configure groups of keywords to be highlighted.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Configure review status query</b>
+                </p>
+                <p>The user is allowed to define a review status query. When a document matches the review status query, the document will be automatically marked as reviewed.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Delete matter
+      </b>
+                </p>
+                <p>When created in a Legal Review Role, the user is allowed to delete all available Matters in ZyLAB Legal Review. For Current Matter Roles, only one Matter (the Current Matter or specified Matter) can be deleted.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Manage facets
+      </b>
+                </p>
+                <p>The user is allowed to manage facets.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Manage security
+      </b>
+                </p>
+                <p>The user is allowed to administer security permissions for all users in the selected matter. When assigned the Manage security permission, the user can  control (change and view) only the security permissions of users in this scope, with all changes limited to this matter.  </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Tagging - edit configuration</b>
+                </p>
+                <p>The user is allowed to configure the tags.
+</p>
+            </li>
+        </ul>
+        <h3>Production</h3>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p><b>Produce documents</b> </p>
+                <p>The user is allowed to deliver relevant, non-privileged data sets to opposing counsel, partner firms, outside counsel and/or the requesting government agency.
+    </p>
+            </li>
+            <li class="listbullet">
+                <p><b>Access produced document content</b>
+                </p>
+                <p>The user is allowed to view if and how documents are produced.
+</p>
+            </li>
+        </ul>
+        <h3>Reports</h3>
+        <ul class="listbullet">
+            <li class="listbullet"><b>Access all internal reports</b>
+            </li>
+            <li class="listbullet">
+                <p><b>Access reports</b>
+                </p>
+                <p>The user is allowed to access/view reports.
+  </p>
+                <ul class="listbullet">
+                    <li class="listbullet">
+                        <p>
+      Not granted
+    </p>
+                    </li>
+                    <li class="listbullet">
+                        <p>
+      Granted for all reports
+    </p>
+                    </li>
+                    <li class="listbullet">
+                        <p>
+      Granted for specific reports
+    </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listbullet">
+                <p><b>Access SSRS reports</b>
+                </p>
+                <p>The user is allowed to access/view SSRS (SQL Server Reporting Service) reports.
+</p>
+            </li>
+        </ul>
+        <h3>Insights</h3>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p><b>Configure Insights
+      </b>
+                </p>
+                <p>The user is allowed to configure Insights.
+</p>
+            </li>
+        </ul>
+    </body>
+</html>

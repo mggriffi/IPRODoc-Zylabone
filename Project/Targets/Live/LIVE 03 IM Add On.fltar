@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5 - ZyLAB Side Navigation.flskn"
+  MasterStylesheet="/Content/Styles/stylesheet.css"
+  PreCompileScaledImages="true"
+  EquationsOutputType="PNG"
+  ContentInclusionType="Referenced"
+  MasterPage="/Content/Resources/MasterPages/TESTMasterPageZyLAB.flmsp"
+  ConditionTagExpression="include[&quot;Primary.ZyLAB Home&quot;]"
+  DefaultUrl="/Content/ZyLAB/Information-Managment-Add-On/0301.html"
+  MasterToc="/Project/TOCs/Information Management Add On.fltoc"
+  TopNavTocPath="false"
+  MoveOutputContentToRoot="true"
+  TopicToolbarSkin="/Project/Skins/TopicToolbar.flskn"
+  FaviconSkin="/Project/Skins/Favicon.flskn">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="docx" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/LIVE 03 IM Add On.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
+</CatapultTarget>

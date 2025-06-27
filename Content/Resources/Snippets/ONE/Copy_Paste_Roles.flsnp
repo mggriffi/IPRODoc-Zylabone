@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>Once a role has been created, it can be copied and pasted into other matters, reducing the time needed to create roles in each matter. </p>
+        <ol>
+            <li class="listnumber">
+                <p>To copy roles from one matter into another matter, choose from the following: </p>
+                <ul>
+                    <li>
+                        <p>To copy a <b>single</b> role, select the role from the left-hand pane. Click <b>Copy Role</b>. </p>
+                        <p>
+                            <img src="../../Images/ONE/RoleManagement_RolePage_CopyRole_NewLogo.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>To copy <b>all</b> roles, select <b>Copy Roles</b>. This option is displayed  in the top-right corner of a Role  page, and on the Role Management overview page. </p>
+                        <p>
+                            <img src="../../Images/ONE/RoleManagement_RolePage_CopyRoles_NewLogo.png" class="Thumbnail" />
+                        </p>
+                        <p>
+                            <img src="../../Images/ONE/RoleManagement_Overview_CopyRoles_NewLogo.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>To copy a <b>selection</b> of roles, use the Filter function.  Then, click <b>Copy Roles</b> from the Role Management overview page to copy the filtered selection of roles.</p>
+                        <p>
+                            <img src="../../Images/ONE/RoleManagement_Filter_CopyRoles_NewLogo.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p>To paste the copied role(s) into another matter, open the target matter. Then, navigate to <b>Configurations &gt; Role Management</b>.</p>
+                <ul>
+                    <li>
+                        <p>Click <b>Paste Role(s)</b>. This option is displayed  in the top-right corner of a role page, and on the Role Management overview page. </p>
+                        <p>
+                            <img src="../../Images/ONE/RoleManagement_RolePage_PasteRoles_NewLogo.png" class="Thumbnail" />
+                        </p>
+                        <p>
+                            <img src="../../Images/ONE/RoleManagement_Overview_PasteRoles_NewLogo.png" class="Thumbnail" />
+                        </p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/CSH_Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p style="font-size: 10pt;font-style: italic;"><b>Note</b>: Shortcut keys (Ctrl C + Ctrl V) can be used, but may not work for all users. If unavailable, the Copy and Paste buttons should be used.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Duplicate roles are not allowed. If the role already exists, an error message will appear. </p>
+                    </li>
+                    <li>
+                        <p>If the role is assigned specific properties that do not exist in the target matter, then the copied role will be pasted without these permissions. </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

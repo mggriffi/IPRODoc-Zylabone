@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-US" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <script type="text/javascript">/*<![CDATA[*/
+//<!--
+var articleTitleText='Multiple Wild Cards in a Search Query';
+//-->
+/*]]>*/</script>
+        <link rel="stylesheet" type="text/css" href="../../Styles/article-published.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/zylab-one-search-language-guide-publication-1/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/zylab-one-search-language-guide-publication-1/44.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/zylab-one-search-language-guide-publication-1/base.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/zylab-one-search-language-guide-publication-1/fancy.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../Styles/zylab-one-search-language-guide-publication-1/main.css" />
+        <script src="../../Scripts/article-published.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/compatibility.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/zylab-one-search-language-guide-publication-1/theViewer.min.js" type="text/javascript">
+        </script>
+        <meta charset="Windows-1252" />
+    </head>
+    <body>
+        <h1>Multiple Wild Cards in a Search Query</h1>
+        <p class="heading4">
+            <MadCap:keyword term="Multiple Wild Cards in a Search Query" />
+  Allowed
+</p>
+        <table width="564" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+            <tbody>
+                <tr align="left" valign="top">
+                    <th width="288" valign="middle" style="border-right-color: #ffffff;border-bottom-color: #ffffff;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+            Combinations
+          </b>
+                        </p>
+                    </th>
+                    <th width="276" valign="middle" style="border-bottom-color: #ffffff;border-left-color: #ffffff;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+            Examples
+          </b>
+                        </p>
+                    </th>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Adjacent character sequences and/or ranges within square brackets
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          [^a][^p][^p][^l][^e]
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Adjacent '?'
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          a??
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Adjacent '?' and character sequences and/or ranges within square brackets
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          [^a][^p][^p]??
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Adjacent '?' and '*' wild cards
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          ab?*?*?
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Adjacent '?' and character range
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          ab[abc]?[d-z]
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Adjacent '*' and character range
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          ab[abc]*[d-z]
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Wild card '+' followed by wild card '?'
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          ab+?
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Wild card '+' followed by wild card '*'
+        </p>
+                    </td>
+                    <td width="276" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          ab+*
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="288" style="border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: solid;">
+                        <p class="tablebodytextleft">
+          Wild card '+' followed by '[ ]'
+        </p>
+                    </td>
+                    <td width="276" style="border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          ab+[abc]
+        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <p class="heading4">
+  Not Allowed
+</p>
+        <table width="564" class="tableintopic" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="2">
+            <tbody>
+                <tr align="left" valign="top">
+                    <th width="180" valign="middle" style="border-right-color: #ffffff;border-bottom-color: #ffffff;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+            Combinations
+          </b>
+                        </p>
+                    </th>
+                    <th width="180" valign="middle" style="border-bottom-color: #ffffff;border-left-color: #ffffff;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+            Examples
+          </b>
+                        </p>
+                    </th>
+                    <th width="204" valign="middle" style="border-bottom-color: #ffffff;border-left-color: #ffffff;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;" bgcolor="#c9c9c9">
+                        <p class="tablebodytextcentre"><b class="specialbold">
+            Comments
+          </b>
+                        </p>
+                    </th>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="180" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid;">
+                        <p class="tablebodytextleft">
+          Adjacent '*' wild cards
+        </p>
+                    </td>
+                    <td width="180" style="border-right-color: #c0c0c0;border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-right-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          e** will return an error
+        </p>
+                    </td>
+                    <td width="204" style="border-bottom-color: #c0c0c0;border-left-color: #c0c0c0;border-bottom-width: 1px;border-left-width: 1px;border-bottom-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          Error 4100: Adjacent '*' wild cards are meaningless, and thus are not allowed
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                        <p class="tablebodytextleft">
+          Wild card '+' or numeric repetition range \{m,n\} 
+        </p>
+                        <p class="tablebodytextleft">
+          at the beginning of a pattern followed by any wild card
+        </p>
+                    </td>
+                    <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          ++, +*, +?, +[abc], \{m,n\}+,
+        </p>
+                        <p class="tablebodytextleft">
+          \{m,n\}*, \{m,n\}?,\{m,n\}[abc] 
+        </p>
+                    </td>
+                    <td width="204" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          Error 4153: Wild card '+' by itself is meaningless since it has to follow some valid symbol
+        </p>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-top-style: solid;border-right-style: solid;">
+                        <p class="tablebodytextleft">
+          Wild card '+' or numeric repetition range \{m,n\} following wild card '*'
+        </p>
+                    </td>
+                    <td width="180" style="border-top-color: #c0c0c0;border-right-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-right-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          *+, * \{m,n\}
+        </p>
+                    </td>
+                    <td width="204" style="border-top-color: #c0c0c0;border-left-color: #c0c0c0;border-top-width: 1px;border-left-width: 1px;border-top-style: solid;border-left-style: solid;">
+                        <p class="tablebodytextleft">
+          Error 4153: Precedence rules for wild card '+' are violated
+        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
