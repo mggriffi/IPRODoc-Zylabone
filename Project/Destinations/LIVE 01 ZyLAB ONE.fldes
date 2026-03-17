@@ -5,7 +5,7 @@
   Host=""
   User="MyAccountId"
   Password=""
-  Directory="C:\PublishFolder\ZYLABONE"
+  Directory="\\cld-itsptl002\c$\Core\Help\FlareProjects\ZyLAB\01"
   Port=""
   ViewUrl="/help/ZyLAB/01"
   Type="file"
