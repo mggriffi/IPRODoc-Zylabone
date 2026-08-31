@@ -20,7 +20,8 @@
   UseCustomTopicFileExtension="false"
   FaviconSkin="/Project/Skins/Favicon.flskn"
   TopicToolbarSkin="/Project/Skins/TopicToolbar.flskn"
-  GetLatestBeforeCompile="true">
+  GetLatestBeforeCompile="true"
+  DisableAutoSync="true">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
