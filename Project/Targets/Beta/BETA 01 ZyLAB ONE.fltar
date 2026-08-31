@@ -13,7 +13,7 @@
   ContentInclusionType="Referenced"
   MasterPage="/Content/Resources/MasterPages/MasterPageZyLAB.flmsp"
   ConditionTagExpression="include[&quot;Primary.Upcoming Release&quot; or &quot;Primary.ZyLAB Home&quot;]"
-  DefaultUrl="/Content/ZyLAB/ONE/010101.html"
+  DefaultUrl="/Content/default.htm"
   MasterToc="/Project/TOCs/beta_ZyLAB ONE.fltoc"
   TopNavTocPath="false"
   MoveOutputContentToRoot="true"
